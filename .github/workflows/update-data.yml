@@ -1,0 +1,43 @@
+name: Mise à jour automatique des données GeoEcon Pulse
+
+on:
+  schedule:
+    # Chaque jour à 12h07 UTC (7h07 EST / 8h07 EDT)
+    - cron: '7 12 * * *'
+  workflow_dispatch:  # Permet le déclenchement manuel
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v4
+
+      - name: Installation de Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installation des dépendances
+        run: pip install -r requirements.txt
+
+      - name: Exécution du script de mise à jour
+        run: python scripts/update_data.py
+
+      - name: Vérification des changements
+        id: check
+        run: |
+          git diff --quiet data/indicators.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit et push si les données ont changé
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/indicators.json
+          git commit -m "📊 Mise à jour automatique des données — $(date +%Y-%m-%d)"
+          git push

@@ -1,27 +1,79 @@
 {
-  "lastUpdated": "2026-03-15",
+  "lastUpdated": "2026-03-22",
   "regions": {
     "CA": {
-      "name": { "fr": "Canada", "en": "Canada" },
+      "name": {
+        "fr": "Canada",
+        "en": "Canada"
+      },
       "flag": "🇨🇦",
       "sentiment": {
         "value": "negative",
-        "label": { "fr": "Négatif", "en": "Negative" },
+        "label": {
+          "fr": "Négatif",
+          "en": "Negative"
+        },
         "reason": {
           "fr": "Pertes d'emplois massives, tarifs américains persistants, incertitude commerciale",
           "en": "Massive job losses, persistent US tariffs, trade uncertainty"
         }
       },
       "indicators": {
-        "gdp": { "value": 1.1, "unit": "%", "trend": "down", "period": "2026F", "source": "Banque du Canada" },
-        "inflation": { "value": 2.4, "unit": "%", "trend": "stable", "period": "Fév. 2026", "source": "Statistique Canada" },
-        "rate": { "value": 2.25, "unit": "%", "trend": "stable", "period": "Jan. 2026", "source": "Banque du Canada" },
-        "exchange": { "value": 1.381, "unit": "CAD/USD", "trend": "down", "period": "15 mars 2026", "source": "Banque du Canada" },
-        "stockIndex": { "name": "S&P/TSX", "value": 32542, "trend": "down", "change": -0.91, "period": "13 mars 2026" }
+        "gdp": {
+          "value": 1.1,
+          "unit": "%",
+          "trend": "down",
+          "period": "2026F",
+          "source": "Banque du Canada"
+        },
+        "inflation": {
+          "value": 2.4,
+          "unit": "%",
+          "trend": "stable",
+          "period": "Fév. 2026",
+          "source": "Statistique Canada"
+        },
+        "rate": {
+          "value": 2.25,
+          "unit": "%",
+          "trend": "stable",
+          "period": "Jan. 2026",
+          "source": "Banque du Canada"
+        },
+        "exchange": {
+          "value": 1.372,
+          "unit": "CAD/USD",
+          "trend": "down",
+          "period": "2026-03-20",
+          "source": "Frankfurter/ECB"
+        },
+        "stockIndex": {
+          "name": "S&P/TSX",
+          "value": 31317,
+          "trend": "down",
+          "change": -1.69,
+          "period": "2026-03-22"
+        }
       },
       "sparkline": {
-        "label": { "fr": "Inflation (12 mois)", "en": "Inflation (12 months)" },
-        "data": [2.9, 2.7, 2.5, 2.3, 2.0, 1.8, 1.6, 1.6, 1.8, 2.0, 2.2, 2.4]
+        "label": {
+          "fr": "Inflation (12 mois)",
+          "en": "Inflation (12 months)"
+        },
+        "data": [
+          2.9,
+          2.7,
+          2.5,
+          2.3,
+          2.0,
+          1.8,
+          1.6,
+          1.6,
+          1.8,
+          2.0,
+          2.2,
+          2.4
+        ]
       },
       "summary": {
         "fr": "L'économie canadienne traverse une période difficile. Les tarifs américains de 25% sur l'acier et l'aluminium continuent de peser sur le secteur manufacturier. Perte surprise de 83 900 emplois en février, portant le chômage à 6,7%. Le rapprochement commercial avec la Chine — réduction des tarifs sur le canola et les VÉ — offre une bouée de sauvetage, mais ne compense pas la dépendance structurelle envers les États-Unis (20% du PIB).",
@@ -29,183 +81,478 @@
       },
       "headlines": [
         {
-          "title": { "fr": "Perte de 83 900 emplois en février — chômage à 6,7%", "en": "83,900 jobs lost in February — unemployment at 6.7%" },
-          "url": "https://www.statcan.gc.ca/en/subjects-start/labour_/labour-force-survey",
-          "theme": "trade",
-          "time": "2j",
-          "impact": "high",
-          "source": "Statistique Canada"
-        },
-        {
-          "title": { "fr": "Le Canada obtient un accès renouvelé au marché chinois pour le canola", "en": "Canada secures renewed market access to China for canola" },
-          "url": "https://www.canada.ca/en/global-affairs/news/2026/03/canada-secures-renewed-market-access-with-china-to-boost-exports-and-strengthen-economic-collaboration.html",
-          "theme": "trade",
-          "time": "3j",
-          "impact": "high",
-          "source": "Affaires mondiales Canada"
-        },
-        {
-          "title": { "fr": "La Banque du Canada maintient le taux directeur à 2,25%", "en": "Bank of Canada holds policy rate at 2.25%" },
-          "url": "https://www.bankofcanada.ca/2026/01/fad-press-release-2026-01-28/",
-          "theme": "monetary",
-          "time": "6s",
-          "impact": "medium",
-          "source": "Banque du Canada"
-        },
-        {
-          "title": { "fr": "Le Canada à la croisée des chemins — discours du sous-gouverneur", "en": "Canada at a crossroads — Deputy Governor speech" },
-          "url": "https://www.bankofcanada.ca/2026/02/structural-change-canada-at-a-crossroads/",
+          "title": {
+            "fr": "Ultimatum de Trump à l’Iran pour rouvrir le détroit d’Ormuz, Israël durement attaquée",
+            "en": "Ultimatum de Trump à l’Iran pour rouvrir le détroit d’Ormuz, Israël durement attaquée"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2240899/missile-iran-site-nucleaire-israelien",
           "theme": "geopolitics",
-          "time": "2s",
-          "impact": "medium",
-          "source": "Banque du Canada"
+          "time": "2h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
         },
         {
-          "title": { "fr": "Les tarifs US ont réduit le PIB canadien de 1,5 à 2%", "en": "US tariffs reduced Canadian GDP by 1.5 to 2%" },
-          "url": "https://www.bloomberg.com/news/articles/2026-03-05/eight-charts-show-rupture-with-canada-under-trump-s-tariffs",
-          "theme": "trade",
-          "time": "10j",
+          "title": {
+            "fr": "Des manifestants contre la guerre en Iran demandent à Carney de ne pas s’y joindre",
+            "en": "Des manifestants contre la guerre en Iran demandent à Carney de ne pas s’y joindre"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2240887/manifestation-contre-guerre-iran-etats-unis-mark-carney",
+          "theme": "geopolitics",
+          "time": "6h",
           "impact": "high",
-          "source": "Bloomberg"
+          "source": "Radio-Canada Économie"
         },
         {
-          "title": { "fr": "Révision du CUSMA : l'incertitude pèse sur les investissements", "en": "CUSMA review: uncertainty weighs on investment" },
-          "url": "https://www.theglobeandmail.com/business/international-business/article-2026-in-charts-trade/",
+          "title": {
+            "fr": "Impasse budgétaire : Trump menace d’envoyer la police de l’immigration aux aéroports",
+            "en": "Impasse budgétaire : Trump menace d’envoyer la police de l’immigration aux aéroports"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2240868/impasse-budgetaire-trump-ice-aeroports",
+          "theme": "tech",
+          "time": "8h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Incursion en Ukraine, au cœur de la guerre des drones",
+            "en": "Incursion en Ukraine, au cœur de la guerre des drones"
+          },
+          "url": "https://ici.radio-canada.ca/info/videos/1-10621932/incursion-en-ukraine-au-coeur-guerre-drones",
+          "theme": "geopolitics",
+          "time": "8h",
+          "impact": "high",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "L’ARC veut récupérer plus de 100 millions en impôts non payés à l’Î.-P.-É.",
+            "en": "L’ARC veut récupérer plus de 100 millions en impôts non payés à l’Î.-P.-É."
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2240834/impots-ipe-impots-tribunaux",
           "theme": "trade",
-          "time": "1s",
-          "impact": "medium",
+          "time": "13h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "How the oil shock could lead to wider economic pain for Canada",
+            "en": "How the oil shock could lead to wider economic pain for Canada"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-oil-shock-wider-economic-pain-canada/",
+          "theme": "energy",
+          "time": "1j",
+          "impact": "low",
           "source": "Globe and Mail"
         },
         {
-          "title": { "fr": "S&P prévoit une amélioration de la croissance au T2 2026", "en": "S&P forecasts growth improvement in Q2 2026" },
-          "url": "https://www.spglobal.com/ratings/en/regulatory/article/economic-outlook-canada-q1-2026-growth-is-set-to-improve-s101658937",
+          "title": {
+            "fr": "Endless war and global recession: Can you feel the looming dread?",
+            "en": "Endless war and global recession: Can you feel the looming dread?"
+          },
+          "url": "https://www.theglobeandmail.com/business/commentary/article-oil-prices-iran-war-gulf-economy-middle-east/",
           "theme": "trade",
-          "time": "2s",
-          "impact": "low",
-          "source": "S&P Global"
+          "time": "1j",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "The Hormuz crisis instantly exposed the risks of rolling back green and cleantech agendas",
+            "en": "The Hormuz crisis instantly exposed the risks of rolling back green and cleantech agendas"
+          },
+          "url": "https://www.theglobeandmail.com/business/commentary/article-iran-war-strait-of-hormuz-oil-renewable-energy-wind-nuclear/",
+          "theme": "energy",
+          "time": "1j",
+          "impact": "high",
+          "source": "Globe and Mail"
         }
       ],
       "provincialAnalysis": {
         "shocks": [
-          { "id": "iran_oil", "label": { "fr": "Guerre Iran / pétrole à 90$+", "en": "Iran war / oil at $90+" }, "theme": "energy" },
-          { "id": "us_tariffs", "label": { "fr": "Tarifs US 25% acier/aluminium", "en": "US 25% steel/aluminum tariffs" }, "theme": "trade" },
-          { "id": "china_canola", "label": { "fr": "Accord Canada-Chine (canola/VÉ)", "en": "Canada-China deal (canola/EVs)" }, "theme": "trade" },
-          { "id": "china_slowdown", "label": { "fr": "Ralentissement chinois (cible 4,5%)", "en": "Chinese slowdown (4.5% target)" }, "theme": "trade" },
-          { "id": "weak_cad", "label": { "fr": "Dollar canadien faible (1,38 CAD/USD)", "en": "Weak Canadian dollar (1.38 CAD/USD)" }, "theme": "monetary" }
+          {
+            "id": "iran_oil",
+            "label": {
+              "fr": "Guerre Iran / pétrole à 90$+",
+              "en": "Iran war / oil at $90+"
+            },
+            "theme": "energy"
+          },
+          {
+            "id": "us_tariffs",
+            "label": {
+              "fr": "Tarifs US 25% acier/aluminium",
+              "en": "US 25% steel/aluminum tariffs"
+            },
+            "theme": "trade"
+          },
+          {
+            "id": "china_canola",
+            "label": {
+              "fr": "Accord Canada-Chine (canola/VÉ)",
+              "en": "Canada-China deal (canola/EVs)"
+            },
+            "theme": "trade"
+          },
+          {
+            "id": "china_slowdown",
+            "label": {
+              "fr": "Ralentissement chinois (cible 4,5%)",
+              "en": "Chinese slowdown (4.5% target)"
+            },
+            "theme": "trade"
+          },
+          {
+            "id": "weak_cad",
+            "label": {
+              "fr": "Dollar canadien faible (1,38 CAD/USD)",
+              "en": "Weak Canadian dollar (1.38 CAD/USD)"
+            },
+            "theme": "monetary"
+          }
         ],
         "impactMatrix": {
-          "AB":    { "iran_oil": 2, "us_tariffs": -1, "china_canola": 1, "china_slowdown": -1, "weak_cad": 2 },
-          "SK":    { "iran_oil": 2, "us_tariffs": -1, "china_canola": 2, "china_slowdown": -1, "weak_cad": 2 },
-          "NL":    { "iran_oil": 2, "us_tariffs": 0, "china_canola": 0, "china_slowdown": -1, "weak_cad": 1 },
-          "ON":    { "iran_oil": -2, "us_tariffs": -2, "china_canola": 0, "china_slowdown": -1, "weak_cad": 1 },
-          "QC":    { "iran_oil": -1, "us_tariffs": -2, "china_canola": 0, "china_slowdown": -1, "weak_cad": 1 },
-          "BC":    { "iran_oil": -1, "us_tariffs": -1, "china_canola": 1, "china_slowdown": -2, "weak_cad": 1 },
-          "MB":    { "iran_oil": -1, "us_tariffs": 0, "china_canola": 1, "china_slowdown": -1, "weak_cad": 1 },
-          "NB":    { "iran_oil": -1, "us_tariffs": 0, "china_canola": 0, "china_slowdown": 0, "weak_cad": 1 },
-          "NS":    { "iran_oil": -1, "us_tariffs": 0, "china_canola": 0, "china_slowdown": 0, "weak_cad": 1 },
-          "PE":    { "iran_oil": -1, "us_tariffs": 0, "china_canola": 1, "china_slowdown": 0, "weak_cad": 1 }
+          "AB": {
+            "iran_oil": 2,
+            "us_tariffs": -1,
+            "china_canola": 1,
+            "china_slowdown": -1,
+            "weak_cad": 2
+          },
+          "SK": {
+            "iran_oil": 2,
+            "us_tariffs": -1,
+            "china_canola": 2,
+            "china_slowdown": -1,
+            "weak_cad": 2
+          },
+          "NL": {
+            "iran_oil": 2,
+            "us_tariffs": 0,
+            "china_canola": 0,
+            "china_slowdown": -1,
+            "weak_cad": 1
+          },
+          "ON": {
+            "iran_oil": -2,
+            "us_tariffs": -2,
+            "china_canola": 0,
+            "china_slowdown": -1,
+            "weak_cad": 1
+          },
+          "QC": {
+            "iran_oil": -1,
+            "us_tariffs": -2,
+            "china_canola": 0,
+            "china_slowdown": -1,
+            "weak_cad": 1
+          },
+          "BC": {
+            "iran_oil": -1,
+            "us_tariffs": -1,
+            "china_canola": 1,
+            "china_slowdown": -2,
+            "weak_cad": 1
+          },
+          "MB": {
+            "iran_oil": -1,
+            "us_tariffs": 0,
+            "china_canola": 1,
+            "china_slowdown": -1,
+            "weak_cad": 1
+          },
+          "NB": {
+            "iran_oil": -1,
+            "us_tariffs": 0,
+            "china_canola": 0,
+            "china_slowdown": 0,
+            "weak_cad": 1
+          },
+          "NS": {
+            "iran_oil": -1,
+            "us_tariffs": 0,
+            "china_canola": 0,
+            "china_slowdown": 0,
+            "weak_cad": 1
+          },
+          "PE": {
+            "iran_oil": -1,
+            "us_tariffs": 0,
+            "china_canola": 1,
+            "china_slowdown": 0,
+            "weak_cad": 1
+          }
         },
         "groups": [
           {
             "id": "oil",
-            "label": { "fr": "Provinces pétrolières", "en": "Oil-producing provinces" },
-            "provinces": ["AB", "SK", "NL"],
-            "verdict": { "fr": "Gagnantes nettes", "en": "Net winners" },
+            "label": {
+              "fr": "Provinces pétrolières",
+              "en": "Oil-producing provinces"
+            },
+            "provinces": [
+              "AB",
+              "SK",
+              "NL"
+            ],
+            "verdict": {
+              "fr": "Gagnantes nettes",
+              "en": "Net winners"
+            },
             "verdictType": "positive",
             "analysis": {
               "fr": "La flambée du Brent à 90$/baril constitue un choc positif majeur pour l'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador. Le secteur pétrolier et gazier représente environ 25% du PIB albertain (88 Mds$ en 2024, Alberta Economic Dashboard) et 13% du PIB saskatchewanais (Statistique Canada, 2024). Chaque hausse de 10 USD/baril du Brent génère environ 1,2 Md$ de revenus additionnels pour l'Alberta seule (Trésor de l'Alberta, Budget 2025).\n\nLa Saskatchewan bénéficie d'un double avantage : la hausse pétrolière ET l'accord Canada-Chine sur le canola. La province produit 55% du canola canadien (Canola Council of Canada), et la réduction des tarifs chinois de 84% à 15% rouvre un marché de 4 Mds$/an (Affaires mondiales Canada, mars 2026).\n\nRisques : les tarifs américains de 25% sur l'acier affectent les investissements dans les infrastructures pétrolières. Le ralentissement chinois (cible de croissance la plus basse depuis les années 90) réduit la demande mondiale de brut à moyen terme.",
               "en": "The Brent surge to $90/barrel is a major positive shock for Alberta, Saskatchewan and Newfoundland & Labrador. Oil and gas accounts for roughly 25% of Alberta's GDP ($88B in 2024, Alberta Economic Dashboard) and 13% of Saskatchewan's GDP (Statistics Canada, 2024). Each $10 USD/barrel increase in Brent generates approximately $1.2B in additional revenue for Alberta alone (Alberta Treasury, Budget 2025).\n\nSaskatchewan benefits from a double tailwind: oil price surge AND the Canada-China canola deal. The province produces 55% of Canadian canola (Canola Council of Canada), and the tariff reduction from 84% to 15% reopens a $4B/year market (Global Affairs Canada, March 2026).\n\nRisks: US 25% steel tariffs affect investment in oil infrastructure. Chinese slowdown (lowest growth target since the 90s) reduces global crude demand in the medium term."
             },
             "strengths": {
-              "fr": ["Revenus pétroliers exceptionnels (Brent à 90$+)", "Saskatchewan : double gain pétrole + canola", "Dollar canadien faible amplifie les revenus en CAD", "Terre-Neuve : production offshore Hibernia/Terra Nova en pleine capacité"],
-              "en": ["Exceptional oil revenues (Brent at $90+)", "Saskatchewan: double gain from oil + canola", "Weak Canadian dollar amplifies CAD revenues", "Newfoundland: Hibernia/Terra Nova offshore at full capacity"]
+              "fr": [
+                "Revenus pétroliers exceptionnels (Brent à 90$+)",
+                "Saskatchewan : double gain pétrole + canola",
+                "Dollar canadien faible amplifie les revenus en CAD",
+                "Terre-Neuve : production offshore Hibernia/Terra Nova en pleine capacité"
+              ],
+              "en": [
+                "Exceptional oil revenues (Brent at $90+)",
+                "Saskatchewan: double gain from oil + canola",
+                "Weak Canadian dollar amplifies CAD revenues",
+                "Newfoundland: Hibernia/Terra Nova offshore at full capacity"
+              ]
             },
             "weaknesses": {
-              "fr": ["Tarifs US de 25% sur l'acier ralentissent les projets d'infrastructure", "Dépendance au cycle pétrolier — vulnérabilité si le conflit iranien se résout rapidement", "Ralentissement chinois réduit la demande structurelle de brut"],
-              "en": ["US 25% steel tariffs slow infrastructure projects", "Oil cycle dependence — vulnerable if Iran conflict resolves quickly", "Chinese slowdown reduces structural crude demand"]
+              "fr": [
+                "Tarifs US de 25% sur l'acier ralentissent les projets d'infrastructure",
+                "Dépendance au cycle pétrolier — vulnérabilité si le conflit iranien se résout rapidement",
+                "Ralentissement chinois réduit la demande structurelle de brut"
+              ],
+              "en": [
+                "US 25% steel tariffs slow infrastructure projects",
+                "Oil cycle dependence — vulnerable if Iran conflict resolves quickly",
+                "Chinese slowdown reduces structural crude demand"
+              ]
             }
           },
           {
             "id": "manufacturing",
-            "label": { "fr": "Provinces manufacturières", "en": "Manufacturing provinces" },
-            "provinces": ["ON", "QC"],
-            "verdict": { "fr": "Perdantes nettes", "en": "Net losers" },
+            "label": {
+              "fr": "Provinces manufacturières",
+              "en": "Manufacturing provinces"
+            },
+            "provinces": [
+              "ON",
+              "QC"
+            ],
+            "verdict": {
+              "fr": "Perdantes nettes",
+              "en": "Net losers"
+            },
             "verdictType": "negative",
             "analysis": {
               "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien faible (1,38 CAD/USD) améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
               "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the weak Canadian dollar (1.38 CAD/USD) improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
             },
             "strengths": {
-              "fr": ["Dollar faible améliore la compétitivité hors tarifs", "Diversification sectorielle (tech, services financiers en Ontario)", "Hydroélectricité québécoise : immunité partielle au choc pétrolier", "Rebond manufacturier au T3 2025 (+1,0% en Ontario)"],
-              "en": ["Weak dollar improves non-tariff competitiveness", "Sectoral diversification (tech, financial services in Ontario)", "Quebec hydroelectricity: partial immunity to oil shock", "Manufacturing rebound in Q3 2025 (+1.0% in Ontario)"]
+              "fr": [
+                "Dollar faible améliore la compétitivité hors tarifs",
+                "Diversification sectorielle (tech, services financiers en Ontario)",
+                "Hydroélectricité québécoise : immunité partielle au choc pétrolier",
+                "Rebond manufacturier au T3 2025 (+1,0% en Ontario)"
+              ],
+              "en": [
+                "Weak dollar improves non-tariff competitiveness",
+                "Sectoral diversification (tech, financial services in Ontario)",
+                "Quebec hydroelectricity: partial immunity to oil shock",
+                "Manufacturing rebound in Q3 2025 (+1.0% in Ontario)"
+              ]
             },
             "weaknesses": {
-              "fr": ["Tarifs de 25% : impact direct sur 46% du PIB manufacturier canadien", "Aluminium québécois : 2,8 Mds$ d'exports vers les US menacés", "Pétrole à 90$+ : hausse des coûts de transport et d'intrants", "Incertitude CUSMA pèse sur les décisions d'investissement"],
-              "en": ["25% tariffs: direct impact on 46% of Canadian manufacturing GDP", "Quebec aluminum: $2.8B in US exports threatened", "Oil at $90+: rising transport and input costs", "CUSMA uncertainty weighs on investment decisions"]
+              "fr": [
+                "Tarifs de 25% : impact direct sur 46% du PIB manufacturier canadien",
+                "Aluminium québécois : 2,8 Mds$ d'exports vers les US menacés",
+                "Pétrole à 90$+ : hausse des coûts de transport et d'intrants",
+                "Incertitude CUSMA pèse sur les décisions d'investissement"
+              ],
+              "en": [
+                "25% tariffs: direct impact on 46% of Canadian manufacturing GDP",
+                "Quebec aluminum: $2.8B in US exports threatened",
+                "Oil at $90+: rising transport and input costs",
+                "CUSMA uncertainty weighs on investment decisions"
+              ]
             }
           },
           {
             "id": "resources",
-            "label": { "fr": "Provinces exportatrices de ressources", "en": "Resource-exporting provinces" },
-            "provinces": ["BC", "MB", "PE"],
-            "verdict": { "fr": "Mixte", "en": "Mixed" },
+            "label": {
+              "fr": "Provinces exportatrices de ressources",
+              "en": "Resource-exporting provinces"
+            },
+            "provinces": [
+              "BC",
+              "MB",
+              "PE"
+            ],
+            "verdict": {
+              "fr": "Mixte",
+              "en": "Mixed"
+            },
             "verdictType": "neutral",
             "analysis": {
               "fr": "La Colombie-Britannique est la province la plus exposée au ralentissement chinois. La Chine absorbe 51% des exportations de billes de bois brut de la C.-B. (BC Forest Product Exports, 2025), et les exportations forestières ont reculé de 8% en 2025. Le secteur forestier est pris en étau entre les tarifs américains sur le bois d'oeuvre et la demande chinoise en berne. La province a signé un protocole d'entente avec la Chine pour développer le marché du bois d'oeuvre (gouvernement de la C.-B., 2025).\n\nLe Manitoba bénéficie modérément de l'accord canola avec la Chine — la province est le troisième producteur canadien. L'Île-du-Prince-Édouard, dont l'économie repose sur l'agriculture (pommes de terre) et la pêche, profite du dollar faible pour ses exportations mais subit la hausse des coûts énergétiques.\n\nLa croissance de la C.-B. est projetée à 1,5% en 2026 (CPABC, Q1 2026), sous la moyenne nationale, reflétant ces vents contraires.",
               "en": "British Columbia is the province most exposed to the Chinese slowdown. China absorbs 51% of BC's raw log exports (BC Forest Product Exports, 2025), and forestry exports fell 8% in 2025. The forestry sector is caught between US lumber tariffs and declining Chinese demand. The province signed an MOU with China to develop the softwood lumber market (BC Government, 2025).\n\nManitoba moderately benefits from the canola deal with China — the province is Canada's third-largest canola producer. Prince Edward Island, whose economy relies on agriculture (potatoes) and fishing, benefits from the weak dollar for exports but faces rising energy costs.\n\nBC growth is projected at 1.5% in 2026 (CPABC, Q1 2026), below the national average, reflecting these headwinds."
             },
             "strengths": {
-              "fr": ["C.-B. : diversification vers les marchés asiatiques (protocole avec la Chine)", "Manitoba : bénéficiaire de l'accord canola", "Dollar faible stimule les exports agricoles et halieutiques", "C.-B. : secteur tech (Vancouver) peu exposé aux tarifs"],
-              "en": ["BC: diversifying to Asian markets (MOU with China)", "Manitoba: canola deal beneficiary", "Weak dollar boosts agricultural and fishery exports", "BC: tech sector (Vancouver) less exposed to tariffs"]
+              "fr": [
+                "C.-B. : diversification vers les marchés asiatiques (protocole avec la Chine)",
+                "Manitoba : bénéficiaire de l'accord canola",
+                "Dollar faible stimule les exports agricoles et halieutiques",
+                "C.-B. : secteur tech (Vancouver) peu exposé aux tarifs"
+              ],
+              "en": [
+                "BC: diversifying to Asian markets (MOU with China)",
+                "Manitoba: canola deal beneficiary",
+                "Weak dollar boosts agricultural and fishery exports",
+                "BC: tech sector (Vancouver) less exposed to tariffs"
+              ]
             },
             "weaknesses": {
-              "fr": ["C.-B. : 51% des exports de bois brut vont en Chine — vulnérable au ralentissement", "Exports forestières en recul de 8% en 2025", "Hausse des coûts énergétiques pour les provinces importatrices", "Î.-P.-É. : économie trop petite pour absorber les chocs"],
-              "en": ["BC: 51% of raw log exports go to China — vulnerable to slowdown", "Forestry exports down 8% in 2025", "Rising energy costs for importing provinces", "PEI: economy too small to absorb shocks"]
+              "fr": [
+                "C.-B. : 51% des exports de bois brut vont en Chine — vulnérable au ralentissement",
+                "Exports forestières en recul de 8% en 2025",
+                "Hausse des coûts énergétiques pour les provinces importatrices",
+                "Î.-P.-É. : économie trop petite pour absorber les chocs"
+              ],
+              "en": [
+                "BC: 51% of raw log exports go to China — vulnerable to slowdown",
+                "Forestry exports down 8% in 2025",
+                "Rising energy costs for importing provinces",
+                "PEI: economy too small to absorb shocks"
+              ]
             }
           },
           {
             "id": "atlantic",
-            "label": { "fr": "Provinces atlantiques", "en": "Atlantic provinces" },
-            "provinces": ["NB", "NS"],
-            "verdict": { "fr": "Perdantes modérées", "en": "Moderate losers" },
+            "label": {
+              "fr": "Provinces atlantiques",
+              "en": "Atlantic provinces"
+            },
+            "provinces": [
+              "NB",
+              "NS"
+            ],
+            "verdict": {
+              "fr": "Perdantes modérées",
+              "en": "Moderate losers"
+            },
             "verdictType": "negative",
             "analysis": {
               "fr": "Le Nouveau-Brunswick et la Nouvelle-Écosse sont les provinces les plus vulnérables au choc pétrolier par le canal des coûts. Importatrices nettes d'énergie, elles subissent la hausse du Brent sans en tirer de revenus. Le Nouveau-Brunswick héberge la seule raffinerie majeure de l'Est (Irving Oil, Saint John), qui traite 320 000 barils/jour, mais les marges de raffinage sont comprimées par la volatilité des prix du brut.\n\nL'exposition directe aux tarifs américains est limitée : les exportations atlantiques sont dominées par les produits de la mer (homard, crabe), largement exemptés des surtaxes. Le dollar faible est un facteur positif pour ces exportations.\n\nLe risque principal est indirect : le ralentissement manufacturier en Ontario et au Québec réduit les transferts fédéraux de péréquation dont dépendent ces provinces (35 à 40% des revenus provinciaux, Finances Canada).",
               "en": "New Brunswick and Nova Scotia are the most vulnerable provinces to the oil shock through the cost channel. As net energy importers, they bear higher Brent prices without earning revenues. New Brunswick hosts the only major eastern refinery (Irving Oil, Saint John), processing 320,000 barrels/day, but refining margins are squeezed by crude price volatility.\n\nDirect exposure to US tariffs is limited: Atlantic exports are dominated by seafood (lobster, crab), largely exempt from surcharges. The weak dollar is a positive factor for these exports.\n\nThe main risk is indirect: the manufacturing slowdown in Ontario and Quebec reduces federal equalization transfers on which these provinces depend (35 to 40% of provincial revenues, Finance Canada)."
             },
             "strengths": {
-              "fr": ["Faible exposition directe aux tarifs US", "Exports de produits de la mer peu affectés", "Dollar faible bénéficie aux exports de homard/crabe", "Irving Oil : capacité de raffinage stratégique"],
-              "en": ["Low direct exposure to US tariffs", "Seafood exports largely unaffected", "Weak dollar benefits lobster/crab exports", "Irving Oil: strategic refining capacity"]
+              "fr": [
+                "Faible exposition directe aux tarifs US",
+                "Exports de produits de la mer peu affectés",
+                "Dollar faible bénéficie aux exports de homard/crabe",
+                "Irving Oil : capacité de raffinage stratégique"
+              ],
+              "en": [
+                "Low direct exposure to US tariffs",
+                "Seafood exports largely unaffected",
+                "Weak dollar benefits lobster/crab exports",
+                "Irving Oil: strategic refining capacity"
+              ]
             },
             "weaknesses": {
-              "fr": ["Importatrices nettes d'énergie — plein impact du pétrole à 90$+", "Dépendance aux transferts fédéraux (35-40% des revenus)", "Ralentissement ON/QC réduit la base de péréquation", "Marges de raffinage comprimées par la volatilité du brut"],
-              "en": ["Net energy importers — full impact of oil at $90+", "Dependence on federal transfers (35-40% of revenues)", "ON/QC slowdown reduces equalization base", "Refining margins squeezed by crude price volatility"]
+              "fr": [
+                "Importatrices nettes d'énergie — plein impact du pétrole à 90$+",
+                "Dépendance aux transferts fédéraux (35-40% des revenus)",
+                "Ralentissement ON/QC réduit la base de péréquation",
+                "Marges de raffinage comprimées par la volatilité du brut"
+              ],
+              "en": [
+                "Net energy importers — full impact of oil at $90+",
+                "Dependence on federal transfers (35-40% of revenues)",
+                "ON/QC slowdown reduces equalization base",
+                "Refining margins squeezed by crude price volatility"
+              ]
             }
           }
         ]
       }
     },
     "US": {
-      "name": { "fr": "États-Unis", "en": "United States" },
+      "name": {
+        "fr": "États-Unis",
+        "en": "United States"
+      },
       "flag": "🇺🇸",
       "sentiment": {
         "value": "neutral",
-        "label": { "fr": "Neutre", "en": "Neutral" },
+        "label": {
+          "fr": "Neutre",
+          "en": "Neutral"
+        },
         "reason": {
           "fr": "Croissance solide mais inflation persistante, marché du travail qui ralentit, guerre en Iran",
           "en": "Solid growth but persistent inflation, softening labor market, Iran war"
         }
       },
       "indicators": {
-        "gdp": { "value": 2.6, "unit": "%", "trend": "stable", "period": "2026F", "source": "Fed" },
-        "inflation": { "value": 3.0, "unit": "%", "trend": "up", "period": "Fév. 2026", "source": "BLS" },
-        "rate": { "value": 3.625, "unit": "%", "trend": "stable", "period": "Jan. 2026", "source": "Federal Reserve" },
-        "exchange": { "value": null, "unit": "", "trend": "stable", "period": "", "source": "" },
-        "stockIndex": { "name": "S&P 500", "value": 6632, "trend": "down", "change": -0.61, "period": "13 mars 2026" }
+        "gdp": {
+          "value": 2.6,
+          "unit": "%",
+          "trend": "stable",
+          "period": "2026F",
+          "source": "Fed"
+        },
+        "inflation": {
+          "value": 3.0,
+          "unit": "%",
+          "trend": "up",
+          "period": "Fév. 2026",
+          "source": "BLS"
+        },
+        "rate": {
+          "value": 3.625,
+          "unit": "%",
+          "trend": "stable",
+          "period": "Jan. 2026",
+          "source": "Federal Reserve"
+        },
+        "exchange": {
+          "value": null,
+          "unit": "",
+          "trend": "stable",
+          "period": "",
+          "source": ""
+        },
+        "stockIndex": {
+          "name": "S&P 500",
+          "value": 6506,
+          "trend": "down",
+          "change": -1.51,
+          "period": "2026-03-22"
+        }
       },
       "sparkline": {
-        "label": { "fr": "S&P 500 (12 mois)", "en": "S&P 500 (12 months)" },
-        "data": [5620, 5780, 5950, 6100, 6250, 6400, 6550, 6700, 6850, 6920, 6780, 6632]
+        "label": {
+          "fr": "S&P 500 (12 mois)",
+          "en": "S&P 500 (12 months)"
+        },
+        "data": [
+          5911.69,
+          6204.95,
+          6339.39,
+          6460.26,
+          6688.46,
+          6840.2,
+          6849.09,
+          6845.5,
+          6939.03,
+          6878.88,
+          6506.48,
+          6506.48
+        ]
       },
       "summary": {
         "fr": "L'économie américaine reste résiliente avec une croissance autour de 2,6%, mais les risques s'accumulent. L'inflation, alimentée par les tarifs (+0,5 à 0,75 pp selon la Fed de NY) et le choc pétrolier iranien, dépasse les 3%. Le marché du travail montre des signes de fléchissement. La Fed maintient ses taux à 3,5-3,75%, coincée entre inflation et ralentissement. Le mandat de Powell expire en mai 2026.",
@@ -213,84 +560,168 @@
       },
       "headlines": [
         {
-          "title": { "fr": "La Fed de NY : les tarifs pèsent « massivement » sur les entreprises et consommateurs", "en": "NY Fed: tariff burden falls 'overwhelmingly' on businesses and consumers" },
-          "url": "https://www.cnbc.com/2026/03/03/new-york-feds-williams-says-tariff-burden-falls-overwhelmingly-on-us-businesses-and-consumers.html",
-          "theme": "trade",
-          "time": "12j",
-          "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": { "fr": "Trump cherche 1 600 G$ de revenus via de nouveaux tarifs", "en": "Trump seeks $1.6T in revenue through new tariffs" },
-          "url": "https://www.washingtontimes.com/news/2026/mar/14/new-tariffs-trump-seeks-close-16-trillion-revenue-gap/",
-          "theme": "trade",
-          "time": "1j",
-          "impact": "high",
-          "source": "Washington Times"
-        },
-        {
-          "title": { "fr": "Le marché de l'emploi commence-t-il à craquer?", "en": "Is the US jobs market starting to crack?" },
-          "url": "https://money.whatfinger.com/2026/03/14/is-the-us-jobs-market-starting-to-crack-steven-rattner-on-tariffs-ai-and-stagflation/",
-          "theme": "trade",
-          "time": "1j",
-          "impact": "high",
-          "source": "Bloomberg"
-        },
-        {
-          "title": { "fr": "La Fed maintient les taux à 3,50-3,75% face à l'incertitude", "en": "Fed holds rates at 3.50-3.75% amid uncertainty" },
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm",
-          "theme": "monetary",
-          "time": "6s",
-          "impact": "medium",
-          "source": "Federal Reserve"
-        },
-        {
-          "title": { "fr": "Les tarifs ont graduellement fait monter les prix de détail en 2025", "en": "Tariffs gradually raised retail prices in 2025" },
-          "url": "https://www.federalreserve.gov/econres/notes/feds-notes/the-slow-climb-how-tariffs-gradually-raised-retail-prices-in-2025-20260305.htm",
-          "theme": "trade",
-          "time": "10j",
-          "impact": "medium",
-          "source": "Federal Reserve"
-        },
-        {
-          "title": { "fr": "Nouvelles enquêtes Section 301 — risque d'escalade tarifaire", "en": "New Section 301 investigations — tariff escalation risk" },
-          "url": "https://budgetlab.yale.edu/research/state-tariffs-march-9-2026",
-          "theme": "trade",
-          "time": "6j",
-          "impact": "medium",
-          "source": "Yale Budget Lab"
-        },
-        {
-          "title": { "fr": "Trump déclare l'inflation maîtrisée, le conflit iranien menace", "en": "Trump declares inflation tamed, Iran conflict threatens" },
-          "url": "https://www.cnbc.com/2026/03/02/as-trump-declares-inflation-tamed-iran-conflict-threatens-new-price-pressures.html",
+          "title": {
+            "fr": "Nissan’s new hybrid is a U.S.-first that mixes EV driving with a gas engine",
+            "en": "Nissan’s new hybrid is a U.S.-first that mixes EV driving with a gas engine"
+          },
+          "url": "https://www.cnbc.com/2026/03/21/nissan-series-hybrid-rogue-suv.html",
           "theme": "energy",
-          "time": "13j",
-          "impact": "medium",
+          "time": "15h",
+          "impact": "low",
           "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "US lifts sanctions on some Iranian oil as energy prices soar",
+            "en": "US lifts sanctions on some Iranian oil as energy prices soar"
+          },
+          "url": "https://www.bbc.com/news/articles/c9d415g55nno?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "16h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "'Marriage penalty' in Washington state's new millionaire tax stirs debate",
+            "en": "'Marriage penalty' in Washington state's new millionaire tax stirs debate"
+          },
+          "url": "https://www.cnbc.com/2026/03/20/washington-millionaire-tax-marriage.html",
+          "theme": "tech",
+          "time": "1j",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Trump-backed television merger moves forward",
+            "en": "Trump-backed television merger moves forward"
+          },
+          "url": "https://www.bbc.com/news/articles/cx2dndp7z12o?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "1j",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Work from home and drive more slowly to save energy, global body urges",
+            "en": "Work from home and drive more slowly to save energy, global body urges"
+          },
+          "url": "https://www.bbc.com/news/articles/cvg4540d0g4o?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "1j",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Typical energy bill forecast to rise by £332 a year in July",
+            "en": "Typical energy bill forecast to rise by £332 a year in July"
+          },
+          "url": "https://www.bbc.com/news/articles/cede1nn8wp5o?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "1j",
+          "impact": "medium",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "How the Iran war may affect your money and bills",
+            "en": "How the Iran war may affect your money and bills"
+          },
+          "url": "https://www.bbc.com/news/articles/c2e4ygndjpwo?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "1j",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Why are gas prices soaring and how could it affect you?",
+            "en": "Why are gas prices soaring and how could it affect you?"
+          },
+          "url": "https://www.bbc.com/news/articles/cj6d66w0995o?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "1j",
+          "impact": "low",
+          "source": "BBC Business"
         }
       ]
     },
     "CN": {
-      "name": { "fr": "Chine", "en": "China" },
+      "name": {
+        "fr": "Chine",
+        "en": "China"
+      },
       "flag": "🇨🇳",
       "sentiment": {
         "value": "neutral",
-        "label": { "fr": "Neutre", "en": "Neutral" },
+        "label": {
+          "fr": "Neutre",
+          "en": "Neutral"
+        },
         "reason": {
           "fr": "Cible de croissance la plus basse depuis les années 90, mais stimulus budgétaire et excédent commercial record",
           "en": "Lowest growth target since the 90s, but fiscal stimulus and record trade surplus"
         }
       },
       "indicators": {
-        "gdp": { "value": 4.5, "unit": "%", "trend": "down", "period": "2026 cible", "source": "Conseil d'État" },
-        "inflation": { "value": 0.4, "unit": "%", "trend": "up", "period": "Fév. 2026", "source": "NBS" },
-        "rate": { "value": 3.0, "unit": "%", "trend": "down", "period": "2026", "source": "PBoC" },
-        "exchange": { "value": 6.907, "unit": "CNY/USD", "trend": "down", "period": "15 mars 2026", "source": "PBoC" },
-        "stockIndex": { "name": "SSE Composite", "value": 4096, "trend": "down", "change": -0.80, "period": "13 mars 2026" }
+        "gdp": {
+          "value": 4.5,
+          "unit": "%",
+          "trend": "down",
+          "period": "2026 cible",
+          "source": "Conseil d'État"
+        },
+        "inflation": {
+          "value": 0.4,
+          "unit": "%",
+          "trend": "up",
+          "period": "Fév. 2026",
+          "source": "NBS"
+        },
+        "rate": {
+          "value": 3.0,
+          "unit": "%",
+          "trend": "down",
+          "period": "2026",
+          "source": "PBoC"
+        },
+        "exchange": {
+          "value": 6.894,
+          "unit": "CNY/USD",
+          "trend": "up",
+          "period": "2026-03-20",
+          "source": "Frankfurter/ECB"
+        },
+        "stockIndex": {
+          "name": "SSE Composite",
+          "value": 3957,
+          "trend": "down",
+          "change": -1.24,
+          "period": "2026-03-22"
+        }
       },
       "sparkline": {
-        "label": { "fr": "Yuan/USD (12 mois)", "en": "Yuan/USD (12 months)" },
-        "data": [7.24, 7.20, 7.15, 7.10, 7.05, 7.00, 6.95, 6.90, 6.88, 6.85, 6.90, 6.91]
+        "label": {
+          "fr": "Yuan/USD (12 mois)",
+          "en": "Yuan/USD (12 months)"
+        },
+        "data": [
+          7.2702,
+          7.2714,
+          7.1998,
+          7.1621,
+          7.2118,
+          7.1345,
+          7.1196,
+          7.1206,
+          7.0718,
+          6.9937,
+          6.9434,
+          6.8825
+        ]
       },
       "summary": {
         "fr": "Pékin fixe son objectif de croissance le plus bas depuis les années 1990 (4,5-5%), reconnaissant les défis structurels. Déflation persistante (IPC à 0,4%) malgré 1 300 Mds de yuans en obligations spéciales. Le plan quinquennal mise sur la qualité plutôt que la quantité. L'excédent commercial dépasse 1 000 Mds USD, mais les tensions avec Washington restent vives avec de nouvelles enquêtes Section 301.",
@@ -298,76 +729,168 @@
       },
       "headlines": [
         {
-          "title": { "fr": "Pékin fixe sa cible de croissance la plus basse depuis les années 90 : 4,5-5%", "en": "Beijing sets lowest growth target since the 90s: 4.5-5%" },
-          "url": "https://www.cnbc.com/2026/03/06/china-economy-gdp-growth-target-lowest-in-decades-tariffs-deflation-.html",
+          "title": {
+            "fr": "China to stockpile critical resources and strengthen energy security to avoid trade shocks",
+            "en": "China to stockpile critical resources and strengthen energy security to avoid trade shocks"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3347132/china-stockpile-critical-resources-and-strengthen-energy-security-avoid-trade-shocks?utm_source=rss_feed",
           "theme": "trade",
-          "time": "9j",
-          "impact": "high",
-          "source": "CNBC"
+          "time": "<1h",
+          "impact": "low",
+          "source": "SCMP"
         },
         {
-          "title": { "fr": "La Chine dénonce l'enquête commerciale de Trump et approuve le plan quinquennal", "en": "China slams Trump's trade probe, approves five-year plan" },
-          "url": "https://www.npr.org/2026/03/12/nx-s1-5746061/us-china-trade-five-year-plan",
+          "title": {
+            "fr": "Could ultra-precise harvest forecast give China an advantage in Iran war fallout?",
+            "en": "Could ultra-precise harvest forecast give China an advantage in Iran war fallout?"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3347290/could-ultra-precise-harvest-forecast-give-china-advantage-iran-war-fallout?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "3j",
+          "time": "2h",
           "impact": "high",
-          "source": "NPR"
+          "source": "SCMP"
         },
         {
-          "title": { "fr": "Le FMI relève sa prévision de croissance chinoise à 4,5%", "en": "IMF raises China's 2026 growth forecast to 4.5%" },
-          "url": "https://www.scmp.com/economy/china-economy/article/3340419/imf-raises-chinas-2026-growth-forecast-45-citing-us-truce-and-stimulus-roll-out",
-          "theme": "trade",
-          "time": "2s",
+          "title": {
+            "fr": "In Kunshan, China’s Foxconn nerve centre, old tech tries to learn new tricks",
+            "en": "In Kunshan, China’s Foxconn nerve centre, old tech tries to learn new tricks"
+          },
+          "url": "https://www.scmp.com/economy/china-economy/article/3347381/kunshan-chinas-foxconn-nerve-centre-old-tech-tries-learn-new-tricks?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "6h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China reports ‘stunning’ critical minerals finds as hi-tech race with US heats up",
+            "en": "China reports ‘stunning’ critical minerals finds as hi-tech race with US heats up"
+          },
+          "url": "https://www.scmp.com/news/china/article/3347436/china-reports-stunning-critical-minerals-finds-hi-tech-race-us-heats?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "13h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Does the USS Tripoli’s deployment to the Middle East create a strategic opening for China?",
+            "en": "Does the USS Tripoli’s deployment to the Middle East create a strategic opening for China?"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3347438/does-uss-tripolis-deployment-middle-east-create-strategic-opening-china?utm_source=rss_feed",
+          "theme": "monetary",
+          "time": "14h",
           "impact": "medium",
           "source": "SCMP"
         },
         {
-          "title": { "fr": "1 300 Mds de yuans en obligations spéciales pour stimuler l'économie", "en": "1.3T yuan in special bonds to stimulate the economy" },
-          "url": "https://english.news.cn/20260306/42d1bb0eebd54ebba5aca2d3b8499d2b/c.html",
-          "theme": "monetary",
-          "time": "9j",
-          "impact": "medium",
-          "source": "Xinhua"
-        },
-        {
-          "title": { "fr": "Li Qiang reconnaît l'impact des tarifs US sur l'économie chinoise", "en": "Li Qiang acknowledges US tariff impact on Chinese economy" },
-          "url": "https://www.cnbc.com/2026/03/06/china-economy-gdp-growth-target-lowest-in-decades-tariffs-deflation-.html",
-          "theme": "trade",
-          "time": "9j",
-          "impact": "medium",
-          "source": "CNBC"
-        },
-        {
-          "title": { "fr": "Goldman Sachs prévoit une croissance de 4,8% portée par les exportations", "en": "Goldman Sachs forecasts 4.8% growth driven by exports" },
-          "url": "https://www.goldmansachs.com/insights/articles/chinas-economy-expected-to-grow-in-2026-amid-surging-exports",
-          "theme": "trade",
-          "time": "3s",
+          "title": {
+            "fr": "China, India and why Jeffrey Sachs says the US needs to make the UN great again",
+            "en": "China, India and why Jeffrey Sachs says the US needs to make the UN great again"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3347428/china-india-and-why-jeffrey-sachs-says-us-needs-make-un-great-again?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "15h",
           "impact": "low",
-          "source": "Goldman Sachs"
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Could Taiwan’s military continue to fight after an Iran-like decapitation?",
+            "en": "Could Taiwan’s military continue to fight after an Iran-like decapitation?"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3347431/could-taiwans-military-continue-fight-after-iran-decapitation?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "16h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China decries ‘unjust war’ on Iran as it calls for immediate ceasefire",
+            "en": "China decries ‘unjust war’ on Iran as it calls for immediate ceasefire"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3347418/china-decries-unjust-war-iran-it-calls-immediate-ceasefire?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "17h",
+          "impact": "high",
+          "source": "SCMP"
         }
       ]
     },
     "IN": {
-      "name": { "fr": "Inde", "en": "India" },
+      "name": {
+        "fr": "Inde",
+        "en": "India"
+      },
       "flag": "🇮🇳",
       "sentiment": {
         "value": "positive",
-        "label": { "fr": "Positif", "en": "Positive" },
+        "label": {
+          "fr": "Positif",
+          "en": "Positive"
+        },
         "reason": {
           "fr": "Croissance robuste à 7,5%, demande intérieure forte, mais risques liés au pétrole et à la guerre en Iran",
           "en": "Robust 7.5% growth, strong domestic demand, but oil and Iran war risks"
         }
       },
       "indicators": {
-        "gdp": { "value": 7.5, "unit": "%", "trend": "up", "period": "FY26F", "source": "Fitch Ratings" },
-        "inflation": { "value": 2.7, "unit": "%", "trend": "up", "period": "Jan. 2026", "source": "MoSPI" },
-        "rate": { "value": 5.25, "unit": "%", "trend": "stable", "period": "Fév. 2026", "source": "RBI" },
-        "exchange": { "value": 92.54, "unit": "INR/USD", "trend": "down", "period": "13 mars 2026", "source": "RBI" },
-        "stockIndex": { "name": "SENSEX", "value": 74564, "trend": "down", "change": -1.93, "period": "13 mars 2026" }
+        "gdp": {
+          "value": 7.5,
+          "unit": "%",
+          "trend": "up",
+          "period": "FY26F",
+          "source": "Fitch Ratings"
+        },
+        "inflation": {
+          "value": 2.7,
+          "unit": "%",
+          "trend": "up",
+          "period": "Jan. 2026",
+          "source": "MoSPI"
+        },
+        "rate": {
+          "value": 5.25,
+          "unit": "%",
+          "trend": "stable",
+          "period": "Fév. 2026",
+          "source": "RBI"
+        },
+        "exchange": {
+          "value": 93.62,
+          "unit": "INR/USD",
+          "trend": "stable",
+          "period": "2026-03-20",
+          "source": "Frankfurter/ECB"
+        },
+        "stockIndex": {
+          "name": "SENSEX",
+          "value": 74533,
+          "trend": "up",
+          "change": 0.44,
+          "period": "2026-03-22"
+        }
       },
       "sparkline": {
-        "label": { "fr": "Croissance PIB (trimestres)", "en": "GDP Growth (quarters)" },
-        "data": [8.2, 6.7, 5.4, 6.2, 7.0, 7.2, 7.4, 7.5, 7.6, 7.4, 7.3, 7.5]
+        "label": {
+          "fr": "Croissance PIB (trimestres)",
+          "en": "GDP Growth (quarters)"
+        },
+        "data": [
+          81451.01,
+          83606.46,
+          81185.58,
+          79809.65,
+          80267.62,
+          83938.71,
+          85706.67,
+          85220.6,
+          82269.78,
+          81287.19,
+          74532.96,
+          74532.96
+        ]
       },
       "summary": {
         "fr": "L'Inde reste la grande économie à la croissance la plus rapide au monde. Fitch relève sa prévision à 7,5% pour FY26, portée par la consommation (+8,6%) et l'investissement (+6,9%). Mais la guerre en Iran menace : la roupie atteint des records de faiblesse (92,54/USD), les investisseurs étrangers ont vendu 49 Mds USD d'actions indiennes en mars. L'inflation, encore basse (2,7%), devrait remonter vers 4,5% d'ici fin 2026.",
@@ -375,76 +898,166 @@
       },
       "headlines": [
         {
-          "title": { "fr": "Fitch relève la prévision de croissance de l'Inde à 7,5%", "en": "Fitch raises India's growth forecast to 7.5%" },
-          "url": "https://www.business-standard.com/economy/news/fitch-ratings-increases-india-s-gdp-growth-estimate-for-fy26-to-7-5-126031300823_1.html",
-          "theme": "trade",
-          "time": "2j",
-          "impact": "high",
-          "source": "Business Standard"
-        },
-        {
-          "title": { "fr": "L'économie indienne menacée si le conflit au Moyen-Orient persiste", "en": "India's economy at risk if Middle East conflict persists" },
-          "url": "https://www.bloomberg.com/news/articles/2026-03-02/india-s-economy-at-risk-if-middle-east-conflict-persists",
+          "title": {
+            "fr": "Cricket’s children in war-torn Beirut",
+            "en": "Cricket’s children in war-torn Beirut"
+          },
+          "url": "https://economictimes.indiatimes.com/news/sports/crickets-children-in-war-torn-beirut-a-new-sport-a-new-break-for-lebanon-kids-who-escaped-battles-and-bombing/articleshow/129727855.cms",
           "theme": "geopolitics",
-          "time": "13j",
+          "time": "<1h",
           "impact": "high",
-          "source": "Bloomberg"
+          "source": "Economic Times"
         },
         {
-          "title": { "fr": "La RBI maintient le taux repo à 5,25%, relève les prévisions de PIB à 7,4%", "en": "RBI holds repo rate at 5.25%, raises GDP outlook to 7.4%" },
-          "url": "https://www.theweek.in/news/biz-tech/2026/02/06/mpc-feb-2026-rbi-holds-repo-rate-at-525percent-lifts-gdp-outlook-to-74percent-on-robust-demand.html",
-          "theme": "monetary",
-          "time": "5s",
-          "impact": "medium",
-          "source": "The Week"
-        },
-        {
-          "title": { "fr": "La roupie atteint un nouveau record de faiblesse à 92,54/USD", "en": "Rupee hits fresh record low at 92.54/USD" },
-          "url": "https://tradingeconomics.com/india/currency",
-          "theme": "monetary",
-          "time": "2j",
-          "impact": "high",
-          "source": "Trading Economics"
-        },
-        {
-          "title": { "fr": "Sortie massive de capitaux étrangers : 49 Mds USD en mars", "en": "Massive foreign capital outflow: $49B in March" },
-          "url": "https://www.business-standard.com/markets/news/stock-market-live-march-10-nse-bse-sensex-today-nifty-gift-nifty-crude-oil-prices-us-israel-iran-tension-ipo-share-market-today-126031000078_1.html",
-          "theme": "monetary",
-          "time": "5j",
-          "impact": "high",
-          "source": "Business Standard"
-        },
-        {
-          "title": { "fr": "Fitch prévoit le pétrole à 70$/baril en 2026 — scénario de base", "en": "Fitch projects oil at $70/barrel in 2026 — baseline scenario" },
-          "url": "https://www.millenniumpost.in/business/fitch-ups-indias-gdp-growth-estimate-for-fy26-projects-70barrel-oil-in-2026-651758",
+          "title": {
+            "fr": "India faces energy risk as Hormuz tensions rise",
+            "en": "India faces energy risk as Hormuz tensions rise"
+          },
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/strait-of-hormuz-disruption-could-hit-indias-lpg-supplies-refined-product-markets-more-vulnerable-than-crude-oil-markets-report/articleshow/129727371.cms",
           "theme": "energy",
-          "time": "2j",
+          "time": "2h",
           "impact": "medium",
-          "source": "Millennium Post"
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Trump’s Iran moves raise questions over endgame",
+            "en": "Trump’s Iran moves raise questions over endgame"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/trumps-mixed-messages-on-iran-winding-down-the-war-and-easing-sanctions-but-adding-more-troops/articleshow/129727327.cms",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Trump's ballroom architect, roasting in hot seat",
+            "en": "Trump's ballroom architect, roasting in hot seat"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/trumps-ballroom-architect-roasting-in-the-hot-seat/articleshow/129727221.cms",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Consumer cos hike prices amid rising cost of war",
+            "en": "Consumer cos hike prices amid rising cost of war"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/cons-products/fmcg/consumer-cos-hike-prices-amid-rising-cost-of-iran-war/articleshow/129724338.cms",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "'India well positioned to for future investments'",
+            "en": "'India well positioned to for future investments'"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/india-is-well-positioned-to-attract-future-investments-patrick-johnson-president-lilly-international/articleshow/129724160.cms",
+          "theme": "tech",
+          "time": "9h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Govt doubles LPG supply to commercial users",
+            "en": "Govt doubles LPG supply to commercial users"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/west-asia-war-centre-doubles-lpg-supply-to-commercial-users-to-ease-pressure/articleshow/129723630.cms",
+          "theme": "tech",
+          "time": "10h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Trump’s Iran war exposes limits of ‘Yes sir’ cabinet",
+            "en": "Trump’s Iran war exposes limits of ‘Yes sir’ cabinet"
+          },
+          "url": "https://economictimes.indiatimes.com/news/defence/trumps-iran-war-drive-exposes-limits-of-yes-sir-cabinet/articleshow/129722477.cms",
+          "theme": "geopolitics",
+          "time": "11h",
+          "impact": "high",
+          "source": "Economic Times"
         }
       ]
     },
     "WORLD": {
-      "name": { "fr": "Monde", "en": "World" },
+      "name": {
+        "fr": "Monde",
+        "en": "World"
+      },
       "flag": "🌍",
       "sentiment": {
         "value": "negative",
-        "label": { "fr": "Négatif", "en": "Negative" },
+        "label": {
+          "fr": "Négatif",
+          "en": "Negative"
+        },
         "reason": {
           "fr": "Guerre en Iran, détroit d'Ormuz fermé, pétrole à 90$+, fragmentation commerciale",
           "en": "Iran war, Strait of Hormuz closed, oil at $90+, trade fragmentation"
         }
       },
       "indicators": {
-        "gdp": { "value": 3.2, "unit": "%", "trend": "down", "period": "2026F", "source": "FMI" },
-        "inflation": { "value": 4.2, "unit": "%", "trend": "up", "period": "2026F", "source": "FMI" },
-        "rate": { "value": null, "unit": "", "trend": "stable", "period": "", "source": "" },
-        "exchange": { "value": null, "unit": "", "trend": "stable", "period": "", "source": "" },
-        "stockIndex": { "name": "MSCI World", "value": 4438, "trend": "down", "change": -2.10, "period": "10 mars 2026" }
+        "gdp": {
+          "value": 3.2,
+          "unit": "%",
+          "trend": "down",
+          "period": "2026F",
+          "source": "FMI"
+        },
+        "inflation": {
+          "value": 4.2,
+          "unit": "%",
+          "trend": "up",
+          "period": "2026F",
+          "source": "FMI"
+        },
+        "rate": {
+          "value": null,
+          "unit": "",
+          "trend": "stable",
+          "period": "",
+          "source": ""
+        },
+        "exchange": {
+          "value": null,
+          "unit": "",
+          "trend": "stable",
+          "period": "",
+          "source": ""
+        },
+        "stockIndex": {
+          "name": "MSCI World",
+          "value": 137,
+          "trend": "down",
+          "change": -2.04,
+          "period": "2026-03-22"
+        }
       },
       "sparkline": {
-        "label": { "fr": "Pétrole Brent (12 mois, USD/baril)", "en": "Brent Oil (12 months, USD/barrel)" },
-        "data": [82, 78, 75, 72, 68, 65, 68, 70, 72, 69, 68, 90]
+        "label": {
+          "fr": "Pétrole Brent (12 mois, USD/baril)",
+          "en": "Brent Oil (12 months, USD/barrel)"
+        },
+        "data": [
+          63.12,
+          63.9,
+          72.53,
+          68.12,
+          67.02,
+          65.07,
+          63.2,
+          60.85,
+          70.69,
+          106.41
+        ]
       },
       "summary": {
         "fr": "Le choc géopolitique majeur de mars 2026 est la guerre contre l'Iran menée par les États-Unis et Israël. Le détroit d'Ormuz — par lequel transite 20% du pétrole mondial — est effectivement fermé depuis 11 jours. Le Brent est passé de moins de 70$ à un pic de 120$ avant de se stabiliser autour de 90$. Le FMI estime que chaque hausse de 10% du pétrole ajoute 0,4 pp à l'inflation mondiale et retire 0,15 pp de croissance. La fragmentation commerciale s'accélère.",
@@ -452,60 +1065,92 @@
       },
       "headlines": [
         {
-          "title": { "fr": "Le choc de la guerre en Iran se propage dans l'économie mondiale", "en": "Iran war shocks ripple through the global economy" },
-          "url": "https://www.euronews.com/business/2026/03/10/iran-war-shocks-continue-to-ripple-through-the-global-economy",
+          "title": {
+            "fr": "What we know about Iran’s latest attacks on Israel",
+            "en": "What we know about Iran’s latest attacks on Israel"
+          },
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/22/what-we-know-about-irans-latest-attacks-on-israel?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "5j",
-          "impact": "high",
-          "source": "Euronews"
+          "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
         },
         {
-          "title": { "fr": "Le pétrole oscille violemment entre 70$ et 120$ — incertitude maximale", "en": "Oil swings wildly between $70 and $120 — peak uncertainty" },
-          "url": "https://www.aljazeera.com/economy/2026/3/11/oil-prices-swing-wildly-amid-mixed-messages-over-iran-war",
-          "theme": "energy",
-          "time": "4j",
+          "title": {
+            "fr": "Will the Houthis join Iran in war against Israel and the US?",
+            "en": "Will the Houthis join Iran in war against Israel and the US?"
+          },
+          "url": "https://www.aljazeera.com/video/inside-story/2026/3/22/will-the-houthis-join-iran-in-war-against-israel-and-the-us?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "2h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
-          "title": { "fr": "Le prix mondial de la guerre au Moyen-Orient — analyse du WEF", "en": "The global price tag of war in the Middle East — WEF analysis" },
-          "url": "https://www.weforum.org/stories/2026/03/the-global-price-tag-of-war-in-the-middle-east/",
+          "title": {
+            "fr": "Trump issues 48-hour Hormuz Strait ultimatum, threatens Iran power plants",
+            "en": "Trump issues 48-hour Hormuz Strait ultimatum, threatens Iran power plants"
+          },
+          "url": "https://www.aljazeera.com/news/2026/3/22/trump-issues-48-hour-hormuz-strait-ultimatum-threatens-iran-power-plants?traffic_source=rss",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Robert Mueller, ex-FBI chief who led Trump-Russia investigation, dies at 81",
+            "en": "Robert Mueller, ex-FBI chief who led Trump-Russia investigation, dies at 81"
+          },
+          "url": "https://www.bbc.com/news/articles/c8dlj6gv0q6o?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
-          "time": "1s",
-          "impact": "high",
-          "source": "World Economic Forum"
+          "time": "3h",
+          "impact": "low",
+          "source": "BBC World"
         },
         {
-          "title": { "fr": "Le conflit au Moyen-Orient perturbe le transport maritime et les prix du pétrole", "en": "Middle East conflict disrupts shipping and oil prices" },
-          "url": "https://www.weforum.org/stories/2026/03/us-trade-deficit-international-trade-stories-march-2026/",
-          "theme": "energy",
-          "time": "1s",
-          "impact": "medium",
-          "source": "WEF"
-        },
-        {
-          "title": { "fr": "Chatham House : comment la guerre en Iran affecte l'économie mondiale", "en": "Chatham House: how the Iran war affects the global economy" },
-          "url": "https://www.chathamhouse.org/2026/03/how-will-iran-war-affect-global-economy",
+          "title": {
+            "fr": "Trump at a crossroads as US weighs tough options in Iran",
+            "en": "Trump at a crossroads as US weighs tough options in Iran"
+          },
+          "url": "https://www.bbc.com/news/articles/clyxv87zwwpo?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
-          "time": "1s",
-          "impact": "medium",
-          "source": "Chatham House"
+          "time": "3h",
+          "impact": "low",
+          "source": "BBC World"
         },
         {
-          "title": { "fr": "Fitch : la croissance mondiale stable si le choc pétrolier est de courte durée", "en": "Fitch: global growth steady if oil shock is short-lived" },
-          "url": "https://aninews.in/news/business/global-growth-to-continue-at-steady-pace-if-oil-price-shock-short-lived-fitch20260315153810/",
-          "theme": "energy",
-          "time": "1j",
-          "impact": "medium",
-          "source": "Fitch Ratings"
+          "title": {
+            "fr": "AI videos of sexualised black women removed from TikTok after BBC investigation",
+            "en": "AI videos of sexualised black women removed from TikTok after BBC investigation"
+          },
+          "url": "https://www.bbc.com/news/articles/c070e283k8vo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
+          "source": "BBC World"
         },
         {
-          "title": { "fr": "PBS : la guerre en Iran livre des prix pétroliers élevés et un nouveau choc économique", "en": "PBS: War with Iran delivers high oil prices and another shock" },
-          "url": "https://www.pbs.org/newshour/world/war-with-iran-delivers-high-oil-prices-and-another-shock-to-the-global-economy",
-          "theme": "energy",
-          "time": "1s",
+          "title": {
+            "fr": "Iran war live: Trump threatens to attack power plants over Strait of Hormuz",
+            "en": "Iran war live: Trump threatens to attack power plants over Strait of Hormuz"
+          },
+          "url": "https://www.aljazeera.com/news/liveblog/2026/3/22/iran-war-live-trump-threatens-attacks-on-power-plants-over-hormuz-strait?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "4h",
           "impact": "high",
-          "source": "PBS"
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "‘They want to colonise us’: Brazil’s Lula warns of foreign interference",
+            "en": "‘They want to colonise us’: Brazil’s Lula warns of foreign interference"
+          },
+          "url": "https://www.aljazeera.com/news/2026/3/21/they-want-to-colonise-us-brazils-lula-warns-of-foreign-interference?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "4h",
+          "impact": "high",
+          "source": "Al Jazeera"
         }
       ]
     }
@@ -585,62 +1230,117 @@
   "timeline": [
     {
       "date": "2026-02-28",
-      "title": { "fr": "Les États-Unis et Israël lancent des frappes contre l'Iran", "en": "US and Israel launch strikes against Iran" },
-      "regions": ["US", "WORLD"],
+      "title": {
+        "fr": "Les États-Unis et Israël lancent des frappes contre l'Iran",
+        "en": "US and Israel launch strikes against Iran"
+      },
+      "regions": [
+        "US",
+        "WORLD"
+      ],
       "theme": "geopolitics"
     },
     {
       "date": "2026-03-01",
-      "title": { "fr": "Le détroit d'Ormuz effectivement fermé — pétrole à 100$+", "en": "Strait of Hormuz effectively closed — oil above $100" },
-      "regions": ["WORLD"],
+      "title": {
+        "fr": "Le détroit d'Ormuz effectivement fermé — pétrole à 100$+",
+        "en": "Strait of Hormuz effectively closed — oil above $100"
+      },
+      "regions": [
+        "WORLD"
+      ],
       "theme": "energy"
     },
     {
       "date": "2026-03-03",
-      "title": { "fr": "Pétrole Brent atteint un pic à 120$/baril", "en": "Brent oil peaks at $120/barrel" },
-      "regions": ["WORLD"],
+      "title": {
+        "fr": "Pétrole Brent atteint un pic à 120$/baril",
+        "en": "Brent oil peaks at $120/barrel"
+      },
+      "regions": [
+        "WORLD"
+      ],
       "theme": "energy"
     },
     {
       "date": "2026-03-05",
-      "title": { "fr": "Bloomberg : les tarifs US ont amputé le PIB canadien de 1,5-2%", "en": "Bloomberg: US tariffs cut Canadian GDP by 1.5-2%" },
-      "regions": ["CA", "US"],
+      "title": {
+        "fr": "Bloomberg : les tarifs US ont amputé le PIB canadien de 1,5-2%",
+        "en": "Bloomberg: US tariffs cut Canadian GDP by 1.5-2%"
+      },
+      "regions": [
+        "CA",
+        "US"
+      ],
       "theme": "trade"
     },
     {
       "date": "2026-03-06",
-      "title": { "fr": "Pékin fixe sa cible de croissance la plus basse depuis les années 90", "en": "Beijing sets lowest growth target since the 90s" },
-      "regions": ["CN"],
+      "title": {
+        "fr": "Pékin fixe sa cible de croissance la plus basse depuis les années 90",
+        "en": "Beijing sets lowest growth target since the 90s"
+      },
+      "regions": [
+        "CN"
+      ],
       "theme": "trade"
     },
     {
       "date": "2026-03-07",
-      "title": { "fr": "Statistique Canada : perte de 83 900 emplois en février", "en": "Statistics Canada: 83,900 jobs lost in February" },
-      "regions": ["CA"],
+      "title": {
+        "fr": "Statistique Canada : perte de 83 900 emplois en février",
+        "en": "Statistics Canada: 83,900 jobs lost in February"
+      },
+      "regions": [
+        "CA"
+      ],
       "theme": "trade"
     },
     {
       "date": "2026-03-10",
-      "title": { "fr": "Trump annonce que la guerre en Iran pourrait bientôt se terminer", "en": "Trump says Iran war may end soon" },
-      "regions": ["US", "WORLD"],
+      "title": {
+        "fr": "Trump annonce que la guerre en Iran pourrait bientôt se terminer",
+        "en": "Trump says Iran war may end soon"
+      },
+      "regions": [
+        "US",
+        "WORLD"
+      ],
       "theme": "geopolitics"
     },
     {
       "date": "2026-03-11",
-      "title": { "fr": "USTR lance de nouvelles enquêtes Section 301 contre la Chine", "en": "USTR launches new Section 301 investigations against China" },
-      "regions": ["US", "CN"],
+      "title": {
+        "fr": "USTR lance de nouvelles enquêtes Section 301 contre la Chine",
+        "en": "USTR launches new Section 301 investigations against China"
+      },
+      "regions": [
+        "US",
+        "CN"
+      ],
       "theme": "trade"
     },
     {
       "date": "2026-03-13",
-      "title": { "fr": "Fitch relève la prévision de croissance de l'Inde à 7,5%", "en": "Fitch raises India's growth forecast to 7.5%" },
-      "regions": ["IN"],
+      "title": {
+        "fr": "Fitch relève la prévision de croissance de l'Inde à 7,5%",
+        "en": "Fitch raises India's growth forecast to 7.5%"
+      },
+      "regions": [
+        "IN"
+      ],
       "theme": "trade"
     },
     {
       "date": "2026-03-14",
-      "title": { "fr": "Trump cherche 1 600 Mds$ de nouveaux revenus tarifaires", "en": "Trump seeks $1.6T in new tariff revenue" },
-      "regions": ["US", "WORLD"],
+      "title": {
+        "fr": "Trump cherche 1 600 Mds$ de nouveaux revenus tarifaires",
+        "en": "Trump seeks $1.6T in new tariff revenue"
+      },
+      "regions": [
+        "US",
+        "WORLD"
+      ],
       "theme": "trade"
     }
   ]
