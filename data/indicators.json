@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25",
+  "lastUpdated": "2026-03-26",
   "regions": {
     "CA": {
       "name": {
@@ -49,10 +49,10 @@
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 32415,
-          "trend": "up",
-          "change": 1.48,
-          "period": "2026-03-25"
+          "value": 32385,
+          "trend": "stable",
+          "change": 0.01,
+          "period": "2026-03-26"
         }
       },
       "sparkline": {
@@ -82,21 +82,32 @@
       "headlines": [
         {
           "title": {
-            "fr": "Brookfield et La Caisse achètent le producteur d’énergie renouvelable Boralex",
-            "en": "Brookfield et La Caisse achètent le producteur d’énergie renouvelable Boralex"
+            "fr": "Fuel-thirsty Asian countries line up for Russian oil, with demand possibly exceeding supply",
+            "en": "Fuel-thirsty Asian countries line up for Russian oil, with demand possibly exceeding supply"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2241623/brookfield-caisse-achat-boralex",
+          "url": "https://www.theglobeandmail.com/business/article-iran-war-asia-oil-russia/",
           "theme": "energy",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Impôts de Gilles Vaillancourt : le ministre Champagne devra témoigner",
+            "en": "Impôts de Gilles Vaillancourt : le ministre Champagne devra témoigner"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2241849/impots-gilles-vaillancourt-ministre-champagne-temoigner",
+          "theme": "tech",
           "time": "<1h",
           "impact": "low",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "L’Iran et Israël échangent des frappes, tractations en coulisses au Moyen-Orient",
-            "en": "L’Iran et Israël échangent des frappes, tractations en coulisses au Moyen-Orient"
+            "fr": "Iran : le Canada appelle le G7 à soutenir « collectivement » une désescalade",
+            "en": "Iran : le Canada appelle le G7 à soutenir « collectivement » une désescalade"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2241609/iran-israel-frappes-tractations-moyen-orient-trump",
+          "url": "https://ici.radio-canada.ca/nouvelle/2241845/canada-g7-iran-diplomatie-ormuz-anand",
           "theme": "geopolitics",
           "time": "<1h",
           "impact": "low",
@@ -104,10 +115,10 @@
         },
         {
           "title": {
-            "fr": "Brookfield and Caisse to acquire renewable power producer Boralex for $3.8-billion",
-            "en": "Brookfield and Caisse to acquire renewable power producer Boralex for $3.8-billion"
+            "fr": "Price surge for Alberta crude from Trans Mountain expansion highlights need for new pipelines, think tank says",
+            "en": "Price surge for Alberta crude from Trans Mountain expansion highlights need for new pipelines, think tank says"
           },
-          "url": "https://www.theglobeandmail.com/business/article-brookfield-and-caisse-to-acquire-renewable-power-producer-boralex-for/",
+          "url": "https://www.theglobeandmail.com/business/industry-news/energy-and-resources/article-mei-report-alberta-crude-price-trans-mountain-expansion-pipelines/",
           "theme": "energy",
           "time": "<1h",
           "impact": "high",
@@ -115,10 +126,10 @@
         },
         {
           "title": {
-            "fr": "How AI is levelling the playing field for small businesses",
-            "en": "How AI is levelling the playing field for small businesses"
+            "fr": "Using AI at work can lead to ‘brain fry’",
+            "en": "Using AI at work can lead to ‘brain fry’"
           },
-          "url": "https://www.theglobeandmail.com/business/careers/leadership/article-how-ai-is-levelling-the-playing-field-for-small-businesses/",
+          "url": "https://www.theglobeandmail.com/business/careers/talent/article-using-ai-at-work-can-lead-to-brain-fry/",
           "theme": "tech",
           "time": "<1h",
           "impact": "low",
@@ -126,45 +137,34 @@
         },
         {
           "title": {
-            "fr": "Fifty shades of green: Governments are on a mission to standardize climate labels on investments",
-            "en": "Fifty shades of green: Governments are on a mission to standardize climate labels on investments"
+            "fr": "How tech billionaires are alienating neighbours in Toronto’s idyllic Wychwood Park",
+            "en": "How tech billionaires are alienating neighbours in Toronto’s idyllic Wychwood Park"
           },
-          "url": "https://www.theglobeandmail.com/business/rob-magazine/article-fifty-shades-of-green-governments-are-on-a-mission-to-standardize/",
-          "theme": "trade",
+          "url": "https://www.theglobeandmail.com/business/rob-magazine/article-how-tech-billionaires-are-alienating-neighbours-in-torontos-idyllic/",
+          "theme": "tech",
+          "time": "<1h",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Le Canada a atteint les 2 % de son PIB en dépenses militaires, estime l’OTAN",
+            "en": "Le Canada a atteint les 2 % de son PIB en dépenses militaires, estime l’OTAN"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2241847/depenses-militaires-otan-hausse-canada-cible",
+          "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Un soldat de la Première Guerre mondiale identifié un siècle après sa mort",
-            "en": "Un soldat de la Première Guerre mondiale identifié un siècle après sa mort"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2241564/identification-soldat-henry-albert-detmold",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "high",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "De Gaspé à Montréal, parcourir 900 km pour obtenir un avortement",
-            "en": "De Gaspé à Montréal, parcourir 900 km pour obtenir un avortement"
+            "fr": "BRP hikes dividend after posting $45.8-million profit, revenue up 16%",
+            "en": "BRP hikes dividend after posting $45.8-million profit, revenue up 16%"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2240722/interruption-grossesse-region-acces",
-          "theme": "energy",
-          "time": "5h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "OpenAI blindsides Disney by dropping AI video tool Sora, sources say",
-            "en": "OpenAI blindsides Disney by dropping AI video tool Sora, sources say"
-          },
-          "url": "https://www.theglobeandmail.com/world/article-openai-sora-disney-chatgpt/",
-          "theme": "tech",
-          "time": "12h",
+          "url": "https://www.theglobeandmail.com/business/article-brp-fourth-quarter-results-earnings-dividend/",
+          "theme": "trade",
+          "time": "1h",
           "impact": "low",
           "source": "Globe and Mail"
         }
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 6616,
-          "trend": "up",
-          "change": 0.91,
-          "period": "2026-03-25"
+          "value": 6565,
+          "trend": "down",
+          "change": -0.41,
+          "period": "2026-03-26"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6845.5,
           6939.03,
           6878.88,
-          6556.37,
-          6616.0
+          6591.9,
+          6564.77
         ]
       },
       "summary": {
@@ -561,90 +561,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "Oil price falls as Trump talks up Iran peace negotiations",
-            "en": "Oil price falls as Trump talks up Iran peace negotiations"
+            "fr": "Olaplex to be acquired by German company Henkel in $1.4 billion deal",
+            "en": "Olaplex to be acquired by German company Henkel in $1.4 billion deal"
           },
-          "url": "https://www.bbc.com/news/articles/c995xp4jxj2o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.cnbc.com/2026/03/26/olaplex-acquired-henkel.html",
+          "theme": "trade",
+          "time": "<1h",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "UK forecast to see biggest hit to growth from Iran war out of major economies",
+            "en": "UK forecast to see biggest hit to growth from Iran war out of major economies"
+          },
+          "url": "https://www.bbc.com/news/articles/cgk0j71g417o?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
           "time": "<1h",
-          "impact": "medium",
+          "impact": "high",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "We need more plumbers and fewer lawyers in AI age, says BlackRock boss",
-            "en": "We need more plumbers and fewer lawyers in AI age, says BlackRock boss"
+            "fr": "NS&I set to pay millions to customers over misplaced funds",
+            "en": "NS&I set to pay millions to customers over misplaced funds"
           },
-          "url": "https://www.bbc.com/news/articles/c9wqrdkx8ppo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
+          "url": "https://www.bbc.com/news/articles/c3w3eg4n9zwo?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
           "time": "1h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "OpenAI closes Sora video-making app and cancels $1bn Disney deal",
-            "en": "OpenAI closes Sora video-making app and cancels $1bn Disney deal"
+            "fr": "UK CO2 plant to reopen in Iran war contingency plan",
+            "en": "UK CO2 plant to reopen in Iran war contingency plan"
           },
-          "url": "https://www.bbc.com/news/articles/c3w3e467ewqo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.com/news/articles/cew7xrj4497o?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "'A game-changing moment for social media' - what next for big tech after landmark addiction verdict?",
+            "en": "'A game-changing moment for social media' - what next for big tech after landmark addiction verdict?"
+          },
+          "url": "https://www.bbc.com/news/articles/c87wd0d84jqo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "8h",
+          "time": "4h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Oil traders bet millions minutes before Trump's Iran talks post",
-            "en": "Oil traders bet millions minutes before Trump's Iran talks post"
+            "fr": "Trump confirms May meeting with Xi Jinping as Iran war forces postponement",
+            "en": "Trump confirms May meeting with Xi Jinping as Iran war forces postponement"
           },
-          "url": "https://www.bbc.com/news/articles/cg547ljepvzo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.com/news/articles/c05dpr1m71go?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "6h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Rocket stocks soar on report Musk's SpaceX to file for share sale",
+            "en": "Rocket stocks soar on report Musk's SpaceX to file for share sale"
+          },
+          "url": "https://www.bbc.com/news/articles/c5y8d721q18o?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "11h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Octopus boss: We've seen a 50% rise in solar panel sales since start of Iran war",
+            "en": "Octopus boss: We've seen a 50% rise in solar panel sales since start of Iran war"
+          },
+          "url": "https://www.bbc.com/news/articles/c4gjlezq80no?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
           "time": "13h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "United ditches more economy seats to make room for bigger premium cabins with new layouts",
-            "en": "United ditches more economy seats to make room for bigger premium cabins with new layouts"
-          },
-          "url": "https://www.cnbc.com/2026/03/24/united-airlines-premium-seats.html",
-          "theme": "trade",
-          "time": "18h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Jamie Dimon says Iran war makes Middle East peace prospects better in the long term",
-            "en": "Jamie Dimon says Iran war makes Middle East peace prospects better in the long term"
-          },
-          "url": "https://www.cnbc.com/2026/03/24/jamie-dimon-iran-war-middle-east-peace-prospects-long-term.html",
-          "theme": "geopolitics",
-          "time": "19h",
           "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "What is happening to gas and electricity prices?",
-            "en": "What is happening to gas and electricity prices?"
-          },
-          "url": "https://www.bbc.com/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "21h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Reeves plans energy bill help for those 'who need it most'",
-            "en": "Reeves plans energy bill help for those 'who need it most'"
-          },
-          "url": "https://www.bbc.com/news/articles/cr516nmer5eo?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "22h",
-          "impact": "low",
           "source": "BBC Business"
         }
       ]
@@ -697,10 +697,10 @@
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 3932,
+          "value": 3889,
           "trend": "up",
-          "change": 3.11,
-          "period": "2026-03-25"
+          "change": 0.2,
+          "period": "2026-03-26"
         }
       },
       "sparkline": {
@@ -730,89 +730,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Pinduoduo operator’s profit slides as Chinese firm cites higher reinvestment",
-            "en": "Pinduoduo operator’s profit slides as Chinese firm cites higher reinvestment"
+            "fr": "UK blocks China wind turbine project on ‘national security’ amid tense business climate",
+            "en": "UK blocks China wind turbine project on ‘national security’ amid tense business climate"
           },
-          "url": "https://www.scmp.com/tech/big-tech/article/3347894/pinduoduo-operator-pdds-profit-slides-chinese-firm-cites-higher-reinvestment?utm_source=rss_feed",
-          "theme": "geopolitics",
+          "url": "https://www.scmp.com/economy/global-economy/article/3348039/uk-blocks-china-wind-turbine-project-national-security-amid-tense-business-climate?utm_source=rss_feed",
+          "theme": "monetary",
+          "time": "<1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China’s CNOOC to boost oil and gas output amid Middle East strife",
+            "en": "China’s CNOOC to boost oil and gas output amid Middle East strife"
+          },
+          "url": "https://www.scmp.com/business/article/3348035/chinas-cnooc-boost-oil-and-gas-output-amid-middle-east-strife?utm_source=rss_feed",
+          "theme": "energy",
           "time": "1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China names trillions of AI tokens after the yuan. Should the US worry for the dollar?",
-            "en": "China names trillions of AI tokens after the yuan. Should the US worry for the dollar?"
+            "fr": "As oil-shocked world turns to renewables, China will reap the rewards",
+            "en": "As oil-shocked world turns to renewables, China will reap the rewards"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3347887/china-names-trillions-ai-token-after-yuan-should-us-worry-dollar?utm_source=rss_feed",
-          "theme": "monetary",
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3347634/oil-shocked-world-turns-renewables-china-will-reap-rewards?utm_source=rss_feed",
+          "theme": "energy",
           "time": "1h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "African producers may have energy edge during Iran war, if they can overcome hurdles",
-            "en": "African producers may have energy edge during Iran war, if they can overcome hurdles"
+            "fr": "Germany’s Merz floats EU-China trade deal as European capitals soften on Beijing",
+            "en": "Germany’s Merz floats EU-China trade deal as European capitals soften on Beijing"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3347841/african-producers-may-have-energy-edge-during-iran-war-if-they-can-overcome-hurdles?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "high",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3348030/germanys-merz-floats-eu-china-trade-deal-capitals-soften-beijing?utm_source=rss_feed",
+          "theme": "trade",
+          "time": "1h",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Are US and China looking for ‘minimum stability’ after going through a ‘rough patch’?",
-            "en": "Are US and China looking for ‘minimum stability’ after going through a ‘rough patch’?"
+            "fr": "VW pulls Skoda brand from China after years of falling sales",
+            "en": "VW pulls Skoda brand from China after years of falling sales"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3347855/are-us-and-china-looking-minimum-stability-after-going-through-rough-patch?utm_source=rss_feed",
+          "url": "https://www.scmp.com/business/china-evs/article/3348007/vw-pulls-skoda-brand-china-after-years-falling-sales?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "3h",
-          "impact": "low",
+          "impact": "medium",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Amid struggles at home, 80% of Chinese companies in EU plan more investment",
-            "en": "Amid struggles at home, 80% of Chinese companies in EU plan more investment"
+            "fr": "What can the Iran war tell China about missile interception?",
+            "en": "What can the Iran war tell China about missile interception?"
           },
-          "url": "https://www.scmp.com/economy/china-economy/article/3347861/amid-struggles-home-80-chinese-companies-eu-plan-more-investment?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3347981/iran-war-shows-why-china-must-change-course-missile-interception-tech-analysis?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "4h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China-owned vessel secures rare Strait of Hormuz transit as Iran war grinds on",
-            "en": "China-owned vessel secures rare Strait of Hormuz transit as Iran war grinds on"
-          },
-          "url": "https://www.scmp.com/economy/global-economy/article/3347860/china-owned-vessel-secures-rare-strait-hormuz-transit-iran-war-grinds?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "4h",
+          "time": "3h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China calls for US-Iran talks as war upends Gulf states’ global ties",
-            "en": "China calls for US-Iran talks as war upends Gulf states’ global ties"
+            "fr": "How much junk is in South China Sea? Beijing flexes surveillance muscle with survey",
+            "en": "How much junk is in South China Sea? Beijing flexes surveillance muscle with survey"
           },
-          "url": "https://www.scmp.com/plus/news/world/middle-east/article/3347856/china-calls-us-iran-talks-war-upends-gulf-states-global-ties?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/science/article/3347973/how-much-junk-south-china-sea-beijing-flexes-surveillance-muscle-survey?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "4h",
-          "impact": "high",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Why a global private-credit meltdown would hit China hard",
-            "en": "Why a global private-credit meltdown would hit China hard"
+            "fr": "Singapore leader sees China helping small groups realise big results for Asia",
+            "en": "Singapore leader sees China helping small groups realise big results for Asia"
           },
-          "url": "https://www.scmp.com/opinion/china-opinion/article/3347602/why-global-private-credit-meltdown-would-hit-china-hard?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "5h",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3347989/singapore-leader-sees-china-helping-small-groups-realise-big-results-asia?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "4h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -869,7 +869,7 @@
           "value": 75273,
           "trend": "up",
           "change": 1.63,
-          "period": "2026-03-25"
+          "period": "2026-03-26"
         }
       },
       "sparkline": {
@@ -888,7 +888,7 @@
           85220.6,
           82269.78,
           81287.19,
-          74068.45,
+          75273.45,
           75273.45
         ]
       },
@@ -899,90 +899,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "India aims to cut emissions intensity by 47% by '35",
-            "en": "India aims to cut emissions intensity by 47% by '35"
+            "fr": "How US-Israel Iran war is upending global, Indian biz",
+            "en": "How US-Israel Iran war is upending global, Indian biz"
           },
-          "url": "https://economictimes.indiatimes.com/industry/renewables/india-aims-to-cut-emissions-intensity-by-47-by-2035-from-2005-levels/articleshow/129802256.cms",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
+          "url": "https://economictimes.indiatimes.com/news/international/business/how-us-israeli-war-on-iran-is-upending-global-business/articleshow/129824214.cms",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "high",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "India buys 1st Iran LPG cargo in years: Report",
-            "en": "India buys 1st Iran LPG cargo in years: Report"
+            "fr": "West Asia war: PM to chair meeting with CMs",
+            "en": "West Asia war: PM to chair meeting with CMs"
           },
-          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/india-buys-first-iran-lpg-cargo-in-years-after-us-eases-sanctions-sources-say/articleshow/129801932.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/west-asia-war-pm-modi-to-chair-meeting-with-cms-tomorrow-review-preparedness/articleshow/129824059.cms",
           "theme": "tech",
           "time": "1h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Reliance denies buying Iranian oil",
+            "en": "Reliance denies buying Iranian oil"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/mukesh-ambani-led-reliance-industries-denies-buying-iranian-oil-calls-reports-baseless/articleshow/129823647.cms",
+          "theme": "energy",
+          "time": "2h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Imported coal based plants to run at full capacity",
-            "en": "Imported coal based plants to run at full capacity"
+            "fr": "Pak says 'US-Iran indirect talks are taking place'",
+            "en": "Pak says 'US-Iran indirect talks are taking place'"
           },
-          "url": "https://economictimes.indiatimes.com/industry/energy/power/power-ministry-directs-imported-coal-based-plant-to-run-at-full-capacity-from-april-1/articleshow/129801767.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/pakistan-says-us-iran-indirect-talks-are-taking-place/articleshow/129822799.cms",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Trump warns ‘no turning back’ Iran ‘begging’ for deal",
+            "en": "Trump warns ‘no turning back’ Iran ‘begging’ for deal"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-warns-no-turning-back-says-iran-begging-for-deal-after-military-obliteration/articleshow/129822515.cms",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "OECD cuts eurozone 2026 growth on war",
+            "en": "OECD cuts eurozone 2026 growth on war"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/oecd-cuts-2026-eurozone-growth-forecast-on-mideast-war/articleshow/129822182.cms",
           "theme": "trade",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "'Gone too far,' most Americans say on Iran attacks",
-            "en": "'Gone too far,' most Americans say on Iran attacks"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/global-trends/us-israel-iran-war-most-americans-say-us-military-action-against-iran-has-gone-too-far/articleshow/129800175.cms",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "No peace talks with Washington: Iran envoy to Pak",
-            "en": "No peace talks with Washington: Iran envoy to Pak"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/no-peace-talks-with-washington-irans-envoy-to-pakistan-after-trump-signalled-peace-overtures/articleshow/129800169.cms",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "S&amp;P Global raises India's FY27 GDP f'cast to 7.1%",
-            "en": "S&amp;P Global raises India's FY27 GDP f'cast to 7.1%"
-          },
-          "url": "https://economictimes.indiatimes.com/markets/expert-view/indias-gdp-forecast-raised-to-7-1-for-fy27-as-sp-global-flags-oil-risk-tech-tailwinds/articleshow/129799297.cms",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Have gold, silver rates risen today?",
-            "en": "Have gold, silver rates risen today?"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/22k-gold-rates-rise-today-check-22k-24k-gold-prices-march-25-2026-on-tanishq-kalyan-jewellers-joyalukkas-malabar-gold-diamonds-and-ibja/articleshow/129798949.cms",
-          "theme": "monetary",
-          "time": "2h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Iran war: Pakistan League turns into empty stadiums",
-            "en": "Iran war: Pakistan League turns into empty stadiums"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-war-fallout-forces-pakistan-super-league-into-empty-stadiums-and-2-city-footprint/articleshow/129798215.cms",
-          "theme": "geopolitics",
           "time": "3h",
           "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Beer to cosmetics, Asia feels full force of war",
+            "en": "Beer to cosmetics, Asia feels full force of war"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-war-from-beer-to-cosmetics-asia-feels-full-force-of-war-fuelled-energy-crisis/articleshow/129821755.cms",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Air India launches Delhi–Rome direct flight",
+            "en": "Air India launches Delhi–Rome direct flight"
+          },
+          "url": "https://economictimes.indiatimes.com/nri/visit/air-india-launches-delhirome-direct-flight-expands-europe-network/articleshow/129820913.cms",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
           "source": "Economic Times"
         }
       ]
@@ -1035,10 +1035,10 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 140,
-          "trend": "up",
-          "change": 1.17,
-          "period": "2026-03-25"
+          "value": 138,
+          "trend": "down",
+          "change": -0.72,
+          "period": "2026-03-26"
         }
       },
       "sparkline": {
@@ -1056,7 +1056,7 @@
           63.2,
           60.85,
           70.69,
-          95.26
+          101.2
         ]
       },
       "summary": {
@@ -1066,10 +1066,10 @@
       "headlines": [
         {
           "title": {
-            "fr": "Iranian attacks amount to violation of sovereignty, Gulf states tell UN",
-            "en": "Iranian attacks amount to violation of sovereignty, Gulf states tell UN"
+            "fr": "Iranian naval chief killed in attack, Israel says",
+            "en": "Iranian naval chief killed in attack, Israel says"
           },
-          "url": "https://www.aljazeera.com/news/2026/3/25/iranian-attacks-amount-to-violation-of-sovereignty-gulf-states-tell-un?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/26/iranian-naval-chief-killed-in-attack-israel-says?traffic_source=rss",
           "theme": "tech",
           "time": "<1h",
           "impact": "low",
@@ -1077,54 +1077,43 @@
         },
         {
           "title": {
-            "fr": "Democrat captures Florida House seat in Trump’s Mar-a-Lago district",
-            "en": "Democrat captures Florida House seat in Trump’s Mar-a-Lago district"
+            "fr": "Damage in Israel from Iranian attacks",
+            "en": "Damage in Israel from Iranian attacks"
           },
-          "url": "https://www.aljazeera.com/news/2026/3/25/democrat-captures-florida-house-seat-in-trumps-mar-a-lago-district?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "1h",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/26/damage-in-israel-from-iranian-attacks?traffic_source=rss",
+          "theme": "tech",
+          "time": "<1h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Trump’s war on Iran, in his own words",
-            "en": "Trump’s war on Iran, in his own words"
+            "fr": "Is Europe heading to an energy crisis?",
+            "en": "Is Europe heading to an energy crisis?"
           },
-          "url": "https://www.aljazeera.com/video/2026/3/25/trumps-war-on-iran-in-his-own-words?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "1h",
+          "url": "https://www.aljazeera.com/video/counting-the-cost/2026/3/26/is-europe-heading-to-an-energy-crisis?traffic_source=rss",
+          "theme": "energy",
+          "time": "<1h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "'There's no safety anymore': Palestinians warn of expanding West Bank settler violence",
-            "en": "'There's no safety anymore': Palestinians warn of expanding West Bank settler violence"
+            "fr": "European Parliament gives conditional approval to EU-US trade deal",
+            "en": "European Parliament gives conditional approval to EU-US trade deal"
           },
-          "url": "https://www.bbc.com/news/articles/c747x00m83vo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
+          "url": "https://www.bbc.com/news/articles/c33l4e6vdrvo?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
           "time": "1h",
-          "impact": "high",
+          "impact": "low",
           "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Asian Champions League quarterfinal sends Iran’s Tractor FC to Saudi Arabia",
-            "en": "Asian Champions League quarterfinal sends Iran’s Tractor FC to Saudi Arabia"
+            "fr": "Video: GCC chief says Iran charging for ships to pass Strait of Hormuz",
+            "en": "Video: GCC chief says Iran charging for ships to pass Strait of Hormuz"
           },
-          "url": "https://www.aljazeera.com/sports/2026/3/25/asian-champions-league-quarterfinal-sends-irans-tractor-fc-to-saudi-arabia?traffic_source=rss",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Video: Trump’s Board of Peace pushes Gaza disarmament plan at UN",
-            "en": "Video: Trump’s Board of Peace pushes Gaza disarmament plan at UN"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/25/video-trumps-board-of-peace-pushes-gaza-disarmament-plan-at-un?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/26/video-gcc-chief-says-iran-charging-for-ships-to-pass-strait-of-hormuz?traffic_source=rss",
           "theme": "energy",
           "time": "1h",
           "impact": "low",
@@ -1132,24 +1121,35 @@
         },
         {
           "title": {
-            "fr": "We need more plumbers and fewer lawyers in AI age, says BlackRock boss",
-            "en": "We need more plumbers and fewer lawyers in AI age, says BlackRock boss"
+            "fr": "As a Palestinian, I stand in solidarity with the Iranian people. Here’s why",
+            "en": "As a Palestinian, I stand in solidarity with the Iranian people. Here’s why"
           },
-          "url": "https://www.bbc.com/news/articles/c9wqrdkx8ppo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.aljazeera.com/opinions/2026/3/26/as-a-palestinian-i-stand-in-solidarity-with-the-iranian-people-heres-why?traffic_source=rss",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
-          "source": "BBC World"
+          "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Spain says Israel seeks to repeat ‘Gaza destruction’ in Lebanon",
-            "en": "Spain says Israel seeks to repeat ‘Gaza destruction’ in Lebanon"
+            "fr": "Iran to Lebanon: Four million people displaced by US-Israeli war",
+            "en": "Iran to Lebanon: Four million people displaced by US-Israeli war"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/25/spain-says-israel-seeks-to-repeat-gaza-destruction-in-lebanon?traffic_source=rss",
-          "theme": "energy",
-          "time": "1h",
-          "impact": "low",
+          "url": "https://www.aljazeera.com/news/2026/3/26/iran-to-lebanon-four-million-people-displaced-by-us-israeli-war?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Germany warns of world economic ‘catastrophe’; OECD cuts UK growth forecast",
+            "en": "Germany warns of world economic ‘catastrophe’; OECD cuts UK growth forecast"
+          },
+          "url": "https://www.aljazeera.com/news/2026/3/26/germany-warns-of-world-economic-catastrophe-oecd-cuts-uk-growth-forecast?traffic_source=rss",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "high",
           "source": "Al Jazeera"
         }
       ]
