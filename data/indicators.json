@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-28",
+  "lastUpdated": "2026-03-29",
   "regions": {
     "CA": {
       "name": {
@@ -43,7 +43,7 @@
         "exchange": {
           "value": 1.387,
           "unit": "CAD/USD",
-          "trend": "up",
+          "trend": "stable",
           "period": "2026-03-27",
           "source": "Frankfurter/ECB"
         },
@@ -52,7 +52,7 @@
           "value": 31961,
           "trend": "up",
           "change": 0.23,
-          "period": "2026-03-28"
+          "period": "2026-03-29"
         }
       },
       "sparkline": {
@@ -82,58 +82,69 @@
       "headlines": [
         {
           "title": {
-            "fr": "Iran-backed Houthis claim missile launch on Israel as war in Middle East intensifies",
-            "en": "Iran-backed Houthis claim missile launch on Israel as war in Middle East intensifies"
+            "fr": "Le Nouveau Parti démocratique s’apprête à dévoiler son nouveau chef",
+            "en": "Le Nouveau Parti démocratique s’apprête à dévoiler son nouveau chef"
           },
-          "url": "https://www.theglobeandmail.com/business/article-iran-war-houthis-israel-us/",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "high",
+          "url": "https://ici.radio-canada.ca/info/en-direct/1013632/npd-congres-election-nouveau-chef",
+          "theme": "energy",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "AI is shifting the leadership pipeline",
+            "en": "AI is shifting the leadership pipeline"
+          },
+          "url": "https://www.theglobeandmail.com/business/careers/article-ai-is-shifting-the-leadership-pipeline/",
+          "theme": "energy",
+          "time": "<1h",
+          "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Des vétérans américains lassés « des guerres sans fin »",
-            "en": "Des vétérans américains lassés « des guerres sans fin »"
+            "fr": "L’Iran accuse Washington de préparer une attaque terrestre",
+            "en": "L’Iran accuse Washington de préparer une attaque terrestre"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2242246/trump-veterans-militaires-americains-guerres-opposition-",
-          "theme": "tech",
-          "time": "5h",
-          "impact": "high",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Qui sera le prochain capitaine du navire néo-démocrate?",
-            "en": "Qui sera le prochain capitaine du navire néo-démocrate?"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2242281/chef-npd-course-candidat",
-          "theme": "monetary",
-          "time": "5h",
-          "impact": "medium",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Guerre au Moyen-Orient : Washington espère la finir sous deux semaines",
-            "en": "Guerre au Moyen-Orient : Washington espère la finir sous deux semaines"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2242111/iran-frappe-nucleraire-guerre",
-          "theme": "tech",
-          "time": "8h",
-          "impact": "high",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Trump signe un décret pour verser les salaires aux employés dans les aéroports",
-            "en": "Trump signe un décret pour verser les salaires aux employés dans les aéroports"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2242311/trump-decret-salaires-employes-aeroports",
-          "theme": "tech",
-          "time": "8h",
+          "url": "https://ici.radio-canada.ca/nouvelle/2242407/iran-guerre-golfe-israel-trump",
+          "theme": "geopolitics",
+          "time": "<1h",
           "impact": "low",
           "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "La guerre « stupide » qui fait décrocher les jeunes MAGA",
+            "en": "La guerre « stupide » qui fait décrocher les jeunes MAGA"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2242405/guerre-iran-trump-jeunes-maga",
+          "theme": "tech",
+          "time": "5h",
+          "impact": "high",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Travail forcé dans l’industrie automobile chinoise : un « mensonge flagrant », dit Pékin",
+            "en": "Travail forcé dans l’industrie automobile chinoise : un « mensonge flagrant », dit Pékin"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2242390/chine-nie-travail-force-usines-automobiles",
+          "theme": "trade",
+          "time": "13h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Iran-backed Houthis claim missile launches on Israel as war in Middle East intensifies",
+            "en": "Iran-backed Houthis claim missile launches on Israel as war in Middle East intensifies"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-iran-war-houthis-israel-us/",
+          "theme": "geopolitics",
+          "time": "1j",
+          "impact": "high",
+          "source": "Globe and Mail"
         },
         {
           "title": {
@@ -142,7 +153,7 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-mark-leonard-not-standing-for-re-election-to-constellation-software/",
           "theme": "geopolitics",
-          "time": "11h",
+          "time": "1j",
           "impact": "high",
           "source": "Globe and Mail"
         },
@@ -153,19 +164,8 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-high-art-capital-condo-investment-fund-ontario-tax-break/",
           "theme": "trade",
-          "time": "14h",
+          "time": "1j",
           "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Pitching in: Moving toward a preventative approach to youth homelessness",
-            "en": "Pitching in: Moving toward a preventative approach to youth homelessness"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-pitching-in-moving-toward-a-preventative-approach-to-youth/",
-          "theme": "geopolitics",
-          "time": "16h",
-          "impact": "high",
           "source": "Globe and Mail"
         }
       ],
@@ -531,7 +531,7 @@
           "value": 6369,
           "trend": "down",
           "change": -1.67,
-          "period": "2026-03-28"
+          "period": "2026-03-29"
         }
       },
       "sparkline": {
@@ -561,12 +561,23 @@
       "headlines": [
         {
           "title": {
+            "fr": "Cut taxes on energy bills before giving bailouts, Badenoch says",
+            "en": "Cut taxes on energy bills before giving bailouts, Badenoch says"
+          },
+          "url": "https://www.bbc.com/news/articles/c1d941vw172o?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
             "fr": "A Paramount-Warner Bros. movie slate will need more animated features to compete with Disney and Universal",
             "en": "A Paramount-Warner Bros. movie slate will need more animated features to compete with Disney and Universal"
           },
           "url": "https://www.cnbc.com/2026/03/28/paramount-warner-bros-movie-slate-needs-animation.html",
           "theme": "geopolitics",
-          "time": "2h",
+          "time": "1j",
           "impact": "high",
           "source": "CNBC"
         },
@@ -577,7 +588,7 @@
           },
           "url": "https://www.bbc.com/news/articles/cvgk8zk9epgo?at_medium=RSS&at_campaign=rss",
           "theme": "energy",
-          "time": "10h",
+          "time": "1j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -588,7 +599,7 @@
           },
           "url": "https://www.cnbc.com/2026/03/27/iran-war-wipes-out-100-billion-from-luxury-stocks.html",
           "theme": "geopolitics",
-          "time": "23h",
+          "time": "1j",
           "impact": "high",
           "source": "CNBC"
         },
@@ -599,7 +610,7 @@
           },
           "url": "https://www.bbc.com/news/articles/c8957kqqdg4o?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
-          "time": "1j",
+          "time": "2j",
           "impact": "high",
           "source": "BBC Business"
         },
@@ -610,7 +621,7 @@
           },
           "url": "https://www.bbc.com/news/articles/cj37eeyz0epo?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "1j",
+          "time": "2j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -621,7 +632,7 @@
           },
           "url": "https://www.bbc.com/news/articles/c70dqk2vjv8o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "1j",
+          "time": "2j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -632,18 +643,7 @@
           },
           "url": "https://www.bbc.com/news/articles/c4gjxv5g19no?at_medium=RSS&at_campaign=rss",
           "theme": "energy",
-          "time": "1j",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "The spiky cactus fruit giving Indian farmers a cash boost",
-            "en": "The spiky cactus fruit giving Indian farmers a cash boost"
-          },
-          "url": "https://www.bbc.com/news/articles/c3ewyyjjzkwo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "1j",
+          "time": "2j",
           "impact": "low",
           "source": "BBC Business"
         }
@@ -691,7 +691,7 @@
         "exchange": {
           "value": 6.914,
           "unit": "CNY/USD",
-          "trend": "up",
+          "trend": "down",
           "period": "2026-03-27",
           "source": "Frankfurter/ECB"
         },
@@ -700,7 +700,7 @@
           "value": 3914,
           "trend": "up",
           "change": 0.63,
-          "period": "2026-03-28"
+          "period": "2026-03-29"
         }
       },
       "sparkline": {
@@ -730,90 +730,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "AI ‘collusion’ forcing down wages a bigger threat than job-stealing robots: ILO economist",
-            "en": "AI ‘collusion’ forcing down wages a bigger threat than job-stealing robots: ILO economist"
+            "fr": "Quieter, stealthier, further: new hybrid unit to power China’s small battle drones",
+            "en": "Quieter, stealthier, further: new hybrid unit to power China’s small battle drones"
           },
-          "url": "https://www.scmp.com/economy/china-economy/article/3348124/ai-collusion-forcing-down-wages-bigger-threat-job-stealing-robots-ilo-economist?utm_source=rss_feed",
-          "theme": "tech",
+          "url": "https://www.scmp.com/news/china/military/article/3348309/quieter-stealthier-further-new-hybrid-unit-power-chinas-small-battle-drones?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Europe’s response to Iran war risks becoming its ‘darkest hour’",
+            "en": "Europe’s response to Iran war risks becoming its ‘darkest hour’"
+          },
+          "url": "https://www.scmp.com/opinion/world-opinion/article/3347867/europes-response-iran-war-risks-becoming-its-darkest-hour?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Japan upgrades destroyer with Tomahawk missiles. Why it might pose a threat to China",
+            "en": "Japan upgrades destroyer with Tomahawk missiles. Why it might pose a threat to China"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3348299/japan-upgrades-destroyer-tomahawk-missiles-why-it-might-pose-threat-china?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Trump’s Iran war: could Republican rift and Maga discontent doom midterms?",
+            "en": "Trump’s Iran war: could Republican rift and Maga discontent doom midterms?"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3348205/trumps-iran-war-could-republican-rift-and-maga-discontent-doom-midterms?utm_source=rss_feed",
+          "theme": "geopolitics",
           "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Cambridge top architect Francois Penz relocates to China from UK",
-            "en": "Cambridge top architect Francois Penz relocates to China from UK"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3347941/cambridge-top-architect-francois-penz-relocates-china-uk?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "For Asia, the worst effects of Trump’s war on Iran are yet to come",
-            "en": "For Asia, the worst effects of Trump’s war on Iran are yet to come"
-          },
-          "url": "https://www.scmp.com/opinion/asia-opinion/article/3348014/asia-worst-effects-trumps-war-iran-are-yet-come?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "4h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Asean countries warned against exploiting US-China tensions for short-term gain",
-            "en": "Asean countries warned against exploiting US-China tensions for short-term gain"
+            "fr": "Chinese analogue chipmakers join wave of global price rises as mature-node firms eye gains",
+            "en": "Chinese analogue chipmakers join wave of global price rises as mature-node firms eye gains"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3348238/asean-countries-warned-against-exploiting-us-china-tensions-short-term-gain?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Chinese lithium battery electrolyte could double EV range and run in extreme cold",
-            "en": "Chinese lithium battery electrolyte could double EV range and run in extreme cold"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3348185/chinese-lithium-battery-electrolyte-could-double-ev-range-and-run-extreme-cold?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "7h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Can ‘reliable friend’ China fill the gap as US pressures allies to snub South Africa?",
-            "en": "Can ‘reliable friend’ China fill the gap as US pressures allies to snub South Africa?"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3348226/can-reliable-friend-china-fill-gap-us-pressures-allies-snub-south-africa?utm_source=rss_feed",
+          "url": "https://www.scmp.com/tech/big-tech/article/3348284/chinese-analogue-chipmakers-join-wave-global-price-rises-mature-node-firms-eye-gains?utm_source=rss_feed",
           "theme": "tech",
+          "time": "3h",
+          "impact": "medium",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "How to assess China’s real chance of winning AI race against US",
+            "en": "How to assess China’s real chance of winning AI race against US"
+          },
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3347763/how-assess-chinas-real-chance-winning-ai-race-against-us?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "4h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China’s high-end yacht owners say industry growth stifled by structural gaps",
+            "en": "China’s high-end yacht owners say industry growth stifled by structural gaps"
+          },
+          "url": "https://www.scmp.com/economy/china-economy/article/3346817/chinas-high-end-yacht-owners-say-industry-growth-stifled-structural-gaps?utm_source=rss_feed",
+          "theme": "trade",
+          "time": "5h",
+          "impact": "medium",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Why are smugglers swarming East Africa for ants to send to China and Europe?",
+            "en": "Why are smugglers swarming East Africa for ants to send to China and Europe?"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3348256/why-are-smugglers-swarming-east-africa-ants-send-china-and-europe?utm_source=rss_feed",
+          "theme": "geopolitics",
           "time": "9h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China puts Ma Xingrui protege Guo Yonghang under investigation for corruption",
-            "en": "China puts Ma Xingrui protege Guo Yonghang under investigation for corruption"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3348206/china-puts-ma-xingrui-protege-guo-yonghang-under-investigation-corruption?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "12h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Trump pitches China trade ‘win’ to US farmers ahead of Xi meeting, midterms",
-            "en": "Trump pitches China trade ‘win’ to US farmers ahead of Xi meeting, midterms"
-          },
-          "url": "https://www.scmp.com/news/us/diplomacy/article/3348219/trump-pitches-china-trade-win-us-farmers-ahead-xi-meeting-midterms?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "14h",
-          "impact": "low",
+          "impact": "high",
           "source": "SCMP"
         }
       ]
@@ -860,7 +860,7 @@
         "exchange": {
           "value": 94.81,
           "unit": "INR/USD",
-          "trend": "up",
+          "trend": "stable",
           "period": "2026-03-27",
           "source": "Frankfurter/ECB"
         },
@@ -869,7 +869,7 @@
           "value": 73583,
           "trend": "down",
           "change": -2.25,
-          "period": "2026-03-28"
+          "period": "2026-03-29"
         }
       },
       "sparkline": {
@@ -899,10 +899,43 @@
       "headlines": [
         {
           "title": {
-            "fr": "India sees sharp drop in maternal deaths",
-            "en": "India sees sharp drop in maternal deaths"
+            "fr": "What Sachs said on Musk in Modi-Trump call",
+            "en": "What Sachs said on Musk in Modi-Trump call"
           },
-          "url": "https://economictimes.indiatimes.com/news/india/indias-maternal-mortality-drops-nearly-80-since-1990-global-study/articleshow/129862726.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/a-reflection-of-whos-really-in-charge-jeffrey-sachs-on-elon-musk-eavesdropping-on-pm-modi-trump-call/articleshow/129880377.cms",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Here's the latest news on India's oil &amp; gas situation",
+            "en": "Here's the latest news on India's oil &amp; gas situation"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/govt-shares-key-updates-on-oil-gas-supply-lpg-shortage-png-infra-shipping-more-amid-israel-iran-war/articleshow/129879065.cms",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "'JD or Marco?': Iran war raises 2028 stakes",
+            "en": "'JD or Marco?': Iran war raises 2028 stakes"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/jd-or-marco-iran-war-raises-2028-stakes-as-trump-weighs-vance-vs-rubio/articleshow/129878780.cms",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Deloitte South Asia COO dismisses AI job loss fears",
+            "en": "Deloitte South Asia COO dismisses AI job loss fears"
+          },
+          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/deloitte-south-asia-coo-dismisses-ai-job-loss-fears-pushes-for-upskilling-amid-massive-india-hiring/articleshow/129878680.cms",
           "theme": "tech",
           "time": "3h",
           "impact": "low",
@@ -910,10 +943,10 @@
         },
         {
           "title": {
-            "fr": "Adani delivers first batch of light machine guns",
-            "en": "Adani delivers first batch of light machine guns"
+            "fr": "Iran says US plots ground attack despite talks",
+            "en": "Iran says US plots ground attack despite talks"
           },
-          "url": "https://economictimes.indiatimes.com/news/defence/adani-defence-delivers-first-batch-of-2000-prahar-light-machine-guns-to-army/articleshow/129862548.cms",
+          "url": "https://economictimes.indiatimes.com/news/defence/iran-parliament-speaker-says-us-plots-ground-attack-despite-diplomatic-efforts/articleshow/129878576.cms",
           "theme": "geopolitics",
           "time": "3h",
           "impact": "low",
@@ -921,21 +954,21 @@
         },
         {
           "title": {
-            "fr": "Pak to host Saudi, Turkey, Egypt for talks on war",
-            "en": "Pak to host Saudi, Turkey, Egypt for talks on war"
+            "fr": "Pak FM talks war tensions with Egypt, Turkiye FMs",
+            "en": "Pak FM talks war tensions with Egypt, Turkiye FMs"
           },
-          "url": "https://economictimes.indiatimes.com/news/defence/pakistan-to-host-saudi-turkey-egypt-for-talks-on-mideast-war/articleshow/129861406.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/pak-fm-ishaq-dar-meets-egypt-turkiye-counterparts-on-sidelines-of-summit-to-discuss-west-asia-tensions/articleshow/129878052.cms",
           "theme": "geopolitics",
-          "time": "5h",
+          "time": "4h",
           "impact": "high",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "2 Indian LPG vessels reach Gujarat's via Hormuz",
-            "en": "2 Indian LPG vessels reach Gujarat's via Hormuz"
+            "fr": "Drone strike hits Russia’s Ust-Luga oil port",
+            "en": "Drone strike hits Russia’s Ust-Luga oil port"
           },
-          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/two-indian-lpg-vessels-reach-gujarats-vadinar-terminal-via-hormuz-strait/articleshow/129861130.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/ukrainian-drone-strike-ignites-fire-at-key-russian-oil-port-ust-luga/articleshow/129877412.cms",
           "theme": "energy",
           "time": "5h",
           "impact": "low",
@@ -943,46 +976,13 @@
         },
         {
           "title": {
-            "fr": "Jewar airport to boost jobs, investment: Naidu",
-            "en": "Jewar airport to boost jobs, investment: Naidu"
+            "fr": "Remittances, ₹ at risk from MidEast war: SBI Funds",
+            "en": "Remittances, ₹ at risk from MidEast war: SBI Funds"
           },
-          "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/jewar-airport-to-boost-jobs-investment-says-aviation-minister-naidu/articleshow/129860744.cms",
-          "theme": "trade",
-          "time": "5h",
-          "impact": "high",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "PM to inaugurate Rs 891 cr rail projects in Gujarat",
-            "en": "PM to inaugurate Rs 891 cr rail projects in Gujarat"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/transportation/railways/pm-modi-to-inaugurate-rs-891-crore-rail-projects-in-gujarat-on-march-31/articleshow/129859783.cms",
-          "theme": "monetary",
-          "time": "6h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Five Indians injured in Abu Dhabi fire",
-            "en": "Five Indians injured in Abu Dhabi fire"
-          },
-          "url": "https://economictimes.indiatimes.com/nri/latest-updates/five-indians-injured-as-missile-interception-debris-sparks-fires-in-abu-dhabi-industrial-zone/articleshow/129859036.cms",
-          "theme": "tech",
-          "time": "8h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "1 killed as Iran missile hits central Israel",
-            "en": "1 killed as Iran missile hits central Israel"
-          },
-          "url": "https://economictimes.indiatimes.com/news/defence/1-killed-many-injured-as-iran-missile-hits-central-israel/articleshow/129858751.cms",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/israel-iran-war-remittances-rupee-at-risk-fiscal-strain-may-rise-warns-sbi-funds-management-report/articleshow/129876977.cms",
           "theme": "geopolitics",
-          "time": "8h",
-          "impact": "low",
+          "time": "6h",
+          "impact": "high",
           "source": "Economic Times"
         }
       ]
@@ -1038,7 +1038,7 @@
           "value": 135,
           "trend": "down",
           "change": -1.34,
-          "period": "2026-03-28"
+          "period": "2026-03-29"
         }
       },
       "sparkline": {
@@ -1066,43 +1066,32 @@
       "headlines": [
         {
           "title": {
-            "fr": "At least 15 US troops wounded in Iran strike on Saudi airbase: Reports",
-            "en": "At least 15 US troops wounded in Iran strike on Saudi airbase: Reports"
+            "fr": "The US-Israeli war on humanity",
+            "en": "The US-Israeli war on humanity"
           },
-          "url": "https://www.aljazeera.com/news/2026/3/28/at-least-15-us-troops-wounded-in-iran-strike-on-saudi-airbase-reports?traffic_source=rss",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Former US defence chief says more war won’t bring peace to Middle East",
-            "en": "Former US defence chief says more war won’t bring peace to Middle East"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/28/former-us-defence-chief-says-more-war-wont-bring-peace-to-middle-east?traffic_source=rss",
+          "url": "https://www.aljazeera.com/opinions/2026/3/29/the-us-israeli-war-on-humanity?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "high",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Protests in Yemen against US-Israeli attacks as Houthis warn of action",
-            "en": "Protests in Yemen against US-Israeli attacks as Houthis warn of action"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/28/protests-in-yemen-against-us-israeli-attacks-as-houthis-warn-of-action?traffic_source=rss",
-          "theme": "tech",
           "time": "1h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Russian strikes on Ukraine kill 4 as deal to end war dims",
-            "en": "Russian strikes on Ukraine kill 4 as deal to end war dims"
+            "fr": "Iranian attacks across Gulf continue as major industrial sites hit",
+            "en": "Iranian attacks across Gulf continue as major industrial sites hit"
           },
-          "url": "https://www.aljazeera.com/news/2026/3/28/russian-strikes-on-ukraine-cities-kill-4-as-deal-to-end-war-dims?traffic_source=rss",
+          "url": "https://www.bbc.com/news/articles/cp86yrq5jy7o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "Pakistan hosts four-nation bid to encourage US, Iran towards diplomacy",
+            "en": "Pakistan hosts four-nation bid to encourage US, Iran towards diplomacy"
+          },
+          "url": "https://www.aljazeera.com/news/2026/3/29/pakistan-hosts-four-nation-bid-to-encourage-us-iran-towards-diplomacy?traffic_source=rss",
           "theme": "geopolitics",
           "time": "2h",
           "impact": "high",
@@ -1110,32 +1099,43 @@
         },
         {
           "title": {
-            "fr": "The war on Iran faces a MAGA backlash",
-            "en": "The war on Iran faces a MAGA backlash"
+            "fr": "‘We will see a new government in Venezuela, in Cuba and in Iran’",
+            "en": "‘We will see a new government in Venezuela, in Cuba and in Iran’"
           },
-          "url": "https://www.aljazeera.com/video/the-listening-post/2026/3/28/the-war-on-iran-faces-a-maga-backlash?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/29/we-will-see-a-new-government-in-venezuela-in-cuba-and-in?traffic_source=rss",
           "theme": "geopolitics",
           "time": "2h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Dozens detained in Tel Aviv as anti-war protest turns violent",
+            "en": "Dozens detained in Tel Aviv as anti-war protest turns violent"
+          },
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/29/dozens-detained-in-tel-aviv-as-anti-war-protest-turns-violent?traffic_source=rss",
+          "theme": "tech",
+          "time": "3h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "US House passes bill funding Homeland Security amid shutdown",
-            "en": "US House passes bill funding Homeland Security amid shutdown"
+            "fr": "Pentagon readies ‘for weeks of US ground operations’ in Iran",
+            "en": "Pentagon readies ‘for weeks of US ground operations’ in Iran"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/28/us-house-passes-bill-funding-homeland-security-amid-shutdown?traffic_source=rss",
-          "theme": "trade",
+          "url": "https://www.aljazeera.com/news/2026/3/29/pentagon-readies-for-weeks-of-us-ground-operations-in-iran-report?traffic_source=rss",
+          "theme": "geopolitics",
           "time": "4h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "US-Israel war on Iran: What’s happening on day 29 of attacks?",
-            "en": "US-Israel war on Iran: What’s happening on day 29 of attacks?"
+            "fr": "US-Israel war on Iran: What’s happening on day 30 of attacks?",
+            "en": "US-Israel war on Iran: What’s happening on day 30 of attacks?"
           },
-          "url": "https://www.aljazeera.com/news/2026/3/28/iran-war-what-is-happening-on-day-29-of-us-israel-attacks?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/3/29/us-israel-war-on-iran-whats-happening-on-day-30-of-attacks?traffic_source=rss",
           "theme": "geopolitics",
           "time": "4h",
           "impact": "high",
@@ -1143,13 +1143,13 @@
         },
         {
           "title": {
-            "fr": "Trump claims Iran wants to ‘make a deal’",
-            "en": "Trump claims Iran wants to ‘make a deal’"
+            "fr": "Analyst says that Iran’s interest is in an extended war",
+            "en": "Analyst says that Iran’s interest is in an extended war"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/3/28/trump-claims-iran-wants-to-make-a?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/quotable/2026/3/29/analyst-says-that-irans-interest-is-in-an-extended-war?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "5h",
-          "impact": "low",
+          "time": "4h",
+          "impact": "high",
           "source": "Al Jazeera"
         }
       ]
