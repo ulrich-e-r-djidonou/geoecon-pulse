@@ -6,7 +6,9 @@
       "WebSearch",
       "mcp__Claude_Preview__preview_start",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(python3 scripts/update_data.py)",
+      "Bash(GIT_EDITOR=true git rebase --continue)"
     ]
   }
 }
