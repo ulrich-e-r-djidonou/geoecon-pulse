@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-17",
+  "lastUpdated": "2026-04-18",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.373,
+          "value": 1.367,
           "unit": "CAD/USD",
           "trend": "down",
-          "period": "2026-04-16",
+          "period": "2026-04-17",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 34238,
+          "value": 34346,
           "trend": "up",
-          "change": 0.55,
-          "period": "2026-04-17"
+          "change": 0.86,
+          "period": "2026-04-18"
         }
       },
       "sparkline": {
@@ -82,10 +82,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "L’Iran déclare que le détroit d’Ormuz est « totalement ouvert » grâce à la trêve au Liban",
-            "en": "L’Iran déclare que le détroit d’Ormuz est « totalement ouvert » grâce à la trêve au Liban"
+            "fr": "An open Strait of Hormuz, Anthropic’s AI model and the global drone race: Must-read business and investing stories",
+            "en": "An open Strait of Hormuz, Anthropic’s AI model and the global drone race: Must-read business and investing stories"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2246882/liban-israel-violation-cessez-feu",
+          "url": "https://www.theglobeandmail.com/business/article-strait-of-hormuz-rogers-iran-canada-drone-anthropic-ai/",
+          "theme": "energy",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "L’Iran ferme de nouveau le détroit d’Ormuz face au blocus américain",
+            "en": "L’Iran ferme de nouveau le détroit d’Ormuz face au blocus américain"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2212848/iran-detroit-ormuz-fermeture-blocus",
           "theme": "energy",
           "time": "<1h",
           "impact": "low",
@@ -93,79 +104,68 @@
         },
         {
           "title": {
-            "fr": "European oil majors outshine U.S. rivals by trading on energy volatility during Iran war",
-            "en": "European oil majors outshine U.S. rivals by trading on energy volatility during Iran war"
+            "fr": "Should banks send deadline-based alerts about a pending charge? Research suggests it would help",
+            "en": "Should banks send deadline-based alerts about a pending charge? Research suggests it would help"
           },
-          "url": "https://www.theglobeandmail.com/business/industry-news/energy-and-resources/article-european-oil-majors-outshine-us-rivals-by-trading-on-energy-volatility/",
-          "theme": "energy",
-          "time": "<1h",
-          "impact": "high",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "France, England hold international summit on reopening the Strait of Hormuz",
-            "en": "France, England hold international summit on reopening the Strait of Hormuz"
-          },
-          "url": "https://www.theglobeandmail.com/world/article-france-britain-macron-starmer-international-summit-strait-of-hormuz/",
-          "theme": "energy",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Why companies shouldn’t use online reviews to evaluate employee performance",
-            "en": "Why companies shouldn’t use online reviews to evaluate employee performance"
-          },
-          "url": "https://www.theglobeandmail.com/business/careers/talent/article-why-companies-shouldnt-use-online-reviews-to-evaluate-employee/",
+          "url": "https://www.theglobeandmail.com/investing/personal-finance/article-banks-deadline-based-alerts-non-sufficient-funds-fees/",
           "theme": "trade",
-          "time": "<1h",
+          "time": "1h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Canadian housing starts decrease 6% in March",
-            "en": "Canadian housing starts decrease 6% in March"
+            "fr": "How the promise of AI is taking hold at Canada’s biggest banks",
+            "en": "How the promise of AI is taking hold at Canada’s biggest banks"
           },
-          "url": "https://www.theglobeandmail.com/business/article-canadian-housing-starts-march-2026/",
+          "url": "https://www.theglobeandmail.com/business/article-promise-of-ai-canada-biggest-banks-rbc-td-cibc-revenue/",
           "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Canada to host Investment Summit in Toronto in September, Carney says",
-            "en": "Canada to host Investment Summit in Toronto in September, Carney says"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-canada-to-host-investment-summit-in-toronto-in-september-carney-says/",
-          "theme": "trade",
-          "time": "1h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "As U.S prepares to launch tariff claims process, companies worry challenges stand in their way of getting refunds",
-            "en": "As U.S prepares to launch tariff claims process, companies worry challenges stand in their way of getting refunds"
-          },
-          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-us-tariff-refunds-claims-process/",
-          "theme": "trade",
-          "time": "2h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Business Brief: The war on the war on drones",
-            "en": "Business Brief: The war on the war on drones"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-business-brief-the-war-on-the-war-on-drones/",
-          "theme": "geopolitics",
           "time": "3h",
-          "impact": "high",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Quand logement subventionné rime avec insalubrité",
+            "en": "Quand logement subventionné rime avec insalubrité"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2247098/logement-immeuble-infestation-punaises-insalubrite",
+          "theme": "trade",
+          "time": "5h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Feux de forêt : les changements climatiques mettent fin aux accalmies nocturnes",
+            "en": "Feux de forêt : les changements climatiques mettent fin aux accalmies nocturnes"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2247094/changement-climatique-feux-foret",
+          "theme": "trade",
+          "time": "12h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "« Ils sont nuls » : Lutnick critique la stratégie commerciale du Canada",
+            "en": "« Ils sont nuls » : Lutnick critique la stratégie commerciale du Canada"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2247067/americain-lutnick-critique-strategie-commerciale-canada",
+          "theme": "tech",
+          "time": "14h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "When an oil shock is renewable energy’s best friend",
+            "en": "When an oil shock is renewable energy’s best friend"
+          },
+          "url": "https://www.theglobeandmail.com/business/commentary/article-oil-shock-renewable-energy-best-friend-iran-war-trump/",
+          "theme": "energy",
+          "time": "14h",
+          "impact": "low",
           "source": "Globe and Mail"
         }
       ],
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7102,
+          "value": 7126,
           "trend": "up",
-          "change": 0.86,
-          "period": "2026-04-17"
+          "change": 1.2,
+          "period": "2026-04-18"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6939.03,
           6878.88,
           6528.52,
-          7041.28,
-          7100.04
+          7126.06,
+          7126.06
         ]
       },
       "summary": {
@@ -561,12 +561,56 @@
       "headlines": [
         {
           "title": {
+            "fr": "Oil prices plunge as Iran says Strait of Hormuz 'open' during ceasefire",
+            "en": "Oil prices plunge as Iran says Strait of Hormuz 'open' during ceasefire"
+          },
+          "url": "https://www.bbc.com/news/articles/ckg045z73z1o?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "7h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Mortgage rates show signs of falling after Iran war peak",
+            "en": "Mortgage rates show signs of falling after Iran war peak"
+          },
+          "url": "https://www.bbc.com/news/articles/cwyx2q86lgpo?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "13h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Tinder and Zoom offer 'proof of humanity' eye-scans to combat AI",
+            "en": "Tinder and Zoom offer 'proof of humanity' eye-scans to combat AI"
+          },
+          "url": "https://www.bbc.com/news/articles/cp9vppem4evo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "18h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "AI minister Kendall says she doesn't use AI at work",
+            "en": "AI minister Kendall says she doesn't use AI at work"
+          },
+          "url": "https://www.bbc.com/news/articles/cd0rmzjd720o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "20h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
             "fr": "Some grocers are using AI to cut food waste and boost profit margins",
             "en": "Some grocers are using AI to cut food waste and boost profit margins"
           },
           "url": "https://www.cnbc.com/2026/04/17/some-grocers-are-using-ai-to-cut-food-waste-and-boost-profit-margins.html",
           "theme": "tech",
-          "time": "<1h",
+          "time": "22h",
           "impact": "low",
           "source": "CNBC"
         },
@@ -577,7 +621,7 @@
           },
           "url": "https://www.bbc.com/news/articles/c2ev24yx4rmo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "3h",
+          "time": "1j",
           "impact": "medium",
           "source": "BBC Business"
         },
@@ -588,7 +632,7 @@
           },
           "url": "https://www.bbc.com/news/articles/c1l92yv4mydo?at_medium=RSS&at_campaign=rss",
           "theme": "energy",
-          "time": "7h",
+          "time": "1j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -599,52 +643,8 @@
           },
           "url": "https://www.cnbc.com/2026/04/16/netflix-nflx-earnings-q1-2026.html",
           "theme": "monetary",
-          "time": "11h",
+          "time": "1j",
           "impact": "medium",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Trump nominates Erica Schwartz as CDC director amid turmoil around leadership, vaccine policy",
-            "en": "Trump nominates Erica Schwartz as CDC director amid turmoil around leadership, vaccine policy"
-          },
-          "url": "https://www.cnbc.com/2026/04/16/trump-nominates-erica-schwartz-as-cdc-director.html",
-          "theme": "geopolitics",
-          "time": "15h",
-          "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Europe has 'maybe six weeks of jet fuel left', energy boss warns",
-            "en": "Europe has 'maybe six weeks of jet fuel left', energy boss warns"
-          },
-          "url": "https://www.bbc.com/news/articles/czjw2kz0l22o?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "18h",
-          "impact": "high",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "UK prepares for food shortages in worst case scenario as Iran war continues",
-            "en": "UK prepares for food shortages in worst case scenario as Iran war continues"
-          },
-          "url": "https://www.bbc.com/news/articles/cpvxp4xnrwdo?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "21h",
-          "impact": "high",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "How the wealthy are planning to cut their 2026 tax bills",
-            "en": "How the wealthy are planning to cut their 2026 tax bills"
-          },
-          "url": "https://www.cnbc.com/2026/04/16/wealthy-tax-planning-2026-bills.html",
-          "theme": "trade",
-          "time": "23h",
-          "impact": "low",
           "source": "CNBC"
         }
       ]
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.821,
+          "value": 6.822,
           "unit": "CNY/USD",
           "trend": "up",
-          "period": "2026-04-16",
+          "period": "2026-04-17",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
           "value": 4051,
-          "trend": "up",
-          "change": 0.6,
-          "period": "2026-04-17"
+          "trend": "stable",
+          "change": -0.1,
+          "period": "2026-04-18"
         }
       },
       "sparkline": {
@@ -730,90 +730,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "Iran war energy shock threatens Southeast Asia’s supply chains. A win for China?",
-            "en": "Iran war energy shock threatens Southeast Asia’s supply chains. A win for China?"
+            "fr": "China trade deal has Canadians looking forward to cheaper electric vehicles",
+            "en": "China trade deal has Canadians looking forward to cheaper electric vehicles"
           },
-          "url": "https://www.scmp.com/economy/global-economy/article/3350446/iran-war-energy-shock-threatens-southeast-asias-supply-chains-win-china?utm_source=rss_feed",
+          "url": "https://www.scmp.com/economy/china-economy/article/3350483/china-trade-deal-has-canadians-looking-forward-cheaper-electric-vehicles?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "<1h",
+          "time": "1h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Why US threats to tighten economic vice on Iran might prolong war",
-            "en": "Why US threats to tighten economic vice on Iran might prolong war"
+            "fr": "How China’s military could learn vital lessons from war in Iran",
+            "en": "How China’s military could learn vital lessons from war in Iran"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3350514/why-us-threats-tighten-economic-vice-iran-might-prolong-war?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3350567/how-chinas-military-could-learn-vital-lessons-war-iran?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "<1h",
+          "time": "2h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Vietnam and China are now perfectly aligned",
-            "en": "Vietnam and China are now perfectly aligned"
+            "fr": "Iran reimposes shipping restrictions on Strait of Hormuz",
+            "en": "Iran reimposes shipping restrictions on Strait of Hormuz"
           },
-          "url": "https://www.scmp.com/opinion/asia-opinion/article/3350254/vietnam-and-china-are-now-perfectly-aligned?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "1h",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3350571/iran-reimposes-shipping-restrictions-strait-hormuz?utm_source=rss_feed",
+          "theme": "energy",
+          "time": "4h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Smoother waters? China and Vietnam vow to ‘better’ navigate South China Sea disputes",
-            "en": "Smoother waters? China and Vietnam vow to ‘better’ navigate South China Sea disputes"
+            "fr": "Hong Kong wants to become a global gold vault. Does the Iran war create an opening?",
+            "en": "Hong Kong wants to become a global gold vault. Does the Iran war create an opening?"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3350516/smoother-waters-china-and-vietnam-vow-better-navigate-south-china-sea-frictions?utm_source=rss_feed",
+          "url": "https://www.scmp.com/economy/global-economy/article/3350511/hong-kong-wants-become-global-gold-vault-does-iran-war-create-opening?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "1h",
+          "time": "7h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Chinese robo-diving suit could help users consume almost 40% less oxygen",
+            "en": "Chinese robo-diving suit could help users consume almost 40% less oxygen"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3350425/chinese-robo-diving-suit-could-help-users-consume-almost-40-less-oxygen?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "7h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China complains of ‘harassment’ from New Zealand aerial patrols close to coastline",
-            "en": "China complains of ‘harassment’ from New Zealand aerial patrols close to coastline"
+            "fr": "Donald Trump predicts meeting with Xi Jinping will be ‘special’ ahead of China visit",
+            "en": "Donald Trump predicts meeting with Xi Jinping will be ‘special’ ahead of China visit"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3350508/china-complains-harassment-new-zealand-aerial-patrols-close-coastline?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3350555/donald-trump-predicts-meeting-xi-jinping-will-be-special-ahead-china-visit?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "9h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "As China’s biotech firms shift gears, can AI floor the accelerator?",
+            "en": "As China’s biotech firms shift gears, can AI floor the accelerator?"
+          },
+          "url": "https://www.scmp.com/business/china-business/article/3350421/chinas-biotech-firms-shift-gears-can-ai-floor-accelerator?utm_source=rss_feed",
           "theme": "tech",
-          "time": "2h",
+          "time": "10h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China slams Japan for sending warship through Taiwan Strait",
-            "en": "China slams Japan for sending warship through Taiwan Strait"
+            "fr": "Why China is urgently looking to North Africa as the energy crisis rolls on",
+            "en": "Why China is urgently looking to North Africa as the energy crisis rolls on"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3350499/china-slams-japan-sending-warship-through-taiwan-strait?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "2h",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3350427/why-china-urgently-looking-north-africa-energy-crisis-rolls?utm_source=rss_feed",
+          "theme": "energy",
+          "time": "12h",
           "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Chinese ministry focuses on car standards to put industry in global driving seat",
-            "en": "Chinese ministry focuses on car standards to put industry in global driving seat"
-          },
-          "url": "https://www.scmp.com/economy/china-economy/article/3350467/chinese-ministry-focuses-car-standards-put-industry-global-driving-seat?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China’s space station crew to ‘maximise opportunities’ with extra month in orbit",
-            "en": "China’s space station crew to ‘maximise opportunities’ with extra month in orbit"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3350472/chinas-space-station-crew-maximise-opportunities-spending-extra-month-orbit?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
           "source": "SCMP"
         }
       ]
@@ -858,10 +858,10 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 93.24,
+          "value": 92.82,
           "unit": "INR/USD",
-          "trend": "stable",
-          "period": "2026-04-16",
+          "trend": "down",
+          "period": "2026-04-17",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
@@ -869,7 +869,7 @@
           "value": 78494,
           "trend": "up",
           "change": 0.65,
-          "period": "2026-04-17"
+          "period": "2026-04-18"
         }
       },
       "sparkline": {
@@ -888,7 +888,7 @@
           82269.78,
           81287.19,
           71947.55,
-          77988.68,
+          78493.54,
           78493.54
         ]
       },
@@ -899,89 +899,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Elon Musk floats 'universal high income' in the AI era",
-            "en": "Elon Musk floats 'universal high income' in the AI era"
+            "fr": "Smriti Irani slams Oppn ahead of PM Modi’s address",
+            "en": "Smriti Irani slams Oppn ahead of PM Modi’s address"
           },
-          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/elon-musk-floats-universal-high-income-to-offset-ai-led-job-disruption/articleshow/130334752.cms",
-          "theme": "tech",
+          "url": "https://economictimes.indiatimes.com/news/politics-and-nation/smriti-irani-slams-opposition-ahead-of-pm-modis-address-to-nation-defends-womens-reservation-bill/articleshow/130353614.cms",
+          "theme": "geopolitics",
           "time": "<1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Trump cheers Iran move to open Hormuz",
-            "en": "Trump cheers Iran move to open Hormuz"
+            "fr": "No date set for next round of talks with US: Iran",
+            "en": "No date set for next round of talks with US: Iran"
           },
-          "url": "https://economictimes.indiatimes.com/news/defence/trump-praises-irans-commitment-to-keep-strait-of-hormuz-open-amid-gulf-tensions-and-ceasefire-efforts/articleshow/130334277.cms",
-          "theme": "energy",
-          "time": "<1h",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-says-no-date-set-for-next-round-of-negotiations-with-us/articleshow/130353183.cms",
+          "theme": "geopolitics",
+          "time": "1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Huang warns against curbs on US chip sales to China",
-            "en": "Huang warns against curbs on US chip sales to China"
+            "fr": "Dubai gold prices today: Compare rates",
+            "en": "Dubai gold prices today: Compare rates"
           },
-          "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-ceo-jensen-huang-warns-against-curbs-on-us-chip-sales-to-china/articleshow/130333713.cms",
+          "url": "https://economictimes.indiatimes.com/wealth/invest/dubai-gold-rates-today-april-18-2026-latest-22k-24k-gold-prices-at-igold-dubai-jewellery-group-malabar-gold-diamonds-joyalukkas-kalyan-jewellers/articleshow/130352473.cms",
+          "theme": "monetary",
+          "time": "1h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "We can be India’s own Amazon: Zepto's Aadit Palicha",
+            "en": "We can be India’s own Amazon: Zepto's Aadit Palicha"
+          },
+          "url": "https://economictimes.indiatimes.com/tech/startups/we-can-be-indias-own-amazon-in-next-4-5-years-says-zeptos-palicha-at-yc-startup-school/articleshow/130351384.cms",
           "theme": "tech",
-          "time": "<1h",
+          "time": "3h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Rains, W Asia war cloud India's argi outlook: BoB",
+            "en": "Rains, W Asia war cloud India's argi outlook: BoB"
+          },
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/below-normal-monsoon-and-west-asia-conflict-cloud-indias-agriculture-outlook-bob/articleshow/130349957.cms",
+          "theme": "tech",
+          "time": "4h",
           "impact": "high",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Indian fintechs push Anthropic for access to Mythos",
-            "en": "Indian fintechs push Anthropic for access to Mythos"
+            "fr": "Tanker convoy crosses Hormuz: Data",
+            "en": "Tanker convoy crosses Hormuz: Data"
           },
-          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/nervous-indian-fintechs-push-anthropic-for-access-to-mythos/articleshow/130332798.cms",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Housing dreams falter in WB amid corruption",
-            "en": "Housing dreams falter in WB amid corruption"
-          },
-          "url": "https://economictimes.indiatimes.com/news/elections/assembly-elections/west-bengal/housing-dreams-falter-in-west-bengal-amid-corruption-land-crunch/articleshow/130332658.cms",
-          "theme": "trade",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "1st Iranian tankers exit Gulf since US blockade",
-            "en": "1st Iranian tankers exit Gulf since US blockade"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/business/first-loaded-iranian-oil-tankers-exit-gulf-strait-of-hormuz-since-us-blockade-kpler/articleshow/130332312.cms",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "A camel's dream: Where are US-Iran talks headed?",
-            "en": "A camel's dream: Where are US-Iran talks headed?"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/global-trends/trump-and-a-camels-dream-where-exactly-are-us-iran-talks-headed/articleshow/130328475.cms",
-          "theme": "geopolitics",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/convoy-of-tankers-is-seen-crossing-strait-of-hormuz-vessel-tracking-data-shows/articleshow/130349929.cms",
+          "theme": "energy",
           "time": "4h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Gold rates today: 24k, 22k, 18k, 14k",
-            "en": "Gold rates today: 24k, 22k, 18k, 14k"
+            "fr": "IRGC imposes strict navigation rules in Hormuz",
+            "en": "IRGC imposes strict navigation rules in Hormuz"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/22k-gold-rate-today-check-24k-22k-18k-gold-prices-april-17-2026-in-new-delhi-mumbai-bengaluru-and-other-cities/articleshow/130327558.cms",
+          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/irgc-imposes-strict-navigation-rules-in-strait-of-hormuz-amid-us-blockade-on-iranian-ports/articleshow/130348969.cms",
+          "theme": "energy",
+          "time": "6h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Are gold rates up today? Check prices",
+            "en": "Are gold rates up today? Check prices"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/invest/22k-gold-rate-today-ahead-of-akshaya-tritiya-check-24k-22k-18k-gold-prices-april-18-2026-in-new-delhi-mumbai-chennai-bengaluru-and-other-cities/articleshow/130348758.cms",
           "theme": "monetary",
-          "time": "4h",
+          "time": "6h",
           "impact": "medium",
           "source": "Economic Times"
         }
@@ -1037,8 +1037,8 @@
           "name": "MSCI World",
           "value": 151,
           "trend": "up",
-          "change": 1.19,
-          "period": "2026-04-17"
+          "change": 1.34,
+          "period": "2026-04-18"
         }
       },
       "sparkline": {
@@ -1055,8 +1055,8 @@
           63.2,
           60.85,
           70.69,
-          99.39,
-          89.17
+          90.38,
+          90.38
         ]
       },
       "summary": {
@@ -1066,43 +1066,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "‘Waiting without answers’: Gaza mother’s fear for her three imprisoned sons",
-            "en": "‘Waiting without answers’: Gaza mother’s fear for her three imprisoned sons"
+            "fr": "Iran’s deputy FM says no date for more US talks until ‘framework’ agreed",
+            "en": "Iran’s deputy FM says no date for more US talks until ‘framework’ agreed"
           },
-          "url": "https://www.aljazeera.com/features/2026/4/17/waiting-without-answers-gaza-mothers-fear-for-her-three-imprisoned-sons?traffic_source=rss",
-          "theme": "energy",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Iran foreign minister says Strait of Hormuz ‘completely open’",
-            "en": "Iran foreign minister says Strait of Hormuz ‘completely open’"
-          },
-          "url": "https://www.aljazeera.com/news/2026/4/17/iran-foreign-minister-says-strait-of-hormuz-completely-open?traffic_source=rss",
-          "theme": "energy",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "The three clocks of the Iran war",
-            "en": "The three clocks of the Iran war"
-          },
-          "url": "https://www.aljazeera.com/opinions/2026/4/17/the-three-clocks-of-the-iran-war?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/18/irans-deputy-fm-says-no-date-for-more-us-talks-until-framework-agreed?traffic_source=rss",
           "theme": "geopolitics",
           "time": "<1h",
-          "impact": "high",
+          "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Macron and Starmer host allies for summit on Hormuz maritime security",
-            "en": "Macron and Starmer host allies for summit on Hormuz maritime security"
+            "fr": "Iran closes Strait of Hormuz again over US blockade of its ports",
+            "en": "Iran closes Strait of Hormuz again over US blockade of its ports"
           },
-          "url": "https://www.aljazeera.com/news/2026/4/17/macron-and-starmer-host-allies-for-summit-on-hormuz-maritime-security?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/4/18/iran-closes-strait-of-hormuz-again-over-us-blockade-of-its-ports?traffic_source=rss",
           "theme": "energy",
           "time": "1h",
           "impact": "low",
@@ -1110,10 +1088,10 @@
         },
         {
           "title": {
-            "fr": "Can Hungary wean itself off Russian energy, as its new leader has promised?",
-            "en": "Can Hungary wean itself off Russian energy, as its new leader has promised?"
+            "fr": "Gunfire reported by vessel in Strait of Hormuz",
+            "en": "Gunfire reported by vessel in Strait of Hormuz"
           },
-          "url": "https://www.aljazeera.com/news/2026/4/17/can-hungary-wean-itself-off-russian-energy-as-its-new-leader-has-promised?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/18/gunfire-reported-by-vessel-in-strait-of-hormuz?traffic_source=rss",
           "theme": "energy",
           "time": "1h",
           "impact": "low",
@@ -1121,10 +1099,10 @@
         },
         {
           "title": {
-            "fr": "The Iran war has exposed the limits of neutrality",
-            "en": "The Iran war has exposed the limits of neutrality"
+            "fr": "Turkiye woos investors amid Iran war fallout in Gulf economies",
+            "en": "Turkiye woos investors amid Iran war fallout in Gulf economies"
           },
-          "url": "https://www.aljazeera.com/opinions/2026/4/17/the-iran-war-has-exposed-the-limits-of-neutrality?traffic_source=rss",
+          "url": "https://www.aljazeera.com/economy/2026/4/18/turkiye-woos-investors-amid-iran-war-fallout-in-gulf-economies?traffic_source=rss",
           "theme": "geopolitics",
           "time": "1h",
           "impact": "high",
@@ -1132,24 +1110,46 @@
         },
         {
           "title": {
-            "fr": "Could the Lebanon ceasefire lead to US-Iran talks breakthrough?",
-            "en": "Could the Lebanon ceasefire lead to US-Iran talks breakthrough?"
+            "fr": "US blockade of Iran needs to end before the Strait of Hormuz is fully reope",
+            "en": "US blockade of Iran needs to end before the Strait of Hormuz is fully reope"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/17/could-the-lebanon-ceasefire-lead-to-us-iran-talks-breakthrough?traffic_source=rss",
-          "theme": "geopolitics",
+          "url": "https://www.aljazeera.com/video/quotable/2026/4/18/us-blockade-of-iran-needs-to-end-before-the-strait-of-hormuz-is-fully-reope?traffic_source=rss",
+          "theme": "energy",
+          "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Hormuz: Spin in the Strait",
+            "en": "Hormuz: Spin in the Strait"
+          },
+          "url": "https://www.aljazeera.com/video/the-listening-post/2026/4/18/hormuz-spin-in-the-strait?traffic_source=rss",
+          "theme": "energy",
           "time": "2h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Lebanese celebrate return to homes as 10-day ceasefire begins",
-            "en": "Lebanese celebrate return to homes as 10-day ceasefire begins"
+            "fr": "As oil prices plunge below $91 after weeks, a new Hormuz crisis emerges",
+            "en": "As oil prices plunge below $91 after weeks, a new Hormuz crisis emerges"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/17/lebanese-celebrate-return-to-homes-as-10-day-ceasefire-begins?traffic_source=rss",
-          "theme": "monetary",
+          "url": "https://www.aljazeera.com/economy/2026/4/18/as-oil-prices-plunge-below-91-after-weeks-a-new-hormuz-crisis-emerges?traffic_source=rss",
+          "theme": "energy",
           "time": "2h",
-          "impact": "medium",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Pakistan PM, army chief wrap up key trips in push for more US-Iran talks",
+            "en": "Pakistan PM, army chief wrap up key trips in push for more US-Iran talks"
+          },
+          "url": "https://www.aljazeera.com/news/2026/4/18/pakistan-pm-army-chief-wrap-up-key-trips-in-push-for-more-us-iran-talks?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "low",
           "source": "Al Jazeera"
         }
       ]
