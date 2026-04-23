@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22",
+  "lastUpdated": "2026-04-23",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.366,
+          "value": 1.367,
           "unit": "CAD/USD",
-          "trend": "down",
-          "period": "2026-04-21",
+          "trend": "up",
+          "period": "2026-04-22",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 34053,
-          "trend": "up",
-          "change": 0.72,
-          "period": "2026-04-22"
+          "value": 33894,
+          "trend": "down",
+          "change": -0.18,
+          "period": "2026-04-23"
         }
       },
       "sparkline": {
@@ -82,65 +82,76 @@
       "headlines": [
         {
           "title": {
-            "fr": "L’Iran intercepte deux navires dans le détroit d’Ormuz",
-            "en": "L’Iran intercepte deux navires dans le détroit d’Ormuz"
+            "fr": "Netflix boosts share buyback plan by $25-billion after failed Warner Bros. bid",
+            "en": "Netflix boosts share buyback plan by $25-billion after failed Warner Bros. bid"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2248129/ormouz-incidents-maritimes-treve-prolongee-trump",
-          "theme": "energy",
+          "url": "https://www.theglobeandmail.com/investing/article-netflix-boosts-share-buyback-plan-by-25-billion-after-failed-warner/",
+          "theme": "tech",
           "time": "<1h",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Trump ordonne de détruire les bateaux iraniens posant des mines dans le détroit d’Ormuz",
+            "en": "Trump ordonne de détruire les bateaux iraniens posant des mines dans le détroit d’Ormuz"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2248452/bras-fer-irano-americain-detroit-ormuz-liban",
+          "theme": "geopolitics",
+          "time": "1h",
           "impact": "low",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "More job seekers are using AI to craft resumes. It’s slowing the hiring process",
-            "en": "More job seekers are using AI to craft resumes. It’s slowing the hiring process"
+            "fr": "Warner Bros. shareholders to vote on Paramount takeover still requiring approval from regulators",
+            "en": "Warner Bros. shareholders to vote on Paramount takeover still requiring approval from regulators"
           },
-          "url": "https://www.theglobeandmail.com/business/careers/talent/article-more-job-seekers-are-using-ai-to-craft-resumes-its-slowing-the-hiring/",
-          "theme": "trade",
+          "url": "https://www.theglobeandmail.com/business/article-warner-bros-shareholders-vote-on-paramount-takeover/",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Three pathways to help you figure out what tasks to start using AI for",
+            "en": "Three pathways to help you figure out what tasks to start using AI for"
+          },
+          "url": "https://www.theglobeandmail.com/business/careers/talent/article-three-pathways-to-help-you-figure-out-what-tasks-to-start-using-ai-for/",
+          "theme": "tech",
           "time": "1h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Premier feu vert de l’UE au prêt de 90 milliards d’euros à l’Ukraine",
-            "en": "Premier feu vert de l’UE au prêt de 90 milliards d’euros à l’Ukraine"
+            "fr": "Tesla’s new $25-billion spending plan demands ‘leap of faith’ from investors",
+            "en": "Tesla’s new $25-billion spending plan demands ‘leap of faith’ from investors"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2248137/ue-pret-90-milliards-euros-ukraine",
+          "url": "https://www.theglobeandmail.com/investing/article-teslas-25-billion-spending-plan-robotaxis-humanoid-robots/",
           "theme": "tech",
           "time": "1h",
           "impact": "high",
-          "source": "Radio-Canada Économie"
+          "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Minister Dominic LeBlanc says Canada has made concessions to keep U.S. at negotiating table in trade talks",
-            "en": "Minister Dominic LeBlanc says Canada has made concessions to keep U.S. at negotiating table in trade talks"
+            "fr": "Trump orders U.S. military to ‘shoot and kill’ small Iranian boats deploying mines in Hormuz",
+            "en": "Trump orders U.S. military to ‘shoot and kill’ small Iranian boats deploying mines in Hormuz"
           },
-          "url": "https://www.theglobeandmail.com/business/article-intersect-26-conference-live-updates/",
-          "theme": "trade",
-          "time": "2h",
+          "url": "https://www.theglobeandmail.com/world/article-us-iran-war-ceasefire-talks-strait-of-hormuz/",
+          "theme": "geopolitics",
+          "time": "1h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "RBC’s Jeffrey Schok knows that as gold soars, picking the right stocks becomes even more important",
-            "en": "RBC’s Jeffrey Schok knows that as gold soars, picking the right stocks becomes even more important"
+            "fr": "Bombardier signs multimillion-dollar contract with CoLab to design jets using AI software",
+            "en": "Bombardier signs multimillion-dollar contract with CoLab to design jets using AI software"
           },
-          "url": "https://www.theglobeandmail.com/business/rob-magazine/article-rbcs-jeffrey-schok-knows-that-as-gold-soars-picking-the-right-stocks/",
-          "theme": "trade",
-          "time": "2h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "SpaceX secures option to buy AI coding startup Cursor for $60-billion",
-            "en": "SpaceX secures option to buy AI coding startup Cursor for $60-billion"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-spacex-secures-option-to-buy-ai-coding-startup-cursor-for-60-billion/",
+          "url": "https://www.theglobeandmail.com/business/article-bombardier-signs-contract-colab-ai-software/",
           "theme": "tech",
           "time": "2h",
           "impact": "high",
@@ -148,21 +159,10 @@
         },
         {
           "title": {
-            "fr": "OpenAI reported to have briefed U.S. agencies, Five Eyes partners on new cybersecurity product",
-            "en": "OpenAI reported to have briefed U.S. agencies, Five Eyes partners on new cybersecurity product"
+            "fr": "Fiscal fantasy: Believe it or not, fiscal reality hasn’t gone away",
+            "en": "Fiscal fantasy: Believe it or not, fiscal reality hasn’t gone away"
           },
-          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-openai-briefs-us-agencies-five-eyes-new-cybersecurity-product/",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Mark Carney, the banker for all seasons",
-            "en": "Mark Carney, the banker for all seasons"
-          },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-mark-carney-banker-all-seasons-pm/",
+          "url": "https://www.theglobeandmail.com/business/commentary/article-deficit-budget-fiscal-sanity-debt/",
           "theme": "trade",
           "time": "4h",
           "impact": "low",
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7118,
-          "trend": "up",
-          "change": 0.76,
-          "period": "2026-04-22"
+          "value": 7122,
+          "trend": "down",
+          "change": -0.22,
+          "period": "2026-04-23"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6939.03,
           6878.88,
           6528.52,
-          7064.01,
-          7117.99
+          7137.9,
+          7122.22
         ]
       },
       "summary": {
@@ -561,89 +561,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Oil prices fluctuate as Trump extends Iran war ceasefire",
-            "en": "Oil prices fluctuate as Trump extends Iran war ceasefire"
+            "fr": "Comcast beats revenue, earnings expectations as broadband losses improve",
+            "en": "Comcast beats revenue, earnings expectations as broadband losses improve"
           },
-          "url": "https://www.bbc.com/news/articles/c995dkl4dvvo?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "high",
-          "source": "BBC Business"
+          "url": "https://www.cnbc.com/2026/04/23/comcast-cmcsa-earnings-q1-2026.html",
+          "theme": "trade",
+          "time": "<1h",
+          "impact": "medium",
+          "source": "CNBC"
         },
         {
           "title": {
-            "fr": "World's biggest condom maker set to raise prices due to Iran war",
-            "en": "World's biggest condom maker set to raise prices due to Iran war"
+            "fr": "Warner Bros. Discovery shareholders to vote on Paramount deal",
+            "en": "Warner Bros. Discovery shareholders to vote on Paramount deal"
           },
-          "url": "https://www.bbc.com/news/articles/cy71zj1381po?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.cnbc.com/2026/04/23/warner-bros-discovery-shareholder-vote-paramount-deal.html",
           "theme": "geopolitics",
-          "time": "6h",
+          "time": "2h",
           "impact": "high",
-          "source": "BBC Business"
+          "source": "CNBC"
         },
         {
           "title": {
-            "fr": "War in Iran 'has put up our fuel bill by £100,000'",
-            "en": "War in Iran 'has put up our fuel bill by £100,000'"
+            "fr": "Kevin Warsh’s wealth shows how top family office employees can cash in",
+            "en": "Kevin Warsh’s wealth shows how top family office employees can cash in"
           },
-          "url": "https://www.bbc.com/news/articles/c248j1r7qrdo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.cnbc.com/2026/04/23/kevin-warsh-family-office.html",
           "theme": "geopolitics",
-          "time": "8h",
+          "time": "2h",
           "impact": "high",
-          "source": "BBC Business"
+          "source": "CNBC"
         },
         {
           "title": {
-            "fr": "OpenAI faces criminal probe over role of ChatGPT in shooting",
-            "en": "OpenAI faces criminal probe over role of ChatGPT in shooting"
+            "fr": "Asos demands £7m from US as firms rush to claim tariff refunds",
+            "en": "Asos demands £7m from US as firms rush to claim tariff refunds"
           },
-          "url": "https://www.bbc.com/news/articles/c62j4ldp2jqo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "18h",
+          "url": "https://www.bbc.com/news/articles/cd0r9d5zrkno?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "4h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "From Epstein to sock puppets: Key takeaways from Kevin Warsh's Fed confirmation hearing",
-            "en": "From Epstein to sock puppets: Key takeaways from Kevin Warsh's Fed confirmation hearing"
+            "fr": "AI is already leading to fewer jobs for young people, says Sunak",
+            "en": "AI is already leading to fewer jobs for young people, says Sunak"
           },
-          "url": "https://www.bbc.com/news/articles/c8dl3ez4mpno?at_medium=RSS&at_campaign=rss",
-          "theme": "monetary",
+          "url": "https://www.bbc.com/news/articles/cvg07x4rejdo?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "7h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Trump administration in advanced talks for Spirit Airlines rescue package, sources say",
+            "en": "Trump administration in advanced talks for Spirit Airlines rescue package, sources say"
+          },
+          "url": "https://www.cnbc.com/2026/04/22/spirit-airlines-rescue-trump-administration.html",
+          "theme": "tech",
+          "time": "16h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Billionaire backer sues Trump family's crypto firm over alleged extortion",
+            "en": "Billionaire backer sues Trump family's crypto firm over alleged extortion"
+          },
+          "url": "https://www.bbc.com/news/articles/c8x7kxjgq9xo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
           "time": "19h",
           "impact": "high",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "UPS and FedEx have begun filing for some tariff refunds",
-            "en": "UPS and FedEx have begun filing for some tariff refunds"
+            "fr": "Oil prices fluctuate as Trump extends Iran war ceasefire",
+            "en": "Oil prices fluctuate as Trump extends Iran war ceasefire"
           },
-          "url": "https://www.cnbc.com/2026/04/21/ups-fedex-tariff-refunds-ieepa.html",
-          "theme": "trade",
-          "time": "20h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Michael and Susan Dell to donate $750 million to UT Austin to fund new medical campus",
-            "en": "Michael and Susan Dell to donate $750 million to UT Austin to fund new medical campus"
-          },
-          "url": "https://www.cnbc.com/2026/04/21/michael-susan-dell-ut-austin-donation-medical-campus.html",
-          "theme": "trade",
-          "time": "20h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Air fares soar by nearly 25% as Iran war forces flights to re-route",
-            "en": "Air fares soar by nearly 25% as Iran war forces flights to re-route"
-          },
-          "url": "https://www.bbc.com/news/articles/crr14qplxe8o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.com/news/articles/c995dkl4dvvo?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
-          "time": "21h",
+          "time": "1j",
           "impact": "high",
           "source": "BBC Business"
         }
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.816,
+          "value": 6.824,
           "unit": "CNY/USD",
-          "trend": "down",
-          "period": "2026-04-21",
+          "trend": "up",
+          "period": "2026-04-22",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 4106,
+          "value": 4093,
           "trend": "up",
-          "change": 0.59,
-          "period": "2026-04-22"
+          "change": 0.27,
+          "period": "2026-04-23"
         }
       },
       "sparkline": {
@@ -730,76 +730,54 @@
       "headlines": [
         {
           "title": {
-            "fr": "China’s battery makers stand to gain as Iran war reshapes energy storage demand: Fitch",
-            "en": "China’s battery makers stand to gain as Iran war reshapes energy storage demand: Fitch"
+            "fr": "As US-Iran war chokes Hormuz, can Central Asia’s ‘Middle Corridor’ rise to the rescue?",
+            "en": "As US-Iran war chokes Hormuz, can Central Asia’s ‘Middle Corridor’ rise to the rescue?"
           },
-          "url": "https://www.scmp.com/economy/china-economy/article/3351035/chinas-battery-makers-stand-gain-iran-war-reshapes-energy-storage-demand-fitch?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "<1h",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3351191/us-iran-war-chokes-hormuz-can-central-asias-middle-corridor-rise-rescue?utm_source=rss_feed",
+          "theme": "energy",
+          "time": "1h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China names 2 Pakistani astronauts chosen to train for Tiangong space station mission",
-            "en": "China names 2 Pakistani astronauts chosen to train for Tiangong space station mission"
+            "fr": "China can offer Gulf states more than just a security umbrella",
+            "en": "China can offer Gulf states more than just a security umbrella"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3351043/china-names-2-pakistani-astronauts-chosen-train-tiangong-space-station-mission?utm_source=rss_feed",
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3350366/china-can-offer-gulf-states-more-just-security-umbrella?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China must ‘strengthen education’ of Tibetan Buddhists, Beijing official says after tour",
+            "en": "China must ‘strengthen education’ of Tibetan Buddhists, Beijing official says after tour"
+          },
+          "url": "https://www.scmp.com/news/china/politics/article/3351181/china-must-strengthen-education-tibetan-buddhists-beijing-official-says-after-tour?utm_source=rss_feed",
           "theme": "tech",
-          "time": "1h",
+          "time": "2h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "How China’s patient diplomacy can help secure peace in Iran",
-            "en": "How China’s patient diplomacy can help secure peace in Iran"
+            "fr": "China’s Russia ties mean EU trade deal is off the table, Finland says",
+            "en": "China’s Russia ties mean EU trade deal is off the table, Finland says"
           },
-          "url": "https://www.scmp.com/opinion/china-opinion/article/3350462/how-chinas-patient-diplomacy-can-help-secure-peace-iran?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3351183/chinas-russia-ties-mean-eu-trade-deal-table-finland-says?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "1h",
+          "time": "2h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Warning over Taiwan? PLA warships make rare transits off southwest Japan",
-            "en": "Warning over Taiwan? PLA warships make rare transits off southwest Japan"
+            "fr": "Chinese military experts take stock of US munitions weak spot exposed by Iran war",
+            "en": "Chinese military experts take stock of US munitions weak spot exposed by Iran war"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3351040/warning-over-taiwan-pla-warships-make-rare-transits-southwest-japan?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China to fuse software and steel with US$14tr sector to fix weak links in world’s factory",
-            "en": "China to fuse software and steel with US$14tr sector to fix weak links in world’s factory"
-          },
-          "url": "https://www.scmp.com/economy/china-economy/article/3351021/china-fuse-software-and-steel-us14tr-sector-fix-weak-links-worlds-factory?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "How China’s new AI carbon accounting model points the finger at the US",
-            "en": "How China’s new AI carbon accounting model points the finger at the US"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3351009/how-chinas-new-ai-carbon-accounting-model-points-finger-us?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Trump extends Iran war ceasefire as Strait shutdown drags on",
-            "en": "Trump extends Iran war ceasefire as Strait shutdown drags on"
-          },
-          "url": "https://www.scmp.com/plus/news/world/middle-east/article/3351006/trump-extends-iran-war-ceasefire-strait-shutdown-drags?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3351140/chinese-military-experts-take-stock-us-munitions-weak-spot-exposed-iran-war?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "4h",
           "impact": "high",
@@ -807,12 +785,34 @@
         },
         {
           "title": {
-            "fr": "2,700 China-Japan flights axed in March as rift between Asian powers deepens",
-            "en": "2,700 China-Japan flights axed in March as rift between Asian powers deepens"
+            "fr": "China calls on Cambodia for ‘shared security and risks’ during global turmoil",
+            "en": "China calls on Cambodia for ‘shared security and risks’ during global turmoil"
           },
-          "url": "https://www.scmp.com/economy/china-economy/article/3350995/2700-china-japan-flights-axed-march-rift-between-asian-powers-deepens?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "5h",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3351116/china-calls-cambodia-shared-security-and-risks-during-global-turmoil?utm_source=rss_feed",
+          "theme": "energy",
+          "time": "6h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Can Chinese scientists bring Nasa’s ‘space spider’ dream to life?",
+            "en": "Can Chinese scientists bring Nasa’s ‘space spider’ dream to life?"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3351085/can-chinese-scientists-bring-nasas-space-spider-dream-life?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "8h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "More bookings, shorter trips: Chinese adjust to higher fuel prices for Labour Day break",
+            "en": "More bookings, shorter trips: Chinese adjust to higher fuel prices for Labour Day break"
+          },
+          "url": "https://www.scmp.com/economy/china-economy/article/3351100/more-bookings-shorter-trips-chinese-adjust-higher-fuel-prices-labour-day-break?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "8h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 93.51,
+          "value": 93.8,
           "unit": "INR/USD",
           "trend": "up",
-          "period": "2026-04-21",
+          "period": "2026-04-22",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 78516,
+          "value": 77664,
           "trend": "down",
-          "change": -0.95,
-          "period": "2026-04-22"
+          "change": -1.09,
+          "period": "2026-04-23"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           82269.78,
           81287.19,
           71947.55,
-          79273.33,
-          78516.49
+          78516.49,
+          77664.0
         ]
       },
       "summary": {
@@ -899,78 +899,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Three ships targeted in Hormuz, Iran seizes two",
-            "en": "Three ships targeted in Hormuz, Iran seizes two"
+            "fr": "Iran flaunts Hormuz control after talks collapse",
+            "en": "Iran flaunts Hormuz control after talks collapse"
           },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/three-ships-targeted-in-hormuz-iran-seizes-two-monitors-guards/articleshow/130442145.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-shows-off-its-control-over-strait-after-collapse-of-peace-talks/articleshow/130470576.cms",
           "theme": "energy",
-          "time": "1h",
+          "time": "<1h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Trump claims Hormuz control till Iran deal is made",
+            "en": "Trump claims Hormuz control till Iran deal is made"
+          },
+          "url": "https://economictimes.indiatimes.com/news/defence/sealed-up-tight-trump-says-us-controls-hormuz-until-iran-agrees-to-deal/articleshow/130469958.cms",
+          "theme": "energy",
+          "time": "<1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Agri exports up 2.8 pc to USD 52.55 bn in 2025-26",
-            "en": "Agri exports up 2.8 pc to USD 52.55 bn in 2025-26"
+            "fr": "Mamata-Abhishek, Shah steer parallel 'war rooms'",
+            "en": "Mamata-Abhishek, Shah steer parallel 'war rooms'"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/agriculture/agriculture-exports-up-2-8-pc-to-usd-52-55-bn-in-2025-26/articleshow/130441344.cms",
-          "theme": "trade",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "India may take a seat at Middle East peace table",
-            "en": "India may take a seat at Middle East peace table"
-          },
-          "url": "https://economictimes.indiatimes.com/news/defence/it-is-possible-rajnath-singh-says-india-may-play-its-role-in-bringing-peace-in-middle-east/articleshow/130435094.cms",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Iran says 'break blockade and we will negotiate'",
-            "en": "Iran says 'break blockade and we will negotiate'"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-sets-lifting-of-hormuz-blockade-as-condition-for-talks-says-break-blockade-and-we-will-negotiate/articleshow/130434592.cms",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "HCL Tech rout: ₹38,000 crore gone, target price cut",
-            "en": "HCL Tech rout: ₹38,000 crore gone, target price cut"
-          },
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/hcl-tech-shares-wipe-out-rs-38000-crore-as-target-price-falls-to-rs-1165-why-every-second-broker-is-busy-downgrading/articleshow/130432873.cms",
-          "theme": "tech",
-          "time": "8h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "China, India place strategic bets on clean energy",
-            "en": "China, India place strategic bets on clean energy"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/renewables/china-india-place-strategic-bets-on-clean-energy-out-of-favour-in-the-west/articleshow/130432755.cms",
-          "theme": "monetary",
-          "time": "8h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Iran 'losing $500 mn per day': Trump calls SOS",
-            "en": "Iran 'losing $500 mn per day': Trump calls SOS"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/global-trends/sos-trump-claims-iran-starving-for-cash-wants-strait-of-hormuz-open-immediately-as-tehran-is-losing-500-million-a-day/articleshow/130431491.cms",
+          "url": "https://economictimes.indiatimes.com/news/elections/assembly-elections/west-bengal/bengal-polls-mamata-abhishek-banerjee-amit-shah-steer-parallel-war-rooms/articleshow/130468780.cms",
           "theme": "geopolitics",
-          "time": "9h",
+          "time": "1h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Tesla says to add 1,000 jobs in Germany",
+            "en": "Tesla says to add 1,000 jobs in Germany"
+          },
+          "url": "https://economictimes.indiatimes.com/tech/technology/tesla-says-to-add-1000-jobs-in-germany/articleshow/130467977.cms",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "MEA: 10 ships exit Hormuz, 14 still stranded",
+            "en": "MEA: 10 ships exit Hormuz, 14 still stranded"
+          },
+          "url": "https://economictimes.indiatimes.com/news/india/10-indian-ships-exit-hormuz-safely-14-vessels-still-stranded-in-persian-gulf-mea/articleshow/130467241.cms",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "FM Sitharaman meets banks on AI risks",
+            "en": "FM Sitharaman meets banks on AI risks"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/fm-nirmala-sitharaman-meets-heads-of-banks-on-ai-risks-following-concerns-over-anthropics-mythos/articleshow/130467254.cms",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Nippon Life's asset manager to settle Yes Bank case",
+            "en": "Nippon Life's asset manager to settle Yes Bank case"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/banking/finance/insure/nippon-lifes-india-asset-manager-to-settle-yes-bank-investment-case-document-shows/articleshow/130466074.cms",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "India extends Pakistan flight ban till May 24",
+            "en": "India extends Pakistan flight ban till May 24"
+          },
+          "url": "https://economictimes.indiatimes.com/news/india/india-extends-airspace-closure-for-pakistan-aircraft-till-may-24/articleshow/130465784.cms",
+          "theme": "tech",
+          "time": "3h",
           "impact": "low",
           "source": "Economic Times"
         }
@@ -1025,9 +1036,9 @@
         "stockIndex": {
           "name": "MSCI World",
           "value": 150,
-          "trend": "up",
-          "change": 0.76,
-          "period": "2026-04-22"
+          "trend": "down",
+          "change": -0.33,
+          "period": "2026-04-23"
         }
       },
       "sparkline": {
@@ -1044,8 +1055,8 @@
           63.2,
           60.85,
           70.69,
-          98.48,
-          95.07
+          101.91,
+          102.85
         ]
       },
       "summary": {
@@ -1055,43 +1066,65 @@
       "headlines": [
         {
           "title": {
-            "fr": "New York exhibit casts ‘Trumpism’ as a modern faith",
-            "en": "New York exhibit casts ‘Trumpism’ as a modern faith"
+            "fr": "MrBeast's company sued by ex-employee over sexual harassment claim",
+            "en": "MrBeast's company sued by ex-employee over sexual harassment claim"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/22/new-york-exhibit-casts-trumpism-as-a-modern-faith?traffic_source=rss",
+          "url": "https://www.bbc.com/news/articles/c937z1nxze8o?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
+          "time": "<1h",
+          "impact": "low",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "Trump administration reclassifies cannabis as less dangerous",
+            "en": "Trump administration reclassifies cannabis as less dangerous"
+          },
+          "url": "https://www.bbc.com/news/articles/cdxd0xxp0jko?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "low",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "‘Solutions, not slogans’: Gaza holds first election in 21 years",
+            "en": "‘Solutions, not slogans’: Gaza holds first election in 21 years"
+          },
+          "url": "https://www.aljazeera.com/features/2026/4/23/solutions-not-slogans-gaza-holds-first-election-in-21-years?traffic_source=rss",
+          "theme": "energy",
           "time": "<1h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Beyond the desecrated statue: What truly demands our outrage",
-            "en": "Beyond the desecrated statue: What truly demands our outrage"
+            "fr": "Makan Nasiri, the only child still missing from the school bombed in Iran",
+            "en": "Makan Nasiri, the only child still missing from the school bombed in Iran"
           },
-          "url": "https://www.aljazeera.com/opinions/2026/4/22/beyond-the-desecrated-statue-what-truly-demands-our-outrage?traffic_source=rss",
-          "theme": "monetary",
+          "url": "https://www.aljazeera.com/news/2026/4/23/makan-nasiri-the-only-missing-child-from-the-school-bombed-in-irans-minab?traffic_source=rss",
+          "theme": "geopolitics",
           "time": "<1h",
-          "impact": "medium",
+          "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Iran calls US ship seizure ‘piracy’: Is it?",
-            "en": "Iran calls US ship seizure ‘piracy’: Is it?"
+            "fr": "US Senate passes $70bn funding plan for ICE, Border Patrol",
+            "en": "US Senate passes $70bn funding plan for ICE, Border Patrol"
           },
-          "url": "https://www.aljazeera.com/news/2026/4/22/iran-calls-us-ship-seizure-piracy-is-it?traffic_source=rss",
-          "theme": "geopolitics",
+          "url": "https://www.aljazeera.com/news/2026/4/23/us-senate-passes-70bn-funding-plan-for-ice-border-patrol?traffic_source=rss",
+          "theme": "trade",
           "time": "1h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Israeli settlers set Palestinian home on fire in occupied West Bank",
-            "en": "Israeli settlers set Palestinian home on fire in occupied West Bank"
+            "fr": "Why Indian Muslim voters say they’ve been frozen out of this state election",
+            "en": "Why Indian Muslim voters say they’ve been frozen out of this state election"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/22/israeli-settlers-set-palestinian-home-on-fire-in-occupied-west-bank?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/23/why-indian-muslim-voters-say-theyve-been-frozen-out-of-this-state-electio?traffic_source=rss",
           "theme": "tech",
           "time": "2h",
           "impact": "low",
@@ -1099,45 +1132,23 @@
         },
         {
           "title": {
-            "fr": "EU approves €90bn loan for Ukraine as pipeline is turned on ending deadlock",
-            "en": "EU approves €90bn loan for Ukraine as pipeline is turned on ending deadlock"
+            "fr": "The economic winners & losers in the US-Israel war on Iran",
+            "en": "The economic winners & losers in the US-Israel war on Iran"
           },
-          "url": "https://www.bbc.com/news/articles/cnv8l99r3yyo?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "2h",
-          "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Why is India’s Manipur burning for three years?",
-            "en": "Why is India’s Manipur burning for three years?"
-          },
-          "url": "https://www.aljazeera.com/features/2026/4/22/why-is-indias-manipur-burning-for-three-years?traffic_source=rss",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Is China a winner of the Iran war or facing economic risks?",
-            "en": "Is China a winner of the Iran war or facing economic risks?"
-          },
-          "url": "https://www.aljazeera.com/video/counting-the-cost/2026/4/22/is-china-a-winner-of-the-iran-war-or-facing-economic-risks?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/money-works/2026/4/23/the-economic-winners-losers-in-the-us-israel-war-on-iran?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "3h",
+          "time": "2h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Trump reads Bible verses on repentance after AI image of himself as Jesus",
-            "en": "Trump reads Bible verses on repentance after AI image of himself as Jesus"
+            "fr": "Indian physicists voice solidarity with Iran, Palestine, Lebanon academics",
+            "en": "Indian physicists voice solidarity with Iran, Palestine, Lebanon academics"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/22/trump-reads-bible-verses-on-repentance-after-ai-image-of-himself-as-jesus?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/4/23/indian-physicists-voice-solidarity-with-iran-palestine-lebanon-academics?traffic_source=rss",
           "theme": "tech",
-          "time": "3h",
+          "time": "2h",
           "impact": "low",
           "source": "Al Jazeera"
         }
