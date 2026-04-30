@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29",
+  "lastUpdated": "2026-04-30",
   "regions": {
     "CA": {
       "name": {
@@ -43,16 +43,16 @@
         "exchange": {
           "value": 1.367,
           "unit": "CAD/USD",
-          "trend": "down",
+          "trend": "up",
           "period": "2026-04-29",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 33468,
-          "trend": "down",
-          "change": -0.35,
-          "period": "2026-04-29"
+          "value": 33617,
+          "trend": "up",
+          "change": 0.9,
+          "period": "2026-04-30"
         }
       },
       "sparkline": {
@@ -82,91 +82,91 @@
       "headlines": [
         {
           "title": {
-            "fr": "Christine Fréchette promet une baisse d’impôts pour 75 000 PME",
-            "en": "Christine Fréchette promet une baisse d’impôts pour 75 000 PME"
+            "fr": "Young Canadians want AI companies to make their chatbots less addictive, report shows",
+            "en": "Young Canadians want AI companies to make their chatbots less addictive, report shows"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2249944/christine-frechette-baisse-impots-pme-annonce",
+          "url": "https://www.theglobeandmail.com/canada/article-canadians-ai-companies-make-chatbots-less-addictive/",
           "theme": "tech",
-          "time": "<1h",
-          "impact": "medium",
-          "source": "Radio-Canada Économie"
+          "time": "1h",
+          "impact": "low",
+          "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "La Banque du Canada maintient son taux directeur à 2,25 %.",
-            "en": "La Banque du Canada maintient son taux directeur à 2,25 %."
+            "fr": "U.S. economy grew 2% from January-to March, recovering from federal shutdown",
+            "en": "U.S. economy grew 2% from January-to March, recovering from federal shutdown"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2249943/banque-canada-taux-directeur-avril",
+          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-us-economy-gpd-january-to-march-federal-shutdown/",
           "theme": "monetary",
-          "time": "<1h",
-          "impact": "medium",
-          "source": "Radio-Canada Économie"
+          "time": "1h",
+          "impact": "low",
+          "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Ottawa veut bannir les guichets automatiques de bitcoin",
-            "en": "Ottawa veut bannir les guichets automatiques de bitcoin"
+            "fr": "L’Iran défie le blocus américain, le pétrole au plus haut depuis 2022",
+            "en": "L’Iran défie le blocus américain, le pétrole au plus haut depuis 2022"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2249952/canada-interdiction-guichets-cryptomonnaie",
-          "theme": "tech",
+          "url": "https://ici.radio-canada.ca/nouvelle/2250343/iran-blocus-ormuz-petrole-trump",
+          "theme": "energy",
           "time": "1h",
           "impact": "low",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "CN reports $1.15-billion first-quarter profit, down from a year earlier",
-            "en": "CN reports $1.15-billion first-quarter profit, down from a year earlier"
+            "fr": "Bank of England and ECB join other central banks in keeping interest rates unchanged",
+            "en": "Bank of England and ECB join other central banks in keeping interest rates unchanged"
           },
-          "url": "https://www.theglobeandmail.com/business/article-cn-first-quarter-earnings-results-april-29/",
-          "theme": "trade",
-          "time": "1h",
+          "url": "https://www.theglobeandmail.com/business/international-business/article-bank-of-england-ecb-interest-rate-decisions-april-30-global-economy/",
+          "theme": "monetary",
+          "time": "2h",
+          "impact": "medium",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Warren Buffett has stepped aside. Berkshire is now Greg Abel’s show",
+            "en": "Warren Buffett has stepped aside. Berkshire is now Greg Abel’s show"
+          },
+          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-warren-buffett-has-stepped-aside-berkshire-is-now-greg-abels-show/",
+          "theme": "geopolitics",
+          "time": "2h",
           "impact": "high",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "U.S. Fed likely to hold rates steady at what may be Powell’s last meeting as Chair",
-            "en": "U.S. Fed likely to hold rates steady at what may be Powell’s last meeting as Chair"
+            "fr": "Qualcomm shares jump as optimism on smartphones, AI chips outweigh dismal forecast",
+            "en": "Qualcomm shares jump as optimism on smartphones, AI chips outweigh dismal forecast"
           },
-          "url": "https://www.theglobeandmail.com/business/article-us-federal-reserve-april-29-rate-decision-powell-last-meeting/",
-          "theme": "monetary",
+          "url": "https://www.theglobeandmail.com/investing/article-qualcomm-forecast-smartphones-ai-chips-ceo-cristiano-amon/",
+          "theme": "tech",
           "time": "3h",
           "impact": "medium",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Bank of Canada keeps key interest rate unchanged at 2.25% for fourth consecutive decision",
-            "en": "Bank of Canada keeps key interest rate unchanged at 2.25% for fourth consecutive decision"
+            "fr": "Canada’s GDP grows 0.2% in February, on par with expectations",
+            "en": "Canada’s GDP grows 0.2% in February, on par with expectations"
           },
-          "url": "https://www.theglobeandmail.com/business/article-bank-of-canada-interest-rate-april-29-oil-prices-live/",
-          "theme": "monetary",
+          "url": "https://www.theglobeandmail.com/business/economy/article-canada-gpd-february-first-quarter-estimate-statistics-canada/",
+          "theme": "trade",
           "time": "3h",
           "impact": "medium",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Trump urges Iran to ‘get smart soon’ and sign a deal as talks at a standstill",
-            "en": "Trump urges Iran to ‘get smart soon’ and sign a deal as talks at a standstill"
+            "fr": "Iran threatens ‘long and painful strikes’ if U.S. resumes attacks",
+            "en": "Iran threatens ‘long and painful strikes’ if U.S. resumes attacks"
           },
-          "url": "https://www.theglobeandmail.com/world/article-iran-us-war-talks-strait-of-hormuz-4/",
-          "theme": "geopolitics",
+          "url": "https://www.theglobeandmail.com/world/article-us-iran-war-strait-of-hormuz-oil-prices/",
+          "theme": "tech",
           "time": "3h",
           "impact": "low",
           "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Que signifie le retrait des Émirats arabes unis de l’OPEP?",
-            "en": "Que signifie le retrait des Émirats arabes unis de l’OPEP?"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2249795/emirats-arabes-unis-retrait-opep",
-          "theme": "energy",
-          "time": "6h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
         }
       ],
       "provincialAnalysis": {
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7138,
+          "value": 7140,
           "trend": "stable",
-          "change": -0.0,
-          "period": "2026-04-29"
+          "change": 0.06,
+          "period": "2026-04-30"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6939.03,
           6878.88,
           6528.52,
-          7138.8,
-          7138.58
+          7135.95,
+          7140.42
         ]
       },
       "summary": {
@@ -561,91 +561,91 @@
       "headlines": [
         {
           "title": {
-            "fr": "Yum Brands earnings top estimates, fueled by Taco Bell's 8% same-store sales growth",
-            "en": "Yum Brands earnings top estimates, fueled by Taco Bell's 8% same-store sales growth"
+            "fr": "Saudi Arabia to stop funding LIV Golf next season",
+            "en": "Saudi Arabia to stop funding LIV Golf next season"
           },
-          "url": "https://www.cnbc.com/2026/04/29/yum-brands-yum-q1-2026-earnings.html",
+          "url": "https://www.bbc.com/sport/golf/articles/cp3p9we4v0yo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "<1h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Oil price hits highest since 2022 after report Trump to be briefed on new Iran options",
+            "en": "Oil price hits highest since 2022 after report Trump to be briefed on new Iran options"
+          },
+          "url": "https://www.bbc.com/news/articles/cx21m88rd14o?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Lawyers to the wealthy warn that AI legal advice comes with serious risks",
+            "en": "Lawyers to the wealthy warn that AI legal advice comes with serious risks"
+          },
+          "url": "https://www.cnbc.com/2026/04/30/ai-legal-advice-lawyers-risks.html",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Meta in row after workers who say they saw smart glasses users having sex lose jobs",
+            "en": "Meta in row after workers who say they saw smart glasses users having sex lose jobs"
+          },
+          "url": "https://www.bbc.com/news/articles/c5y7yvgy0w6o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "<1h",
-          "impact": "medium",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "ABC faces renewed Trump backlash as Kimmel says comments 'not, by any stretch' call for violence",
-            "en": "ABC faces renewed Trump backlash as Kimmel says comments 'not, by any stretch' call for violence"
-          },
-          "url": "https://www.cnbc.com/2026/04/28/trump-jimmy-kimmel-monologue-disney-abc.html",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Starbucks raises full-year outlook as turnaround takes hold — despite higher gas prices",
-            "en": "Starbucks raises full-year outlook as turnaround takes hold — despite higher gas prices"
-          },
-          "url": "https://www.cnbc.com/2026/04/28/starbucks-sbux-q2-2026-earnings.html",
-          "theme": "energy",
-          "time": "<1h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Oil price jumps to nearly $117 after reports of 'extended' Iran blockade",
-            "en": "Oil price jumps to nearly $117 after reports of 'extended' Iran blockade"
-          },
-          "url": "https://www.bbc.com/news/articles/cj4pxr0gr02o?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "<1h",
+          "time": "5h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Why has the UAE left Opec - and why does this matter?",
-            "en": "Why has the UAE left Opec - and why does this matter?"
+            "fr": "Premier Inn owner to cut 3,800 jobs in savings plan",
+            "en": "Premier Inn owner to cut 3,800 jobs in savings plan"
           },
-          "url": "https://www.bbc.com/news/videos/cz92wdvwek8o?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "4h",
+          "url": "https://www.bbc.com/news/articles/c5ye5g9m7mpo?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "5h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "United Arab Emirates to quit oil cartel Opec",
-            "en": "United Arab Emirates to quit oil cartel Opec"
+            "fr": "Meta shares slide as plan to spend billions more on AI spooks investors",
+            "en": "Meta shares slide as plan to spend billions more on AI spooks investors"
           },
-          "url": "https://www.bbc.com/news/articles/cj4pxwlr52yo?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "6h",
-          "impact": "medium",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Flying cars and 5-minute charges: China's EV industry sees opportunity in Iran crisis",
-            "en": "Flying cars and 5-minute charges: China's EV industry sees opportunity in Iran crisis"
-          },
-          "url": "https://www.bbc.com/news/videos/cm2pnde3l7yo?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "16h",
+          "url": "https://www.bbc.com/news/articles/crkpd4r2y7eo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "13h",
           "impact": "high",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "First Vegas-style casino opens in New York City",
-            "en": "First Vegas-style casino opens in New York City"
+            "fr": "Musk accuses OpenAI lawyer of trying to 'trick' him in combative testimony",
+            "en": "Musk accuses OpenAI lawyer of trying to 'trick' him in combative testimony"
           },
-          "url": "https://www.cnbc.com/2026/04/28/resorts-world-casino-opens-in-new-york-city.html",
-          "theme": "energy",
-          "time": "17h",
+          "url": "https://www.bbc.com/news/articles/czj29yygyzgo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "15h",
           "impact": "low",
-          "source": "CNBC"
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Oil price rises above $120 after reports of 'extended' Iran blockade",
+            "en": "Oil price rises above $120 after reports of 'extended' Iran blockade"
+          },
+          "url": "https://www.bbc.com/news/articles/cj4pxr0gr02o?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "15h",
+          "impact": "medium",
+          "source": "BBC Business"
         }
       ]
     },
@@ -691,16 +691,16 @@
         "exchange": {
           "value": 6.833,
           "unit": "CNY/USD",
-          "trend": "down",
+          "trend": "up",
           "period": "2026-04-29",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 4108,
+          "value": 4112,
           "trend": "up",
-          "change": 0.52,
-          "period": "2026-04-29"
+          "change": 0.82,
+          "period": "2026-04-30"
         }
       },
       "sparkline": {
@@ -730,43 +730,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "Are US agents around Trump armed with Chinese red dot sights?",
-            "en": "Are US agents around Trump armed with Chinese red dot sights?"
+            "fr": "Why is China warning the UN of a Japanese ‘nuclear breakout’?",
+            "en": "Why is China warning the UN of a Japanese ‘nuclear breakout’?"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3351850/are-us-agents-around-trump-armed-chinese-red-dot-sights?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3352062/why-china-warning-un-japanese-nuclear-breakout?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "<1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Thirst for local AI chips raises revenue for China GPU leaders Cambricon, MetaX",
-            "en": "Thirst for local AI chips raises revenue for China GPU leaders Cambricon, MetaX"
-          },
-          "url": "https://www.scmp.com/tech/article/3351894/revenue-jumps-chinas-cambricon-metax-amid-thirst-domestic-ai-chips?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Why China may benefit from the UAE’s Opec withdrawal amid Iran war oil crisis",
-            "en": "Why China may benefit from the UAE’s Opec withdrawal amid Iran war oil crisis"
-          },
-          "url": "https://www.scmp.com/economy/global-economy/article/3351849/why-china-may-benefit-uaes-opec-withdrawal-amid-iran-war-oil-crisis?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "1h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Hit from memory costs spreads from phones to EVs as China’s BYD raises driving-tech price",
-            "en": "Hit from memory costs spreads from phones to EVs as China’s BYD raises driving-tech price"
+            "fr": "China’s Tiangong space station to double in size as Nasa phases out ISS",
+            "en": "China’s Tiangong space station to double in size as Nasa phases out ISS"
           },
-          "url": "https://www.scmp.com/tech/article/3351842/hit-memory-costs-spreads-phones-evs-chinas-byd-raises-driving-tech-price?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/science/article/3352049/chinas-tiangong-space-station-double-size-nasa-phases-out-iss?utm_source=rss_feed",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
@@ -774,21 +752,32 @@
         },
         {
           "title": {
-            "fr": "Why an era of managed Hormuz disruption wouldn’t bode well for Asia",
-            "en": "Why an era of managed Hormuz disruption wouldn’t bode well for Asia"
+            "fr": "A world adrift looks to China for institutional anchors. Enter Hong Kong",
+            "en": "A world adrift looks to China for institutional anchors. Enter Hong Kong"
           },
-          "url": "https://www.scmp.com/opinion/asia-opinion/article/3351638/why-era-managed-hormuz-disruption-wouldnt-bode-well-asia?utm_source=rss_feed",
-          "theme": "energy",
+          "url": "https://www.scmp.com/opinion/hong-kong-opinion/article/3351722/world-adrift-looks-china-institutional-anchors-enter-hong-kong?utm_source=rss_feed",
+          "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Before Trump’s visit, China touts mineral dominance, fortifies resource security",
-            "en": "Before Trump’s visit, China touts mineral dominance, fortifies resource security"
+            "fr": "China’s US experts are falling short in the ‘great power game’, top scholar argues",
+            "en": "China’s US experts are falling short in the ‘great power game’, top scholar argues"
           },
-          "url": "https://www.scmp.com/economy/china-economy/article/3351864/trumps-visit-china-touts-mineral-dominance-fortifies-resource-security?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3352053/chinas-us-experts-are-falling-short-great-power-game-top-scholar-argues?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "medium",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Xi Jinping urges ‘disruptive innovation’ to boost China amid high-stakes US tech race",
+            "en": "Xi Jinping urges ‘disruptive innovation’ to boost China amid high-stakes US tech race"
+          },
+          "url": "https://www.scmp.com/news/china/politics/article/3352048/xi-jinping-urges-disruptive-innovation-boost-china-amid-high-stakes-us-tech-race?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "3h",
           "impact": "low",
@@ -796,10 +785,21 @@
         },
         {
           "title": {
-            "fr": "In a fragmenting global order, former Japanese leader urges pivot to China",
-            "en": "In a fragmenting global order, former Japanese leader urges pivot to China"
+            "fr": "China sparks backlash with plan to send jobless graduates to vocational school",
+            "en": "China sparks backlash with plan to send jobless graduates to vocational school"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3351796/fragmenting-global-order-former-japanese-leader-urges-pivot-china?utm_source=rss_feed",
+          "url": "https://www.scmp.com/economy/china-economy/article/3352006/china-sparks-backlash-plan-send-jobless-graduates-vocational-school?utm_source=rss_feed",
+          "theme": "trade",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Minerals over ideology? US embraces pragmatic diplomacy to break China’s rare earths grip",
+            "en": "Minerals over ideology? US embraces pragmatic diplomacy to break China’s rare earths grip"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3352009/minerals-over-ideology-us-embraces-pragmatic-diplomacy-break-chinas-rare-earth-grip?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "4h",
           "impact": "low",
@@ -807,13 +807,13 @@
         },
         {
           "title": {
-            "fr": "China targets ‘zombies’ with regulatory headshots to kill off subsidised laggards",
-            "en": "China targets ‘zombies’ with regulatory headshots to kill off subsidised laggards"
+            "fr": "Oil surge on Trump blockade warning tests stocks’ resilience",
+            "en": "Oil surge on Trump blockade warning tests stocks’ resilience"
           },
-          "url": "https://www.scmp.com/economy/china-economy/article/3351794/china-targets-zombies-regulatory-headshots-kill-subsidised-laggards?utm_source=rss_feed",
+          "url": "https://www.scmp.com/plus/news/world/middle-east/article/3352007/oil-surge-trump-blockade-warning-tests-stocks-resilience?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "8h",
-          "impact": "low",
+          "time": "5h",
+          "impact": "high",
           "source": "SCMP"
         }
       ]
@@ -860,16 +860,16 @@
         "exchange": {
           "value": 94.85,
           "unit": "INR/USD",
-          "trend": "up",
+          "trend": "stable",
           "period": "2026-04-29",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 77496,
-          "trend": "up",
-          "change": 0.79,
-          "period": "2026-04-29"
+          "value": 76914,
+          "trend": "down",
+          "change": -0.75,
+          "period": "2026-04-30"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           82269.78,
           81287.19,
           71947.55,
-          76886.91,
-          77496.36
+          77496.36,
+          76913.5
         ]
       },
       "summary": {
@@ -899,10 +899,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "Dubai removes min threshold for property linked Visa",
-            "en": "Dubai removes min threshold for property linked Visa"
+            "fr": "India used car market expected to double in 5 years",
+            "en": "India used car market expected to double in 5 years"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/real-estate/dubai-residential-visa-you-no-longer-need-minimum-7-5-lakh-dirhams-to-buy-a-property-dubai-land-department-makes-visa-rules-easier/articleshow/130607327.cms",
+          "url": "https://economictimes.indiatimes.com/industry/auto/auto-news/india-used-car-market-expected-to-double-to-70-billion-in-five-years-report/articleshow/130634770.cms",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "India to ease FDI rules for China-linked firms",
+            "en": "India to ease FDI rules for China-linked firms"
+          },
+          "url": "https://economictimes.indiatimes.com/news/economy/policy/india-to-soon-ease-fdi-rules-for-foreign-firms-with-up-to-10-chinese-stake/articleshow/130633797.cms",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
@@ -910,10 +921,21 @@
         },
         {
           "title": {
-            "fr": "Modi vs Mamata and the pulse of Indian politics",
-            "en": "Modi vs Mamata and the pulse of Indian politics"
+            "fr": "Carmakers bank on $2.3 bln in future tariff refunds",
+            "en": "Carmakers bank on $2.3 bln in future tariff refunds"
           },
-          "url": "https://economictimes.indiatimes.com/news/elections/assembly-elections/west-bengal/west-bengal-assembly-election-2026-modi-mamata-bjp-tmc-tale-of-two-ms-leadership-showdown-pulse-of-indian-politics/articleshow/130605516.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/business/carmakers-bank-on-2-3-billion-in-future-tariff-refunds-risking-trumps-ire/articleshow/130629314.cms",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "India’s overseas money pool gets harder to shake",
+            "en": "India’s overseas money pool gets harder to shake"
+          },
+          "url": "https://economictimes.indiatimes.com/nri/invest/india-remittances-138-billion-morgan-stanley-shock-resistant-gulf-middle-east-war-diaspora-diversification/articleshow/130631355.cms",
           "theme": "tech",
           "time": "2h",
           "impact": "low",
@@ -921,67 +943,45 @@
         },
         {
           "title": {
-            "fr": "ICICI Bank starts biometrics for payments up to Rs 5K",
-            "en": "ICICI Bank starts biometrics for payments up to Rs 5K"
+            "fr": "Oil price shock accelerates shift to renewables: UN",
+            "en": "Oil price shock accelerates shift to renewables: UN"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/save/icici-bank-enables-biometric-authentication-for-upi-transactions-up-to-rs-5000-how-to-activate-service-on-imobile-app/articleshow/130604696.cms",
-          "theme": "trade",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/oil-price-shock-from-west-asia-conflict-accelerating-shift-to-renewables-un/articleshow/130630506.cms",
+          "theme": "energy",
           "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "India, Sri Lanka reaffirm maritime pact with diving",
-            "en": "India, Sri Lanka reaffirm maritime pact with diving"
-          },
-          "url": "https://economictimes.indiatimes.com/news/india/india-sri-lanka-reaffirm-maritime-partnership-through-bilateral-diving-exercise/articleshow/130604897.cms",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "France eyes to change how billions in aid are given",
-            "en": "France eyes to change how billions in aid are given"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/france-during-g7-presidency-wants-to-change-key-metrics-on-how-billions-in-developmental-aid-are-distributed/articleshow/130603700.cms",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "high",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Indian safety net over US investing via GIFT city",
-            "en": "Indian safety net over US investing via GIFT city"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/international-stock-investment-gets-safer-with-vested-finance-as-ifsca-grants-it-gap-license-know-what-it-means-for-indian-investors/articleshow/130603617.cms",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Bandhan Bank targets 15% credit growth: MD",
-            "en": "Bandhan Bank targets 15% credit growth: MD"
-          },
-          "url": "https://economictimes.indiatimes.com/markets/expert-view/bandhan-bank-targets-15-credit-growth-and-roa-of-1-5-in-fy27-as-asset-quality-improves/articleshow/130603701.cms",
-          "theme": "trade",
-          "time": "4h",
           "impact": "medium",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Vedanta flags higher input costs for aluminium",
-            "en": "Vedanta flags higher input costs for aluminium"
+            "fr": "Axis My India skips Bengal exit poll",
+            "en": "Axis My India skips Bengal exit poll"
           },
-          "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/vedanta-flags-higher-input-costs-as-us-iran-war-hits-aluminium-prices/articleshow/130602625.cms",
-          "theme": "trade",
+          "url": "https://economictimes.indiatimes.com/news/elections/assembly-elections/west-bengal/axis-my-india-declines-to-release-bengal-exit-polls-due-to-unprecedented-voter-silence/articleshow/130630022.cms",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Pakistan navy to add advanced Chinese submarines",
+            "en": "Pakistan navy to add advanced Chinese submarines"
+          },
+          "url": "https://economictimes.indiatimes.com/news/defence/pakistan-navy-to-add-advanced-chinese-submarines/articleshow/130630100.cms",
+          "theme": "geopolitics",
           "time": "4h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Income tax implications of Wipro share buyback",
+            "en": "Income tax implications of Wipro share buyback"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/tax/wipro-is-buying-back-shares-at-rs-250-what-your-tax-bill-looks-like-depends-on-this-factor/articleshow/130628306.cms",
+          "theme": "trade",
+          "time": "5h",
           "impact": "low",
           "source": "Economic Times"
         }
@@ -1035,10 +1035,10 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 149,
-          "trend": "down",
-          "change": -0.18,
-          "period": "2026-04-29"
+          "value": 150,
+          "trend": "up",
+          "change": 0.52,
+          "period": "2026-04-30"
         }
       },
       "sparkline": {
@@ -1055,8 +1055,8 @@
           63.2,
           60.85,
           70.69,
-          111.26,
-          109.47
+          118.03,
+          109.7
         ]
       },
       "summary": {
@@ -1066,89 +1066,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Is Iran’s oil storage nearly full – and will it have to cut production?",
-            "en": "Is Iran’s oil storage nearly full – and will it have to cut production?"
+            "fr": "US military equipment worth billions of dollars destroyed in Iran war",
+            "en": "US military equipment worth billions of dollars destroyed in Iran war"
           },
-          "url": "https://www.aljazeera.com/economy/2026/4/29/is-irans-oil-storage-nearly-full-and-will-it-have-to-cut-production?traffic_source=rss",
-          "theme": "energy",
-          "time": "2h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "‘No more Mr Nice Guy’: Trump warns Iran to ‘get smart’ over stalled talks",
-            "en": "‘No more Mr Nice Guy’: Trump warns Iran to ‘get smart’ over stalled talks"
-          },
-          "url": "https://www.aljazeera.com/news/2026/4/29/no-more-mr-nice-guy-trump-threatens-iran-to-get-smart-in-peace-talks?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/4/30/us-military-equipment-worth-billions-of-dollars-destroyed-in-iran-war?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "2h",
+          "time": "<1h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "How US and Iran are playing a crypto cat-and-mouse game over sanctions",
-            "en": "How US and Iran are playing a crypto cat-and-mouse game over sanctions"
+            "fr": "Hormuz effect? How US, China are ramping up tensions over the Panama Canal",
+            "en": "Hormuz effect? How US, China are ramping up tensions over the Panama Canal"
           },
-          "url": "https://www.aljazeera.com/news/2026/4/29/how-us-and-iran-are-playing-a-crypto-cat-and-mouse-game-over-sanctions?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "The UAE’s OPEC exit is not about oil; it is the end of Gulf solidarity",
-            "en": "The UAE’s OPEC exit is not about oil; it is the end of Gulf solidarity"
-          },
-          "url": "https://www.aljazeera.com/opinions/2026/4/29/the-uaes-opec-exit-is-not-about-oil-it-is-the-end-of-gulf-solidarity?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/4/30/hormuz-effect-how-us-china-are-ramping-up-tensions-over-the-panama-canal?traffic_source=rss",
           "theme": "energy",
-          "time": "3h",
+          "time": "<1h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "European Commission president calls for diplomacy to end Iran war",
-            "en": "European Commission president calls for diplomacy to end Iran war"
+            "fr": "Was Israeli PM’s Lebanon destruction video a snub to Trump?",
+            "en": "Was Israeli PM’s Lebanon destruction video a snub to Trump?"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/29/european-commission-president-calls-for-diplomacy-to-end-iran-war?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/4/30/was-israeli-pms-lebanon-destruction-video-a-snub-to-trump-2?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "4h",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Why are Western feminists silent on the war on Iranian women?",
+            "en": "Why are Western feminists silent on the war on Iranian women?"
+          },
+          "url": "https://www.aljazeera.com/opinions/2026/4/30/why-are-western-feminists-silent-on-the-war-on-iranian-women?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "1h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Outrage after Indian man carries his sister's skeleton to a bank to prove her death",
-            "en": "Outrage after Indian man carries his sister's skeleton to a bank to prove her death"
+            "fr": "Oil price hits highest since 2022 after report Trump to be briefed on new Iran options",
+            "en": "Oil price hits highest since 2022 after report Trump to be briefed on new Iran options"
           },
-          "url": "https://www.bbc.com/news/articles/clypl5jrjqlo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "5h",
+          "url": "https://www.bbc.com/news/articles/cx21m88rd14o?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "1h",
           "impact": "low",
           "source": "BBC World"
         },
         {
           "title": {
-            "fr": "‘Particularly badly exposed’: How the Iran war is hitting the UK",
-            "en": "‘Particularly badly exposed’: How the Iran war is hitting the UK"
+            "fr": "$25bn or $1 trillion: How much has Iran war really cost the US?",
+            "en": "$25bn or $1 trillion: How much has Iran war really cost the US?"
           },
-          "url": "https://www.aljazeera.com/news/2026/4/29/how-the-iran-war-is-hitting-the-uk?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/4/30/25bn-or-1-trillion-how-much-has-iran-war-really-cost-the-us?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "6h",
+          "time": "1h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Former US officials criticise Pentagon silence on deadly Iran school attack",
-            "en": "Former US officials criticise Pentagon silence on deadly Iran school attack"
+            "fr": "World’s top media outlets urge Israel to allow independent access to Gaza",
+            "en": "World’s top media outlets urge Israel to allow independent access to Gaza"
           },
-          "url": "https://www.bbc.com/news/articles/cwy2482pn0lo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "12h",
+          "url": "https://www.aljazeera.com/news/2026/4/30/media-organisations-call-on-israel-to-allow-independent-access-to-gaza?traffic_source=rss",
+          "theme": "energy",
+          "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Israel intercepts Gaza flotilla near Crete and detains 175 activists",
+            "en": "Israel intercepts Gaza flotilla near Crete and detains 175 activists"
+          },
+          "url": "https://www.bbc.com/news/articles/c4g4lk9m77vo?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "1h",
           "impact": "low",
           "source": "BBC World"
         }
