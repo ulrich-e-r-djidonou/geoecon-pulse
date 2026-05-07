@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-06",
+  "lastUpdated": "2026-05-07",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.36,
+          "value": 1.363,
           "unit": "CAD/USD",
-          "trend": "down",
-          "period": "2026-05-06",
+          "trend": "up",
+          "period": "2026-05-07",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 34009,
+          "value": 34054,
           "trend": "up",
-          "change": 1.32,
-          "period": "2026-05-06"
+          "change": 0.21,
+          "period": "2026-05-07"
         }
       },
       "sparkline": {
@@ -82,10 +82,10 @@
       "headlines": [
         {
           "title": {
-            "fr": "Trump menace de bombarder l’Iran faute d’accord",
-            "en": "Trump menace de bombarder l’Iran faute d’accord"
+            "fr": "Les États-Unis attendent une réponse de l’Iran à leur proposition",
+            "en": "Les États-Unis attendent une réponse de l’Iran à leur proposition"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2251806/guerre-iran-etats-unis-iran-accord-paix",
+          "url": "https://ici.radio-canada.ca/nouvelle/2252155/guerre-iran-etats-unis-reponse-paix",
           "theme": "geopolitics",
           "time": "<1h",
           "impact": "low",
@@ -93,43 +93,65 @@
         },
         {
           "title": {
-            "fr": "Stunning U.S. profit strength ignites stocks’ charge to record peaks",
-            "en": "Stunning U.S. profit strength ignites stocks’ charge to record peaks"
+            "fr": "CPPIB to sell remaining stake in European non-performing loan portfolio",
+            "en": "CPPIB to sell remaining stake in European non-performing loan portfolio"
           },
-          "url": "https://www.theglobeandmail.com/business/article-stunning-us-profit-strength-ignites-stocks-charge-to-record-peaks/",
+          "url": "https://www.theglobeandmail.com/business/international-business/article-cppib-to-sell-remaining-stake-in-european-non-performing-loan/",
           "theme": "trade",
           "time": "<1h",
-          "impact": "high",
+          "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "L’Ordre des pharmaciens recommande le retrait des boissons énergisantes des pharmacies",
-            "en": "L’Ordre des pharmaciens recommande le retrait des boissons énergisantes des pharmacies"
+            "fr": "Le gouvernement Carney veut accélérer les procédures d’autorisation pour les pipelines",
+            "en": "Le gouvernement Carney veut accélérer les procédures d’autorisation pour les pipelines"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2251815/ordre-pharmaciens-recommande-retrait-boissons-energisantes-pharmacies",
-          "theme": "tech",
-          "time": "<1h",
+          "url": "https://ici.radio-canada.ca/nouvelle/2252087/gouvernement-carney-acceleration-projets-pipelines-ressources",
+          "theme": "energy",
+          "time": "1h",
           "impact": "low",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "Gen Z workers face distinct challenges. Here’s how and why employers should help",
-            "en": "Gen Z workers face distinct challenges. Here’s how and why employers should help"
+            "fr": "AI shortcuts can turn into detours and dead ends",
+            "en": "AI shortcuts can turn into detours and dead ends"
           },
-          "url": "https://www.theglobeandmail.com/business/careers/leadership/article-gen-z-workers-face-distinct-challenges-heres-how-and-why-employers/",
-          "theme": "trade",
+          "url": "https://www.theglobeandmail.com/business/article-ai-shortcuts-can-turn-into-detours-and-dead-ends/",
+          "theme": "tech",
           "time": "1h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Disney earnings beat estimates as new CEO outlines growth strategy",
-            "en": "Disney earnings beat estimates as new CEO outlines growth strategy"
+            "fr": "Sherritt suspending operations in Cuba, three directors resign, after U.S. expands sanctions",
+            "en": "Sherritt suspending operations in Cuba, three directors resign, after U.S. expands sanctions"
           },
-          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-disney-earnings-beat-estimates-as-new-ceo-outlines-growth-strategy/",
+          "url": "https://www.theglobeandmail.com/business/article-sherritt-suspending-cuba-operations-directors-resign-us-sanctions/",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "BCE reports drop in profit, higher revenue amid heavy wireless competition",
+            "en": "BCE reports drop in profit, higher revenue amid heavy wireless competition"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-bce-earnings-results-wireless-competition/",
+          "theme": "monetary",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "McDonald’s misses U.S. and global sales-growth targets as value push fails to lift demand",
+            "en": "McDonald’s misses U.S. and global sales-growth targets as value push fails to lift demand"
+          },
+          "url": "https://www.theglobeandmail.com/business/international-business/article-mcdonalds-first-quarter-earnings-results-sales-growth-value-meals/",
           "theme": "trade",
           "time": "3h",
           "impact": "medium",
@@ -137,34 +159,12 @@
         },
         {
           "title": {
-            "fr": "What’s so wrong with share buybacks? The tax on them has got to go",
-            "en": "What’s so wrong with share buybacks? The tax on them has got to go"
+            "fr": "MDA’s first-quarter profit dips as revenue jumps more than 30%",
+            "en": "MDA’s first-quarter profit dips as revenue jumps more than 30%"
           },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-whats-so-wrong-with-share-buybacks-the-tax-on-them-has-got-to-go/",
+          "url": "https://www.theglobeandmail.com/business/article-mda-first-quarter-earnings-results-profit-revenue-may-2026/",
           "theme": "trade",
-          "time": "4h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Iran reviewing new U.S. proposal, sources say sides closing in on deal to end war",
-            "en": "Iran reviewing new U.S. proposal, sources say sides closing in on deal to end war"
-          },
-          "url": "https://www.theglobeandmail.com/world/article-iran-seeks-fair-deal-after-us-pauses-operation-to-open-strait-of/",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "high",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Alberta pushing for longer roadmap on carbon pricing as part of pipeline deal",
-            "en": "Alberta pushing for longer roadmap on carbon pricing as part of pipeline deal"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-alberta-pushing-for-longer-roadmap-on-carbon-pricing-as-part-of/",
-          "theme": "energy",
-          "time": "5h",
+          "time": "3h",
           "impact": "low",
           "source": "Globe and Mail"
         }
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7337,
+          "value": 7376,
           "trend": "up",
-          "change": 1.08,
-          "period": "2026-05-06"
+          "change": 0.14,
+          "period": "2026-05-07"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6878.88,
           6528.52,
           7209.01,
-          7259.22,
-          7337.19
+          7365.12,
+          7375.48
         ]
       },
       "summary": {
@@ -561,14 +561,47 @@
       "headlines": [
         {
           "title": {
-            "fr": "Oil prices drop and stock markets rise after reports of deal to end Iran war",
-            "en": "Oil prices drop and stock markets rise after reports of deal to end Iran war"
+            "fr": "Peloton stock rises as higher subscription prices help company drive a profitable quarter",
+            "en": "Peloton stock rises as higher subscription prices help company drive a profitable quarter"
           },
-          "url": "https://www.bbc.com/news/articles/c4g8zejyyr3o?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
+          "url": "https://www.cnbc.com/2026/05/07/peloton-pton-earnings-q3-2026.html",
+          "theme": "trade",
           "time": "<1h",
+          "impact": "medium",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Shell latest oil giant to see profits surge due to Iran war impact",
+            "en": "Shell latest oil giant to see profits surge due to Iran war impact"
+          },
+          "url": "https://www.bbc.com/news/articles/ce3p0x54drwo?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "5h",
           "impact": "high",
           "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "The AI fitness instructors selling unreal gains",
+            "en": "The AI fitness instructors selling unreal gains"
+          },
+          "url": "https://www.bbc.com/sport/articles/c5ye7dnxv86o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "9h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Warner Bros. Discovery books $2.9 billion net loss tied to Paramount deal, restructuring costs",
+            "en": "Warner Bros. Discovery books $2.9 billion net loss tied to Paramount deal, restructuring costs"
+          },
+          "url": "https://www.cnbc.com/2026/05/06/warner-bros-discovery-net-loss-paramount-deal.html",
+          "theme": "geopolitics",
+          "time": "15h",
+          "impact": "high",
+          "source": "CNBC"
         },
         {
           "title": {
@@ -577,49 +610,27 @@
           },
           "url": "https://www.cnbc.com/2026/05/06/disney-dis-earnings-q2-2026.html",
           "theme": "trade",
-          "time": "<1h",
+          "time": "17h",
           "impact": "low",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "Next to hike prices by up to 8% outside Europe due to Iran war costs",
-            "en": "Next to hike prices by up to 8% outside Europe due to Iran war costs"
+            "fr": "Apollo CEO Rowan warns of market correction, slams 'egregious' practices at rival insurers",
+            "en": "Apollo CEO Rowan warns of market correction, slams 'egregious' practices at rival insurers"
           },
-          "url": "https://www.bbc.com/news/articles/cjrp8e0rjpeo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.cnbc.com/2026/05/06/apollo-ceo-rowan-market-correction-rival-insurers.html",
           "theme": "geopolitics",
-          "time": "5h",
+          "time": "18h",
           "impact": "high",
-          "source": "BBC Business"
+          "source": "CNBC"
         },
         {
           "title": {
-            "fr": "'I thought he was going to hit me,' OpenAI co-founder says of Musk",
-            "en": "'I thought he was going to hit me,' OpenAI co-founder says of Musk"
+            "fr": "Former OpenAI board member says Elon Musk offered her sperm donations",
+            "en": "Former OpenAI board member says Elon Musk offered her sperm donations"
           },
-          "url": "https://www.bbc.com/news/articles/cn7pg8ymgezo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "7h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Apple to pay up to $95 to some US iPhone buyers over AI lawsuit",
-            "en": "Apple to pay up to $95 to some US iPhone buyers over AI lawsuit"
-          },
-          "url": "https://www.bbc.com/news/articles/c0j2nydnzy7o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "14h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "US to safety test new AI models from Google, Microsoft, xAI",
-            "en": "US to safety test new AI models from Google, Microsoft, xAI"
-          },
-          "url": "https://www.bbc.com/news/articles/cgjp2we2j8go?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.com/news/articles/c33243j44p8o?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
           "time": "18h",
           "impact": "low",
@@ -627,24 +638,13 @@
         },
         {
           "title": {
-            "fr": "Anthropic CEO warns of cyber ‘moment of danger’ as AI exposes thousands of vulnerabilities",
-            "en": "Anthropic CEO warns of cyber ‘moment of danger’ as AI exposes thousands of vulnerabilities"
+            "fr": "Airlines spent 56.4% more on jet fuel in month after Iran war started, U.S. government says",
+            "en": "Airlines spent 56.4% more on jet fuel in month after Iran war started, U.S. government says"
           },
-          "url": "https://www.cnbc.com/2026/05/05/anthropic-ceo-cyber-moment-of-danger-mythos-vulnerabilities.html",
-          "theme": "tech",
+          "url": "https://www.cnbc.com/2026/05/06/airlines-jet-fuel-iran-war.html",
+          "theme": "geopolitics",
           "time": "19h",
           "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Pfizer tops Wall Street estimates, reaffirms outlook as newer products show growth",
-            "en": "Pfizer tops Wall Street estimates, reaffirms outlook as newer products show growth"
-          },
-          "url": "https://www.cnbc.com/2026/05/05/pfizer-pfe-earnings-q1-2026.html",
-          "theme": "trade",
-          "time": "19h",
-          "impact": "medium",
           "source": "CNBC"
         }
       ]
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.811,
+          "value": 6.802,
           "unit": "CNY/USD",
           "trend": "down",
-          "period": "2026-05-06",
+          "period": "2026-05-07",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 4160,
+          "value": 4180,
           "trend": "up",
-          "change": 1.17,
-          "period": "2026-05-06"
+          "change": 0.48,
+          "period": "2026-05-07"
         }
       },
       "sparkline": {
@@ -730,10 +730,10 @@
       "headlines": [
         {
           "title": {
-            "fr": "Does China’s YJ-20 hypersonic sea-based missile give Beijing an edge over US carriers?",
-            "en": "Does China’s YJ-20 hypersonic sea-based missile give Beijing an edge over US carriers?"
+            "fr": "China pours US$6.1b into Brazil, making it Beijing’s top investment worldwide: report",
+            "en": "China pours US$6.1b into Brazil, making it Beijing’s top investment worldwide: report"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3352554/does-chinas-yj-20-hypersonic-sea-based-missile-give-beijing-edge-over-us-carriers?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3352676/china-pours-us61b-brazil-making-it-beijings-top-investment-worldwide-report?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "<1h",
           "impact": "low",
@@ -741,78 +741,78 @@
         },
         {
           "title": {
-            "fr": "Party boss of China’s emerging tech hub under  investigation for corruption",
-            "en": "Party boss of China’s emerging tech hub under  investigation for corruption"
+            "fr": "China’s Tongji University punishes top cancer researcher Wang Ping for misconduct",
+            "en": "China’s Tongji University punishes top cancer researcher Wang Ping for misconduct"
           },
-          "url": "https://www.scmp.com/news/china/politics/article/3352648/party-boss-chinas-emerging-tech-hub-under-investigation-corruption?utm_source=rss_feed",
-          "theme": "tech",
+          "url": "https://www.scmp.com/news/china/science/article/3352700/chinas-tongji-university-punishes-top-cancer-researcher-wang-ping-misconduct?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Iran war threatens next harvest, UN official says. Which countries are most at risk?",
+            "en": "Iran war threatens next harvest, UN official says. Which countries are most at risk?"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3352718/iran-war-threatens-next-harvest-un-official-says-which-countries-are-most-risk?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Private firms can help stop Western sanctions from ‘strangling’ China’s military: general",
+            "en": "Private firms can help stop Western sanctions from ‘strangling’ China’s military: general"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3352798/private-firms-can-help-stop-western-sanctions-strangling-chinas-military-general?utm_source=rss_feed",
+          "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China condemns Japan’s first overseas ‘offensive missile’ test since WWII",
-            "en": "China condemns Japan’s first overseas ‘offensive missile’ test since WWII"
+            "fr": "2 former Chinese defence ministers handed suspended death sentences",
+            "en": "2 former Chinese defence ministers handed suspended death sentences"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3352646/china-condemns-japans-first-overseas-offensive-missile-test-wwii?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China’s new marine buoy says goodbye to classic Western design used since World War II",
-            "en": "China’s new marine buoy says goodbye to classic Western design used since World War II"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3352592/chinas-new-marine-buoy-says-goodbye-classic-western-design-used-wwii?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3352764/2-former-chinese-defence-ministers-given-death-sentence-reprieve?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "4h",
-          "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Europe readies trade war weapon amid China export deluge",
-            "en": "Europe readies trade war weapon amid China export deluge"
-          },
-          "url": "https://www.scmp.com/plus/economy/china-economy/article/3352604/europe-readies-trade-war-weapon-amid-china-export-deluge?utm_source=rss_feed",
-          "theme": "trade",
-          "time": "5h",
-          "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China’s Wang Yi and Iran’s Araghchi support new regional security framework in Gulf",
-            "en": "China’s Wang Yi and Iran’s Araghchi support new regional security framework in Gulf"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3352590/chinese-fm-wang-yi-calls-swift-reopening-strait-hormuz?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "7h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China builds world’s first ‘coal battery’, war on Alzheimer’s: 7 science highlights",
-            "en": "China builds world’s first ‘coal battery’, war on Alzheimer’s: 7 science highlights"
+            "fr": "China tells close Trump ally its wish list ahead of US leader’s Beijing trip",
+            "en": "China tells close Trump ally its wish list ahead of US leader’s Beijing trip"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3352573/china-builds-worlds-first-coal-battery-war-alzheimers-7-science-highlights?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3352763/china-seeks-improved-us-ties-and-harmony-fm-wang-yi-tells-visiting-american-senators?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "7h",
-          "impact": "high",
+          "time": "4h",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "‘Gunpowder, sparks’: volunteer hurt at China fireworks blast scene tells of clean-up risk",
-            "en": "‘Gunpowder, sparks’: volunteer hurt at China fireworks blast scene tells of clean-up risk"
+            "fr": "US-Iran peace optimism fuels Asian stock market gains",
+            "en": "US-Iran peace optimism fuels Asian stock market gains"
           },
-          "url": "https://www.scmp.com/news/china/politics/article/3352584/gunpowder-sparks-volunteer-hurt-china-fireworks-blast-scene-tells-clean-risk?utm_source=rss_feed",
+          "url": "https://www.scmp.com/plus/news/world/middle-east/article/3352743/us-iran-peace-optimism-fuels-asian-stock-market-gains?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "5h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Taiwan firm with mainland China offices fires nephew of minister on Beijing sanctions list",
+            "en": "Taiwan firm with mainland China offices fires nephew of minister on Beijing sanctions list"
+          },
+          "url": "https://www.scmp.com/news/china/politics/article/3352731/taiwan-firm-mainland-branches-fires-nephew-taipei-minister-invoking-ire-beijing?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "7h",
+          "time": "6h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 94.62,
+          "value": 94.26,
           "unit": "INR/USD",
           "trend": "down",
-          "period": "2026-05-06",
+          "period": "2026-05-07",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 77959,
-          "trend": "up",
-          "change": 1.22,
-          "period": "2026-05-06"
+          "value": 77845,
+          "trend": "down",
+          "change": -0.15,
+          "period": "2026-05-07"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           81287.19,
           71947.55,
           76913.5,
-          77017.79,
-          77958.52
+          77958.52,
+          77844.52
         ]
       },
       "summary": {
@@ -899,21 +899,43 @@
       "headlines": [
         {
           "title": {
-            "fr": "NPS Sanchay for informal sector employees launched",
-            "en": "NPS Sanchay for informal sector employees launched"
+            "fr": "How many Indian ships are still stranded in Gulf?",
+            "en": "How many Indian ships are still stranded in Gulf?"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/nps-sanchay-scheme-launched-for-informal-sector-employees-age-eligibility-criteria-minimum-investment-withdrawal-exit-and-other-rules-explained/articleshow/130857527.cms",
-          "theme": "trade",
+          "url": "https://economictimes.indiatimes.com/news/india/11-indian-ships-exited-strait-of-hormuz-13-still-in-gulf-says-mea/articleshow/130897040.cms",
+          "theme": "tech",
           "time": "1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "India's FY26 exports touch all-time high",
-            "en": "India's FY26 exports touch all-time high"
+            "fr": "Federal Bank allows EPF payments via net-banking",
+            "en": "Federal Bank allows EPF payments via net-banking"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-overall-exports-hit-all-time-high-of-863-billion-in-fy26/articleshow/130855881.cms",
+          "url": "https://economictimes.indiatimes.com/wealth/personal-finance-news/now-make-epf-payments-via-net-banking-as-federal-bank-launched-this-facility-for-its-customers/articleshow/130895863.cms",
+          "theme": "monetary",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Can NRI use Indian number abroad for banking?",
+            "en": "Can NRI use Indian number abroad for banking?"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/borrow/can-nris-use-indian-mobile-numbers-abroad-for-banking-otp-delays-sim-deactivation-and-account-access-issues-know-what-to-do/articleshow/130895211.cms",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "HDFC Bank cuts MCLR on these 3 tenures",
+            "en": "HDFC Bank cuts MCLR on these 3 tenures"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/borrow/loan-borrower-alert-hdfc-bank-reduces-mclr-on-short-term-tenures-increases-3-year-rate/articleshow/130894358.cms",
           "theme": "trade",
           "time": "2h",
           "impact": "low",
@@ -921,10 +943,10 @@
         },
         {
           "title": {
-            "fr": "Government's foodgrain stocks hit 604 lakh tonnes",
-            "en": "Government's foodgrain stocks hit 604 lakh tonnes"
+            "fr": "Canada: India flips CSIS script on Khalistan",
+            "en": "Canada: India flips CSIS script on Khalistan"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/agriculture/governments-foodgrain-stocks-hit-604-lakh-tonnes-nearly-three-times-buffer-requirement/articleshow/130853759.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/india-rejects-csis-foreign-interference-claims-hits-back-over-khalistan-terror-links/articleshow/130891510.cms",
           "theme": "tech",
           "time": "3h",
           "impact": "low",
@@ -932,10 +954,10 @@
         },
         {
           "title": {
-            "fr": "Standstill in gold imports drags on, threatens supply",
-            "en": "Standstill in gold imports drags on, threatens supply"
+            "fr": "Gujarat alkaline water manufacturer faces action",
+            "en": "Gujarat alkaline water manufacturer faces action"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/standstill-in-india-gold-imports-drags-on-threatens-supply/articleshow/130853289.cms",
+          "url": "https://economictimes.indiatimes.com/news/new-updates/your-healthy-alkaline-water-may-not-be-safe-fssai-finds-black-particles-unapproved-substance-in-gujarat-factory-raid/articleshow/130890546.cms",
           "theme": "trade",
           "time": "3h",
           "impact": "low",
@@ -943,45 +965,23 @@
         },
         {
           "title": {
-            "fr": "Marico CEO confident of double-digit revenue growth",
-            "en": "Marico CEO confident of double-digit revenue growth"
+            "fr": "China sentences former ministers to death",
+            "en": "China sentences former ministers to death"
           },
-          "url": "https://economictimes.indiatimes.com/markets/expert-view/marico-ceo-saugata-gupta-confident-of-double-digit-revenue-growth-eyes-rs-15000-crore-target-by-fy27/articleshow/130853145.cms",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "To tax or not to tax mineral rights in India?",
-            "en": "To tax or not to tax mineral rights in India?"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/to-tax-or-not-to-tax-mineral-rights-in-india-sc-to-hear-pleas-on-may-20/articleshow/130852964.cms",
-          "theme": "tech",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/china-sentences-two-former-defence-ministers-sentenced-to-death-for-corruption/articleshow/130890264.cms",
+          "theme": "geopolitics",
           "time": "3h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "AI in E-commerce: The next phase of growth",
-            "en": "AI in E-commerce: The next phase of growth"
+            "fr": "Nagaraju warns banks about risk from Mythos",
+            "en": "Nagaraju warns banks about risk from Mythos"
           },
-          "url": "https://economictimes.indiatimes.com/ai/ai-insights/ai-in-e-commerce-enabling-the-next-phase-of-growth-and-innovation/articleshow/130852107.cms",
-          "theme": "trade",
-          "time": "4h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "India exports break records on strong service tide",
-            "en": "India exports break records on strong service tide"
-          },
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-exports-rise-4-6-to-hit-all-time-high-of-863-bn-in-fy26-despite-global-headwinds/articleshow/130852221.cms",
-          "theme": "trade",
-          "time": "4h",
+          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/beware-finance-secretary-nagaraju-warns-banks-about-risk-from-mythos/articleshow/130890049.cms",
+          "theme": "geopolitics",
+          "time": "3h",
           "impact": "high",
           "source": "Economic Times"
         }
@@ -1036,9 +1036,9 @@
         "stockIndex": {
           "name": "MSCI World",
           "value": 155,
-          "trend": "up",
-          "change": 1.59,
-          "period": "2026-05-06"
+          "trend": "down",
+          "change": -0.12,
+          "period": "2026-05-07"
         }
       },
       "sparkline": {
@@ -1055,8 +1055,8 @@
           60.85,
           70.69,
           114.01,
-          109.87,
-          101.77
+          101.27,
+          97.19
         ]
       },
       "summary": {
@@ -1066,32 +1066,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "UN demands Israel release Gaza flotilla activists, investigate abuse claims",
-            "en": "UN demands Israel release Gaza flotilla activists, investigate abuse claims"
+            "fr": "Fears of renewed Gaza war as Hamas disarmament talks stall",
+            "en": "Fears of renewed Gaza war as Hamas disarmament talks stall"
           },
-          "url": "https://www.aljazeera.com/news/2026/5/6/un-demands-israel-release-gaza-flotilla-activists-investigate-abuse-claims?traffic_source=rss",
+          "url": "https://www.bbc.com/news/articles/cd6p5l3n2q3o?at_medium=RSS&at_campaign=rss",
           "theme": "energy",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Oil prices drop and stock markets rise after reports of deal to end Iran war",
-            "en": "Oil prices drop and stock markets rise after reports of deal to end Iran war"
-          },
-          "url": "https://www.bbc.com/news/articles/c4g8zejyyr3o?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
           "time": "<1h",
           "impact": "high",
           "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Araghchi in Beijing: How China could shape the direction of the US-Iran war",
-            "en": "Araghchi in Beijing: How China could shape the direction of the US-Iran war"
+            "fr": "US-Israel war on Iran leaves Jordan’s Petra nearly empty of tourists",
+            "en": "US-Israel war on Iran leaves Jordan’s Petra nearly empty of tourists"
           },
-          "url": "https://www.aljazeera.com/news/2026/5/6/araghchi-in-beijing-how-china-could-shape-the-direction-of-the-us-iran-war?traffic_source=rss",
+          "url": "https://www.aljazeera.com/gallery/2026/5/7/us-israel-war-on-iran-leaves-jordans-petra-nearly-empty-of-tourists?traffic_source=rss",
           "theme": "geopolitics",
           "time": "<1h",
           "impact": "high",
@@ -1099,32 +1088,21 @@
         },
         {
           "title": {
-            "fr": "Russian drone hits kindergarten in Ukraine",
-            "en": "Russian drone hits kindergarten in Ukraine"
+            "fr": "Somali pirates abandon hijacked UAE dhow due to dwindling supplies",
+            "en": "Somali pirates abandon hijacked UAE dhow due to dwindling supplies"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/6/russian-drone-hits-kindergarten-in-ukraine?traffic_source=rss",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "What happened to Trump’s ‘Project Freedom’?",
-            "en": "What happened to Trump’s ‘Project Freedom’?"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/6/what-happened-to-trumps-project?traffic_source=rss",
-          "theme": "geopolitics",
+          "url": "https://www.aljazeera.com/news/2026/5/7/somali-pirates-abandon-hijacked-uae-dhow-due-to-dwindling-supplies?traffic_source=rss",
+          "theme": "monetary",
           "time": "1h",
-          "impact": "low",
+          "impact": "medium",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Iran says Strait of Hormuz passage to be ensured after US pauses operation",
-            "en": "Iran says Strait of Hormuz passage to be ensured after US pauses operation"
+            "fr": "Why is the US seeking UN help to open Hormuz after undermining it?",
+            "en": "Why is the US seeking UN help to open Hormuz after undermining it?"
           },
-          "url": "https://www.aljazeera.com/news/2026/5/6/french-container-ship-struck-in-latest-escalation-at-strait-of-hormuz?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/5/7/us-seeks-un-help-to-open-hormuz-can-its-resolution-succeed?traffic_source=rss",
           "theme": "energy",
           "time": "1h",
           "impact": "low",
@@ -1132,23 +1110,45 @@
         },
         {
           "title": {
-            "fr": "What is the FDD, the pro-Israel think tank shaping Trump’s Iran policy?",
-            "en": "What is the FDD, the pro-Israel think tank shaping Trump’s Iran policy?"
+            "fr": "India-administered Kashmir launches campaign to fight youth drug addiction",
+            "en": "India-administered Kashmir launches campaign to fight youth drug addiction"
           },
-          "url": "https://www.aljazeera.com/news/2026/5/6/what-is-the-fdd-the-pro-israel-think-tank-shaping-trumps-iran-policy?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "medium",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/7/india-administered-kashmir-launches-campaign-to-fight-youth-drug-addiction?traffic_source=rss",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Lessons from the war: A call for strategic reckoning in West Asia",
-            "en": "Lessons from the war: A call for strategic reckoning in West Asia"
+            "fr": "China announces suspended death sentences for former defence ministers",
+            "en": "China announces suspended death sentences for former defence ministers"
           },
-          "url": "https://www.aljazeera.com/opinions/2026/5/6/lessons-from-the-war-a-call-for-strategic-reckoning-in-west-asia?traffic_source=rss",
-          "theme": "monetary",
+          "url": "https://www.bbc.com/news/articles/clypjx383j2o?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
           "time": "2h",
+          "impact": "low",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "MSF accuses Israel of manufacturing a malnutrition crisis in Gaza",
+            "en": "MSF accuses Israel of manufacturing a malnutrition crisis in Gaza"
+          },
+          "url": "https://www.aljazeera.com/news/2026/5/7/msf-accuses-israel-of-manufacturing-a-malnutrition-crisis-in-gaza?traffic_source=rss",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Can Asian economies cope with the fallout from the Iran war?",
+            "en": "Can Asian economies cope with the fallout from the Iran war?"
+          },
+          "url": "https://www.aljazeera.com/video/counting-the-cost/2026/5/7/can-asian-economies-cope-with-the-fallout-from-the-iran-war?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "3h",
           "impact": "high",
           "source": "Al Jazeera"
         }
