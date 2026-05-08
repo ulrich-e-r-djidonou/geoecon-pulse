@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07",
+  "lastUpdated": "2026-05-08",
   "regions": {
     "CA": {
       "name": {
@@ -43,16 +43,16 @@
         "exchange": {
           "value": 1.363,
           "unit": "CAD/USD",
-          "trend": "up",
+          "trend": "down",
           "period": "2026-05-07",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 34054,
+          "value": 34024,
           "trend": "up",
-          "change": 0.21,
-          "period": "2026-05-07"
+          "change": 0.49,
+          "period": "2026-05-08"
         }
       },
       "sparkline": {
@@ -82,89 +82,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Les États-Unis attendent une réponse de l’Iran à leur proposition",
-            "en": "Les États-Unis attendent une réponse de l’Iran à leur proposition"
+            "fr": "Allemagne : la prise d’otages dans une banque s’est terminée sans blessés",
+            "en": "Allemagne : la prise d’otages dans une banque s’est terminée sans blessés"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2252155/guerre-iran-etats-unis-reponse-paix",
-          "theme": "geopolitics",
+          "url": "https://ici.radio-canada.ca/nouvelle/2252367/prise-dotages-banque-allemagne",
+          "theme": "trade",
           "time": "<1h",
-          "impact": "low",
+          "impact": "medium",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "CPPIB to sell remaining stake in European non-performing loan portfolio",
-            "en": "CPPIB to sell remaining stake in European non-performing loan portfolio"
+            "fr": "Le chômage a connu une légère hausse pour atteindre 6,9 % en avril au pays",
+            "en": "Le chômage a connu une légère hausse pour atteindre 6,9 % en avril au pays"
           },
-          "url": "https://www.theglobeandmail.com/business/international-business/article-cppib-to-sell-remaining-stake-in-european-non-performing-loan/",
+          "url": "https://ici.radio-canada.ca/nouvelle/2252383/taux-chomage-avril-emploi-canada",
           "theme": "trade",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Le gouvernement Carney veut accélérer les procédures d’autorisation pour les pipelines",
-            "en": "Le gouvernement Carney veut accélérer les procédures d’autorisation pour les pipelines"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2252087/gouvernement-carney-acceleration-projets-pipelines-ressources",
-          "theme": "energy",
           "time": "1h",
-          "impact": "low",
+          "impact": "medium",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "AI shortcuts can turn into detours and dead ends",
-            "en": "AI shortcuts can turn into detours and dead ends"
+            "fr": "U.S. job growth beats expectations in April; unemployment rate steady at 4.3%",
+            "en": "U.S. job growth beats expectations in April; unemployment rate steady at 4.3%"
           },
-          "url": "https://www.theglobeandmail.com/business/article-ai-shortcuts-can-turn-into-detours-and-dead-ends/",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Sherritt suspending operations in Cuba, three directors resign, after U.S. expands sanctions",
-            "en": "Sherritt suspending operations in Cuba, three directors resign, after U.S. expands sanctions"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-sherritt-suspending-cuba-operations-directors-resign-us-sanctions/",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "BCE reports drop in profit, higher revenue amid heavy wireless competition",
-            "en": "BCE reports drop in profit, higher revenue amid heavy wireless competition"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-bce-earnings-results-wireless-competition/",
-          "theme": "monetary",
-          "time": "2h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "McDonald’s misses U.S. and global sales-growth targets as value push fails to lift demand",
-            "en": "McDonald’s misses U.S. and global sales-growth targets as value push fails to lift demand"
-          },
-          "url": "https://www.theglobeandmail.com/business/international-business/article-mcdonalds-first-quarter-earnings-results-sales-growth-value-meals/",
+          "url": "https://www.theglobeandmail.com/business/international-business/article-us-job-growth-beats-expectations-in-april-unemployment-rate-steady-at/",
           "theme": "trade",
-          "time": "3h",
+          "time": "1h",
           "impact": "medium",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "MDA’s first-quarter profit dips as revenue jumps more than 30%",
-            "en": "MDA’s first-quarter profit dips as revenue jumps more than 30%"
+            "fr": "The city at the top of mortgage delinquency, NDAs silence some buyers, the Home of the Week and more top real estate stories",
+            "en": "The city at the top of mortgage delinquency, NDAs silence some buyers, the Home of the Week and more top real estate stories"
           },
-          "url": "https://www.theglobeandmail.com/business/article-mda-first-quarter-earnings-results-profit-revenue-may-2026/",
+          "url": "https://www.theglobeandmail.com/business/article-brampton-mortgage-delinquency-rates-ndas-canada-real-estate-news-may-8/",
           "theme": "trade",
-          "time": "3h",
+          "time": "1h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Telus reports flat revenue, 50% profit drop in first quarter",
+            "en": "Telus reports flat revenue, 50% profit drop in first quarter"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-telus-reports-flat-revenue-profit-drop-in-first-quarter/",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Earnings calls, algorithms and ... jazz music? How investors are using AI to gain a trading edge",
+            "en": "Earnings calls, algorithms and ... jazz music? How investors are using AI to gain a trading edge"
+          },
+          "url": "https://www.theglobeandmail.com/investing/markets/inside-the-market/article-investing-trading-earnings-advice-ai-jazz/",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Telus posts lower first-quarter profit and revenue",
+            "en": "Telus posts lower first-quarter profit and revenue"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-telus-earnings-first-quarter-profit-and-revenue/",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Enbridge beats first-quarter profit estimates on gas transmission strength",
+            "en": "Enbridge beats first-quarter profit estimates on gas transmission strength"
+          },
+          "url": "https://www.theglobeandmail.com/business/industry-news/energy-and-resources/article-enbridge-beats-first-quarter-profit-estimates-on-gas-transmission/",
+          "theme": "energy",
+          "time": "2h",
           "impact": "low",
           "source": "Globe and Mail"
         }
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7376,
+          "value": 7386,
           "trend": "up",
-          "change": 0.14,
-          "period": "2026-05-07"
+          "change": 0.67,
+          "period": "2026-05-08"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6878.88,
           6528.52,
           7209.01,
-          7365.12,
-          7375.48
+          7337.11,
+          7385.8
         ]
       },
       "summary": {
@@ -561,21 +561,54 @@
       "headlines": [
         {
           "title": {
-            "fr": "Peloton stock rises as higher subscription prices help company drive a profitable quarter",
-            "en": "Peloton stock rises as higher subscription prices help company drive a profitable quarter"
+            "fr": "US jobs data beats expectations for second month in a row",
+            "en": "US jobs data beats expectations for second month in a row"
           },
-          "url": "https://www.cnbc.com/2026/05/07/peloton-pton-earnings-q3-2026.html",
+          "url": "https://www.bbc.com/news/articles/cx21664lp32o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
           "time": "<1h",
           "impact": "medium",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Trump's $1 million 'Gold Card' fails to catch on among the world's wealthy",
+            "en": "Trump's $1 million 'Gold Card' fails to catch on among the world's wealthy"
+          },
+          "url": "https://www.cnbc.com/2026/05/08/trump-gold-card-wealth.html",
+          "theme": "tech",
+          "time": "<1h",
+          "impact": "low",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "Shell latest oil giant to see profits surge due to Iran war impact",
-            "en": "Shell latest oil giant to see profits surge due to Iran war impact"
+            "fr": "States crack down on tax break for wealthy investors",
+            "en": "States crack down on tax break for wealthy investors"
           },
-          "url": "https://www.bbc.com/news/articles/ce3p0x54drwo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.cnbc.com/2026/05/08/tax-break-wealthy-investors-qsbs.html",
+          "theme": "trade",
+          "time": "1h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Oil prices rise after US and Iran exchange fire in Hormuz strait",
+            "en": "Oil prices rise after US and Iran exchange fire in Hormuz strait"
+          },
+          "url": "https://www.bbc.com/news/articles/c86dp85g59xo?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "5h",
+          "impact": "medium",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "The companies making billions from the Iran war",
+            "en": "The companies making billions from the Iran war"
+          },
+          "url": "https://www.bbc.com/news/articles/ce8pyyz5e0ro?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
           "time": "5h",
           "impact": "high",
@@ -583,69 +616,36 @@
         },
         {
           "title": {
-            "fr": "The AI fitness instructors selling unreal gains",
-            "en": "The AI fitness instructors selling unreal gains"
+            "fr": "World Cup fans in China and India face broadcast uncertainty",
+            "en": "World Cup fans in China and India face broadcast uncertainty"
           },
-          "url": "https://www.bbc.com/sport/articles/c5ye7dnxv86o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.com/news/articles/cp9py4k8mllo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "9h",
+          "time": "10h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Warner Bros. Discovery books $2.9 billion net loss tied to Paramount deal, restructuring costs",
-            "en": "Warner Bros. Discovery books $2.9 billion net loss tied to Paramount deal, restructuring costs"
+            "fr": "Instagram privacy tech is turned off today - what does this mean for your DMs?",
+            "en": "Instagram privacy tech is turned off today - what does this mean for your DMs?"
           },
-          "url": "https://www.cnbc.com/2026/05/06/warner-bros-discovery-net-loss-paramount-deal.html",
-          "theme": "geopolitics",
-          "time": "15h",
-          "impact": "high",
-          "source": "CNBC"
+          "url": "https://www.bbc.com/news/articles/clypzxl3lvqo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "12h",
+          "impact": "low",
+          "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Disney pops 7% after streaming, parks drive revenue beat in first report under CEO Josh D'Amaro",
-            "en": "Disney pops 7% after streaming, parks drive revenue beat in first report under CEO Josh D'Amaro"
+            "fr": "Trump gives EU ultimatum deadline to approve trade deal with US",
+            "en": "Trump gives EU ultimatum deadline to approve trade deal with US"
           },
-          "url": "https://www.cnbc.com/2026/05/06/disney-dis-earnings-q2-2026.html",
+          "url": "https://www.bbc.com/news/articles/cp3pyk4nw3lo?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "17h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Apollo CEO Rowan warns of market correction, slams 'egregious' practices at rival insurers",
-            "en": "Apollo CEO Rowan warns of market correction, slams 'egregious' practices at rival insurers"
-          },
-          "url": "https://www.cnbc.com/2026/05/06/apollo-ceo-rowan-market-correction-rival-insurers.html",
-          "theme": "geopolitics",
-          "time": "18h",
-          "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Former OpenAI board member says Elon Musk offered her sperm donations",
-            "en": "Former OpenAI board member says Elon Musk offered her sperm donations"
-          },
-          "url": "https://www.bbc.com/news/articles/c33243j44p8o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "18h",
+          "time": "15h",
           "impact": "low",
           "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Airlines spent 56.4% more on jet fuel in month after Iran war started, U.S. government says",
-            "en": "Airlines spent 56.4% more on jet fuel in month after Iran war started, U.S. government says"
-          },
-          "url": "https://www.cnbc.com/2026/05/06/airlines-jet-fuel-iran-war.html",
-          "theme": "geopolitics",
-          "time": "19h",
-          "impact": "high",
-          "source": "CNBC"
         }
       ]
     },
@@ -698,9 +698,9 @@
         "stockIndex": {
           "name": "SSE Composite",
           "value": 4180,
-          "trend": "up",
-          "change": 0.48,
-          "period": "2026-05-07"
+          "trend": "stable",
+          "change": -0.0,
+          "period": "2026-05-08"
         }
       },
       "sparkline": {
@@ -730,89 +730,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "China pours US$6.1b into Brazil, making it Beijing’s top investment worldwide: report",
-            "en": "China pours US$6.1b into Brazil, making it Beijing’s top investment worldwide: report"
+            "fr": "China and US in AI revolution race as tech rivals battle for global supremacy",
+            "en": "China and US in AI revolution race as tech rivals battle for global supremacy"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3352676/china-pours-us61b-brazil-making-it-beijings-top-investment-worldwide-report?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China’s Tongji University punishes top cancer researcher Wang Ping for misconduct",
-            "en": "China’s Tongji University punishes top cancer researcher Wang Ping for misconduct"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3352700/chinas-tongji-university-punishes-top-cancer-researcher-wang-ping-misconduct?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Iran war threatens next harvest, UN official says. Which countries are most at risk?",
-            "en": "Iran war threatens next harvest, UN official says. Which countries are most at risk?"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3352718/iran-war-threatens-next-harvest-un-official-says-which-countries-are-most-risk?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Private firms can help stop Western sanctions from ‘strangling’ China’s military: general",
-            "en": "Private firms can help stop Western sanctions from ‘strangling’ China’s military: general"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3352798/private-firms-can-help-stop-western-sanctions-strangling-chinas-military-general?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "2 former Chinese defence ministers handed suspended death sentences",
-            "en": "2 former Chinese defence ministers handed suspended death sentences"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3352764/2-former-chinese-defence-ministers-given-death-sentence-reprieve?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "4h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China tells close Trump ally its wish list ahead of US leader’s Beijing trip",
-            "en": "China tells close Trump ally its wish list ahead of US leader’s Beijing trip"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3352763/china-seeks-improved-us-ties-and-harmony-fm-wang-yi-tells-visiting-american-senators?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "4h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "US-Iran peace optimism fuels Asian stock market gains",
-            "en": "US-Iran peace optimism fuels Asian stock market gains"
-          },
-          "url": "https://www.scmp.com/plus/news/world/middle-east/article/3352743/us-iran-peace-optimism-fuels-asian-stock-market-gains?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3352950/china-and-us-ai-revolution-race-tech-rivals-battle-global-supremacy?utm_source=rss_feed",
           "theme": "tech",
-          "time": "5h",
+          "time": "<1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Taiwan firm with mainland China offices fires nephew of minister on Beijing sanctions list",
-            "en": "Taiwan firm with mainland China offices fires nephew of minister on Beijing sanctions list"
+            "fr": "Ke Tao, China’s remote sensing expert who was ‘devoted’ to national defence, dies at 48",
+            "en": "Ke Tao, China’s remote sensing expert who was ‘devoted’ to national defence, dies at 48"
           },
-          "url": "https://www.scmp.com/news/china/politics/article/3352731/taiwan-firm-mainland-branches-fires-nephew-taipei-minister-invoking-ire-beijing?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/science/article/3352935/ke-tao-chinas-remote-sensing-expert-who-was-devoted-national-defence-dies-48?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "6h",
+          "time": "<1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Why Iran’s ambassador to China thinks the US can’t turn Beijing against it",
+            "en": "Why Iran’s ambassador to China thinks the US can’t turn Beijing against it"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3352940/why-irans-ambassador-china-thinks-us-cant-turn-beijing-against-it?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Chinese health authority says no need to worry about latest hantavirus outbreak",
+            "en": "Chinese health authority says no need to worry about latest hantavirus outbreak"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3352944/chinese-health-authority-says-no-need-worry-about-latest-hantavirus-outbreak?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "To negotiate with China, Europe must first figure out what it wants",
+            "en": "To negotiate with China, Europe must first figure out what it wants"
+          },
+          "url": "https://www.scmp.com/opinion/world-opinion/article/3352448/negotiate-china-europe-must-first-figure-out-what-it-wants?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Why China-Russia ties are ‘better than alliance’ and immune to US containment efforts",
+            "en": "Why China-Russia ties are ‘better than alliance’ and immune to US containment efforts"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3352894/why-china-russia-ties-are-better-alliance-and-immune-us-containment-efforts?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Are China and Russia flexing their maritime muscle near Japan?",
+            "en": "Are China and Russia flexing their maritime muscle near Japan?"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3352919/are-china-and-russia-flexing-their-maritime-muscle-near-japan?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Why is a Chinese research ship the latest flashpoint with Philippines in South China Sea?",
+            "en": "Why is a Chinese research ship the latest flashpoint with Philippines in South China Sea?"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3352920/why-chinese-research-ship-latest-flashpoint-philippines-south-china-sea?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "3h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -860,16 +860,16 @@
         "exchange": {
           "value": 94.26,
           "unit": "INR/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-05-07",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 77845,
+          "value": 77328,
           "trend": "down",
-          "change": -0.15,
-          "period": "2026-05-07"
+          "change": -0.66,
+          "period": "2026-05-08"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           81287.19,
           71947.55,
           76913.5,
-          77958.52,
-          77844.52
+          77844.52,
+          77328.19
         ]
       },
       "summary": {
@@ -899,23 +899,45 @@
       "headlines": [
         {
           "title": {
-            "fr": "How many Indian ships are still stranded in Gulf?",
-            "en": "How many Indian ships are still stranded in Gulf?"
+            "fr": "CEO on what next for BSE after ₹5,000 cr revenue",
+            "en": "CEO on what next for BSE after ₹5,000 cr revenue"
           },
-          "url": "https://economictimes.indiatimes.com/news/india/11-indian-ships-exited-strait-of-hormuz-13-still-in-gulf-says-mea/articleshow/130897040.cms",
-          "theme": "tech",
-          "time": "1h",
+          "url": "https://economictimes.indiatimes.com/markets/expert-view/bse-crosses-5000-crore-revenue-for-first-time-in-150-years-options-volume-doubles-fpi-count-jumps-5x/articleshow/130957078.cms",
+          "theme": "trade",
+          "time": "3h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Federal Bank allows EPF payments via net-banking",
-            "en": "Federal Bank allows EPF payments via net-banking"
+            "fr": "Gold rates today: 24k vs 22k vs 18k prices",
+            "en": "Gold rates today: 24k vs 22k vs 18k prices"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/personal-finance-news/now-make-epf-payments-via-net-banking-as-federal-bank-launched-this-facility-for-its-customers/articleshow/130895863.cms",
+          "url": "https://economictimes.indiatimes.com/wealth/invest/22k-gold-rate-today-check-24k-22k-18k-gold-prices-may-8-2026-on-malabar-gold-diamonds-joyalukkas-tanishq-kalyan-jewellers-and-ibja/articleshow/130954511.cms",
           "theme": "monetary",
-          "time": "2h",
+          "time": "5h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Highest 5-year FD rates: PSU vs private vs SFB banks",
+            "en": "Highest 5-year FD rates: PSU vs private vs SFB banks"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/invest/highest-5-year-fd-rates-at-psu-vs-private-vs-sfb-banks-what-rs-1-lakh-investment-in-each-fd-will-give-you-on-maturity/articleshow/130952901.cms",
+          "theme": "monetary",
+          "time": "6h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "12 key income tax form changes you should know",
+            "en": "12 key income tax form changes you should know"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/tax/12-key-income-tax-form-changes-every-taxpayer-should-know-from-form-16-to-form-168/articleshow/130901939.cms",
+          "theme": "trade",
+          "time": "10h",
           "impact": "low",
           "source": "Economic Times"
         },
@@ -926,63 +948,8 @@
           },
           "url": "https://economictimes.indiatimes.com/wealth/borrow/can-nris-use-indian-mobile-numbers-abroad-for-banking-otp-delays-sim-deactivation-and-account-access-issues-know-what-to-do/articleshow/130895211.cms",
           "theme": "tech",
-          "time": "2h",
+          "time": "1j",
           "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "HDFC Bank cuts MCLR on these 3 tenures",
-            "en": "HDFC Bank cuts MCLR on these 3 tenures"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/borrow/loan-borrower-alert-hdfc-bank-reduces-mclr-on-short-term-tenures-increases-3-year-rate/articleshow/130894358.cms",
-          "theme": "trade",
-          "time": "2h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Canada: India flips CSIS script on Khalistan",
-            "en": "Canada: India flips CSIS script on Khalistan"
-          },
-          "url": "https://economictimes.indiatimes.com/news/india/india-rejects-csis-foreign-interference-claims-hits-back-over-khalistan-terror-links/articleshow/130891510.cms",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Gujarat alkaline water manufacturer faces action",
-            "en": "Gujarat alkaline water manufacturer faces action"
-          },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/your-healthy-alkaline-water-may-not-be-safe-fssai-finds-black-particles-unapproved-substance-in-gujarat-factory-raid/articleshow/130890546.cms",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "China sentences former ministers to death",
-            "en": "China sentences former ministers to death"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/china-sentences-two-former-defence-ministers-sentenced-to-death-for-corruption/articleshow/130890264.cms",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Nagaraju warns banks about risk from Mythos",
-            "en": "Nagaraju warns banks about risk from Mythos"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/beware-finance-secretary-nagaraju-warns-banks-about-risk-from-mythos/articleshow/130890049.cms",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "high",
           "source": "Economic Times"
         }
       ]
@@ -1036,9 +1003,9 @@
         "stockIndex": {
           "name": "MSCI World",
           "value": 155,
-          "trend": "down",
-          "change": -0.12,
-          "period": "2026-05-07"
+          "trend": "up",
+          "change": 0.72,
+          "period": "2026-05-08"
         }
       },
       "sparkline": {
@@ -1055,8 +1022,8 @@
           60.85,
           70.69,
           114.01,
-          101.27,
-          97.19
+          100.06,
+          100.34
         ]
       },
       "summary": {
@@ -1066,21 +1033,10 @@
       "headlines": [
         {
           "title": {
-            "fr": "Fears of renewed Gaza war as Hamas disarmament talks stall",
-            "en": "Fears of renewed Gaza war as Hamas disarmament talks stall"
+            "fr": "Italy-US ties strained as pope and Iran war dominate talks",
+            "en": "Italy-US ties strained as pope and Iran war dominate talks"
           },
-          "url": "https://www.bbc.com/news/articles/cd6p5l3n2q3o?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "<1h",
-          "impact": "high",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "US-Israel war on Iran leaves Jordan’s Petra nearly empty of tourists",
-            "en": "US-Israel war on Iran leaves Jordan’s Petra nearly empty of tourists"
-          },
-          "url": "https://www.aljazeera.com/gallery/2026/5/7/us-israel-war-on-iran-leaves-jordans-petra-nearly-empty-of-tourists?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/5/8/italy-us-ties-strained-as-pope-and-iran-war-dominate-talks?traffic_source=rss",
           "theme": "geopolitics",
           "time": "<1h",
           "impact": "high",
@@ -1088,69 +1044,80 @@
         },
         {
           "title": {
-            "fr": "Somali pirates abandon hijacked UAE dhow due to dwindling supplies",
-            "en": "Somali pirates abandon hijacked UAE dhow due to dwindling supplies"
+            "fr": "Iran claims to have seized ‘offending’ oil tanker in Gulf of Oman",
+            "en": "Iran claims to have seized ‘offending’ oil tanker in Gulf of Oman"
           },
-          "url": "https://www.aljazeera.com/news/2026/5/7/somali-pirates-abandon-hijacked-uae-dhow-due-to-dwindling-supplies?traffic_source=rss",
-          "theme": "monetary",
+          "url": "https://www.aljazeera.com/news/2026/5/8/iran-says-it-has-seized-oil-tanker-over-attempts-to-disrupt-its-oil-exports?traffic_source=rss",
+          "theme": "energy",
           "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "What we know about Iran’s response to the latest US ceasefire proposal",
+            "en": "What we know about Iran’s response to the latest US ceasefire proposal"
+          },
+          "url": "https://www.aljazeera.com/news/2026/5/8/what-we-know-about-irans-response-to-the-latest-us-ceasefire-proposal?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "After 18 months of mourning, a Gaza son is found alive in an Israeli prison",
+            "en": "After 18 months of mourning, a Gaza son is found alive in an Israeli prison"
+          },
+          "url": "https://www.aljazeera.com/features/2026/5/8/after-18-months-of-mourning-a-gaza-son-is-found-alive-in-israeli-prison?traffic_source=rss",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Trump says he would not pay $1,000 to watch US at World Cup",
+            "en": "Trump says he would not pay $1,000 to watch US at World Cup"
+          },
+          "url": "https://www.aljazeera.com/sports/2026/5/8/trump-says-he-would-not-pay-1000-to-watch-us-at-world-cup?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "White House calls Mark Hamill 'sick' after actor's Trump grave post",
+            "en": "White House calls Mark Hamill 'sick' after actor's Trump grave post"
+          },
+          "url": "https://www.bbc.com/news/articles/c4g723pkgllo?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "US, Iran clash in Hormuz as war escalates: What happened, why it matters",
+            "en": "US, Iran clash in Hormuz as war escalates: What happened, why it matters"
+          },
+          "url": "https://www.aljazeera.com/news/2026/5/8/us-iran-clash-in-hormuz-as-war-escalates-what-happened-why-it-matters?traffic_source=rss",
+          "theme": "energy",
+          "time": "4h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Oil prices rise after US and Iran exchange fire in Hormuz strait",
+            "en": "Oil prices rise after US and Iran exchange fire in Hormuz strait"
+          },
+          "url": "https://www.bbc.com/news/articles/c86dp85g59xo?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "5h",
           "impact": "medium",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Why is the US seeking UN help to open Hormuz after undermining it?",
-            "en": "Why is the US seeking UN help to open Hormuz after undermining it?"
-          },
-          "url": "https://www.aljazeera.com/news/2026/5/7/us-seeks-un-help-to-open-hormuz-can-its-resolution-succeed?traffic_source=rss",
-          "theme": "energy",
-          "time": "1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "India-administered Kashmir launches campaign to fight youth drug addiction",
-            "en": "India-administered Kashmir launches campaign to fight youth drug addiction"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/7/india-administered-kashmir-launches-campaign-to-fight-youth-drug-addiction?traffic_source=rss",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "China announces suspended death sentences for former defence ministers",
-            "en": "China announces suspended death sentences for former defence ministers"
-          },
-          "url": "https://www.bbc.com/news/articles/clypjx383j2o?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
           "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "MSF accuses Israel of manufacturing a malnutrition crisis in Gaza",
-            "en": "MSF accuses Israel of manufacturing a malnutrition crisis in Gaza"
-          },
-          "url": "https://www.aljazeera.com/news/2026/5/7/msf-accuses-israel-of-manufacturing-a-malnutrition-crisis-in-gaza?traffic_source=rss",
-          "theme": "trade",
-          "time": "2h",
-          "impact": "high",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Can Asian economies cope with the fallout from the Iran war?",
-            "en": "Can Asian economies cope with the fallout from the Iran war?"
-          },
-          "url": "https://www.aljazeera.com/video/counting-the-cost/2026/5/7/can-asian-economies-cope-with-the-fallout-from-the-iran-war?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "high",
-          "source": "Al Jazeera"
         }
       ]
     }
