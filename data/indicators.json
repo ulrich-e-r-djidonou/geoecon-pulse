@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15",
+  "lastUpdated": "2026-05-16",
   "regions": {
     "CA": {
       "name": {
@@ -43,16 +43,16 @@
         "exchange": {
           "value": 1.376,
           "unit": "CAD/USD",
-          "trend": "up",
+          "trend": "down",
           "period": "2026-05-15",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 33783,
+          "value": 33833,
           "trend": "down",
-          "change": -1.42,
-          "period": "2026-05-15"
+          "change": -1.27,
+          "period": "2026-05-16"
         }
       },
       "sparkline": {
@@ -82,43 +82,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "U.S. set to drop criminal charges against Indian billionaire Gautam Adani, sources say",
-            "en": "U.S. set to drop criminal charges against Indian billionaire Gautam Adani, sources say"
+            "fr": "Après Trump, Poutine sera en visite en Chine les 19 et 20 mai",
+            "en": "Après Trump, Poutine sera en visite en Chine les 19 et 20 mai"
           },
-          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-us-set-to-drop-criminal-charges-against-gautam-adani/",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "high",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Energy prices help lift Canadian manufacturing sales in March",
-            "en": "Energy prices help lift Canadian manufacturing sales in March"
-          },
-          "url": "https://www.theglobeandmail.com/business/economy/article-canadian-manufacturing-sales-march-2026-energy-prices/",
-          "theme": "trade",
+          "url": "https://ici.radio-canada.ca/nouvelle/2254580/poutine-xi-visite-chine-mai",
+          "theme": "geopolitics",
           "time": "<1h",
           "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Québec remboursera la taxe carbone aux entreprises agricoles",
-            "en": "Québec remboursera la taxe carbone aux entreprises agricoles"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2254350/taxe-carbone-frechette-agriculteurs-quebec",
-          "theme": "trade",
-          "time": "<1h",
-          "impact": "medium",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "Trump quitte la Chine en revendiquant des accords commerciaux « fantastiques »",
-            "en": "Trump quitte la Chine en revendiquant des accords commerciaux « fantastiques »"
+            "fr": "Taïwan affirme être une nation « indépendante », après la mise en garde de Trump",
+            "en": "Taïwan affirme être une nation « indépendante », après la mise en garde de Trump"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2254326/chine-trump-accords-commerciaux-voyage",
+          "url": "https://ici.radio-canada.ca/nouvelle/2254573/taiwan-nation-independante-mise-en-garde-trump",
           "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
@@ -126,46 +104,68 @@
         },
         {
           "title": {
-            "fr": "Canadian housing starts jump 17% in April",
-            "en": "Canadian housing starts jump 17% in April"
+            "fr": "Le chef de la branche armée du Hamas tué à Gaza",
+            "en": "Le chef de la branche armée du Hamas tué à Gaza"
           },
-          "url": "https://www.theglobeandmail.com/business/article-canadian-housing-starts-jump-17-in-april/",
+          "url": "https://ici.radio-canada.ca/nouvelle/2254574/israel-mort-chef-hamas-gaza",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Infrastructures municipales : Charles Milliard s’engage à doubler les investissements",
+            "en": "Infrastructures municipales : Charles Milliard s’engage à doubler les investissements"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2254545/infrastructures-municipales-charles-milliard-doubler-investissements",
           "theme": "tech",
-          "time": "1h",
+          "time": "14h",
+          "impact": "high",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Mortgage lender temporarily halts investor redemptions in residential real estate fund",
+            "en": "Mortgage lender temporarily halts investor redemptions in residential real estate fund"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-mortgage-lender-temporarily-halts-investor-redemptions-in-residential/",
+          "theme": "tech",
+          "time": "16h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "With gas prices poised to stay high all summer, Canadians rethink their budgets and travel plans",
-            "en": "With gas prices poised to stay high all summer, Canadians rethink their budgets and travel plans"
+            "fr": "La construction d’un nouveau pipeline vers la Colombie-Britannique prévue pour 2027",
+            "en": "La construction d’un nouveau pipeline vers la Colombie-Britannique prévue pour 2027"
           },
-          "url": "https://www.theglobeandmail.com/business/article-canada-gas-prices-summer-travel-and-budgets/",
+          "url": "https://ici.radio-canada.ca/nouvelle/2254419/oleoduc-ouest-petrole-carney-smith",
           "theme": "energy",
-          "time": "2h",
+          "time": "16h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "FIFA finally seals World Cup broadcast deal in China at just $60M",
+            "en": "FIFA finally seals World Cup broadcast deal in China at just $60M"
+          },
+          "url": "https://www.theglobeandmail.com/sports/soccer/article-fifa-finally-seals-world-cup-broadcast-deal-in-china-at-just-60m/",
+          "theme": "geopolitics",
+          "time": "17h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "UAE accelerates construction of new oil pipeline bypassing Hormuz",
-            "en": "UAE accelerates construction of new oil pipeline bypassing Hormuz"
+            "fr": "Carney’s Canada Strong Fund is an idea that does not disguise lack of a strategy",
+            "en": "Carney’s Canada Strong Fund is an idea that does not disguise lack of a strategy"
           },
-          "url": "https://www.theglobeandmail.com/business/article-uae-new-oil-pipeline-project-fujairah-strait-of-hormuz-iran-war/",
-          "theme": "energy",
-          "time": "2h",
+          "url": "https://www.theglobeandmail.com/business/commentary/article-carneys-canada-strong-fund-is-an-idea-that-does-not-disguise-lack-of-a/",
+          "theme": "monetary",
+          "time": "17h",
           "impact": "medium",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Business Brief: The new tourism economy",
-            "en": "Business Brief: The new tourism economy"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-business-brief-the-new-tourism-economy/",
-          "theme": "trade",
-          "time": "4h",
-          "impact": "low",
           "source": "Globe and Mail"
         }
       ],
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7434,
+          "value": 7408,
           "trend": "down",
-          "change": -0.9,
-          "period": "2026-05-15"
+          "change": -1.24,
+          "period": "2026-05-16"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6878.88,
           6528.52,
           7209.01,
-          7501.24,
-          7434.66
+          7408.5,
+          7408.5
         ]
       },
       "summary": {
@@ -561,34 +561,12 @@
       "headlines": [
         {
           "title": {
-            "fr": "Starbucks to lay off 300 U.S. employees, shutter some regional support offices",
-            "en": "Starbucks to lay off 300 U.S. employees, shutter some regional support offices"
+            "fr": "Chinese EVs are coming to Canada, and some dealers can't wait to sell them",
+            "en": "Chinese EVs are coming to Canada, and some dealers can't wait to sell them"
           },
-          "url": "https://www.cnbc.com/2026/05/15/starbucks-to-lay-off-300-us-employees-close-some-regional-offices.html",
-          "theme": "trade",
-          "time": "<1h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Beckhams become billionaires as Oasis make rich list for first time",
-            "en": "Beckhams become billionaires as Oasis make rich list for first time"
-          },
-          "url": "https://www.bbc.com/news/articles/ce8p4ywypx8o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.cnbc.com/2026/05/15/chinese-evs-canada.html",
           "theme": "tech",
-          "time": "2h",
-          "impact": "high",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Detroit automakers have cut more than 20,000 U.S. salaried jobs as AI threat looms",
-            "en": "Detroit automakers have cut more than 20,000 U.S. salaried jobs as AI threat looms"
-          },
-          "url": "https://www.cnbc.com/2026/05/15/general-motors-ford-stellantis-job-cuts-ai.html",
-          "theme": "trade",
-          "time": "2h",
+          "time": "19h",
           "impact": "low",
           "source": "CNBC"
         },
@@ -599,40 +577,7 @@
           },
           "url": "https://www.bbc.com/news/articles/cq8p7l1y59lo?at_medium=RSS&at_campaign=rss",
           "theme": "energy",
-          "time": "3h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Family investors turn to old-economy businesses like dealerships and fisheries to avoid AI disruption",
-            "en": "Family investors turn to old-economy businesses like dealerships and fisheries to avoid AI disruption"
-          },
-          "url": "https://www.cnbc.com/2026/05/15/family-investors-economy-businesses-to-avoid-ai-disruption.html",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "India's Adanis agree to pay $18m to settle civil fraud case in the US",
-            "en": "India's Adanis agree to pay $18m to settle civil fraud case in the US"
-          },
-          "url": "https://www.bbc.com/news/articles/c4g82p5ygp8o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "7h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Claim, counter-claim and tech's seedy side exposed: Five things we learned in the Musk-Altman trial",
-            "en": "Claim, counter-claim and tech's seedy side exposed: Five things we learned in the Musk-Altman trial"
-          },
-          "url": "https://www.bbc.com/news/articles/cg7pj8p5mv4o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "9h",
+          "time": "20h",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -643,8 +588,63 @@
           },
           "url": "https://www.bbc.com/news/articles/cd7pyrj0vx7o?at_medium=RSS&at_campaign=rss",
           "theme": "energy",
-          "time": "11h",
+          "time": "20h",
           "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Family investors turn to old-economy businesses like dealerships and fisheries to avoid AI disruption",
+            "en": "Family investors turn to old-economy businesses like dealerships and fisheries to avoid AI disruption"
+          },
+          "url": "https://www.cnbc.com/2026/05/15/family-investors-economy-businesses-to-avoid-ai-disruption.html",
+          "theme": "tech",
+          "time": "22h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Beckhams become billionaires as Oasis make rich list for first time",
+            "en": "Beckhams become billionaires as Oasis make rich list for first time"
+          },
+          "url": "https://www.bbc.com/news/articles/ce8p4ywypx8o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "22h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Starbucks to lay off 300 U.S. employees, shutter some regional support offices",
+            "en": "Starbucks to lay off 300 U.S. employees, shutter some regional support offices"
+          },
+          "url": "https://www.cnbc.com/2026/05/15/starbucks-to-lay-off-300-us-employees-close-some-regional-offices.html",
+          "theme": "trade",
+          "time": "23h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Detroit automakers have cut more than 20,000 U.S. salaried jobs as AI threat looms",
+            "en": "Detroit automakers have cut more than 20,000 U.S. salaried jobs as AI threat looms"
+          },
+          "url": "https://www.cnbc.com/2026/05/15/general-motors-ford-stellantis-job-cuts-ai.html",
+          "theme": "trade",
+          "time": "1j",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "India's Adanis agree to pay $18m to settle civil fraud case in the US",
+            "en": "India's Adanis agree to pay $18m to settle civil fraud case in the US"
+          },
+          "url": "https://www.bbc.com/news/articles/c4g82p5ygp8o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "1j",
+          "impact": "low",
           "source": "BBC Business"
         }
       ]
@@ -691,7 +691,7 @@
         "exchange": {
           "value": 6.811,
           "unit": "CNY/USD",
-          "trend": "up",
+          "trend": "down",
           "period": "2026-05-15",
           "source": "Frankfurter/ECB"
         },
@@ -699,8 +699,8 @@
           "name": "SSE Composite",
           "value": 4135,
           "trend": "down",
-          "change": -2.53,
-          "period": "2026-05-15"
+          "change": -1.02,
+          "period": "2026-05-16"
         }
       },
       "sparkline": {
@@ -730,32 +730,10 @@
       "headlines": [
         {
           "title": {
-            "fr": "Rapid-fire to restrained: China state visit reveals a changed Trump on social media",
-            "en": "Rapid-fire to restrained: China state visit reveals a changed Trump on social media"
+            "fr": "How China and the US felt the weight of history behind Trump and Xi’s meeting in Beijing",
+            "en": "How China and the US felt the weight of history behind Trump and Xi’s meeting in Beijing"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3353766/rapid-fire-restrained-china-state-visit-reveals-changed-trump-social-media?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China’s Xi Jinping to pay first state visit to US in more than a decade",
-            "en": "China’s Xi Jinping to pay first state visit to US in more than a decade"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3353761/xi-jinping-pay-first-state-visit-us-more-decade-trump-says?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "What did American allies make of Trump’s trip to China to meet Xi?",
-            "en": "What did American allies make of Trump’s trip to China to meet Xi?"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3353757/what-did-american-allies-make-trumps-trip-china-meet-xi?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3353827/how-china-and-us-felt-weight-history-behind-trump-and-xis-meeting-beijing?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
@@ -763,10 +741,10 @@
         },
         {
           "title": {
-            "fr": "Eye on the tiger: how Elon Musk’s son’s bag became a hit with Chinese public",
-            "en": "Eye on the tiger: how Elon Musk’s son’s bag became a hit with Chinese public"
+            "fr": "China confirms deal to buy US aircraft and engines after Donald Trump’s visit",
+            "en": "China confirms deal to buy US aircraft and engines after Donald Trump’s visit"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3353755/eye-tiger-how-elon-musks-sons-bag-became-hit-chinese-public?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3353826/china-confirms-deal-buy-us-aircraft-and-engines-after-donald-trumps-visit?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
@@ -774,45 +752,67 @@
         },
         {
           "title": {
-            "fr": "Beijing had already won before the Trump-Xi summit even started",
-            "en": "Beijing had already won before the Trump-Xi summit even started"
+            "fr": "After China-US reset, Putin heads to Beijing for Sino-Russian strategic refresh",
+            "en": "After China-US reset, Putin heads to Beijing for Sino-Russian strategic refresh"
           },
-          "url": "https://www.scmp.com/opinion/china-opinion/article/3353547/beijing-had-already-won-trump-xi-summit-even-started?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Trump’s top science adviser visited Beijing. What does that mean for AI?",
-            "en": "Trump’s top science adviser visited Beijing. What does that mean for AI?"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3353746/trumps-top-science-adviser-visited-beijing-what-does-mean-ai?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Inside Zhongnanhai: Xi welcomes Trump into China’s hidden heart before bidding goodbye",
-            "en": "Inside Zhongnanhai: Xi welcomes Trump into China’s hidden heart before bidding goodbye"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3353733/inside-zhongnanhai-xi-welcomes-trump-chinas-secluded-heart-bidding-goodbye?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3353816/after-china-us-reset-putin-heads-beijing-sino-russian-strategic-refresh?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "3h",
+          "impact": "medium",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "How Trump’s China visit may hint the ‘2 eyes of the world’ are learning to live together",
+            "en": "How Trump’s China visit may hint the ‘2 eyes of the world’ are learning to live together"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3353808/how-trumps-china-visit-may-hint-2-eyes-world-are-learning-live-together?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "6h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Putin follows Trump to China, Xi hosts US president, Baidu earnings",
-            "en": "Putin follows Trump to China, Xi hosts US president, Baidu earnings"
+            "fr": "Have Chinese defence firms broken the sniper rifle range record – again?",
+            "en": "Have Chinese defence firms broken the sniper rifle range record – again?"
           },
-          "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3353692/putin-follows-trump-china-xi-hosts-us-president-baidu-earnings?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/science/article/3353726/have-chinese-defence-firms-broken-sniper-rifle-range-record-again?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "9h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Can AI-assisted unmanned vessels be Beijing’s answer to South China Sea patrols?",
+            "en": "Can AI-assisted unmanned vessels be Beijing’s answer to South China Sea patrols?"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3353721/can-ai-assisted-unmanned-vessels-be-beijings-answer-south-china-sea-patrols?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "11h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "How to deal with this ‘very Chinese time’ in Western lives",
+            "en": "How to deal with this ‘very Chinese time’ in Western lives"
+          },
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3353463/how-deal-very-chinese-time-western-lives?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "5h",
+          "time": "16h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Taiwan casts long shadow over Trump’s summit with Xi",
+            "en": "Taiwan casts long shadow over Trump’s summit with Xi"
+          },
+          "url": "https://www.scmp.com/news/china/article/3353779/taiwan-casts-long-shadow-over-trumps-summit-xi?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "17h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -860,7 +860,7 @@
         "exchange": {
           "value": 95.97,
           "unit": "INR/USD",
-          "trend": "up",
+          "trend": "stable",
           "period": "2026-05-15",
           "source": "Frankfurter/ECB"
         },
@@ -869,7 +869,7 @@
           "value": 75238,
           "trend": "down",
           "change": -0.21,
-          "period": "2026-05-15"
+          "period": "2026-05-16"
         }
       },
       "sparkline": {
@@ -888,7 +888,7 @@
           81287.19,
           71947.55,
           76913.5,
-          75398.72,
+          75237.99,
           75237.99
         ]
       },
@@ -899,90 +899,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "How the Mideast war brought UAE, Israel closer",
-            "en": "How the Mideast war brought UAE, Israel closer"
+            "fr": "Andhra plans cash incentives to boost birth rates",
+            "en": "Andhra plans cash incentives to boost birth rates"
           },
-          "url": "https://economictimes.indiatimes.com/news/international/uae/how-the-mideast-war-brought-uae-israel-closer-together/articleshow/131120121.cms",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "high",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "India-West Asia trade dips again in April",
-            "en": "India-West Asia trade dips again in April"
-          },
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-trade-with-west-asia-contracts-for-second-straight-month-in-april-amid-shipping-disruptions/articleshow/131119093.cms",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Singapore Air CEO flags Air India's external woes",
-            "en": "Singapore Air CEO flags Air India's external woes"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-indias-challenges-largely-external-transformation-a-long-game-singapore-airlines-ceo/articleshow/131118535.cms",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Highest 3-year FD interest rates for senior citizens",
-            "en": "Highest 3-year FD interest rates for senior citizens"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/highest-3-year-fd-interest-rates-for-senior-citizens-these-banks-offer-8-interest-rate-on-fixed-deposits/articleshow/131118162.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/andhra-pradesh-plans-cash-incentives-to-encourage-higher-birth-rates/articleshow/131135293.cms",
           "theme": "monetary",
-          "time": "1h",
+          "time": "3h",
           "impact": "medium",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Tata Steel forges 147% leap as revenue rolls higher",
-            "en": "Tata Steel forges 147% leap as revenue rolls higher"
+            "fr": "Are gold, silver prices down today? Check rates",
+            "en": "Are gold, silver prices down today? Check rates"
           },
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/tata-steel-q4-results-cons-pat-soars-147-yoy-to-rs-2965-crore-revenue-jumps-13/articleshow/131117752.cms",
-          "theme": "trade",
-          "time": "1h",
-          "impact": "low",
+          "url": "https://economictimes.indiatimes.com/wealth/invest/22k-gold-rate-today-check-24k-22k-18k-gold-prices-may-16-2026-on-malabar-gold-diamonds-joyalukkas-tanishq-kalyan-jewellers-and-ibja/articleshow/131134712.cms",
+          "theme": "monetary",
+          "time": "4h",
+          "impact": "medium",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Iran has 'no trust' in US, will negotiate if serious",
-            "en": "Iran has 'no trust' in US, will negotiate if serious"
+            "fr": "Modi pushes India-Netherlands ties in AI, chips",
+            "en": "Modi pushes India-Netherlands ties in AI, chips"
           },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-has-no-trust-in-us-will-negotiate-only-if-it-is-serious-araqchi/articleshow/131117611.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/pm-modi-pushes-deeper-india-netherlands-collaboration-in-ai-chips-and-clean-energy-during-the-hague-visit/articleshow/131134328.cms",
           "theme": "tech",
-          "time": "2h",
+          "time": "4h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Big takeaways from the Trump-Xi talks",
-            "en": "Big takeaways from the Trump-Xi talks"
+            "fr": "Maharashtra Cyber cracks down on illegal bike taxis",
+            "en": "Maharashtra Cyber cracks down on illegal bike taxis"
           },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/trumps-china-visit-major-trade-boost-for-us-farmers-boeing-deals-and-tensions-over-taiwan/articleshow/131117003.cms",
-          "theme": "geopolitics",
-          "time": "2h",
+          "url": "https://economictimes.indiatimes.com/tech/technology/maharashtra-cyber-cracks-down-on-illegal-bike-taxis-app-stores-notified/articleshow/131132994.cms",
+          "theme": "tech",
+          "time": "7h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "SC goes virtual amid war-driven fuel crunch",
-            "en": "SC goes virtual amid war-driven fuel crunch"
+            "fr": "Costlier fuel may soon pinch India’s grocery bill",
+            "en": "Costlier fuel may soon pinch India’s grocery bill"
           },
-          "url": "https://economictimes.indiatimes.com/news/india/supreme-court-mandates-virtual-hearings-wfh-amid-war-driven-fuel-conservation-push/articleshow/131117215.cms",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "high",
+          "url": "https://economictimes.indiatimes.com/industry/cons-products/fmcg/indias-monthly-household-basket-to-get-costlier-due-to-petrol-diesel-price-hikes-by-rs3/articleshow/131132579.cms",
+          "theme": "tech",
+          "time": "7h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Rs 1L investment in this SGB turned into Rs 3.12L",
+            "en": "Rs 1L investment in this SGB turned into Rs 3.12L"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/invest/212-return-on-sgb-premature-redemption-date-gold-bond-turns-rs-1-lakh-investment-into-rs-3-12-lakh/articleshow/131131021.cms",
+          "theme": "trade",
+          "time": "9h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Starbucks brews India tech hub amid global layoffs",
+            "en": "Starbucks brews India tech hub amid global layoffs"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/cons-products/food/starbucks-to-open-first-corporate-office-in-india-for-tech-jobs/articleshow/131130742.cms",
+          "theme": "tech",
+          "time": "10h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Are banks open or closed today? Find out",
+            "en": "Are banks open or closed today? Find out"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/save/saturday-bank-holiday-are-banks-open-or-closed-today-on-may-16-2026/articleshow/131117546.cms",
+          "theme": "trade",
+          "time": "12h",
+          "impact": "low",
           "source": "Economic Times"
         }
       ]
@@ -1037,8 +1037,8 @@
           "name": "MSCI World",
           "value": 154,
           "trend": "down",
-          "change": -1.41,
-          "period": "2026-05-15"
+          "change": -1.64,
+          "period": "2026-05-16"
         }
       },
       "sparkline": {
@@ -1055,8 +1055,8 @@
           60.85,
           70.69,
           114.01,
-          105.72,
-          108.06
+          109.26,
+          109.26
         ]
       },
       "summary": {
@@ -1066,89 +1066,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Trump-Xi summit: China, US disagree on what they agreed on",
-            "en": "Trump-Xi summit: China, US disagree on what they agreed on"
+            "fr": "Zimbabwe’s diaspora reshapes real estate and farming investment trends",
+            "en": "Zimbabwe’s diaspora reshapes real estate and farming investment trends"
           },
-          "url": "https://www.aljazeera.com/news/2026/5/15/trump-xi-summit-china-us-disagree-on-what-they-agreed-on?traffic_source=rss",
-          "theme": "geopolitics",
+          "url": "https://www.aljazeera.com/features/2026/5/16/zimbabwes-diaspora-reshapes-real-estate-and-farming-investment-trends?traffic_source=rss",
+          "theme": "tech",
           "time": "<1h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Watch: What did we learn from Trump's visit to China?",
-            "en": "Watch: What did we learn from Trump's visit to China?"
+            "fr": "Israeli settler blindfolds and detains Palestinian in occupied West Bank",
+            "en": "Israeli settler blindfolds and detains Palestinian in occupied West Bank"
           },
-          "url": "https://www.bbc.com/news/videos/cn8p36jzd7yo?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Boy, 15, shot dead in France as prosecutors blame drug war",
-            "en": "Boy, 15, shot dead in France as prosecutors blame drug war"
-          },
-          "url": "https://www.bbc.com/news/articles/cj9pze942j8o?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "high",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Finland ends drone alert amid regional fears of Ukraine war spillover",
-            "en": "Finland ends drone alert amid regional fears of Ukraine war spillover"
-          },
-          "url": "https://www.aljazeera.com/news/2026/5/15/finland-ends-drone-alert-amid-regional-fears-of-ukraine-war-overspill?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "high",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "India hikes fuel prices as Iran crisis bites",
-            "en": "India hikes fuel prices as Iran crisis bites"
-          },
-          "url": "https://www.aljazeera.com/economy/2026/5/15/india-hikes-fuel-prices-as-iran-crisis-bites?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/16/israeli-settler-blindfolds-and-detains-palestinian-in-occupied-west-bank?traffic_source=rss",
           "theme": "tech",
           "time": "4h",
-          "impact": "high",
+          "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Three years of the West Bank’s ‘third Nakba’",
-            "en": "Three years of the West Bank’s ‘third Nakba’"
+            "fr": "From the Nakba to Gaza’s ruins: One man’s lifetime of displacement",
+            "en": "From the Nakba to Gaza’s ruins: One man’s lifetime of displacement"
           },
-          "url": "https://www.aljazeera.com/features/2026/5/15/three-years-of-the-west-banks-third-nakba?traffic_source=rss",
-          "theme": "trade",
+          "url": "https://www.aljazeera.com/features/2026/5/16/from-the-nakba-to-gazas-ruins-one-mans-lifetime-of-displacement?traffic_source=rss",
+          "theme": "energy",
           "time": "4h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Trump and Xi move towards business-first relationship after Beijing summit",
-            "en": "Trump and Xi move towards business-first relationship after Beijing summit"
+            "fr": "Russia’s Putin to visit China following Trump’s trip",
+            "en": "Russia’s Putin to visit China following Trump’s trip"
           },
-          "url": "https://www.aljazeera.com/news/2026/5/15/trump-and-xi-move-towards-business-first-relationship-after-beijing-summit?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/5/16/russias-putin-to-visit-china-following-trumps-trip?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "4h",
+          "time": "5h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Iran war day 78: Trump, Tehran signal talks as Lebanon truce extended",
+            "en": "Iran war day 78: Trump, Tehran signal talks as Lebanon truce extended"
+          },
+          "url": "https://www.aljazeera.com/news/2026/5/16/iran-war-day-78-trump-tehran-signal-talks-as-lebanon-truce-extended?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "5h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Xi takes Trump on tour of Communist Party's seat of power as China visit ends",
-            "en": "Xi takes Trump on tour of Communist Party's seat of power as China visit ends"
+            "fr": "US charges alleged Iran-backed ⁠Kataib Hezbollah suspect – What we know",
+            "en": "US charges alleged Iran-backed ⁠Kataib Hezbollah suspect – What we know"
           },
-          "url": "https://www.bbc.com/news/articles/crrpj0ejxp8o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.aljazeera.com/news/2026/5/16/us-charges-alleged-iran-backed-%e2%81%a0kataib-hezbollah-suspect-what-we-know?traffic_source=rss",
+          "theme": "tech",
+          "time": "7h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Trump warns Taiwan against declaring independence, hours after summit with China's Xi",
+            "en": "Trump warns Taiwan against declaring independence, hours after summit with China's Xi"
+          },
+          "url": "https://www.bbc.com/news/articles/ce8p61v7l68o?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
-          "time": "5h",
+          "time": "8h",
+          "impact": "high",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "Trump says 20-year nuclear programme suspension by Iran would be enough",
+            "en": "Trump says 20-year nuclear programme suspension by Iran would be enough"
+          },
+          "url": "https://www.bbc.com/news/articles/cgkpnnen5dzo?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "16h",
           "impact": "low",
           "source": "BBC World"
         }
