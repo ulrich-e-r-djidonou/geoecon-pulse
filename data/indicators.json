@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26",
+  "lastUpdated": "2026-05-27",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.381,
+          "value": 1.383,
           "unit": "CAD/USD",
           "trend": "up",
-          "period": "2026-05-26",
+          "period": "2026-05-27",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 34630,
+          "value": 34535,
           "trend": "down",
-          "change": -0.58,
-          "period": "2026-05-26"
+          "change": -0.34,
+          "period": "2026-05-27"
         }
       },
       "sparkline": {
@@ -82,43 +82,54 @@
       "headlines": [
         {
           "title": {
-            "fr": "Bank of Canada warns of ‘low-hire, low-fire’ job market that complicates rate decisions",
-            "en": "Bank of Canada warns of ‘low-hire, low-fire’ job market that complicates rate decisions"
+            "fr": "Sous-marins : l’Allemagne promet 86 milliards $ en retombées économiques au Canada",
+            "en": "Sous-marins : l’Allemagne promet 86 milliards $ en retombées économiques au Canada"
           },
-          "url": "https://www.theglobeandmail.com/business/article-bank-of-canada-low-hire-low-fire-job-market/",
+          "url": "https://ici.radio-canada.ca/nouvelle/2256993/sous-marins-allemagne-tkms-retombees-economiques-au-canada",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "high",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Détroit d’Ormuz : l’Iran dit avoir reçu un projet d’accord, Washington dément",
+            "en": "Détroit d’Ormuz : l’Iran dit avoir reçu un projet d’accord, Washington dément"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2257043/ebauche-protocole-accord-iran-etats-unis-ormuz",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Rough trade: How Canada can maintain leverage in North American trade talks",
+            "en": "Rough trade: How Canada can maintain leverage in North American trade talks"
+          },
+          "url": "https://www.theglobeandmail.com/business/rob-magazine/article-rough-trade-how-canada-can-maintain-leverage-in-north-american-trade/",
           "theme": "trade",
-          "time": "<1h",
+          "time": "3h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Ottawa picks Sweden’s Saab early-warning aircraft tech over U.S. contenders",
+            "en": "Ottawa picks Sweden’s Saab early-warning aircraft tech over U.S. contenders"
+          },
+          "url": "https://www.theglobeandmail.com/politics/article-canada-military-aircraft-sweden-saab/",
+          "theme": "tech",
+          "time": "3h",
           "impact": "high",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Gabriel Landeskog gets over debilitating injury with help of Vancouver AI movement platform",
-            "en": "Gabriel Landeskog gets over debilitating injury with help of Vancouver AI movement platform"
+            "fr": "Institutional fund manager LetkoBrosseau launches retail mutual funds to broaden reach",
+            "en": "Institutional fund manager LetkoBrosseau launches retail mutual funds to broaden reach"
           },
-          "url": "https://www.theglobeandmail.com/sports/hockey/article-gabriel-landeskog-avalanche-knee-injury-recovery-plantiga/",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Donald Trump, bientôt âgé de 80 ans, passe son examen médical annuel",
-            "en": "Donald Trump, bientôt âgé de 80 ans, passe son examen médical annuel"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2256791/trump-examen-medical-annuel",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Oil giant BP abruptly ousts chairman Albert Manifold over governance and conduct issues",
-            "en": "Oil giant BP abruptly ousts chairman Albert Manifold over governance and conduct issues"
-          },
-          "url": "https://www.theglobeandmail.com/world/article-bp-ousts-chairman-albert-manifold/",
+          "url": "https://www.theglobeandmail.com/business/article-letkobrosseau-retail-mutual-funds-investment-institutional/",
           "theme": "tech",
           "time": "3h",
           "impact": "low",
@@ -126,32 +137,10 @@
         },
         {
           "title": {
-            "fr": "Des frappes américaines sur l’Iran jettent un froid sur les négociations",
-            "en": "Des frappes américaines sur l’Iran jettent un froid sur les négociations"
+            "fr": "José Boisjoli doesn’t miss the pressure of being in charge",
+            "en": "José Boisjoli doesn’t miss the pressure of being in charge"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2256708/etats-unis-frappe-missiles-iran-cessez-feu",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Spotify adds narrated magazine articles to audiobook offering",
-            "en": "Spotify adds narrated magazine articles to audiobook offering"
-          },
-          "url": "https://www.theglobeandmail.com/business/technology/article-spotify-adds-narrated-magazine-articles-to-audiobook-offering/",
-          "theme": "monetary",
-          "time": "4h",
-          "impact": "medium",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Say it ain’t so, joe: Trump’s tariffs have devastated coffee exports",
-            "en": "Say it ain’t so, joe: Trump’s tariffs have devastated coffee exports"
-          },
-          "url": "https://www.theglobeandmail.com/business/rob-magazine/article-say-it-aint-so-joe-trumps-tariffs-have-devastated-coffee-exports/",
+          "url": "https://www.theglobeandmail.com/business/rob-magazine/article-jose-boisjoli-doesnt-miss-the-pressure-of-being-in-charge/",
           "theme": "trade",
           "time": "4h",
           "impact": "low",
@@ -159,10 +148,21 @@
         },
         {
           "title": {
-            "fr": "Supply worries drive aluminum to highest level in more than four years",
-            "en": "Supply worries drive aluminum to highest level in more than four years"
+            "fr": "National Bank tops profit estimates, increases dividend",
+            "en": "National Bank tops profit estimates, increases dividend"
           },
-          "url": "https://www.theglobeandmail.com/business/article-supply-worries-drive-aluminum-to-highest-level-in-more-than-four-years/",
+          "url": "https://www.theglobeandmail.com/business/article-national-bank-tops-profit-estimates-increases-dividend/",
+          "theme": "trade",
+          "time": "4h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Canada’s push to diversify trade away from U.S. seeing mixed results: report",
+            "en": "Canada’s push to diversify trade away from U.S. seeing mixed results: report"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-canada-us-trade-diversification-efforts-mixed-results/",
           "theme": "trade",
           "time": "4h",
           "impact": "low",
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7511,
-          "trend": "up",
-          "change": 0.51,
-          "period": "2026-05-26"
+          "value": 7506,
+          "trend": "down",
+          "change": -0.17,
+          "period": "2026-05-27"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6878.88,
           6528.52,
           7209.01,
-          7473.47,
-          7511.26
+          7519.12,
+          7507.79
         ]
       },
       "summary": {
@@ -561,90 +561,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "'I live in survival mode': The rise of the multi-job workforce",
-            "en": "'I live in survival mode': The rise of the multi-job workforce"
+            "fr": "Jamie Dimon says JPMorgan Chase could spend $20 billion on acquisition: 'We are on the lookout'",
+            "en": "Jamie Dimon says JPMorgan Chase could spend $20 billion on acquisition: 'We are on the lookout'"
           },
-          "url": "https://www.bbc.com/news/articles/c70vwr8z7pyo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.cnbc.com/2026/05/27/jamie-dimon-jpmorgan-chase-acquisition-target-size.html",
           "theme": "trade",
-          "time": "7h",
-          "impact": "medium",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Next boss warns of 'dramatic' fall in entry-level jobs",
-            "en": "Next boss warns of 'dramatic' fall in entry-level jobs"
-          },
-          "url": "https://www.bbc.com/news/articles/c2024r6lzyro?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "9h",
+          "time": "<1h",
           "impact": "high",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Move over, seltzer. Non-carbonated drinks are taking the spotlight",
-            "en": "Move over, seltzer. Non-carbonated drinks are taking the spotlight"
-          },
-          "url": "https://www.cnbc.com/2026/05/24/move-over-seltzer-non-carbonated-drinks-are-taking-the-spotlight.html",
-          "theme": "trade",
-          "time": "21h",
-          "impact": "low",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "Oil prices slide on hopes of US-Iran peace deal",
-            "en": "Oil prices slide on hopes of US-Iran peace deal"
+            "fr": "What will the energy cap changes mean for my bills?",
+            "en": "What will the energy cap changes mean for my bills?"
           },
-          "url": "https://www.bbc.com/news/articles/c809m7g29r7o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.com/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
           "theme": "energy",
-          "time": "1j",
+          "time": "4h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Indian billionaires buy foreign companies as growth slows at home",
-            "en": "Indian billionaires buy foreign companies as growth slows at home"
+            "fr": "Energy bills to rise for millions as impact of Iran war hits",
+            "en": "Energy bills to rise for millions as impact of Iran war hits"
           },
-          "url": "https://www.bbc.com/news/articles/cwy21x20q23o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "1j",
+          "url": "https://www.bbc.com/news/articles/ce8pw464986o?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "8h",
           "impact": "high",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "'Shameful' more spent on benefits than jobs for young people, says Milburn",
-            "en": "'Shameful' more spent on benefits than jobs for young people, says Milburn"
+            "fr": "Farmers' warning as milk prices fall below cost",
+            "en": "Farmers' warning as milk prices fall below cost"
           },
-          "url": "https://www.bbc.com/news/articles/crrpx4p1z71o?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "2j",
+          "url": "https://www.bbc.com/news/articles/c5ye37jrk3go?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "10h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Booming AI chip demand helps create two new $1tn club members",
+            "en": "Booming AI chip demand helps create two new $1tn club members"
+          },
+          "url": "https://www.bbc.com/news/articles/cnvp9dq0p3go?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "13h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Disney's 'Star Wars: The Mandalorian and Grogu' tallies lowest Thursday preview sales in franchise history",
-            "en": "Disney's 'Star Wars: The Mandalorian and Grogu' tallies lowest Thursday preview sales in franchise history"
+            "fr": "Champion ethical hacker warns AI tools like Mythos will make competing harder",
+            "en": "Champion ethical hacker warns AI tools like Mythos will make competing harder"
           },
-          "url": "https://www.cnbc.com/2026/05/22/disneys-star-wars-the-mandalorian-and-grogu-box-office-preview.html",
+          "url": "https://www.bbc.com/news/articles/c3r2zjpryzro?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "3j",
+          "time": "15h",
           "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "AutoZone stock has worst day in four years, despite retailer beating Wall Street estimates",
+            "en": "AutoZone stock has worst day in four years, despite retailer beating Wall Street estimates"
+          },
+          "url": "https://www.cnbc.com/2026/05/26/autozone-stock-on-pace-for-worst-trading-day-since-march-2020.html",
+          "theme": "tech",
+          "time": "19h",
+          "impact": "low",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "UK sees hottest day of year as bank holiday travellers face queues",
-            "en": "UK sees hottest day of year as bank holiday travellers face queues"
+            "fr": "Post Office investigation could be delayed by five years, police warn",
+            "en": "Post Office investigation could be delayed by five years, police warn"
           },
-          "url": "https://www.bbc.com/news/articles/cpqpygjwywjo?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "3j",
-          "impact": "low",
+          "url": "https://www.bbc.com/news/articles/c2422y4ldymo?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "20h",
+          "impact": "high",
           "source": "BBC Business"
         }
       ]
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.785,
+          "value": 6.782,
           "unit": "CNY/USD",
-          "trend": "up",
-          "period": "2026-05-26",
+          "trend": "down",
+          "period": "2026-05-27",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 4145,
-          "trend": "up",
-          "change": 0.79,
-          "period": "2026-05-26"
+          "value": 4094,
+          "trend": "down",
+          "change": -1.42,
+          "period": "2026-05-27"
         }
       },
       "sparkline": {
@@ -730,21 +730,54 @@
       "headlines": [
         {
           "title": {
-            "fr": "Concerns mount in China’s space sector that Musk’s Starship will be a failure",
-            "en": "Concerns mount in China’s space sector that Musk’s Starship will be a failure"
+            "fr": "Chinese scientists use supercomputer to cut new drug screening time from years to seconds",
+            "en": "Chinese scientists use supercomputer to cut new drug screening time from years to seconds"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3354854/concerns-mount-chinas-space-sector-musks-starship-will-be-failure?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "medium",
+          "url": "https://www.scmp.com/news/china/science/article/3355029/chinese-scientists-use-supercomputer-cut-new-drug-screening-time-years-seconds?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China online brokerage crackdown trims billionaire owner’s wealth",
-            "en": "China online brokerage crackdown trims billionaire owner’s wealth"
+            "fr": "Why there’s no point in signing a fourth China-US communique",
+            "en": "Why there’s no point in signing a fourth China-US communique"
           },
-          "url": "https://www.scmp.com/plus/news/china/money-wealth/article/3354891/china-online-brokerage-crackdown-trims-billionaire-owners-wealth?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3355071/why-theres-no-point-signing-fourth-china-us-communique?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "What to watch at Shangri-La Dialogue after Trump’s China visit resets ties",
+            "en": "What to watch at Shangri-La Dialogue after Trump’s China visit resets ties"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3355075/what-watch-shangri-la-dialogue-after-trumps-china-visit-resets-ties?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China’s weaving of a web of ties makes it a diplomatic superpower",
+            "en": "China’s weaving of a web of ties makes it a diplomatic superpower"
+          },
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3354763/chinas-weaving-web-ties-makes-it-diplomatic-superpower?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "AI is massively increasing China’s new weapon development speed: scientists",
+            "en": "AI is massively increasing China’s new weapon development speed: scientists"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3354989/ai-massively-increasing-chinas-new-weapon-development-speed-scientists?utm_source=rss_feed",
           "theme": "tech",
           "time": "6h",
           "impact": "high",
@@ -752,10 +785,10 @@
         },
         {
           "title": {
-            "fr": "In Beijing, the US and China tiptoed around tech and critical minerals",
-            "en": "In Beijing, the US and China tiptoed around tech and critical minerals"
+            "fr": "South Korea aims to join China, US at top tier of ‘loyal wingman’ combat drone race",
+            "en": "South Korea aims to join China, US at top tier of ‘loyal wingman’ combat drone race"
           },
-          "url": "https://www.scmp.com/opinion/china-opinion/article/3354771/beijing-us-and-china-tiptoed-around-tech-and-critical-minerals?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3355017/south-korea-aims-join-china-us-top-tier-loyal-wingman-combat-drone-race?utm_source=rss_feed",
           "theme": "tech",
           "time": "7h",
           "impact": "low",
@@ -763,56 +796,23 @@
         },
         {
           "title": {
-            "fr": "China, Singapore top diplomats reaffirm commitment to Malacca Strait transit rights",
-            "en": "China, Singapore top diplomats reaffirm commitment to Malacca Strait transit rights"
+            "fr": "From wedding photographers to farm gadgets, Chinese campaign warns of spy risks",
+            "en": "From wedding photographers to farm gadgets, Chinese campaign warns of spy risks"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3354881/top-chinese-singaporean-diplomats-reaffirm-commitment-malacca-strait-transit-rights?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "8h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China defence chief Dong Jun tipped to skip this year’s Shangri-La Dialogue",
-            "en": "China defence chief Dong Jun tipped to skip this year’s Shangri-La Dialogue"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3354871/china-defence-chief-dong-jun-tipped-skip-years-shangri-la-dialogue?utm_source=rss_feed",
-          "theme": "tech",
+          "url": "https://www.scmp.com/news/china/politics/article/3354995/chinese-campaign-warns-spy-risks-found-wedding-photography-gifted-farm-equipment?utm_source=rss_feed",
+          "theme": "geopolitics",
           "time": "9h",
-          "impact": "low",
+          "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China says engineer jailed for 15 years was lured into sending aerospace secrets overseas",
-            "en": "China says engineer jailed for 15 years was lured into sending aerospace secrets overseas"
+            "fr": "Panama encourages dialogue and bridge-building at UN as canal tensions with China simmer",
+            "en": "Panama encourages dialogue and bridge-building at UN as canal tensions with China simmer"
           },
-          "url": "https://www.scmp.com/news/china/politics/article/3354863/china-says-engineer-jailed-15-years-was-lured-sending-aerospace-secrets-overseas?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3354958/panama-encourages-dialogue-and-bridge-building-un-canal-tensions-china-simmer?utm_source=rss_feed",
           "theme": "tech",
-          "time": "10h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China’s student housing, offices top property investment options amid pricing slump",
-            "en": "China’s student housing, offices top property investment options amid pricing slump"
-          },
-          "url": "https://www.scmp.com/business/article/3354825/chinas-student-housing-offices-top-property-investment-options-amid-pricing-slump?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "13h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Why US Typhon deployment in Japan poses a threat to Chinese cities",
-            "en": "Why US Typhon deployment in Japan poses a threat to Chinese cities"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3354790/why-us-typhon-deployment-japan-poses-threat-chinese-cities?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "15h",
+          "time": "17h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -860,16 +860,16 @@
         "exchange": {
           "value": 95.69,
           "unit": "INR/USD",
-          "trend": "up",
-          "period": "2026-05-26",
+          "trend": "stable",
+          "period": "2026-05-27",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 76010,
+          "value": 75868,
           "trend": "down",
-          "change": -0.63,
-          "period": "2026-05-26"
+          "change": -0.19,
+          "period": "2026-05-27"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           81287.19,
           71947.55,
           76913.5,
-          76488.96,
-          76009.7
+          76009.7,
+          75867.8
         ]
       },
       "summary": {
@@ -899,10 +899,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "Zee in talks with FIFA to stream World Cup in India",
-            "en": "Zee in talks with FIFA to stream World Cup in India"
+            "fr": "Govt sanctions over 60% manpower boost for ED",
+            "en": "Govt sanctions over 60% manpower boost for ED"
           },
-          "url": "https://economictimes.indiatimes.com/industry/media/entertainment/media/zee-in-talks-with-fifa-to-stream-world-cup-2026-in-india-amid-uncertainty-over-broadcast-rights/articleshow/131331860.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/govt-sanctions-over-60-manpower-boost-for-ed/articleshow/131353964.cms",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "White House tears into Iran's fake deal claim",
+            "en": "White House tears into Iran's fake deal claim"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/white-house-calls-irans-draft-deal-report-a-complete-fabrication-as-both-sides-inch-toward-hormuz-framework/articleshow/131353937.cms",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
@@ -910,21 +921,10 @@
         },
         {
           "title": {
-            "fr": "India rejects China-Pakistan remarks on J&amp;K",
-            "en": "India rejects China-Pakistan remarks on J&amp;K"
+            "fr": "Inside Zelensky's urgent letter to Trump",
+            "en": "Inside Zelensky's urgent letter to Trump"
           },
-          "url": "https://economictimes.indiatimes.com/news/india/india-rejects-china-pakistan-remarks-on-jk-calls-kashmir-ladakh-integral-parts-of-country/articleshow/131331381.cms",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Are China Seas turning dangerous? Quad thinks so",
-            "en": "Are China Seas turning dangerous? Quad thinks so"
-          },
-          "url": "https://economictimes.indiatimes.com/news/india/seriously-concerned-quad-joint-statement-flags-water-cannons-blocked-ships-in-south-and-east-china-seas/articleshow/131331173.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/zelensky-sends-urgent-letter-to-trump-warning-of-critical-gaps-in-ukraines-missile-defence/articleshow/131352944.cms",
           "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
@@ -932,32 +932,32 @@
         },
         {
           "title": {
-            "fr": "Iran slams US strikes, warns of consequences",
-            "en": "Iran slams US strikes, warns of consequences"
+            "fr": "US may withdraw from Iran's vicinity, lift blockade",
+            "en": "US may withdraw from Iran's vicinity, lift blockade"
           },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-condemns-us-strikes-as-show-of-bad-faith-warns-of-consequences/articleshow/131330749.cms",
+          "url": "https://economictimes.indiatimes.com/news/defence/us-forces-to-withdraw-from-irans-vicinity-lift-naval-blockade-says-state-media-citing-draft-deal/articleshow/131350960.cms",
           "theme": "geopolitics",
-          "time": "2h",
-          "impact": "high",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Banks closed for 14 days in Pune due to curfew?",
-            "en": "Banks closed for 14 days in Pune due to curfew?"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/save/are-banks-closed-for-14-days-in-pune-due-to-curfew-heres-what-police-officials-said-amid-social-media-claims/articleshow/131329205.cms",
-          "theme": "trade",
           "time": "3h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Why Newton couldn't understand human madness",
-            "en": "Why Newton couldn't understand human madness"
+            "fr": "Rupee to hit 99, fiscal deficit at 5%: Rahul Bajoria",
+            "en": "Rupee to hit 99, fiscal deficit at 5%: Rahul Bajoria"
           },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/isaac-newton-on-human-behaviour-why-the-worlds-greatest-scientist-said-he-could-not-understand-human-madness/articleshow/131328074.cms",
+          "url": "https://economictimes.indiatimes.com/markets/expert-view/rupee-to-hit-99-fiscal-deficit-at-5-rahul-bajoria-sees-deeper-pain-ahead-for-india/articleshow/131349180.cms",
+          "theme": "monetary",
+          "time": "4h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "India-US to finalise interim trade terms in June",
+            "en": "India-US to finalise interim trade terms in June"
+          },
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-us-to-continue-trade-pact-talks-in-delhi-as-american-delegation-set-to-visit-next-month/articleshow/131348955.cms",
           "theme": "trade",
           "time": "4h",
           "impact": "low",
@@ -965,23 +965,23 @@
         },
         {
           "title": {
-            "fr": "Exposed vulnerabilities? Pak plans oil reserves",
-            "en": "Exposed vulnerabilities? Pak plans oil reserves"
+            "fr": "Red Balloon launches India's first indigenous SPB",
+            "en": "Red Balloon launches India's first indigenous SPB"
           },
-          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/pakistan-plans-oil-reserves-storage-push-as-hormuz-constraints-expose-vulnerabilities/articleshow/131328678.cms",
-          "theme": "energy",
-          "time": "4h",
+          "url": "https://economictimes.indiatimes.com/news/science/red-balloon-aerospace-launches-indias-first-indigenous-super-pressure-balloon/articleshow/131347702.cms",
+          "theme": "tech",
+          "time": "5h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Is RBI running lottery scheme? PIB says this",
-            "en": "Is RBI running lottery scheme? PIB says this"
+            "fr": "JSW Steel kicks off ₹65,000 crore project in Odisha",
+            "en": "JSW Steel kicks off ₹65,000 crore project in Odisha"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/save/is-rbi-running-any-donation-or-lottery-compensation-scheme-check-details/articleshow/131328015.cms",
+          "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/steel/jsw-steel-kicks-off-rs-65000-crore-greenfield-steel-project-in-odisha/articleshow/131347794.cms",
           "theme": "trade",
-          "time": "4h",
+          "time": "5h",
           "impact": "low",
           "source": "Economic Times"
         }
@@ -1036,9 +1036,9 @@
         "stockIndex": {
           "name": "MSCI World",
           "value": 157,
-          "trend": "up",
-          "change": 0.94,
-          "period": "2026-05-26"
+          "trend": "down",
+          "change": -0.31,
+          "period": "2026-05-27"
         }
       },
       "sparkline": {
@@ -1055,8 +1055,8 @@
           60.85,
           70.69,
           114.01,
-          96.65,
-          97.2
+          99.58,
+          93.45
         ]
       },
       "summary": {
@@ -1066,65 +1066,32 @@
       "headlines": [
         {
           "title": {
-            "fr": "Iran condemns US strikes as 'gross violation' of ceasefire",
-            "en": "Iran condemns US strikes as 'gross violation' of ceasefire"
+            "fr": "Almost 500,000 Russian soldiers killed in Ukraine war, GCHQ says",
+            "en": "Almost 500,000 Russian soldiers killed in Ukraine war, GCHQ says"
           },
-          "url": "https://www.bbc.com/news/articles/c4g44yl7q70o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.com/news/articles/c4g44gprnnvo?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
           "time": "<1h",
-          "impact": "low",
+          "impact": "high",
           "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Iran’s president praises military after US strikes",
-            "en": "Iran’s president praises military after US strikes"
+            "fr": "Muslims worldwide celebrate Eid al-Adha, the Festival of Sacrifice",
+            "en": "Muslims worldwide celebrate Eid al-Adha, the Festival of Sacrifice"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/26/irans-president-praises-military-after-us-strikes?traffic_source=rss",
-          "theme": "geopolitics",
+          "url": "https://www.aljazeera.com/gallery/2026/5/27/muslims-worldwide-celebrate-eid-al-adha-the-festival-of-sacrifice?traffic_source=rss",
+          "theme": "monetary",
           "time": "1h",
-          "impact": "low",
+          "impact": "medium",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "India, US strike critical minerals deal: What’s in it, why does it matter?",
-            "en": "India, US strike critical minerals deal: What’s in it, why does it matter?"
+            "fr": "Bangladesh seeks IMF aid: How badly has Iran war hit its economy?",
+            "en": "Bangladesh seeks IMF aid: How badly has Iran war hit its economy?"
           },
-          "url": "https://www.aljazeera.com/economy/2026/5/26/india-us-strike-critical-minerals-deal-whats-in-it-why-does-it-matter?traffic_source=rss",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Twitch to politics: Hasan Piker on Gaza and the US right-wing",
-            "en": "Twitch to politics: Hasan Piker on Gaza and the US right-wing"
-          },
-          "url": "https://www.aljazeera.com/video/the-take-2/2026/5/26/aje-onl-tt_rr_usa_piker_av_v1-250526?traffic_source=rss",
-          "theme": "energy",
-          "time": "1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Israel’s occupation of Gaza, Lebanon, Syria extends beyond what maps show",
-            "en": "Israel’s occupation of Gaza, Lebanon, Syria extends beyond what maps show"
-          },
-          "url": "https://www.aljazeera.com/news/2026/5/26/israels-occupation-of-gaza-lebanon-syria-extends-beyond-what-maps-show?traffic_source=rss",
-          "theme": "energy",
-          "time": "2h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Report warns pro-Palestine protesters face legal crackdown: What to know",
-            "en": "Report warns pro-Palestine protesters face legal crackdown: What to know"
-          },
-          "url": "https://www.aljazeera.com/news/2026/5/26/report-warns-pro-palestine-protesters-face-legal-crackdown-what-to-know?traffic_source=rss",
+          "url": "https://www.aljazeera.com/economy/2026/5/27/bangladesh-seeks-imf-aid-how-badly-has-iran-war-hit-its-economy?traffic_source=rss",
           "theme": "geopolitics",
           "time": "2h",
           "impact": "high",
@@ -1132,10 +1099,43 @@
         },
         {
           "title": {
-            "fr": "Protester confronts Canadian politician over ‘Gaza complicity’",
-            "en": "Protester confronts Canadian politician over ‘Gaza complicity’"
+            "fr": "Rescue teams celebrate as survivors found in Laos cave",
+            "en": "Rescue teams celebrate as survivors found in Laos cave"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/26/protester-confronts-canadian-politician-over-gaza?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/27/rescue-teams-celebrate-as-survivors-found-in-laos-cave?traffic_source=rss",
+          "theme": "monetary",
+          "time": "2h",
+          "impact": "medium",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Israeli strike in Gaza City kills new head of Hamas's military wing",
+            "en": "Israeli strike in Gaza City kills new head of Hamas's military wing"
+          },
+          "url": "https://www.bbc.com/news/articles/cjwppj1yn7go?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "DRC facing ‘catastrophic collision’ of Ebola and war, WHO chief warns",
+            "en": "DRC facing ‘catastrophic collision’ of Ebola and war, WHO chief warns"
+          },
+          "url": "https://www.aljazeera.com/news/2026/5/27/drc-facing-catastrophic-collision-of-ebola-and-war-who-chief-warns?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "‘Eid does not enter tents’: Palestinians in Gaza face grim holiday",
+            "en": "‘Eid does not enter tents’: Palestinians in Gaza face grim holiday"
+          },
+          "url": "https://www.aljazeera.com/news/2026/5/27/eid-does-not-enter-tents-palestinians-in-gaza-face-grim-holiday?traffic_source=rss",
           "theme": "energy",
           "time": "3h",
           "impact": "low",
@@ -1143,13 +1143,13 @@
         },
         {
           "title": {
-            "fr": "Israeli air attacks kill seven Palestinians in Gaza",
-            "en": "Israeli air attacks kill seven Palestinians in Gaza"
+            "fr": "UFC fighting cage rises on White House lawn for US and Trump celebrations",
+            "en": "UFC fighting cage rises on White House lawn for US and Trump celebrations"
           },
-          "url": "https://www.aljazeera.com/news/2026/5/26/israeli-air-attacks-kill-seven-palestinians-in-gaza?traffic_source=rss",
-          "theme": "tech",
+          "url": "https://www.aljazeera.com/sports/2026/5/27/ufc-fighting-cage-rises-on-white-house-lawn-for-us-and-trump-celebrations?traffic_source=rss",
+          "theme": "geopolitics",
           "time": "3h",
-          "impact": "low",
+          "impact": "medium",
           "source": "Al Jazeera"
         }
       ]
