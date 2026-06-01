@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extrapolation en inférence causale avec variables instrumentales — Plan de cours</title>
+<meta name="description" content="Plan de cours : modèles économiques et stratégies d'identification — extrapoler des estimations IV locales vers les paramètres d'intérêt pour les politiques publiques, via l'effet marginal de traitement (MTE).">
+<meta property="og:title" content="Economic Models & Research Designs: Extrapolation in Causal Inference with IV">
+<meta property="og:description" content="A graduate course on the latent-index model, the marginal treatment effect (MTE), and extrapolating from local IV estimates to policy-relevant parameters.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-card: rgba(255,255,255,0.04);
+  --bg-card-hover: rgba(255,255,255,0.07);
+  --border: rgba(255,255,255,0.08);
+  --border-light: rgba(255,255,255,0.12);
+  --text-primary: #e8e6e3;
+  --text-secondary: #9a9a9a;
+  --text-muted: #666;
+  --accent: #8B5CF6;
+  --accent-2: #06b6d4;
+  --positive: #22c55e;
+  --negative: #ef4444;
+  --neutral-color: #eab308;
+  --m1: #8B5CF6;
+  --m2: #06b6d4;
+  --m3: #f59e0b;
+  --m4: #2E8B57;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gradient background */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(160deg, #0a0a0f 0%, #1a1a2e 40%, #16162a 70%, #0a0a0f 100%);
+  z-index: -1;
+}
+
+/* ===== LAYOUT ===== */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 1; }
+
+/* ===== HEADER ===== */
+.header {
+  padding: 32px 0 24px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 28px;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.header-left { flex: 1; min-width: 220px; }
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.header-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem, 4.5vw, 2.9rem);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+.header-title span {
+  background: linear-gradient(135deg, #8B5CF6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 10px;
+  font-weight: 400;
+  max-width: 70ch;
+}
+.header-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Back link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--bg-card);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+.back-link:hover { color: var(--text-primary); border-color: var(--border-light); background: var(--bg-card-hover); }
+
+/* Language Toggle */
+.lang-toggle {
+  display: flex;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.lang-btn {
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+.lang-btn.active {
+  background: rgba(139, 92, 246, 0.2);
+  color: #8B5CF6;
+}
+.lang-btn:hover:not(.active) { color: var(--text-primary); }
+
+/* ===== ABSTRACT ===== */
+.abstract {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin-bottom: 36px;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+.abstract p { margin-bottom: 14px; }
+.abstract p:last-child { margin-bottom: 0; }
+.abstract strong { color: var(--text-primary); font-weight: 600; }
+
+/* ===== SECTION ===== */
+.section { margin-bottom: 44px; scroll-margin-top: 24px; }
+.section-eyebrow {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+.section-lede {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  max-width: 74ch;
+}
+
+/* ===== KEY INSIGHTS GRID ===== */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+.insight-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  transition: var(--transition);
+}
+.insight-card:hover { background: var(--bg-card-hover); border-color: var(--border-light); transform: translateY(-2px); }
+.insight-num {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  background: linear-gradient(135deg, #8B5CF6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+.insight-head { font-weight: 600; font-size: 0.98rem; margin-bottom: 8px; }
+.insight-body { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6; }
+
+/* ===== MODULE CARDS ===== */
+.modules { display: flex; flex-direction: column; gap: 16px; }
+.module-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+  transition: var(--transition);
+  border-left: 3px solid var(--mod-color, var(--accent));
+}
+.module-card:hover { background: var(--bg-card-hover); border-color: var(--border-light); }
+.module-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.module-tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: var(--mod-color, var(--accent));
+  background: color-mix(in srgb, var(--mod-color, var(--accent)) 14%, transparent);
+}
+.module-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+.module-desc { font-size: 0.9rem; color: var(--text-secondary); margin: 10px 0 14px; line-height: 1.7; }
+.module-topics { display: flex; flex-wrap: wrap; gap: 8px; }
+.topic-chip {
+  font-size: 0.76rem;
+  padding: 5px 11px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+/* ===== EQUATION / CONCEPT ===== */
+.concept-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.concept-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+}
+.concept-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.concept-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7; }
+.equation {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  background: rgba(0,0,0,0.28);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin: 14px 0;
+  color: #cbd5e1;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+.equation .var { color: #a78bfa; }
+.equation .op { color: var(--text-muted); }
+.equation small { color: var(--text-muted); font-family: var(--font-sans); display: block; margin-top: 8px; font-size: 0.78rem; }
+
+/* ===== GLOSSARY ===== */
+.glossary { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.term-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  transition: var(--transition);
+}
+.term-card:hover { border-color: var(--border-light); background: var(--bg-card-hover); }
+.term-name { font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; color: var(--text-primary); }
+.term-abbr { color: var(--accent); font-family: var(--font-mono); font-size: 0.82rem; }
+.term-def { font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6; }
+
+/* ===== REFERENCES ===== */
+.refs { display: flex; flex-direction: column; gap: 4px; }
+.ref-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.ref-item:hover { border-color: var(--border); background: var(--bg-card); }
+.ref-marker { color: var(--accent); font-weight: 700; font-size: 0.85rem; flex-shrink: 0; font-family: var(--font-mono); }
+.ref-text { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6; }
+.ref-text em { color: var(--text-primary); font-style: italic; }
+.ref-text a { color: var(--accent-2); text-decoration: none; }
+.ref-text a:hover { text-decoration: underline; }
+
+/* ===== TOC NAV ===== */
+.toc {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.toc a {
+  font-size: 0.8rem;
+  padding: 7px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.toc a:hover { color: var(--text-primary); border-color: var(--border-light); background: var(--bg-card-hover); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 32px 0;
+  margin-top: 40px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+.footer a { color: var(--text-secondary); text-decoration: none; }
+.footer a:hover { color: var(--text-primary); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container { padding: 0 14px; }
+  .header { padding: 20px 0 16px; }
+  .header-inner { flex-direction: column; }
+  .header-right { width: 100%; justify-content: space-between; }
+  .concept-grid { grid-template-columns: 1fr; }
+  .section-title { font-size: 1.3rem; }
+  .module-card { padding: 20px; }
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="eyebrow" data-i18n="eyebrow">Cours de cycle supérieur · Économétrie appliquée</div>
+        <h1 class="header-title" data-i18n="title">Modèles économiques et stratégies d'identification : <span>l'extrapolation</span> en inférence causale avec variables instrumentales</h1>
+        <p class="header-subtitle" data-i18n="subtitle">Des estimations IV locales aux paramètres d'intérêt pour les politiques publiques, en passant par l'effet marginal de traitement (MTE).</p>
+        <p class="header-meta"><span data-i18n="byline">Conçu par Ulrich E. R. Djidonou — Économiste</span></p>
+      </div>
+      <div class="header-right">
+        <a class="back-link" href="index.html"><span>←</span> <span data-i18n="back">Tableau de bord</span></a>
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="fr" onclick="setLang('fr')">FR</button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc">
+    <a href="#abstract" data-i18n="toc_abstract">Présentation</a>
+    <a href="#insights" data-i18n="toc_insights">Idées clés</a>
+    <a href="#modules" data-i18n="toc_modules">Modules</a>
+    <a href="#object" data-i18n="toc_object">L'objet central</a>
+    <a href="#glossary" data-i18n="toc_glossary">Glossaire</a>
+    <a href="#refs" data-i18n="toc_refs">Références</a>
+  </nav>
+
+  <!-- ABSTRACT -->
+  <section class="section" id="abstract">
+    <div class="abstract">
+      <p data-i18n="abs_1">L'empirisme en forme réduite n'est jamais réellement « sans modèle ». Des modèles économiques sont nécessaires pour <strong>extrapoler</strong> de ce que les données identifient vers ce qu'une question de politique publique exige. Une estimation par variables instrumentales (IV) bien identifiée nous renseigne sur l'effet causal pour les unités statistiques dont le comportement est modifié par l'instrument. Elle ne nous dit pas ce qui se produirait si un décideur étendait le programme, modifiait le seuil d'éligibilité, ou appliquait l'intervention à une population différente.</p>
+      <p data-i18n="abs_2">Ce cours porte sur les outils qui comblent cet écart. Point de départ : les hypothèses habituellement invoquées pour donner à l'IV une interprétation causale impliquent déjà que <strong>toute l'hétérogénéité non observée pertinente pour la sélection peut se résumer à un unique indice latent</strong> capturant la résistance au traitement. C'est une restriction de fond dans bien des modèles économiques.</p>
+      <p data-i18n="abs_3">Dans la classe de modèles qui soutiennent cette restriction, presque tous les paramètres qui nous intéressent — l'effet sur les compliers, sur les traités, sur la personne moyenne, sur ceux qu'affecte un changement de politique donné — s'écrivent comme une <strong>moyenne pondérée d'un même objet sous-jacent</strong>, l'effet marginal de traitement (MTE). Estimateurs et stratégies d'identification ne diffèrent que par les poids qu'ils assignent implicitement à cet objet, souvent à l'insu du chercheur.</p>
+      <p data-i18n="abs_4">Conséquence : lorsque deux études bien identifiées produisent des estimations différentes du « même » effet, l'écart n'est pas une énigme à dissiper mais un <strong>signal informatif sur la forme du MTE</strong>. Nous étudions les propriétés de cet objet, son lien avec les estimations locales de l'IV standard, et les hypothèses supplémentaires requises pour voyager de ces estimations vers les paramètres qu'exige une question de politique publique.</p>
+    </div>
+  </section>
+
+  <!-- KEY INSIGHTS -->
+  <section class="section" id="insights">
+    <div class="section-eyebrow" data-i18n="insights_eyebrow">Le fil conducteur</div>
+    <h2 class="section-title" data-i18n="insights_title">Quatre idées qui structurent le cours</h2>
+    <div class="insights-grid">
+      <div class="insight-card">
+        <div class="insight-num">01</div>
+        <div class="insight-head" data-i18n="ins1_h">L'IV cache un modèle de sélection</div>
+        <div class="insight-body" data-i18n="ins1_b">La monotonicité d'Imbens–Angrist équivaut à un modèle à indice latent (Vytlacil, 2002) : la sélection dans le traitement obéit à un seul seuil de résistance non observé.</div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-num">02</div>
+        <div class="insight-head" data-i18n="ins2_h">Tout est une moyenne pondérée du MTE</div>
+        <div class="insight-body" data-i18n="ins2_b">ATE, ATT, LATE, PRTE… chaque paramètre est une intégrale du MTE assortie d'une pondération propre. L'objet est commun ; seuls les poids changent.</div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-num">03</div>
+        <div class="insight-head" data-i18n="ins3_h">Les divergences sont informatives</div>
+        <div class="insight-body" data-i18n="ins3_b">Deux estimations IV « contradictoires » révèlent la pente du MTE : la sélection sur les gains (hétérogénéité essentielle) plutôt qu'une erreur.</div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-num">04</div>
+        <div class="insight-head" data-i18n="ins4_h">L'extrapolation a un prix</div>
+        <div class="insight-body" data-i18n="ins4_b">Voyager du local vers le global exige soit une forme fonctionnelle, soit un support d'instrument plus large, soit l'acceptation de bornes d'identification partielle.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULES -->
+  <section class="section" id="modules">
+    <div class="section-eyebrow" data-i18n="modules_eyebrow">Structure</div>
+    <h2 class="section-title" data-i18n="modules_title">Quatre modules</h2>
+    <p class="section-lede" data-i18n="modules_lede">Du modèle de sélection sous-jacent à l'IV, jusqu'à l'extrapolation vers les paramètres de politique publique et leurs bornes.</p>
+    <div class="modules">
+
+      <div class="module-card" style="--mod-color: var(--m1)">
+        <div class="module-head">
+          <span class="module-tag" data-i18n="mod1_tag">Module 1</span>
+          <h3 class="module-title" data-i18n="mod1_title">Qu'est-ce que l'IV identifie ? Le modèle à indice latent et ses implications</h3>
+        </div>
+        <p class="module-desc" data-i18n="mod1_desc">On part du modèle de Roy et du résultat d'équivalence entre indice latent et IV : les hypothèses qui rendent l'IV causale collapsent toute la sélection sur un unique indice. La monotonicité y apparaît comme une restriction de fond — un indice unique à la fois unificateur et limitant.</p>
+        <div class="module-topics">
+          <span class="topic-chip" data-i18n="mod1_t1">Modèle de Roy</span>
+          <span class="topic-chip" data-i18n="mod1_t2">Équivalence indice latent / IV</span>
+          <span class="topic-chip" data-i18n="mod1_t3">Monotonicité comme restriction</span>
+          <span class="topic-chip" data-i18n="mod1_t4">Limites de l'indice unique</span>
+        </div>
+      </div>
+
+      <div class="module-card" style="--mod-color: var(--m2)">
+        <div class="module-head">
+          <span class="module-tag" data-i18n="mod2_tag">Module 2</span>
+          <h3 class="module-title" data-i18n="mod2_title">L'effet marginal de traitement : définition, identification, interprétation économique</h3>
+        </div>
+        <p class="module-desc" data-i18n="mod2_desc">Définition du MTE, identification ponctuelle par l'IV local (local instrumental variables), représentation de tous les paramètres standards comme moyennes pondérées du MTE, et applications empiriques.</p>
+        <div class="module-topics">
+          <span class="topic-chip" data-i18n="mod2_t1">Définition du MTE</span>
+          <span class="topic-chip" data-i18n="mod2_t2">IV local (LIV)</span>
+          <span class="topic-chip" data-i18n="mod2_t3">Représentation par pondérations</span>
+          <span class="topic-chip" data-i18n="mod2_t4">Applications empiriques</span>
+        </div>
+      </div>
+
+      <div class="module-card" style="--mod-color: var(--m3)">
+        <div class="module-head">
+          <span class="module-tag" data-i18n="mod3_tag">Module 3</span>
+          <h3 class="module-title" data-i18n="mod3_title">Estimation à support limité : approches semi- et paramétriques</h3>
+        </div>
+        <p class="module-desc" data-i18n="mod3_desc">Estimateurs semiparamétriques, cas des instruments discrets, tension entre forme fonctionnelle et support de l'instrument, et tests de l'hétérogénéité non observée (hétérogénéité essentielle).</p>
+        <div class="module-topics">
+          <span class="topic-chip" data-i18n="mod3_t1">Estimateurs semiparamétriques</span>
+          <span class="topic-chip" data-i18n="mod3_t2">Instruments discrets</span>
+          <span class="topic-chip" data-i18n="mod3_t3">Forme fonctionnelle vs support</span>
+          <span class="topic-chip" data-i18n="mod3_t4">Tests d'hétérogénéité</span>
+        </div>
+      </div>
+
+      <div class="module-card" style="--mod-color: var(--m4)">
+        <div class="module-head">
+          <span class="module-tag" data-i18n="mod4_tag">Module 4</span>
+          <h3 class="module-title" data-i18n="mod4_title">Extrapolation et politique : des estimations locales aux paramètres d'intérêt</h3>
+        </div>
+        <p class="module-desc" data-i18n="mod4_desc">Paramètres d'intérêt pour les politiques publiques (PRTE), identification partielle et bornes par programmation linéaire, et discussion : quand l'extrapolation est-elle, ou non, justifiée ?</p>
+        <div class="module-topics">
+          <span class="topic-chip" data-i18n="mod4_t1">Paramètres de politique (PRTE)</span>
+          <span class="topic-chip" data-i18n="mod4_t2">Identification partielle</span>
+          <span class="topic-chip" data-i18n="mod4_t3">Bornes par programmation linéaire</span>
+          <span class="topic-chip" data-i18n="mod4_t4">Quand extrapoler ?</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CENTRAL OBJECT -->
+  <section class="section" id="object">
+    <div class="section-eyebrow" data-i18n="object_eyebrow">Le cœur formel</div>
+    <h2 class="section-title" data-i18n="object_title">Un seul objet, plusieurs pondérations</h2>
+    <p class="section-lede" data-i18n="object_lede">Le modèle à indice latent fournit un objet — le MTE — dont tous les paramètres usuels sont des moyennes pondérées. Voici la grammaire commune.</p>
+    <div class="concept-grid">
+      <div class="concept-card">
+        <h3 data-i18n="conc1_h">Sélection à seuil (indice latent)</h3>
+        <div class="equation">
+          D <span class="op">=</span> 1{ <span class="var">p(Z)</span> <span class="op">≥</span> <span class="var">U</span> },&nbsp;&nbsp; <span class="var">U</span> <span class="op">~</span> Unif[0,1]
+          <small data-i18n="conc1_note">On reçoit le traitement D lorsque le score de propension p(Z) dépasse la résistance non observée U. U est le rang de résistance au traitement.</small>
+        </div>
+        <p data-i18n="conc1_p">La monotonicité d'Imbens–Angrist est exactement équivalente à ce modèle à seuil (Vytlacil, 2002) : aucun « defier », un seul indice de sélection.</p>
+      </div>
+      <div class="concept-card">
+        <h3 data-i18n="conc2_h">L'effet marginal de traitement</h3>
+        <div class="equation">
+          <span class="var">MTE(x, u)</span> <span class="op">=</span> E[ Y₁ <span class="op">−</span> Y₀ <span class="op">|</span> X<span class="op">=</span>x, U<span class="op">=</span>u ]
+          <small data-i18n="conc2_note">L'effet causal moyen pour les individus indifférents au traitement à un niveau de résistance u. u faible = « toujours-preneurs » ; u élevé = « jamais-preneurs ».</small>
+        </div>
+        <p data-i18n="conc2_p">Identifié ponctuellement par la dérivée de l'espérance de Y par rapport au score de propension : c'est l'IV local (Heckman–Vytlacil).</p>
+      </div>
+      <div class="concept-card">
+        <h3 data-i18n="conc3_h">Tout paramètre = MTE pondéré</h3>
+        <div class="equation">
+          β<sub>j</sub> <span class="op">=</span> ∫₀¹ <span class="var">MTE(x,u)</span> · <span class="var">ω<sub>j</sub>(x,u)</span> du
+          <small data-i18n="conc3_note">ATE, ATT, ATUT, LATE, PRTE diffèrent uniquement par la fonction de poids ω. L'objet MTE est commun.</small>
+        </div>
+        <p data-i18n="conc3_p">L'ATE pondère uniformément ; l'ATT surpondère les faibles u ; le LATE ne pèse que l'intervalle de u activé par l'instrument.</p>
+      </div>
+      <div class="concept-card">
+        <h3 data-i18n="conc4_h">Le paramètre de politique (PRTE)</h3>
+        <div class="equation">
+          PRTE <span class="op">=</span> ∫₀¹ <span class="var">MTE(x,u)</span> · <span class="var">ω<sup>a→a′</sup>(x,u)</span> du
+          <small data-i18n="conc4_note">Les poids découlent de la variation du score de propension induite par le passage de la politique a à la politique a′.</small>
+        </div>
+        <p data-i18n="conc4_p">Si la politique déplace des u hors du support couvert par l'instrument, le PRTE n'est que partiellement identifié : on calcule alors des bornes par programmation linéaire (Mogstad–Santos–Torgovitsky).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOSSARY -->
+  <section class="section" id="glossary">
+    <div class="section-eyebrow" data-i18n="glossary_eyebrow">Repères</div>
+    <h2 class="section-title" data-i18n="glossary_title">Glossaire des concepts</h2>
+    <div class="glossary">
+      <div class="term-card">
+        <div class="term-name"><span data-i18n="g1_n">Effet marginal de traitement</span> <span class="term-abbr">MTE</span></div>
+        <div class="term-def" data-i18n="g1_d">Effet causal moyen pour les individus situés à un rang de résistance donné. Brique élémentaire dont tous les autres paramètres sont des moyennes pondérées.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name"><span data-i18n="g2_n">Effet local moyen</span> <span class="term-abbr">LATE</span></div>
+        <div class="term-def" data-i18n="g2_d">Effet causal sur les compliers — ceux dont le traitement change avec l'instrument. Moyenne du MTE sur l'intervalle de résistance activé par l'instrument.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name"><span data-i18n="g3_n">Modèle à indice latent</span></div>
+        <div class="term-def" data-i18n="g3_d">Règle de sélection à franchissement de seuil où le traitement dépend du dépassement d'un indice unique de résistance non observé. Équivalente à la monotonicité.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name"><span data-i18n="g4_n">Monotonicité / uniformité</span></div>
+        <div class="term-def" data-i18n="g4_d">L'instrument pousse tout le monde dans la même direction (pas de defiers). Hypothèse de fond, pas une simple commodité technique.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name"><span data-i18n="g5_n">Score de propension</span> <span class="term-abbr">p(Z)</span></div>
+        <div class="term-def" data-i18n="g5_d">Probabilité de traitement conditionnelle aux instruments. Son support détermine quelle portion du MTE est identifiable.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name"><span data-i18n="g6_n">Hétérogénéité essentielle</span></div>
+        <div class="term-def" data-i18n="g6_d">Les individus se sélectionnent dans le traitement en partie sur la base de leurs gains idiosyncratiques. Le MTE n'est alors pas plat en u.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name"><span data-i18n="g7_n">IV local</span> <span class="term-abbr">LIV</span></div>
+        <div class="term-def" data-i18n="g7_d">Dérivée de l'espérance du résultat par rapport au score de propension. Identifie le MTE ponctuellement là où le score varie continûment.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name"><span data-i18n="g8_n">Paramètre de politique</span> <span class="term-abbr">PRTE</span></div>
+        <div class="term-def" data-i18n="g8_d">Effet d'un changement de politique réaliste (seuil, éligibilité). Moyenne du MTE pondérée par le déplacement du score que la politique induit.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name"><span data-i18n="g9_n">Identification partielle</span></div>
+        <div class="term-def" data-i18n="g9_d">Quand les données ne fixent pas un point unique, on borne le paramètre. Les bornes nettes se calculent par programmation linéaire sur l'espace des MTE admissibles.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="section" id="refs">
+    <div class="section-eyebrow" data-i18n="refs_eyebrow">Pour aller plus loin</div>
+    <h2 class="section-title" data-i18n="refs_title">Lectures de référence</h2>
+    <div class="refs">
+      <div class="ref-item">
+        <span class="ref-marker">01</span>
+        <span class="ref-text">Imbens, G. W. & Angrist, J. D. (1994). <em>Identification and Estimation of Local Average Treatment Effects</em>. Econometrica, 62(2), 467–475.</span>
+      </div>
+      <div class="ref-item">
+        <span class="ref-marker">02</span>
+        <span class="ref-text">Vytlacil, E. (2002). <em>Independence, Monotonicity, and Latent Index Models: An Equivalence Result</em>. Econometrica, 70(1), 331–341.</span>
+      </div>
+      <div class="ref-item">
+        <span class="ref-marker">03</span>
+        <span class="ref-text">Heckman, J. J. & Vytlacil, E. (2005). <em>Structural Equations, Treatment Effects, and Econometric Policy Evaluation</em>. Econometrica, 73(3), 669–738.</span>
+      </div>
+      <div class="ref-item">
+        <span class="ref-marker">04</span>
+        <span class="ref-text">Heckman, J. J., Urzua, S. & Vytlacil, E. (2006). <em>Understanding Instrumental Variables in Models with Essential Heterogeneity</em>. Review of Economics and Statistics, 88(3), 389–432.</span>
+      </div>
+      <div class="ref-item">
+        <span class="ref-marker">05</span>
+        <span class="ref-text">Carneiro, P., Heckman, J. J. & Vytlacil, E. (2011). <em>Estimating Marginal Returns to Education</em>. American Economic Review, 101(6), 2754–2781.</span>
+      </div>
+      <div class="ref-item">
+        <span class="ref-marker">06</span>
+        <span class="ref-text">Brinch, C. N., Mogstad, M. & Wiswall, M. (2017). <em>Beyond LATE with a Discrete Instrument</em>. Journal of Political Economy, 125(4), 985–1039.</span>
+      </div>
+      <div class="ref-item">
+        <span class="ref-marker">07</span>
+        <span class="ref-text">Mogstad, M., Santos, A. & Torgovitsky, A. (2018). <em>Using Instrumental Variables for Inference About Policy Relevant Treatment Parameters</em>. Econometrica, 86(5), 1589–1619.</span>
+      </div>
+      <div class="ref-item">
+        <span class="ref-marker">08</span>
+        <span class="ref-text">Mogstad, M. & Torgovitsky, A. (2018). <em>Identification and Extrapolation of Causal Effects with Instrumental Variables</em>. Annual Review of Economics, 10, 577–613.</span>
+      </div>
+      <div class="ref-item">
+        <span class="ref-marker">09</span>
+        <span class="ref-text">Cornelissen, T., Dustmann, C., Raute, A. & Schönberg, U. (2016). <em>From LATE to MTE: Alternative Methods for the Evaluation of Policy Interventions</em>. Labour Economics, 41, 47–60.</span>
+      </div>
+      <div class="ref-item">
+        <span class="ref-marker">10</span>
+        <span class="ref-text">Roy, A. D. (1951). <em>Some Thoughts on the Distribution of Earnings</em>. Oxford Economic Papers, 3(2), 135–146.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p data-i18n="footer_text">Conçu par Ulrich E. R. Djidonou — Économiste spécialisé en inférence causale</p>
+    <p style="margin-top:8px"><a href="index.html" data-i18n="footer_back">← Retour au tableau de bord GeoEcon Pulse</a></p>
+  </footer>
+
+</div>
+
+<script>
+const T = {
+  fr: {
+    eyebrow: "Cours de cycle supérieur · Économétrie appliquée",
+    title: "Modèles économiques et stratégies d'identification : l'extrapolation en inférence causale avec variables instrumentales",
+    subtitle: "Des estimations IV locales aux paramètres d'intérêt pour les politiques publiques, en passant par l'effet marginal de traitement (MTE).",
+    byline: "Conçu par Ulrich E. R. Djidonou — Économiste",
+    back: "Tableau de bord",
+    toc_abstract: "Présentation", toc_insights: "Idées clés", toc_modules: "Modules", toc_object: "L'objet central", toc_glossary: "Glossaire", toc_refs: "Références",
+    abs_1: "L'empirisme en forme réduite n'est jamais réellement « sans modèle ». Des modèles économiques sont nécessaires pour extrapoler de ce que les données identifient vers ce qu'une question de politique publique exige. Une estimation par variables instrumentales (IV) bien identifiée nous renseigne sur l'effet causal pour les unités statistiques dont le comportement est modifié par l'instrument. Elle ne nous dit pas ce qui se produirait si un décideur étendait le programme, modifiait le seuil d'éligibilité, ou appliquait l'intervention à une population différente.",
+    abs_2: "Ce cours porte sur les outils qui comblent cet écart. Point de départ : les hypothèses habituellement invoquées pour donner à l'IV une interprétation causale impliquent déjà que toute l'hétérogénéité non observée pertinente pour la sélection peut se résumer à un unique indice latent capturant la résistance au traitement. C'est une restriction de fond dans bien des modèles économiques.",
+    abs_3: "Dans la classe de modèles qui soutiennent cette restriction, presque tous les paramètres qui nous intéressent — l'effet sur les compliers, sur les traités, sur la personne moyenne, sur ceux qu'affecte un changement de politique donné — s'écrivent comme une moyenne pondérée d'un même objet sous-jacent, l'effet marginal de traitement (MTE). Estimateurs et stratégies d'identification ne diffèrent que par les poids qu'ils assignent implicitement à cet objet, souvent à l'insu du chercheur.",
+    abs_4: "Conséquence : lorsque deux études bien identifiées produisent des estimations différentes du « même » effet, l'écart n'est pas une énigme à dissiper mais un signal informatif sur la forme du MTE. Nous étudions les propriétés de cet objet, son lien avec les estimations locales de l'IV standard, et les hypothèses supplémentaires requises pour voyager de ces estimations vers les paramètres qu'exige une question de politique publique.",
+    insights_eyebrow: "Le fil conducteur",
+    insights_title: "Quatre idées qui structurent le cours",
+    ins1_h: "L'IV cache un modèle de sélection",
+    ins1_b: "La monotonicité d'Imbens–Angrist équivaut à un modèle à indice latent (Vytlacil, 2002) : la sélection dans le traitement obéit à un seul seuil de résistance non observé.",
+    ins2_h: "Tout est une moyenne pondérée du MTE",
+    ins2_b: "ATE, ATT, LATE, PRTE… chaque paramètre est une intégrale du MTE assortie d'une pondération propre. L'objet est commun ; seuls les poids changent.",
+    ins3_h: "Les divergences sont informatives",
+    ins3_b: "Deux estimations IV « contradictoires » révèlent la pente du MTE : la sélection sur les gains (hétérogénéité essentielle) plutôt qu'une erreur.",
+    ins4_h: "L'extrapolation a un prix",
+    ins4_b: "Voyager du local vers le global exige soit une forme fonctionnelle, soit un support d'instrument plus large, soit l'acceptation de bornes d'identification partielle.",
+    modules_eyebrow: "Structure",
+    modules_title: "Quatre modules",
+    modules_lede: "Du modèle de sélection sous-jacent à l'IV, jusqu'à l'extrapolation vers les paramètres de politique publique et leurs bornes.",
+    mod1_tag: "Module 1",
+    mod1_title: "Qu'est-ce que l'IV identifie ? Le modèle à indice latent et ses implications",
+    mod1_desc: "On part du modèle de Roy et du résultat d'équivalence entre indice latent et IV : les hypothèses qui rendent l'IV causale collapsent toute la sélection sur un unique indice. La monotonicité y apparaît comme une restriction de fond — un indice unique à la fois unificateur et limitant.",
+    mod1_t1: "Modèle de Roy", mod1_t2: "Équivalence indice latent / IV", mod1_t3: "Monotonicité comme restriction", mod1_t4: "Limites de l'indice unique",
+    mod2_tag: "Module 2",
+    mod2_title: "L'effet marginal de traitement : définition, identification, interprétation économique",
+    mod2_desc: "Définition du MTE, identification ponctuelle par l'IV local (local instrumental variables), représentation de tous les paramètres standards comme moyennes pondérées du MTE, et applications empiriques.",
+    mod2_t1: "Définition du MTE", mod2_t2: "IV local (LIV)", mod2_t3: "Représentation par pondérations", mod2_t4: "Applications empiriques",
+    mod3_tag: "Module 3",
+    mod3_title: "Estimation à support limité : approches semi- et paramétriques",
+    mod3_desc: "Estimateurs semiparamétriques, cas des instruments discrets, tension entre forme fonctionnelle et support de l'instrument, et tests de l'hétérogénéité non observée (hétérogénéité essentielle).",
+    mod3_t1: "Estimateurs semiparamétriques", mod3_t2: "Instruments discrets", mod3_t3: "Forme fonctionnelle vs support", mod3_t4: "Tests d'hétérogénéité",
+    mod4_tag: "Module 4",
+    mod4_title: "Extrapolation et politique : des estimations locales aux paramètres d'intérêt",
+    mod4_desc: "Paramètres d'intérêt pour les politiques publiques (PRTE), identification partielle et bornes par programmation linéaire, et discussion : quand l'extrapolation est-elle, ou non, justifiée ?",
+    mod4_t1: "Paramètres de politique (PRTE)", mod4_t2: "Identification partielle", mod4_t3: "Bornes par programmation linéaire", mod4_t4: "Quand extrapoler ?",
+    object_eyebrow: "Le cœur formel",
+    object_title: "Un seul objet, plusieurs pondérations",
+    object_lede: "Le modèle à indice latent fournit un objet — le MTE — dont tous les paramètres usuels sont des moyennes pondérées. Voici la grammaire commune.",
+    conc1_h: "Sélection à seuil (indice latent)",
+    conc1_note: "On reçoit le traitement D lorsque le score de propension p(Z) dépasse la résistance non observée U. U est le rang de résistance au traitement.",
+    conc1_p: "La monotonicité d'Imbens–Angrist est exactement équivalente à ce modèle à seuil (Vytlacil, 2002) : aucun « defier », un seul indice de sélection.",
+    conc2_h: "L'effet marginal de traitement",
+    conc2_note: "L'effet causal moyen pour les individus indifférents au traitement à un niveau de résistance u. u faible = « toujours-preneurs » ; u élevé = « jamais-preneurs ».",
+    conc2_p: "Identifié ponctuellement par la dérivée de l'espérance de Y par rapport au score de propension : c'est l'IV local (Heckman–Vytlacil).",
+    conc3_h: "Tout paramètre = MTE pondéré",
+    conc3_note: "ATE, ATT, ATUT, LATE, PRTE diffèrent uniquement par la fonction de poids ω. L'objet MTE est commun.",
+    conc3_p: "L'ATE pondère uniformément ; l'ATT surpondère les faibles u ; le LATE ne pèse que l'intervalle de u activé par l'instrument.",
+    conc4_h: "Le paramètre de politique (PRTE)",
+    conc4_note: "Les poids découlent de la variation du score de propension induite par le passage de la politique a à la politique a′.",
+    conc4_p: "Si la politique déplace des u hors du support couvert par l'instrument, le PRTE n'est que partiellement identifié : on calcule alors des bornes par programmation linéaire (Mogstad–Santos–Torgovitsky).",
+    glossary_eyebrow: "Repères",
+    glossary_title: "Glossaire des concepts",
+    g1_n: "Effet marginal de traitement", g1_d: "Effet causal moyen pour les individus situés à un rang de résistance donné. Brique élémentaire dont tous les autres paramètres sont des moyennes pondérées.",
+    g2_n: "Effet local moyen", g2_d: "Effet causal sur les compliers — ceux dont le traitement change avec l'instrument. Moyenne du MTE sur l'intervalle de résistance activé par l'instrument.",
+    g3_n: "Modèle à indice latent", g3_d: "Règle de sélection à franchissement de seuil où le traitement dépend du dépassement d'un indice unique de résistance non observé. Équivalente à la monotonicité.",
+    g4_n: "Monotonicité / uniformité", g4_d: "L'instrument pousse tout le monde dans la même direction (pas de defiers). Hypothèse de fond, pas une simple commodité technique.",
+    g5_n: "Score de propension", g5_d: "Probabilité de traitement conditionnelle aux instruments. Son support détermine quelle portion du MTE est identifiable.",
+    g6_n: "Hétérogénéité essentielle", g6_d: "Les individus se sélectionnent dans le traitement en partie sur la base de leurs gains idiosyncratiques. Le MTE n'est alors pas plat en u.",
+    g7_n: "IV local", g7_d: "Dérivée de l'espérance du résultat par rapport au score de propension. Identifie le MTE ponctuellement là où le score varie continûment.",
+    g8_n: "Paramètre de politique", g8_d: "Effet d'un changement de politique réaliste (seuil, éligibilité). Moyenne du MTE pondérée par le déplacement du score que la politique induit.",
+    g9_n: "Identification partielle", g9_d: "Quand les données ne fixent pas un point unique, on borne le paramètre. Les bornes nettes se calculent par programmation linéaire sur l'espace des MTE admissibles.",
+    refs_eyebrow: "Pour aller plus loin",
+    refs_title: "Lectures de référence",
+    footer_text: "Conçu par Ulrich E. R. Djidonou — Économiste spécialisé en inférence causale",
+    footer_back: "← Retour au tableau de bord GeoEcon Pulse"
+  },
+  en: {
+    eyebrow: "Graduate course · Applied econometrics",
+    title: "Economic Models & Research Designs: Extrapolation in Causal Inference with Instrumental Variables",
+    subtitle: "From local IV estimates to policy-relevant parameters, by way of the marginal treatment effect (MTE).",
+    byline: "Designed by Ulrich E. R. Djidonou — Economist",
+    back: "Dashboard",
+    toc_abstract: "Overview", toc_insights: "Key insights", toc_modules: "Modules", toc_object: "The central object", toc_glossary: "Glossary", toc_refs: "References",
+    abs_1: "Reduced-form empirics is never truly model-free. Economic models are needed to extrapolate from what the data identify to what a policy question requires. A well-identified instrumental variables (IV) estimate tells us the causal effect for the statistical units whose behavior is changed by the instrument. It does not tell us what would happen if a policymaker extended the program, changed the eligibility threshold, or applied the intervention to a different population.",
+    abs_2: "This course is about the tools that bridge that gap. The starting point: the assumptions routinely invoked to give IV a causal interpretation already imply that all unobserved heterogeneity relevant to selection can be collapsed into a single latent index capturing resistance to treatment. This is a substantive restriction in many economic models.",
+    abs_3: "Within the class of models supporting the restriction, virtually every parameter we care about — the effect on compliers, on the treated, on the average person, on those affected by a specific policy change — can be written as a weighted average of the same underlying object, the marginal treatment effect (MTE). Different estimators and research designs differ only in the weights they implicitly assign to that object, often without the researcher realizing it.",
+    abs_4: "The consequence: when two well-identified studies produce different estimates of “the same” effect, the discrepancy is not a puzzle to explain away but an informative signal about the shape of the MTE. We study the properties of this object, its relationship to the local estimates familiar from standard IV, and the additional assumptions needed to travel from those estimates to the parameters a policy question demands.",
+    insights_eyebrow: "The through-line",
+    insights_title: "Four ideas that structure the course",
+    ins1_h: "IV hides a selection model",
+    ins1_b: "Imbens–Angrist monotonicity is equivalent to a latent-index model (Vytlacil, 2002): selection into treatment obeys a single unobserved resistance threshold.",
+    ins2_h: "Everything is a weighted MTE",
+    ins2_b: "ATE, ATT, LATE, PRTE… each parameter is an integral of the MTE with its own weighting. The object is shared; only the weights change.",
+    ins3_h: "Discrepancies are informative",
+    ins3_b: "Two “contradictory” IV estimates reveal the slope of the MTE: selection on gains (essential heterogeneity) rather than an error.",
+    ins4_h: "Extrapolation has a price",
+    ins4_b: "Traveling from local to global requires either a functional form, wider instrument support, or accepting partial-identification bounds.",
+    modules_eyebrow: "Structure",
+    modules_title: "Four modules",
+    modules_lede: "From the selection model underlying IV, through to extrapolation toward policy-relevant parameters and their bounds.",
+    mod1_tag: "Module 1",
+    mod1_title: "What Does IV Identify? The Latent-Index Model and Its Implications",
+    mod1_desc: "We begin with the Roy model and the latent-index/IV equivalence result: the assumptions that make IV causal collapse all selection onto a single index. Monotonicity appears here as a substantive restriction — a single index that is both a unifying insight and a limitation.",
+    mod1_t1: "Roy model", mod1_t2: "Latent-index / IV equivalence", mod1_t3: "Monotonicity as a restriction", mod1_t4: "Limits of the single index",
+    mod2_tag: "Module 2",
+    mod2_title: "The Marginal Treatment Effect: Definition, Identification, Economic Interpretation",
+    mod2_desc: "The MTE definition, pointwise identification via local instrumental variables, the weighted-average representation of all standard parameters, and empirical applications.",
+    mod2_t1: "MTE definition", mod2_t2: "Local IV (LIV)", mod2_t3: "Weighted-average representation", mod2_t4: "Empirical applications",
+    mod3_tag: "Module 3",
+    mod3_title: "Estimation with Limited Support: Semi- and Parametric Approaches",
+    mod3_desc: "Semiparametric estimators, the case of discrete instruments, the tension between functional form and instrument support, and testing for unobserved heterogeneity (essential heterogeneity).",
+    mod3_t1: "Semiparametric estimators", mod3_t2: "Discrete instruments", mod3_t3: "Functional form vs support", mod3_t4: "Testing for heterogeneity",
+    mod4_tag: "Module 4",
+    mod4_title: "Extrapolation and Policy: From Local Estimates to Policy-Relevant Parameters",
+    mod4_desc: "Policy-relevant treatment parameters (PRTE), partial identification and bounds via linear programming, and a discussion of when extrapolation is and is not warranted.",
+    mod4_t1: "Policy parameters (PRTE)", mod4_t2: "Partial identification", mod4_t3: "Bounds via linear programming", mod4_t4: "When to extrapolate?",
+    object_eyebrow: "The formal core",
+    object_title: "One object, many weightings",
+    object_lede: "The latent-index model supplies one object — the MTE — of which all the usual parameters are weighted averages. Here is the shared grammar.",
+    conc1_h: "Threshold-crossing selection (latent index)",
+    conc1_note: "Treatment D is received when the propensity score p(Z) exceeds the unobserved resistance U. U is the rank of resistance to treatment.",
+    conc1_p: "Imbens–Angrist monotonicity is exactly equivalent to this threshold model (Vytlacil, 2002): no defiers, a single selection index.",
+    conc2_h: "The marginal treatment effect",
+    conc2_note: "The average causal effect for individuals indifferent to treatment at resistance level u. Low u = “always-takers”; high u = “never-takers”.",
+    conc2_p: "Identified pointwise by the derivative of E[Y] with respect to the propensity score: this is local IV (Heckman–Vytlacil).",
+    conc3_h: "Every parameter = weighted MTE",
+    conc3_note: "ATE, ATT, ATUT, LATE, PRTE differ only in the weight function ω. The MTE object is shared.",
+    conc3_p: "ATE weights uniformly; ATT over-weights low u; LATE weights only the interval of u activated by the instrument.",
+    conc4_h: "The policy parameter (PRTE)",
+    conc4_note: "The weights follow from the change in the propensity score induced by moving from policy a to policy a′.",
+    conc4_p: "If the policy shifts u outside the support spanned by the instrument, the PRTE is only partially identified: one then computes bounds via linear programming (Mogstad–Santos–Torgovitsky).",
+    glossary_eyebrow: "Reference points",
+    glossary_title: "Glossary of concepts",
+    g1_n: "Marginal treatment effect", g1_d: "Average causal effect for individuals at a given resistance rank. The building block of which all other parameters are weighted averages.",
+    g2_n: "Local average treatment effect", g2_d: "Causal effect on compliers — those whose treatment changes with the instrument. A weighted average of the MTE over the resistance interval the instrument activates.",
+    g3_n: "Latent-index model", g3_d: "A threshold-crossing selection rule in which treatment depends on exceeding a single unobserved resistance index. Equivalent to monotonicity.",
+    g4_n: "Monotonicity / uniformity", g4_d: "The instrument pushes everyone in the same direction (no defiers). A substantive assumption, not a mere technical convenience.",
+    g5_n: "Propensity score", g5_d: "Probability of treatment conditional on the instruments. Its support determines which portion of the MTE is identifiable.",
+    g6_n: "Essential heterogeneity", g6_d: "Individuals select into treatment partly on the basis of their idiosyncratic gains. The MTE is then not flat in u.",
+    g7_n: "Local instrumental variables", g7_d: "Derivative of the expected outcome with respect to the propensity score. Identifies the MTE pointwise wherever the score varies continuously.",
+    g8_n: "Policy-relevant parameter", g8_d: "Effect of a realistic policy change (threshold, eligibility). A weighted average of the MTE, weighted by the score shift the policy induces.",
+    g9_n: "Partial identification", g9_d: "When the data do not pin a single point, the parameter is bounded. Sharp bounds are computed by linear programming over the space of admissible MTEs.",
+    refs_eyebrow: "Going further",
+    refs_title: "Reference readings",
+    footer_text: "Designed by Ulrich E. R. Djidonou — Economist specializing in causal inference",
+    footer_back: "← Back to the GeoEcon Pulse dashboard"
+  }
+};
+
+function setLang(lang) {
+  document.documentElement.setAttribute('data-lang', lang);
+  document.documentElement.setAttribute('lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (T[lang] && T[lang][key]) el.textContent = T[lang][key];
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => setLang('fr'));
+</script>
+</body>
+</html>

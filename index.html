@@ -145,6 +145,23 @@ body::after {
 }
 .lang-btn:hover:not(.active) { color: var(--text-primary); }
 
+/* Course link */
+.course-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+.course-link:hover { color: #a78bfa; border-color: rgba(139,92,246,0.3); background: rgba(139,92,246,0.12); }
+
 /* ===== NAVIGATION ===== */
 .nav {
   display: flex;
@@ -680,6 +697,7 @@ body::after {
         <p class="header-meta"><span data-i18n="byline">Par Ulrich E. R. Djidonou</span> · <span data-i18n="lastUpdate">Dernière mise à jour</span> : <span id="update-date"></span></p>
       </div>
       <div class="header-right">
+        <a href="course.html" class="course-link" data-i18n="course_link">Cours : Inférence causale &amp; IV ↗</a>
         <div class="lang-toggle">
           <button class="lang-btn active" data-lang="fr" onclick="setLang('fr')">FR</button>
           <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
@@ -773,7 +791,8 @@ const T = {
     provincial_title: "Impact sur les provinces canadiennes",
     provincial_subtitle: "Analyse croisée : chocs internationaux × profils économiques provinciaux",
     matrix_title: "Matrice d'impact",
-    strengths_label: "Forces", weaknesses_label: "Faiblesses"
+    strengths_label: "Forces", weaknesses_label: "Faiblesses",
+    course_link: "Cours : Inférence causale & IV ↗"
   },
   en: {
     subtitle: "Global Geoeconomic Intelligence",
@@ -797,7 +816,8 @@ const T = {
     provincial_title: "Impact on Canadian Provinces",
     provincial_subtitle: "Cross-analysis: international shocks × provincial economic profiles",
     matrix_title: "Impact Matrix",
-    strengths_label: "Strengths", weaknesses_label: "Weaknesses"
+    strengths_label: "Strengths", weaknesses_label: "Weaknesses",
+    course_link: "Course: Causal Inference & IV ↗"
   }
 };
 
