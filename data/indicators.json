@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04",
+  "lastUpdated": "2026-06-05",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.39,
+          "value": 1.388,
           "unit": "CAD/USD",
-          "trend": "up",
-          "period": "2026-06-04",
+          "trend": "down",
+          "period": "2026-06-05",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35205,
-          "trend": "up",
-          "change": 1.16,
-          "period": "2026-06-04"
+          "value": 34667,
+          "trend": "down",
+          "change": -1.56,
+          "period": "2026-06-05"
         }
       },
       "sparkline": {
@@ -82,43 +82,54 @@
       "headlines": [
         {
           "title": {
-            "fr": "Une hausse « significative » des prix du pétrole et du gaz est à prévoir cet été",
-            "en": "Une hausse « significative » des prix du pétrole et du gaz est à prévoir cet été"
+            "fr": "Putin criticizes Western sanctions as damaging to the global economy at ‘Russian Davos’",
+            "en": "Putin criticizes Western sanctions as damaging to the global economy at ‘Russian Davos’"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2259122/augmentation-prix-essence-gaz-vacances",
-          "theme": "energy",
-          "time": "<1h",
-          "impact": "medium",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Décès de Marjane Satrapi, autrice de Persepolis et étendard du peuple iranien",
-            "en": "Décès de Marjane Satrapi, autrice de Persepolis et étendard du peuple iranien"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2259113/mort-marjane-satrapi-persepolis-iran",
+          "url": "https://www.theglobeandmail.com/world/article-putin-speech-petersburg-economic-forum/",
           "theme": "geopolitics",
-          "time": "2h",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Canadian economic activity expanded in May, hitting eight-month high",
+            "en": "Canadian economic activity expanded in May, hitting eight-month high"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-ivey-purchasing-managers-index-economic-activity-may-2026/",
+          "theme": "tech",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "L’économie canadienne rebondit en mai, le chômage recule à 6,6 %",
+            "en": "L’économie canadienne rebondit en mai, le chômage recule à 6,6 %"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2259430/enquete-population-active-chomage-canada-mai",
+          "theme": "trade",
+          "time": "1h",
           "impact": "low",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "U.S. weekly jobless claims rise more than expected; labour market remains stable",
-            "en": "U.S. weekly jobless claims rise more than expected; labour market remains stable"
+            "fr": "This is our time: Canada’s national AI strategy is an incredible step forward",
+            "en": "This is our time: Canada’s national AI strategy is an incredible step forward"
           },
-          "url": "https://www.theglobeandmail.com/business/economy/article-us-weekly-jobless-claims-may-30-labour-market/",
-          "theme": "trade",
-          "time": "2h",
-          "impact": "medium",
+          "url": "https://www.theglobeandmail.com/business/commentary/article-canada-national-ai-strategy-incredible-step-forward/",
+          "theme": "monetary",
+          "time": "1h",
+          "impact": "high",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "AI helps de-icing operators keep their cool on the tarmacs",
-            "en": "AI helps de-icing operators keep their cool on the tarmacs"
+            "fr": "Bitcoin’s star fades as investors flock to lustre of AI and megacap IPOs",
+            "en": "Bitcoin’s star fades as investors flock to lustre of AI and megacap IPOs"
           },
-          "url": "https://www.theglobeandmail.com/business/article-ai-helps-de-icing-operators-keep-their-cool-on-the-tarmacs/",
+          "url": "https://www.theglobeandmail.com/investing/article-bitcoins-star-fades-as-investors-flock-to-lustre-of-ai-and-megacap/",
           "theme": "tech",
           "time": "2h",
           "impact": "low",
@@ -126,46 +137,35 @@
         },
         {
           "title": {
-            "fr": "If AI lives up to its promises, we may need more workers, not fewer",
-            "en": "If AI lives up to its promises, we may need more workers, not fewer"
+            "fr": "U.S. labour market shows resilience despite Iran war, adding 172,000 jobs in May",
+            "en": "U.S. labour market shows resilience despite Iran war, adding 172,000 jobs in May"
           },
-          "url": "https://www.theglobeandmail.com/business/careers/management/article-if-ai-lives-up-to-its-promises-we-may-need-more-workers-not-fewer/",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Ottawa to extend tariff quotas on steel, remission program for one year",
-            "en": "Ottawa to extend tariff quotas on steel, remission program for one year"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-ottawa-quotas-tariffs-remission-program-extension/",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Le gouvernement du Québec abandonne le projet de loi 20 sur l’accès au logement",
-            "en": "Le gouvernement du Québec abandonne le projet de loi 20 sur l’accès au logement"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2259067/quebec-abandonne-projet-de-loi-20-logement-coops",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Ottawa’s AI strategy includes more than $2.3-billion for training, adoption and startups",
-            "en": "Ottawa’s AI strategy includes more than $2.3-billion for training, adoption and startups"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-ottawas-ai-strategy-includes-more-than-23-billion-for-training/",
-          "theme": "tech",
+          "url": "https://www.theglobeandmail.com/business/economy/article-us-jobs-data-unemployment-rate-may-2026-kevin-warsh/",
+          "theme": "geopolitics",
           "time": "3h",
           "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Canada adds 87,800 jobs in May, jobless rate falls to 6.6%, beating estimates",
+            "en": "Canada adds 87,800 jobs in May, jobless rate falls to 6.6%, beating estimates"
+          },
+          "url": "https://www.theglobeandmail.com/business/economy/article-canada-labour-market-report-jobs-statistics-may-2026/",
+          "theme": "trade",
+          "time": "4h",
+          "impact": "medium",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Quebec set to table bill to protect teens from harmful effects of energy drinks",
+            "en": "Quebec set to table bill to protect teens from harmful effects of energy drinks"
+          },
+          "url": "https://www.theglobeandmail.com/canada/article-quebec-bill-energy-drinks-effects/",
+          "theme": "energy",
+          "time": "4h",
+          "impact": "low",
           "source": "Globe and Mail"
         }
       ],
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7573,
-          "trend": "up",
-          "change": 0.25,
-          "period": "2026-06-04"
+          "value": 7492,
+          "trend": "down",
+          "change": -1.22,
+          "period": "2026-06-05"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6528.52,
           7209.01,
           7580.06,
-          7553.68,
-          7572.03
+          7584.31,
+          7491.77
         ]
       },
       "summary": {
@@ -561,76 +561,76 @@
       "headlines": [
         {
           "title": {
-            "fr": "Trump's 'big beautiful bill' has a 'double taxation' trap for top earners, tax experts say",
-            "en": "Trump's 'big beautiful bill' has a 'double taxation' trap for top earners, tax experts say"
+            "fr": "Hospitality jobs boom as US prepares for World Cup",
+            "en": "Hospitality jobs boom as US prepares for World Cup"
           },
-          "url": "https://www.cnbc.com/2026/06/04/trump-tax-bill-double-taxation-trusts.html",
-          "theme": "geopolitics",
+          "url": "https://www.bbc.com/news/articles/cdxpx4gel1yo?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
           "time": "<1h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Soaring stocks created 2 million new millionaires around the world last year",
-            "en": "Soaring stocks created 2 million new millionaires around the world last year"
-          },
-          "url": "https://www.cnbc.com/2026/06/04/stocks-new-millionaires.html",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "'Apocalyptic' Tata Steel fire sees 'substantial' damage to production line",
-            "en": "'Apocalyptic' Tata Steel fire sees 'substantial' damage to production line"
-          },
-          "url": "https://www.bbc.com/news/articles/cy826zjxdgvo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "3h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "As Honeywell Aerospace readies for its stand-alone debut, its CEO is forecasting big growth",
-            "en": "As Honeywell Aerospace readies for its stand-alone debut, its CEO is forecasting big growth"
+            "fr": "Is there an AI stock market bubble, and is it ready to burst?",
+            "en": "Is there an AI stock market bubble, and is it ready to burst?"
           },
-          "url": "https://www.cnbc.com/2026/06/03/honeywell-aerospace-ceo-earnings-growth.html",
+          "url": "https://www.bbc.com/news/videos/c1m2mr7gr27o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Broadway's $1.9 billion season is the latest sign of consumers splurging on experiences",
+            "en": "Broadway's $1.9 billion season is the latest sign of consumers splurging on experiences"
+          },
+          "url": "https://www.cnbc.com/2026/06/05/broadway-record-ticket-sales.html",
           "theme": "trade",
           "time": "3h",
-          "impact": "medium",
+          "impact": "high",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "Eli Manning weighs in on Giants QB Jaxson Dart's Trump rally fallout",
-            "en": "Eli Manning weighs in on Giants QB Jaxson Dart's Trump rally fallout"
+            "fr": "We need to stop AI developing without humans, says Anthropic co-founder",
+            "en": "We need to stop AI developing without humans, says Anthropic co-founder"
           },
-          "url": "https://www.cnbc.com/2026/06/04/eli-manning-giants-jaxson-dart-trump.html",
+          "url": "https://www.bbc.com/news/articles/cx2124z7g45o?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "4h",
-          "impact": "medium",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "SpaceX says it's worth $1.75tn as it targets largest stock market debut",
-            "en": "SpaceX says it's worth $1.75tn as it targets largest stock market debut"
-          },
-          "url": "https://www.bbc.com/news/articles/cvgz237n40jo?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
           "time": "8h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "'By the grace of God': Miners dig on as lab-grown diamonds change market",
-            "en": "'By the grace of God': Miners dig on as lab-grown diamonds change market"
+            "fr": "China cracks down on soft porn, violence and materialism in viral micro dramas",
+            "en": "China cracks down on soft porn, violence and materialism in viral micro dramas"
           },
-          "url": "https://www.bbc.com/news/articles/czx2jqvwp7go?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.com/news/articles/clypy34pj6yo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "10h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Trump announces $700m coal investment using wartime powers",
+            "en": "Trump announces $700m coal investment using wartime powers"
+          },
+          "url": "https://www.bbc.com/news/articles/cy0209r62k5o?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "15h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Single 20-somethings need AI to make first move on dating apps - Hinge boss",
+            "en": "Single 20-somethings need AI to make first move on dating apps - Hinge boss"
+          },
+          "url": "https://www.bbc.com/news/articles/c052397y6ygo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
           "time": "16h",
           "impact": "low",
@@ -638,14 +638,14 @@
         },
         {
           "title": {
-            "fr": "Macy's posts strongest Q1 growth in four years, raises guidance despite consumer worries",
-            "en": "Macy's posts strongest Q1 growth in four years, raises guidance despite consumer worries"
+            "fr": "Mark Zuckerberg's longest-serving employee on AI, jobs - and her boss",
+            "en": "Mark Zuckerberg's longest-serving employee on AI, jobs - and her boss"
           },
-          "url": "https://www.cnbc.com/2026/06/03/macys-m-earnings-q1-2026.html",
+          "url": "https://www.bbc.com/news/articles/c5y71106g07o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "18h",
-          "impact": "medium",
-          "source": "CNBC"
+          "time": "16h",
+          "impact": "low",
+          "source": "BBC Business"
         }
       ]
     },
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.774,
+          "value": 6.766,
           "unit": "CNY/USD",
-          "trend": "up",
-          "period": "2026-06-04",
+          "trend": "down",
+          "period": "2026-06-05",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
           "value": 4058,
           "trend": "down",
-          "change": -0.42,
-          "period": "2026-06-04"
+          "change": -0.64,
+          "period": "2026-06-05"
         }
       },
       "sparkline": {
@@ -730,90 +730,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "Are Japan-Philippines talks a maritime red line for China’s blue-water ambitions?",
-            "en": "Are Japan-Philippines talks a maritime red line for China’s blue-water ambitions?"
+            "fr": "Xi Jinping’s ‘chief of staff’ Cai Qi takes Central Party School helm",
+            "en": "Xi Jinping’s ‘chief of staff’ Cai Qi takes Central Party School helm"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3355969/are-japan-philippines-talks-maritime-red-line-chinas-blue-water-ambitions?utm_source=rss_feed",
-          "theme": "geopolitics",
+          "url": "https://www.scmp.com/news/china/politics/article/3356162/xi-jinpings-chief-staff-cai-qi-takes-central-party-school-helm?utm_source=rss_feed",
+          "theme": "tech",
           "time": "1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China’s futuristic stealth sub to boost ‘hunt-and-kill’ capabilities: experts",
-            "en": "China’s futuristic stealth sub to boost ‘hunt-and-kill’ capabilities: experts"
+            "fr": "Summer most likely window for US attack on Cuba, Chinese defence tech firm says",
+            "en": "Summer most likely window for US attack on Cuba, Chinese defence tech firm says"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3355991/chinas-futuristic-stealth-sub-boost-hunt-and-kill-capabilities-experts?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3356143/summer-most-likely-window-us-attack-cuba-chinese-defence-tech-firm-says?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "EU needs a ‘dedicated instrument’ to unwind China dependencies, trade chief says",
+            "en": "EU needs a ‘dedicated instrument’ to unwind China dependencies, trade chief says"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3356159/eu-needs-dedicated-instrument-unwind-china-dependencies-trade-chief-says?utm_source=rss_feed",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Trump is turning allies and partners into friends of China",
+            "en": "Trump is turning allies and partners into friends of China"
+          },
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3355960/trump-turning-allies-and-partners-friends-china?utm_source=rss_feed",
           "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Chinese black hole-hunting scientist Dai Liang quits US for Shanghai post",
+            "en": "Chinese black hole-hunting scientist Dai Liang quits US for Shanghai post"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3356052/chinese-black-hole-hunting-scientist-dai-liang-quits-us-shanghai-post?utm_source=rss_feed",
+          "theme": "tech",
           "time": "3h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "US-China policy under Donald Trump is heading for ‘unpredictable drift’: expert",
-            "en": "US-China policy under Donald Trump is heading for ‘unpredictable drift’: expert"
+            "fr": "Chinese military team inspects Russian bases as Putin hails ‘natural allies’",
+            "en": "Chinese military team inspects Russian bases as Putin hails ‘natural allies’"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3355977/us-china-policy-under-donald-trump-heading-unpredictable-drift-expert?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3356124/chinese-military-team-inspects-russian-bases-putin-hails-natural-allies?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "4h",
-          "impact": "medium",
+          "time": "5h",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Why wind and solar power is going to ‘waste’ in China in the global energy crisis",
-            "en": "Why wind and solar power is going to ‘waste’ in China in the global energy crisis"
+            "fr": "China unveils world’s first superfast quantum memory, paving way for practical computing",
+            "en": "China unveils world’s first superfast quantum memory, paving way for practical computing"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3355954/many-wind-and-solar-power-plants-china-are-strangled-amid-global-energy-crisis-report?utm_source=rss_feed",
-          "theme": "energy",
-          "time": "6h",
-          "impact": "high",
+          "url": "https://www.scmp.com/news/china/science/article/3356030/china-unveils-worlds-first-superfast-quantum-memory-paving-way-practical-computing?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "10h",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "EU, China hold talks as trade war looms",
-            "en": "EU, China hold talks as trade war looms"
+            "fr": "Trump urged Xi to help end Ukraine war; China’s tech sanctions list: SCMP’s 7 highlights",
+            "en": "Trump urged Xi to help end Ukraine war; China’s tech sanctions list: SCMP’s 7 highlights"
           },
-          "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3355952/eu-china-hold-talks-trade-war-looms?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/article/3356025/trump-urged-xi-help-end-ukraine-war-chinas-tech-sanctions-list-scmps-7-highlights?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "6h",
+          "time": "10h",
           "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Tibetology is key to China shaping global views on the region, top official says",
-            "en": "Tibetology is key to China shaping global views on the region, top official says"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3355946/tibetology-key-china-shaping-global-views-region-top-official-says?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Chinese robot helps children with nerve disorder stand up for the first time",
-            "en": "Chinese robot helps children with nerve disorder stand up for the first time"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3355797/chinese-robot-helps-children-nerve-disorder-stand-first-time?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "11h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "How Beijing could use its military and trade to hit back at Tokyo-Manila ties",
-            "en": "How Beijing could use its military and trade to hit back at Tokyo-Manila ties"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3355864/how-beijing-could-use-its-military-and-trade-hit-back-tokyo-manila-ties?utm_source=rss_feed",
-          "theme": "trade",
-          "time": "14h",
-          "impact": "low",
           "source": "SCMP"
         }
       ]
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 95.78,
+          "value": 94.95,
           "unit": "INR/USD",
-          "trend": "up",
-          "period": "2026-06-04",
+          "trend": "down",
+          "period": "2026-06-05",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 74360,
-          "trend": "stable",
-          "change": 0.02,
-          "period": "2026-06-04"
+          "value": 74243,
+          "trend": "down",
+          "change": -0.16,
+          "period": "2026-06-05"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           71947.55,
           76913.5,
           74775.74,
-          74346.17,
-          74360.01
+          74360.01,
+          74243.34
         ]
       },
       "summary": {
@@ -899,89 +899,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "DMK likely to skip INDIA bloc meeting on June 8",
-            "en": "DMK likely to skip INDIA bloc meeting on June 8"
+            "fr": "Iran dismisses idea of Trump meeting supreme leader",
+            "en": "Iran dismisses idea of Trump meeting supreme leader"
           },
-          "url": "https://economictimes.indiatimes.com/news/politics-and-nation/dmk-likely-to-skip-india-bloc-meeting-on-june-8-in-delhi/articleshow/131510164.cms",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Grest integrates with Sanchar Saathi IVS",
-            "en": "Grest integrates with Sanchar Saathi IVS"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/grest-becomes-first-private-firm-to-join-govt-imei-verification-platform/articleshow/131506216.cms",
-          "theme": "monetary",
-          "time": "3h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "India's growth story intact despite hurdles: Citi CEO",
-            "en": "India's growth story intact despite hurdles: Citi CEO"
-          },
-          "url": "https://economictimes.indiatimes.com/news/economy/policy/indias-long-term-story-intact-despite-short-term-headwinds-citi-ceo/articleshow/131506124.cms",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Trump rewrites playbook in higher education fight",
-            "en": "Trump rewrites playbook in higher education fight"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/global-trends/trump-shifts-higher-education-fight-from-campus-probes-to-federal-rulebook/articleshow/131505743.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-rejects-trump-meeting-after-presidents-proposal-foreign-minister-calls-it-unrealistic/articleshow/131534118.cms",
           "theme": "geopolitics",
-          "time": "4h",
+          "time": "1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "SC: Public jobs for aptly qualified candidates only",
-            "en": "SC: Public jobs for aptly qualified candidates only"
+            "fr": "US added 172,000 jobs in May",
+            "en": "US added 172,000 jobs in May"
           },
-          "url": "https://economictimes.indiatimes.com/news/india/supreme-court-upholds-mandate-for-qualified-candidates-in-public-employment/articleshow/131505556.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/employers-added-172000-jobs-last-month-as-us-job-market-shows-resilience-despite-iran-war/articleshow/131533176.cms",
           "theme": "trade",
-          "time": "4h",
+          "time": "1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Techie says quitting Google easier than B’luru",
-            "en": "Techie says quitting Google easier than B’luru"
+            "fr": "India’s seafood exports jump 70% in a decade",
+            "en": "India’s seafood exports jump 70% in a decade"
           },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/-i-love-you-but-im-sorry-bengaluru-techie-says-quitting-his-google-job-was-easier-than-leaving-the-garden-city/articleshow/131505165.cms",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-seafood-exports-jump-70-in-a-decade-outpace-global-trade-growth-piyush-goyal/articleshow/131532964.cms",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "AI era: Why experience isn't enough",
+            "en": "AI era: Why experience isn't enough"
+          },
+          "url": "https://economictimes.indiatimes.com/ai/ai-insights/why-experience-alone-is-no-longer-enough-in-an-ai-driven-era-of-continuous-learning-and-change/articleshow/131528261.cms",
           "theme": "tech",
-          "time": "4h",
+          "time": "5h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Withholding tax removal to unlock $25 bn: Citi",
-            "en": "Withholding tax removal to unlock $25 bn: Citi"
+            "fr": "El Nino Arrives: Impact on India's Monsoon",
+            "en": "El Nino Arrives: Impact on India's Monsoon"
           },
-          "url": "https://economictimes.indiatimes.com/markets/expert-view/withholding-tax-removal-could-unlock-25-billion-in-bond-inflows-says-citis-aditya-bagree/articleshow/131504872.cms",
-          "theme": "trade",
-          "time": "4h",
+          "url": "https://economictimes.indiatimes.com/news/new-updates/el-nino-sets-in-as-pacific-crosses-critical-0-5c-threshold-what-it-could-mean-for-indias-monsoon-this-year/articleshow/131528418.cms",
+          "theme": "tech",
+          "time": "5h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Steel row may delay India-UK trade deal rollout",
-            "en": "Steel row may delay India-UK trade deal rollout"
+            "fr": "Rate hikes coming, RBI sent signal: Anubhuti Sahay",
+            "en": "Rate hikes coming, RBI sent signal: Anubhuti Sahay"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-uk-trade-deal-moving-forward-though-steel-issue-may-delay-launch/articleshow/131504227.cms",
+          "url": "https://economictimes.indiatimes.com/markets/expert-view/rate-hikes-are-coming-rbi-has-sent-a-clear-signal-says-anubhuti-sahay-standard-chartered/articleshow/131527890.cms",
+          "theme": "monetary",
+          "time": "5h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "India to surpass China in share of global GDP by 2060",
+            "en": "India to surpass China in share of global GDP by 2060"
+          },
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/india-to-surpass-china-in-share-of-global-gdp-by-2060-report/articleshow/131527628.cms",
           "theme": "trade",
           "time": "5h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "US Senate bills $70 bn for Trump's border push",
+            "en": "US Senate bills $70 bn for Trump's border push"
+          },
+          "url": "https://economictimes.indiatimes.com/nri/latest-updates/us-senate-approves-70-bn-for-trump-immigration-crackdown/articleshow/131527248.cms",
+          "theme": "geopolitics",
+          "time": "6h",
           "impact": "low",
           "source": "Economic Times"
         }
@@ -1035,10 +1035,10 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 159,
-          "trend": "up",
-          "change": 0.11,
-          "period": "2026-06-04"
+          "value": 156,
+          "trend": "down",
+          "change": -1.74,
+          "period": "2026-06-05"
         }
       },
       "sparkline": {
@@ -1056,8 +1056,8 @@
           70.69,
           114.01,
           92.05,
-          97.81,
-          94.94
+          95.03,
+          93.77
         ]
       },
       "summary": {
@@ -1067,91 +1067,91 @@
       "headlines": [
         {
           "title": {
-            "fr": "Trump hits back at 'unpatriotic' vote after House rebukes him over Iran",
-            "en": "Trump hits back at 'unpatriotic' vote after House rebukes him over Iran"
+            "fr": "Barcelona teenager Lamine Yamal wins La Liga Player of the Season award",
+            "en": "Barcelona teenager Lamine Yamal wins La Liga Player of the Season award"
           },
-          "url": "https://www.bbc.com/news/articles/cn0pl0wvvz0o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.aljazeera.com/sports/2026/6/5/barcelona-teenager-lamine-yamal-wins-la-liga-player-of-season-award?traffic_source=rss",
           "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "WFP: War on Iran pushing millions towards hunger",
+            "en": "WFP: War on Iran pushing millions towards hunger"
+          },
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/5/wfp-war-on-iran-pushing-millions-towards-hunger?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Are the US and Iran closer to war or to a deal?",
+            "en": "Are the US and Iran closer to war or to a deal?"
+          },
+          "url": "https://www.aljazeera.com/news/2026/6/5/are-us-and-iran-closer-to-war-or-to-a-deal?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Hospitality jobs boom as US prepares for World Cup",
+            "en": "Hospitality jobs boom as US prepares for World Cup"
+          },
+          "url": "https://www.bbc.com/news/articles/cdxpx4gel1yo?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
           "time": "<1h",
           "impact": "low",
           "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Rights group sues South African government over US arms exports",
-            "en": "Rights group sues South African government over US arms exports"
+            "fr": "Gaza, Iran, Lebanon: If ceasefires are in place, why do strikes continue?",
+            "en": "Gaza, Iran, Lebanon: If ceasefires are in place, why do strikes continue?"
           },
-          "url": "https://www.aljazeera.com/news/2026/6/4/rights-group-sues-south-african-government-over-us-arms-exports?traffic_source=rss",
-          "theme": "trade",
+          "url": "https://www.aljazeera.com/news/2026/6/5/gaza-iran-lebanon-if-ceasefires-are-in-place-why-do-strikes-continue?traffic_source=rss",
+          "theme": "energy",
+          "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "How the US naval blockade has bled Iran of nearly $6bn in oil revenues",
+            "en": "How the US naval blockade has bled Iran of nearly $6bn in oil revenues"
+          },
+          "url": "https://www.aljazeera.com/news/2026/6/5/how-the-us-naval-blockade-has-bled-iran-of-nearly-6bn-in-oil-revenues?traffic_source=rss",
+          "theme": "energy",
           "time": "2h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Israel’s Smotrich announces plan for 2,162 homes in occupied West Bank",
-            "en": "Israel’s Smotrich announces plan for 2,162 homes in occupied West Bank"
+            "fr": "Drone explosion in Romanian port spurs Ukraine war spillover fears",
+            "en": "Drone explosion in Romanian port spurs Ukraine war spillover fears"
           },
-          "url": "https://www.aljazeera.com/news/2026/6/4/israels-smotrich-announces-plan-for-2162-homes-in-occupied-west-bank?traffic_source=rss",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Israeli strikes kill 11 people in Gaza City, medics say",
-            "en": "Israeli strikes kill 11 people in Gaza City, medics say"
-          },
-          "url": "https://www.bbc.com/news/articles/cg5prr9gr1ro?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "4h",
-          "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Who is the Indian guru Venezuelan acting President Delcy Rodriguez follows?",
-            "en": "Who is the Indian guru Venezuelan acting President Delcy Rodriguez follows?"
-          },
-          "url": "https://www.aljazeera.com/news/2026/6/4/who-is-the-indian-guru-venezuelan-acting-president-delcy-rodriguez-follows?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/6/5/drone-explosion-in-romanian-port-spurs-ukraine-war-spillover-fears?traffic_source=rss",
           "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Mehdi Taremi: Iran’s journey to the 2026 World Cup",
-            "en": "Mehdi Taremi: Iran’s journey to the 2026 World Cup"
-          },
-          "url": "https://www.aljazeera.com/video/game-theory/2026/6/4/mehdi-taremi-irans-journey-to-the-2026-world-cup?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "US House votes to end Trump’s Iran war: Does it matter?",
-            "en": "US House votes to end Trump’s Iran war: Does it matter?"
-          },
-          "url": "https://www.aljazeera.com/news/2026/6/4/us-house-votes-to-end-trumps-iran-war-does-it-matter?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "5h",
+          "time": "2h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Trump to nominate Blanche for attorney general on permanent basis",
-            "en": "Trump to nominate Blanche for attorney general on permanent basis"
+            "fr": "Inside Syria’s fight against the Captagon trade",
+            "en": "Inside Syria’s fight against the Captagon trade"
           },
-          "url": "https://www.bbc.com/news/articles/c4g8nyzl2pno?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "7h",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/5/inside-syrias-fight-against-the-captagon-trade?traffic_source=rss",
+          "theme": "tech",
+          "time": "2h",
           "impact": "low",
-          "source": "BBC World"
+          "source": "Al Jazeera"
         }
       ]
     }
