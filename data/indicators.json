@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29",
+  "lastUpdated": "2026-06-30",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.42,
+          "value": 1.424,
           "unit": "CAD/USD",
           "trend": "up",
-          "period": "2026-06-29",
+          "period": "2026-06-30",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 34804,
-          "trend": "down",
-          "change": -0.5,
-          "period": "2026-06-29"
+          "value": 34867,
+          "trend": "up",
+          "change": 0.12,
+          "period": "2026-06-30"
         }
       },
       "sparkline": {
@@ -82,43 +82,65 @@
       "headlines": [
         {
           "title": {
-            "fr": "Alphabet debuts in Dow Jones Industrial Average as index tilts toward tech",
-            "en": "Alphabet debuts in Dow Jones Industrial Average as index tilts toward tech"
+            "fr": "UAE, now free from OPEC quotas, boosts oil exports to record levels",
+            "en": "UAE, now free from OPEC quotas, boosts oil exports to record levels"
           },
-          "url": "https://www.theglobeandmail.com/investing/article-alphabet-debuts-in-dow-jones-industrial-average-as-index-tilts-toward/",
-          "theme": "tech",
+          "url": "https://www.theglobeandmail.com/business/industry-news/energy-and-resources/article-uae-record-oil-exports-opec-quotas-exit/",
+          "theme": "trade",
           "time": "<1h",
           "impact": "high",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Le Canada milite pour que l’ONU encadre l’intelligence artificielle",
-            "en": "Le Canada milite pour que l’ONU encadre l’intelligence artificielle"
+            "fr": "Canada’s GDP rebounds to post 0.5% monthly growth in April",
+            "en": "Canada’s GDP rebounds to post 0.5% monthly growth in April"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2265504/canada-onu-intelligence-artificielle-ia",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "What separates the best teams from average ones? Time apart",
-            "en": "What separates the best teams from average ones? Time apart"
-          },
-          "url": "https://www.theglobeandmail.com/business/careers/management/article-what-separates-the-best-teams-from-average-ones-time-apart/",
-          "theme": "monetary",
-          "time": "3h",
+          "url": "https://www.theglobeandmail.com/business/economy/article-canada-gdp-april-2026-statistics-canada/",
+          "theme": "trade",
+          "time": "1h",
           "impact": "medium",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "AI governance a top priority for Canada’s ambassador to the UN",
-            "en": "AI governance a top priority for Canada’s ambassador to the UN"
+            "fr": "Silvercorp slows mining operations in China for safety work, equipment upgrades",
+            "en": "Silvercorp slows mining operations in China for safety work, equipment upgrades"
           },
-          "url": "https://www.theglobeandmail.com/business/article-canada-ambassador-to-the-un-david-lametti-ai-governance-adoption/",
+          "url": "https://www.theglobeandmail.com/business/industry-news/energy-and-resources/article-silvercorp-slows-mining-operations-in-china-for-safety-work-equipment/",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Foreign investment in Canadian federal bonds hits record high, keeping borrowing costs low",
+            "en": "Foreign investment in Canadian federal bonds hits record high, keeping borrowing costs low"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-foreign-investment-canadian-federal-bonds-record-high/",
+          "theme": "monetary",
+          "time": "3h",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "China imposes temporary anti-dumping duty on Canadian pea starch",
+            "en": "China imposes temporary anti-dumping duty on Canadian pea starch"
+          },
+          "url": "https://www.theglobeandmail.com/business/international-business/article-china-imposes-temporary-anti-dumping-duty-on-canadian-pea-starch/",
+          "theme": "trade",
+          "time": "3h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "U.S.-Iran talks clouded by uncertainty over Qatar meeting",
+            "en": "U.S.-Iran talks clouded by uncertainty over Qatar meeting"
+          },
+          "url": "https://www.theglobeandmail.com/world/article-us-iran-qatar-meeting/",
           "theme": "tech",
           "time": "3h",
           "impact": "low",
@@ -126,10 +148,10 @@
         },
         {
           "title": {
-            "fr": "U.S. tech giants tapping foreign bond markets as AI-related debt soars",
-            "en": "U.S. tech giants tapping foreign bond markets as AI-related debt soars"
+            "fr": "Business Brief: Hacking the Canadian economy",
+            "en": "Business Brief: Hacking the Canadian economy"
           },
-          "url": "https://www.theglobeandmail.com/business/article-us-tech-giants-tapping-foreign-bond-markets-as-ai-related-debt-soars/",
+          "url": "https://www.theglobeandmail.com/business/article-business-brief-hacking-the-canadian-economy/",
           "theme": "tech",
           "time": "4h",
           "impact": "low",
@@ -137,34 +159,12 @@
         },
         {
           "title": {
-            "fr": "Comcast to spin off NBCUniversal and become two publicly traded companies",
-            "en": "Comcast to spin off NBCUniversal and become two publicly traded companies"
+            "fr": "We all play for Team Canada, and that’s not just a marketing slogan",
+            "en": "We all play for Team Canada, and that’s not just a marketing slogan"
           },
-          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-comcast-nbcuniversal-sky-spinoff/",
+          "url": "https://www.theglobeandmail.com/business/commentary/article-team-canada-day-flag-world-cup/",
           "theme": "trade",
           "time": "4h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Deep Sky delivers North America’s first direct air capture carbon credits to RBC, Microsoft",
-            "en": "Deep Sky delivers North America’s first direct air capture carbon credits to RBC, Microsoft"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-deep-sky-first-direct-air-capture-carbon-credits-rbc-microsoft/",
-          "theme": "tech",
-          "time": "5h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "The U.S. dairy industry wants more access to the Canadian market. Here’s why, explained in five charts",
-            "en": "The U.S. dairy industry wants more access to the Canadian market. Here’s why, explained in five charts"
-          },
-          "url": "https://www.theglobeandmail.com/business/economy/article-why-us-dairy-industry-wants-more-canadian-market-access-five-charts/",
-          "theme": "tech",
-          "time": "7h",
           "impact": "low",
           "source": "Globe and Mail"
         }
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7418,
+          "value": 7474,
           "trend": "up",
-          "change": 0.87,
-          "period": "2026-06-29"
+          "change": 0.45,
+          "period": "2026-06-30"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6528.52,
           7209.01,
           7580.06,
-          7354.02,
-          7418.08
+          7440.43,
+          7473.8
         ]
       },
       "summary": {
@@ -561,12 +561,67 @@
       "headlines": [
         {
           "title": {
-            "fr": "Supreme Court blocks Trump's attempt to fire Federal Reserve governor Lisa Cook",
-            "en": "Supreme Court blocks Trump's attempt to fire Federal Reserve governor Lisa Cook"
+            "fr": "Homes harder to sell as high mortgage rates frustrate buyers",
+            "en": "Homes harder to sell as high mortgage rates frustrate buyers"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cdr4env2v14o?at_medium=RSS&at_campaign=rss",
+          "theme": "monetary",
+          "time": "8h",
+          "impact": "medium",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "India's biggest share sales tell the story of a country glued to its phones",
+            "en": "India's biggest share sales tell the story of a country glued to its phones"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cdej6ej7w4go?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "10h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Chinese tycoon sentenced to 30 years in US jail",
+            "en": "Chinese tycoon sentenced to 30 years in US jail"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cjeg15vw3z9o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "12h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Comcast's NBCUniversal spinoff raises hope for more deals. There may not be good options",
+            "en": "Comcast's NBCUniversal spinoff raises hope for more deals. There may not be good options"
+          },
+          "url": "https://www.cnbc.com/2026/06/29/comcast-nbcu-spinoff-m-and-a.html",
+          "theme": "trade",
+          "time": "17h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Will Andy Burnham's devolution plan raise economic growth?",
+            "en": "Will Andy Burnham's devolution plan raise economic growth?"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c5yz4x9ew49o?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "19h",
+          "impact": "medium",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Supreme Court blocks Trump's attempt to fire Federal Reserve Governor Lisa Cook",
+            "en": "Supreme Court blocks Trump's attempt to fire Federal Reserve Governor Lisa Cook"
           },
           "url": "https://www.bbc.co.uk/news/articles/cy4wwy0nkeno?at_medium=RSS&at_campaign=rss",
           "theme": "monetary",
-          "time": "1h",
+          "time": "21h",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -577,7 +632,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/c3vyen243dno?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "3h",
+          "time": "1j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -588,63 +643,8 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/c9q2pwzngjqo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "7h",
+          "time": "1j",
           "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "A surprisingly strong summer box office could mean Hollywood's first $10 billion year since the pandemic",
-            "en": "A surprisingly strong summer box office could mean Hollywood's first $10 billion year since the pandemic"
-          },
-          "url": "https://www.cnbc.com/2026/06/27/strong-summer-box-office.html",
-          "theme": "trade",
-          "time": "2j",
-          "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Trump threatens 100% tariff on European nations over tech tax",
-            "en": "Trump threatens 100% tariff on European nations over tech tax"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cn4rd71411ko?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "2j",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Could you handle a 20-plus hour flight? This airline is banking on it",
-            "en": "Could you handle a 20-plus hour flight? This airline is banking on it"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cx2j7v51l5ko?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "2j",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Three unusual things about the King's tax bill",
-            "en": "Three unusual things about the King's tax bill"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/ce8kg7zg09ko?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "2j",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "What's happening to petrol prices now oil is back to pre-Iran war levels?",
-            "en": "What's happening to petrol prices now oil is back to pre-Iran war levels?"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "3j",
-          "impact": "high",
           "source": "BBC Business"
         }
       ]
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.794,
+          "value": 6.785,
           "unit": "CNY/USD",
           "trend": "down",
-          "period": "2026-06-29",
+          "period": "2026-06-30",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 4074,
+          "value": 4094,
           "trend": "up",
-          "change": 1.16,
-          "period": "2026-06-29"
+          "change": 1.67,
+          "period": "2026-06-30"
         }
       },
       "sparkline": {
@@ -730,89 +730,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "What signal is China sending with first official footage of sixth-generation fighter?",
-            "en": "What signal is China sending with first official footage of sixth-generation fighter?"
+            "fr": "US lawmaker Ro Khanna defends calling witness ‘racist’ in explosive China committee clash",
+            "en": "US lawmaker Ro Khanna defends calling witness ‘racist’ in explosive China committee clash"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3358782/what-signal-china-sending-first-official-footage-sixth-generation-fighter?utm_source=rss_feed",
-          "theme": "tech",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3358911/us-lawmaker-ro-khanna-defends-calling-witness-racist-explosive-china-committee-clash?utm_source=rss_feed",
+          "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Why is Taiwan’s KMT calling for the government to spend billions more on drones?",
-            "en": "Why is Taiwan’s KMT calling for the government to spend billions more on drones?"
+            "fr": "Why the AI future won’t be decided by algorithms and chatbots",
+            "en": "Why the AI future won’t be decided by algorithms and chatbots"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3358788/why-taiwans-kmt-calling-government-spend-billions-more-drones?utm_source=rss_feed",
+          "url": "https://www.scmp.com/opinion/world-opinion/article/3357399/why-ai-future-wont-be-decided-algorithms-and-chatbots?utm_source=rss_feed",
           "theme": "tech",
           "time": "2h",
-          "impact": "high",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China revives desert moss in space lab as it tests hi-tech tools for future missions",
-            "en": "China revives desert moss in space lab as it tests hi-tech tools for future missions"
+            "fr": "China’s Politburo orders rapid-response overhaul in the face of floods and extreme heat",
+            "en": "China’s Politburo orders rapid-response overhaul in the face of floods and extreme heat"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3358789/china-says-desert-moss-suited-mars-it-tests-hi-tech-tools-space-and-astronauts?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/politics/article/3358923/chinas-politburo-orders-rapid-response-overhaul-face-floods-and-extreme-heat?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China reacts to Guo Wengui’s 30-year US prison sentence, highlighting fugitive status",
+            "en": "China reacts to Guo Wengui’s 30-year US prison sentence, highlighting fugitive status"
+          },
+          "url": "https://www.scmp.com/news/china/politics/article/3358922/china-reacts-guo-wenguis-30-year-us-prison-sentence-highlighting-fugitive-status?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "As China’s Communist Party grows more slowly, its members are getting older",
+            "en": "As China’s Communist Party grows more slowly, its members are getting older"
+          },
+          "url": "https://www.scmp.com/news/china/politics/article/3358914/chinas-communist-party-grows-more-slowly-its-members-are-getting-older?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "EU seeks ‘tangible results’ on China trade deficit by October",
+            "en": "EU seeks ‘tangible results’ on China trade deficit by October"
+          },
+          "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3358895/eu-seeks-tangible-results-china-trade-deficit-october?utm_source=rss_feed",
+          "theme": "trade",
+          "time": "5h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Should China worry more about keeping defence customers than winning new deals?",
+            "en": "Should China worry more about keeping defence customers than winning new deals?"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3358894/should-china-worry-more-about-keeping-defence-customers-winning-new-deals?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "5h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Indian officials said to be in talks to allow reporters from China to return",
+            "en": "Indian officials said to be in talks to allow reporters from China to return"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3358843/indian-officials-said-be-talks-allow-reporters-china-return?utm_source=rss_feed",
           "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Is the Chinese dream replacing the American dream?",
-            "en": "Is the Chinese dream replacing the American dream?"
-          },
-          "url": "https://www.scmp.com/opinion/china-opinion/article/3358511/chinese-dream-replacing-american-dream?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China conducts ground test of hypersonic ramjet that can change shape in flight",
-            "en": "China conducts ground test of hypersonic ramjet that can change shape in flight"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3358738/china-conducts-ground-test-hypersonic-ramjet-can-change-shape-flight?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "4h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China warns popular phone games may provide map data to train foreign military AI models",
-            "en": "China warns popular phone games may provide map data to train foreign military AI models"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3358749/china-warns-popular-phone-games-may-provide-map-data-train-foreign-military-ai-models?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China pledges extra US$14.7 million in earthquake relief to Venezuela",
-            "en": "China pledges extra US$14.7 million in earthquake relief to Venezuela"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3358774/china-pledges-extra-us147-million-earthquake-relief-venezuela?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Chinese vessels shadow US-Philippine naval drills in South China Sea near disputed shoal",
-            "en": "Chinese vessels shadow US-Philippine naval drills in South China Sea near disputed shoal"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3358758/chinese-vessels-shadow-us-philippine-naval-drills-south-china-sea-near-disputed-shoal?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "6h",
+          "time": "7h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 94.55,
+          "value": 94.66,
           "unit": "INR/USD",
           "trend": "up",
-          "period": "2026-06-29",
+          "period": "2026-06-30",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 76728,
+          "value": 76479,
           "trend": "down",
-          "change": -0.48,
-          "period": "2026-06-29"
+          "change": -0.33,
+          "period": "2026-06-30"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           71947.55,
           76913.5,
           74775.74,
-          77100.47,
-          76728.37
+          76728.37,
+          76478.67
         ]
       },
       "summary": {
@@ -899,10 +899,43 @@
       "headlines": [
         {
           "title": {
-            "fr": "IIP growth reached a five-month high of 5.1% in May",
-            "en": "IIP growth reached a five-month high of 5.1% in May"
+            "fr": "US-Iran thaw to provide tailwinds for growth: RBI",
+            "en": "US-Iran thaw to provide tailwinds for growth: RBI"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/iip-growth-reached-a-five-month-high-of-5-1-in-may/articleshow/132072993.cms",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/us-iran-thaw-to-provide-tailwinds-for-growth-rbi/articleshow/132093653.cms",
+          "theme": "trade",
+          "time": "1h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Small savings scheme interest rates for Jul-Sep 2026",
+            "en": "Small savings scheme interest rates for Jul-Sep 2026"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/invest/small-savings-scheme-interest-rates-for-july-september-quarter-has-government-changed-ppf-nsc-scss-and-other-small-savings-interest-rates-for-july-september-2026-quarter/articleshow/132092743.cms",
+          "theme": "monetary",
+          "time": "2h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "AI cyberattacks top near-term financial threat: RBI",
+            "en": "AI cyberattacks top near-term financial threat: RBI"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/ai-driven-cyberattacks-the-greatest-immediate-threat-to-indias-financial-stability-warns-rbi/articleshow/132092751.cms",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Manufacturing growth seen moderating in Q1: FICCI",
+            "en": "Manufacturing growth seen moderating in Q1: FICCI"
+          },
+          "url": "https://economictimes.indiatimes.com/news/economy/policy/indias-manufacturing-growth-set-to-slow-amid-west-asia-crisis-ficci-survey-reveals-key-insights-for-q1-fy27/articleshow/132092555.cms",
           "theme": "trade",
           "time": "2h",
           "impact": "medium",
@@ -910,79 +943,46 @@
         },
         {
           "title": {
-            "fr": "Digital rules threaten Rs 91,500-cr startup funding",
-            "en": "Digital rules threaten Rs 91,500-cr startup funding"
+            "fr": "‘Microsoft powered genocide': Employee quits",
+            "en": "‘Microsoft powered genocide': Employee quits"
           },
-          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/indias-startup-future-at-stake-digital-regulations-could-cost-rs-91500-crore-and-245000-jobs/articleshow/132071404.cms",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Govt to roll out ₹5,000 cr green steel scheme",
-            "en": "Govt to roll out ₹5,000 cr green steel scheme"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/steel/govt-plans-rs-5000-crore-scheme-in-3-months-to-promote-green-technologies-in-steel-sector/articleshow/132070244.cms",
+          "url": "https://economictimes.indiatimes.com/news/new-updates/microsoft-powered-genocide-for-994-days-employee-quits-in-dramatic-resignation-email-sends-unhappy-email-to-thousands-of-companys-employees-heres-what-he-wrote/articleshow/132092236.cms",
           "theme": "trade",
-          "time": "4h",
+          "time": "3h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Axis Bank CFO Puneet Sharma resigns",
-            "en": "Axis Bank CFO Puneet Sharma resigns"
+            "fr": "BWF shifts India Open Super 750 to Feb 2027",
+            "en": "BWF shifts India Open Super 750 to Feb 2027"
           },
-          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/axis-bank-cfo-puneet-sharma-resigns-to-pursue-new-opportunities/articleshow/132070327.cms",
-          "theme": "geopolitics",
+          "url": "https://economictimes.indiatimes.com/news/sports/badminton/bwf-shifts-india-open-super-750-to-february-2027-tournament-returns-to-traditional-january-slot-in-2028/articleshow/132091410.cms",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "30-yr delay in possession: Wins refund with 12% int",
+            "en": "30-yr delay in possession: Wins refund with 12% int"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/real-estate/man-booked-11-shops-for-rs-25-lakh-in-mumbai-in-1995-but-didnt-get-possession-even-after-30-years-he-fights-back-and-wins-full-refund-with-12-interest/articleshow/132088702.cms",
+          "theme": "trade",
           "time": "5h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Apple accuses Indian investigators of 'copy-pasting'",
-            "en": "Apple accuses Indian investigators of 'copy-pasting'"
+            "fr": "Gold rate today: 24k vs 22k vs 20k vs 18k",
+            "en": "Gold rate today: 24k vs 22k vs 20k vs 18k"
           },
-          "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/apple-accuses-indian-antitrust-investigators-cci-of-copy-pasting-rivals-claims-in-antitrust-investigation/articleshow/132069071.cms",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Blue Star betting big on data centres for growth: MD",
-            "en": "Blue Star betting big on data centres for growth: MD"
-          },
-          "url": "https://economictimes.indiatimes.com/markets/expert-view/blue-star-md-flags-2-margin-drop-this-summer-but-bets-big-on-data-centres-for-long-term-growth/articleshow/132068816.cms",
-          "theme": "trade",
+          "url": "https://economictimes.indiatimes.com/wealth/invest/gold-rate-today-june-30-2026-check-24k-22k-20k-and-18k-gold-jewellery-prices-from-ibja-joyalukkas-malabar-gold-diamonds-and-tanishq-in-delhi-mumbai-hyderabad-other-cities/articleshow/132087561.cms",
+          "theme": "monetary",
           "time": "6h",
           "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "BPCL inks ₹85 cr deal for Tiki Tar, Shell India",
-            "en": "BPCL inks ₹85 cr deal for Tiki Tar, Shell India"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/bpcl-to-buy-40-stake-in-tiki-tar-and-shell-india-for-rs-85-crore/articleshow/132068347.cms",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Key income tax deadlines in July 2026: Check list",
-            "en": "Key income tax deadlines in July 2026: Check list"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/tax/income-tax-deadlines-in-july-2026-from-july-31-itr-filing-to-tds-due-dates-key-forms-you-cant-afford-to-miss/articleshow/132067967.cms",
-          "theme": "trade",
-          "time": "7h",
-          "impact": "low",
           "source": "Economic Times"
         }
       ]
@@ -1035,10 +1035,10 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 155,
+          "value": 156,
           "trend": "up",
-          "change": 0.67,
-          "period": "2026-06-29"
+          "change": 0.42,
+          "period": "2026-06-30"
         }
       },
       "sparkline": {
@@ -1056,8 +1056,8 @@
           70.69,
           114.01,
           92.05,
-          71.99,
-          73.8
+          73.15,
+          74.15
         ]
       },
       "summary": {
@@ -1067,90 +1067,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "The US-Iran MoU looks at managing the pain rather than ending the war",
-            "en": "The US-Iran MoU looks at managing the pain rather than ending the war"
+            "fr": "US envoys in Doha for indirect talks with Iranian technical delegation",
+            "en": "US envoys in Doha for indirect talks with Iranian technical delegation"
           },
-          "url": "https://www.aljazeera.com/news/2026/6/29/the-us-iran-mou-looks-at-managing-the-pain-rather-than-ending-the-war?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "<1h",
+          "url": "https://www.aljazeera.com/news/2026/6/30/us-envoys-in-doha-for-indirect-talks-with-iranian-technical-delegation?traffic_source=rss",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "UK’s Starmer announces 300-billion-pound defence investment plan",
+            "en": "UK’s Starmer announces 300-billion-pound defence investment plan"
+          },
+          "url": "https://www.aljazeera.com/economy/2026/6/30/uks-starmer-announces-300-billion-pound-defence-investment-plan?traffic_source=rss",
+          "theme": "trade",
+          "time": "1h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Earthquake jolts southwest China",
-            "en": "Earthquake jolts southwest China"
+            "fr": "Are US and Iranian negotiators meeting in Doha? What we know about talks",
+            "en": "Are US and Iranian negotiators meeting in Doha? What we know about talks"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/29/earthquake-jolts-southwest-china?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "<1h",
+          "url": "https://www.aljazeera.com/news/2026/6/30/are-us-and-iranian-negotiators-meeting-in-doha-what-we-know-about-talks?traffic_source=rss",
+          "theme": "tech",
+          "time": "2h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Supreme Court rejects Trump's appeal of E Jean Carroll's sexual abuse case",
-            "en": "Supreme Court rejects Trump's appeal of E Jean Carroll's sexual abuse case"
+            "fr": "Morocco player hugs mother as team celebrates win against Netherlands",
+            "en": "Morocco player hugs mother as team celebrates win against Netherlands"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cn8q2z5wpn2o?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "JD Vance’s 2028 strategy is starting to take shape",
-            "en": "JD Vance’s 2028 strategy is starting to take shape"
-          },
-          "url": "https://www.aljazeera.com/opinions/2026/6/29/jd-vances-2028-strategy-is-starting-to-take-shape?traffic_source=rss",
-          "theme": "monetary",
-          "time": "<1h",
-          "impact": "medium",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "US says it has agreed to 'stand down' after exchange of strikes with Iran",
-            "en": "US says it has agreed to 'stand down' after exchange of strikes with Iran"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c872rjw17qpo?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Supreme Court blocks Trump's attempt to fire Federal Reserve governor Lisa Cook",
-            "en": "Supreme Court blocks Trump's attempt to fire Federal Reserve governor Lisa Cook"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cy4wwy0nkeno?at_medium=RSS&at_campaign=rss",
-          "theme": "monetary",
-          "time": "1h",
-          "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Trump announces meeting with Iran in Qatar despite military skirmishes",
-            "en": "Trump announces meeting with Iran in Qatar despite military skirmishes"
-          },
-          "url": "https://www.aljazeera.com/news/2026/6/29/trump-announces-meeting-with-iran-in-qatar-despite-military-skirmishes?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Is the Israeli military deliberately targeting children in Gaza?",
-            "en": "Is the Israeli military deliberately targeting children in Gaza?"
-          },
-          "url": "https://www.aljazeera.com/video/by-the-numbers-3/2026/6/29/is-the-israeli-military-deliberately-targeting-children-in-gaza?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/morocco-player-hugs-mother-as-team-celebrates-win-against-netherlands?traffic_source=rss",
           "theme": "monetary",
           "time": "2h",
           "impact": "medium",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "US Supreme Court hands Trump 3-1 defeat in key rulings: What we know",
+            "en": "US Supreme Court hands Trump 3-1 defeat in key rulings: What we know"
+          },
+          "url": "https://www.aljazeera.com/news/2026/6/30/us-supreme-court-hands-trump-3-1-defeat-in-key-rulings-what-we-know?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "4h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Man in Gaza survives double tap Israeli strike on vehicle",
+            "en": "Man in Gaza survives double tap Israeli strike on vehicle"
+          },
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/man-in-gaza-survives-double-tap-israeli-strike-on-vehicle?traffic_source=rss",
+          "theme": "energy",
+          "time": "4h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Advocacy groups file complaint against Ghana over Trump deportations",
+            "en": "Advocacy groups file complaint against Ghana over Trump deportations"
+          },
+          "url": "https://www.aljazeera.com/news/2026/6/30/advocacy-groups-file-complaint-against-ghana-over-trump-deportations?traffic_source=rss",
+          "theme": "tech",
+          "time": "4h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Video: At least two killed and hundreds displaced in Israeli attack on Gaza",
+            "en": "Video: At least two killed and hundreds displaced in Israeli attack on Gaza"
+          },
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/video-at-least-two-killed-and-hundreds-displaced-in-israeli-attack-on-gaza?traffic_source=rss",
+          "theme": "energy",
+          "time": "5h",
+          "impact": "low",
           "source": "Al Jazeera"
         }
       ]
