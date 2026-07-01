@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30",
+  "lastUpdated": "2026-07-01",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.424,
+          "value": 1.422,
           "unit": "CAD/USD",
-          "trend": "up",
-          "period": "2026-06-30",
+          "trend": "down",
+          "period": "2026-07-01",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 34867,
-          "trend": "up",
-          "change": 0.12,
-          "period": "2026-06-30"
+          "value": 34857,
+          "trend": "stable",
+          "change": 0.1,
+          "period": "2026-07-01"
         }
       },
       "sparkline": {
@@ -82,89 +82,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "UAE, now free from OPEC quotas, boosts oil exports to record levels",
-            "en": "UAE, now free from OPEC quotas, boosts oil exports to record levels"
+            "fr": "Stocks drift lower on Wall Street as rising bond yields increase pressure",
+            "en": "Stocks drift lower on Wall Street as rising bond yields increase pressure"
           },
-          "url": "https://www.theglobeandmail.com/business/industry-news/energy-and-resources/article-uae-record-oil-exports-opec-quotas-exit/",
-          "theme": "trade",
-          "time": "<1h",
-          "impact": "high",
+          "url": "https://www.theglobeandmail.com/investing/markets/article-wall-street-market-stocks-lower-rising-bond/",
+          "theme": "monetary",
+          "time": "1h",
+          "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Canada’s GDP rebounds to post 0.5% monthly growth in April",
-            "en": "Canada’s GDP rebounds to post 0.5% monthly growth in April"
+            "fr": "Technical talks between U.S. and Iran begin in Qatar",
+            "en": "Technical talks between U.S. and Iran begin in Qatar"
           },
-          "url": "https://www.theglobeandmail.com/business/economy/article-canada-gdp-april-2026-statistics-canada/",
+          "url": "https://www.theglobeandmail.com/world/article-us-iran-technical-talks-qatar-strait-of-hormuz/",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "In ‘Fortress North America’ the U.S. wants its tariffs and for us to eat it, too",
+            "en": "In ‘Fortress North America’ the U.S. wants its tariffs and for us to eat it, too"
+          },
+          "url": "https://www.theglobeandmail.com/business/commentary/article-in-fortress-north-america-the-us-wants-its-tariffs-and-for-us-to-eat/",
           "theme": "trade",
-          "time": "1h",
+          "time": "3h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Canada is finally making it clear to the world that it’s serious about providing the energy it desperately wants",
+            "en": "Canada is finally making it clear to the world that it’s serious about providing the energy it desperately wants"
+          },
+          "url": "https://www.theglobeandmail.com/business/commentary/article-canada-energy-pipeline-export-global-markets/",
+          "theme": "monetary",
+          "time": "3h",
           "impact": "medium",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Silvercorp slows mining operations in China for safety work, equipment upgrades",
-            "en": "Silvercorp slows mining operations in China for safety work, equipment upgrades"
+            "fr": "Les nouveaux logements abordables le sont-ils vraiment?",
+            "en": "Les nouveaux logements abordables le sont-ils vraiment?"
           },
-          "url": "https://www.theglobeandmail.com/business/industry-news/energy-and-resources/article-silvercorp-slows-mining-operations-in-china-for-safety-work-equipment/",
-          "theme": "geopolitics",
-          "time": "2h",
+          "url": "https://ici.radio-canada.ca/nouvelle/2265603/nouveaux-logements-abordables-quebec",
+          "theme": "tech",
+          "time": "6h",
           "impact": "low",
-          "source": "Globe and Mail"
+          "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "Foreign investment in Canadian federal bonds hits record high, keeping borrowing costs low",
-            "en": "Foreign investment in Canadian federal bonds hits record high, keeping borrowing costs low"
+            "fr": "Trump a gagné environ 1,2 milliard de dollars dans les cryptomonnaies en 2025",
+            "en": "Trump a gagné environ 1,2 milliard de dollars dans les cryptomonnaies en 2025"
           },
-          "url": "https://www.theglobeandmail.com/business/article-foreign-investment-canadian-federal-bonds-record-high/",
-          "theme": "monetary",
-          "time": "3h",
+          "url": "https://ici.radio-canada.ca/nouvelle/2266026/trump-cryptomonnaies-revenus-2025",
+          "theme": "tech",
+          "time": "14h",
           "impact": "high",
-          "source": "Globe and Mail"
+          "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "China imposes temporary anti-dumping duty on Canadian pea starch",
-            "en": "China imposes temporary anti-dumping duty on Canadian pea starch"
+            "fr": "U.S. to lift export controls on Anthropic’s Fable, Mythos AI models, company says",
+            "en": "U.S. to lift export controls on Anthropic’s Fable, Mythos AI models, company says"
           },
-          "url": "https://www.theglobeandmail.com/business/international-business/article-china-imposes-temporary-anti-dumping-duty-on-canadian-pea-starch/",
+          "url": "https://www.theglobeandmail.com/business/article-anthropic-fable-5-ai-tech/",
           "theme": "trade",
-          "time": "3h",
+          "time": "14h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "U.S.-Iran talks clouded by uncertainty over Qatar meeting",
-            "en": "U.S.-Iran talks clouded by uncertainty over Qatar meeting"
+            "fr": "The U.S. Supreme Court is curbing the worst of Trump’s authoritarian impulses",
+            "en": "The U.S. Supreme Court is curbing the worst of Trump’s authoritarian impulses"
           },
-          "url": "https://www.theglobeandmail.com/world/article-us-iran-qatar-meeting/",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Business Brief: Hacking the Canadian economy",
-            "en": "Business Brief: Hacking the Canadian economy"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-business-brief-hacking-the-canadian-economy/",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "We all play for Team Canada, and that’s not just a marketing slogan",
-            "en": "We all play for Team Canada, and that’s not just a marketing slogan"
-          },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-team-canada-day-flag-world-cup/",
-          "theme": "trade",
-          "time": "4h",
+          "url": "https://www.theglobeandmail.com/business/commentary/article-us-supreme-court-trump-birthright-authoritarian-impulses/",
+          "theme": "monetary",
+          "time": "15h",
           "impact": "low",
           "source": "Globe and Mail"
         }
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7474,
-          "trend": "up",
-          "change": 0.45,
-          "period": "2026-06-30"
+          "value": 7496,
+          "trend": "stable",
+          "change": -0.05,
+          "period": "2026-07-01"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           6528.52,
           7209.01,
           7580.06,
-          7440.43,
-          7473.8
+          7499.36,
+          7496.13
         ]
       },
       "summary": {
@@ -561,23 +561,45 @@
       "headlines": [
         {
           "title": {
-            "fr": "Homes harder to sell as high mortgage rates frustrate buyers",
-            "en": "Homes harder to sell as high mortgage rates frustrate buyers"
+            "fr": "U.S. auto industry faces increased uncertainty without extension of USMCA trade deal",
+            "en": "U.S. auto industry faces increased uncertainty without extension of USMCA trade deal"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cdr4env2v14o?at_medium=RSS&at_campaign=rss",
-          "theme": "monetary",
-          "time": "8h",
-          "impact": "medium",
+          "url": "https://www.cnbc.com/2026/07/01/automakers-usmca-trade.html",
+          "theme": "trade",
+          "time": "<1h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Trump made more than $1bn from crypto in first year back in office",
+            "en": "Trump made more than $1bn from crypto in first year back in office"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cvgmv98ez3zo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "India's biggest share sales tell the story of a country glued to its phones",
-            "en": "India's biggest share sales tell the story of a country glued to its phones"
+            "fr": "Why is crucial tech vulnerable to the heat?",
+            "en": "Why is crucial tech vulnerable to the heat?"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cdej6ej7w4go?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cj0gez6d50ro?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "10h",
+          "time": "7h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Anthropic says US lifts export ban on its advanced AI tools",
+            "en": "Anthropic says US lifts export ban on its advanced AI tools"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cdr42623e1do?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "11h",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -588,63 +610,41 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cjeg15vw3z9o?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "12h",
+          "time": "15h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Comcast's NBCUniversal spinoff raises hope for more deals. There may not be good options",
-            "en": "Comcast's NBCUniversal spinoff raises hope for more deals. There may not be good options"
+            "fr": "Plea for households to read energy meter as prices rise",
+            "en": "Plea for households to read energy meter as prices rise"
           },
-          "url": "https://www.cnbc.com/2026/06/29/comcast-nbcu-spinoff-m-and-a.html",
-          "theme": "trade",
-          "time": "17h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Will Andy Burnham's devolution plan raise economic growth?",
-            "en": "Will Andy Burnham's devolution plan raise economic growth?"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c5yz4x9ew49o?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "19h",
+          "url": "https://www.bbc.co.uk/news/articles/c5yzqrpw2g8o?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "15h",
           "impact": "medium",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Supreme Court blocks Trump's attempt to fire Federal Reserve Governor Lisa Cook",
-            "en": "Supreme Court blocks Trump's attempt to fire Federal Reserve Governor Lisa Cook"
+            "fr": "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund",
+            "en": "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cy4wwy0nkeno?at_medium=RSS&at_campaign=rss",
-          "theme": "monetary",
-          "time": "21h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "British American Tobacco to cut 9,000 jobs",
-            "en": "British American Tobacco to cut 9,000 jobs"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c3vyen243dno?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.cnbc.com/2026/06/30/nike-nke-q4-2026-earnings.html",
           "theme": "trade",
-          "time": "1j",
-          "impact": "low",
-          "source": "BBC Business"
+          "time": "16h",
+          "impact": "medium",
+          "source": "CNBC"
         },
         {
           "title": {
-            "fr": "South Korea unveils $880bn chip and AI investment plan",
-            "en": "South Korea unveils $880bn chip and AI investment plan"
+            "fr": "Homes harder to sell as high mortgage rates frustrate buyers",
+            "en": "Homes harder to sell as high mortgage rates frustrate buyers"
           },
-          "url": "https://www.bbc.co.uk/news/articles/c9q2pwzngjqo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
+          "url": "https://www.bbc.co.uk/news/articles/cdr4env2v14o?at_medium=RSS&at_campaign=rss",
+          "theme": "monetary",
           "time": "1j",
-          "impact": "low",
+          "impact": "medium",
           "source": "BBC Business"
         }
       ]
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.785,
+          "value": 6.795,
           "unit": "CNY/USD",
-          "trend": "down",
-          "period": "2026-06-30",
+          "trend": "up",
+          "period": "2026-07-01",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 4094,
+          "value": 4112,
           "trend": "up",
-          "change": 1.67,
-          "period": "2026-06-30"
+          "change": 2.12,
+          "period": "2026-07-01"
         }
       },
       "sparkline": {
@@ -709,7 +709,6 @@
           "en": "Yuan/USD (12 months)"
         },
         "data": [
-          7.1621,
           7.2118,
           7.1345,
           7.1196,
@@ -720,7 +719,8 @@
           6.8825,
           6.8738,
           6.8303,
-          6.7651
+          6.7651,
+          6.7945
         ]
       },
       "summary": {
@@ -730,89 +730,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "US lawmaker Ro Khanna defends calling witness ‘racist’ in explosive China committee clash",
-            "en": "US lawmaker Ro Khanna defends calling witness ‘racist’ in explosive China committee clash"
+            "fr": "China’s Fifa fever, EU’s trade deadline: 7 global relations reads",
+            "en": "China’s Fifa fever, EU’s trade deadline: 7 global relations reads"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3358911/us-lawmaker-ro-khanna-defends-calling-witness-racist-explosive-china-committee-clash?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Why the AI future won’t be decided by algorithms and chatbots",
-            "en": "Why the AI future won’t be decided by algorithms and chatbots"
-          },
-          "url": "https://www.scmp.com/opinion/world-opinion/article/3357399/why-ai-future-wont-be-decided-algorithms-and-chatbots?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China’s Politburo orders rapid-response overhaul in the face of floods and extreme heat",
-            "en": "China’s Politburo orders rapid-response overhaul in the face of floods and extreme heat"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3358923/chinas-politburo-orders-rapid-response-overhaul-face-floods-and-extreme-heat?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China reacts to Guo Wengui’s 30-year US prison sentence, highlighting fugitive status",
-            "en": "China reacts to Guo Wengui’s 30-year US prison sentence, highlighting fugitive status"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3358922/china-reacts-guo-wenguis-30-year-us-prison-sentence-highlighting-fugitive-status?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "As China’s Communist Party grows more slowly, its members are getting older",
-            "en": "As China’s Communist Party grows more slowly, its members are getting older"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3358914/chinas-communist-party-grows-more-slowly-its-members-are-getting-older?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "EU seeks ‘tangible results’ on China trade deficit by October",
-            "en": "EU seeks ‘tangible results’ on China trade deficit by October"
-          },
-          "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3358895/eu-seeks-tangible-results-china-trade-deficit-october?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/article/3358946/chinas-fifa-fever-eus-trade-deadline-7-global-relations-reads?utm_source=rss_feed",
           "theme": "trade",
-          "time": "5h",
+          "time": "<1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Should China worry more about keeping defence customers than winning new deals?",
-            "en": "Should China worry more about keeping defence customers than winning new deals?"
+            "fr": "How do Chinese police track and seize cryptocurrency? Rare paper reveals forensic tools",
+            "en": "How do Chinese police track and seize cryptocurrency? Rare paper reveals forensic tools"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3358894/should-china-worry-more-about-keeping-defence-customers-winning-new-deals?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "5h",
+          "url": "https://www.scmp.com/news/china/science/article/3359070/how-do-chinese-police-track-and-seize-cryptocurrency-rare-paper-reveals-forensic-tools?utm_source=rss_feed",
+          "theme": "monetary",
+          "time": "<1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Indian officials said to be in talks to allow reporters from China to return",
-            "en": "Indian officials said to be in talks to allow reporters from China to return"
+            "fr": "In the AI era, US-China competition hinges on who can adapt faster",
+            "en": "In the AI era, US-China competition hinges on who can adapt faster"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3358843/indian-officials-said-be-talks-allow-reporters-china-return?utm_source=rss_feed",
+          "url": "https://www.scmp.com/opinion/world-opinion/article/3358763/ai-era-us-china-competition-hinges-who-can-adapt-faster?utm_source=rss_feed",
           "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Can China’s ‘CO2 rocket’ launch cold on the same gas that carbonates Coca-Cola?",
+            "en": "Can China’s ‘CO2 rocket’ launch cold on the same gas that carbonates Coca-Cola?"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3359056/can-chinas-co2-rocket-launch-cold-same-gas-carbonates-coca-cola?utm_source=rss_feed",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "How a ‘Chinese heart’ could get US blood pumping despite biotech decoupling",
+            "en": "How a ‘Chinese heart’ could get US blood pumping despite biotech decoupling"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3359026/how-chinese-heart-could-get-us-blood-pumping-despite-biotech-decoupling?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "4h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Himalayan pass reopens as ‘goodwill’ gesture in China-India thaw",
+            "en": "Himalayan pass reopens as ‘goodwill’ gesture in China-India thaw"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3359016/himalayan-pass-reopens-goodwill-gesture-china-india-thaw?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "6h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Fish named after Blackpink’s Jennie; China’s 6G smart city: 7 science highlights",
+            "en": "Fish named after Blackpink’s Jennie; China’s 6G smart city: 7 science highlights"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3358858/fish-named-after-blackpinks-jennie-chinas-6g-smart-city-7-science-highlights?utm_source=rss_feed",
+          "theme": "geopolitics",
           "time": "7h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China’s Wang Yi reaffirms support for Mideast talks in meeting with top Saudi diplomat",
+            "en": "China’s Wang Yi reaffirms support for Mideast talks in meeting with top Saudi diplomat"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3358992/chinas-wang-yi-reaffirms-support-mideast-talks-meeting-top-saudi-diplomat?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "9h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 94.66,
+          "value": 95.25,
           "unit": "INR/USD",
           "trend": "up",
-          "period": "2026-06-30",
+          "period": "2026-07-01",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 76479,
-          "trend": "down",
-          "change": -0.33,
-          "period": "2026-06-30"
+          "value": 76923,
+          "trend": "up",
+          "change": 0.58,
+          "period": "2026-07-01"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           71947.55,
           76913.5,
           74775.74,
-          76728.37,
-          76478.67
+          76478.67,
+          76922.64
         ]
       },
       "summary": {
@@ -899,21 +899,32 @@
       "headlines": [
         {
           "title": {
-            "fr": "US-Iran thaw to provide tailwinds for growth: RBI",
-            "en": "US-Iran thaw to provide tailwinds for growth: RBI"
+            "fr": "Rain likely in Delhi, Mumbai tomorrow: IMD",
+            "en": "Rain likely in Delhi, Mumbai tomorrow: IMD"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/indicators/us-iran-thaw-to-provide-tailwinds-for-growth-rbi/articleshow/132093653.cms",
-          "theme": "trade",
+          "url": "https://economictimes.indiatimes.com/news/new-updates/weather-tomorrow-july-2-imd-issues-rain-warning-for-delhi-mumbai-uttarakhand-odisha-bihar-west-bengal-gujarat-and-madhya-pradesh-as-monsoon-advances/articleshow/132117258.cms",
+          "theme": "tech",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "BPCL agrees to buy Videocon Energy’s stake in BPRL",
+            "en": "BPCL agrees to buy Videocon Energy’s stake in BPRL"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/bpcl-agrees-to-buy-videocon-energys-stake-in-bprl-ventures-jv/articleshow/132116751.cms",
+          "theme": "energy",
           "time": "1h",
-          "impact": "medium",
+          "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Small savings scheme interest rates for Jul-Sep 2026",
-            "en": "Small savings scheme interest rates for Jul-Sep 2026"
+            "fr": "New EPF scheme: Has 8.25% EPF rate changed?",
+            "en": "New EPF scheme: Has 8.25% EPF rate changed?"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/small-savings-scheme-interest-rates-for-july-september-quarter-has-government-changed-ppf-nsc-scss-and-other-small-savings-interest-rates-for-july-september-2026-quarter/articleshow/132092743.cms",
+          "url": "https://economictimes.indiatimes.com/wealth/invest/epf-scheme-2026-replaces-epf-scheme-1952-have-epf-interest-rate-contribution-and-wage-ceiling-changed/articleshow/132114542.cms",
           "theme": "monetary",
           "time": "2h",
           "impact": "medium",
@@ -921,43 +932,32 @@
         },
         {
           "title": {
-            "fr": "AI cyberattacks top near-term financial threat: RBI",
-            "en": "AI cyberattacks top near-term financial threat: RBI"
+            "fr": "Delhi EV policy promises subsidies within 60 days",
+            "en": "Delhi EV policy promises subsidies within 60 days"
           },
-          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/ai-driven-cyberattacks-the-greatest-immediate-threat-to-indias-financial-stability-warns-rbi/articleshow/132092751.cms",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Manufacturing growth seen moderating in Q1: FICCI",
-            "en": "Manufacturing growth seen moderating in Q1: FICCI"
-          },
-          "url": "https://economictimes.indiatimes.com/news/economy/policy/indias-manufacturing-growth-set-to-slow-amid-west-asia-crisis-ficci-survey-reveals-key-insights-for-q1-fy27/articleshow/132092555.cms",
+          "url": "https://economictimes.indiatimes.com/industry/renewables/new-ev-policy-delhiites-to-get-subsidy-in-60-days-of-owning-e-vehicle/articleshow/132113835.cms",
           "theme": "trade",
-          "time": "2h",
+          "time": "3h",
           "impact": "medium",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "‘Microsoft powered genocide': Employee quits",
-            "en": "‘Microsoft powered genocide': Employee quits"
+            "fr": "Iran insists on keeping control over Hormuz",
+            "en": "Iran insists on keeping control over Hormuz"
           },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/microsoft-powered-genocide-for-994-days-employee-quits-in-dramatic-resignation-email-sends-unhappy-email-to-thousands-of-companys-employees-heres-what-he-wrote/articleshow/132092236.cms",
-          "theme": "trade",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-insists-on-keeping-control-over-hormuz-report/articleshow/132113838.cms",
+          "theme": "energy",
           "time": "3h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "BWF shifts India Open Super 750 to Feb 2027",
-            "en": "BWF shifts India Open Super 750 to Feb 2027"
+            "fr": "Zee secures Bundesliga India rights for 5 years",
+            "en": "Zee secures Bundesliga India rights for 5 years"
           },
-          "url": "https://economictimes.indiatimes.com/news/sports/badminton/bwf-shifts-india-open-super-750-to-february-2027-tournament-returns-to-traditional-january-slot-in-2028/articleshow/132091410.cms",
+          "url": "https://economictimes.indiatimes.com/industry/media/entertainment/media/zee-entertainment-secures-germanys-top-tier-football-league-bundesliga-media-rights-in-india-for-the-next-five-years/articleshow/132113376.cms",
           "theme": "tech",
           "time": "3h",
           "impact": "low",
@@ -965,23 +965,23 @@
         },
         {
           "title": {
-            "fr": "30-yr delay in possession: Wins refund with 12% int",
-            "en": "30-yr delay in possession: Wins refund with 12% int"
+            "fr": "₹15K monthly investment for 20 years? NPS or MF",
+            "en": "₹15K monthly investment for 20 years? NPS or MF"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/real-estate/man-booked-11-shops-for-rs-25-lakh-in-mumbai-in-1995-but-didnt-get-possession-even-after-30-years-he-fights-back-and-wins-full-refund-with-12-interest/articleshow/132088702.cms",
+          "url": "https://economictimes.indiatimes.com/wealth/invest/rs-15000-monthly-investment-for-20-years-nps-or-mutual-funds-know-which-may-leave-you-with-a-bigger-retirement-corpus/articleshow/132112586.cms",
           "theme": "trade",
+          "time": "4h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Gold rate today: 24k vs 22k vs 20k vs 18k prices",
+            "en": "Gold rate today: 24k vs 22k vs 20k vs 18k prices"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/invest/22k-gold-rate-today-check-24k-22k-20k-18k-gold-prices-july-1-2026-at-ibja-malabar-gold-diamonds-tanishq-joyalukkas-and-kalyan-jewellers/articleshow/132110685.cms",
+          "theme": "monetary",
           "time": "5h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Gold rate today: 24k vs 22k vs 20k vs 18k",
-            "en": "Gold rate today: 24k vs 22k vs 20k vs 18k"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/gold-rate-today-june-30-2026-check-24k-22k-20k-and-18k-gold-jewellery-prices-from-ibja-joyalukkas-malabar-gold-diamonds-and-tanishq-in-delhi-mumbai-hyderabad-other-cities/articleshow/132087561.cms",
-          "theme": "monetary",
-          "time": "6h",
           "impact": "medium",
           "source": "Economic Times"
         }
@@ -1036,9 +1036,9 @@
         "stockIndex": {
           "name": "MSCI World",
           "value": 156,
-          "trend": "up",
-          "change": 0.42,
-          "period": "2026-06-30"
+          "trend": "down",
+          "change": -0.37,
+          "period": "2026-07-01"
         }
       },
       "sparkline": {
@@ -1056,8 +1056,8 @@
           70.69,
           114.01,
           92.05,
-          73.15,
-          74.15
+          72.92,
+          71.72
         ]
       },
       "summary": {
@@ -1067,91 +1067,91 @@
       "headlines": [
         {
           "title": {
-            "fr": "US envoys in Doha for indirect talks with Iranian technical delegation",
-            "en": "US envoys in Doha for indirect talks with Iranian technical delegation"
+            "fr": "Caught between the US and China, can Europe remain competitive?",
+            "en": "Caught between the US and China, can Europe remain competitive?"
           },
-          "url": "https://www.aljazeera.com/news/2026/6/30/us-envoys-in-doha-for-indirect-talks-with-iranian-technical-delegation?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/counting-the-cost/2026/7/1/caught-between-the-us-and-china-can-europe-remain-competitive?traffic_source=rss",
           "theme": "tech",
-          "time": "1h",
+          "time": "<1h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "UK’s Starmer announces 300-billion-pound defence investment plan",
-            "en": "UK’s Starmer announces 300-billion-pound defence investment plan"
+            "fr": "Trump made more than $1bn from crypto in first year back in office",
+            "en": "Trump made more than $1bn from crypto in first year back in office"
           },
-          "url": "https://www.aljazeera.com/economy/2026/6/30/uks-starmer-announces-300-billion-pound-defence-investment-plan?traffic_source=rss",
-          "theme": "trade",
+          "url": "https://www.bbc.co.uk/news/articles/cvgmv98ez3zo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
           "time": "1h",
-          "impact": "high",
-          "source": "Al Jazeera"
+          "impact": "low",
+          "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Are US and Iranian negotiators meeting in Doha? What we know about talks",
-            "en": "Are US and Iranian negotiators meeting in Doha? What we know about talks"
+            "fr": "Trump made $1.4B from crypto ventures in first year back in office",
+            "en": "Trump made $1.4B from crypto ventures in first year back in office"
           },
-          "url": "https://www.aljazeera.com/news/2026/6/30/are-us-and-iranian-negotiators-meeting-in-doha-what-we-know-about-talks?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/trump-made-1-4b-from-crypto-ventures-in-first-year-back-in-office?traffic_source=rss",
           "theme": "tech",
-          "time": "2h",
+          "time": "3h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Morocco player hugs mother as team celebrates win against Netherlands",
-            "en": "Morocco player hugs mother as team celebrates win against Netherlands"
+            "fr": "In Pictures: Mexico celebrates historic World Cup victory",
+            "en": "In Pictures: Mexico celebrates historic World Cup victory"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/morocco-player-hugs-mother-as-team-celebrates-win-against-netherlands?traffic_source=rss",
+          "url": "https://www.aljazeera.com/gallery/2026/7/1/in-pictures-mexico-celebrates-historic-world-cup-victory?traffic_source=rss",
           "theme": "monetary",
-          "time": "2h",
+          "time": "5h",
           "impact": "medium",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "US Supreme Court hands Trump 3-1 defeat in key rulings: What we know",
-            "en": "US Supreme Court hands Trump 3-1 defeat in key rulings: What we know"
+            "fr": "Russian attacks kill three in Ukraine as Kyiv hits another oil refinery",
+            "en": "Russian attacks kill three in Ukraine as Kyiv hits another oil refinery"
           },
-          "url": "https://www.aljazeera.com/news/2026/6/30/us-supreme-court-hands-trump-3-1-defeat-in-key-rulings-what-we-know?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "4h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Man in Gaza survives double tap Israeli strike on vehicle",
-            "en": "Man in Gaza survives double tap Israeli strike on vehicle"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/man-in-gaza-survives-double-tap-israeli-strike-on-vehicle?traffic_source=rss",
-          "theme": "energy",
-          "time": "4h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Advocacy groups file complaint against Ghana over Trump deportations",
-            "en": "Advocacy groups file complaint against Ghana over Trump deportations"
-          },
-          "url": "https://www.aljazeera.com/news/2026/6/30/advocacy-groups-file-complaint-against-ghana-over-trump-deportations?traffic_source=rss",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Video: At least two killed and hundreds displaced in Israeli attack on Gaza",
-            "en": "Video: At least two killed and hundreds displaced in Israeli attack on Gaza"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/video-at-least-two-killed-and-hundreds-displaced-in-israeli-attack-on-gaza?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/7/1/russian-attacks-kill-three-in-ukraine-as-kyiv-hits-another-oil-refinery?traffic_source=rss",
           "theme": "energy",
           "time": "5h",
           "impact": "low",
           "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "US-Iran negotiations: What’s the latest?",
+            "en": "US-Iran negotiations: What’s the latest?"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/1/us-iran-negotiations-whats-the-latest?traffic_source=rss",
+          "theme": "tech",
+          "time": "6h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "US Supreme Court upholds birthright citizenship in blow to Trump",
+            "en": "US Supreme Court upholds birthright citizenship in blow to Trump"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cgmepnx1wzzo?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "9h",
+          "impact": "low",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "Anthropic says US lifts export ban on its advanced AI tools",
+            "en": "Anthropic says US lifts export ban on its advanced AI tools"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cdr42623e1do?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "11h",
+          "impact": "low",
+          "source": "BBC World"
         }
       ]
     }
