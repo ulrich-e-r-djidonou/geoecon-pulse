@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01",
+  "lastUpdated": "2026-07-02",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.422,
+          "value": 1.421,
           "unit": "CAD/USD",
           "trend": "down",
-          "period": "2026-07-01",
+          "period": "2026-07-02",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 34857,
-          "trend": "stable",
-          "change": 0.1,
-          "period": "2026-07-01"
+          "value": 34911,
+          "trend": "up",
+          "change": 0.15,
+          "period": "2026-07-02"
         }
       },
       "sparkline": {
@@ -82,43 +82,76 @@
       "headlines": [
         {
           "title": {
-            "fr": "Stocks drift lower on Wall Street as rising bond yields increase pressure",
-            "en": "Stocks drift lower on Wall Street as rising bond yields increase pressure"
+            "fr": "Five confidence-boosting strategies to build your mental strength at work",
+            "en": "Five confidence-boosting strategies to build your mental strength at work"
           },
-          "url": "https://www.theglobeandmail.com/investing/markets/article-wall-street-market-stocks-lower-rising-bond/",
+          "url": "https://www.theglobeandmail.com/business/careers/management/article-five-confidence-boosting-strategies-to-build-your-mental-strength-at/",
           "theme": "monetary",
           "time": "1h",
-          "impact": "low",
+          "impact": "medium",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Technical talks between U.S. and Iran begin in Qatar",
-            "en": "Technical talks between U.S. and Iran begin in Qatar"
+            "fr": "U.S. job growth slows in June, easing expectations of Fed rate hike; unemployment rate falls to 4.2%",
+            "en": "U.S. job growth slows in June, easing expectations of Fed rate hike; unemployment rate falls to 4.2%"
           },
-          "url": "https://www.theglobeandmail.com/world/article-us-iran-technical-talks-qatar-strait-of-hormuz/",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "In ‘Fortress North America’ the U.S. wants its tariffs and for us to eat it, too",
-            "en": "In ‘Fortress North America’ the U.S. wants its tariffs and for us to eat it, too"
-          },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-in-fortress-north-america-the-us-wants-its-tariffs-and-for-us-to-eat/",
+          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-us-57000-jobs-in-june-unemployment-rate-42/",
           "theme": "trade",
-          "time": "3h",
+          "time": "1h",
+          "impact": "medium",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Des essaims d’intelligences artificielles pourraient compromettre la démocratie",
+            "en": "Des essaims d’intelligences artificielles pourraient compromettre la démocratie"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2262489/essaims-intelligence-artificielle-democratie",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "OpenAI discussed giving 5% stake to Trump administration, media report says",
+            "en": "OpenAI discussed giving 5% stake to Trump administration, media report says"
+          },
+          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-openai-5-stake-trump-administration-us-government/",
+          "theme": "tech",
+          "time": "2h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Canada is finally making it clear to the world that it’s serious about providing the energy it desperately wants",
-            "en": "Canada is finally making it clear to the world that it’s serious about providing the energy it desperately wants"
+            "fr": "World’s central bankers find ally in new U.S. Fed chief at Sintra conference",
+            "en": "World’s central bankers find ally in new U.S. Fed chief at Sintra conference"
           },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-canada-energy-pipeline-export-global-markets/",
+          "url": "https://www.theglobeandmail.com/business/international-business/article-kevin-warsh-world-central-bankers-sintra-conference-portugal/",
+          "theme": "monetary",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Threatening a ‘forceful response’, Iran warns oil tankers to use approved routes in Strait of Hormuz",
+            "en": "Threatening a ‘forceful response’, Iran warns oil tankers to use approved routes in Strait of Hormuz"
+          },
+          "url": "https://www.theglobeandmail.com/world/article-strait-of-hormuz-iran-tehran-talks-doha-us-war-forceful-response-ships/",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Maritime shipping rates are soaring and consumers will foot the bill, experts say",
+            "en": "Maritime shipping rates are soaring and consumers will foot the bill, experts say"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-maritime-shipping-rates-soar-trump-tariffs-fuel-prices/",
           "theme": "monetary",
           "time": "3h",
           "impact": "medium",
@@ -126,46 +159,13 @@
         },
         {
           "title": {
-            "fr": "Les nouveaux logements abordables le sont-ils vraiment?",
-            "en": "Les nouveaux logements abordables le sont-ils vraiment?"
+            "fr": "Google loses bid to overturn EU regulator’s €4.1-billion antitrust fine over Android practices",
+            "en": "Google loses bid to overturn EU regulator’s €4.1-billion antitrust fine over Android practices"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2265603/nouveaux-logements-abordables-quebec",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Trump a gagné environ 1,2 milliard de dollars dans les cryptomonnaies en 2025",
-            "en": "Trump a gagné environ 1,2 milliard de dollars dans les cryptomonnaies en 2025"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2266026/trump-cryptomonnaies-revenus-2025",
-          "theme": "tech",
-          "time": "14h",
-          "impact": "high",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "U.S. to lift export controls on Anthropic’s Fable, Mythos AI models, company says",
-            "en": "U.S. to lift export controls on Anthropic’s Fable, Mythos AI models, company says"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-anthropic-fable-5-ai-tech/",
+          "url": "https://www.theglobeandmail.com/business/international-business/article-google-loses-bid-41-billion-eu-antitrust-fine-android/",
           "theme": "trade",
-          "time": "14h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "The U.S. Supreme Court is curbing the worst of Trump’s authoritarian impulses",
-            "en": "The U.S. Supreme Court is curbing the worst of Trump’s authoritarian impulses"
-          },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-us-supreme-court-trump-birthright-authoritarian-impulses/",
-          "theme": "monetary",
-          "time": "15h",
-          "impact": "low",
+          "time": "3h",
+          "impact": "high",
           "source": "Globe and Mail"
         }
       ],
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7496,
-          "trend": "stable",
-          "change": -0.05,
-          "period": "2026-07-01"
+          "value": 7523,
+          "trend": "up",
+          "change": 0.53,
+          "period": "2026-07-02"
         }
       },
       "sparkline": {
@@ -540,7 +540,6 @@
           "en": "S&P 500 (12 months)"
         },
         "data": [
-          6460.26,
           6688.46,
           6840.2,
           6849.09,
@@ -551,7 +550,8 @@
           7209.01,
           7580.06,
           7499.36,
-          7496.13
+          7483.23,
+          7522.74
         ]
       },
       "summary": {
@@ -561,91 +561,91 @@
       "headlines": [
         {
           "title": {
-            "fr": "U.S. auto industry faces increased uncertainty without extension of USMCA trade deal",
-            "en": "U.S. auto industry faces increased uncertainty without extension of USMCA trade deal"
+            "fr": "Stock market gains minted nearly 1 million new millionaires in 2025, new UBS report says",
+            "en": "Stock market gains minted nearly 1 million new millionaires in 2025, new UBS report says"
           },
-          "url": "https://www.cnbc.com/2026/07/01/automakers-usmca-trade.html",
-          "theme": "trade",
+          "url": "https://www.cnbc.com/2026/07/02/stock-market-gains-new-millionaires-ubs.html",
+          "theme": "tech",
           "time": "<1h",
           "impact": "low",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "Trump made more than $1bn from crypto in first year back in office",
-            "en": "Trump made more than $1bn from crypto in first year back in office"
+            "fr": "Why the expected fight over the North American trade deal never kicked off",
+            "en": "Why the expected fight over the North American trade deal never kicked off"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cvgmv98ez3zo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Why is crucial tech vulnerable to the heat?",
-            "en": "Why is crucial tech vulnerable to the heat?"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cj0gez6d50ro?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "7h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Anthropic says US lifts export ban on its advanced AI tools",
-            "en": "Anthropic says US lifts export ban on its advanced AI tools"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cdr42623e1do?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/c70yd58y27yo?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "11h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Chinese tycoon sentenced to 30 years in US jail",
-            "en": "Chinese tycoon sentenced to 30 years in US jail"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cjeg15vw3z9o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "15h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Plea for households to read energy meter as prices rise",
-            "en": "Plea for households to read energy meter as prices rise"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c5yzqrpw2g8o?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "15h",
+          "time": "<1h",
           "impact": "medium",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund",
-            "en": "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund"
+            "fr": "World Cup boom falters as US hospitality jobs fall in June",
+            "en": "World Cup boom falters as US hospitality jobs fall in June"
           },
-          "url": "https://www.cnbc.com/2026/06/30/nike-nke-q4-2026-earnings.html",
+          "url": "https://www.bbc.co.uk/news/articles/cr471w6ykxno?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "16h",
+          "time": "<1h",
+          "impact": "medium",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Jeff Bezos' family office backed five AI startups in June",
+            "en": "Jeff Bezos' family office backed five AI startups in June"
+          },
+          "url": "https://www.cnbc.com/2026/07/02/jeff-bezos-family-office-backed-five-ai-startups-in-june.html",
+          "theme": "tech",
+          "time": "<1h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "High-end camping and a capital raise: AutoCamp is banking on summer travel to fuel growth",
+            "en": "High-end camping and a capital raise: AutoCamp is banking on summer travel to fuel growth"
+          },
+          "url": "https://www.cnbc.com/2026/07/02/autocamp-high-end-camping-summer-travel-capital-raise.html",
+          "theme": "trade",
+          "time": "1h",
           "impact": "medium",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "Homes harder to sell as high mortgage rates frustrate buyers",
-            "en": "Homes harder to sell as high mortgage rates frustrate buyers"
+            "fr": "Ford CEO wants level playing field with Toyota, GM imports as USMCA trade talks reopen",
+            "en": "Ford CEO wants level playing field with Toyota, GM imports as USMCA trade talks reopen"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cdr4env2v14o?at_medium=RSS&at_campaign=rss",
-          "theme": "monetary",
-          "time": "1j",
-          "impact": "medium",
+          "url": "https://www.cnbc.com/2026/07/02/ford-jim-farley-usmca.html",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "EU border delays 'not bearable' over summer, warns airport boss",
+            "en": "EU border delays 'not bearable' over summer, warns airport boss"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c8x2y74wp9eo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "4h",
+          "impact": "high",
           "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "U.S. auto industry faces increased uncertainty without extension of USMCA trade deal",
+            "en": "U.S. auto industry faces increased uncertainty without extension of USMCA trade deal"
+          },
+          "url": "https://www.cnbc.com/2026/07/01/automakers-usmca-trade.html",
+          "theme": "trade",
+          "time": "15h",
+          "impact": "low",
+          "source": "CNBC"
         }
       ]
     },
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.795,
+          "value": 6.789,
           "unit": "CNY/USD",
-          "trend": "up",
-          "period": "2026-07-01",
+          "trend": "down",
+          "period": "2026-07-02",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 4112,
-          "trend": "up",
-          "change": 2.12,
-          "period": "2026-07-01"
+          "value": 4029,
+          "trend": "down",
+          "change": -1.6,
+          "period": "2026-07-02"
         }
       },
       "sparkline": {
@@ -730,76 +730,76 @@
       "headlines": [
         {
           "title": {
-            "fr": "China’s Fifa fever, EU’s trade deadline: 7 global relations reads",
-            "en": "China’s Fifa fever, EU’s trade deadline: 7 global relations reads"
+            "fr": "Is expansion of Philippine bases for US use on track? Chinese think tank weighs in",
+            "en": "Is expansion of Philippine bases for US use on track? Chinese think tank weighs in"
           },
-          "url": "https://www.scmp.com/news/china/article/3358946/chinas-fifa-fever-eus-trade-deadline-7-global-relations-reads?utm_source=rss_feed",
-          "theme": "trade",
-          "time": "<1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "How do Chinese police track and seize cryptocurrency? Rare paper reveals forensic tools",
-            "en": "How do Chinese police track and seize cryptocurrency? Rare paper reveals forensic tools"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3359070/how-do-chinese-police-track-and-seize-cryptocurrency-rare-paper-reveals-forensic-tools?utm_source=rss_feed",
-          "theme": "monetary",
-          "time": "<1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "In the AI era, US-China competition hinges on who can adapt faster",
-            "en": "In the AI era, US-China competition hinges on who can adapt faster"
-          },
-          "url": "https://www.scmp.com/opinion/world-opinion/article/3358763/ai-era-us-china-competition-hinges-who-can-adapt-faster?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Can China’s ‘CO2 rocket’ launch cold on the same gas that carbonates Coca-Cola?",
-            "en": "Can China’s ‘CO2 rocket’ launch cold on the same gas that carbonates Coca-Cola?"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3359056/can-chinas-co2-rocket-launch-cold-same-gas-carbonates-coca-cola?utm_source=rss_feed",
-          "theme": "energy",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "How a ‘Chinese heart’ could get US blood pumping despite biotech decoupling",
-            "en": "How a ‘Chinese heart’ could get US blood pumping despite biotech decoupling"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3359026/how-chinese-heart-could-get-us-blood-pumping-despite-biotech-decoupling?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3359202/expansion-philippine-bases-us-use-track-chinese-think-tank-weighs?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "4h",
+          "time": "1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Himalayan pass reopens as ‘goodwill’ gesture in China-India thaw",
-            "en": "Himalayan pass reopens as ‘goodwill’ gesture in China-India thaw"
+            "fr": "When and how will China ease capital controls?",
+            "en": "When and how will China ease capital controls?"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3359016/himalayan-pass-reopens-goodwill-gesture-china-india-thaw?utm_source=rss_feed",
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3358927/when-and-how-will-china-ease-capital-controls?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Why it matters that China’s advanced fighters can use all its carriers",
+            "en": "Why it matters that China’s advanced fighters can use all its carriers"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3359192/why-it-matters-chinas-advanced-fighters-can-use-all-its-carriers?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China AI drug-design deals swell as US scrutiny mounts",
+            "en": "China AI drug-design deals swell as US scrutiny mounts"
+          },
+          "url": "https://www.scmp.com/business/china-business/article/3359182/china-ai-drug-design-deals-swell-us-scrutiny-mounts?utm_source=rss_feed",
           "theme": "tech",
-          "time": "6h",
+          "time": "3h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Fish named after Blackpink’s Jennie; China’s 6G smart city: 7 science highlights",
-            "en": "Fish named after Blackpink’s Jennie; China’s 6G smart city: 7 science highlights"
+            "fr": "China can help Ukraine recover from war and advance industry, ambassador says",
+            "en": "China can help Ukraine recover from war and advance industry, ambassador says"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3358858/fish-named-after-blackpinks-jennie-chinas-6g-smart-city-7-science-highlights?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3359167/china-can-help-ukraine-recover-war-and-advance-industry-ambassador-says?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "5h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China Citic Tower plane crash pilot ‘suffered from anxiety’",
+            "en": "China Citic Tower plane crash pilot ‘suffered from anxiety’"
+          },
+          "url": "https://www.scmp.com/news/china/politics/article/3359163/citic-tower-plane-crash-pilot-suffered-anxiety?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "5h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China bans pet anaesthetic tiletamine after waves of young people vape drug",
+            "en": "China bans pet anaesthetic tiletamine after waves of young people vape drug"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3359099/china-bans-pet-anaesthetic-tiletamine-after-waves-young-people-vape-drug?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "7h",
           "impact": "low",
@@ -807,11 +807,11 @@
         },
         {
           "title": {
-            "fr": "China’s Wang Yi reaffirms support for Mideast talks in meeting with top Saudi diplomat",
-            "en": "China’s Wang Yi reaffirms support for Mideast talks in meeting with top Saudi diplomat"
+            "fr": "China’s Wang Yi to test whether transatlantic turmoil can soften Europe’s Nordic hawks",
+            "en": "China’s Wang Yi to test whether transatlantic turmoil can soften Europe’s Nordic hawks"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3358992/chinas-wang-yi-reaffirms-support-mideast-talks-meeting-top-saudi-diplomat?utm_source=rss_feed",
-          "theme": "geopolitics",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3359124/chinas-wang-yi-test-whether-transatlantic-turmoil-can-soften-europes-nordic-hawks?utm_source=rss_feed",
+          "theme": "energy",
           "time": "9h",
           "impact": "low",
           "source": "SCMP"
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 95.25,
+          "value": 95.39,
           "unit": "INR/USD",
           "trend": "up",
-          "period": "2026-07-01",
+          "period": "2026-07-02",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 76923,
+          "value": 77502,
           "trend": "up",
-          "change": 0.58,
-          "period": "2026-07-01"
+          "change": 0.75,
+          "period": "2026-07-02"
         }
       },
       "sparkline": {
@@ -878,7 +878,6 @@
           "en": "GDP Growth (quarters)"
         },
         "data": [
-          79809.65,
           80267.62,
           83938.71,
           85706.67,
@@ -889,7 +888,8 @@
           76913.5,
           74775.74,
           76478.67,
-          76922.64
+          76922.64,
+          77502.12
         ]
       },
       "summary": {
@@ -899,65 +899,43 @@
       "headlines": [
         {
           "title": {
-            "fr": "Rain likely in Delhi, Mumbai tomorrow: IMD",
-            "en": "Rain likely in Delhi, Mumbai tomorrow: IMD"
+            "fr": "Govt fast-tracks disinvestment process",
+            "en": "Govt fast-tracks disinvestment process"
           },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/weather-tomorrow-july-2-imd-issues-rain-warning-for-delhi-mumbai-uttarakhand-odisha-bihar-west-bengal-gujarat-and-madhya-pradesh-as-monsoon-advances/articleshow/132117258.cms",
-          "theme": "tech",
+          "url": "https://economictimes.indiatimes.com/news/economy/policy/govt-fast-tracks-disinvestment-process-to-shore-up-revenues-garners-31-of-budget-aim-in-q1-fy27/articleshow/132140560.cms",
+          "theme": "trade",
           "time": "<1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "BPCL agrees to buy Videocon Energy’s stake in BPRL",
-            "en": "BPCL agrees to buy Videocon Energy’s stake in BPRL"
+            "fr": "Coal India supply to power sector rises 5.9%",
+            "en": "Coal India supply to power sector rises 5.9%"
           },
-          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/bpcl-agrees-to-buy-videocon-energys-stake-in-bprl-ventures-jv/articleshow/132116751.cms",
+          "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/coal-india-supply-to-power-sector-rises-5-9-in-june/articleshow/132139362.cms",
           "theme": "energy",
           "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "New EPF scheme: Has 8.25% EPF rate changed?",
-            "en": "New EPF scheme: Has 8.25% EPF rate changed?"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/epf-scheme-2026-replaces-epf-scheme-1952-have-epf-interest-rate-contribution-and-wage-ceiling-changed/articleshow/132114542.cms",
-          "theme": "monetary",
-          "time": "2h",
           "impact": "medium",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Delhi EV policy promises subsidies within 60 days",
-            "en": "Delhi EV policy promises subsidies within 60 days"
+            "fr": "Iran warns tankers to follow approved Hormuz routes",
+            "en": "Iran warns tankers to follow approved Hormuz routes"
           },
-          "url": "https://economictimes.indiatimes.com/industry/renewables/new-ev-policy-delhiites-to-get-subsidy-in-60-days-of-owning-e-vehicle/articleshow/132113835.cms",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Iran insists on keeping control over Hormuz",
-            "en": "Iran insists on keeping control over Hormuz"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-insists-on-keeping-control-over-hormuz-report/articleshow/132113838.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-warns-oil-tankers-to-follow-approved-hormuz-routes-or-face-action/articleshow/132137938.cms",
           "theme": "energy",
-          "time": "3h",
-          "impact": "low",
+          "time": "2h",
+          "impact": "high",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Zee secures Bundesliga India rights for 5 years",
-            "en": "Zee secures Bundesliga India rights for 5 years"
+            "fr": "Scientists create artificial life from chemicals",
+            "en": "Scientists create artificial life from chemicals"
           },
-          "url": "https://economictimes.indiatimes.com/industry/media/entertainment/media/zee-entertainment-secures-germanys-top-tier-football-league-bundesliga-media-rights-in-india-for-the-next-five-years/articleshow/132113376.cms",
+          "url": "https://economictimes.indiatimes.com/news/new-updates/scientists-create-artificial-life-from-chemicals-and-it-eats-grows-and-divides-like-the-real-thing/articleshow/132137090.cms",
           "theme": "tech",
           "time": "3h",
           "impact": "low",
@@ -965,24 +943,46 @@
         },
         {
           "title": {
-            "fr": "₹15K monthly investment for 20 years? NPS or MF",
-            "en": "₹15K monthly investment for 20 years? NPS or MF"
+            "fr": "India tops AIU's June global dope cheats list",
+            "en": "India tops AIU's June global dope cheats list"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/rs-15000-monthly-investment-for-20-years-nps-or-mutual-funds-know-which-may-leave-you-with-a-bigger-retirement-corpus/articleshow/132112586.cms",
-          "theme": "trade",
-          "time": "4h",
+          "url": "https://economictimes.indiatimes.com/news/india/india-remains-worst-offender-in-aius-june-list-of-global-dope-cheats/articleshow/132137086.cms",
+          "theme": "tech",
+          "time": "3h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Gold rate today: 24k vs 22k vs 20k vs 18k prices",
-            "en": "Gold rate today: 24k vs 22k vs 20k vs 18k prices"
+            "fr": "Indra Nooyi calls India 'addictive chaotic' vs China",
+            "en": "Indra Nooyi calls India 'addictive chaotic' vs China"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/22k-gold-rate-today-check-24k-22k-20k-18k-gold-prices-july-1-2026-at-ibja-malabar-gold-diamonds-tanishq-joyalukkas-and-kalyan-jewellers/articleshow/132110685.cms",
+          "url": "https://economictimes.indiatimes.com/news/new-updates/cows-cars-and-courts-indra-nooyi-calls-india-chaotic-in-comparison-with-china-but-says-its-like-a-drug-you-get-addicted/articleshow/132135966.cms",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Has govt changed PPF interest rate?",
+            "en": "Has govt changed PPF interest rate?"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/invest/ppf-interest-rate-for-july-september-2026-has-government-changed-7-1-rate-heres-what-investors-should-know/articleshow/132134918.cms",
           "theme": "monetary",
-          "time": "5h",
+          "time": "4h",
           "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "A new Chinese AI model catching up with Anthropic",
+            "en": "A new Chinese AI model catching up with Anthropic"
+          },
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/analysis-a-new-inexpensive-chinese-ai-model-is-catching-up-with-anthropic-openai-on-their-home-turf/articleshow/132133080.cms",
+          "theme": "tech",
+          "time": "6h",
+          "impact": "low",
           "source": "Economic Times"
         }
       ]
@@ -1035,10 +1035,10 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 156,
-          "trend": "down",
-          "change": -0.37,
-          "period": "2026-07-01"
+          "value": 157,
+          "trend": "up",
+          "change": 0.68,
+          "period": "2026-07-02"
         }
       },
       "sparkline": {
@@ -1047,7 +1047,6 @@
           "en": "Brent Oil (12 months, USD/barrel)"
         },
         "data": [
-          72.53,
           68.12,
           67.02,
           65.07,
@@ -1057,7 +1056,8 @@
           114.01,
           92.05,
           72.92,
-          71.72
+          71.57,
+          70.77
         ]
       },
       "summary": {
@@ -1067,91 +1067,91 @@
       "headlines": [
         {
           "title": {
-            "fr": "Caught between the US and China, can Europe remain competitive?",
-            "en": "Caught between the US and China, can Europe remain competitive?"
+            "fr": "Who is Iranian oil tycoon Shamkhani whose ship is stranded in Hormuz?",
+            "en": "Who is Iranian oil tycoon Shamkhani whose ship is stranded in Hormuz?"
           },
-          "url": "https://www.aljazeera.com/video/counting-the-cost/2026/7/1/caught-between-the-us-and-china-can-europe-remain-competitive?traffic_source=rss",
-          "theme": "tech",
+          "url": "https://www.aljazeera.com/news/2026/7/2/who-is-iranian-oil-tycoon-shamkhani-whose-ship-is-stranded-in-hormuz?traffic_source=rss",
+          "theme": "energy",
           "time": "<1h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Trump made more than $1bn from crypto in first year back in office",
-            "en": "Trump made more than $1bn from crypto in first year back in office"
+            "fr": "With Hormuz reopened, has the oil shortage turned into a glut?",
+            "en": "With Hormuz reopened, has the oil shortage turned into a glut?"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cvgmv98ez3zo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
+          "url": "https://www.aljazeera.com/news/2026/7/2/with-hormuz-reopened-has-the-oil-shortage-turned-into-a-glut?traffic_source=rss",
+          "theme": "energy",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Canada celebrates its birthday as Mark Carney battles to keep it intact",
+            "en": "Canada celebrates its birthday as Mark Carney battles to keep it intact"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cwykxwd43pwo?at_medium=RSS&at_campaign=rss",
+          "theme": "monetary",
+          "time": "<1h",
+          "impact": "medium",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "Gaza war’s 1,000 days: 90% of strip ‘destroyed’, 80% ‘seized’ by Israel",
+            "en": "Gaza war’s 1,000 days: 90% of strip ‘destroyed’, 80% ‘seized’ by Israel"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/2/gaza-wars-1000-days-90-of-strip-destroyed-80-seized-by-israel?traffic_source=rss",
+          "theme": "energy",
+          "time": "1h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Why has Trump refused to renew the USMCA, and what will that mean?",
+            "en": "Why has Trump refused to renew the USMCA, and what will that mean?"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/2/why-has-trump-refused-to-renew-the-usmca-and-what-will-that-mean?traffic_source=rss",
+          "theme": "trade",
           "time": "1h",
           "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Trump made $1.4B from crypto ventures in first year back in office",
-            "en": "Trump made $1.4B from crypto ventures in first year back in office"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/trump-made-1-4b-from-crypto-ventures-in-first-year-back-in-office?traffic_source=rss",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "In Pictures: Mexico celebrates historic World Cup victory",
-            "en": "In Pictures: Mexico celebrates historic World Cup victory"
+            "fr": "What’s China’s new ethnic unity law, and what does it mean for minorities?",
+            "en": "What’s China’s new ethnic unity law, and what does it mean for minorities?"
           },
-          "url": "https://www.aljazeera.com/gallery/2026/7/1/in-pictures-mexico-celebrates-historic-world-cup-victory?traffic_source=rss",
-          "theme": "monetary",
-          "time": "5h",
-          "impact": "medium",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Russian attacks kill three in Ukraine as Kyiv hits another oil refinery",
-            "en": "Russian attacks kill three in Ukraine as Kyiv hits another oil refinery"
-          },
-          "url": "https://www.aljazeera.com/news/2026/7/1/russian-attacks-kill-three-in-ukraine-as-kyiv-hits-another-oil-refinery?traffic_source=rss",
-          "theme": "energy",
-          "time": "5h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "US-Iran negotiations: What’s the latest?",
-            "en": "US-Iran negotiations: What’s the latest?"
-          },
-          "url": "https://www.aljazeera.com/news/2026/7/1/us-iran-negotiations-whats-the-latest?traffic_source=rss",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "US Supreme Court upholds birthright citizenship in blow to Trump",
-            "en": "US Supreme Court upholds birthright citizenship in blow to Trump"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cgmepnx1wzzo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.aljazeera.com/news/2026/7/2/whats-chinas-new-ethnic-unity-law-and-what-does-it-mean-for-minorities?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "9h",
+          "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Nine Thai monks killed after 11-year-old driver collides with procession",
+            "en": "Nine Thai monks killed after 11-year-old driver collides with procession"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c23y90lygpzo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "2h",
           "impact": "low",
           "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Anthropic says US lifts export ban on its advanced AI tools",
-            "en": "Anthropic says US lifts export ban on its advanced AI tools"
+            "fr": "Jaylen Brown traded to Philadelphia 76ers from Boston Celtics",
+            "en": "Jaylen Brown traded to Philadelphia 76ers from Boston Celtics"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cdr42623e1do?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.aljazeera.com/sports/2026/7/2/jaylen-brown-traded-to-philadelphia-76ers-from-boston-celtics?traffic_source=rss",
           "theme": "trade",
-          "time": "11h",
+          "time": "2h",
           "impact": "low",
-          "source": "BBC World"
+          "source": "Al Jazeera"
         }
       ]
     }
