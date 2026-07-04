@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03",
+  "lastUpdated": "2026-07-04",
   "regions": {
     "CA": {
       "name": {
@@ -43,16 +43,16 @@
         "exchange": {
           "value": 1.42,
           "unit": "CAD/USD",
-          "trend": "down",
+          "trend": "up",
           "period": "2026-07-03",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35318,
+          "value": 35275,
           "trend": "up",
-          "change": 1.01,
-          "period": "2026-07-03"
+          "change": 0.88,
+          "period": "2026-07-04"
         }
       },
       "sparkline": {
@@ -82,14 +82,69 @@
       "headlines": [
         {
           "title": {
-            "fr": "Premiers hommages de dirigeants iraniens devant la dépouille du guide suprême Khamenei",
-            "en": "Premiers hommages de dirigeants iraniens devant la dépouille du guide suprême Khamenei"
+            "fr": "Sous Trump, la Constitution peut-elle encore guider les États-Unis?",
+            "en": "Sous Trump, la Constitution peut-elle encore guider les États-Unis?"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2266614/iran-khamenei-hommage-funerailles-teheran",
+          "url": "https://ici.radio-canada.ca/nouvelle/2264031/trump-constitution-etats-unis-republique-fete-250",
           "theme": "geopolitics",
-          "time": "1h",
+          "time": "5h",
           "impact": "low",
           "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "UZEB en fusion : un documentaire sur les extraterrestres québécois du jazz",
+            "en": "UZEB en fusion : un documentaire sur les extraterrestres québécois du jazz"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2266710/uzeb-en-fusion-documentaire-50-ans-jazz",
+          "theme": "monetary",
+          "time": "5h",
+          "impact": "medium",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Taxpayers asked to foot the bill for another pipeline",
+            "en": "Taxpayers asked to foot the bill for another pipeline"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-carney-smith-alberta-bc-oil-pipeline/",
+          "theme": "energy",
+          "time": "13h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Réactions contrastées à l’annonce concernant un nouveau pipeline",
+            "en": "Réactions contrastées à l’annonce concernant un nouveau pipeline"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2266680/critiques-oleoduc-sud-colombie-britannique",
+          "theme": "energy",
+          "time": "19h",
+          "impact": "medium",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Canada joins NATO Innovation Fund, pending ally approval, sources say",
+            "en": "Canada joins NATO Innovation Fund, pending ally approval, sources say"
+          },
+          "url": "https://www.theglobeandmail.com/business/economy/article-canada-nato-innovation-fund-defence-spending/",
+          "theme": "geopolitics",
+          "time": "19h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "CPPIB invests $2.4-billion with Swedish fund EQT to build data centres",
+            "en": "CPPIB invests $2.4-billion with Swedish fund EQT to build data centres"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-cppib-invests-with-eqt-to-build-data-centres/",
+          "theme": "trade",
+          "time": "21h",
+          "impact": "high",
+          "source": "Globe and Mail"
         },
         {
           "title": {
@@ -98,7 +153,7 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-ai-home-listings-condo-sales-ndas-canadian-real-estate-news-july-3/",
           "theme": "tech",
-          "time": "1h",
+          "time": "1j",
           "impact": "low",
           "source": "Globe and Mail"
         },
@@ -109,64 +164,9 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-cibc-class-action-non-sufficient-funds-fees/",
           "theme": "trade",
-          "time": "4h",
+          "time": "1j",
           "impact": "low",
           "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Business Brief: Ottawa’s elusive AI startup",
-            "en": "Business Brief: Ottawa’s elusive AI startup"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-business-brief-ottawas-elusive-ai-startup/",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "With AI costs rising, companies are hiring experts to answer a crucial question: Is it worth it?",
-            "en": "With AI costs rising, companies are hiring experts to answer a crucial question: Is it worth it?"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-ai-costs-rising-companies-hiring-experts-is-it-worth-it/",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Inside the fastest-growing Canadian AI startup you’ve never heard of",
-            "en": "Inside the fastest-growing Canadian AI startup you’ve never heard of"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-turbopuffer-fastest-growing-canadian-ai-startup-never-heard-of/",
-          "theme": "tech",
-          "time": "5h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Voici comment Donald Trump a accumulé plus de 2 milliards depuis son retour au pouvoir",
-            "en": "Voici comment Donald Trump a accumulé plus de 2 milliards depuis son retour au pouvoir"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2266476/trump-revenus-2025-crypto-mar-a-lago",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "high",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Le phénomène climatique El Niño en cours devrait être de « forte » intensité, selon l’ONU",
-            "en": "Le phénomène climatique El Niño en cours devrait être de « forte » intensité, selon l’ONU"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2266601/el-nino-intensite-humidite-chaleur",
-          "theme": "tech",
-          "time": "9h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
         }
       ],
       "provincialAnalysis": {
@@ -531,7 +531,7 @@
           "value": 7483,
           "trend": "stable",
           "change": 0.0,
-          "period": "2026-07-03"
+          "period": "2026-07-04"
         }
       },
       "sparkline": {
@@ -561,12 +561,34 @@
       "headlines": [
         {
           "title": {
+            "fr": "American Express and Chase move luxury lounge wars beyond the airport",
+            "en": "American Express and Chase move luxury lounge wars beyond the airport"
+          },
+          "url": "https://www.cnbc.com/2026/07/03/amex-chase-credit-card-lounges.html",
+          "theme": "tech",
+          "time": "19h",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Instagram running ads promoting child sexual abuse material in India, BBC finds",
+            "en": "Instagram running ads promoting child sexual abuse material in India, BBC finds"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cvgm4e0316zo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "22h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
             "fr": "Burnham says there is some room for movement on tax",
             "en": "Burnham says there is some room for movement on tax"
           },
           "url": "https://www.bbc.co.uk/news/articles/c5yz9j7v0z6o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "1h",
+          "time": "1j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -577,19 +599,8 @@
           },
           "url": "https://www.cnbc.com/2026/07/03/trump-freedom-250-america250-corporate-sponsors-access.html",
           "theme": "monetary",
-          "time": "2h",
+          "time": "1j",
           "impact": "medium",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "American Express and Chase move luxury lounge wars beyond the airport",
-            "en": "American Express and Chase move luxury lounge wars beyond the airport"
-          },
-          "url": "https://www.cnbc.com/2026/07/03/amex-chase-credit-card-lounges.html",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "high",
           "source": "CNBC"
         },
         {
@@ -599,19 +610,8 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cq61j11r577o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "4h",
+          "time": "1j",
           "impact": "medium",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Instagram running ads promoting child sexual abuse material in India, BBC finds",
-            "en": "Instagram running ads promoting child sexual abuse material in India, BBC finds"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cvgm4e0316zo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "10h",
-          "impact": "low",
           "source": "BBC Business"
         },
         {
@@ -621,7 +621,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cj6gr0xkyr3o?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "15h",
+          "time": "1j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -632,7 +632,7 @@
           },
           "url": "https://www.cnbc.com/2026/07/02/jersey-mikes-files-for-ipo.html",
           "theme": "trade",
-          "time": "20h",
+          "time": "1j",
           "impact": "medium",
           "source": "CNBC"
         },
@@ -643,7 +643,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/c8x2y74wp9eo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "21h",
+          "time": "1j",
           "impact": "high",
           "source": "BBC Business"
         }
@@ -691,16 +691,16 @@
         "exchange": {
           "value": 6.781,
           "unit": "CNY/USD",
-          "trend": "down",
+          "trend": "up",
           "period": "2026-07-03",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
           "value": 4044,
-          "trend": "down",
-          "change": -1.67,
-          "period": "2026-07-03"
+          "trend": "up",
+          "change": 0.37,
+          "period": "2026-07-04"
         }
       },
       "sparkline": {
@@ -730,32 +730,32 @@
       "headlines": [
         {
           "title": {
-            "fr": "China’s satellite engine smashes record, leaves US rival far behind",
-            "en": "China’s satellite engine smashes record, leaves US rival far behind"
+            "fr": "Nobel-winning materials scientist Omar Yaghi joins China’s Tsinghua University from the US",
+            "en": "Nobel-winning materials scientist Omar Yaghi joins China’s Tsinghua University from the US"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3359363/chinas-satellite-engine-smashes-record-leaves-us-rival-far-behind?utm_source=rss_feed",
-          "theme": "geopolitics",
+          "url": "https://www.scmp.com/news/china/science/article/3359430/nobel-prize-winning-materials-scientist-omar-yaghi-joins-tsinghua-university-us?utm_source=rss_feed",
+          "theme": "tech",
           "time": "<1h",
-          "impact": "high",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Carlson’s split with Republicans to deepen rifts in US right, Chinese think tank says",
-            "en": "Carlson’s split with Republicans to deepen rifts in US right, Chinese think tank says"
+            "fr": "Renowned neurobiologist and former taekwondo captain Chih-Ying Su leaves US for China",
+            "en": "Renowned neurobiologist and former taekwondo captain Chih-Ying Su leaves US for China"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3359361/carlsons-split-republicans-deepen-rifts-us-right-chinese-think-tank-says?utm_source=rss_feed",
-          "theme": "geopolitics",
+          "url": "https://www.scmp.com/news/china/science/article/3359281/renowned-neurobiologist-and-former-taekwondo-captain-chih-ying-su-leaves-us-china?utm_source=rss_feed",
+          "theme": "tech",
           "time": "1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Many Chinese scientists use research funding to buy home appliances and skincare: study",
-            "en": "Many Chinese scientists use research funding to buy home appliances and skincare: study"
+            "fr": "Chinese scientists’ brain-mimicking chip ‘up to 478 times faster than Nvidia A100 GPU’",
+            "en": "Chinese scientists’ brain-mimicking chip ‘up to 478 times faster than Nvidia A100 GPU’"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3359292/many-chinese-scientists-use-research-funding-buy-home-appliances-and-skincare-study?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/science/article/3359408/chinese-scientists-brain-mimicking-chip-478-times-faster-nvidia-a100-gpu?utm_source=rss_feed",
           "theme": "tech",
           "time": "2h",
           "impact": "low",
@@ -763,56 +763,56 @@
         },
         {
           "title": {
-            "fr": "‘Machine warfare is coming’: US, China urged to address military AI as global rules stall",
-            "en": "‘Machine warfare is coming’: US, China urged to address military AI as global rules stall"
+            "fr": "Is it wiser for middle powers ‘not to take sides’ in face of US-China rivalry?",
+            "en": "Is it wiser for middle powers ‘not to take sides’ in face of US-China rivalry?"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3359277/machine-warfare-coming-us-china-urged-address-military-ai-global-rules-stall?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3359399/it-wiser-middle-powers-not-take-sides-face-us-china-rivalry?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "3h",
-          "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Chinese President Xi Jinping appoints new military anti-corruption chief",
-            "en": "Chinese President Xi Jinping appoints new military anti-corruption chief"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3359334/chinese-leader-promotes-2-generals-wake-military-anti-corruption-probe?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "4h",
+          "time": "2h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Will China’s Fujian be first carrier to carry anti-torpedo system to beat Western subs?",
-            "en": "Will China’s Fujian be first carrier to carry anti-torpedo system to beat Western subs?"
+            "fr": "China’s hukou system reforms: will local government reluctance fail migrant workers?",
+            "en": "China’s hukou system reforms: will local government reluctance fail migrant workers?"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3359331/will-chinas-fujian-be-first-carrier-carry-anti-torpedo-system-beat-western-subs?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/politics/article/3359359/will-reluctance-local-government-undermine-reforms-chinas-hukou-system?utm_source=rss_feed",
           "theme": "tech",
-          "time": "4h",
+          "time": "9h",
+          "impact": "medium",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Is ‘no Greenland seafood for China’ the US’ new security doctrine?",
+            "en": "Is ‘no Greenland seafood for China’ the US’ new security doctrine?"
+          },
+          "url": "https://www.scmp.com/opinion/world-opinion/article/3359109/no-greenland-seafood-china-us-new-security-doctrine?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "12h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Chinese police uncover link between investment and attacks on citizens in Africa",
-            "en": "Chinese police uncover link between investment and attacks on citizens in Africa"
+            "fr": "The US has failed to understand China",
+            "en": "The US has failed to understand China"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3359314/chinese-police-uncover-link-between-investment-and-attacks-citizens-africa?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "5h",
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3359270/us-has-failed-understand-china?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "16h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China sends warning to Japan and the Philippines over ‘wrongful’ maritime talks",
-            "en": "China sends warning to Japan and the Philippines over ‘wrongful’ maritime talks"
+            "fr": "China’s satellite engine smashes record, leaves US rival far behind",
+            "en": "China’s satellite engine smashes record, leaves US rival far behind"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3359264/china-sends-warning-japan-and-philippines-over-wrongful-maritime-talks?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/science/article/3359363/chinas-satellite-engine-smashes-record-leaves-us-rival-far-behind?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "8h",
+          "time": "23h",
           "impact": "high",
           "source": "SCMP"
         }
@@ -860,7 +860,7 @@
         "exchange": {
           "value": 95.21,
           "unit": "INR/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-07-03",
           "source": "Frankfurter/ECB"
         },
@@ -869,7 +869,7 @@
           "value": 77764,
           "trend": "up",
           "change": 0.34,
-          "period": "2026-07-03"
+          "period": "2026-07-04"
         }
       },
       "sparkline": {
@@ -888,7 +888,7 @@
           76913.5,
           74775.74,
           76478.67,
-          77502.12,
+          77763.91,
           77763.91
         ]
       },
@@ -899,10 +899,10 @@
       "headlines": [
         {
           "title": {
-            "fr": "India aims for $1 trn exports this fiscal year: Goyal",
-            "en": "India aims for $1 trn exports this fiscal year: Goyal"
+            "fr": "'India ties key': Albanese before Modi's July visit",
+            "en": "'India ties key': Albanese before Modi's July visit"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-aims-for-1-trillion-exports-this-fiscal-year-says-piyush-goyal/articleshow/132161149.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/india-ties-never-more-consequential-aussie-pm-albanese-ahead-of-modis-july-8-10-visit/articleshow/132180520.cms",
           "theme": "tech",
           "time": "2h",
           "impact": "low",
@@ -910,43 +910,43 @@
         },
         {
           "title": {
-            "fr": "China plans new corridor through B'desh, Myanmar",
-            "en": "China plans new corridor through B'desh, Myanmar"
+            "fr": "PM Modi inaugurates CG Semi chip plant in Guj",
+            "en": "PM Modi inaugurates CG Semi chip plant in Guj"
           },
-          "url": "https://economictimes.indiatimes.com/news/defence/china-plans-next-pakistan-like-cpec-corridor-in-indias-neighbourhood-this-time-it-runs-through-bangladesh-and-myanmar/articleshow/132159294.cms",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "IMD forecasts heavy rains in Mumbai on weekend",
-            "en": "IMD forecasts heavy rains in Mumbai on weekend"
-          },
-          "url": "https://economictimes.indiatimes.com/news/india/imd-forecasts-heavy-rains-in-mumbai-thane-on-weekend-issues-red-alert/articleshow/132159532.cms",
-          "theme": "tech",
-          "time": "3h",
+          "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/pm-modi-inaugurates-cg-semi-chip-plant-in-sanand-gujarat/articleshow/132178366.cms",
+          "theme": "monetary",
+          "time": "2h",
           "impact": "medium",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "ASMA seeks customs duty waiver on aluminium",
-            "en": "ASMA seeks customs duty waiver on aluminium"
+            "fr": "India's factory boom comes with a growing cyber bill",
+            "en": "India's factory boom comes with a growing cyber bill"
           },
-          "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/industry-body-asma-urges-government-to-waive-customs-duty-on-primary-aluminium-scrap/articleshow/132159470.cms",
-          "theme": "trade",
-          "time": "3h",
+          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/cyberattacks-on-tata-electronics-and-bajaj-auto-highlight-rising-cybersecurity-risks-for-indian-manufacturing-factories/articleshow/132180055.cms",
+          "theme": "tech",
+          "time": "2h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "India-Japan should not target third party: China",
-            "en": "India-Japan should not target third party: China"
+            "fr": "AI boom crowns engineers who don't write code",
+            "en": "AI boom crowns engineers who don't write code"
           },
-          "url": "https://economictimes.indiatimes.com/news/india/india-japan-ties-should-not-target-third-party-china-on-japanese-pm-sanae-takaichis-visit-to-delhi/articleshow/132159354.cms",
+          "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/ai-boom-lifts-salaries-of-mechanical-electrical-and-industrial-engineers-as-india-data-centre-hiring-surges/articleshow/132179940.cms",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Op Sindoor lifted trust in Indian arms: Rajnath",
+            "en": "Op Sindoor lifted trust in Indian arms: Rajnath"
+          },
+          "url": "https://economictimes.indiatimes.com/news/defence/after-operation-sindoor-trust-in-made-in-india-defence-platforms-got-enhanced-rajnath-singh/articleshow/132179287.cms",
           "theme": "tech",
           "time": "3h",
           "impact": "low",
@@ -954,35 +954,35 @@
         },
         {
           "title": {
-            "fr": "NCLT to admit case only if debt, default established",
-            "en": "NCLT to admit case only if debt, default established"
+            "fr": "Maharashtra Deputy CM Eknath Shinde hospitalised",
+            "en": "Maharashtra Deputy CM Eknath Shinde hospitalised"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/policy/nclt-to-admit-case-only-if-debt-default-established-insolvency-bankruptcy-amendment-act/articleshow/132159345.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/maharashtra-deputy-cm-shinde-hospitalised-in-thane/articleshow/132178748.cms",
           "theme": "trade",
-          "time": "3h",
+          "time": "4h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "India probes Tata leak that exposed Apple's secrets",
-            "en": "India probes Tata leak that exposed Apple's secrets"
+            "fr": "PM in Jakarta : India forming a strategic BrahMos belt",
+            "en": "PM in Jakarta : India forming a strategic BrahMos belt"
           },
-          "url": "https://economictimes.indiatimes.com/tech/technology/india-investigating-tata-electronics-data-leak-that-exposed-apple-secrets/articleshow/132157309.cms",
-          "theme": "tech",
+          "url": "https://economictimes.indiatimes.com/news/defence/modi-in-indonesia-india-forming-a-brahmos-belt-in-chinas-backyard/articleshow/132178165.cms",
+          "theme": "monetary",
+          "time": "4h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "FD rate up to 8.3% for senior citizens",
+            "en": "FD rate up to 8.3% for senior citizens"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/invest/fd-rate-up-to-8-3-for-senior-citizens-investing-for-three-years-know-list-of-banks/articleshow/132177794.cms",
+          "theme": "monetary",
           "time": "5h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Money lesson from millionaire who once had big debt",
-            "en": "Money lesson from millionaire who once had big debt"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/save/winning-at-money-is-80-behavior-and-20-wealth-quote-financial-lesson-from-millionaire-who-once-faced-4-million-bankruptcy/articleshow/132154572.cms",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
+          "impact": "medium",
           "source": "Economic Times"
         }
       ]
@@ -1038,7 +1038,7 @@
           "value": 156,
           "trend": "stable",
           "change": 0.02,
-          "period": "2026-07-03"
+          "period": "2026-07-04"
         }
       },
       "sparkline": {
@@ -1056,8 +1056,8 @@
           114.01,
           92.05,
           72.92,
-          71.8,
-          72.07
+          72.13,
+          72.13
         ]
       },
       "summary": {
@@ -1067,91 +1067,91 @@
       "headlines": [
         {
           "title": {
-            "fr": "Mourners pay respects as Iran’s slain leader Ali Khamenei lies in state",
-            "en": "Mourners pay respects as Iran’s slain leader Ali Khamenei lies in state"
+            "fr": "Ukraine hits major oil terminal in Russia's St Petersburg",
+            "en": "Ukraine hits major oil terminal in Russia's St Petersburg"
           },
-          "url": "https://www.aljazeera.com/news/2026/7/3/mourners-pay-respects-as-irans-slain-leader-ali-khamenei-laid-in-state?traffic_source=rss",
+          "url": "https://www.bbc.co.uk/news/articles/c8j2vmzxezro?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "2h",
+          "time": "<1h",
           "impact": "low",
-          "source": "Al Jazeera"
+          "source": "BBC World"
         },
         {
           "title": {
-            "fr": "What is Nayara, the Indian firm Russia is reportedly importing oil from?",
-            "en": "What is Nayara, the Indian firm Russia is reportedly importing oil from?"
+            "fr": "In South Asia, America has stopped asking India for permission",
+            "en": "In South Asia, America has stopped asking India for permission"
           },
-          "url": "https://www.aljazeera.com/news/2026/7/3/what-is-nayara-the-indian-firm-russia-is-reportedly-importing-oil-from?traffic_source=rss",
-          "theme": "trade",
+          "url": "https://www.aljazeera.com/opinions/2026/7/4/in-south-asia-america-has-stopped-asking-india-for-permission?traffic_source=rss",
+          "theme": "tech",
           "time": "3h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Israel approves plan to establish 13 new settlements in occupied West Bank",
-            "en": "Israel approves plan to establish 13 new settlements in occupied West Bank"
+            "fr": "Ukraine hits oil and military facilities near Russia’s St Petersburg",
+            "en": "Ukraine hits oil and military facilities near Russia’s St Petersburg"
           },
-          "url": "https://www.aljazeera.com/news/2026/7/3/israel-approves-plan-to-establish-13-new-settlements-in-occupied-west-bank?traffic_source=rss",
-          "theme": "trade",
-          "time": "4h",
+          "url": "https://www.aljazeera.com/news/2026/7/4/ukraine-hits-oil-and-military-facilities-near-russias-st-petersburg?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "3h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Iran begins public mourning for Ayatollah killed in February",
-            "en": "Iran begins public mourning for Ayatollah killed in February"
+            "fr": "Millions mourn Iran’s Ali Khamenei amid historic funeral procession",
+            "en": "Millions mourn Iran’s Ali Khamenei amid historic funeral procession"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cx2k4k7jqeno?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.aljazeera.com/gallery/2026/7/4/millions-mourn-irans-ali-khamenei-amid-historic-funeral-procession?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "5h",
+          "time": "3h",
           "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Russia claims it captured the strategic key Ukrainian city of Kostiantynivk",
+            "en": "Russia claims it captured the strategic key Ukrainian city of Kostiantynivk"
+          },
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/4/russia-claims-it-captured-the-strategic-key-ukrainian-city-of-kostiantynivk?traffic_source=rss",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "medium",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "In pictures: Stars and fans celebrate Taylor Swift and Travis Kelce's wedding",
+            "en": "In pictures: Stars and fans celebrate Taylor Swift and Travis Kelce's wedding"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c7vyqgy4r5lo?at_medium=RSS&at_campaign=rss",
+          "theme": "monetary",
+          "time": "5h",
+          "impact": "medium",
           "source": "BBC World"
         },
         {
           "title": {
-            "fr": "$500m for Trump, access for Pakistan: How a crypto-diplomatic bet paid off",
-            "en": "$500m for Trump, access for Pakistan: How a crypto-diplomatic bet paid off"
+            "fr": "Cape Verde fans celebrate history despite loss",
+            "en": "Cape Verde fans celebrate history despite loss"
           },
-          "url": "https://www.aljazeera.com/news/2026/7/3/500m-for-trump-access-for-pakistan-how-a-crypto-diplomatic-bet-paid-off?traffic_source=rss",
-          "theme": "tech",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/4/cape-verde-fans-celebrate-history-despite-loss?traffic_source=rss",
+          "theme": "monetary",
           "time": "5h",
-          "impact": "low",
+          "impact": "medium",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "EU lawmaker investigating surveillance hacked by Israeli spyware, report says",
-            "en": "EU lawmaker investigating surveillance hacked by Israeli spyware, report says"
+            "fr": "Trump praises army, rails against communism in US 250th anniversary speech",
+            "en": "Trump praises army, rails against communism in US 250th anniversary speech"
           },
-          "url": "https://www.aljazeera.com/economy/2026/7/3/eu-lawmaker-investigating-surveillance-hacked-by-israeli-spyware-report-says?traffic_source=rss",
-          "theme": "geopolitics",
+          "url": "https://www.aljazeera.com/news/2026/7/4/trump-praises-army-rails-against-communism-in-us-250th-anniversary-speech?traffic_source=rss",
+          "theme": "tech",
           "time": "6h",
-          "impact": "high",
+          "impact": "low",
           "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Instagram running ads promoting child sexual abuse material in India, BBC finds",
-            "en": "Instagram running ads promoting child sexual abuse material in India, BBC finds"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cvgm4e0316zo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "10h",
-          "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "On the Strait of Hormuz, BBC finds seized ships and shark fishermen as uneasy calm returns",
-            "en": "On the Strait of Hormuz, BBC finds seized ships and shark fishermen as uneasy calm returns"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cvg53ngvvpxo?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "15h",
-          "impact": "low",
-          "source": "BBC World"
         }
       ]
     }
