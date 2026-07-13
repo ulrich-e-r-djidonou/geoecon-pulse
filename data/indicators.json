@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-12",
+  "lastUpdated": "2026-07-13",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.415,
+          "value": 1.413,
           "unit": "CAD/USD",
-          "trend": "up",
-          "period": "2026-07-10",
+          "trend": "down",
+          "period": "2026-07-13",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35305,
-          "trend": "up",
-          "change": 0.3,
-          "period": "2026-07-12"
+          "value": 35269,
+          "trend": "stable",
+          "change": -0.1,
+          "period": "2026-07-13"
         }
       },
       "sparkline": {
@@ -82,89 +82,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Décès du sénateur Lindsey Graham, allié de Trump, défenseur d’Israël et de l’Ukraine",
-            "en": "Décès du sénateur Lindsey Graham, allié de Trump, défenseur d’Israël et de l’Ukraine"
+            "fr": "Greenfire Resources to buy Connacher for $1.27-billion",
+            "en": "Greenfire Resources to buy Connacher for $1.27-billion"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2268554/deces-senateur-lindsey-graham-trump",
-          "theme": "geopolitics",
+          "url": "https://www.theglobeandmail.com/business/article-greenfire-resources-to-buy-connacher/",
+          "theme": "trade",
+          "time": "<1h",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Leading researchers, economists warn of AI’s effect on the global economy",
+            "en": "Leading researchers, economists warn of AI’s effect on the global economy"
+          },
+          "url": "https://www.theglobeandmail.com/business/international-business/article-researchers-and-economists-warn-of-ais-effect-on-the-global-economy/",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Remote work, not AI, contributing most to challenging youth job market, study shows",
+            "en": "Remote work, not AI, contributing most to challenging youth job market, study shows"
+          },
+          "url": "https://www.theglobeandmail.com/business/careers/management/article-remote-work-not-ai-contributing-most-to-challenging-youth-job-market/",
+          "theme": "trade",
           "time": "1h",
           "impact": "low",
-          "source": "Radio-Canada Économie"
+          "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Reprise des hostilités entre Américains et Iraniens, fermeture du détroit d’Ormuz",
-            "en": "Reprise des hostilités entre Américains et Iraniens, fermeture du détroit d’Ormuz"
+            "fr": "Iran-États-Unis : frappes les plus massives depuis la trêve d’avril, le pétrole en hausse",
+            "en": "Iran-États-Unis : frappes les plus massives depuis la trêve d’avril, le pétrole en hausse"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2268425/teheran-washington-reprise-mediation-frappe",
+          "url": "https://ici.radio-canada.ca/nouvelle/2268686/iran-etats-unis-frappes-petrole-golfe",
           "theme": "energy",
           "time": "2h",
-          "impact": "medium",
+          "impact": "high",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "Sanctions américaines visant une juge de la CPI : Ottawa garde le silence",
-            "en": "Sanctions américaines visant une juge de la CPI : Ottawa garde le silence"
+            "fr": "Air Canada reaches tentative agreement with union representing 11,000 technical, logistics staff",
+            "en": "Air Canada reaches tentative agreement with union representing 11,000 technical, logistics staff"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2268439/ottawa-sanctions-americaines-juge-prost",
+          "url": "https://www.theglobeandmail.com/business/article-air-canada-tentative-agreement-union-technical-logistics-staff/",
           "theme": "tech",
-          "time": "21h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Carney chooses German submarines, Meta’s $13-billion Alberta data centre and revenge of the TSX: Must-read business and investing stories",
-            "en": "Carney chooses German submarines, Meta’s $13-billion Alberta data centre and revenge of the TSX: Must-read business and investing stories"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-carney-tkms-germany-meta-ai-data-centre-tsx-july-11/",
-          "theme": "tech",
-          "time": "1j",
-          "impact": "high",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "OMERS takes nine-figure loss as TouchBistro sold to Constellation Software for $100-million",
-            "en": "OMERS takes nine-figure loss as TouchBistro sold to Constellation Software for $100-million"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-omers-takes-nine-figure-loss-as-touchbistro-sold-to-constellation/",
-          "theme": "tech",
-          "time": "1j",
-          "impact": "high",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Can Carney’s big military spending save Canada’s economy? (Or should it?)",
-            "en": "Can Carney’s big military spending save Canada’s economy? (Or should it?)"
-          },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-will-defence-spending-juice-our-economy-its-the-last-question-we/",
-          "theme": "geopolitics",
-          "time": "1j",
+          "time": "2h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Youth job market brightens in summer after prolonged slump",
-            "en": "Youth job market brightens in summer after prolonged slump"
+            "fr": "Why chip stocks are headed for more volatility after hitting a rough patch",
+            "en": "Why chip stocks are headed for more volatility after hitting a rough patch"
           },
-          "url": "https://www.theglobeandmail.com/business/article-youth-job-market-brightens-in-summer-after-prolonged-slump/",
+          "url": "https://www.theglobeandmail.com/investing/article-chip-stocks-volatility-rough-patch/",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Volkswagen’s plan to cut 100,000 jobs confirmed in memo from CEO",
+            "en": "Volkswagen’s plan to cut 100,000 jobs confirmed in memo from CEO"
+          },
+          "url": "https://www.theglobeandmail.com/business/international-business/article-volkswagen-memo-50000-more-job-cuts-competitive-gap/",
           "theme": "trade",
-          "time": "1j",
+          "time": "3h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Apple sues OpenAI, two former employees for trade secrets theft",
-            "en": "Apple sues OpenAI, two former employees for trade secrets theft"
+            "fr": "Alberta launches regulated iGaming market, opening the doors to online gambling operators",
+            "en": "Alberta launches regulated iGaming market, opening the doors to online gambling operators"
           },
-          "url": "https://www.theglobeandmail.com/business/article-apple-sues-openai-two-former-employees-for-trade-secrets-theft/",
+          "url": "https://www.theglobeandmail.com/canada/article-regulated-igaming-market-launches-in-alberta/",
           "theme": "trade",
-          "time": "1j",
+          "time": "3h",
           "impact": "low",
           "source": "Globe and Mail"
         }
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7575,
-          "trend": "up",
-          "change": 0.42,
-          "period": "2026-07-12"
+          "value": 7543,
+          "trend": "down",
+          "change": -0.43,
+          "period": "2026-07-13"
         }
       },
       "sparkline": {
@@ -551,7 +551,7 @@
           7580.06,
           7499.36,
           7575.39,
-          7575.39
+          7543.42
         ]
       },
       "summary": {
@@ -561,12 +561,34 @@
       "headlines": [
         {
           "title": {
+            "fr": "Big banks poised to report booming revenue propelled by SpaceX IPO, Iran war volatility",
+            "en": "Big banks poised to report booming revenue propelled by SpaceX IPO, Iran war volatility"
+          },
+          "url": "https://www.cnbc.com/2026/07/13/bank-earnings-jpmorgan-chase-goldman-sachs-bank-of-america.html",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "How to change bank, energy or broadband provider and save money",
+            "en": "How to change bank, energy or broadband provider and save money"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cd7w98n2y3eo?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "15h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
             "fr": "How Aldi is taking on US supermarkets with its $4 almond butter",
             "en": "How Aldi is taking on US supermarkets with its $4 almond butter"
           },
           "url": "https://www.bbc.co.uk/news/articles/cly0l5d5xn7o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "8h",
+          "time": "1j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -577,7 +599,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/ckg55v9e2y9o?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
-          "time": "1j",
+          "time": "2j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -588,7 +610,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/c0mye0d1297o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "1j",
+          "time": "2j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -599,7 +621,7 @@
           },
           "url": "https://www.cnbc.com/2026/07/09/florida-airport-palm-beach-internationa-donald-j-trump.html",
           "theme": "tech",
-          "time": "2j",
+          "time": "3j",
           "impact": "low",
           "source": "CNBC"
         },
@@ -610,7 +632,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/c932ed8nv75o?at_medium=RSS&at_campaign=rss",
           "theme": "monetary",
-          "time": "2j",
+          "time": "3j",
           "impact": "medium",
           "source": "BBC Business"
         },
@@ -621,30 +643,8 @@
           },
           "url": "https://www.cnbc.com/2026/07/09/goldman-sachs-asset-management-deals-verizon-lockheed-martin.html",
           "theme": "trade",
-          "time": "2j",
+          "time": "3j",
           "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Big fall in oil, gas and cargo ships taking US-backed Hormuz route after new strikes",
-            "en": "Big fall in oil, gas and cargo ships taking US-backed Hormuz route after new strikes"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c621k5r8764o?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "2j",
-          "impact": "medium",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "PepsiCo earnings miss estimates as U.S. consumers tighten their budgets",
-            "en": "PepsiCo earnings miss estimates as U.S. consumers tighten their budgets"
-          },
-          "url": "https://www.cnbc.com/2026/07/09/pepsico-pep-q2-2026-earnings.html",
-          "theme": "trade",
-          "time": "2j",
-          "impact": "low",
           "source": "CNBC"
         }
       ]
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.774,
+          "value": 6.778,
           "unit": "CNY/USD",
           "trend": "up",
-          "period": "2026-07-10",
+          "period": "2026-07-13",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 3996,
+          "value": 3914,
           "trend": "down",
-          "change": -1.0,
-          "period": "2026-07-12"
+          "change": -2.06,
+          "period": "2026-07-13"
         }
       },
       "sparkline": {
@@ -730,90 +730,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "For a China on the rise, soft power is vital",
-            "en": "For a China on the rise, soft power is vital"
+            "fr": "Pan Jianwei becomes first Chinese scientist to win the top UN basic science prize",
+            "en": "Pan Jianwei becomes first Chinese scientist to win the top UN basic science prize"
           },
-          "url": "https://www.scmp.com/opinion/china-opinion/article/3360029/china-rise-soft-power-vital?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "medium",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Could China’s lunar laser tower bring Nikola Tesla’s free energy dream to life?",
-            "en": "Could China’s lunar laser tower bring Nikola Tesla’s free energy dream to life?"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3359998/could-chinas-lunar-laser-tower-bring-nikola-teslas-free-energy-dream-life?utm_source=rss_feed",
-          "theme": "energy",
-          "time": "1h",
+          "url": "https://www.scmp.com/news/china/science/article/3360374/pan-jianwei-becomes-first-chinese-scientist-win-top-un-basic-science-prize?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "<1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Why China’s ethnic unity law marks shift in policy towards assimilation",
-            "en": "Why China’s ethnic unity law marks shift in policy towards assimilation"
+            "fr": "What China’s carrier recruitment drive says about PLA Navy’s long-term ambitions",
+            "en": "What China’s carrier recruitment drive says about PLA Navy’s long-term ambitions"
           },
-          "url": "https://www.scmp.com/news/china/politics/article/3360274/why-chinas-ethnic-unity-law-marks-shift-policy-towards-assimilation?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3360371/what-chinas-carrier-recruitment-drive-says-about-pla-navys-long-term-ambitions?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "3h",
-          "impact": "high",
+          "time": "2h",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Beijing hits out as US-led coalition marks 10th anniversary of South China Sea ruling",
-            "en": "Beijing hits out as US-led coalition marks 10th anniversary of South China Sea ruling"
+            "fr": "China rejects US, Panamanian claims of ‘weaponising’ ship inspections",
+            "en": "China rejects US, Panamanian claims of ‘weaponising’ ship inspections"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3360275/beijing-renews-attacks-landmark-south-china-sea-tribunal-rulings-10th-anniversary?utm_source=rss_feed",
-          "theme": "energy",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3360406/china-rejects-us-panamanian-claims-weaponising-ship-inspections?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Japan’s ‘destructive potential’ in South China Sea may eclipse the US: analyst",
+            "en": "Japan’s ‘destructive potential’ in South China Sea may eclipse the US: analyst"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3360362/japan-may-have-greater-destructive-potential-south-china-sea-us?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China’s drug industry pivots to AI-powered candidates to drive next wave of deals",
+            "en": "China’s drug industry pivots to AI-powered candidates to drive next wave of deals"
+          },
+          "url": "https://www.scmp.com/business/china-business/article/3360395/chinas-drug-industry-pivots-ai-powered-candidates-drive-next-wave-deals?utm_source=rss_feed",
+          "theme": "tech",
           "time": "4h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "How Chinese investors are supercharging Africa’s multibillion-dollar e-bike boom",
-            "en": "How Chinese investors are supercharging Africa’s multibillion-dollar e-bike boom"
+            "fr": "China to make car connectivity mandatory as US moves to tighten ban",
+            "en": "China to make car connectivity mandatory as US moves to tighten ban"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3360221/how-chinese-investors-are-supercharging-africas-multibillion-dollar-e-bike-boom?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/science/article/3360320/china-make-car-connectivity-mandatory-us-moves-tighten-ban?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "4h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China joins US in reusable orbital rocket capability",
+            "en": "China joins US in reusable orbital rocket capability"
+          },
+          "url": "https://www.scmp.com/plus/news/china/science/article/3360369/china-joins-us-reusable-orbital-rocket-capability?utm_source=rss_feed",
           "theme": "monetary",
           "time": "5h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Is China’s massive island-building push at Antelope Reef nearing the finish line?",
+            "en": "Is China’s massive island-building push at Antelope Reef nearing the finish line?"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3360368/chinas-massive-island-building-push-antelope-reef-nearing-finish-line?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "5h",
           "impact": "high",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Flights and rail services resume across eastern China as Typhoon Bavi weakens",
-            "en": "Flights and rail services resume across eastern China as Typhoon Bavi weakens"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3360257/thousands-flights-cancelled-typhoon-bavi-hits-eastern-china-bringing-heavy-rains?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "10h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Reading the Sino-US rivalry: how a quiet literary relationship has shaped views on China",
-            "en": "Reading the Sino-US rivalry: how a quiet literary relationship has shaped views on China"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3360151/reading-sino-us-rivalry-how-quiet-literary-relationship-has-shaped-views-china?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "15h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Formal China-US G2 framework key to ‘guarantee’ world peace: top Beijing adviser",
-            "en": "Formal China-US G2 framework key to ‘guarantee’ world peace: top Beijing adviser"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3360235/formal-china-us-g2-framework-key-guarantee-world-peace-top-beijing-adviser?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "23h",
-          "impact": "low",
           "source": "SCMP"
         }
       ]
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 95.34,
+          "value": 95.62,
           "unit": "INR/USD",
-          "trend": "stable",
-          "period": "2026-07-10",
+          "trend": "up",
+          "period": "2026-07-13",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 77569,
-          "trend": "up",
-          "change": 1.08,
-          "period": "2026-07-12"
+          "value": 77616,
+          "trend": "stable",
+          "change": 0.06,
+          "period": "2026-07-13"
         }
       },
       "sparkline": {
@@ -889,7 +889,7 @@
           74775.74,
           76478.67,
           77569.39,
-          77569.39
+          77616.4
         ]
       },
       "summary": {
@@ -899,21 +899,54 @@
       "headlines": [
         {
           "title": {
-            "fr": "'Era of one-sided deals over': Iran warns US",
-            "en": "'Era of one-sided deals over': Iran warns US"
+            "fr": "How Michigan teen built a $1 billion AI startup",
+            "en": "How Michigan teen built a $1 billion AI startup"
           },
-          "url": "https://economictimes.indiatimes.com/news/defence/era-of-one-sided-deals-over-iran-parl-speaker-ghalibaf-warns-us-after-trade-of-strikes-in-strait-of-hormuz/articleshow/132344913.cms",
-          "theme": "geopolitics",
-          "time": "2h",
+          "url": "https://economictimes.indiatimes.com/news/new-updates/apurva-shrivastava-learned-one-lesson-at-his-familys-michigan-business-now-its-a-1-billion-ai-startup/articleshow/132369076.cms",
+          "theme": "tech",
+          "time": "<1h",
           "impact": "high",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Learned python at 9, built AI startup at 12",
-            "en": "Learned python at 9, built AI startup at 12"
+            "fr": "Warm oceans shrinking marine life, shows study",
+            "en": "Warm oceans shrinking marine life, shows study"
           },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/meet-mana-jampala-the-12-year-old-who-learned-python-at-age-9-and-built-voxa-an-ai-startup-helping-businesses-in-multiple-countries-avoid-missed-calls-and-customers/articleshow/132344215.cms",
+          "url": "https://economictimes.indiatimes.com/news/new-updates/450-million-year-fossil-record-reveals-warming-seas-are-shrinking-marine-animals-again-scientists-sound-alarm/articleshow/132368451.cms",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "On Lindsey Graham's death, Iran's ‘hell’ warning",
+            "en": "On Lindsey Graham's death, Iran's ‘hell’ warning"
+          },
+          "url": "https://economictimes.indiatimes.com/news/new-updates/lindsey-graham-death-dominates-iranian-newspapers-front-pages-with-being-sent-to-hell-remark-and-get-ready-for-sudden-death-warning-for-trump-netanyahu-and-others/articleshow/132368000.cms",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "HCLTech to invest Rs 3,500 cr in data centre biz",
+            "en": "HCLTech to invest Rs 3,500 cr in data centre biz"
+          },
+          "url": "https://economictimes.indiatimes.com/tech/information-tech/hcltech-to-invest-rs-3500-crore-in-data-centre-business/articleshow/132367912.cms",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "India crush England in historic Lord's Test",
+            "en": "India crush England in historic Lord's Test"
+          },
+          "url": "https://economictimes.indiatimes.com/news/sports/cricket/india-outplay-england-to-win-historic-lords-test-by-270-runs/articleshow/132366224.cms",
           "theme": "tech",
           "time": "2h",
           "impact": "low",
@@ -921,67 +954,34 @@
         },
         {
           "title": {
-            "fr": "Sri Lanka new hotspot for Indian weddings in 2025",
-            "en": "Sri Lanka new hotspot for Indian weddings in 2025"
+            "fr": "Prashant Kishor submits Bankipur bypoll nomination",
+            "en": "Prashant Kishor submits Bankipur bypoll nomination"
           },
-          "url": "https://economictimes.indiatimes.com/nri/latest-updates/sri-lanka-new-hotspot-for-indian-weddings-in-2025-industry-sees-limited-wasia-crisis-impact-in-2026/articleshow/132344022.cms",
-          "theme": "tech",
-          "time": "3h",
+          "url": "https://economictimes.indiatimes.com/news/politics-and-nation/prashant-kishor-files-nomination-for-bankipur-bypoll-takes-on-bjps-neeraj-kumar-sinha/articleshow/132363085.cms",
+          "theme": "trade",
+          "time": "4h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Professor exposes massive AI cheating exam scandal",
-            "en": "Professor exposes massive AI cheating exam scandal"
+            "fr": "Goyal denies 'false, baseless' US trade deal claims",
+            "en": "Goyal denies 'false, baseless' US trade deal claims"
           },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/blind-brown-university-professor-roberto-serrano-exposes-massive-ai-cheating-scandal-after-students-scores-plunge-from-100-to-48-calls-ai-tsunami-for-all-of-us/articleshow/132343853.cms",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "high",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "India condemns attack on vessel off Oman coast",
-            "en": "India condemns attack on vessel off Oman coast"
-          },
-          "url": "https://economictimes.indiatimes.com/news/india/india-condemns-attack-on-commercial-vessel-off-oman-coast-10-indians-rescued-one-missing/articleshow/132341690.cms",
-          "theme": "tech",
-          "time": "7h",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/false-baseless-piyush-goyal-pushes-back-on-india-us-trade-deal-claims/articleshow/132362925.cms",
+          "theme": "trade",
+          "time": "5h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "2,300-year-old beer found in China tomb",
-            "en": "2,300-year-old beer found in China tomb"
+            "fr": "Tax exemption limits for many allowances",
+            "en": "Tax exemption limits for many allowances"
           },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/archaeologists-opened-a-2300-year-old-bronze-bottle-in-chinait-still-contained-beer-with-more-than-2400-compounds-revealing-a-recipe-never-recorded-in-historical-texts/articleshow/132341381.cms",
-          "theme": "geopolitics",
-          "time": "7h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Indian Bank to recover Rs 5,500 from bad loans",
-            "en": "Indian Bank to recover Rs 5,500 from bad loans"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/indian-bank-aims-to-recover-rs-5500-from-bad-loans-during-fy27-md-binod-kumar/articleshow/132341143.cms",
-          "theme": "tech",
-          "time": "8h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "ONGC moves closer to India's first geothermal plant",
-            "en": "ONGC moves closer to India's first geothermal plant"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/renewables/ongc-moves-closer-to-indias-first-geothermal-plant/articleshow/132340831.cms",
-          "theme": "tech",
-          "time": "8h",
+          "url": "https://economictimes.indiatimes.com/wealth/tax/income-tax-guide-allowance-and-reimbursement-exemption-limits-every-salaried-employee-should-know/articleshow/132361905.cms",
+          "theme": "trade",
+          "time": "5h",
           "impact": "low",
           "source": "Economic Times"
         }
@@ -1035,10 +1035,10 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 158,
-          "trend": "up",
-          "change": 0.42,
-          "period": "2026-07-12"
+          "value": 157,
+          "trend": "down",
+          "change": -0.71,
+          "period": "2026-07-13"
         }
       },
       "sparkline": {
@@ -1057,7 +1057,7 @@
           92.05,
           72.92,
           76.01,
-          76.01
+          79.26
         ]
       },
       "summary": {
@@ -1067,91 +1067,91 @@
       "headlines": [
         {
           "title": {
-            "fr": "US senator and close Trump ally Lindsey Graham dies after 'brief and sudden illness'",
-            "en": "US senator and close Trump ally Lindsey Graham dies after 'brief and sudden illness'"
+            "fr": "Trump says US will become ‘guardian’ of Strait of Hormuz and collect tolls",
+            "en": "Trump says US will become ‘guardian’ of Strait of Hormuz and collect tolls"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cvgj25j6nmeo?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
+          "url": "https://www.aljazeera.com/news/2026/7/13/trump-says-us-will-become-guardian-of-strait-of-hormuz-and-collect-tolls?traffic_source=rss",
+          "theme": "energy",
           "time": "<1h",
           "impact": "low",
-          "source": "BBC World"
+          "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Iran attacks five Gulf nations, shuts Hormuz after US bombing: All to know",
-            "en": "Iran attacks five Gulf nations, shuts Hormuz after US bombing: All to know"
+            "fr": "What is the EU’s plan to cut trade with illegal Israeli settlements?",
+            "en": "What is the EU’s plan to cut trade with illegal Israeli settlements?"
           },
-          "url": "https://www.aljazeera.com/news/2026/7/12/iran-attacks-five-gulf-nations-shuts-hormuz-after-us-bombing-all-to-know?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/7/13/what-is-the-eus-plan-to-cut-trade-with-illegal-israeli-settlements?traffic_source=rss",
+          "theme": "trade",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "EU sanctions nine people over alleged Russian cyber-spying campaign",
+            "en": "EU sanctions nine people over alleged Russian cyber-spying campaign"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/13/eu-sanctions-nine-people-over-alleged-russian-cyber-spying-campaign?traffic_source=rss",
+          "theme": "tech",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Hamas denies UN accusations over Gaza aid distribution interference",
+            "en": "Hamas denies UN accusations over Gaza aid distribution interference"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/13/hamas-denies-un-accusations-over-gaza-aid-distribution-interference?traffic_source=rss",
           "theme": "energy",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "What will happen to Trump’s agenda after Lindsey Graham’s death?",
+            "en": "What will happen to Trump’s agenda after Lindsey Graham’s death?"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/13/what-will-happen-to-trumps-agenda-after-lindsey-grahams-death?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "March to July: What’s different as US-Iran fighting escalates again?",
+            "en": "March to July: What’s different as US-Iran fighting escalates again?"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/13/march-to-july-whats-different-as-us-iran-fighting-escalates-again?traffic_source=rss",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "EU countries consider sanctions on trade from illegal Israeli settlements",
+            "en": "EU countries consider sanctions on trade from illegal Israeli settlements"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/13/eu-countries-consider-sanctions-on-trade-from-illegal-israeli-settlements?traffic_source=rss",
+          "theme": "trade",
           "time": "4h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "US CENTCOM completes third round of strikes on Iran",
-            "en": "US CENTCOM completes third round of strikes on Iran"
+            "fr": "Wildfire raging south of Paris could have been set deliberately, says minister",
+            "en": "Wildfire raging south of Paris could have been set deliberately, says minister"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/us-centcom-completes-third-round-of-strikes-on-iran?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Missiles and drones fired at Gulf states after night of US strikes on Iran",
-            "en": "Missiles and drones fired at Gulf states after night of US strikes on Iran"
-          },
-          "url": "https://www.aljazeera.com/news/2026/7/12/missiles-and-drones-fired-at-gulf-states-after-night-of-us-strikes-on-iran?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "China evacuates nearly two million people as powerful typhoon makes landfall",
-            "en": "China evacuates nearly two million people as powerful typhoon makes landfall"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cdxd3wkp2rzo?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "6h",
+          "url": "https://www.bbc.co.uk/news/articles/clye4z168edo?at_medium=RSS&at_campaign=rss",
+          "theme": "monetary",
+          "time": "4h",
           "impact": "medium",
           "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "US launches fresh strikes as Iran closes Strait of Hormuz",
-            "en": "US launches fresh strikes as Iran closes Strait of Hormuz"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "6h",
-          "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "US forces launch new strikes on Iran; Tehran closes Strait of Hormuz",
-            "en": "US forces launch new strikes on Iran; Tehran closes Strait of Hormuz"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/us-forces-launch-new-strikes-on-iran-tehran-closes-strait-of-hormuz?traffic_source=rss",
-          "theme": "energy",
-          "time": "8h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Why doesn’t Indian PM Modi hold unscripted press conferences?",
-            "en": "Why doesn’t Indian PM Modi hold unscripted press conferences?"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/why-doesnt-indian-pm-modi-hold-unscripted-press-conferences?traffic_source=rss",
-          "theme": "tech",
-          "time": "8h",
-          "impact": "low",
-          "source": "Al Jazeera"
         }
       ]
     }
