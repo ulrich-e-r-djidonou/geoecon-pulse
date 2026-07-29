@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28",
+  "lastUpdated": "2026-07-29",
   "regions": {
     "CA": {
       "name": {
@@ -43,16 +43,16 @@
         "exchange": {
           "value": 1.411,
           "unit": "CAD/USD",
-          "trend": "up",
-          "period": "2026-07-28",
+          "trend": "down",
+          "period": "2026-07-29",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35544,
-          "trend": "stable",
-          "change": -0.07,
-          "period": "2026-07-28"
+          "value": 35445,
+          "trend": "down",
+          "change": -0.85,
+          "period": "2026-07-29"
         }
       },
       "sparkline": {
@@ -82,65 +82,76 @@
       "headlines": [
         {
           "title": {
-            "fr": "Séisme au Japon : un mort et de « nombreuses personnes » piégées dans un centre commercial",
-            "en": "Séisme au Japon : un mort et de « nombreuses personnes » piégées dans un centre commercial"
+            "fr": "Federal government to spend $1.6-billion to replace Via Rail locomotive fleet",
+            "en": "Federal government to spend $1.6-billion to replace Via Rail locomotive fleet"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2271963/seisme-magnitude-7-blesses-japon-tremblement-terre",
+          "url": "https://www.theglobeandmail.com/canada/article-government-spend-via-rail/",
           "theme": "tech",
           "time": "<1h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "U.S. goods trade deficit narrows in June as imports decline",
-            "en": "U.S. goods trade deficit narrows in June as imports decline"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-us-good-trade-deficit-narrows-in-june-during-decline-in-imports/",
-          "theme": "trade",
-          "time": "1h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Gulf states back plan to let Iran collect voluntary fees to use Strait of Hormuz",
-            "en": "Gulf states back plan to let Iran collect voluntary fees to use Strait of Hormuz"
-          },
-          "url": "https://www.theglobeandmail.com/world/article-us-iran-war-strait-of-hormuz-3/",
-          "theme": "energy",
-          "time": "2h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "UPS raises annual revenue forecast after strong quarter, concluding pullback on Amazon volumes",
-            "en": "UPS raises annual revenue forecast after strong quarter, concluding pullback on Amazon volumes"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-ups-raises-annual-revenue-forecast-after-strong-quarter-concluding/",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "medium",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "How much would it take to turn around Canada’s economic malaise? Its $5-trillion",
-            "en": "How much would it take to turn around Canada’s economic malaise? Its $5-trillion"
-          },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-canada-housing-economic-malaise-investment-productivity/",
-          "theme": "tech",
-          "time": "3h",
           "impact": "high",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Trump is ending the American century with a bang, and a whimper",
-            "en": "Trump is ending the American century with a bang, and a whimper"
+            "fr": "Allied Gold’s planned $5.5-billion sale to China’s Zijin collapses",
+            "en": "Allied Gold’s planned $5.5-billion sale to China’s Zijin collapses"
           },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-trump-is-ending-the-american-century-with-a-bang-and-a-whimper/",
+          "url": "https://www.theglobeandmail.com/business/article-allied-golds-planned-55-billion-sale-to-chinas-zijin-collapses/",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Toronto startup Terminal raises $20-million to become the ‘Switzerland’ of telematics trade",
+            "en": "Toronto startup Terminal raises $20-million to become the ‘Switzerland’ of telematics trade"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-toronto-startup-terminal-raises-20-million-telematics-trade/",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Levée de boucliers contre la FIFA, sommée de renoncer aux investissements privés",
+            "en": "Levée de boucliers contre la FIFA, sommée de renoncer aux investissements privés"
+          },
+          "url": "https://ici.radio-canada.ca/sports/2272199/fifa-reactions-investisseurs-prives",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "House committee to discuss Gordie Howe bridge deal amid questions on revenue-sharing with U.S.",
+            "en": "House committee to discuss Gordie Howe bridge deal amid questions on revenue-sharing with U.S."
+          },
+          "url": "https://www.theglobeandmail.com/canada/article-house-committee-gordie-howe-bridge-deal-us/",
+          "theme": "trade",
+          "time": "3h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Cenovus raises annual production outlook on strong oil sands performance",
+            "en": "Cenovus raises annual production outlook on strong oil sands performance"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-cenovus-raises-annual-production-outlook-on-strong-oil-sands/",
+          "theme": "energy",
+          "time": "3h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Fighting escalates in Gulf as U.S. and Saudis strike Iran’s allies in Iraq",
+            "en": "Fighting escalates in Gulf as U.S. and Saudis strike Iran’s allies in Iraq"
+          },
+          "url": "https://www.theglobeandmail.com/world/article-us-saudi-arabia-iran-iraq/",
           "theme": "geopolitics",
           "time": "4h",
           "impact": "low",
@@ -148,23 +159,12 @@
         },
         {
           "title": {
-            "fr": "Plus de 50 faux Morrisseau retirés du marché, ses enfants de nouveau mis en cause",
-            "en": "Plus de 50 faux Morrisseau retirés du marché, ses enfants de nouveau mis en cause"
+            "fr": "L’armée américaine annonce avoir intercepté des missiles lancés par l’Iran",
+            "en": "L’armée américaine annonce avoir intercepté des missiles lancés par l’Iran"
           },
-          "url": "https://ici.radio-canada.ca/espaces-autochtones/2271909/norval-morrisseau-tableaux-peintre",
-          "theme": "trade",
-          "time": "6h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Hydro-Québec pourrait effacer les dettes dans les communautés autochtones",
-            "en": "Hydro-Québec pourrait effacer les dettes dans les communautés autochtones"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2271932/hydro-quebec-factures-premieres-nations-dette",
-          "theme": "tech",
-          "time": "6h",
+          "url": "https://ici.radio-canada.ca/nouvelle/2272185/nouvelles-frappes-iran-bases-americaines",
+          "theme": "geopolitics",
+          "time": "12h",
           "impact": "low",
           "source": "Radio-Canada Économie"
         }
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7399,
+          "value": 7368,
           "trend": "down",
-          "change": -0.19,
-          "period": "2026-07-28"
+          "change": -0.82,
+          "period": "2026-07-29"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           7209.01,
           7580.06,
           7499.36,
-          7411.98,
-          7398.62
+          7428.78,
+          7368.34
         ]
       },
       "summary": {
@@ -561,14 +561,80 @@
       "headlines": [
         {
           "title": {
-            "fr": "What you wear can help you get a job - here's how",
-            "en": "What you wear can help you get a job - here's how"
+            "fr": "Procter & Gamble revenue misses estimates as volume stays unchanged",
+            "en": "Procter & Gamble revenue misses estimates as volume stays unchanged"
           },
-          "url": "https://www.bbc.co.uk/news/articles/c80neg5rd81o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.cnbc.com/2026/07/29/procter-gamble-pg-q4-2026-earnings.html",
           "theme": "trade",
-          "time": "3h",
+          "time": "<1h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Is AI facing a big financial reckoning?",
+            "en": "Is AI facing a big financial reckoning?"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cevm09wkgz0o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "<1h",
           "impact": "low",
           "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Nike was once China's sneaker king. Here's why its sales have fallen 30%",
+            "en": "Nike was once China's sneaker king. Here's why its sales have fallen 30%"
+          },
+          "url": "https://www.cnbc.com/2026/07/29/nike-china-sales-decline.html",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "medium",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "OpenAI says its rogue AI tried to hack other companies",
+            "en": "OpenAI says its rogue AI tried to hack other companies"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c2el319vzr3o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "5h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Trump administration bans new Chinese humanoid robots",
+            "en": "Trump administration bans new Chinese humanoid robots"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cp9e2ex3ekyo?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "11h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Burnham has no scope to increase borrowing, think tank warns",
+            "en": "Burnham has no scope to increase borrowing, think tank warns"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c62ev62381mo?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "15h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Shein says it's under investigation by the Federal Trade Commission as it prepares for Hong Kong IPO",
+            "en": "Shein says it's under investigation by the Federal Trade Commission as it prepares for Hong Kong IPO"
+          },
+          "url": "https://www.cnbc.com/2026/07/28/shein-discloses-its-under-investigation-by-the-ftc.html",
+          "theme": "trade",
+          "time": "21h",
+          "impact": "low",
+          "source": "CNBC"
         },
         {
           "title": {
@@ -577,73 +643,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cj4k2djd5qpo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Chip stocks slide in US and Asia as AI jitters rattle investors",
-            "en": "Chip stocks slide in US and Asia as AI jitters rattle investors"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cly8zng43npo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Some people's chats with Claude AI found to be publicly available online",
-            "en": "Some people's chats with Claude AI found to be publicly available online"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cly5qgjk5ywo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "7h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "JetBlue overhauls fare options, from basic first to flexible economy. Here's what to know",
-            "en": "JetBlue overhauls fare options, from basic first to flexible economy. Here's what to know"
-          },
-          "url": "https://www.cnbc.com/2026/07/27/jetblue-new-fare-options-basic-economy-first-class.html",
-          "theme": "geopolitics",
           "time": "21h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Oil price dives as US and Iran pause attacks",
-            "en": "Oil price dives as US and Iran pause attacks"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/clyj834jn5lo?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "23h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Chinese chipmaker shares surge nearly 470% in blockbuster stock market debut",
-            "en": "Chinese chipmaker shares surge nearly 470% in blockbuster stock market debut"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c9q9w3x9qn2o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "1j",
-          "impact": "high",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Shein swings to $99m loss as Trump tariffs hit sales",
-            "en": "Shein swings to $99m loss as Trump tariffs hit sales"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/clyj8v0rek8o?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "1j",
           "impact": "low",
           "source": "BBC Business"
         }
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.771,
+          "value": 6.766,
           "unit": "CNY/USD",
           "trend": "down",
-          "period": "2026-07-28",
+          "period": "2026-07-29",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 3813,
-          "trend": "stable",
-          "change": -0.02,
-          "period": "2026-07-28"
+          "value": 3828,
+          "trend": "up",
+          "change": 0.4,
+          "period": "2026-07-29"
         }
       },
       "sparkline": {
@@ -730,21 +730,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "The Philippines, sovereignty and the Pax Silica Industrial Hub – how US’ Helberg sees it",
-            "en": "The Philippines, sovereignty and the Pax Silica Industrial Hub – how US’ Helberg sees it"
+            "fr": "Is China’s biotech boom at risk? Fear of policy backlash after death in gene-editing trial",
+            "en": "Is China’s biotech boom at risk? Fear of policy backlash after death in gene-editing trial"
           },
-          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3362161/philippines-sovereignty-and-pax-silica-industrial-hub-how-helberg-sees-it?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/science/article/3362253/chinas-biotech-boom-risk-fear-policy-backlash-after-death-gene-editing-trial?utm_source=rss_feed",
           "theme": "tech",
           "time": "<1h",
-          "impact": "low",
+          "impact": "medium",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China cracks down on sales of decommissioned military equipment ‘to protect PLA’s image’",
-            "en": "China cracks down on sales of decommissioned military equipment ‘to protect PLA’s image’"
+            "fr": "Can the US fend off China’s subsea drones? Its coastguard looks for answers",
+            "en": "Can the US fend off China’s subsea drones? Its coastguard looks for answers"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3362153/china-cracks-down-sales-decommissioned-military-equipment-protect-plas-image?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3362267/can-us-fend-chinas-subsea-drones-its-coastguard-looks-answers?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
@@ -752,54 +752,54 @@
         },
         {
           "title": {
-            "fr": "What does deeper tech integration during US-led Rimpac mean for China?",
-            "en": "What does deeper tech integration during US-led Rimpac mean for China?"
+            "fr": "Philippine defence chief warns Chinese teaching exchanges pose grey-zone threat",
+            "en": "Philippine defence chief warns Chinese teaching exchanges pose grey-zone threat"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3362134/what-does-deeper-tech-integration-during-us-led-rimpac-mean-china?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China woos Slovakia with AI, robotics pitch as EU trade friction mounts",
-            "en": "China woos Slovakia with AI, robotics pitch as EU trade friction mounts"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3362147/china-woos-slovakia-ai-robotics-pitch-eu-trade-friction-mounts?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "What’s behind China’s recent spike in Covid-19 cases? And is it anything to worry about?",
-            "en": "What’s behind China’s recent spike in Covid-19 cases? And is it anything to worry about?"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3362131/whats-behind-chinas-recent-spike-covid-19-cases-and-it-anything-worry-about?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3362291/philippine-defence-chief-warns-chinese-teaching-exchanges-pose-grey-zone-threat?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
+          "time": "1h",
+          "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Top Los Angeles diabetes doctor Shen Yang joins China’s Westlake University",
-            "en": "Top Los Angeles diabetes doctor Shen Yang joins China’s Westlake University"
+            "fr": "Chinese satellite imagery analysis challenges US-Iran war claims",
+            "en": "Chinese satellite imagery analysis challenges US-Iran war claims"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3362132/top-los-angeles-diabetes-doctor-shen-yang-joins-chinas-westlake-university?utm_source=rss_feed",
-          "theme": "tech",
+          "url": "https://www.scmp.com/news/china/science/article/3362231/chinese-satellite-imagery-analysis-challenges-us-iran-war-claims?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China’s Type 076 amphibious assault ship Sichuan in final tests with drone catapult",
+            "en": "China’s Type 076 amphibious assault ship Sichuan in final tests with drone catapult"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3362271/chinas-type-076-amphibious-assault-ship-sichuan-final-tests-drone-catapult?utm_source=rss_feed",
+          "theme": "geopolitics",
           "time": "4h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "How a Chinese model stopped a cyberattack when US guard rails failed",
-            "en": "How a Chinese model stopped a cyberattack when US guard rails failed"
+            "fr": "‘Practical’ young Africans leaning towards China over US and away from ideology",
+            "en": "‘Practical’ young Africans leaning towards China over US and away from ideology"
           },
-          "url": "https://www.scmp.com/opinion/china-opinion/article/3361768/how-chinese-model-stopped-cyberattack-when-us-guard-rails-failed?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3362249/practical-young-africans-leaning-towards-china-over-us-and-away-ideology?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "5h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China should lean into its defining AI advantage – accessibility",
+            "en": "China should lean into its defining AI advantage – accessibility"
+          },
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3361895/china-should-lean-its-defining-ai-advantage-accessibility?utm_source=rss_feed",
           "theme": "tech",
           "time": "5h",
           "impact": "low",
@@ -807,11 +807,11 @@
         },
         {
           "title": {
-            "fr": "China’s rare earth reserves could be much larger than reported: leading geologist",
-            "en": "China’s rare earth reserves could be much larger than reported: leading geologist"
+            "fr": "A new peak in US-China tech rivalry? Tibet drone hub launches on Mount Everest",
+            "en": "A new peak in US-China tech rivalry? Tibet drone hub launches on Mount Everest"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3362108/chinas-rare-earth-reserves-could-be-much-larger-reported-leading-geologist?utm_source=rss_feed",
-          "theme": "geopolitics",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3362159/new-peak-us-china-tech-rivalry-tibet-drone-hub-launches-mount-everest?utm_source=rss_feed",
+          "theme": "tech",
           "time": "6h",
           "impact": "low",
           "source": "SCMP"
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 95.86,
+          "value": 95.65,
           "unit": "INR/USD",
           "trend": "down",
-          "period": "2026-07-28",
+          "period": "2026-07-29",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 76766,
-          "trend": "stable",
-          "change": -0.09,
-          "period": "2026-07-28"
+          "value": 77655,
+          "trend": "up",
+          "change": 1.16,
+          "period": "2026-07-29"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           76913.5,
           74775.74,
           76478.67,
-          76059.77,
-          76765.92
+          76765.92,
+          77654.6
         ]
       },
       "summary": {
@@ -899,65 +899,65 @@
       "headlines": [
         {
           "title": {
-            "fr": "India, China put border peace at centre",
-            "en": "India, China put border peace at centre"
+            "fr": "IRDAI OKs Patanjali-DS Magma acquisition",
+            "en": "IRDAI OKs Patanjali-DS Magma acquisition"
           },
-          "url": "https://economictimes.indiatimes.com/news/india/india-china-put-border-peace-at-centre-during-foreign-secretary-vikram-misris-visit-to-beijing/articleshow/132686482.cms",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Why billionaires are flocking to this US metro",
-            "en": "Why billionaires are flocking to this US metro"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/global-trends/jeff-bezos-mark-zuckerberg-sergey-brin-and-larry-page-tech-billionaires-are-flocking-to-americas-second-most-expensive-metro-area-miami-and-its-not-california-or-new-york/articleshow/132684894.cms",
+          "url": "https://economictimes.indiatimes.com/industry/banking/finance/insure/irdai-approves-patanjali-ds-groups-acquisition-of-magma-general-insurance/articleshow/132712427.cms",
           "theme": "tech",
           "time": "1h",
-          "impact": "high",
+          "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Netanyahu, Zelenskiy to attend Trump ally funeral",
-            "en": "Netanyahu, Zelenskiy to attend Trump ally funeral"
+            "fr": "6 in 10 Indian firms see AI driving growth: PwC",
+            "en": "6 in 10 Indian firms see AI driving growth: PwC"
           },
-          "url": "https://economictimes.indiatimes.com/news/international/global-trends/trump-netanyahu-zelenskiy-to-attend-lindsey-graham-funeral-as-washington-bids-farewell-to-key-ally/articleshow/132684424.cms",
-          "theme": "geopolitics",
+          "url": "https://economictimes.indiatimes.com/industry/services/consultancy-/-audit/six-in-ten-indian-companies-believe-ai-to-play-a-significant-role-pwc/articleshow/132709101.cms",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "We created mujahideens to bleed India: Pak PM aide",
+            "en": "We created mujahideens to bleed India: Pak PM aide"
+          },
+          "url": "https://economictimes.indiatimes.com/news/new-updates/we-created-mujahideens-to-bleed-india-now-they-have-turned-guns-on-us-pak-pm-aide-rana-sanaullah-video-goes-viral-amid-pok-elections/articleshow/132710573.cms",
+          "theme": "tech",
           "time": "2h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Govt caps sugar stocks at 30 days from Aug 1",
-            "en": "Govt caps sugar stocks at 30 days from Aug 1"
+            "fr": "Bank holidays in August 2026: Check complete list",
+            "en": "Bank holidays in August 2026: Check complete list"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/agriculture/govt-cracks-down-on-sugar-hoarding-imposes-30-day-stock-limits-from-aug-1-till-nov-30/articleshow/132683925.cms",
+          "url": "https://economictimes.indiatimes.com/wealth/save/august-bank-holidays-2026-independence-day-onam-raksha-bandhan-and-other-holidays-check-complete-list/articleshow/132710491.cms",
           "theme": "trade",
-          "time": "2h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Iran video threatens Melania, Barron Trump",
-            "en": "Iran video threatens Melania, Barron Trump"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/global-trends/how-and-where-to-kill-melania-trump-irans-tasnim-news-agency-releases-chilling-video-targeting-us-first-lady-tells-barron-trump-wait-for-us/articleshow/132682203.cms",
-          "theme": "geopolitics",
           "time": "3h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Sold house? Follow these rules to avoid tax notice",
-            "en": "Sold house? Follow these rules to avoid tax notice"
+            "fr": "Bajaj Housing profit at Rs 715 crore, up 23%,",
+            "en": "Bajaj Housing profit at Rs 715 crore, up 23%,"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/tax/dont-let-selling-your-house-trigger-a-tax-notice-check-these-rules-under-sections-54-and-54f/articleshow/132680536.cms",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-housing-finance-q1-results-net-profit-rises-23-yoy-to-rs-715-crore-aum-rises-24/articleshow/132710115.cms",
+          "theme": "trade",
+          "time": "3h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "8th CPC: Rs 20 lakh extra pay for Level 8 employees?",
+            "en": "8th CPC: Rs 20 lakh extra pay for Level 8 employees?"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/save/8th-pay-commission-fitment-factor-how-6-annual-increment-may-add-rs-20-lakh-to-level-8-employees-basic-pay-in-10-years/articleshow/132707846.cms",
           "theme": "trade",
           "time": "4h",
           "impact": "low",
@@ -965,23 +965,23 @@
         },
         {
           "title": {
-            "fr": "US stocks invested via LRS can’t be given to NRI",
-            "en": "US stocks invested via LRS can’t be given to NRI"
+            "fr": "Leave encashment after 9 yrs for convicted employee",
+            "en": "Leave encashment after 9 yrs for convicted employee"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/legal/will/hold-us-stocks-under-lrs-heres-why-you-may-not-be-able-to-gift-them-to-nri-children/articleshow/132679574.cms",
-          "theme": "tech",
-          "time": "5h",
+          "url": "https://economictimes.indiatimes.com/wealth/legal/will/gratuity-forfeited-pension-denied-and-leave-encashment-delayed-for-9-years-due-to-criminal-proceedings-leading-to-employees-conviction-family-fought-back-in-delhi-high-court-and-won-6-interest-on-leave-encashment-on-this-ground/articleshow/132707873.cms",
+          "theme": "trade",
+          "time": "4h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "India to cut Mideast gas to support a hot US deal",
-            "en": "India to cut Mideast gas to support a hot US deal"
+            "fr": "Is govt planning to scrap LTCG tax on equities?",
+            "en": "Is govt planning to scrap LTCG tax on equities?"
           },
-          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/india-plans-up-to-quarter-of-2027-lpg-imports-from-us-sources-say/articleshow/132679546.cms",
-          "theme": "energy",
-          "time": "5h",
+          "url": "https://economictimes.indiatimes.com/wealth/tax/is-government-planning-to-scrap-long-term-capital-gain-ltcg-tax-on-equities-for-domestic-investors-in-fy-26-27-minister-responds/articleshow/132704739.cms",
+          "theme": "trade",
+          "time": "7h",
           "impact": "low",
           "source": "Economic Times"
         }
@@ -1035,10 +1035,10 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 154,
+          "value": 153,
           "trend": "down",
-          "change": -0.54,
-          "period": "2026-07-28"
+          "change": -0.85,
+          "period": "2026-07-29"
         }
       },
       "sparkline": {
@@ -1056,8 +1056,8 @@
           114.01,
           92.05,
           72.92,
-          96.78,
-          86.77
+          84.09,
+          89.88
         ]
       },
       "summary": {
@@ -1067,32 +1067,32 @@
       "headlines": [
         {
           "title": {
-            "fr": "Israeli soldier runs marathon around Gaza outpost",
-            "en": "Israeli soldier runs marathon around Gaza outpost"
+            "fr": "‘There is no ceasefire’ say Palestinians in Gaza after new Israeli strikes",
+            "en": "‘There is no ceasefire’ say Palestinians in Gaza after new Israeli strikes"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/28/israeli-soldier-runs-marathon-around-gaza-outpost?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/29/there-is-no-ceasefire-say-palestinians-in-gaza-after-new-israeli-strikes?traffic_source=rss",
           "theme": "energy",
-          "time": "1h",
+          "time": "<1h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Trump says ‘good chance’ of progress in Iran talks. What we know",
-            "en": "Trump says ‘good chance’ of progress in Iran talks. What we know"
+            "fr": "Saudi Arabia joins US in strikes on Iran-backed militias in Iraq",
+            "en": "Saudi Arabia joins US in strikes on Iran-backed militias in Iraq"
           },
-          "url": "https://www.aljazeera.com/news/2026/7/28/trump-says-good-chance-of-progress-in-iran-talks-what-we-know?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "1h",
+          "url": "https://www.bbc.co.uk/news/articles/c70g6y24d76o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "<1h",
           "impact": "low",
-          "source": "Al Jazeera"
+          "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Moment Canadian politician accidentally reads AI prompt during speech",
-            "en": "Moment Canadian politician accidentally reads AI prompt during speech"
+            "fr": "How are AI models able to autonomously hack others?",
+            "en": "How are AI models able to autonomously hack others?"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/28/moment-canadian-politician-accidentally-reads-ai-prompt-during-speech?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/7/29/how-are-ai-models-able-to-autonomously-hack-others?traffic_source=rss",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
@@ -1100,10 +1100,21 @@
         },
         {
           "title": {
-            "fr": "‘We’re here to stay’: West Bank Palestinians defy Israeli attacks",
-            "en": "‘We’re here to stay’: West Bank Palestinians defy Israeli attacks"
+            "fr": "US bans imports of new Chinese robots over security concerns",
+            "en": "US bans imports of new Chinese robots over security concerns"
           },
-          "url": "https://www.aljazeera.com/features/2026/7/28/were-here-to-stay-west-bank-palestinians-defy-israeli-attacks?traffic_source=rss",
+          "url": "https://www.aljazeera.com/economy/2026/7/29/us-bans-imports-of-new-chinese-robots-over-security-concerns?traffic_source=rss",
+          "theme": "trade",
+          "time": "1h",
+          "impact": "medium",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "BJP politician’s daughter explains why she supports India’s youth protests",
+            "en": "BJP politician’s daughter explains why she supports India’s youth protests"
+          },
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/29/bjp-politicians-daughter-explains-why-she-supports-indias-youth-protests?traffic_source=rss",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
@@ -1111,46 +1122,35 @@
         },
         {
           "title": {
-            "fr": "Why has Iran’s economy not collapsed under US war pressure?",
-            "en": "Why has Iran’s economy not collapsed under US war pressure?"
+            "fr": "F1 season to end in Europe if Qatar, Abu Dhabi unable to host due to war",
+            "en": "F1 season to end in Europe if Qatar, Abu Dhabi unable to host due to war"
           },
-          "url": "https://www.aljazeera.com/economy/2026/7/28/why-has-irans-economy-not-collapsed-under-us-war-pressure?traffic_source=rss",
+          "url": "https://www.aljazeera.com/sports/2026/7/29/f1-season-to-end-in-europe-if-qatar-abu-dhabi-unable-to-host-due-to-us-iran-war?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "1h",
+          "time": "2h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Trump flouts political risk to host Netanyahu’s seventh White House visit",
-            "en": "Trump flouts political risk to host Netanyahu’s seventh White House visit"
+            "fr": "Zelensky and Netanyahu meet Trump as wars in Ukraine and Iran drag on",
+            "en": "Zelensky and Netanyahu meet Trump as wars in Ukraine and Iran drag on"
           },
-          "url": "https://www.aljazeera.com/news/2026/7/28/trump-flouts-political-risk-to-host-netanyahus-seventh-white-house-visit?traffic_source=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cj4k2z8z45ro?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
-          "time": "4h",
-          "impact": "low",
-          "source": "Al Jazeera"
+          "time": "2h",
+          "impact": "high",
+          "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Netanyahu meets Trump at the White House: What’s on the agenda, what’s next",
-            "en": "Netanyahu meets Trump at the White House: What’s on the agenda, what’s next"
+            "fr": "Iran hits US in Jordan, US-Saudi strikes on Iraq: Is war spreading?",
+            "en": "Iran hits US in Jordan, US-Saudi strikes on Iraq: Is war spreading?"
           },
-          "url": "https://www.aljazeera.com/news/2026/7/28/netanyahu-in-the-white-house-whats-on-the-agenda-and-whats-next?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/7/29/iran-hits-us-in-jordan-us-saudi-strikes-on-iraq-is-war-spreading?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "5h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "‘Future at stake’: India moves to demolish university Muslim leader founded",
-            "en": "‘Future at stake’: India moves to demolish university Muslim leader founded"
-          },
-          "url": "https://www.aljazeera.com/news/2026/7/28/future-at-stake-india-moves-to-demolish-university-muslim-leader-founded?traffic_source=rss",
-          "theme": "tech",
-          "time": "5h",
-          "impact": "low",
+          "time": "2h",
+          "impact": "high",
           "source": "Al Jazeera"
         }
       ]
