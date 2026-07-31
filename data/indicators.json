@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-30",
+  "lastUpdated": "2026-07-31",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.411,
+          "value": 1.405,
           "unit": "CAD/USD",
           "trend": "down",
-          "period": "2026-07-29",
+          "period": "2026-07-30",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35307,
-          "trend": "stable",
-          "change": -0.08,
-          "period": "2026-07-30"
+          "value": 35332,
+          "trend": "down",
+          "change": -0.49,
+          "period": "2026-07-31"
         }
       },
       "sparkline": {
@@ -82,32 +82,76 @@
       "headlines": [
         {
           "title": {
-            "fr": "AltaGas posts higher profit, raises capital spending guidance",
-            "en": "AltaGas posts higher profit, raises capital spending guidance"
+            "fr": "U.S. Treasury Yield rise suggests Fed may not hike again",
+            "en": "U.S. Treasury Yield rise suggests Fed may not hike again"
           },
-          "url": "https://www.theglobeandmail.com/business/article-altagas-results-earnings-spending-guidance/",
+          "url": "https://www.theglobeandmail.com/business/article-us-treasury-yield-rise-suggests-fed-may-not-hike-again/",
+          "theme": "monetary",
+          "time": "<1h",
+          "impact": "medium",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Imperial Oil beats quarterly profit estimates as crude rally lifts earnings",
+            "en": "Imperial Oil beats quarterly profit estimates as crude rally lifts earnings"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-imperial-oil-beats-quarterly-profit-estimates-as-crude-rally-lifts/",
           "theme": "energy",
-          "time": "3h",
+          "time": "<1h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "TC Energy beats quarterly profit estimates on strong North American operations",
-            "en": "TC Energy beats quarterly profit estimates on strong North American operations"
+            "fr": "Economy grew 0.3% in May, on track for second-quarter rebound",
+            "en": "Economy grew 0.3% in May, on track for second-quarter rebound"
           },
-          "url": "https://www.theglobeandmail.com/business/article-tc-energy-results-north-american-operations/",
-          "theme": "energy",
-          "time": "3h",
+          "url": "https://www.theglobeandmail.com/canada/article-economy-grew-03-in-may-on-track-for-solid-rebound/",
+          "theme": "trade",
+          "time": "1h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Bombardier brings long-term debt down to 15-year low amid strong demand",
-            "en": "Bombardier brings long-term debt down to 15-year low amid strong demand"
+            "fr": "Alimentation Couche-Tard veut effectuer une importante acquisition en Pologne",
+            "en": "Alimentation Couche-Tard veut effectuer une importante acquisition en Pologne"
           },
-          "url": "https://www.theglobeandmail.com/business/article-bombardier-results-long-term-debt/",
+          "url": "https://ici.radio-canada.ca/nouvelle/2272690/couche-tard-zabka-pologne",
+          "theme": "trade",
+          "time": "1h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Chevron, Exxon Mobil reap massive profits as Iran war drives energy prices higher",
+            "en": "Chevron, Exxon Mobil reap massive profits as Iran war drives energy prices higher"
+          },
+          "url": "https://www.theglobeandmail.com/business/international-business/article-us-oil-companies-reap-massive-profits-as-iran-war-drives-energy-prices/",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "high",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Telus cuts dividend in half to deploy more cash for debt repayment",
+            "en": "Telus cuts dividend in half to deploy more cash for debt repayment"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-telus-slashes-dividend-to-deploy-more-cash-for-debt-repayment/",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Statscan to report May GDP and second-quarter flash estimate",
+            "en": "Statscan to report May GDP and second-quarter flash estimate"
+          },
+          "url": "https://www.theglobeandmail.com/business/economy/article-statistics-canada-may-2026-gdp-economic-growth/",
           "theme": "trade",
           "time": "3h",
           "impact": "low",
@@ -115,56 +159,12 @@
         },
         {
           "title": {
-            "fr": "Shell profit more than doubles to $9.8-billion as Iran war lifts prices",
-            "en": "Shell profit more than doubles to $9.8-billion as Iran war lifts prices"
+            "fr": "Business Brief: How Newfoundland became an unlikely tech hub",
+            "en": "Business Brief: How Newfoundland became an unlikely tech hub"
           },
-          "url": "https://www.theglobeandmail.com/business/international-business/article-shell-profit-more-than-doubles-to-98-billion-as-iran-war-lifts-prices/",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "high",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Iran strikes Kuwait and Jordan hours after U.S. attack",
-            "en": "Iran strikes Kuwait and Jordan hours after U.S. attack"
-          },
-          "url": "https://www.theglobeandmail.com/world/article-iran-us-kuwait-jordan/",
+          "url": "https://www.theglobeandmail.com/business/article-business-brief-how-newfoundland-became-an-unlikely-tech-hub/",
           "theme": "tech",
-          "time": "5h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "China is AI-maxxing, and it has a lot to teach us",
-            "en": "China is AI-maxxing, and it has a lot to teach us"
-          },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-china-has-a-lot-to-teach-us-about-ai/",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Can fixing development charges fix Canada’s housing crisis?",
-            "en": "Can fixing development charges fix Canada’s housing crisis?"
-          },
-          "url": "https://www.theglobeandmail.com/business/commentary/article-can-fixing-development-charges-fix-canadas-housing-crisis/",
-          "theme": "geopolitics",
-          "time": "5h",
-          "impact": "high",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Two major U.S. unions call for return to ‘stable’ trade relationship with Canada",
-            "en": "Two major U.S. unions call for return to ‘stable’ trade relationship with Canada"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-us-unions-steelworkers-trade-relationship-canada-tariffs/",
-          "theme": "trade",
-          "time": "13h",
+          "time": "4h",
           "impact": "low",
           "source": "Globe and Mail"
         }
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7403,
-          "trend": "up",
-          "change": 1.19,
-          "period": "2026-07-30"
+          "value": 7426,
+          "trend": "down",
+          "change": -0.15,
+          "period": "2026-07-31"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           7209.01,
           7580.06,
           7499.36,
-          7316.15,
-          7402.7
+          7437.63,
+          7426.15
         ]
       },
       "summary": {
@@ -561,10 +561,10 @@
       "headlines": [
         {
           "title": {
-            "fr": "Wealth managers face a new challenger: Their clients’ AI chatbots",
-            "en": "Wealth managers face a new challenger: Their clients’ AI chatbots"
+            "fr": "GM to launch its own in-vehicle AI system later this year",
+            "en": "GM to launch its own in-vehicle AI system later this year"
           },
-          "url": "https://www.cnbc.com/2026/07/30/wealth-managers-ai-chatbots.html",
+          "url": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
           "theme": "tech",
           "time": "<1h",
           "impact": "low",
@@ -572,65 +572,43 @@
         },
         {
           "title": {
-            "fr": "US economic growth sees surprise slowdown in second quarter",
-            "en": "US economic growth sees surprise slowdown in second quarter"
+            "fr": "Andy Burnham to give regional mayors share of income tax",
+            "en": "Andy Burnham to give regional mayors share of income tax"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cd0xvrmlx2eo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/c4g3eyg60e0o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "<1h",
-          "impact": "medium",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Chipotle stock jumps as chain hikes same-store sales forecast, says cyclospora fears hit sales in late July",
-            "en": "Chipotle stock jumps as chain hikes same-store sales forecast, says cyclospora fears hit sales in late July"
-          },
-          "url": "https://www.cnbc.com/2026/07/29/chipotle-mexican-grill-cmg-q2-2026-earnings.html",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "medium",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Hundreds of jobs to go at Jaguar Land Rover",
-            "en": "Hundreds of jobs to go at Jaguar Land Rover"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cq6dmjv1jpdo?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "<1h",
+          "time": "1h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Shell profits double as oil prices rise due to Iran war",
-            "en": "Shell profits double as oil prices rise due to Iran war"
+            "fr": "UK petrol prices hit highest level since Iran war began",
+            "en": "UK petrol prices hit highest level since Iran war began"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cpq8n45r5e8o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
           "theme": "geopolitics",
-          "time": "5h",
+          "time": "3h",
           "impact": "high",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Burnham says nuclear sub investment will protect UK and boost jobs",
-            "en": "Burnham says nuclear sub investment will protect UK and boost jobs"
+            "fr": "Anthropic's Claude AI escapes to hack into three organisations",
+            "en": "Anthropic's Claude AI escapes to hack into three organisations"
           },
-          "url": "https://www.bbc.co.uk/news/articles/crl70x0nxr9o?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "6h",
+          "url": "https://www.bbc.co.uk/news/articles/cz7dl7w8y7po?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "4h",
           "impact": "low",
           "source": "BBC Business"
         },
         {
           "title": {
-            "fr": "Trump considering AI controls after OpenAI hacking incidents",
-            "en": "Trump considering AI controls after OpenAI hacking incidents"
+            "fr": "South Korean shares soar after chip stock rout",
+            "en": "South Korean shares soar after chip stock rout"
           },
-          "url": "https://www.bbc.co.uk/news/articles/c20dppq3y90o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/c4gdzlzprv1o?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
           "time": "7h",
           "impact": "low",
@@ -638,12 +616,34 @@
         },
         {
           "title": {
-            "fr": "Wiped out by a hurricane, this US community is now a global energy giant",
-            "en": "Wiped out by a hurricane, this US community is now a global energy giant"
+            "fr": "Amazon and Apple just told us more about their AI plans - here are three things we learned",
+            "en": "Amazon and Apple just told us more about their AI plans - here are three things we learned"
           },
-          "url": "https://www.bbc.co.uk/news/articles/c0ejq9g2pz4o?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
+          "url": "https://www.bbc.co.uk/news/articles/cp87m46g392o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
           "time": "12h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Apple warns of future 'supply constraints' for Mac, iPhone, iPad",
+            "en": "Apple warns of future 'supply constraints' for Mac, iPhone, iPad"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c204nw64xwno?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "15h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "India wants to join the strawberry superpowers",
+            "en": "India wants to join the strawberry superpowers"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c8x274xxxpwo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "16h",
           "impact": "low",
           "source": "BBC Business"
         }
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.766,
+          "value": 6.755,
           "unit": "CNY/USD",
-          "trend": "up",
-          "period": "2026-07-29",
+          "trend": "down",
+          "period": "2026-07-30",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 3805,
-          "trend": "down",
-          "change": -0.23,
-          "period": "2026-07-30"
+          "value": 3832,
+          "trend": "stable",
+          "change": 0.1,
+          "period": "2026-07-31"
         }
       },
       "sparkline": {
@@ -730,90 +730,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "Could US subterranean warfare be a future threat to China’s military defences?",
-            "en": "Could US subterranean warfare be a future threat to China’s military defences?"
+            "fr": "Beijing to impose exit bans for export control, tech transfer breaches",
+            "en": "Beijing to impose exit bans for export control, tech transfer breaches"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3362332/could-us-subterranean-warfare-be-future-threat-chinas-military-defences?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3362590/beijing-impose-exit-bans-export-control-tech-transfer-breaches?utm_source=rss_feed",
+          "theme": "trade",
+          "time": "1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China is making a great leap forward in food production – this time for real",
+            "en": "China is making a great leap forward in food production – this time for real"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3362510/china-making-great-leap-forward-food-production-time-real?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "<1h",
+          "time": "1h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "New images point to fifth prototype for China’s J-36 fighter jet in air power race with US",
-            "en": "New images point to fifth prototype for China’s J-36 fighter jet in air power race with US"
+            "fr": "China signals buildout of nuclear missile silos for ‘strategic trump cards’",
+            "en": "China signals buildout of nuclear missile silos for ‘strategic trump cards’"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3362241/new-images-point-fifth-prototype-chinas-j-36-fighter-jet-air-power-race-us?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Can the West really decouple from China?",
-            "en": "Can the West really decouple from China?"
-          },
-          "url": "https://www.scmp.com/opinion/world-opinion/article/3361881/can-west-really-decouple-china?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3362573/china-signals-buildout-nuclear-missile-silos-strategic-trump-cards?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
+          "time": "2h",
+          "impact": "medium",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China accuses Philippines of ‘flagrantly infringing’ on sovereignty in seabed claim",
-            "en": "China accuses Philippines of ‘flagrantly infringing’ on sovereignty in seabed claim"
+            "fr": "Why Japanese stealth fighters over Australia signal a strategic pivot against China",
+            "en": "Why Japanese stealth fighters over Australia signal a strategic pivot against China"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3362407/china-accuses-manila-flagrantly-infringing-sovereignty-un-seabed-claim?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/military/article/3362533/why-japanese-stealth-fighters-over-australia-signal-strategic-pivot-against-china?utm_source=rss_feed",
           "theme": "tech",
-          "time": "3h",
-          "impact": "low",
+          "time": "4h",
+          "impact": "medium",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Ex-PLA colonel on US’ decline and China’s nuclear arsenal",
-            "en": "Ex-PLA colonel on US’ decline and China’s nuclear arsenal"
+            "fr": "EU-China trade war: Beijing turns the screws as Brussels tests limits of restraint",
+            "en": "EU-China trade war: Beijing turns the screws as Brussels tests limits of restraint"
           },
-          "url": "https://www.scmp.com/plus/news/china/military/article/3362374/ex-pla-colonel-us-decline-and-chinas-nuclear-arsenal?utm_source=rss_feed",
-          "theme": "energy",
-          "time": "6h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Triassic fish for lunch? Chinese fossil reveals oldest preserved reptile stomach",
-            "en": "Triassic fish for lunch? Chinese fossil reveals oldest preserved reptile stomach"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3362341/triassic-fish-lunch-chinese-fossil-reveals-oldest-preserved-reptile-stomach?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "China’s October plenum plan reveals focus on party discipline ahead of 2027 congress",
-            "en": "China’s October plenum plan reveals focus on party discipline ahead of 2027 congress"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3362363/china-says-key-plenum-will-be-held-october?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3362502/eu-china-trade-war-beijing-turns-screws-brussels-tests-limits-restraint?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "7h",
-          "impact": "low",
+          "time": "5h",
+          "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China lodges protest after NZ foreign minister’s ‘go back’ slur in parliament",
-            "en": "China lodges protest after NZ foreign minister’s ‘go back’ slur in parliament"
+            "fr": "China factories cool, CXMT surges, PLA marks anniversary",
+            "en": "China factories cool, CXMT surges, PLA marks anniversary"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3362353/china-envoy-makes-rare-response-after-nz-foreign-ministers-go-back-slur?utm_source=rss_feed",
-          "theme": "tech",
+          "url": "https://www.scmp.com/plus/news/china/politics/article/3362512/china-factories-cool-cxmt-surges-pla-marks-anniversary?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "5h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Xi Jinping urges Chinese armed forces to ‘strengthen military application’ of AI",
+            "en": "Xi Jinping urges Chinese armed forces to ‘strengthen military application’ of AI"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3362496/xi-jinping-urges-chinese-armed-forces-strengthen-military-application-ai?utm_source=rss_feed",
+          "theme": "geopolitics",
           "time": "8h",
           "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Chinese data challenges US-Iran war claims; bamboo vs desertification: SCMP’s 7 highlights",
+            "en": "Chinese data challenges US-Iran war claims; bamboo vs desertification: SCMP’s 7 highlights"
+          },
+          "url": "https://www.scmp.com/news/china/article/3362460/chinese-data-challenges-us-iran-war-claims-bamboo-vs-desertification-scmps-7-highlights?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "9h",
+          "impact": "high",
           "source": "SCMP"
         }
       ]
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 95.65,
+          "value": 95.69,
           "unit": "INR/USD",
-          "trend": "stable",
-          "period": "2026-07-29",
+          "trend": "up",
+          "period": "2026-07-30",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 77928,
+          "value": 78095,
           "trend": "up",
-          "change": 0.35,
-          "period": "2026-07-30"
+          "change": 0.21,
+          "period": "2026-07-31"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           76913.5,
           74775.74,
           76478.67,
-          77654.6,
-          77928.15
+          77928.15,
+          78094.64
         ]
       },
       "summary": {
@@ -899,10 +899,32 @@
       "headlines": [
         {
           "title": {
-            "fr": "Rajasthan man earning Rs 15K gets Rs 6cr tax notice",
-            "en": "Rajasthan man earning Rs 15K gets Rs 6cr tax notice"
+            "fr": "New York sues online prediction markets giant Kalshi",
+            "en": "New York sues online prediction markets giant Kalshi"
           },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/rajasthan-footwear-artisan-earning-rs-15000-a-month-receives-rs-6-cr-gst-notice-fake-tn-export-firm-was-allegedly-registered-using-his-pan-he-suspects-loan-documents-were-misused/articleshow/132739744.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/business/new-york-sues-online-prediction-markets-giant-kalshi/articleshow/132768911.cms",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "24 Indians remain with Russian Army: MEA",
+            "en": "24 Indians remain with Russian Army: MEA"
+          },
+          "url": "https://economictimes.indiatimes.com/news/india/india-says-around-two-dozen-nationals-still-with-russian-army-urges-citizens-to-avoid-fraught-job-offers/articleshow/132768814.cms",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "DA hike for June 2026: Employees likely to get 63% DA",
+            "en": "DA hike for June 2026: Employees likely to get 63% DA"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/save/da-hike-for-june-2026-central-government-employees-likely-to-get-63-dearness-allowance-after-hike/articleshow/132765682.cms",
           "theme": "trade",
           "time": "1h",
           "impact": "low",
@@ -910,65 +932,32 @@
         },
         {
           "title": {
-            "fr": "China's electricity dominance by the numbers",
-            "en": "China's electricity dominance by the numbers"
+            "fr": "Bloomberg delays India bonds inclusion in index",
+            "en": "Bloomberg delays India bonds inclusion in index"
           },
-          "url": "https://economictimes.indiatimes.com/news/new-updates/in-1985-us-generated-over-six-times-more-electricity-than-china-by-2025-dragon-was-producing-more-power-than-us-eu-india-combined/articleshow/132738853.cms",
-          "theme": "geopolitics",
-          "time": "2h",
+          "url": "https://economictimes.indiatimes.com/markets/bonds/bloomberg-delays-india-bonds-inclusion-as-investors-seek-proof-reforms-work-on-ground/articleshow/132767770.cms",
+          "theme": "monetary",
+          "time": "1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Pakistan pushing US-Iran talks: Foreign Office",
-            "en": "Pakistan pushing US-Iran talks: Foreign Office"
+            "fr": "India's forex reserves rise by $6.1 billion",
+            "en": "India's forex reserves rise by $6.1 billion"
           },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/pakistans-diplomatic-efforts-to-restore-us-iran-negotiations-amid-rising-tensions/articleshow/132739420.cms",
-          "theme": "geopolitics",
+          "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-forex-reserves-rise-by-6-1-billion-to-682-35-billion-as-of-july-24/articleshow/132766352.cms",
+          "theme": "monetary",
           "time": "2h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "India gold demand hits 6-year low",
-            "en": "India gold demand hits 6-year low"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/cons-products/fashion-/-cosmetics-/-jewellery/indias-gold-demand-hits-six-year-low-in-q2-despite-record-spend/articleshow/132739397.cms",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Instamart breakeven needs 2.5x order growth",
-            "en": "Instamart breakeven needs 2.5x order growth"
-          },
-          "url": "https://economictimes.indiatimes.com/tech/technology/instamart-operating-level-breakeven-hinges-on-order-volumes-expanding-2-5x/articleshow/132737941.cms",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Gold pulled India back from edge of crisis 35 yrs ago",
-            "en": "Gold pulled India back from edge of crisis 35 yrs ago"
-          },
-          "url": "https://economictimes.indiatimes.com/news/economy/finance/gold-pulled-india-back-from-the-edge-of-crisis-35-years-ago-manmohan-singh-pledged-gold-1991-economic-reforms-gold-airlift-balance-of-payments-crisis/articleshow/132734952.cms",
-          "theme": "tech",
-          "time": "4h",
           "impact": "high",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Has govt scrapped LTCG tax for foreign investors?",
-            "en": "Has govt scrapped LTCG tax for foreign investors?"
+            "fr": "WB CM alleges Rs 15,000 crore Birbhum revenue leak",
+            "en": "WB CM alleges Rs 15,000 crore Birbhum revenue leak"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/tax/has-government-scrapped-long-term-capital-gain-ltcg-tax-for-foreign-investors-finance-ministry-replies/articleshow/132734633.cms",
+          "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bengal-cm-alleges-rs-15000-crore-revenue-leak-in-birbhum-under-previous-tmc-rule/articleshow/132764259.cms",
           "theme": "trade",
           "time": "4h",
           "impact": "low",
@@ -976,13 +965,24 @@
         },
         {
           "title": {
-            "fr": "Ukraine war leaves India's nuclear bill heavier",
-            "en": "Ukraine war leaves India's nuclear bill heavier"
+            "fr": "CWG Boxing: Preeti Pawar through to finals",
+            "en": "CWG Boxing: Preeti Pawar through to finals"
           },
-          "url": "https://economictimes.indiatimes.com/industry/energy/power/cost-of-four-new-kudankulam-reactors-jumps-55-after-ukraine-war-delays/articleshow/132734114.cms",
-          "theme": "tech",
-          "time": "5h",
+          "url": "https://economictimes.indiatimes.com/news/sports/other-sports/cwg-boxing-preeti-pawar-through-to-finals-with-dominating-win/articleshow/132764054.cms",
+          "theme": "geopolitics",
+          "time": "4h",
           "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "GST input tax credit at risk? SC clarifies this...",
+            "en": "GST input tax credit at risk? SC clarifies this..."
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/tax/no-input-tax-credit-for-the-innocent-buyer-after-paying-gst-supreme-court-settles-who-bears-the-cost-when-a-supplier-defaults/articleshow/132762247.cms",
+          "theme": "trade",
+          "time": "4h",
+          "impact": "low",
           "source": "Economic Times"
         }
       ]
@@ -1036,9 +1036,9 @@
         "stockIndex": {
           "name": "MSCI World",
           "value": 155,
-          "trend": "up",
-          "change": 1.51,
-          "period": "2026-07-30"
+          "trend": "down",
+          "change": -0.33,
+          "period": "2026-07-31"
         }
       },
       "sparkline": {
@@ -1056,8 +1056,8 @@
           114.01,
           92.05,
           72.92,
-          90.74,
-          89.68
+          89.03,
+          89.96
         ]
       },
       "summary": {
@@ -1067,89 +1067,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Missile that left crater deep inside Poland was probably Russian - Polish PM",
-            "en": "Missile that left crater deep inside Poland was probably Russian - Polish PM"
+            "fr": "Russia and Ukraine report casualties as they continue to trade attacks",
+            "en": "Russia and Ukraine report casualties as they continue to trade attacks"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cwymkgenv2ro?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
+          "url": "https://www.aljazeera.com/news/2026/7/31/russia-and-ukraine-report-casualties-as-they-continue-to-trade-attacks?traffic_source=rss",
+          "theme": "tech",
           "time": "<1h",
-          "impact": "medium",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Israeli strikes kill at least four, including children, across Gaza Strip",
-            "en": "Israeli strikes kill at least four, including children, across Gaza Strip"
-          },
-          "url": "https://www.aljazeera.com/news/2026/7/30/israeli-strikes-kill-at-least-four-including-children-across-gaza-strip?traffic_source=rss",
-          "theme": "energy",
-          "time": "2h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "US launches 'heavy' strikes on Iran after attempted attack on American troops",
-            "en": "US launches 'heavy' strikes on Iran after attempted attack on American troops"
+            "fr": "Russia appears to infiltrate first ‘fortress city’ as Ukraine changes guard",
+            "en": "Russia appears to infiltrate first ‘fortress city’ as Ukraine changes guard"
           },
-          "url": "https://www.bbc.co.uk/news/articles/c74gwdzywmeo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.aljazeera.com/features/2026/7/31/russia-appears-to-infiltrate-first-fortress-city-as-ukraine-changes-guard?traffic_source=rss",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "medium",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Palestinians in Gaza react to latest ceasefire deal",
+            "en": "Palestinians in Gaza react to latest ceasefire deal"
+          },
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/31/31-07-sv-gazans-react-to-latest-deal-ps?traffic_source=rss",
+          "theme": "energy",
+          "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "The waiting game: Gaza’s CT scan shortage causing worries and worse",
+            "en": "The waiting game: Gaza’s CT scan shortage causing worries and worse"
+          },
+          "url": "https://www.aljazeera.com/features/2026/7/31/the-waiting-game-gazas-shortage-in-ct-scans-causing-worries-and-worse?traffic_source=rss",
+          "theme": "energy",
+          "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Approval for China’s mega embassy in London was lawful, UK court rules",
+            "en": "Approval for China’s mega embassy in London was lawful, UK court rules"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/31/approval-for-chinas-mega-embassy-in-london-was-lawful-uk-court-rules?traffic_source=rss",
           "theme": "geopolitics",
+          "time": "1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Gaza Board of Peace announces Hamas disarmament agreement: What we know",
+            "en": "Gaza Board of Peace announces Hamas disarmament agreement: What we know"
+          },
+          "url": "https://www.aljazeera.com/news/2026/7/31/gaza-board-of-peace-announces-hamas-disarmament-agreement-what-we-know?traffic_source=rss",
+          "theme": "energy",
           "time": "3h",
           "impact": "low",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Israeli raids and settler attacks intensify across the occupied West Bank",
-            "en": "Israeli raids and settler attacks intensify across the occupied West Bank"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/israeli-raids-and-settler-attacks-intensify-across-the-occupied-west-bank?traffic_source=rss",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Several children killed and wounded in Israeli attacks across Gaza",
-            "en": "Several children killed and wounded in Israeli attacks across Gaza"
+            "fr": "Palestinians in Gaza are sceptical about the latest peace plan",
+            "en": "Palestinians in Gaza are sceptical about the latest peace plan"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/several-children-killed-and-wounded-in-israeli-attacks-across-gaza?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/31/31-07-reported-hani-mahmoud-gaza-ps?traffic_source=rss",
           "theme": "energy",
-          "time": "4h",
+          "time": "3h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "US hits multiple targets in Iran as IRGC pledges retaliation: What we know",
-            "en": "US hits multiple targets in Iran as IRGC pledges retaliation: What we know"
+            "fr": "Anthropic's Claude AI escapes to hack into three organisations",
+            "en": "Anthropic's Claude AI escapes to hack into three organisations"
           },
-          "url": "https://www.aljazeera.com/news/2026/7/30/us-hits-multiple-targets-in-iran-as-irgc-pledges-retaliation-what-we-know?traffic_source=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cz7dl7w8y7po?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
           "time": "4h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Apartheid wealth cannot buy silence on Gaza",
-            "en": "Apartheid wealth cannot buy silence on Gaza"
-          },
-          "url": "https://www.aljazeera.com/opinions/2026/7/30/apartheid-wealth-cannot-buy-silence-on-gaza?traffic_source=rss",
-          "theme": "energy",
-          "time": "5h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Trump considering AI controls after OpenAI hacking incidents",
-            "en": "Trump considering AI controls after OpenAI hacking incidents"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c20dppq3y90o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "7h",
           "impact": "low",
           "source": "BBC World"
         }
