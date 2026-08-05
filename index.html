@@ -4,10 +4,177 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GeoEcon Pulse — Veille géoéconomique mondiale</title>
-<meta name="description" content="Dashboard interactif de veille géoéconomique couvrant le Canada, les États-Unis, la Chine, l'Inde et le reste du monde.">
-<meta property="og:title" content="GeoEcon Pulse — Global Geoeconomic Intelligence">
-<meta property="og:description" content="Interactive geoeconomic intelligence dashboard covering Canada, US, China, India and the World.">
+<meta name="description" content="Dashboard interactif de veille géoéconomique couvrant le Canada, les États-Unis, la Chine, l'Inde et le reste du monde. Indicateurs macroéconomiques en temps réel : PIB, inflation, taux directeurs, devises, indices boursiers.">
+<meta name="author" content="Ulrich Djidonou">
+<meta name="keywords" content="geoeconomics, macroeconomics, GDP, inflation, monetary policy, geopolitics, trade, Canada, United States, China, India, dashboard, veille géoéconomique">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ulrich-e-r-djidonou.github.io/geoecon-pulse/">
+<link rel="alternate" hreflang="fr" href="https://ulrich-e-r-djidonou.github.io/geoecon-pulse/">
+<link rel="alternate" hreflang="en" href="https://ulrich-e-r-djidonou.github.io/geoecon-pulse/">
+<link rel="alternate" hreflang="x-default" href="https://ulrich-e-r-djidonou.github.io/geoecon-pulse/">
+
+<!-- Open Graph -->
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://ulrich-e-r-djidonou.github.io/geoecon-pulse/">
+<meta property="og:site_name" content="GeoEcon Pulse">
+<meta property="og:title" content="GeoEcon Pulse — Global Geoeconomic Intelligence">
+<meta property="og:description" content="Interactive geoeconomic intelligence dashboard covering Canada, US, China, India and the World. Real-time macro indicators: GDP, inflation, policy rates, FX, stock indices.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GeoEcon Pulse — Global Geoeconomic Intelligence">
+<meta name="twitter:description" content="Interactive geoeconomic intelligence dashboard covering Canada, US, China, India and the World. Real-time macro indicators: GDP, inflation, policy rates, FX, stock indices.">
+<meta name="twitter:creator" content="@ulrichdjidonou">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#website",
+      "url": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/",
+      "name": "GeoEcon Pulse",
+      "description": "Interactive geoeconomic intelligence dashboard covering Canada, US, China, India and the World.",
+      "inLanguage": ["fr", "en"],
+      "author": { "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#author" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#author",
+      "name": "Ulrich Djidonou",
+      "url": "https://github.com/ulrich-e-r-djidonou",
+      "jobTitle": "Économiste",
+      "description": "Économiste spécialisé en inférence causale et machine learning.",
+      "sameAs": [
+        "https://www.linkedin.com/in/ulrich-djidonou/",
+        "https://github.com/ulrich-e-r-djidonou"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#dataset",
+      "name": "GeoEcon Pulse — Global Geoeconomic Indicators",
+      "description": "Macroeconomic and geopolitical indicators for Canada, United States, China, India, and the World. Covers GDP growth, inflation, central bank policy rates, exchange rates, and major stock indices.",
+      "url": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/",
+      "creator": { "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#author" },
+      "dateModified": "2026-06-03",
+      "temporalCoverage": "2026",
+      "spatialCoverage": [
+        { "@type": "Country", "name": "Canada" },
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "China" },
+        { "@type": "Country", "name": "India" }
+      ],
+      "keywords": ["geoeconomics", "macroeconomics", "GDP", "inflation", "monetary policy", "geopolitics", "trade", "exchange rates", "stock markets"],
+      "license": "https://opensource.org/licenses/MIT",
+      "inLanguage": ["fr", "en"],
+      "variableMeasured": [
+        { "@type": "PropertyValue", "name": "GDP Growth Rate", "unitCode": "P1" },
+        { "@type": "PropertyValue", "name": "Inflation Rate", "unitCode": "P1" },
+        { "@type": "PropertyValue", "name": "Central Bank Policy Rate", "unitCode": "P1" },
+        { "@type": "PropertyValue", "name": "Exchange Rate vs USD" },
+        { "@type": "PropertyValue", "name": "Stock Market Index" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#webpage",
+      "url": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/",
+      "name": "GeoEcon Pulse — Veille géoéconomique mondiale",
+      "isPartOf": { "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#website" },
+      "about": { "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#dataset" },
+      "author": { "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#author" },
+      "dateModified": "2026-06-03",
+      "inLanguage": ["fr", "en"],
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GeoEcon Pulse",
+            "item": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ulrich-e-r-djidonou.github.io/geoecon-pulse/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is GeoEcon Pulse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GeoEcon Pulse is a free interactive geoeconomic intelligence dashboard created by economist Ulrich Djidonou. It tracks macroeconomic and geopolitical indicators across five strategic regions: Canada, United States, China, India, and the World. It is available in French and English and updated regularly with real data from official sources."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What economic indicators does GeoEcon Pulse track?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GeoEcon Pulse tracks five key macroeconomic indicators for each region: GDP growth rate, inflation rate, central bank policy rate, exchange rate versus the US dollar, and the main stock market index (TSX for Canada, S&P 500 for the US, SSE for China, SENSEX for India, and MSCI World). Each indicator includes the current value, trend direction, and data source."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the current economic outlook for Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of June 2026, Canada's economic outlook is negative. GDP growth is forecast at 1.1% for 2026, weighed down by persistent US tariffs, massive job losses, and elevated trade uncertainty. The Bank of Canada policy rate stands at 2.75%, and inflation is running at 2.4%. The TSX has declined amid the broader trade shock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que GeoEcon Pulse ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GeoEcon Pulse est un tableau de bord interactif de veille géoéconomique mondiale, créé par l'économiste Ulrich Djidonou. Il suit les indicateurs macroéconomiques et géopolitiques de cinq zones stratégiques : Canada, États-Unis, Chine, Inde et Reste du monde. L'outil est gratuit, disponible en français et en anglais, et mis à jour régulièrement à partir de sources officielles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels indicateurs économiques GeoEcon Pulse suit-il ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GeoEcon Pulse suit cinq indicateurs macroéconomiques clés par région : la croissance du PIB, le taux d'inflation, le taux directeur de la banque centrale, le taux de change face au dollar américain, et l'indice boursier principal (TSX pour le Canada, S&P 500 pour les États-Unis, SSE pour la Chine, SENSEX pour l'Inde, MSCI World pour le reste du monde)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est la conjoncture économique du Canada en 2026 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En juin 2026, la conjoncture économique du Canada est négative. La croissance du PIB est prévue à 1,1 % pour 2026, pénalisée par les tarifs douaniers américains persistants, des pertes d'emplois massives et une forte incertitude commerciale. Le taux directeur de la Banque du Canada est à 2,75 % et l'inflation à 2,4 %."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the main geoeconomic risks in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In 2026, the main geoeconomic risks tracked by GeoEcon Pulse include: US-China trade tensions and tariff escalation, Canada-US trade disruptions affecting supply chains, India's strong growth diverging from global slowdown, China's property sector stabilization challenges, and the global impact of synchronized central bank policy divergence. The interconnections module on GeoEcon Pulse maps these cross-regional transmission channels in detail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who created GeoEcon Pulse and what are their credentials?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GeoEcon Pulse was created by Ulrich Djidonou, an economist specializing in causal inference and machine learning, based in Quebec, Canada. He holds expertise in macroeconomics, public policy, and quantitative methods. The dashboard is designed as a rigorous, source-cited geoeconomic intelligence tool for economists, policy professionals, and researchers."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">

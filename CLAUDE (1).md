@@ -199,6 +199,93 @@ claude "Fais un commit initial propre avec un message descriptif. Configure pour
 
 ---
 
+## SEO & Visibilité IA — Standard à appliquer sur TOUS les projets
+
+> Depuis Google I/O 2026 et le Google May 2026 Core Update, les sites sans signaux structurés sont invisibles aux moteurs de recherche ET aux IA (ChatGPT, Gemini). Appliquer systématiquement ce bloc dans le `<head>` de chaque projet.
+
+### Bloc `<head>` obligatoire
+
+```html
+<!-- Base -->
+<meta name="author" content="Ulrich Djidonou">
+<meta name="keywords" content="[mots-clés du projet]">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://[url-du-site]/">
+<link rel="alternate" hreflang="fr" href="https://[url-du-site]/">
+<link rel="alternate" hreflang="en" href="https://[url-du-site]/">
+<link rel="alternate" hreflang="x-default" href="https://[url-du-site]/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://[url-du-site]/">
+<meta property="og:site_name" content="[Nom du site]">
+<meta property="og:title" content="[Titre]">
+<meta property="og:description" content="[Description]">
+<meta property="og:image" content="https://[url-du-site]/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="[Titre]">
+<meta name="twitter:description" content="[Description]">
+<meta name="twitter:image" content="https://[url-du-site]/preview.png">
+<meta name="twitter:creator" content="@ulrichdjidonou">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://[url-du-site]/#website",
+      "url": "https://[url-du-site]/",
+      "name": "[Nom du site]",
+      "description": "[Description]",
+      "inLanguage": ["fr", "en"],
+      "author": { "@id": "https://[url-du-site]/#author" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://[url-du-site]/#author",
+      "name": "Ulrich Djidonou",
+      "url": "https://github.com/ulrich-e-r-djidonou",
+      "jobTitle": "Économiste",
+      "description": "Économiste spécialisé en inférence causale et machine learning.",
+      "sameAs": [
+        "https://www.linkedin.com/in/ulrich-djidonou/",
+        "https://github.com/ulrich-e-r-djidonou"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://[url-du-site]/#webpage",
+      "url": "https://[url-du-site]/",
+      "name": "[Titre de la page]",
+      "isPartOf": { "@id": "https://[url-du-site]/#website" },
+      "author": { "@id": "https://[url-du-site]/#author" },
+      "dateModified": "[YYYY-MM-DD]",
+      "inLanguage": ["fr", "en"]
+    }
+  ]
+}
+</script>
+```
+
+### Image `preview.png` (og:image)
+- Taille : **1200×630px** (ratio 1.91:1)
+- Contenu : screenshot du projet sur fond sombre
+- Placement : racine du repo (`/preview.png`)
+- Valider sur : [opengraph.xyz](https://www.opengraph.xyz)
+
+### Validation JSON-LD
+- Tester sur : [validator.schema.org](https://validator.schema.org)
+
+---
+
 ## Critères de qualité
 
 - [ ] Le dashboard s'ouvre en un seul fichier HTML (pas de build)
