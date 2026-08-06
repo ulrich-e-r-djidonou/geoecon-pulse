@@ -27,17 +27,17 @@
           "source": "Banque du Canada"
         },
         "inflation": {
-          "value": 2.4,
+          "value": 2.8,
           "unit": "%",
-          "trend": "stable",
-          "period": "Fév. 2026",
-          "source": "Statistique Canada"
+          "trend": "up",
+          "period": "Juin 2026",
+          "source": "Banque du Canada (IPC)"
         },
         "rate": {
           "value": 2.25,
           "unit": "%",
           "trend": "stable",
-          "period": "Jan. 2026",
+          "period": "Août 2026",
           "source": "Banque du Canada"
         },
         "exchange": {
@@ -49,9 +49,9 @@
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 36344,
+          "value": 36146,
           "trend": "up",
-          "change": 1.52,
+          "change": 0.96,
           "period": "2026-08-05"
         }
       },
@@ -82,43 +82,32 @@
       "headlines": [
         {
           "title": {
-            "fr": "Coldcard : un bogue informatique coûte 100 M$ US en bitcoins à des clients de Coinkite",
-            "en": "Coldcard : un bogue informatique coûte 100 M$ US en bitcoins à des clients de Coinkite"
+            "fr": "Meta’s AI model hacks another company during cybersecurity testing",
+            "en": "Meta’s AI model hacks another company during cybersecurity testing"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2273388/coinkite-coldcard-vol-bitcoins-crypto",
+          "url": "https://www.theglobeandmail.com/business/article-meta-ai-model-hack-cybersecurity-testing/",
           "theme": "tech",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "L’homme arrêté sur un golf de Trump accusé de possession illégale d’arme à feu",
+            "en": "L’homme arrêté sur un golf de Trump accusé de possession illégale d’arme à feu"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2273721/homme-arrete-golf-trump-possession-illegale-arme",
+          "theme": "geopolitics",
           "time": "<1h",
           "impact": "low",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "Brookfield earnings jump on fee-related profit, record fundraising",
-            "en": "Brookfield earnings jump on fee-related profit, record fundraising"
+            "fr": "Shopify shares soar as AI efforts begin to pay off",
+            "en": "Shopify shares soar as AI efforts begin to pay off"
           },
-          "url": "https://www.theglobeandmail.com/business/article-brookfield-asset-management-results-earnings-fundraising/",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "high",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Disney reports strong quarter as box office revenue, U.S. theme parks offset tourism weakness",
-            "en": "Disney reports strong quarter as box office revenue, U.S. theme parks offset tourism weakness"
-          },
-          "url": "https://www.theglobeandmail.com/business/international-business/article-disney-third-quarter-results-toy-story-5-us-theme-parks/",
-          "theme": "trade",
-          "time": "1h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Canada has an AI adoption plan. Now, it needs an adaptation plan that prioritizes workers",
-            "en": "Canada has an AI adoption plan. Now, it needs an adaptation plan that prioritizes workers"
-          },
-          "url": "https://www.theglobeandmail.com/business/careers/leadership/article-canada-has-an-ai-adoption-plan-now-it-needs-an-adaptation-plan-that/",
+          "url": "https://www.theglobeandmail.com/business/article-shopify-shares-soar-as-ai-efforts-begin-to-pay-off/",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
@@ -126,47 +115,58 @@
         },
         {
           "title": {
-            "fr": "Most Canadians unaware that travel insurance could be voided because of federal advisories",
-            "en": "Most Canadians unaware that travel insurance could be voided because of federal advisories"
+            "fr": "Félix Auger-Aliassime se retire de l’Omnium Banque Nationale : « Pire scénario possible »",
+            "en": "Félix Auger-Aliassime se retire de l’Omnium Banque Nationale : « Pire scénario possible »"
           },
-          "url": "https://www.theglobeandmail.com/canada/article-canadians-travel-insurance-federal-advisories/",
-          "theme": "monetary",
-          "time": "1h",
-          "impact": "high",
-          "source": "Globe and Mail"
+          "url": "https://ici.radio-canada.ca/sports/2273678/felix-auger-aliassime-obn",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "Gran Tierra to sell South American assets to Maurel and Prom in $1.33-billion deal",
-            "en": "Gran Tierra to sell South American assets to Maurel and Prom in $1.33-billion deal"
+            "fr": "DoorDash forecasts strong growth as food delivery demand holds firm",
+            "en": "DoorDash forecasts strong growth as food delivery demand holds firm"
           },
-          "url": "https://www.theglobeandmail.com/business/article-gran-tierra-to-sell-south-american-assets-to-maurel-and-prom/",
+          "url": "https://www.theglobeandmail.com/world/article-doordash-results-earnings-profits-food-delivery/",
           "theme": "trade",
           "time": "2h",
-          "impact": "high",
+          "impact": "medium",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "JPMorgan CEO enlisting leaders for cross-industry group focused on AI risks, sources say",
-            "en": "JPMorgan CEO enlisting leaders for cross-industry group focused on AI risks, sources say"
+            "fr": "Thomson Reuters to roll out in-house AI model as quarterly revenue rises",
+            "en": "Thomson Reuters to roll out in-house AI model as quarterly revenue rises"
           },
-          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-jpmorgan-jamie-dimon-alliance-for-critical-infrastructure-ai-risks/",
+          "url": "https://www.theglobeandmail.com/business/article-thomson-reuters-to-roll-out-in-house-ai-model-as-quarterly-revenue/",
           "theme": "tech",
           "time": "2h",
+          "impact": "medium",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Meta apologizes to India for briefly restricting Prime Minister Modi’s post",
+            "en": "Meta apologizes to India for briefly restricting Prime Minister Modi’s post"
+          },
+          "url": "https://www.theglobeandmail.com/business/technology/article-meta-apology-india-restricting-prime-minister-modi-post/",
+          "theme": "tech",
+          "time": "3h",
           "impact": "low",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Thomson Reuters raises full-year revenue outlook with focus on AI rollout",
-            "en": "Thomson Reuters raises full-year revenue outlook with focus on AI rollout"
+            "fr": "Le commerce entre le Canada et les États-Unis a reculé de près de 2 G$ depuis 2024",
+            "en": "Le commerce entre le Canada et les États-Unis a reculé de près de 2 G$ depuis 2024"
           },
-          "url": "https://www.theglobeandmail.com/business/article-thomson-reuters-second-quarter-results/",
-          "theme": "tech",
-          "time": "2h",
+          "url": "https://ici.radio-canada.ca/nouvelle/2273606/recul-commerce-canada-etats-unis-2-milliards",
+          "theme": "trade",
+          "time": "3h",
           "impact": "low",
-          "source": "Globe and Mail"
+          "source": "Radio-Canada Économie"
         }
       ],
       "provincialAnalysis": {
@@ -506,18 +506,18 @@
           "source": "Fed"
         },
         "inflation": {
-          "value": 3.0,
+          "value": 3.5,
           "unit": "%",
           "trend": "up",
-          "period": "Fév. 2026",
+          "period": "Juin 2026",
           "source": "BLS"
         },
         "rate": {
           "value": 3.625,
           "unit": "%",
           "trend": "stable",
-          "period": "Jan. 2026",
-          "source": "Federal Reserve"
+          "period": "Août 2026",
+          "source": "Federal Reserve (NY Fed)"
         },
         "exchange": {
           "value": null,
@@ -528,9 +528,9 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7778,
-          "trend": "up",
-          "change": 0.54,
+          "value": 7724,
+          "trend": "down",
+          "change": -0.17,
           "period": "2026-08-05"
         }
       },
@@ -551,7 +551,7 @@
           7499.36,
           7489.72,
           7600.5,
-          7778.14
+          7723.55
         ]
       },
       "summary": {
@@ -561,12 +561,78 @@
       "headlines": [
         {
           "title": {
+            "fr": "Iran says deal with Oman on Strait of Hormuz is in final stages",
+            "en": "Iran says deal with Oman on Strait of Hormuz is in final stages"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "<1h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Hollywood is cranking out billion-dollar movies again. 'Spider-Man' just joined the ranks",
+            "en": "Hollywood is cranking out billion-dollar movies again. 'Spider-Man' just joined the ranks"
+          },
+          "url": "https://www.cnbc.com/2026/08/05/hollywood-2026-billion-dollar-movies.html",
+          "theme": "monetary",
+          "time": "2h",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Trump administration pays back $100bn in 'Liberation Day' tariffs to businesses",
+            "en": "Trump administration pays back $100bn in 'Liberation Day' tariffs to businesses"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cwyewn5wexvo?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "5h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Student loan repayment rates an 'unsustainable burden', chancellor told",
+            "en": "Student loan repayment rates an 'unsustainable burden', chancellor told"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c5yed780epqo?at_medium=RSS&at_campaign=rss",
+          "theme": "monetary",
+          "time": "6h",
+          "impact": "medium",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Salad and Go files for Chapter 11 bankruptcy after cyclospora fears worsened its challenges",
+            "en": "Salad and Go files for Chapter 11 bankruptcy after cyclospora fears worsened its challenges"
+          },
+          "url": "https://www.cnbc.com/2026/08/05/salad-and-go-files-chapter-11-bankruptcy-cyclospora.html",
+          "theme": "trade",
+          "time": "7h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Bank of America spends $250 million a year on GLP-1 drugs for its employees, CEO says",
+            "en": "Bank of America spends $250 million a year on GLP-1 drugs for its employees, CEO says"
+          },
+          "url": "https://www.cnbc.com/2026/08/05/bank-of-america-ceo-glp-1-drugs-cost.html",
+          "theme": "trade",
+          "time": "8h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
             "fr": "Situational Awareness hedge fund meltdown was a warning shot for leveraged markets, BofA CEO says",
             "en": "Situational Awareness hedge fund meltdown was a warning shot for leveraged markets, BofA CEO says"
           },
           "url": "https://www.cnbc.com/2026/08/05/bofa-brian-moynihan-situational-awareness-meltdown-was-a-warning-shot.html",
           "theme": "geopolitics",
-          "time": "<1h",
+          "time": "8h",
           "impact": "high",
           "source": "CNBC"
         },
@@ -577,73 +643,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/c0qvpveg20vo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "GM, Chinese automaker extend joint venture for 20 years despite geopolitical tensions with U.S.",
-            "en": "GM, Chinese automaker extend joint venture for 20 years despite geopolitical tensions with U.S."
-          },
-          "url": "https://www.cnbc.com/2026/08/04/gm-chinese-automaker-extend-tie-up-amid-geopolitical-tensions-with-us.html",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Prioritise new jobs over green targets to win public contracts, firms told",
-            "en": "Prioritise new jobs over green targets to win public contracts, firms told"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/ckgdmv7elg8o?at_medium=RSS&at_campaign=rss",
-          "theme": "trade",
-          "time": "4h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Anthropic AI used fake profiles to target people in hack - then hid the evidence",
-            "en": "Anthropic AI used fake profiles to target people in hack - then hid the evidence"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c1w1lvn7d9go?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "5h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Trump says Iran will be 'hit very hard' if Hormuz Strait not open soon as oil prices fall",
-            "en": "Trump says Iran will be 'hit very hard' if Hormuz Strait not open soon as oil prices fall"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
           "time": "10h",
-          "impact": "medium",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "How tech is helping in the battle against wildfires",
-            "en": "How tech is helping in the battle against wildfires"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c62enveg1dpo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "15h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "'I feel like I dug my own grave': The workers caught in the AI transition",
-            "en": "'I feel like I dug my own grave': The workers caught in the AI transition"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cgr7nxve05go?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "16h",
           "impact": "low",
           "source": "BBC Business"
         }
@@ -691,7 +691,7 @@
         "exchange": {
           "value": 6.75,
           "unit": "CNY/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-08-05",
           "source": "Frankfurter/ECB"
         },
@@ -730,12 +730,67 @@
       "headlines": [
         {
           "title": {
+            "fr": "China’s retaliation against US shows depth of its trade war strategy, analysts say",
+            "en": "China’s retaliation against US shows depth of its trade war strategy, analysts say"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3363101/chinas-retaliation-against-us-shows-depth-its-trade-war-strategy-analysts-say?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "1h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China’s baby boom depends on gender equality, not cash handouts",
+            "en": "China’s baby boom depends on gender equality, not cash handouts"
+          },
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3362901/chinas-baby-boom-depends-gender-equality-not-cash-handouts?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Brazil to become regular borrower in China, treasury official says",
+            "en": "Brazil to become regular borrower in China, treasury official says"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3363096/brazil-become-regular-borrower-china-treasury-official-says?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "6h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China competition looms large in 2027 US defence bill",
+            "en": "China competition looms large in 2027 US defence bill"
+          },
+          "url": "https://www.scmp.com/news/us/politics/article/3363095/china-competition-looms-large-2027-us-defence-bill?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "6h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "US hawks push Trump on multibillion-dollar Taiwan arms deal ahead of Xi summit",
+            "en": "US hawks push Trump on multibillion-dollar Taiwan arms deal ahead of Xi summit"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3363085/us-hawks-push-trump-multibillion-dollar-taiwan-arms-deal-ahead-xi-summit?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "9h",
+          "impact": "high",
+          "source": "SCMP"
+        },
+        {
+          "title": {
             "fr": "China urged to protect underwater cables amid growing fears of ocean sabotage",
             "en": "China urged to protect underwater cables amid growing fears of ocean sabotage"
           },
           "url": "https://www.scmp.com/news/china/diplomacy/article/3363061/china-urged-protect-underwater-cables-amid-growing-fears-ocean-sabotage?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "<1h",
+          "time": "10h",
           "impact": "low",
           "source": "SCMP"
         },
@@ -746,7 +801,7 @@
           },
           "url": "https://www.scmp.com/news/china/politics/article/3363082/china-jails-retired-defence-tech-overseer-10-years-us63m-corruption-case?utm_source=rss_feed",
           "theme": "tech",
-          "time": "<1h",
+          "time": "11h",
           "impact": "low",
           "source": "SCMP"
         },
@@ -757,63 +812,8 @@
           },
           "url": "https://www.scmp.com/news/china/military/article/3363052/japan-tests-long-range-type-12-missile-counterstrike-capability-against-china-grows?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "1h",
+          "time": "11h",
           "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Why did a Chinese bomber carry a nuclear-capable missile in an anti-ship exercise?",
-            "en": "Why did a Chinese bomber carry a nuclear-capable missile in an anti-ship exercise?"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3363057/why-did-chinese-bomber-carry-nuclear-capable-missile-anti-ship-exercise?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Bangkok airport apologises after clash with Chinese tourists at boarding gate",
-            "en": "Bangkok airport apologises after clash with Chinese tourists at boarding gate"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3363027/bangkok-airport-apologises-after-clash-chinese-tourists-boarding-gate?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "5h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Trump claims China is fuelling resistance to AI data centres in the US",
-            "en": "Trump claims China is fuelling resistance to AI data centres in the US"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3363022/china-doesnt-want-these-built-trump-claims-beijing-behind-ai-data-centre-protests?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "7h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Narrow escape: how ANA flight from Shanghai avoided a collision at Tokyo airport",
-            "en": "Narrow escape: how ANA flight from Shanghai avoided a collision at Tokyo airport"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3363017/narrow-escape-how-ana-flight-shanghai-avoided-collision-tokyo-airport?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "8h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "How an amputee Chinese scientist is fortifying the country’s military software",
-            "en": "How an amputee Chinese scientist is fortifying the country’s military software"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3362932/how-amputee-chinese-scientist-fortifying-countrys-military-software?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "10h",
-          "impact": "high",
           "source": "SCMP"
         }
       ]
@@ -860,7 +860,7 @@
         "exchange": {
           "value": 95.12,
           "unit": "INR/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-08-05",
           "source": "Frankfurter/ECB"
         },
@@ -899,89 +899,89 @@
       "headlines": [
         {
           "title": {
+            "fr": "Melania Trump made $10.7M from Amazon docu",
+            "en": "Melania Trump made $10.7M from Amazon docu"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/melania-trump-earned-10-71-million-from-amazon-documentary-despite-16-million-box-office-haul-as-jeff-bezos-faces-buying-influence-claims/articleshow/132955348.cms",
+          "theme": "tech",
+          "time": "7h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "US removes sanctions from 3 IRGC-linked entities",
+            "en": "US removes sanctions from 3 IRGC-linked entities"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/us-removes-sanctions-from-three-irgc-linked-entities-treasury-website-shows/articleshow/132952415.cms",
+          "theme": "geopolitics",
+          "time": "8h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Why Zuckerberg raises cows fed nuts and beer",
+            "en": "Why Zuckerberg raises cows fed nuts and beer"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/why-meta-ceo-mark-zuckerberg-worth-over-200-billion-is-raising-wagyu-and-angus-cattle-on-his-hawaii-ranch-and-giving-his-cows-macadamia-nuts-and-beer/articleshow/132944203.cms",
+          "theme": "monetary",
+          "time": "9h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Indian Bank eyes Rs 35 lakh cr business by 2032",
+            "en": "Indian Bank eyes Rs 35 lakh cr business by 2032"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/indian-bank-targets-rs-35-lakh-crore-business-by-2032-after-crossing-rs-15-lakh-crore-milestone-md-ceo/articleshow/132943013.cms",
+          "theme": "tech",
+          "time": "9h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "India rejects Pakistan's 'Youm-e-Istehsal' move",
+            "en": "India rejects Pakistan's 'Youm-e-Istehsal' move"
+          },
+          "url": "https://economictimes.indiatimes.com/news/india/india-rejects-pakistans-attempt-to-mark-august-5-as-youm-e-istehsal/articleshow/132939915.cms",
+          "theme": "tech",
+          "time": "10h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Trump claims Iran clarity may come in 48 hours",
+            "en": "Trump claims Iran clarity may come in 48 hours"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-claims-iran-reached-out-for-talks-says-clarity-may-come-in-48-hours/articleshow/132938869.cms",
+          "theme": "geopolitics",
+          "time": "10h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Top 5 tech and startup stories of the day",
+            "en": "Top 5 tech and startup stories of the day"
+          },
+          "url": "https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/meta-apologises-over-lapses-ola-electric-shares-surge/articleshow/132930433.cms",
+          "theme": "tech",
+          "time": "10h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
             "fr": "ONGC eyes operatorship of two Venezuela oil blocks",
             "en": "ONGC eyes operatorship of two Venezuela oil blocks"
           },
           "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/ongc-eyes-operatorship-of-two-venezuela-oil-blocks/articleshow/132930877.cms",
           "theme": "energy",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "US and Iran having 'very good discussions': Trump",
-            "en": "US and Iran having 'very good discussions': Trump"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-optimistic-on-us-iran-talks-as-oil-prices-drop-and-stocks-rise/articleshow/132929149.cms",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Hormuz reopening deal by Wednesday: Trump",
-            "en": "Hormuz reopening deal by Wednesday: Trump"
-          },
-          "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-hints-at-deal-to-reopen-strait-of-hormuz-as-attacks-on-shipping-continue/articleshow/132923103.cms",
-          "theme": "energy",
-          "time": "2h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Rs 6.93L lost in scam, ICICI Bank asked to compensate",
-            "en": "Rs 6.93L lost in scam, ICICI Bank asked to compensate"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/legal/will/nagpur-woman-loses-rs-6-93-lakh-in-online-scam-files-complaint-against-bank-wins-back-money-with-9-interest-and-additional-rs-35000/articleshow/132895216.cms",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "How Level 10 employees can get Rs 25 lakh more pay",
-            "en": "How Level 10 employees can get Rs 25 lakh more pay"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/save/8th-pay-commission-salary-calculator-how-level-10-employees-can-get-rs-25-lakh-extra-gross-salary-in-10-years-at-6-annual-increment-rate/articleshow/132917718.cms",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Madhuri Dixit sells 2 Mumbai properties for ₹9.2 cr",
-            "en": "Madhuri Dixit sells 2 Mumbai properties for ₹9.2 cr"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/services/property-/-cstruction/madhuri-dixit-sells-two-properties-in-mumbais-andheri-juhu-for-rs-9-2-crore/articleshow/132917259.cms",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Can NRI open PPF account in India?",
-            "en": "Can NRI open PPF account in India?"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/ppf-rules-for-nris-can-non-resident-indians-open-ppf-account-in-india/articleshow/132909936.cms",
-          "theme": "tech",
-          "time": "5h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "US shuts the door on thousands of Indian students",
-            "en": "US shuts the door on thousands of Indian students"
-          },
-          "url": "https://economictimes.indiatimes.com/nri/study/us-student-visas-for-indians-plunge-62-as-america-tightens-f-1-approvals/articleshow/132907666.cms",
-          "theme": "tech",
-          "time": "5h",
+          "time": "11h",
           "impact": "low",
           "source": "Economic Times"
         }
@@ -1035,9 +1035,9 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 161,
-          "trend": "up",
-          "change": 0.53,
+          "value": 160,
+          "trend": "stable",
+          "change": -0.08,
           "period": "2026-08-05"
         }
       },
@@ -1057,7 +1057,7 @@
           72.92,
           90.12,
           83.77,
-          79.03
+          79.28
         ]
       },
       "summary": {
@@ -1067,90 +1067,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "Gaza father opens play center to restore childhood amid Israeli attacks",
-            "en": "Gaza father opens play center to restore childhood amid Israeli attacks"
+            "fr": "Meta’s AI model follows rivals in revealing hacks of outside systems",
+            "en": "Meta’s AI model follows rivals in revealing hacks of outside systems"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-gaza-jump-city-children-sv-mp4?traffic_source=rss",
-          "theme": "energy",
+          "url": "https://www.aljazeera.com/news/2026/8/6/metas-ai-model-follows-rivals-in-revealing-hacks-of-outside-systems?traffic_source=rss",
+          "theme": "tech",
           "time": "<1h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "UN rights chief alarmed by rise in Iran executions since March",
-            "en": "UN rights chief alarmed by rise in Iran executions since March"
+            "fr": "Iran says deal with Oman on Strait of Hormuz is in final stages",
+            "en": "Iran says deal with Oman on Strait of Hormuz is in final stages"
           },
-          "url": "https://www.bbc.co.uk/news/articles/c75gvzxrz49o?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "medium",
-          "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Armed man arrested near Trump's golf course ahead of president's visit",
-            "en": "Armed man arrested near Trump's golf course ahead of president's visit"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c20jp3mp7lyo?at_medium=RSS&at_campaign=rss",
-          "theme": "geopolitics",
+          "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
           "time": "<1h",
           "impact": "low",
           "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Why are US Republicans losing faith in War Secretary Pete Hegseth?",
-            "en": "Why are US Republicans losing faith in War Secretary Pete Hegseth?"
+            "fr": "FAA says Trump’s Marine One briefly flew too close to passenger jet",
+            "en": "FAA says Trump’s Marine One briefly flew too close to passenger jet"
           },
-          "url": "https://www.aljazeera.com/news/2026/8/5/why-are-us-republicans-losing-faith-in-war-secretary-pete-hegseth?traffic_source=rss",
-          "theme": "tech",
+          "url": "https://www.aljazeera.com/news/2026/8/6/faa-says-trumps-marine-one-briefly-flew-too-close-to-passenger-jet?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Iran war live: Tehran, Oman close in on Hormuz deal; Houthis attack tankers",
+            "en": "Iran war live: Tehran, Oman close in on Hormuz deal; Houthis attack tankers"
+          },
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/6/iran-war-live-tehran-oman-close-in-on-hormuz-deal-houthis-attack-tankers?traffic_source=rss",
+          "theme": "energy",
           "time": "<1h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "UN rights chief says Iran executed at least 56 people since March",
-            "en": "UN rights chief says Iran executed at least 56 people since March"
+            "fr": "Erica Schwartz confirmed as new CDC chief amid US agency turmoil",
+            "en": "Erica Schwartz confirmed as new CDC chief amid US agency turmoil"
           },
-          "url": "https://www.aljazeera.com/news/2026/8/5/un-rights-chief-says-iran-executed-at-least-56-people-since-march?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want?",
-            "en": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want?"
-          },
-          "url": "https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/8/5/erica-schwartz-confirmed-as-new-cdc-chief-amid-us-agency-turmoil?traffic_source=rss",
           "theme": "energy",
           "time": "2h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "US man arrested at Trump’s golf course charged with multiple felonies",
+            "en": "US man arrested at Trump’s golf course charged with multiple felonies"
+          },
+          "url": "https://www.aljazeera.com/news/2026/8/5/us-man-arrested-at-trumps-golf-course-charged-with-multiple-felonies?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "3h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Protesters stage sit-in against settler violence-linked Smotrich funds",
-            "en": "Protesters stage sit-in against settler violence-linked Smotrich funds"
+            "fr": "Israeli forces raid camp in occupied West Bank",
+            "en": "Israeli forces raid camp in occupied West Bank"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/protesters-stage-sit-in-against-settler-violence-linked-smotrich-funds?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/israeli-forces-raid-camp-in-occupied-west-bank-2?traffic_source=rss",
           "theme": "tech",
-          "time": "2h",
+          "time": "3h",
           "impact": "low",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Israeli forces detain Palestinians during raid in occupied West Bank",
-            "en": "Israeli forces detain Palestinians during raid in occupied West Bank"
+            "fr": "US announces more than $100m in rewards for eight Jalisco cartel leaders",
+            "en": "US announces more than $100m in rewards for eight Jalisco cartel leaders"
           },
-          "url": "https://www.aljazeera.com/news/2026/8/5/israeli-forces-detain-palestinians-during-raid-in-occupied-west-bank?traffic_source=rss",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "low",
+          "url": "https://www.aljazeera.com/news/2026/8/5/us-announces-more-than-100m-in-rewards-for-eight-jalisco-cartel-leaders?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "3h",
+          "impact": "high",
           "source": "Al Jazeera"
         }
       ]

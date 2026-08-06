@@ -155,6 +155,214 @@ def log(msg):
 
 
 # ============================================================
+# INDICATEURS MACRO (sources officielles, sans cle d'API)
+# ============================================================
+#
+# Le taux directeur et l'inflation etaient ecrits en dur dans
+# indicators.json : le tableau affichait « Inflation, fev. 2026 » a cote d'un
+# taux de change du jour meme, sans que rien ne signale l'ecart. Ces deux
+# indicateurs sont maintenant lus a la source pour le Canada et les
+# Etats-Unis, les deux zones pour lesquelles une API publique sans cle expose
+# la donnee officielle.
+#
+# La Chine, l'Inde et l'agregat mondial restent saisis a la main : aucune
+# source officielle ouverte et sans cle ne publie leur IPC mensuel dans un
+# format exploitable. Le controle de fraicheur en fin de script signale
+# explicitement leur age plutot que de le laisser passer inapercu.
+
+# Banque du Canada, API Valet (publique, sans cle).
+BDC_TAUX_DIRECTEUR = "V39079"     # cible du taux du financement a un jour
+BDC_IPC_INDICE = "V41690973"      # IPC d'ensemble, indice mensuel
+VALET_URL = "https://www.bankofcanada.ca/valet/observations/{series}/json?recent={n}"
+
+# Federal Reserve Bank of New York, API des taux de reference (sans cle).
+NYFED_EFFR_URL = "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/1.json"
+
+# Bureau of Labor Statistics, API publique v1 (sans cle, quota journalier bas).
+BLS_IPC_URL = "https://api.bls.gov/publicAPI/v1/timeseries/data/CUUR0000SA0"
+
+MOIS_FR = [
+    "Janv.", "Fév.", "Mars", "Avril", "Mai", "Juin",
+    "Juill.", "Août", "Sept.", "Oct.", "Nov.", "Déc.",
+]
+
+
+def periode_fr(annee, mois):
+    """« Juin 2026 » a partir de (2026, 6)."""
+    return f"{MOIS_FR[mois - 1]} {annee}"
+
+
+def variation_annuelle(valeur_recente, valeur_an_avant):
+    """Variation en pourcentage sur douze mois, arrondie a une decimale."""
+    return round((valeur_recente / valeur_an_avant - 1) * 100, 1)
+
+
+def fetch_valet(series, n):
+    """Observations Valet, de la plus recente a la plus ancienne."""
+    resp = requests.get(VALET_URL.format(series=series, n=n), timeout=TIMEOUT)
+    resp.raise_for_status()
+    return resp.json().get("observations", [])
+
+
+def fetch_taux_directeur_canada():
+    """Cible du taux directeur de la Banque du Canada."""
+    try:
+        obs = fetch_valet(BDC_TAUX_DIRECTEUR, 1)
+        if not obs:
+            log("  ERREUR taux directeur CA : aucune observation")
+            return None
+        derniere = obs[0]
+        valeur = float(derniere[BDC_TAUX_DIRECTEUR]["v"])
+        jour = datetime.strptime(derniere["d"], "%Y-%m-%d")
+        log(f"  Taux directeur CA : {valeur} % au {derniere['d']}")
+        return {"value": valeur, "period": periode_fr(jour.year, jour.month)}
+    except Exception as e:
+        log(f"  ERREUR taux directeur CA : {e}")
+        return None
+
+
+def fetch_inflation_canada():
+    """Inflation IPC sur douze mois, calculee depuis l'indice mensuel."""
+    try:
+        # 14 observations couvrent le mois courant et le meme mois un an plus
+        # tot, meme si la derniere publication accuse un mois de retard.
+        obs = fetch_valet(BDC_IPC_INDICE, 14)
+        valeurs = {o["d"]: float(o[BDC_IPC_INDICE]["v"]) for o in obs}
+        if not valeurs:
+            log("  ERREUR inflation CA : aucune observation")
+            return None
+        dernier_jour = max(valeurs)
+        recent = datetime.strptime(dernier_jour, "%Y-%m-%d")
+        cle_an_avant = recent.replace(year=recent.year - 1).strftime("%Y-%m-%d")
+        if cle_an_avant not in valeurs:
+            log(f"  ERREUR inflation CA : {cle_an_avant} absent de la serie")
+            return None
+        taux = variation_annuelle(valeurs[dernier_jour], valeurs[cle_an_avant])
+        log(f"  Inflation CA : {taux} % ({dernier_jour} sur douze mois)")
+        return {"value": taux, "period": periode_fr(recent.year, recent.month)}
+    except Exception as e:
+        log(f"  ERREUR inflation CA : {e}")
+        return None
+
+
+def fetch_taux_directeur_us():
+    """Milieu de la fourchette cible des fonds federaux."""
+    try:
+        resp = requests.get(NYFED_EFFR_URL, timeout=TIMEOUT)
+        resp.raise_for_status()
+        taux = resp.json()["refRates"][0]
+        milieu = (taux["targetRateFrom"] + taux["targetRateTo"]) / 2
+        jour = datetime.strptime(taux["effectiveDate"], "%Y-%m-%d")
+        log(f"  Taux directeur US : {milieu} % au {taux['effectiveDate']}")
+        return {"value": round(milieu, 3), "period": periode_fr(jour.year, jour.month)}
+    except Exception as e:
+        log(f"  ERREUR taux directeur US : {e}")
+        return None
+
+
+def fetch_inflation_us():
+    """Inflation IPC sur douze mois, calculee depuis l'indice CUUR0000SA0."""
+    try:
+        resp = requests.get(BLS_IPC_URL, timeout=TIMEOUT)
+        resp.raise_for_status()
+        charge = resp.json()
+        if charge.get("status") != "REQUEST_SUCCEEDED":
+            log(f"  ERREUR inflation US : {charge.get('status')}")
+            return None
+        serie = charge["Results"]["series"][0]["data"]
+        # period vaut « M06 » pour juin ; M13 designe une moyenne annuelle,
+        # qu'il ne faut pas melanger aux observations mensuelles. Le BLS sert
+        # aussi « - » pour un mois non encore publie : ces entrees existent
+        # dans la reponse mais ne portent aucune valeur.
+        mensuels = {}
+        for o in serie:
+            if not o["period"].startswith("M") or o["period"] == "M13":
+                continue
+            try:
+                mensuels[(int(o["year"]), int(o["period"][1:]))] = float(o["value"])
+            except ValueError:
+                continue
+        if not mensuels:
+            log("  ERREUR inflation US : aucune observation mensuelle")
+            return None
+        recent = max(mensuels)
+        an_avant = (recent[0] - 1, recent[1])
+        if an_avant not in mensuels:
+            log(f"  ERREUR inflation US : {an_avant} absent de la serie")
+            return None
+        taux = variation_annuelle(mensuels[recent], mensuels[an_avant])
+        log(f"  Inflation US : {taux} % ({recent[0]}-{recent[1]:02d} sur douze mois)")
+        return {"value": taux, "period": periode_fr(*recent)}
+    except Exception as e:
+        log(f"  ERREUR inflation US : {e}")
+        return None
+
+
+def appliquer(indicateur, mesure, source):
+    """Ecrit une mesure fraiche dans un indicateur, tendance comprise."""
+    if not mesure:
+        return False
+    ancienne = indicateur.get("value")
+    indicateur["value"] = mesure["value"]
+    if isinstance(ancienne, (int, float)):
+        if mesure["value"] > ancienne:
+            indicateur["trend"] = "up"
+        elif mesure["value"] < ancienne:
+            indicateur["trend"] = "down"
+        else:
+            indicateur["trend"] = "stable"
+    indicateur["period"] = mesure["period"]
+    indicateur["source"] = source
+    return True
+
+
+def age_en_jours(periode):
+    """Age d'un libelle de periode, ou None s'il ne designe pas une date.
+
+    « 2026F », « FY26F » et « 2026 cible » sont des previsions : elles n'ont
+    pas d'age a mesurer et ne doivent pas declencher d'alerte.
+    """
+    if not isinstance(periode, str) or not periode.strip():
+        return None
+    texte = periode.strip()
+    aujourdhui = datetime.now()
+
+    try:
+        return (aujourdhui - datetime.strptime(texte, "%Y-%m-%d")).days
+    except ValueError:
+        pass
+
+    morceaux = texte.split()
+    if len(morceaux) == 2:
+        mois_texte, annee_texte = morceaux
+        for numero, nom in enumerate(MOIS_FR, start=1):
+            if mois_texte.lower().startswith(nom.lower()[:3]):
+                try:
+                    reference = datetime(int(annee_texte), numero, 1)
+                except ValueError:
+                    return None
+                return (aujourdhui - reference).days
+    return None
+
+
+def signaler_indicateurs_perimes(data, seuil_jours=120):
+    """Journalise les indicateurs saisis a la main devenus trop vieux."""
+    log(f"Controle de fraicheur (seuil : {seuil_jours} jours)...")
+    perimes = 0
+    for region, contenu in data["regions"].items():
+        for nom, indicateur in contenu.get("indicators", {}).items():
+            age = age_en_jours(indicateur.get("period"))
+            if age is not None and age > seuil_jours:
+                log(f"  PERIME {region}.{nom} : {indicateur.get('period')} "
+                    f"({age} jours)")
+                perimes += 1
+    if perimes == 0:
+        log("  Aucun indicateur date au-dela du seuil.")
+    else:
+        log(f"  {perimes} indicateur(s) a rafraichir a la main.")
+
+
+# ============================================================
 # TAUX DE CHANGE (frankfurter.app)
 # ============================================================
 
@@ -460,6 +668,16 @@ def update_indicators():
             ind["period"] = date_str
             ind["source"] = "Frankfurter/ECB"
 
+    # --- Taux directeurs et inflation ---
+    log("Récupération des indicateurs macro...")
+    ca_ind = data["regions"]["CA"]["indicators"]
+    appliquer(ca_ind["rate"], fetch_taux_directeur_canada(), "Banque du Canada")
+    appliquer(ca_ind["inflation"], fetch_inflation_canada(), "Banque du Canada (IPC)")
+
+    us_ind = data["regions"]["US"]["indicators"]
+    appliquer(us_ind["rate"], fetch_taux_directeur_us(), "Federal Reserve (NY Fed)")
+    appliquer(us_ind["inflation"], fetch_inflation_us(), "BLS")
+
     # --- Indices boursiers ---
     stocks = fetch_all_stocks()
     for region, quote in stocks.items():
@@ -511,6 +729,9 @@ def update_indicators():
         else:
             log(f"  {region}: aucune headline (flux RSS indisponibles)")
         time.sleep(0.3)
+
+    # --- Controle de fraicheur ---
+    signaler_indicateurs_perimes(data)
 
     # --- Sauvegarder ---
     log("Sauvegarde de indicators.json...")
