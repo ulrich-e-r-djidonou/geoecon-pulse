@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06",
+  "lastUpdated": "2026-08-07",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.405,
+          "value": 1.4,
           "unit": "CAD/USD",
           "trend": "down",
-          "period": "2026-08-05",
+          "period": "2026-08-06",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 36146,
-          "trend": "up",
-          "change": 0.96,
-          "period": "2026-08-06"
+          "value": 36136,
+          "trend": "stable",
+          "change": -0.03,
+          "period": "2026-08-07"
         }
       },
       "sparkline": {
@@ -82,76 +82,54 @@
       "headlines": [
         {
           "title": {
-            "fr": "Alphabet reportedly seeking up to $25-billion in fresh debt to finance AI build-out",
-            "en": "Alphabet reportedly seeking up to $25-billion in fresh debt to finance AI build-out"
+            "fr": "Le taux de chômage a légèrement diminué en juillet au Canada, à 6,4 %",
+            "en": "Le taux de chômage a légèrement diminué en juillet au Canada, à 6,4 %"
           },
-          "url": "https://www.theglobeandmail.com/investing/article-alphabet-25-billion-bond-sale-ai-build-out/",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "high",
-          "source": "Globe and Mail"
+          "url": "https://ici.radio-canada.ca/nouvelle/2274045/taux-chomage-juillet-canada-enquete-population-active",
+          "theme": "trade",
+          "time": "<1h",
+          "impact": "medium",
+          "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "Guard against thoughtload, the silent tax on your performance",
-            "en": "Guard against thoughtload, the silent tax on your performance"
+            "fr": "U.S. employers unexpectedly cut 23,000 jobs in July, unemployment dips to 4.1%",
+            "en": "U.S. employers unexpectedly cut 23,000 jobs in July, unemployment dips to 4.1%"
           },
-          "url": "https://www.theglobeandmail.com/business/careers/management/article-guard-against-thoughtload-the-silent-tax-on-your-performance/",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Ottawa filmmaker uses AI to accelerate life-saving content",
-            "en": "Ottawa filmmaker uses AI to accelerate life-saving content"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-ottawa-filmmaker-uses-ai-to-accelerate-life-saving-content/",
-          "theme": "monetary",
-          "time": "1h",
+          "url": "https://www.theglobeandmail.com/business/economy/article-us-labour-market-jobs-july-2026/",
+          "theme": "trade",
+          "time": "2h",
           "impact": "medium",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "Manulife posts higher profit, strikes $3.2-billion reinsurance deal with Munich Re",
-            "en": "Manulife posts higher profit, strikes $3.2-billion reinsurance deal with Munich Re"
+            "fr": "Un deuxième employé de SickKids accusé de possession de matériel d’abus pédosexuels",
+            "en": "Un deuxième employé de SickKids accusé de possession de matériel d’abus pédosexuels"
           },
-          "url": "https://www.theglobeandmail.com/business/article-manulife-results-reinsurance-deal-with-munich-re/",
-          "theme": "trade",
-          "time": "1h",
-          "impact": "high",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "BCE reports second-quarter profit drop, revenue bump",
-            "en": "BCE reports second-quarter profit drop, revenue bump"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-bce-reports-second-quarter-profit-drop-revenue-bump/",
-          "theme": "monetary",
+          "url": "https://ici.radio-canada.ca/nouvelle/2274031/sickkids-employe-arrestation-pornographie-juvenile",
+          "theme": "geopolitics",
           "time": "2h",
           "impact": "low",
-          "source": "Globe and Mail"
+          "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "AtkinsRéalis reports lower profit, revenue up 10%",
-            "en": "AtkinsRéalis reports lower profit, revenue up 10%"
+            "fr": "Canada adds 75,000 jobs in July, unemployment rate hits two-year low",
+            "en": "Canada adds 75,000 jobs in July, unemployment rate hits two-year low"
           },
-          "url": "https://www.theglobeandmail.com/business/article-atkinsrealis-second-quarter-results-2026/",
+          "url": "https://www.theglobeandmail.com/business/economy/article-canada-labour-force-survey-jobs-unemployment-rate-july-2026/",
           "theme": "trade",
           "time": "2h",
-          "impact": "low",
+          "impact": "medium",
           "source": "Globe and Mail"
         },
         {
           "title": {
-            "fr": "The Birkin index: Should this pricey handbag be part of your portfolio?",
-            "en": "The Birkin index: Should this pricey handbag be part of your portfolio?"
+            "fr": "Business Brief: Canada’s carbon capture compromise",
+            "en": "Business Brief: Canada’s carbon capture compromise"
           },
-          "url": "https://www.theglobeandmail.com/investing/personal-finance/article-the-birkin-index-should-this-pricey-handbag-be-part-of-your-portfolio/",
+          "url": "https://www.theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise/",
           "theme": "trade",
           "time": "3h",
           "impact": "low",
@@ -159,14 +137,36 @@
         },
         {
           "title": {
-            "fr": "Business Brief: Opposition to Trump grows in unexpected places",
-            "en": "Business Brief: Opposition to Trump grows in unexpected places"
+            "fr": "The world is cooling on carbon capture. Why is Canada still barreling ahead in the oil sands?",
+            "en": "The world is cooling on carbon capture. Why is Canada still barreling ahead in the oil sands?"
           },
-          "url": "https://www.theglobeandmail.com/business/article-business-brief-opposition-to-trump-grows-in-unexpected-places/",
-          "theme": "geopolitics",
+          "url": "https://www.theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for/",
+          "theme": "energy",
           "time": "4h",
-          "impact": "medium",
+          "impact": "low",
           "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Une Canadienne sera déportée des États-Unis après avoir frappé une ado « pro-Trump »",
+            "en": "Une Canadienne sera déportée des États-Unis après avoir frappé une ado « pro-Trump »"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2274014/canadienne-deportee-etats-unis-frappe-ado-pro-trump",
+          "theme": "geopolitics",
+          "time": "11h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Espionnage à l’OTAN : Carney doit fournir des explications, affirme Poilievre",
+            "en": "Espionnage à l’OTAN : Carney doit fournir des explications, affirme Poilievre"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2274006/poilievre-explications-carney-espionnage-otan",
+          "theme": "energy",
+          "time": "13h",
+          "impact": "low",
+          "source": "Radio-Canada Économie"
         }
       ],
       "provincialAnalysis": {
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7724,
+          "value": 7710,
           "trend": "down",
-          "change": -0.17,
-          "period": "2026-08-06"
+          "change": -0.18,
+          "period": "2026-08-07"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           7580.06,
           7499.36,
           7489.72,
-          7600.5,
-          7723.55
+          7709.96,
+          7709.96
         ]
       },
       "summary": {
@@ -561,12 +561,78 @@
       "headlines": [
         {
           "title": {
+            "fr": "Surprise fall in US jobs last month as slow summer continues",
+            "en": "Surprise fall in US jobs last month as slow summer continues"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c20j5rle717o?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "<1h",
+          "impact": "medium",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Trump imposes 15% tariff on key chip material to counter China",
+            "en": "Trump imposes 15% tariff on key chip material to counter China"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cdrvn686dljo?at_medium=RSS&at_campaign=rss",
+          "theme": "trade",
+          "time": "12h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Why airlines are warning over lithium-ion batteries",
+            "en": "Why airlines are warning over lithium-ion batteries"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cwyl6yz719jo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "14h",
+          "impact": "high",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Savers Value Village thrift store launches new AI tool to price items",
+            "en": "Savers Value Village thrift store launches new AI tool to price items"
+          },
+          "url": "https://www.cnbc.com/2026/08/06/savers-value-village-thrift-store-launches-new-ai-tool-to-price-items.html",
+          "theme": "tech",
+          "time": "17h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "First OpenAI, now Meta - why do AI hacks keep happening?",
+            "en": "First OpenAI, now Meta - why do AI hacks keep happening?"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cp30989ee1wo?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "21h",
+          "impact": "low",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Warner Bros. Discovery reports 10% jump in streaming revenue ahead of proposed Paramount combination",
+            "en": "Warner Bros. Discovery reports 10% jump in streaming revenue ahead of proposed Paramount combination"
+          },
+          "url": "https://www.cnbc.com/2026/08/06/warner-bros-discovery-streaming-revenue-paramount-combination.html",
+          "theme": "geopolitics",
+          "time": "22h",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
             "fr": "Family offices back clean energy and sustainability startups in July as dealmaking holds steady",
             "en": "Family offices back clean energy and sustainability startups in July as dealmaking holds steady"
           },
           "url": "https://www.cnbc.com/2026/08/06/family-offices-sustainability-startups-july-dealmaking.html",
           "theme": "tech",
-          "time": "<1h",
+          "time": "23h",
           "impact": "low",
           "source": "CNBC"
         },
@@ -577,75 +643,9 @@
           },
           "url": "https://www.cnbc.com/2026/08/05/bank-of-america-ceo-glp-1-drugs-cost.html",
           "theme": "trade",
-          "time": "1h",
+          "time": "23h",
           "impact": "low",
           "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Megayacht Amadea sold for $187 million to Dubai billionaire with Trump ties",
-            "en": "Megayacht Amadea sold for $187 million to Dubai billionaire with Trump ties"
-          },
-          "url": "https://www.cnbc.com/2026/08/06/megayacht-amadea-sale-dubai-billionaire-trump-ties.html",
-          "theme": "tech",
-          "time": "1h",
-          "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Warner Bros. Discovery reports 10% jump in streaming revenue ahead of proposed Paramount combination",
-            "en": "Warner Bros. Discovery reports 10% jump in streaming revenue ahead of proposed Paramount combination"
-          },
-          "url": "https://www.cnbc.com/2026/08/06/warner-bros-discovery-streaming-revenue-paramount-combination.html",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "'I've had to Botox my CV': Are AI recruitment tools affecting women's careers?",
-            "en": "'I've had to Botox my CV': Are AI recruitment tools affecting women's careers?"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cyvl8y141e4o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Air India's new CEO faces financial and safety turbulence",
-            "en": "Air India's new CEO faces financial and safety turbulence"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c9987kkrnl5o?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "6h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Meta becomes latest firm to say its AI hacked another company",
-            "en": "Meta becomes latest firm to say its AI hacked another company"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cx2kgdnyk2po?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
-          "time": "8h",
-          "impact": "low",
-          "source": "BBC Business"
-        },
-        {
-          "title": {
-            "fr": "Iran says deal with Oman on Strait of Hormuz is in final stages",
-            "en": "Iran says deal with Oman on Strait of Hormuz is in final stages"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss",
-          "theme": "energy",
-          "time": "13h",
-          "impact": "low",
-          "source": "BBC Business"
         }
       ]
     },
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.75,
+          "value": 6.749,
           "unit": "CNY/USD",
-          "trend": "stable",
-          "period": "2026-08-05",
+          "trend": "down",
+          "period": "2026-08-06",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 3900,
+          "value": 3940,
           "trend": "up",
-          "change": 2.04,
-          "period": "2026-08-06"
+          "change": 1.59,
+          "period": "2026-08-07"
         }
       },
       "sparkline": {
@@ -730,21 +730,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "China confirms 2 deaths in Scarborough Shoal crash during Philippine ship chase",
-            "en": "China confirms 2 deaths in Scarborough Shoal crash during Philippine ship chase"
+            "fr": "Chinese breakthrough paves way for production of graphene-based quantum chips",
+            "en": "Chinese breakthrough paves way for production of graphene-based quantum chips"
           },
-          "url": "https://www.scmp.com/news/china/military/article/3363212/china-confirms-2-deaths-scarborough-shoal-crash-during-philippine-ship-chase?utm_source=rss_feed",
-          "theme": "geopolitics",
+          "url": "https://www.scmp.com/news/china/science/article/3363350/chinese-breakthrough-paves-way-production-graphene-based-quantum-chips?utm_source=rss_feed",
+          "theme": "tech",
           "time": "<1h",
-          "impact": "high",
+          "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Will latest trade ‘speed bump’ slow China-US ties, or even stop Xi-Trump summit?",
-            "en": "Will latest trade ‘speed bump’ slow China-US ties, or even stop Xi-Trump summit?"
+            "fr": "The world that made Confucius – and the China he made",
+            "en": "The world that made Confucius – and the China he made"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3363156/will-latest-trade-speed-bump-slow-china-us-ties-or-even-stop-xi-trump-summit?utm_source=rss_feed",
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3363031/world-made-confucius-and-china-he-made?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "<1h",
           "impact": "low",
@@ -752,43 +752,43 @@
         },
         {
           "title": {
-            "fr": "Chinese satellite captures video of SpaceX rocket debris crashing into the moon",
-            "en": "Chinese satellite captures video of SpaceX rocket debris crashing into the moon"
+            "fr": "Where do China-Israel ties stand after closure of consulate in Chengdu?",
+            "en": "Where do China-Israel ties stand after closure of consulate in Chengdu?"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3363199/chinese-satellite-captures-video-spacex-rocket-debris-crashing-moon?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3363325/where-do-china-israel-ties-stand-after-closure-consulate-chengdu?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China plans to increase mine output in world’s largest rare earth deposit by 50%",
+            "en": "China plans to increase mine output in world’s largest rare earth deposit by 50%"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3363230/china-plans-increase-mine-output-worlds-largest-rare-earth-deposit-50?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "2h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Is Japan eyeing Ukraine-style asymmetric warfare against China in defence shift?",
+            "en": "Is Japan eyeing Ukraine-style asymmetric warfare against China in defence shift?"
+          },
+          "url": "https://www.scmp.com/news/china/military/article/3363287/japan-eyeing-ukraine-style-asymmetric-warfare-against-china-defence-shift?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "3h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "Media backlash in China after US think tank hails 46% drop in Chinese student visas",
-            "en": "Media backlash in China after US think tank hails 46% drop in Chinese student visas"
+            "fr": "China shifts from Africa’s top megaproject lender to a debt collector",
+            "en": "China shifts from Africa’s top megaproject lender to a debt collector"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3363195/chinese-media-hits-back-after-us-think-tank-hails-46-drop-chinese-student-visas?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "3h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Chinese AI robot delivers needle-free pig vaccinations with 93% accuracy",
-            "en": "Chinese AI robot delivers needle-free pig vaccinations with 93% accuracy"
-          },
-          "url": "https://www.scmp.com/news/china/science/article/3363193/chinese-ai-tail-tracking-robot-delivers-needle-free-pig-vaccinations-93-accuracy?utm_source=rss_feed",
-          "theme": "tech",
-          "time": "4h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Has China’s missile force got America’s Kadena base in Japan in its sights?",
-            "en": "Has China’s missile force got America’s Kadena base in Japan in its sights?"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3363170/has-chinas-missile-force-got-americas-kadena-base-japan-its-sights?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3363301/china-shifts-africas-top-megaproject-lender-debt-collector?utm_source=rss_feed",
           "theme": "geopolitics",
           "time": "4h",
           "impact": "low",
@@ -796,23 +796,23 @@
         },
         {
           "title": {
-            "fr": "Why was a US Yale graduate hounded out of his job promoting Chinese culture?",
-            "en": "Why was a US Yale graduate hounded out of his job promoting Chinese culture?"
+            "fr": "Despite South China Sea clashes, Chinese and Philippine police boost cooperation",
+            "en": "Despite South China Sea clashes, Chinese and Philippine police boost cooperation"
           },
-          "url": "https://www.scmp.com/news/china/politics/article/3363174/why-was-us-yale-graduate-hounded-out-his-job-promoting-chinese-culture?utm_source=rss_feed",
-          "theme": "trade",
-          "time": "5h",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3363272/despite-south-china-sea-clashes-chinese-and-filipino-police-boost-cooperation?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "6h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China adds US sanctions, drone curbs in trade tit-for-tat",
-            "en": "China adds US sanctions, drone curbs in trade tit-for-tat"
+            "fr": "1,230 times the size of Hong Kong: China deploys drones, AI as Typhoon Dolphin nears coast",
+            "en": "1,230 times the size of Hong Kong: China deploys drones, AI as Typhoon Dolphin nears coast"
           },
-          "url": "https://www.scmp.com/plus/news/china/politics/article/3363167/china-adds-us-sanctions-drone-curbs-trade-tit-tat?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "5h",
+          "url": "https://www.scmp.com/news/china/politics/article/3363262/13-times-size-zhejiang-china-deploys-drones-ai-typhoon-dolphin-nears-coast?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "7h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -858,18 +858,18 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 95.12,
+          "value": 95.23,
           "unit": "INR/USD",
-          "trend": "stable",
-          "period": "2026-08-05",
+          "trend": "up",
+          "period": "2026-08-06",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 78764,
-          "trend": "up",
-          "change": 0.23,
-          "period": "2026-08-06"
+          "value": 78499,
+          "trend": "down",
+          "change": -0.58,
+          "period": "2026-08-07"
         }
       },
       "sparkline": {
@@ -888,8 +888,8 @@
           74775.74,
           76478.67,
           78094.64,
-          78639.03,
-          78764.46
+          78954.76,
+          78499.17
         ]
       },
       "summary": {
@@ -899,10 +899,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "No US ethanol import commitment in FTA talks: Govt",
-            "en": "No US ethanol import commitment in FTA talks: Govt"
+            "fr": "India, Russia to boost ties on SJ-100 aircraft, UAVs",
+            "en": "India, Russia to boost ties on SJ-100 aircraft, UAVs"
           },
-          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/india-dismisses-us-ethanol-import-rumors-amid-trade-pact-negotiations/articleshow/133007311.cms",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-russia-discuss-vande-bharat-sj-100-aircraft-uavs-to-deepen-industrial-ties/articleshow/133034660.cms",
+          "theme": "tech",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "₹42 cr power subsidy to dormant Delhi consumers: CAG",
+            "en": "₹42 cr power subsidy to dormant Delhi consumers: CAG"
+          },
+          "url": "https://economictimes.indiatimes.com/news/india/cag-flags-rs-42-crore-power-subsidy-to-dormant-consumers-in-delhi-questions-targeting-of-scheme/articleshow/133034413.cms",
           "theme": "trade",
           "time": "<1h",
           "impact": "low",
@@ -910,10 +921,32 @@
         },
         {
           "title": {
-            "fr": "VTDS, DEUS Automation ink ammo tech deal",
-            "en": "VTDS, DEUS Automation ink ammo tech deal"
+            "fr": "Khandu denies China incursion reports in Arunachal",
+            "en": "Khandu denies China incursion reports in Arunachal"
           },
-          "url": "https://economictimes.indiatimes.com/news/defence/vtds-partners-with-deus-automation-for-small-calibre-ammunition-tech-transfer-to-india/articleshow/133004816.cms",
+          "url": "https://economictimes.indiatimes.com/news/defence/pema-khandu-denies-fresh-china-incursion-reports-in-arunachal-pradesh-says-army-will-verify-ground-situation/articleshow/133034232.cms",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "HDFC Bank trims lending rates on select tenures",
+            "en": "HDFC Bank trims lending rates on select tenures"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/borrow/latest-hdfc-mclr-loan-lending-interest-rates-2026-top-lender-trims-rates-for-borrowers/articleshow/133034012.cms",
+          "theme": "monetary",
+          "time": "<1h",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "India boosts green ammonia for fertilisers",
+            "en": "India boosts green ammonia for fertilisers"
+          },
+          "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/chem-/-fertilisers/india-seeks-to-boost-domestic-green-ammonia-supplies-to-fertiliser-sector/articleshow/133032968.cms",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
@@ -921,68 +954,35 @@
         },
         {
           "title": {
-            "fr": "No tax on REIT dividends under new tax regime?",
-            "en": "No tax on REIT dividends under new tax regime?"
+            "fr": "No trace of missing Indian seafarers, Govt tells SC",
+            "en": "No trace of missing Indian seafarers, Govt tells SC"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/tax/good-news-for-investors-no-income-tax-on-dividends-received-from-reits-and-invits-in-this-case-lok-sabha-passes-the-bill-check-the-details/articleshow/132999834.cms",
-          "theme": "geopolitics",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "PhonePe offers Rs 100/day RD investment",
-            "en": "PhonePe offers Rs 100/day RD investment"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/phonepes-rs-100-daily-rd-how-it-works-app-also-adds-fd-investment-option/articleshow/133000179.cms",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Rs 1.33 crore cash, no ITR; yet wins tax case",
-            "en": "Rs 1.33 crore cash, no ITR; yet wins tax case"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/tax/rs-1-33-crore-cash-deposit-no-itr-filing-yet-senior-citizen-wins-income-tax-case-itat-bangalore-explains-why/articleshow/132994693.cms",
-          "theme": "trade",
-          "time": "4h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Kya Bolti Public: Cockroaches aim for pan-India drive",
-            "en": "Kya Bolti Public: Cockroaches aim for pan-India drive"
-          },
-          "url": "https://economictimes.indiatimes.com/news/politics-and-nation/cockroach-janta-party-announces-nationwide-membership-drive-kya-bolti-public-campaign-to-expand-grassroots-outreach/articleshow/132987698.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/missing-indian-seafarers-in-black-sea-attack-could-not-be-traced-despite-extensive-search-efforts-centre-tells-sc/articleshow/133032618.cms",
           "theme": "tech",
-          "time": "5h",
+          "time": "1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Gold rate today: 24k vs 22k vs 20k vs 18k",
-            "en": "Gold rate today: 24k vs 22k vs 20k vs 18k"
+            "fr": "FCRA is India's internal matter: MEA",
+            "en": "FCRA is India's internal matter: MEA"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/gold-rate-today-august-6-2026-check-24k-22k-20k-and-18k-gold-jewellery-prices-from-ibja-joyalukkas-tanishq-kalyan-jewellers-and-malabar-gold-diamonds-in-delhi-mumbai-hyderabad-other-cities/articleshow/132991661.cms",
+          "url": "https://economictimes.indiatimes.com/news/india/fcra-amendment-is-indias-internal-matter-says-mea-hits-back-at-us-lawmakers-church-takeover-claim/articleshow/133032033.cms",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Are NRIs allowed to invest in RBI floating rate bonds?",
+            "en": "Are NRIs allowed to invest in RBI floating rate bonds?"
+          },
+          "url": "https://economictimes.indiatimes.com/wealth/invest/can-nris-invest-in-rbi-floating-rate-savings-bonds-offering-8-05-interest-rate/articleshow/133031036.cms",
           "theme": "monetary",
-          "time": "5h",
+          "time": "2h",
           "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Can UPI payments trigger an income tax notice?",
-            "en": "Can UPI payments trigger an income tax notice?"
-          },
-          "url": "https://economictimes.indiatimes.com/wealth/tax/can-you-get-income-tax-notice-for-making-digital-payments-through-upi-neft-rtgs-and-imps-know-when-it-can-be-triggered/articleshow/132991116.cms",
-          "theme": "trade",
-          "time": "6h",
-          "impact": "low",
           "source": "Economic Times"
         }
       ]
@@ -1036,9 +1036,9 @@
         "stockIndex": {
           "name": "MSCI World",
           "value": 160,
-          "trend": "stable",
-          "change": -0.08,
-          "period": "2026-08-06"
+          "trend": "down",
+          "change": -0.25,
+          "period": "2026-08-07"
         }
       },
       "sparkline": {
@@ -1056,8 +1056,8 @@
           92.05,
           72.92,
           90.12,
-          83.77,
-          79.64
+          82.49,
+          81.96
         ]
       },
       "summary": {
@@ -1067,54 +1067,21 @@
       "headlines": [
         {
           "title": {
-            "fr": "Why $370bn tech group Palantir pays just 1.4 percent tax: Report",
-            "en": "Why $370bn tech group Palantir pays just 1.4 percent tax: Report"
+            "fr": "UN chief condemns both Ukraine and Russia amid escalation in war",
+            "en": "UN chief condemns both Ukraine and Russia amid escalation in war"
           },
-          "url": "https://www.aljazeera.com/news/2026/8/6/why-370bn-tech-group-palantir-pays-just-1-4-percent-tax-report?traffic_source=rss",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Indian court sentences high-profile journalist to 10 years for rape",
-            "en": "Indian court sentences high-profile journalist to 10 years for rape"
-          },
-          "url": "https://www.aljazeera.com/news/2026/8/6/indian-court-sentences-high-profile-journalist-to-10-years-for-rape?traffic_source=rss",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Iran tightens security grip at home as war conditions with US linger",
-            "en": "Iran tightens security grip at home as war conditions with US linger"
-          },
-          "url": "https://www.aljazeera.com/news/2026/8/6/iran-tightens-security-grip-at-home-as-war-conditions-with-us-linger?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/un-chief-condemns-both-ukraine-and-russia-amid-escalation-in-war?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "1h",
+          "time": "<1h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Will the US-Iran war and Hormuz deadlock last for months?",
-            "en": "Will the US-Iran war and Hormuz deadlock last for months?"
+            "fr": "First school for robots opens in China",
+            "en": "First school for robots opens in China"
           },
-          "url": "https://www.aljazeera.com/news/2026/8/6/will-the-us-iran-war-and-hormuz-deadlock-last-for-months?traffic_source=rss",
-          "theme": "energy",
-          "time": "1h",
-          "impact": "high",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "What came into force with the EU’s AI Act this week – and what didn’t",
-            "en": "What came into force with the EU’s AI Act this week – and what didn’t"
-          },
-          "url": "https://www.aljazeera.com/news/2026/8/6/what-came-into-force-with-the-eus-ai-act-this-week-and-what-didnt?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/first-school-for-robots-opens-in-china?traffic_source=rss",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
@@ -1122,35 +1089,68 @@
         },
         {
           "title": {
-            "fr": "Ukraine hits two oil refineries deep in Russian territory",
-            "en": "Ukraine hits two oil refineries deep in Russian territory"
+            "fr": "Trump says war ‘can’t go much longer’ – what’s the latest on talks?",
+            "en": "Trump says war ‘can’t go much longer’ – what’s the latest on talks?"
           },
-          "url": "https://www.bbc.co.uk/news/articles/cwymv212xrxo?at_medium=RSS&at_campaign=rss",
-          "theme": "tech",
+          "url": "https://www.aljazeera.com/news/2026/8/7/trump-says-war-cant-go-much-longer-whats-the-latest-on?traffic_source=rss",
+          "theme": "geopolitics",
           "time": "2h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Saudi ⁠Arabia, Pakistan and Turkiye sign defence deal amid regional turmoil",
+            "en": "Saudi ⁠Arabia, Pakistan and Turkiye sign defence deal amid regional turmoil"
+          },
+          "url": "https://www.aljazeera.com/news/2026/8/7/saudi-%e2%81%a0arabia-pakistan-and-turkiye-sign-defence-deal-amid-regional-turmoil?traffic_source=rss",
+          "theme": "energy",
+          "time": "2h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Why Trump is caught in an ‘escalation trap’ with Iran",
+            "en": "Why Trump is caught in an ‘escalation trap’ with Iran"
+          },
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/why-trump-is-caught-in-an-escalation-trap-with-iran?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "2h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "‘De-escalation’: Europe hesitates as US pushes for Hormuz naval mission",
+            "en": "‘De-escalation’: Europe hesitates as US pushes for Hormuz naval mission"
+          },
+          "url": "https://www.aljazeera.com/news/2026/8/7/hld-european-caution-slowing-us-push-for-hormuz-naval-coalition?traffic_source=rss",
+          "theme": "energy",
+          "time": "3h",
+          "impact": "low",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "A new youth agitation grips an Indian state after 'cockroach' protests",
+            "en": "A new youth agitation grips an Indian state after 'cockroach' protests"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c5ywv6egvx8o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "4h",
           "impact": "low",
           "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Can the US slow China’s robotics and tech rise?",
-            "en": "Can the US slow China’s robotics and tech rise?"
+            "fr": "Mexico deploys troops to secure avocado region after US halts imports",
+            "en": "Mexico deploys troops to secure avocado region after US halts imports"
           },
-          "url": "https://www.aljazeera.com/video/counting-the-cost/2026/8/6/can-the-us-slow-chinas-robotics-and-tech-rise?traffic_source=rss",
-          "theme": "tech",
-          "time": "2h",
-          "impact": "medium",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Ebola outbreak accelerates as healthcare workers strike over pay",
-            "en": "Ebola outbreak accelerates as healthcare workers strike over pay"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/ebola-outbreak-accelerates-as-healthcare-workers-strike-over-pay?traffic_source=rss",
-          "theme": "monetary",
-          "time": "3h",
-          "impact": "medium",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/mexico-deploys-troops-to-secure-avocado-region-after-us-halts-imports?traffic_source=rss",
+          "theme": "trade",
+          "time": "7h",
+          "impact": "low",
           "source": "Al Jazeera"
         }
       ]
