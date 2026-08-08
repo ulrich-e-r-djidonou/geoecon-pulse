@@ -62,7 +62,9 @@ Le filtre est implémenté dans `scripts/news_filter.py`. Un titre doit franchir
 
 Les titres retenus sont ensuite dédupliqués par recouvrement de vocabulaire et plafonnés à trois par éditeur, pour éviter qu'un flux bavard n'occupe une région entière.
 
-`scripts/test_news_filter.py` rejoue 90 titres réellement parus, en français comme en anglais, dont ceux qui n'avaient rien à y faire. Le workflow refuse de publier si ce test échoue.
+Jusqu'à trois des huit places sont réservées aux sources d'analyse (*Financial Times*, *The Economist*, Bloomberg, *WSJ*, *New York Times*, Peterson Institute, *Globe and Mail*, *Le Monde*, *Les Échos*, *La Presse*, *Le Devoir*, Nikkei Asia, SCMP). Sans cette réserve, un classement par pure fraîcheur laissait la dépêche du jour repousser systématiquement l'analyse de la veille.
+
+`scripts/test_news_filter.py` rejoue 95 titres réellement parus, en français comme en anglais, dont ceux qui n'avaient rien à y faire. Le workflow refuse de publier si ce test échoue.
 
 Les faux positifs se voient immédiatement, ils atterrissent en page d'accueil ; les faux négatifs sont invisibles par construction. `scripts/rapport_rejets.py` agrège chaque lundi les titres écartés de la semaine et met en avant ceux qui portaient un vocabulaire économique malgré leur rejet.
 

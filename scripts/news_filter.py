@@ -44,14 +44,38 @@ def normaliser(texte):
     return unicodedata.normalize("NFC", sans_accent).lower()
 
 
+def _avec_pluriel(terme):
+    """Rend un terme tolerant au pluriel, mot par mot.
+
+    « central bank » ne reconnaissait pas « central banks » : le lookahead
+    (?!\\w) bute sur le s final. Le defaut etait systematique et silencieux,
+    il touchait chaque terme dont le pluriel n'avait pas ete liste a la main.
+    Il a ete trouve sur un titre de The Economist, « How—and how much—should
+    central banks talk? », ecarte faute de signal alors qu'il en portait un.
+
+    Le s optionnel est pose sur chaque mot d'au moins quatre lettres, ce qui
+    couvre aussi l'accord francais : « banque centrale » attrape « banques
+    centrales ». Les mots courts et les sigles sont laisses tels quels, pour
+    ne pas transformer « g7 » en « g7s ».
+    """
+    morceaux = []
+    for mot in terme.split(" "):
+        echappe = re.escape(mot)
+        noyau = mot.replace("'", "").replace("-", "").replace(".", "")
+        if noyau.isalpha() and len(noyau) >= 4 and not mot.endswith("s"):
+            echappe += "s?"
+        morceaux.append(echappe)
+    return " ".join(morceaux)
+
+
 def compiler(termes):
-    """Alternance ancree sur des frontieres de mot.
+    """Alternance ancree sur des frontieres de mot, tolerante au pluriel.
 
     Les lookarounds remplacent \\b : ils fonctionnent aussi pour les termes qui
     finissent par un caractere non alphanumerique (« u.s. », « e. coli »).
     Le tri par longueur decroissante fait gagner l'expression la plus longue.
     """
-    parts = sorted((re.escape(t) for t in termes), key=len, reverse=True)
+    parts = sorted((_avec_pluriel(t) for t in termes), key=len, reverse=True)
     return re.compile(r"(?<!\w)(?:" + "|".join(parts) + r")(?!\w)")
 
 
@@ -218,6 +242,22 @@ FORT_MONETAIRE = [
     "exchange rate", "taux de change", "currency", "devise", "devises",
     "yuan", "renminbi", "rupee", "roupie", "loonie", "huard",
     "devaluation", "devaluation monetaire",
+    # « African countries are souring on the dollar » (The Economist) etait
+    # ecarte : les listes connaissaient « currency » et « devise », mais
+    # aucune monnaie de reserve par son nom, ni le vocabulaire du systeme
+    # monetaire international.
+    "the dollar", "le dollar", "greenback", "reserve currency",
+    "monnaie de reserve", "dedollarisation", "de-dollarisation",
+    "de-dollarization", "currency peg", "ancrage monetaire",
+    "capital flight", "fuite des capitaux", "currency swap",
+    "accord de swap", "foreign reserves", "reserves de change",
+    # « China's property bust is spilling across its borders » (PIIE) etait
+    # ecarte de la meme facon : l'immobilier, canal de transmission majeur
+    # d'une crise, n'apparaissait nulle part.
+    "housing market", "property market", "marche immobilier", "immobilier",
+    "real estate", "property bust", "housing bubble", "bulle immobiliere",
+    "krach immobilier", "mortgage rate", "taux hypothecaire",
+    "construction starts", "mises en chantier",
 ]
 
 FORT_ACTIVITE = [
@@ -239,6 +279,10 @@ FORT_ENERGIE = [
     "opec", "opep", "brent", "wti", "crude oil", "petrole brut",
     "oil prices", "prix du petrole", "oil output", "production petroliere",
     "oil shock", "choc petrolier", "oil supply", "oil market",
+    # « Iran's oil exports stall » etait classe en geopolitique faute que
+    # l'exportation de brut figure parmi les termes energetiques.
+    "oil export", "crude export", "exportations de petrole",
+    "oil terminal", "terminal petrolier", "oil embargo", "embargo petrolier",
     "lng", "gnl", "pipeline", "oleoduc", "gazoduc", "refinery", "raffinerie",
     "hormuz", "ormuz", "strait of hormuz", "detroit d'ormuz",
     "red sea", "mer rouge",
@@ -581,6 +625,16 @@ SOURCES_FIABLES = [
     "l'echo", "rtbf", "rfi", "france info", "franceinfo", "boursorama",
     "la presse canadienne", "ici radio-canada", "le journal de montreal",
     "le soleil", "les echos investir", "l'agefi", "le nouvel economiste",
+    # recherche economique des banques et instituts prives. Aucune de ces
+    # equipes n'expose de flux RSS : Desjardins ne propose qu'un abonnement
+    # par courriel, BMO, la Banque Nationale, Credit Agricole et BNP Paribas
+    # renvoient 404 ou un flux vide. Elles ne peuvent donc entrer que citees
+    # par un agregateur, d'ou leur presence ici plutot que dans RSS_FEEDS.
+    "desjardins", "etudes economiques desjardins", "mouvement desjardins",
+    "banque nationale", "national bank of canada", "bmo", "bmo economics",
+    "rbc economics", "scotiabank", "cibc", "td economics", "td bank",
+    "oxford economics", "capital economics", "conference board",
+    "moody's analytics", "s&p global", "fitch ratings", "morningstar",
     # institutions et think tanks
     "imf", "international monetary fund", "world bank", "wto",
     "world trade organization", "oecd", "bank of canada", "banque du canada",

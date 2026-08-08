@@ -103,6 +103,7 @@ RSS_FEEDS = {
         ("https://www.cnbc.com/id/19832390/device/rss/rss.html", "CNBC International"),
         ("https://feeds.bbci.co.uk/news/business/rss.xml", "BBC Business"),
         ("https://www.federalreserve.gov/feeds/press_all.xml", "Federal Reserve"),
+        ("https://www.ft.com/global-economy?format=rss", "Financial Times"),
         ("https://news.google.com/rss/search?q=(%22United+States%22+OR+Fed)+(tariffs+OR+trade+OR+inflation+OR+%22interest+rates%22+OR+sanctions)+when:4d&hl=en-US&gl=US&ceid=US:en", None),
     ],
     "CN": [
@@ -123,6 +124,13 @@ RSS_FEEDS = {
         ("https://www.wto.org/library/rss/latest_news_e.xml", "OMC"),
         ("https://www.ecb.europa.eu/rss/press.html", "BCE"),
         ("https://feeds.bbci.co.uk/news/business/rss.xml", "BBC Business"),
+        # La presse economique de reference figurait dans la liste blanche
+        # mais n'avait aucun flux direct : elle n'arrivait que par ricochet
+        # via Google News, et le FT comme The Economist n'apparaissaient
+        # jamais. Ces trois flux sont publics et repondent.
+        ("https://www.ft.com/global-economy?format=rss", "Financial Times"),
+        ("https://www.economist.com/finance-and-economics/rss.xml", "The Economist"),
+        ("https://www.piie.com/rss/update.xml", "Peterson Institute"),
         ("https://news.google.com/rss/search?q=(tariffs+OR+%22trade+war%22+OR+sanctions+OR+%22supply+chain%22+OR+OPEC+OR+%22export+controls%22)+when:3d&hl=en&gl=US&ceid=US:en", None),
     ],
 }
@@ -173,6 +181,18 @@ JOURNAL_REJETS = []
 
 MAX_HEADLINES = 8
 
+# Sources d'analyse : celles dont on veut la lecture meme quand elle date de
+# la veille, par opposition au fil d'agence. Elles se disputent jusqu'a trois
+# des huit places, a l'anciennete zero pres.
+SOURCES_ANALYSE = {
+    "financial times", "the economist", "bloomberg",
+    "wall street journal", "wsj", "the new york times",
+    "peterson institute", "the globe and mail", "le monde", "les echos",
+    "nikkei asia", "south china morning post", "foreign policy",
+    "foreign affairs", "la presse", "le devoir",
+}
+PLACES_ANALYSE = 3
+
 # Sans plafond par editeur, un flux bavard occupe la moitie d'une region :
 # ET Markets a fourni quatre des huit nouvelles indiennes du premier essai,
 # dont deux resultats trimestriels de petites capitalisations.
@@ -193,16 +213,46 @@ NOMS_EDITEURS = {
 }
 
 
+# Un meme editeur arrivait sous plusieurs libelles selon le flux d'origine :
+# « SCMP Economy », « SCMP Business », « SCMP Tech » et « South China Morning
+# Post » comptaient pour quatre. Le plafond de trois titres par editeur, qui
+# existe pour qu'une seule redaction n'occupe pas une zone entiere, etait donc
+# contournable sans le vouloir.
+ALIAS_EDITEURS = {
+    "scmp economy": "South China Morning Post",
+    "scmp business": "South China Morning Post",
+    "scmp tech": "South China Morning Post",
+    "scmp": "South China Morning Post",
+    "globe and mail": "The Globe and Mail",
+    "cbc business": "CBC",
+    "cnbc economy": "CNBC",
+    "cnbc international": "CNBC",
+    "bbc business": "BBC",
+    "et markets": "Economic Times",
+    "the economic times": "Economic Times",
+    "livemint": "Mint",
+    "le monde.fr": "Le Monde",
+    "investir les echos": "Les Echos",
+    "the wall street journal": "WSJ",
+    "new york times": "The New York Times",
+    "ft": "Financial Times",
+    "ici radio-canada": "Radio-Canada",
+}
+
+
 def joli_editeur(nom):
-    """« bloomberg.com » devient « Bloomberg »."""
+    """« bloomberg.com » devient « Bloomberg », « SCMP Tech » devient le SCMP."""
     if not nom:
         return nom
     cle = nom.strip().lower()
+    if cle in ALIAS_EDITEURS:
+        return ALIAS_EDITEURS[cle]
     if cle in NOMS_EDITEURS:
         return NOMS_EDITEURS[cle]
     if cle.endswith((".com", ".org", ".net", ".ca", ".co.uk", ".in")):
         racine = cle.rsplit(".", 2)[0].replace("www.", "")
-        return racine.replace("-", " ").title()
+        propre = racine.replace("-", " ").title()
+        return ALIAS_EDITEURS.get(propre.lower(), propre)
     return nom.strip()
 
 # ============================================================
@@ -1041,18 +1091,40 @@ def recuperer_actualites(region, langue="en"):
     # (ANI) sont la meme depeche sous deux angles de citation.
     retenues.sort(key=lambda x: x["moment"] or datetime.min.replace(tzinfo=timezone.utc),
                   reverse=True)
+
+    # Le classement par pure fraicheur faisait perdre l'analyse contre la
+    # depeche : le Financial Times et The Economist passaient le filtre chaque
+    # jour, une dizaine de titres chacun, et n'apparaissaient jamais, battus
+    # par des fils d'agence publies quelques heures plus tard. Une veille
+    # geoeconomique qui n'affiche jamais ces deux titres rate sa cible.
+    #
+    # On reserve donc jusqu'a trois des huit places aux sources d'analyse,
+    # servies elles aussi par ordre de fraicheur. Les cinq autres restent
+    # attribuees au plus recent, toutes sources confondues.
     uniques, empreintes, par_source = [], [], {}
-    for item in retenues:
+
+    def tenter(item):
         empreinte = mots_significatifs(item["titre"])
         if any(similarite(empreinte, e) > 0.45 for e in empreintes):
-            continue
+            return False
         if par_source.get(item["source"], 0) >= MAX_PAR_SOURCE:
-            continue
+            return False
         empreintes.append(empreinte)
         par_source[item["source"]] = par_source.get(item["source"], 0) + 1
         uniques.append(item)
+        return True
+
+    for item in retenues:
+        if len(uniques) >= PLACES_ANALYSE:
+            break
+        if normaliser(item["source"]) in SOURCES_ANALYSE:
+            tenter(item)
+
+    for item in retenues:
         if len(uniques) >= MAX_HEADLINES:
             break
+        if item not in uniques:
+            tenter(item)
 
     log(f"  {region} ({langue}) : {len(uniques)} retenues, "
         f"{len(rejetees)} ecartees")

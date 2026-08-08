@@ -149,6 +149,22 @@ ACCEPTES = [
     # Lacune reelle du filtre, presente aussi en anglais : la liste connaissait
     # le controle et l'interdiction des exportations, mais pas la restriction.
     ("La Chine annonce des restrictions sur les exportations de pièces de drones vers les Etats-Unis", "trade"),
+    # ------------------------------------------------------------
+    # Trois trous decouverts en branchant le Financial Times, The Economist
+    # et le Peterson Institute en flux directs. Ces titres etaient ecartes
+    # faute de signal alors qu'ils en portaient un.
+    # ------------------------------------------------------------
+    # Le pluriel : « central bank » ne reconnaissait pas « central banks ».
+    # Defaut systematique, il touchait tout terme dont le pluriel n'avait pas
+    # ete liste a la main.
+    ("How—and how much—should central banks talk?", "monetary"),
+    ("Les banques centrales revoient leurs prévisions d'inflation", "monetary"),
+    # Le systeme monetaire international : « currency » etait connu, aucune
+    # monnaie de reserve ne l'etait par son nom.
+    ("African countries are souring on the dollar", "monetary"),
+    # L'immobilier, canal de transmission majeur d'une crise, etait absent.
+    ("China's property bust is spilling across its borders", "monetary"),
+    ("Iran's oil exports stall and Kharg Island idles under US blockade", "energy"),
 ]
 
 # ------------------------------------------------------------
