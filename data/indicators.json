@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-07",
+  "lastUpdated": "2026-08-08",
   "regions": {
     "CA": {
       "name": {
@@ -41,18 +41,18 @@
           "source": "Banque du Canada"
         },
         "exchange": {
-          "value": 1.4,
+          "value": 1.401,
           "unit": "CAD/USD",
-          "trend": "down",
-          "period": "2026-08-06",
+          "trend": "up",
+          "period": "2026-08-07",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 36136,
-          "trend": "stable",
-          "change": -0.03,
-          "period": "2026-08-07"
+          "value": 36381,
+          "trend": "up",
+          "change": 0.68,
+          "period": "2026-08-08"
         }
       },
       "sparkline": {
@@ -82,91 +82,91 @@
       "headlines": [
         {
           "title": {
-            "fr": "Le taux de chômage a légèrement diminué en juillet au Canada, à 6,4 %",
-            "en": "Le taux de chômage a légèrement diminué en juillet au Canada, à 6,4 %"
+            "fr": "Ottawa’s trade concessions with U.S., unemployment rate hits two-year low and the 100 best cities for renters: Must-read business and investing stories",
+            "en": "Ottawa’s trade concessions with U.S., unemployment rate hits two-year low and the 100 best cities for renters: Must-read business and investing stories"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2274045/taux-chomage-juillet-canada-enquete-population-active",
+          "url": "https://www.theglobeandmail.com/business/article-canada-us-trade-jobs-best-cities-renters-august-8/",
           "theme": "trade",
           "time": "<1h",
           "impact": "medium",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "As Uncle Sam plays God with Japan’s yen, the world economy stands on edge",
+            "en": "As Uncle Sam plays God with Japan’s yen, the world economy stands on edge"
+          },
+          "url": "https://www.theglobeandmail.com/business/commentary/article-us-plays-god-japan-yen-economy-scott-bessent/",
+          "theme": "trade",
+          "time": "1h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "The 24 hours that could change Canada’s economic trajectory",
+            "en": "The 24 hours that could change Canada’s economic trajectory"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-canada-investment-summit-24-hours-that-could-change-canadas-economic/",
+          "theme": "trade",
+          "time": "2h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "En cartes | Vers un élargissement de la guerre au Moyen-Orient?",
+            "en": "En cartes | Vers un élargissement de la guerre au Moyen-Orient?"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2273736/elargissement-conflit-moyen-orient-cartes",
+          "theme": "geopolitics",
+          "time": "5h",
+          "impact": "high",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "U.S. employers unexpectedly cut 23,000 jobs in July, unemployment dips to 4.1%",
-            "en": "U.S. employers unexpectedly cut 23,000 jobs in July, unemployment dips to 4.1%"
+            "fr": "Joao Fonseca brille face à Casper Ruud et passe en huitièmes de l’Omnium Banque Nationale",
+            "en": "Joao Fonseca brille face à Casper Ruud et passe en huitièmes de l’Omnium Banque Nationale"
           },
-          "url": "https://www.theglobeandmail.com/business/economy/article-us-labour-market-jobs-july-2026/",
+          "url": "https://ici.radio-canada.ca/sports/2274152/tennis-griekspoor-arnaldi-shelton-bergs-obn",
           "theme": "trade",
-          "time": "2h",
-          "impact": "medium",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Un deuxième employé de SickKids accusé de possession de matériel d’abus pédosexuels",
-            "en": "Un deuxième employé de SickKids accusé de possession de matériel d’abus pédosexuels"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2274031/sickkids-employe-arrestation-pornographie-juvenile",
-          "theme": "geopolitics",
-          "time": "2h",
-          "impact": "low",
-          "source": "Radio-Canada Économie"
-        },
-        {
-          "title": {
-            "fr": "Canada adds 75,000 jobs in July, unemployment rate hits two-year low",
-            "en": "Canada adds 75,000 jobs in July, unemployment rate hits two-year low"
-          },
-          "url": "https://www.theglobeandmail.com/business/economy/article-canada-labour-force-survey-jobs-unemployment-rate-july-2026/",
-          "theme": "trade",
-          "time": "2h",
-          "impact": "medium",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Business Brief: Canada’s carbon capture compromise",
-            "en": "Business Brief: Canada’s carbon capture compromise"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise/",
-          "theme": "trade",
-          "time": "3h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "The world is cooling on carbon capture. Why is Canada still barreling ahead in the oil sands?",
-            "en": "The world is cooling on carbon capture. Why is Canada still barreling ahead in the oil sands?"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for/",
-          "theme": "energy",
-          "time": "4h",
-          "impact": "low",
-          "source": "Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Une Canadienne sera déportée des États-Unis après avoir frappé une ado « pro-Trump »",
-            "en": "Une Canadienne sera déportée des États-Unis après avoir frappé une ado « pro-Trump »"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2274014/canadienne-deportee-etats-unis-frappe-ado-pro-trump",
-          "theme": "geopolitics",
           "time": "11h",
           "impact": "low",
           "source": "Radio-Canada Économie"
         },
         {
           "title": {
-            "fr": "Espionnage à l’OTAN : Carney doit fournir des explications, affirme Poilievre",
-            "en": "Espionnage à l’OTAN : Carney doit fournir des explications, affirme Poilievre"
+            "fr": "This FTX claims broker is now courting victims of a $155-million hack of a Canadian bitcoin firm",
+            "en": "This FTX claims broker is now courting victims of a $155-million hack of a Canadian bitcoin firm"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2274006/poilievre-explications-carney-espionnage-otan",
-          "theme": "energy",
-          "time": "13h",
+          "url": "https://www.theglobeandmail.com/business/article-ftx-claims-broker-now-courting-victims-155-million-coinkite-inc/",
+          "theme": "tech",
+          "time": "12h",
+          "impact": "low",
+          "source": "Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "La justice bloque à nouveau la salle de bal de Trump, qui va s’adresser à la Cour suprême",
+            "en": "La justice bloque à nouveau la salle de bal de Trump, qui va s’adresser à la Cour suprême"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2274093/salle-bal-trump-bloque-cour-appel",
+          "theme": "geopolitics",
+          "time": "12h",
           "impact": "low",
           "source": "Radio-Canada Économie"
+        },
+        {
+          "title": {
+            "fr": "Canadian economy adds 75,100 jobs in July, U.S. sheds 23,000 positions",
+            "en": "Canadian economy adds 75,100 jobs in July, U.S. sheds 23,000 positions"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-canadian-economy-jobs-labour-unemployment-july-2026/",
+          "theme": "trade",
+          "time": "13h",
+          "impact": "low",
+          "source": "Globe and Mail"
         }
       ],
       "provincialAnalysis": {
@@ -528,10 +528,10 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7710,
-          "trend": "down",
-          "change": -0.18,
-          "period": "2026-08-07"
+          "value": 7758,
+          "trend": "up",
+          "change": 0.62,
+          "period": "2026-08-08"
         }
       },
       "sparkline": {
@@ -550,8 +550,8 @@
           7580.06,
           7499.36,
           7489.72,
-          7709.96,
-          7709.96
+          7757.64,
+          7757.64
         ]
       },
       "summary": {
@@ -561,13 +561,35 @@
       "headlines": [
         {
           "title": {
+            "fr": "Rockstar Energy founder builds Celsius stake, wants to take over as CEO",
+            "en": "Rockstar Energy founder builds Celsius stake, wants to take over as CEO"
+          },
+          "url": "https://www.cnbc.com/2026/08/07/rockstar-energy-founder-celsius-stake-ceo.html",
+          "theme": "energy",
+          "time": "16h",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
             "fr": "Surprise fall in US jobs last month as slow summer continues",
             "en": "Surprise fall in US jobs last month as slow summer continues"
           },
           "url": "https://www.bbc.co.uk/news/articles/c20j5rle717o?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "<1h",
+          "time": "23h",
           "impact": "medium",
+          "source": "BBC Business"
+        },
+        {
+          "title": {
+            "fr": "Trump administration to pay German firm $1.2bn to halt US wind projects",
+            "en": "Trump administration to pay German firm $1.2bn to halt US wind projects"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c1e1vg0gjl5o?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "23h",
+          "impact": "low",
           "source": "BBC Business"
         },
         {
@@ -577,7 +599,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cdrvn686dljo?at_medium=RSS&at_campaign=rss",
           "theme": "trade",
-          "time": "12h",
+          "time": "1j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -588,7 +610,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cwyl6yz719jo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "14h",
+          "time": "1j",
           "impact": "high",
           "source": "BBC Business"
         },
@@ -599,7 +621,7 @@
           },
           "url": "https://www.cnbc.com/2026/08/06/savers-value-village-thrift-store-launches-new-ai-tool-to-price-items.html",
           "theme": "tech",
-          "time": "17h",
+          "time": "1j",
           "impact": "low",
           "source": "CNBC"
         },
@@ -610,7 +632,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cp30989ee1wo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "21h",
+          "time": "1j",
           "impact": "low",
           "source": "BBC Business"
         },
@@ -621,30 +643,8 @@
           },
           "url": "https://www.cnbc.com/2026/08/06/warner-bros-discovery-streaming-revenue-paramount-combination.html",
           "theme": "geopolitics",
-          "time": "22h",
+          "time": "1j",
           "impact": "high",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Family offices back clean energy and sustainability startups in July as dealmaking holds steady",
-            "en": "Family offices back clean energy and sustainability startups in July as dealmaking holds steady"
-          },
-          "url": "https://www.cnbc.com/2026/08/06/family-offices-sustainability-startups-july-dealmaking.html",
-          "theme": "tech",
-          "time": "23h",
-          "impact": "low",
-          "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Bank of America spends $250 million a year on GLP-1 drugs for its employees, CEO says",
-            "en": "Bank of America spends $250 million a year on GLP-1 drugs for its employees, CEO says"
-          },
-          "url": "https://www.cnbc.com/2026/08/05/bank-of-america-ceo-glp-1-drugs-cost.html",
-          "theme": "trade",
-          "time": "23h",
-          "impact": "low",
           "source": "CNBC"
         }
       ]
@@ -689,18 +689,18 @@
           "source": "PBoC"
         },
         "exchange": {
-          "value": 6.749,
+          "value": 6.748,
           "unit": "CNY/USD",
           "trend": "down",
-          "period": "2026-08-06",
+          "period": "2026-08-07",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
           "name": "SSE Composite",
           "value": 3940,
           "trend": "up",
-          "change": 1.59,
-          "period": "2026-08-07"
+          "change": 1.02,
+          "period": "2026-08-08"
         }
       },
       "sparkline": {
@@ -730,89 +730,89 @@
       "headlines": [
         {
           "title": {
-            "fr": "Chinese breakthrough paves way for production of graphene-based quantum chips",
-            "en": "Chinese breakthrough paves way for production of graphene-based quantum chips"
+            "fr": "What is a glueball? Chinese-led team finds rare particle made entirely of force",
+            "en": "What is a glueball? Chinese-led team finds rare particle made entirely of force"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3363350/chinese-breakthrough-paves-way-production-graphene-based-quantum-chips?utm_source=rss_feed",
+          "url": "https://www.scmp.com/news/china/science/article/3363404/what-glueball-chinese-led-team-finds-rare-particle-made-entirely-force?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "China’s lunar research station could be guarded by robot watchdogs, space scientists say",
+            "en": "China’s lunar research station could be guarded by robot watchdogs, space scientists say"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3363149/chinas-lunar-research-station-could-be-guarded-robot-watchdogs-space-scientists-say?utm_source=rss_feed",
           "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "The world that made Confucius – and the China he made",
-            "en": "The world that made Confucius – and the China he made"
-          },
-          "url": "https://www.scmp.com/opinion/china-opinion/article/3363031/world-made-confucius-and-china-he-made?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Where do China-Israel ties stand after closure of consulate in Chengdu?",
-            "en": "Where do China-Israel ties stand after closure of consulate in Chengdu?"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3363325/where-do-china-israel-ties-stand-after-closure-consulate-chengdu?utm_source=rss_feed",
-          "theme": "geopolitics",
           "time": "1h",
           "impact": "low",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China plans to increase mine output in world’s largest rare earth deposit by 50%",
-            "en": "China plans to increase mine output in world’s largest rare earth deposit by 50%"
+            "fr": "Taiwan’s William Lai rehearses late-night emergency escape during military drill",
+            "en": "Taiwan’s William Lai rehearses late-night emergency escape during military drill"
           },
-          "url": "https://www.scmp.com/news/china/science/article/3363230/china-plans-increase-mine-output-worlds-largest-rare-earth-deposit-50?utm_source=rss_feed",
-          "theme": "geopolitics",
+          "url": "https://www.scmp.com/news/china/military/article/3363402/taiwans-william-lai-rehearses-late-night-emergency-escape-during-military-drill?utm_source=rss_feed",
+          "theme": "tech",
           "time": "2h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Is Japan eyeing Ukraine-style asymmetric warfare against China in defence shift?",
-            "en": "Is Japan eyeing Ukraine-style asymmetric warfare against China in defence shift?"
-          },
-          "url": "https://www.scmp.com/news/china/military/article/3363287/japan-eyeing-ukraine-style-asymmetric-warfare-against-china-defence-shift?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "3h",
           "impact": "high",
           "source": "SCMP"
         },
         {
           "title": {
-            "fr": "China shifts from Africa’s top megaproject lender to a debt collector",
-            "en": "China shifts from Africa’s top megaproject lender to a debt collector"
+            "fr": "Global pharma giants turn to Chinese biotech to tap innovation, valuation growth",
+            "en": "Global pharma giants turn to Chinese biotech to tap innovation, valuation growth"
           },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3363301/china-shifts-africas-top-megaproject-lender-debt-collector?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "4h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "Despite South China Sea clashes, Chinese and Philippine police boost cooperation",
-            "en": "Despite South China Sea clashes, Chinese and Philippine police boost cooperation"
-          },
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3363272/despite-south-china-sea-clashes-chinese-and-filipino-police-boost-cooperation?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "6h",
-          "impact": "low",
-          "source": "SCMP"
-        },
-        {
-          "title": {
-            "fr": "1,230 times the size of Hong Kong: China deploys drones, AI as Typhoon Dolphin nears coast",
-            "en": "1,230 times the size of Hong Kong: China deploys drones, AI as Typhoon Dolphin nears coast"
-          },
-          "url": "https://www.scmp.com/news/china/politics/article/3363262/13-times-size-zhejiang-china-deploys-drones-ai-typhoon-dolphin-nears-coast?utm_source=rss_feed",
+          "url": "https://www.scmp.com/business/china-business/article/3363398/global-pharma-giants-turn-chinese-biotech-tap-innovation-valuation-growth?utm_source=rss_feed",
           "theme": "tech",
-          "time": "7h",
+          "time": "2h",
+          "impact": "medium",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Why Beijing struggles to win Indian hearts and minds despite diplomatic thaw",
+            "en": "Why Beijing struggles to win Indian hearts and minds despite diplomatic thaw"
+          },
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3363382/why-beijing-struggles-win-indian-hearts-and-minds-despite-diplomatic-thaw?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Typhoon Dolphin causes flight chaos in China, with Shanghai set to enter danger zone",
+            "en": "Typhoon Dolphin causes flight chaos in China, with Shanghai set to enter danger zone"
+          },
+          "url": "https://www.scmp.com/news/china/article/3363380/typhoon-dolphin-causes-flight-chaos-china-shanghai-set-enter-danger-zone?utm_source=rss_feed",
+          "theme": "tech",
+          "time": "8h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "Chinese scientists find some Yangtze flood controls may do more harm than good",
+            "en": "Chinese scientists find some Yangtze flood controls may do more harm than good"
+          },
+          "url": "https://www.scmp.com/news/china/science/article/3363133/chinese-scientists-find-some-yangtze-flood-controls-may-do-more-harm-good?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "9h",
+          "impact": "low",
+          "source": "SCMP"
+        },
+        {
+          "title": {
+            "fr": "US judge blocks Pentagon’s ‘Chinese military’ label for WuXi AppTec",
+            "en": "US judge blocks Pentagon’s ‘Chinese military’ label for WuXi AppTec"
+          },
+          "url": "https://www.scmp.com/news/us/article/3363369/us-judge-blocks-pentagons-chinese-military-label-wuxi-apptec?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "16h",
           "impact": "low",
           "source": "SCMP"
         }
@@ -858,10 +858,10 @@
           "source": "RBI"
         },
         "exchange": {
-          "value": 95.23,
+          "value": 95.21,
           "unit": "INR/USD",
-          "trend": "up",
-          "period": "2026-08-06",
+          "trend": "down",
+          "period": "2026-08-07",
           "source": "Frankfurter/ECB"
         },
         "stockIndex": {
@@ -869,7 +869,7 @@
           "value": 78499,
           "trend": "down",
           "change": -0.58,
-          "period": "2026-08-07"
+          "period": "2026-08-08"
         }
       },
       "sparkline": {
@@ -888,7 +888,7 @@
           74775.74,
           76478.67,
           78094.64,
-          78954.76,
+          78499.17,
           78499.17
         ]
       },
@@ -899,90 +899,90 @@
       "headlines": [
         {
           "title": {
-            "fr": "India, Russia to boost ties on SJ-100 aircraft, UAVs",
-            "en": "India, Russia to boost ties on SJ-100 aircraft, UAVs"
+            "fr": "'US hurting itself; India insulated on new tariffs'",
+            "en": "'US hurting itself; India insulated on new tariffs'"
           },
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-russia-discuss-vande-bharat-sj-100-aircraft-uavs-to-deepen-industrial-ties/articleshow/133034660.cms",
-          "theme": "tech",
-          "time": "<1h",
-          "impact": "low",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "₹42 cr power subsidy to dormant Delhi consumers: CAG",
-            "en": "₹42 cr power subsidy to dormant Delhi consumers: CAG"
-          },
-          "url": "https://economictimes.indiatimes.com/news/india/cag-flags-rs-42-crore-power-subsidy-to-dormant-consumers-in-delhi-questions-targeting-of-scheme/articleshow/133034413.cms",
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/america-hurting-its-own-interest-india-well-insulated-against-us-tariffs-on-russian-oil-expert-says/articleshow/133051948.cms",
           "theme": "trade",
-          "time": "<1h",
+          "time": "1h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Khandu denies China incursion reports in Arunachal",
-            "en": "Khandu denies China incursion reports in Arunachal"
+            "fr": "Hawaii primary tests Democrats’ leftward shift",
+            "en": "Hawaii primary tests Democrats’ leftward shift"
           },
-          "url": "https://economictimes.indiatimes.com/news/defence/pema-khandu-denies-fresh-china-incursion-reports-in-arunachal-pradesh-says-army-will-verify-ground-situation/articleshow/133034232.cms",
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/us-democrats-leftward-shift-faces-test-in-hawaii-primary/articleshow/133050502.cms",
+          "theme": "tech",
+          "time": "2h",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Sai Sudharsan ruled out of Sri Lanka Test series",
+            "en": "Sai Sudharsan ruled out of Sri Lanka Test series"
+          },
+          "url": "https://economictimes.indiatimes.com/news/sports/cricket/sai-sudharsan-ruled-out-of-sri-lanka-test-series/articleshow/133050036.cms",
+          "theme": "tech",
+          "time": "3h",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Trump-backed voting bill stalls as Senate heads home",
+            "en": "Trump-backed voting bill stalls as Senate heads home"
+          },
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/us-senators-head-for-the-exits-without-meeting-trumps-demands-for-voting-bill/articleshow/133049846.cms",
           "theme": "geopolitics",
-          "time": "<1h",
+          "time": "3h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "HDFC Bank trims lending rates on select tenures",
-            "en": "HDFC Bank trims lending rates on select tenures"
+            "fr": "Trump ally Blanche confirmed as US attorney general",
+            "en": "Trump ally Blanche confirmed as US attorney general"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/borrow/latest-hdfc-mclr-loan-lending-interest-rates-2026-top-lender-trims-rates-for-borrowers/articleshow/133034012.cms",
-          "theme": "monetary",
-          "time": "<1h",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "India boosts green ammonia for fertilisers",
-            "en": "India boosts green ammonia for fertilisers"
-          },
-          "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/chem-/-fertilisers/india-seeks-to-boost-domestic-green-ammonia-supplies-to-fertiliser-sector/articleshow/133032968.cms",
-          "theme": "tech",
-          "time": "1h",
+          "url": "https://economictimes.indiatimes.com/news/international/world-news/todd-blanche-narrowly-confirmed-as-trumps-attorney-general-in-overnight-vote/articleshow/133049388.cms",
+          "theme": "geopolitics",
+          "time": "4h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "No trace of missing Indian seafarers, Govt tells SC",
-            "en": "No trace of missing Indian seafarers, Govt tells SC"
+            "fr": "Khamenei’s vanishing act deepens Iran mystery",
+            "en": "Khamenei’s vanishing act deepens Iran mystery"
           },
-          "url": "https://economictimes.indiatimes.com/news/india/missing-indian-seafarers-in-black-sea-attack-could-not-be-traced-despite-extensive-search-efforts-centre-tells-sc/articleshow/133032618.cms",
-          "theme": "tech",
-          "time": "1h",
+          "url": "https://economictimes.indiatimes.com/news/international/global-trends/iran-supreme-leader-mojtaba-khameneis-absence-deepens-leadership-mystery/articleshow/133048793.cms",
+          "theme": "geopolitics",
+          "time": "4h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "FCRA is India's internal matter: MEA",
-            "en": "FCRA is India's internal matter: MEA"
+            "fr": "India’s $40bn Russian lifeline faces tariff threat",
+            "en": "India’s $40bn Russian lifeline faces tariff threat"
           },
-          "url": "https://economictimes.indiatimes.com/news/india/fcra-amendment-is-indias-internal-matter-says-mea-hits-back-at-us-lawmakers-church-takeover-claim/articleshow/133032033.cms",
-          "theme": "tech",
-          "time": "2h",
+          "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/india-russian-oil-crude-us-100-percent-tariff-trump-lindsey-graham-sanctions-bill-gtri/articleshow/133048236.cms",
+          "theme": "trade",
+          "time": "5h",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Are NRIs allowed to invest in RBI floating rate bonds?",
-            "en": "Are NRIs allowed to invest in RBI floating rate bonds?"
+            "fr": "India bans new renewable projects near borders",
+            "en": "India bans new renewable projects near borders"
           },
-          "url": "https://economictimes.indiatimes.com/wealth/invest/can-nris-invest-in-rbi-floating-rate-savings-bonds-offering-8-05-interest-rate/articleshow/133031036.cms",
-          "theme": "monetary",
-          "time": "2h",
-          "impact": "medium",
+          "url": "https://economictimes.indiatimes.com/industry/renewables/mha-bans-new-solar-wind-projects-within-1-km-of-line-of-control-line-of-actual-control-and-international-border/articleshow/133047896.cms",
+          "theme": "energy",
+          "time": "6h",
+          "impact": "low",
           "source": "Economic Times"
         }
       ]
@@ -1035,10 +1035,10 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 160,
-          "trend": "down",
-          "change": -0.25,
-          "period": "2026-08-07"
+          "value": 161,
+          "trend": "up",
+          "change": 0.84,
+          "period": "2026-08-08"
         }
       },
       "sparkline": {
@@ -1056,8 +1056,8 @@
           92.05,
           72.92,
           90.12,
-          82.49,
-          81.96
+          83.55,
+          83.55
         ]
       },
       "summary": {
@@ -1067,54 +1067,32 @@
       "headlines": [
         {
           "title": {
-            "fr": "UN chief condemns both Ukraine and Russia amid escalation in war",
-            "en": "UN chief condemns both Ukraine and Russia amid escalation in war"
+            "fr": "US pledges $1bn support to Colombia as Trump-backed president sworn in",
+            "en": "US pledges $1bn support to Colombia as Trump-backed president sworn in"
           },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/un-chief-condemns-both-ukraine-and-russia-amid-escalation-in-war?traffic_source=rss",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "impact": "high",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "First school for robots opens in China",
-            "en": "First school for robots opens in China"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/first-school-for-robots-opens-in-china?traffic_source=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cy9wy3y0e5wo?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
           "time": "1h",
           "impact": "low",
-          "source": "Al Jazeera"
+          "source": "BBC World"
         },
         {
           "title": {
-            "fr": "Trump says war ‘can’t go much longer’ – what’s the latest on talks?",
-            "en": "Trump says war ‘can’t go much longer’ – what’s the latest on talks?"
+            "fr": "Woman screams in fear as Ukraine war recruiters pounce on man",
+            "en": "Woman screams in fear as Ukraine war recruiters pounce on man"
           },
-          "url": "https://www.aljazeera.com/news/2026/8/7/trump-says-war-cant-go-much-longer-whats-the-latest-on?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/8/woman-screams-for-her-man-as-ukraine-war-recruiters-pounce?traffic_source=rss",
           "theme": "geopolitics",
-          "time": "2h",
+          "time": "1h",
           "impact": "high",
           "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Saudi ⁠Arabia, Pakistan and Turkiye sign defence deal amid regional turmoil",
-            "en": "Saudi ⁠Arabia, Pakistan and Turkiye sign defence deal amid regional turmoil"
+            "fr": "Trump’s former personal lawyer narrowly confirmed as US attorney general",
+            "en": "Trump’s former personal lawyer narrowly confirmed as US attorney general"
           },
-          "url": "https://www.aljazeera.com/news/2026/8/7/saudi-%e2%81%a0arabia-pakistan-and-turkiye-sign-defence-deal-amid-regional-turmoil?traffic_source=rss",
-          "theme": "energy",
-          "time": "2h",
-          "impact": "low",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
-            "fr": "Why Trump is caught in an ‘escalation trap’ with Iran",
-            "en": "Why Trump is caught in an ‘escalation trap’ with Iran"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/why-trump-is-caught-in-an-escalation-trap-with-iran?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/8/8/trumps-former-personal-lawyer-narrowly-confirmed-as-us-attorney-general?traffic_source=rss",
           "theme": "geopolitics",
           "time": "2h",
           "impact": "low",
@@ -1122,14 +1100,47 @@
         },
         {
           "title": {
-            "fr": "‘De-escalation’: Europe hesitates as US pushes for Hormuz naval mission",
-            "en": "‘De-escalation’: Europe hesitates as US pushes for Hormuz naval mission"
+            "fr": "US announces $400m investment in Australian rare earth mine",
+            "en": "US announces $400m investment in Australian rare earth mine"
           },
-          "url": "https://www.aljazeera.com/news/2026/8/7/hld-european-caution-slowing-us-push-for-hormuz-naval-coalition?traffic_source=rss",
-          "theme": "energy",
+          "url": "https://www.aljazeera.com/news/2026/8/8/us-announces-400m-investment-in-australian-rare-earth-mine?traffic_source=rss",
+          "theme": "tech",
           "time": "3h",
           "impact": "low",
           "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Typhoon Dolphin hits Japan, heads towards China",
+            "en": "Typhoon Dolphin hits Japan, heads towards China"
+          },
+          "url": "https://www.aljazeera.com/news/2026/8/8/typhoon-dolphin-hits-japan-heads-towards-china?traffic_source=rss",
+          "theme": "geopolitics",
+          "time": "4h",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Thai PM vows to introduce stricter gun laws after eight killed in shooting",
+            "en": "Thai PM vows to introduce stricter gun laws after eight killed in shooting"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cdewx6rew04o?at_medium=RSS&at_campaign=rss",
+          "theme": "tech",
+          "time": "15h",
+          "impact": "low",
+          "source": "BBC World"
+        },
+        {
+          "title": {
+            "fr": "Trump administration to pay German firm $1.2bn to halt US wind projects",
+            "en": "Trump administration to pay German firm $1.2bn to halt US wind projects"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c1e1vg0gjl5o?at_medium=RSS&at_campaign=rss",
+          "theme": "geopolitics",
+          "time": "23h",
+          "impact": "low",
+          "source": "BBC World"
         },
         {
           "title": {
@@ -1138,20 +1149,9 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/c5ywv6egvx8o?at_medium=RSS&at_campaign=rss",
           "theme": "tech",
-          "time": "4h",
+          "time": "1j",
           "impact": "low",
           "source": "BBC World"
-        },
-        {
-          "title": {
-            "fr": "Mexico deploys troops to secure avocado region after US halts imports",
-            "en": "Mexico deploys troops to secure avocado region after US halts imports"
-          },
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/mexico-deploys-troops-to-secure-avocado-region-after-us-halts-imports?traffic_source=rss",
-          "theme": "trade",
-          "time": "7h",
-          "impact": "low",
-          "source": "Al Jazeera"
         }
       ]
     }
