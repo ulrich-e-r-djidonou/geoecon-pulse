@@ -170,7 +170,6 @@ Générer un README professionnel incluant :
 - Section "Données et sources"
 - Section "Méthodologie" (expliquer la sélection des news et des indicateurs)
 - Section "Auteur" avec lien LinkedIn
-- Badge : "Built with Claude Code"
 - Licence MIT
 
 ---

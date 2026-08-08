@@ -744,7 +744,7 @@ body::after {
   <!-- FOOTER -->
   <footer class="footer">
     <p data-i18n="footer_text">Conçu par Ulrich E. R. Djidonou — Économiste</p>
-    <p style="margin-top:6px;"><a href="https://www.linkedin.com/in/ulrich-djidonou/" target="_blank">LinkedIn</a> · <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse" target="_blank">GitHub</a> · Built with Claude Code</p>
+    <p style="margin-top:6px;"><a href="https://www.linkedin.com/in/ulrich-djidonou/" target="_blank">LinkedIn</a> · <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse" target="_blank">GitHub</a></p>
   </footer>
 </div>
 
@@ -768,6 +768,7 @@ const T = {
     footer_text: "Conçu par Ulrich E. R. Djidonou — Économiste",
     indicator_gdp: "Croissance PIB", indicator_inflation: "Inflation", indicator_rate: "Taux directeur",
     indicator_exchange: "Taux de change", indicator_stock: "Indice boursier",
+    indicator_unemployment: "Taux de chômage",
     impact_high: "Impact fort", impact_medium: "Impact moyen", impact_low: "Impact faible",
     themes: { trade: "Commerce", monetary: "Pol. monétaire", energy: "Énergie", tech: "Tech", geopolitics: "Géopolitique" },
     provincial_title: "Impact sur les provinces canadiennes",
@@ -792,6 +793,7 @@ const T = {
     footer_text: "Built by Ulrich E. R. Djidonou — Economist",
     indicator_gdp: "GDP Growth", indicator_inflation: "Inflation", indicator_rate: "Policy Rate",
     indicator_exchange: "Exchange Rate", indicator_stock: "Stock Index",
+    indicator_unemployment: "Unemployment",
     impact_high: "High impact", impact_medium: "Medium impact", impact_low: "Low impact",
     themes: { trade: "Trade", monetary: "Monetary Pol.", energy: "Energy", tech: "Tech", geopolitics: "Geopolitics" },
     provincial_title: "Impact on Canadian Provinces",
@@ -957,7 +959,8 @@ function buildIndicatorCards(indicators, regionKey) {
     inflation: T[lang].indicator_inflation,
     rate: T[lang].indicator_rate,
     exchange: T[lang].indicator_exchange,
-    stockIndex: T[lang].indicator_stock
+    stockIndex: T[lang].indicator_stock,
+    unemployment: T[lang].indicator_unemployment
   };
   let html = '';
   for (const [key, ind] of Object.entries(indicators)) {
@@ -967,7 +970,7 @@ function buildIndicatorCards(indicators, regionKey) {
     const displayVal = isStock ? ind.value.toLocaleString() : ind.value;
     const unit = isStock ? '' : ind.unit;
     const label = isStock ? ind.name : labels[key];
-    const period = ind.period;
+    const period = (lang === 'en' && ind.periodEn) ? ind.periodEn : ind.period;
     const change = isStock && ind.change ? ` (${ind.change > 0 ? '+' : ''}${ind.change}%)` : '';
     const trend = ind.trend || 'stable';
 
@@ -985,6 +988,21 @@ function buildIndicatorCards(indicators, regionKey) {
   return html;
 }
 
+// L'ecart relatif est recalcule a l'affichage. Fige dans le JSON, il mentait
+// des que le pipeline sautait un tour : une nouvelle de trois jours restait
+// etiquetee « 13h ».
+function relativeTime(publishedAt, fallback) {
+  if (!publishedAt) return fallback || '?';
+  const then = new Date(publishedAt);
+  if (isNaN(then)) return fallback || '?';
+  const hours = (Date.now() - then.getTime()) / 3600000;
+  if (hours < 0) return '<1h';
+  if (hours < 1) return '<1h';
+  if (hours < 24) return Math.floor(hours) + 'h';
+  if (hours < 168) return Math.floor(hours / 24) + 'j';
+  return Math.floor(hours / 168) + 's';
+}
+
 function buildHeadlines(headlines, regionKey) {
   const lang = currentLang;
   const themeLabels = T[lang].themes;
@@ -997,7 +1015,7 @@ function buildHeadlines(headlines, regionKey) {
         <a class="headline-link" href="${h.url}" target="_blank" rel="noopener">${h.title[lang]}</a>
         <div class="headline-meta">
           <span class="headline-badge ${badgeClasses[h.theme]}">${themeLabels[h.theme] || h.theme}</span>
-          <span class="headline-time">${h.time}</span>
+          <span class="headline-time">${relativeTime(h.publishedAt, h.time)}</span>
           <span class="headline-source">${h.source}</span>
         </div>
       </div>
@@ -1019,9 +1037,12 @@ function renderSparkline(regionKey) {
   const r = DATA.regions[regionKey];
   const color = REGION_COLORS[regionKey];
   const data = r.sparkline.data;
-  const months = currentLang === 'fr'
-    ? ['Avr','Mai','Juin','Juil','Août','Sep','Oct','Nov','Déc','Jan','Fév','Mar']
-    : ['Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar'];
+  // Les etiquettes viennent des dates reelles de la serie. La fenetre fixe
+  // « Avr » a « Mar » codee ici datait du lancement du projet et ne
+  // correspondait plus aux points traces.
+  const months = (r.sparkline.labels && r.sparkline.labels.length === data.length)
+    ? r.sparkline.labels.map(l => l[currentLang] || l.fr)
+    : data.map(() => '');
 
   const ctx = canvas.getContext('2d');
   const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);

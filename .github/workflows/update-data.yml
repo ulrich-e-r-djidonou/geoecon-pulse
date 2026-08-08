@@ -1,10 +1,20 @@
-name: Mise à jour automatique des données GeoEcon Pulse
+name: Mise à jour des données GeoEcon Pulse
 
+# La cadence suit le calendrier des diffuseurs, pas une heure arbitraire.
+#
+# Statistique Canada et le Bureau of Labor Statistics publient à 8 h 30, heure
+# de l'Est : 12 h 30 UTC l'été, 13 h 30 UTC l'hiver. Un seul passage quotidien
+# à 12 h 07 UTC tombait systématiquement avant la diffusion, ce qui ajoutait
+# près de 24 heures de retard à chaque publication mensuelle.
+#
+# Trois passages couvrent les deux régimes horaires et la clôture des marchés
+# nord-américains.
 on:
   schedule:
-    # Chaque jour à 12h07 UTC (7h07 EST / 8h07 EDT)
-    - cron: '7 12 * * *'
-  workflow_dispatch:  # Permet le déclenchement manuel
+    - cron: '50 12 * * *'   # 8 h 50 HAE — après les diffusions d'été
+    - cron: '50 13 * * *'   # 8 h 50 HNE — après les diffusions d'hiver
+    - cron: '30 21 * * *'   # après la clôture de New York et de Toronto
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout du repo
+      - name: Checkout du dépôt
         uses: actions/checkout@v4
 
       - name: Installation de Python
@@ -25,13 +35,29 @@ jobs:
       - name: Installation des dépendances
         run: pip install -r requirements.txt
 
+      # Barrière de non-régression : le filtre rejoue les titres hors sujet
+      # réellement parus sur le site. S'il laisse repasser du sport ou un fait
+      # divers, la mise à jour ne part pas.
+      - name: Test du filtre d'actualités
+        run: python scripts/test_news_filter.py
+
+      # Le script sort en 2 quand un indicateur saisi à la main a dépassé son
+      # seuil de fraîcheur. Ce n'est pas une raison de jeter des données
+      # fraîches : on note le code et on publie quand même.
       - name: Exécution du script de mise à jour
-        run: python scripts/update_data.py
+        id: maj
+        run: |
+          set +e
+          python scripts/update_data.py
+          echo "code=$?" >> $GITHUB_OUTPUT
+          exit 0
 
       - name: Vérification des changements
         id: check
         run: |
-          git diff --quiet data/indicators.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet data/indicators.json \
+            && echo "changed=false" >> $GITHUB_OUTPUT \
+            || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit et push si les données ont changé
         if: steps.check.outputs.changed == 'true'
@@ -39,5 +65,22 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/indicators.json
-          git commit -m "📊 Mise à jour automatique des données — $(date +%Y-%m-%d)"
+          git commit -m "Mise à jour des données — $(date +%Y-%m-%d)"
           git push
+
+      # Dernière étape volontairement : les données sont déjà publiées quand
+      # elle échoue. L'échec sert d'alerte par courriel pour les quelques
+      # champs sans source automatisable (voir MISE_A_JOUR_MANUELLE.md).
+      - name: Alerte sur les indicateurs périmés
+        if: steps.maj.outputs.code == '2'
+        run: |
+          echo "Des indicateurs saisis à la main ont dépassé leur seuil."
+          echo "Voir le journal ci-dessus et MISE_A_JOUR_MANUELLE.md."
+          exit 1
+
+      # Un échec réel du script (code autre que 0 ou 2) doit aussi remonter.
+      - name: Échec du script de mise à jour
+        if: steps.maj.outputs.code != '0' && steps.maj.outputs.code != '2'
+        run: |
+          echo "Le script s'est terminé avec le code ${{ steps.maj.outputs.code }}."
+          exit 1

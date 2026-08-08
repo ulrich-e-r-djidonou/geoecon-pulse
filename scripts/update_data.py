@@ -1,19 +1,52 @@
 #!/usr/bin/env python3
 """
-GeoEcon Pulse — Script de mise à jour automatique des données
-Récupère les taux de change, indices boursiers et headlines RSS
-Met à jour data/indicators.json
+GeoEcon Pulse — Mise a jour des donnees.
+
+Ce script rafraichit data/indicators.json a partir de sources publiques sans
+cle d'API. Trois choix de conception meritent d'etre expliques.
+
+1. Tout ce qui peut etre lu a la source l'est.
+   Le tableau affichait des chiffres saisis a la main qui vieillissaient sans
+   que rien ne le signale : le 8 aout 2026, le resume du Canada annoncait
+   encore « perte surprise de 83 900 emplois en fevrier » alors que juillet
+   affichait un gain de 75 100 emplois et un chomage a 6,4 %. Les indicateurs
+   d'emploi, d'inflation et de taux sont desormais lus chez Statistique
+   Canada, la Banque du Canada, le BLS et la Fed de New York.
+
+2. Les resumes et le sentiment sont calcules, jamais rediges d'avance.
+   Un paragraphe fige est un mensonge a retardement : il reste plausible
+   longtemps apres etre devenu faux. Les resumes sont composes a partir des
+   valeurs du jour, donc ils ne peuvent pas contredire le tableau.
+
+3. Ce qui reste saisi a la main est signale comme tel.
+   L'IPC de la Chine et de l'Inde n'a pas de source publique ouverte et sans
+   cle en frequence mensuelle. Ces champs portent "manual": true, leur periode
+   reste affichee, et le controle de fraicheur fait echouer le workflow quand
+   ils depassent leur seuil, au lieu de les laisser vieillir en silence.
 """
 
+import io
 import json
-import os
+import re
 import sys
 import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+# Windows envoie stdout en cp1252 : sans ce reglage, un simple log accentue
+# fait planter le script. Le contenu ecrit dans le JSON est en UTF-8 et n'est
+# jamais concerne — on corrige l'affichage, pas les donnees.
+if hasattr(sys.stdout, "buffer"):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8",
+                                  line_buffering=True)
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8",
+                                  line_buffering=True)
+
 import requests
 import feedparser
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from news_filter import evaluer, nettoyer_titre, source_fiable, normaliser  # noqa: E402
 
 # ============================================================
 # CONFIG
@@ -22,190 +55,193 @@ import feedparser
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_FILE = BASE_DIR / "data" / "indicators.json"
 
-TIMEOUT = 15  # seconds per request
+TIMEOUT = 15
+UA = {"User-Agent": "Mozilla/5.0 (compatible; GeoEconPulse/1.0)"}
 
-# Taux de change — frankfurter.app (gratuit, sans clé, CORS-friendly)
 EXCHANGE_RATES_URL = "https://api.frankfurter.app/latest?from=USD&to=CAD,CNY,INR"
 
-# Indices boursiers — Yahoo Finance (pas d'API key requise)
 STOCK_SYMBOLS = {
-    "CA": "^GSPTSE",    # S&P/TSX
-    "US": "^GSPC",      # S&P 500
-    "CN": "000001.SS",  # SSE Composite
-    "IN": "^BSESN",     # SENSEX
-    "WORLD": "ACWI",    # MSCI ACWI ETF (proxy)
-}
-STOCK_NAMES = {
-    "CA": "S&P/TSX",
-    "US": "S&P 500",
-    "CN": "SSE Composite",
-    "IN": "SENSEX",
-    "WORLD": "MSCI World",
+    "CA": "^GSPTSE",
+    "US": "^GSPC",
+    "CN": "000001.SS",
+    "IN": "^BSESN",
+    "WORLD": "ACWI",
 }
 
-# Flux RSS par région
+# Flux RSS par region.
+#
+# Les trois flux feeds.reuters.com utilises jusqu'ici sont morts : Reuters a
+# ferme ses RSS publics, et le script les interrogeait chaque jour en vain.
+# Le vivier reel etait donc bien plus etroit que prevu, ce qui poussait le
+# filtre a racler le fond de flux generalistes — d'ou le sport et les faits
+# divers en page d'accueil.
+#
+# Deux familles de sources les remplacent : les rubriques economie des
+# editeurs (URL propre, editeur connu) et des requetes Google News ciblees,
+# qui garantissent le volume sur des sujets precis.
 RSS_FEEDS = {
     "CA": [
         ("https://www.bankofcanada.ca/feed/", "Banque du Canada"),
-        ("https://ici.radio-canada.ca/rss/4159", "Radio-Canada Économie"),
         ("https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/business/", "Globe and Mail"),
+        ("https://www.cbc.ca/webfeed/rss/rss-business", "CBC Business"),
+        ("https://financialpost.com/category/news/economy/feed", "Financial Post"),
+        ("https://news.google.com/rss/search?q=Canada+(tariffs+OR+trade+OR+%22Bank+of+Canada%22+OR+economy+OR+exports)+when:4d&hl=en-CA&gl=CA&ceid=CA:en", None),
     ],
     "US": [
-        ("https://feeds.reuters.com/reuters/businessNews", "Reuters"),
-        ("https://www.cnbc.com/id/10001147/device/rss/rss.html", "CNBC"),
+        ("https://www.cnbc.com/id/20910258/device/rss/rss.html", "CNBC Economy"),
+        ("https://www.cnbc.com/id/19832390/device/rss/rss.html", "CNBC International"),
         ("https://feeds.bbci.co.uk/news/business/rss.xml", "BBC Business"),
+        ("https://www.federalreserve.gov/feeds/press_all.xml", "Federal Reserve"),
+        ("https://news.google.com/rss/search?q=(%22United+States%22+OR+Fed)+(tariffs+OR+trade+OR+inflation+OR+%22interest+rates%22+OR+sanctions)+when:4d&hl=en-US&gl=US&ceid=US:en", None),
     ],
     "CN": [
-        ("https://www.scmp.com/rss/4/feed", "SCMP"),
-        ("https://feeds.reuters.com/reuters/worldNews", "Reuters World"),
+        ("https://www.scmp.com/rss/5/feed", "SCMP Economy"),
+        ("https://www.scmp.com/rss/92/feed", "SCMP Business"),
+        ("https://www.scmp.com/rss/36/feed", "SCMP Tech"),
+        ("https://asia.nikkei.com/rss/feed/nar", "Nikkei Asia"),
+        ("https://news.google.com/rss/search?q=China+(economy+OR+exports+OR+yuan+OR+tariffs+OR+semiconductors+OR+%22rare+earth%22)+when:4d&hl=en&gl=US&ceid=US:en", None),
     ],
     "IN": [
-        ("https://economictimes.indiatimes.com/rssfeedstopstories.cms", "Economic Times"),
-        ("https://feeds.reuters.com/reuters/INbusinessNews", "Reuters India"),
+        ("https://economictimes.indiatimes.com/news/economy/rssfeeds/1373380680.cms", "Economic Times"),
+        ("https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms", "ET Markets"),
+        ("https://www.business-standard.com/rss/economy-102.rss", "Business Standard"),
+        ("https://www.livemint.com/rss/economy", "Mint"),
+        ("https://news.google.com/rss/search?q=India+(economy+OR+RBI+OR+rupee+OR+tariffs+OR+exports+OR+trade)+when:4d&hl=en-IN&gl=IN&ceid=IN:en", None),
     ],
     "WORLD": [
-        ("https://feeds.bbci.co.uk/news/world/rss.xml", "BBC World"),
-        ("https://www.aljazeera.com/xml/rss/all.xml", "Al Jazeera"),
-        ("https://feeds.reuters.com/reuters/worldNews", "Reuters World"),
+        ("https://www.wto.org/library/rss/latest_news_e.xml", "OMC"),
+        ("https://www.ecb.europa.eu/rss/press.html", "BCE"),
+        ("https://feeds.bbci.co.uk/news/business/rss.xml", "BBC Business"),
+        ("https://news.google.com/rss/search?q=(tariffs+OR+%22trade+war%22+OR+sanctions+OR+%22supply+chain%22+OR+OPEC+OR+%22export+controls%22)+when:3d&hl=en&gl=US&ceid=US:en", None),
     ],
 }
 
-# Mots-clés pour filtrer les headlines NON économiques
-EXCLUDE_KEYWORDS = [
-    "hockey", "nhl", "lnh", "canadiens", "habs", "leafs", "oilers",
-    "soccer", "football", "nba", "nfl", "mlb", "tennis", "olympics",
-    "olympique", "coupe stanley", "stanley cup", "playoffs",
-    "météo", "weather", "tempête", "storm", "neige", "snow",
-    "sport", "match", "goal", "but ", "victoire", "défaite",
-    "série", "saison", "classement", "ligue",
-    "caufield", "slafkovsky", "mcdavid", "crosby", "ovechkin",
-    "célébrité", "celebrity", "divertissement", "entertainment",
-    "recette", "recipe", "cuisine", "restaurant",
-    "horoscope", "zodiac",
-]
+MAX_HEADLINES = 8
 
-# Mots-clés pour identifier les headlines économiques (au moins un doit matcher)
-ECONOMIC_KEYWORDS = [
-    "econom", "économ", "trade", "commerc", "tarif", "tariff",
-    "inflation", "gdp", "pib", "growth", "croissance", "recession",
-    "bank", "banque", "rate", "taux", "fed ", "monetary", "monétaire",
-    "oil", "pétrole", "energy", "énergie", "gas", "gaz",
-    "market", "marché", "stock", "bourse", "index", "indice",
-    "dollar", "currency", "devise", "yuan", "rupee", "roupie",
-    "export", "import", "employ", "job", "chômage", "unemploy",
-    "budget", "fiscal", "deficit", "déficit", "debt", "dette",
-    "sanction", "geopolit", "géopolit", "war", "guerre", "iran",
-    "china", "chine", "india", "inde", "trump", "tarif",
-    "manufacture", "industri", "tech", "semiconductor", "ai ",
-    " ia ", "artificial", "artificielle",
-    "investment", "investiss", "fund", "fonds",
-    "supply chain", "chaîne", "shipping", "transport",
-    "climate", "climat", "carbon", "carbone", "emission", "émission",
-    "imf", "fmi", "world bank", "banque mondiale", "wto", "omc",
-    "ormuz", "hormuz", "opec", "opep",
-    "billion", "milliard", "trillion", "revenue", "revenu",
-    "tax", "impôt", "subsid", "subvention",
-    "housing", "immobili", "logement", "mortgage", "hypothèque",
-    "crypto", "bitcoin", "blockchain",
-    "pipeline", "lng", "gnl", "refinery", "raffinerie",
-    "canola", "lumber", "bois", "steel", "acier", "aluminum", "aluminium",
-    "central bank", "banque centrale", "policy rate", "taux directeur",
-]
+# Sans plafond par editeur, un flux bavard occupe la moitie d'une region :
+# ET Markets a fourni quatre des huit nouvelles indiennes du premier essai,
+# dont deux resultats trimestriels de petites capitalisations.
+MAX_PAR_SOURCE = 3
 
-# Mots-clés pour classifier les thèmes
-THEME_KEYWORDS = {
-    "trade": [
-        "tarif", "tariff", "trade", "commerce", "export", "import", "cusma",
-        "usmca", "wto", "omc", "customs", "douane", "dumping", "quota",
-        "supply chain", "chaîne", "manufacturing", "manufacturier", "gdp", "pib",
-        "growth", "croissance", "recession", "emploi", "job", "unemployment",
-        "chômage", "labor", "travail",
-    ],
-    "monetary": [
-        "taux", "rate", "interest", "intérêt", "banque centrale", "central bank",
-        "fed", "boc", "pboc", "rbi", "ecb", "bce", "inflation", "déflation",
-        "deflation", "monetary", "monétaire", "yield", "rendement", "bond",
-        "obligation", "quantitative", "dollar", "currency", "devise", "forex",
-        "rupee", "yuan", "roupie",
-    ],
-    "energy": [
-        "oil", "pétrole", "opec", "opep", "gas", "gaz", "energy", "énergie",
-        "brent", "crude", "brut", "pipeline", "lng", "gnl", "solar", "solaire",
-        "renewable", "renouvelable", "nuclear", "nucléaire", "coal", "charbon",
-        "hormuz", "ormuz", "refinery", "raffinerie",
-    ],
-    "tech": [
-        "tech", "ai", "ia", "artificial intelligence", "intelligence artificielle",
-        "semiconductor", "semi-conducteur", "chip", "puce", "data", "donnée",
-        "cloud", "cyber", "quantum", "quantique", "robot", "automat", "software",
-        "logiciel", "startup", "crypto", "bitcoin", "blockchain",
-    ],
-    "geopolitics": [
-        "war", "guerre", "military", "militaire", "sanction", "nato", "otan",
-        "iran", "russia", "russie", "ukraine", "china", "chine", "taiwan",
-        "missile", "nuclear weapon", "arme nucléaire", "diplomacy", "diplomatie",
-        "conflict", "conflit", "invasion", "alliance", "trump", "xi",
-        "election", "élection", "coup", "regime", "régime",
-    ],
+# Google News renvoie parfois un domaine plutot qu'un nom de publication.
+NOMS_EDITEURS = {
+    "bloomberg.com": "Bloomberg", "cnbc.com": "CNBC", "wsj.com": "The Wall Street Journal",
+    "dw.com": "Deutsche Welle", "axios.com": "Axios", "reuters.com": "Reuters",
+    "ft.com": "Financial Times", "nytimes.com": "The New York Times",
+    "washingtonpost.com": "The Washington Post", "theguardian.com": "The Guardian",
+    "bbc.com": "BBC", "bbc.co.uk": "BBC", "cbc.ca": "CBC",
+    "scmp.com": "South China Morning Post", "aljazeera.com": "Al Jazeera",
+    "economictimes.indiatimes.com": "The Economic Times",
+    "thehindu.com": "The Hindu", "livemint.com": "Mint",
+    "business-standard.com": "Business Standard", "nikkei.com": "Nikkei Asia",
+    "thetimes.com": "The Times", "telegraph.co.uk": "The Telegraph",
 }
+
+
+def joli_editeur(nom):
+    """« bloomberg.com » devient « Bloomberg »."""
+    if not nom:
+        return nom
+    cle = nom.strip().lower()
+    if cle in NOMS_EDITEURS:
+        return NOMS_EDITEURS[cle]
+    if cle.endswith((".com", ".org", ".net", ".ca", ".co.uk", ".in")):
+        racine = cle.rsplit(".", 2)[0].replace("www.", "")
+        return racine.replace("-", " ").title()
+    return nom.strip()
+
+# ============================================================
+# INDICATEURS MACRO — sources officielles sans cle
+# ============================================================
+
+# Banque du Canada, API Valet.
+BDC_TAUX_DIRECTEUR = "V39079"
+BDC_IPC_INDICE = "V41690973"
+VALET_URL = "https://www.bankofcanada.ca/valet/observations/{series}/json?recent={n}"
+
+# Fed de New York, taux de reference.
+NYFED_EFFR_URL = "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/1.json"
+
+# Bureau of Labor Statistics, API publique v1.
+BLS_URL = "https://api.bls.gov/publicAPI/v1/timeseries/data/{serie}"
+BLS_IPC = "CUUR0000SA0"
+BLS_CHOMAGE = "LNS14000000"
+BLS_EMPLOI = "CES0000000001"
+
+# Statistique Canada, Web Data Service. Enquete sur la population active,
+# donnees desaisonnalisees, 15 ans et plus.
+STATCAN_WDS = ("https://www150.statcan.gc.ca/t1/wds/rest/"
+               "getDataFromVectorsAndLatestNPeriods")
+STATCAN_CHOMAGE = 2062815   # taux de chomage, %
+STATCAN_EMPLOI = 2062811    # emploi, milliers
+
+MOIS_FR = [
+    "Janv.", "Fév.", "Mars", "Avril", "Mai", "Juin",
+    "Juill.", "Août", "Sept.", "Oct.", "Nov.", "Déc.",
+]
+MOIS_FR_LONG = [
+    "janvier", "février", "mars", "avril", "mai", "juin",
+    "juillet", "août", "septembre", "octobre", "novembre", "décembre",
+]
+MOIS_EN = [
+    "Jan.", "Feb.", "Mar.", "Apr.", "May", "June",
+    "July", "Aug.", "Sep.", "Oct.", "Nov.", "Dec.",
+]
 
 
 def log(msg):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}")
 
 
-# ============================================================
-# INDICATEURS MACRO (sources officielles, sans cle d'API)
-# ============================================================
-#
-# Le taux directeur et l'inflation etaient ecrits en dur dans
-# indicators.json : le tableau affichait « Inflation, fev. 2026 » a cote d'un
-# taux de change du jour meme, sans que rien ne signale l'ecart. Ces deux
-# indicateurs sont maintenant lus a la source pour le Canada et les
-# Etats-Unis, les deux zones pour lesquelles une API publique sans cle expose
-# la donnee officielle.
-#
-# La Chine, l'Inde et l'agregat mondial restent saisis a la main : aucune
-# source officielle ouverte et sans cle ne publie leur IPC mensuel dans un
-# format exploitable. Le controle de fraicheur en fin de script signale
-# explicitement leur age plutot que de le laisser passer inapercu.
-
-# Banque du Canada, API Valet (publique, sans cle).
-BDC_TAUX_DIRECTEUR = "V39079"     # cible du taux du financement a un jour
-BDC_IPC_INDICE = "V41690973"      # IPC d'ensemble, indice mensuel
-VALET_URL = "https://www.bankofcanada.ca/valet/observations/{series}/json?recent={n}"
-
-# Federal Reserve Bank of New York, API des taux de reference (sans cle).
-NYFED_EFFR_URL = "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/1.json"
-
-# Bureau of Labor Statistics, API publique v1 (sans cle, quota journalier bas).
-BLS_IPC_URL = "https://api.bls.gov/publicAPI/v1/timeseries/data/CUUR0000SA0"
-
-MOIS_FR = [
-    "Janv.", "Fév.", "Mars", "Avril", "Mai", "Juin",
-    "Juill.", "Août", "Sept.", "Oct.", "Nov.", "Déc.",
-]
-
-
 def periode_fr(annee, mois):
-    """« Juin 2026 » a partir de (2026, 6)."""
     return f"{MOIS_FR[mois - 1]} {annee}"
 
 
-def variation_annuelle(valeur_recente, valeur_an_avant):
-    """Variation en pourcentage sur douze mois, arrondie a une decimale."""
-    return round((valeur_recente / valeur_an_avant - 1) * 100, 1)
+def numero_mois(jeton):
+    """Numero du mois designe par un jeton comme « Juill. », sinon None.
 
+    Comparer les trois premieres lettres ne suffit pas : « Juin » et
+    « Juill. » commencent tous deux par « jui », si bien que juillet etait lu
+    comme juin, aussi bien dans les resumes anglais que dans le calcul d'age.
+    """
+    if not jeton:
+        return None
+    # Les accents sont retires des deux cotes : « Fev. », « Fév. » et
+    # « fevrier » doivent tous designer le meme mois.
+    propre = normaliser(jeton).strip().rstrip(".")
+    for numero, nom in enumerate(MOIS_FR, start=1):
+        if propre == normaliser(nom).rstrip("."):
+            return numero
+    for numero, nom in enumerate(MOIS_FR_LONG, start=1):
+        if propre == normaliser(nom):
+            return numero
+    # Abreviations d'une autre main que la notre (« Jan. » pour « Janv. »).
+    # On n'accepte le prefixe que s'il ne designe qu'un seul mois : « jui »
+    # reste ambigu entre juin et juillet, et doit donc echouer bruyamment.
+    if len(propre) >= 3:
+        candidats = {n for n, nom in enumerate(MOIS_FR_LONG, start=1)
+                     if normaliser(nom).startswith(propre)}
+        if len(candidats) == 1:
+            return candidats.pop()
+    return None
+
+
+def variation_annuelle(recent, an_avant):
+    return round((recent / an_avant - 1) * 100, 1)
+
+
+# ============================================================
+# CANADA — Banque du Canada et Statistique Canada
+# ============================================================
 
 def fetch_valet(series, n):
-    """Observations Valet, de la plus recente a la plus ancienne."""
-    resp = requests.get(VALET_URL.format(series=series, n=n), timeout=TIMEOUT)
+    resp = requests.get(VALET_URL.format(series=series, n=n),
+                        headers=UA, timeout=TIMEOUT)
     resp.raise_for_status()
     return resp.json().get("observations", [])
 
 
 def fetch_taux_directeur_canada():
-    """Cible du taux directeur de la Banque du Canada."""
     try:
         obs = fetch_valet(BDC_TAUX_DIRECTEUR, 1)
         if not obs:
@@ -221,67 +257,148 @@ def fetch_taux_directeur_canada():
         return None
 
 
+def _ipc_canada_series(n=30):
+    """Indice IPC mensuel du Canada, du plus ancien au plus recent."""
+    obs = fetch_valet(BDC_IPC_INDICE, n)
+    return {o["d"]: float(o[BDC_IPC_INDICE]["v"]) for o in obs}
+
+
 def fetch_inflation_canada():
-    """Inflation IPC sur douze mois, calculee depuis l'indice mensuel."""
     try:
-        # 14 observations couvrent le mois courant et le meme mois un an plus
-        # tot, meme si la derniere publication accuse un mois de retard.
-        obs = fetch_valet(BDC_IPC_INDICE, 14)
-        valeurs = {o["d"]: float(o[BDC_IPC_INDICE]["v"]) for o in obs}
+        valeurs = _ipc_canada_series(14)
         if not valeurs:
             log("  ERREUR inflation CA : aucune observation")
             return None
-        dernier_jour = max(valeurs)
-        recent = datetime.strptime(dernier_jour, "%Y-%m-%d")
-        cle_an_avant = recent.replace(year=recent.year - 1).strftime("%Y-%m-%d")
-        if cle_an_avant not in valeurs:
-            log(f"  ERREUR inflation CA : {cle_an_avant} absent de la serie")
+        dernier = max(valeurs)
+        recent = datetime.strptime(dernier, "%Y-%m-%d")
+        cle = recent.replace(year=recent.year - 1).strftime("%Y-%m-%d")
+        if cle not in valeurs:
+            log(f"  ERREUR inflation CA : {cle} absent de la serie")
             return None
-        taux = variation_annuelle(valeurs[dernier_jour], valeurs[cle_an_avant])
-        log(f"  Inflation CA : {taux} % ({dernier_jour} sur douze mois)")
+        taux = variation_annuelle(valeurs[dernier], valeurs[cle])
+        log(f"  Inflation CA : {taux} % ({dernier} sur douze mois)")
         return {"value": taux, "period": periode_fr(recent.year, recent.month)}
     except Exception as e:
         log(f"  ERREUR inflation CA : {e}")
         return None
 
 
-def fetch_taux_directeur_us():
-    """Milieu de la fourchette cible des fonds federaux."""
+def fetch_sparkline_inflation_canada():
+    """Douze points d'inflation annuelle : il faut 24 mois d'indice."""
     try:
-        resp = requests.get(NYFED_EFFR_URL, timeout=TIMEOUT)
+        valeurs = _ipc_canada_series(30)
+        points = []
+        for d in sorted(valeurs):
+            ref = datetime.strptime(d, "%Y-%m-%d")
+            cle = ref.replace(year=ref.year - 1).strftime("%Y-%m-%d")
+            if cle in valeurs:
+                points.append((ref, variation_annuelle(valeurs[d], valeurs[cle])))
+        if len(points) >= 6:
+            log(f"  Sparkline CA (inflation) : {len(points[-12:])} points")
+            return points
+        log("  Sparkline CA : historique insuffisant")
+        return None
+    except Exception as e:
+        log(f"  ERREUR sparkline inflation CA : {e}")
+        return None
+
+
+def fetch_statcan_vecteur(vecteur, n=14):
+    """Points d'un vecteur StatCan, du plus ancien au plus recent."""
+    resp = requests.post(STATCAN_WDS,
+                         json=[{"vectorId": vecteur, "latestN": n}],
+                         headers=UA, timeout=TIMEOUT)
+    resp.raise_for_status()
+    charge = resp.json()
+    if not charge or charge[0].get("status") != "SUCCESS":
+        raise RuntimeError(f"reponse WDS inattendue pour {vecteur}")
+    points = charge[0]["object"]["vectorDataPoint"]
+    return sorted(
+        ((p["refPer"], float(p["value"])) for p in points if p.get("value") is not None),
+        key=lambda x: x[0],
+    )
+
+
+def fetch_chomage_canada():
+    try:
+        points = fetch_statcan_vecteur(STATCAN_CHOMAGE, 3)
+        if not points:
+            log("  ERREUR chomage CA : aucune observation")
+            return None
+        date_str, valeur = points[-1]
+        ref = datetime.strptime(date_str, "%Y-%m-%d")
+        log(f"  Chomage CA : {valeur} % ({date_str})")
+        return {"value": valeur, "period": periode_fr(ref.year, ref.month)}
+    except Exception as e:
+        log(f"  ERREUR chomage CA : {e}")
+        return None
+
+
+def fetch_variation_emploi_canada():
+    """Variation mensuelle de l'emploi, en milliers.
+
+    Sert au resume : c'est le chiffre que reprend la presse le matin de la
+    publication (« +75 100 emplois en juillet »).
+    """
+    try:
+        points = fetch_statcan_vecteur(STATCAN_EMPLOI, 3)
+        if len(points) < 2:
+            return None
+        (_, avant), (date_str, apres) = points[-2], points[-1]
+        ref = datetime.strptime(date_str, "%Y-%m-%d")
+        variation = round(apres - avant, 1)
+        log(f"  Emploi CA : {variation:+.1f} milliers ({date_str})")
+        return {"value": variation, "annee": ref.year, "mois": ref.month,
+                "period": periode_fr(ref.year, ref.month)}
+    except Exception as e:
+        log(f"  ERREUR emploi CA : {e}")
+        return None
+
+
+# ============================================================
+# ETATS-UNIS — Fed de New York et BLS
+# ============================================================
+
+def fetch_taux_directeur_us():
+    try:
+        resp = requests.get(NYFED_EFFR_URL, headers=UA, timeout=TIMEOUT)
         resp.raise_for_status()
         taux = resp.json()["refRates"][0]
         milieu = (taux["targetRateFrom"] + taux["targetRateTo"]) / 2
         jour = datetime.strptime(taux["effectiveDate"], "%Y-%m-%d")
         log(f"  Taux directeur US : {milieu} % au {taux['effectiveDate']}")
-        return {"value": round(milieu, 3), "period": periode_fr(jour.year, jour.month)}
+        return {"value": round(milieu, 3),
+                "period": periode_fr(jour.year, jour.month)}
     except Exception as e:
         log(f"  ERREUR taux directeur US : {e}")
         return None
 
 
+def _bls_mensuels(serie):
+    """Observations mensuelles d'une serie BLS, indexees par (annee, mois).
+
+    M13 designe une moyenne annuelle qu'il ne faut pas melanger aux mois, et
+    le BLS renvoie des entrees vides pour les mois pas encore publies.
+    """
+    resp = requests.get(BLS_URL.format(serie=serie), headers=UA, timeout=TIMEOUT)
+    resp.raise_for_status()
+    charge = resp.json()
+    if charge.get("status") != "REQUEST_SUCCEEDED":
+        raise RuntimeError(charge.get("status", "statut BLS inconnu"))
+    mensuels = {}
+    for o in charge["Results"]["series"][0]["data"]:
+        if not o["period"].startswith("M") or o["period"] == "M13":
+            continue
+        try:
+            mensuels[(int(o["year"]), int(o["period"][1:]))] = float(o["value"])
+        except ValueError:
+            continue
+    return mensuels
+
+
 def fetch_inflation_us():
-    """Inflation IPC sur douze mois, calculee depuis l'indice CUUR0000SA0."""
     try:
-        resp = requests.get(BLS_IPC_URL, timeout=TIMEOUT)
-        resp.raise_for_status()
-        charge = resp.json()
-        if charge.get("status") != "REQUEST_SUCCEEDED":
-            log(f"  ERREUR inflation US : {charge.get('status')}")
-            return None
-        serie = charge["Results"]["series"][0]["data"]
-        # period vaut « M06 » pour juin ; M13 designe une moyenne annuelle,
-        # qu'il ne faut pas melanger aux observations mensuelles. Le BLS sert
-        # aussi « - » pour un mois non encore publie : ces entrees existent
-        # dans la reponse mais ne portent aucune valeur.
-        mensuels = {}
-        for o in serie:
-            if not o["period"].startswith("M") or o["period"] == "M13":
-                continue
-            try:
-                mensuels[(int(o["year"]), int(o["period"][1:]))] = float(o["value"])
-            except ValueError:
-                continue
+        mensuels = _bls_mensuels(BLS_IPC)
         if not mensuels:
             log("  ERREUR inflation US : aucune observation mensuelle")
             return None
@@ -291,12 +408,49 @@ def fetch_inflation_us():
             log(f"  ERREUR inflation US : {an_avant} absent de la serie")
             return None
         taux = variation_annuelle(mensuels[recent], mensuels[an_avant])
-        log(f"  Inflation US : {taux} % ({recent[0]}-{recent[1]:02d} sur douze mois)")
+        log(f"  Inflation US : {taux} % ({recent[0]}-{recent[1]:02d})")
         return {"value": taux, "period": periode_fr(*recent)}
     except Exception as e:
         log(f"  ERREUR inflation US : {e}")
         return None
 
+
+def fetch_chomage_us():
+    try:
+        mensuels = _bls_mensuels(BLS_CHOMAGE)
+        if not mensuels:
+            log("  ERREUR chomage US : aucune observation")
+            return None
+        recent = max(mensuels)
+        log(f"  Chomage US : {mensuels[recent]} % ({recent[0]}-{recent[1]:02d})")
+        return {"value": mensuels[recent], "period": periode_fr(*recent)}
+    except Exception as e:
+        log(f"  ERREUR chomage US : {e}")
+        return None
+
+
+def fetch_variation_emploi_us():
+    """Variation mensuelle de l'emploi non agricole, en milliers."""
+    try:
+        mensuels = _bls_mensuels(BLS_EMPLOI)
+        if len(mensuels) < 2:
+            return None
+        recent = max(mensuels)
+        precedent = (recent[0], recent[1] - 1) if recent[1] > 1 else (recent[0] - 1, 12)
+        if precedent not in mensuels:
+            return None
+        variation = round(mensuels[recent] - mensuels[precedent], 1)
+        log(f"  Emploi US : {variation:+.1f} milliers ({recent[0]}-{recent[1]:02d})")
+        return {"value": variation, "annee": recent[0], "mois": recent[1],
+                "period": periode_fr(*recent)}
+    except Exception as e:
+        log(f"  ERREUR emploi US : {e}")
+        return None
+
+
+# ============================================================
+# APPLICATION ET FRAICHEUR
+# ============================================================
 
 def appliquer(indicateur, mesure, source):
     """Ecrit une mesure fraiche dans un indicateur, tendance comprise."""
@@ -313,7 +467,19 @@ def appliquer(indicateur, mesure, source):
             indicateur["trend"] = "stable"
     indicateur["period"] = mesure["period"]
     indicateur["source"] = source
+    indicateur["manual"] = False
     return True
+
+
+def creer_ou_appliquer(indicateurs, cle, mesure, source, unit, nom_fr, nom_en):
+    """Comme appliquer(), mais cree l'indicateur s'il n'existe pas encore."""
+    if cle not in indicateurs:
+        if not mesure:
+            return False
+        indicateurs[cle] = {"value": None, "unit": unit, "trend": "stable",
+                            "period": "", "source": source,
+                            "label": {"fr": nom_fr, "en": nom_en}}
+    return appliquer(indicateurs[cle], mesure, source)
 
 
 def age_en_jours(periode):
@@ -334,304 +500,564 @@ def age_en_jours(periode):
 
     morceaux = texte.split()
     if len(morceaux) == 2:
-        mois_texte, annee_texte = morceaux
-        for numero, nom in enumerate(MOIS_FR, start=1):
-            if mois_texte.lower().startswith(nom.lower()[:3]):
-                try:
-                    reference = datetime(int(annee_texte), numero, 1)
-                except ValueError:
-                    return None
-                return (aujourdhui - reference).days
+        numero = numero_mois(morceaux[0])
+        if numero:
+            try:
+                reference = datetime(int(morceaux[1]), numero, 1)
+            except ValueError:
+                return None
+            return (aujourdhui - reference).days
     return None
 
 
-def signaler_indicateurs_perimes(data, seuil_jours=120):
-    """Journalise les indicateurs saisis a la main devenus trop vieux."""
+def ajouter_periodes_anglaises(data):
+    """Double chaque libelle de periode d'une version anglaise.
+
+    Le site se dit bilingue, mais les cartes affichaient « Juill. 2026 » meme
+    en anglais. Les periodes sont produites en francais par le pipeline : on
+    les traduit une fois, a l'ecriture, plutot qu'a chaque rendu.
+    """
+    for contenu in data["regions"].values():
+        for ind in contenu.get("indicators", {}).values():
+            periode = ind.get("period")
+            if isinstance(periode, str) and periode.strip():
+                ind["periodEn"] = periode_en(periode)
+
+
+def controler_fraicheur(data, seuil_jours=100):
+    """Liste les indicateurs devenus trop vieux. Retourne les manquements."""
     log(f"Controle de fraicheur (seuil : {seuil_jours} jours)...")
-    perimes = 0
+    perimes = []
     for region, contenu in data["regions"].items():
-        for nom, indicateur in contenu.get("indicators", {}).items():
-            age = age_en_jours(indicateur.get("period"))
+        for nom, ind in contenu.get("indicators", {}).items():
+            age = age_en_jours(ind.get("period"))
             if age is not None and age > seuil_jours:
-                log(f"  PERIME {region}.{nom} : {indicateur.get('period')} "
-                    f"({age} jours)")
-                perimes += 1
-    if perimes == 0:
-        log("  Aucun indicateur date au-dela du seuil.")
+                perimes.append(f"{region}.{nom} = {ind.get('period')} ({age} j)")
+                log(f"  PERIME {region}.{nom} : {ind.get('period')} ({age} jours)")
+    if not perimes:
+        log("  Aucun indicateur au-dela du seuil.")
     else:
-        log(f"  {perimes} indicateur(s) a rafraichir a la main.")
+        log(f"  {len(perimes)} indicateur(s) a rafraichir a la main "
+            f"(voir MISE_A_JOUR_MANUELLE.md).")
+    return perimes
 
 
 # ============================================================
-# TAUX DE CHANGE (frankfurter.app)
+# TAUX DE CHANGE ET BOURSES
 # ============================================================
 
 def fetch_exchange_rates():
-    """Récupère CAD/USD, CNY/USD, INR/USD depuis frankfurter.app"""
-    log("Récupération des taux de change...")
+    log("Recuperation des taux de change...")
     try:
-        resp = requests.get(EXCHANGE_RATES_URL, timeout=TIMEOUT)
+        resp = requests.get(EXCHANGE_RATES_URL, headers=UA, timeout=TIMEOUT)
         resp.raise_for_status()
         data = resp.json()
         rates = data.get("rates", {})
-        date_str = data.get("date", "")
-        log(f"  Taux de change récupérés pour {date_str}: CAD={rates.get('CAD')}, CNY={rates.get('CNY')}, INR={rates.get('INR')}")
-        return {
-            "CAD": rates.get("CAD"),
-            "CNY": rates.get("CNY"),
-            "INR": rates.get("INR"),
-            "date": date_str,
-        }
+        log(f"  CAD={rates.get('CAD')} CNY={rates.get('CNY')} INR={rates.get('INR')}")
+        return {"CAD": rates.get("CAD"), "CNY": rates.get("CNY"),
+                "INR": rates.get("INR"), "date": data.get("date", "")}
     except Exception as e:
-        log(f"  ERREUR taux de change: {e}")
+        log(f"  ERREUR taux de change : {e}")
         return None
 
 
-# ============================================================
-# INDICES BOURSIERS (Yahoo Finance)
-# ============================================================
-
 def fetch_stock_quote(symbol):
-    """Récupère le cours d'un indice via Yahoo Finance"""
     try:
-        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?interval=1d&range=1d"
-        headers = {"User-Agent": "Mozilla/5.0 (compatible; GeoEconPulse/1.0)"}
-        resp = requests.get(url, headers=headers, timeout=TIMEOUT)
+        url = (f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
+               f"?interval=1d&range=1d")
+        resp = requests.get(url, headers=UA, timeout=TIMEOUT)
         resp.raise_for_status()
-        data = resp.json()
-
-        result = data["chart"]["result"][0]
-        meta = result["meta"]
+        meta = resp.json()["chart"]["result"][0]["meta"]
         price = meta.get("regularMarketPrice", 0)
-        prev_close = meta.get("previousClose") or meta.get("chartPreviousClose", 0)
-
-        change_pct = 0
-        if prev_close and prev_close > 0:
-            change_pct = round((price - prev_close) / prev_close * 100, 2)
-
-        trend = "up" if change_pct > 0.1 else ("down" if change_pct < -0.1 else "stable")
-
-        return {
-            "value": round(price),
-            "change": change_pct,
-            "trend": trend,
-        }
+        prev = meta.get("previousClose") or meta.get("chartPreviousClose", 0)
+        change = round((price - prev) / prev * 100, 2) if prev else 0
+        trend = "up" if change > 0.1 else ("down" if change < -0.1 else "stable")
+        return {"value": round(price), "change": change, "trend": trend}
     except Exception as e:
-        log(f"  ERREUR Yahoo Finance ({symbol}): {e}")
+        log(f"  ERREUR Yahoo Finance ({symbol}) : {e}")
         return None
 
 
 def fetch_all_stocks():
-    """Récupère tous les indices boursiers"""
-    log("Récupération des indices boursiers...")
+    log("Recuperation des indices boursiers...")
     results = {}
     for region, symbol in STOCK_SYMBOLS.items():
         quote = fetch_stock_quote(symbol)
         if quote:
-            log(f"  {region} ({symbol}): {quote['value']} ({quote['change']:+.2f}%)")
+            log(f"  {region} ({symbol}) : {quote['value']} ({quote['change']:+.2f} %)")
             results[region] = quote
-        time.sleep(0.5)  # Rate limiting
+        time.sleep(0.4)
     return results
 
 
-# ============================================================
-# SPARKLINES — données historiques 12 mois
-# ============================================================
+def etiquettes_mois(dates):
+    """Libelles bilingues courts pour l'axe d'une sparkline."""
+    return [{"fr": MOIS_FR[d.month - 1].rstrip("."),
+             "en": MOIS_EN[d.month - 1].rstrip(".")} for d in dates]
+
 
 def fetch_sparkline_data(symbol, interval="1mo", range_str="1y"):
-    """Récupère les données historiques pour les sparklines"""
+    """Serie mensuelle et ses dates reelles.
+
+    Les dates comptent autant que les valeurs : l'axe du graphique etait
+    etiquete « Avr » a « Mar » en dur, une fenetre figee au lancement du
+    projet en mars 2026 qui ne correspondait plus aux points traces.
+    """
     try:
-        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?interval={interval}&range={range_str}"
-        headers = {"User-Agent": "Mozilla/5.0 (compatible; GeoEconPulse/1.0)"}
-        resp = requests.get(url, headers=headers, timeout=TIMEOUT)
+        url = (f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
+               f"?interval={interval}&range={range_str}")
+        resp = requests.get(url, headers=UA, timeout=TIMEOUT)
         resp.raise_for_status()
-        data = resp.json()
-        result = data["chart"]["result"][0]
-        closes = result["indicators"]["quote"][0]["close"]
-        # Filtrer les None et arrondir
-        return [round(c, 2) if c else None for c in closes]
+        resultat = resp.json()["chart"]["result"][0]
+        closes = resultat["indicators"]["quote"][0]["close"]
+        horodatages = resultat.get("timestamp", [])
+        points = []
+        for valeur, ts in zip(closes, horodatages):
+            if valeur is None:
+                continue
+            points.append((datetime.fromtimestamp(ts, tz=timezone.utc),
+                           round(valeur, 2)))
+        return points
     except Exception as e:
-        log(f"  ERREUR sparkline ({symbol}): {e}")
+        log(f"  ERREUR sparkline ({symbol}) : {e}")
         return None
+
+
+def poser_sparkline(region_data, points, libelle=None):
+    """Ecrit valeurs et etiquettes d'une sparkline a partir de (date, valeur).
+
+    Yahoo renvoie le mois en cours deux fois — une fois comme dernier seau
+    mensuel clos, une fois comme cotation vivante — ce qui donnait un axe
+    finissant par « Août Août ». On ne garde qu'un point par mois, le plus
+    recent.
+    """
+    if not points or len(points) < 6:
+        return False
+    par_mois = {}
+    for date, valeur in points:
+        par_mois[(date.year, date.month)] = (date, valeur)
+    points = [par_mois[cle] for cle in sorted(par_mois)]
+    derniers = points[-12:]
+    region_data["sparkline"]["data"] = [v for _, v in derniers]
+    region_data["sparkline"]["labels"] = etiquettes_mois([d for d, _ in derniers])
+    if libelle:
+        region_data["sparkline"]["label"] = libelle
+    return True
 
 
 def fetch_exchange_sparkline(from_currency, to_currency):
-    """Données historiques de taux de change via frankfurter.app"""
+    """Un point de change par mois, avec sa date."""
     try:
         end = datetime.now()
         start = end - timedelta(days=365)
-        url = (
-            f"https://api.frankfurter.app/{start.strftime('%Y-%m-%d')}"
-            f"..{end.strftime('%Y-%m-%d')}?from={from_currency}&to={to_currency}"
-        )
-        resp = requests.get(url, timeout=TIMEOUT)
+        url = (f"https://api.frankfurter.app/{start.strftime('%Y-%m-%d')}"
+               f"..{end.strftime('%Y-%m-%d')}?from={from_currency}&to={to_currency}")
+        resp = requests.get(url, headers=UA, timeout=TIMEOUT)
         resp.raise_for_status()
-        data = resp.json()
-        rates = data.get("rates", {})
-        # Prendre un point par mois (environ 30 jours d'intervalle)
-        sorted_dates = sorted(rates.keys())
-        monthly = []
-        last_month = None
-        for d in sorted_dates:
-            month = d[:7]
-            if month != last_month:
-                monthly.append(rates[d][to_currency])
-                last_month = month
-        # Garder les 12 derniers
-        return monthly[-12:] if len(monthly) >= 12 else monthly
+        rates = resp.json().get("rates", {})
+        points, dernier_mois = [], None
+        for d in sorted(rates):
+            if d[:7] != dernier_mois:
+                points.append((datetime.strptime(d, "%Y-%m-%d"),
+                               rates[d][to_currency]))
+                dernier_mois = d[:7]
+        return points
     except Exception as e:
-        log(f"  ERREUR sparkline FX ({from_currency}/{to_currency}): {e}")
+        log(f"  ERREUR sparkline FX ({from_currency}/{to_currency}) : {e}")
         return None
 
 
 # ============================================================
-# HEADLINES RSS
+# ACTUALITES
 # ============================================================
 
-def classify_theme(text):
-    """Classifie un texte dans un thème basé sur les mots-clés"""
-    text_lower = text.lower()
-    scores = {}
-    for theme, keywords in THEME_KEYWORDS.items():
-        score = sum(1 for kw in keywords if kw in text_lower)
-        if score > 0:
-            scores[theme] = score
-    if scores:
-        return max(scores, key=scores.get)
-    return "trade"  # default
+def charger_flux(url):
+    """Telecharge puis parse un flux.
+
+    feedparser.parse(url) fait la requete lui-meme et n'accepte aucun
+    timeout : un serveur qui ne repond jamais bloquait le workflow entier.
+    On passe par requests, qui en a un.
+    """
+    resp = requests.get(url, headers=UA, timeout=TIMEOUT)
+    resp.raise_for_status()
+    return feedparser.parse(resp.content)
 
 
-def estimate_impact(title):
-    """Estime l'impact d'une headline (high/medium/low)"""
-    title_lower = title.lower()
-    high_words = [
-        "crisis", "crise", "war", "guerre", "crash", "collapse",
-        "recession", "record", "surge", "flambée", "plunge", "chute",
-        "massive", "unprecedented", "historique", "emergency", "urgence",
-        "billion", "milliard", "trillion",
-    ]
-    medium_words = [
-        "rise", "hausse", "fall", "baisse", "concern", "préoccupation",
-        "policy", "politique", "reform", "réforme", "forecast", "prévision",
-        "expect", "growth", "croissance", "inflation", "rate", "taux",
-    ]
-    if any(w in title_lower for w in high_words):
+def horodatage(published_parsed):
+    if not published_parsed:
+        return None
+    try:
+        return datetime(*published_parsed[:6], tzinfo=timezone.utc)
+    except Exception:
+        return None
+
+
+def temps_relatif(moment):
+    if not moment:
+        return "?"
+    heures = (datetime.now(timezone.utc) - moment).total_seconds() / 3600
+    if heures < 1:
+        return "<1h"
+    if heures < 24:
+        return f"{int(heures)}h"
+    if heures < 168:
+        return f"{int(heures / 24)}j"
+    return f"{int(heures / 168)}s"
+
+
+MOTS_VIDES = {
+    "the", "a", "an", "of", "in", "on", "to", "for", "and", "or", "as",
+    "is", "are", "with", "at", "by", "from", "its", "it", "that", "this",
+    "says", "say", "said", "will", "may", "be", "not", "but", "over",
+    "le", "la", "les", "des", "du", "de", "un", "une", "et", "ou", "en",
+    "dans", "sur", "pour", "par", "au", "aux", "que", "qui", "est", "sont",
+}
+
+
+def mots_significatifs(titre):
+    """Vocabulaire porteur d'un titre, pour comparer deux depeches."""
+    mots = re.findall(r"[a-z0-9]+", normaliser(titre))
+    return {m for m in mots if len(m) > 2 and m not in MOTS_VIDES}
+
+
+def similarite(a, b):
+    """Indice de Jaccard entre deux ensembles de mots."""
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def estimer_impact(titre, score):
+    """L'impact suit le score du filtre, releve par un vocabulaire de rupture."""
+    fort = ["crisis", "crise", "war", "guerre", "crash", "collapse",
+            "recession", "record", "surge", "flambee", "plunge", "chute",
+            "emergency", "urgence", "sanction", "tariff", "tarif", "ban",
+            "shutdown", "default", "defaut"]
+    bas = titre.lower()
+    if score >= 8 or any(w in bas for w in fort):
         return "high"
-    if any(w in title_lower for w in medium_words):
+    if score >= 4:
         return "medium"
     return "low"
 
 
-def time_ago(published_parsed):
-    """Convertit un timestamp en format relatif (2h, 1j, 3j, 1s)"""
-    if not published_parsed:
-        return "?"
-    try:
-        from email.utils import formatdate
-        import calendar
-        pub_time = datetime(*published_parsed[:6], tzinfo=timezone.utc)
-        now = datetime.now(timezone.utc)
-        delta = now - pub_time
-        hours = delta.total_seconds() / 3600
-        if hours < 1:
-            return "<1h"
-        elif hours < 24:
-            return f"{int(hours)}h"
-        elif hours < 168:  # 7 days
-            return f"{int(hours / 24)}j"
-        else:
-            weeks = int(hours / 168)
-            return f"{weeks}s"
-    except Exception:
-        return "?"
+def recuperer_actualites(region):
+    """Actualites filtrees d'une region, les plus recentes d'abord."""
+    retenues, rejetees, vus_urls = [], [], set()
 
-
-def fetch_rss_headlines(region):
-    """Récupère les headlines RSS pour une région"""
-    feeds = RSS_FEEDS.get(region, [])
-    all_entries = []
-
-    for feed_url, source_name in feeds:
+    for url_flux, nom_source in RSS_FEEDS.get(region, []):
         try:
-            feed = feedparser.parse(feed_url)
-            for entry in feed.entries[:25]:
-                title_en = entry.get("title", "")
-                link = entry.get("link", "")
-                published = entry.get("published_parsed")
-
-                if not title_en or not link:
-                    continue
-
-                # Filtrer les headlines non économiques
-                title_lower = title_en.lower()
-                if any(kw in title_lower for kw in EXCLUDE_KEYWORDS):
-                    continue
-                if not any(kw in title_lower for kw in ECONOMIC_KEYWORDS):
-                    continue
-
-                all_entries.append({
-                    "title_en": title_en,
-                    "url": link,
-                    "source": source_name,
-                    "published_parsed": published,
-                    "theme": classify_theme(title_en),
-                    "impact": estimate_impact(title_en),
-                    "time": time_ago(published),
-                })
+            flux = charger_flux(url_flux)
         except Exception as e:
-            log(f"  ERREUR RSS ({source_name}): {e}")
+            log(f"    flux indisponible ({nom_source or 'Google News'}) : "
+                f"{type(e).__name__}")
+            continue
 
-    # Trier par date (plus récent en premier)
-    all_entries.sort(
-        key=lambda x: x["published_parsed"] or (1970, 1, 1, 0, 0, 0, 0, 0, 0),
-        reverse=True,
-    )
+        for entree in flux.entries[:40]:
+            brut = entree.get("title", "")
+            lien = entree.get("link", "")
+            if not brut or not lien or lien in vus_urls:
+                continue
 
-    # Garder les 8 plus récentes, dédupliquées par titre
-    seen = set()
-    unique = []
-    for entry in all_entries:
-        title_key = entry["title_en"][:50].lower()
-        if title_key not in seen:
-            seen.add(title_key)
-            unique.append(entry)
-        if len(unique) >= 8:
+            # Google News expose l'editeur reel et suffixe ses titres.
+            source = nom_source or (entree.get("source") or {}).get("title")
+            titre = nettoyer_titre(brut, source)
+
+            # Les rubriques choisies a la main sont fiables par construction.
+            # Ce qui remonte d'une requete doit prouver son editeur.
+            if nom_source is None and not source_fiable(source):
+                rejetees.append((titre, f"source hors liste : {source}"))
+                continue
+            source = joli_editeur(source) or "Google News"
+
+            verdict = evaluer(titre)
+            if not verdict["accepte"]:
+                rejetees.append((titre, verdict["motif"]))
+                continue
+
+            vus_urls.add(lien)
+            moment = horodatage(entree.get("published_parsed"))
+            retenues.append({
+                "titre": titre,
+                "url": lien,
+                "source": source,
+                "moment": moment,
+                "theme": verdict["theme"],
+                "score": verdict["score"],
+                "impact": estimer_impact(titre, verdict["score"]),
+            })
+
+    # Deduplication par recouvrement de vocabulaire. Comparer les 45 premiers
+    # caracteres ne suffisait pas : « America hurting its own interest... »
+    # (Economic Times) et « "America is actually hurting its own interest"... »
+    # (ANI) sont la meme depeche sous deux angles de citation.
+    retenues.sort(key=lambda x: x["moment"] or datetime.min.replace(tzinfo=timezone.utc),
+                  reverse=True)
+    uniques, empreintes, par_source = [], [], {}
+    for item in retenues:
+        empreinte = mots_significatifs(item["titre"])
+        if any(similarite(empreinte, e) > 0.45 for e in empreintes):
+            continue
+        if par_source.get(item["source"], 0) >= MAX_PAR_SOURCE:
+            continue
+        empreintes.append(empreinte)
+        par_source[item["source"]] = par_source.get(item["source"], 0) + 1
+        uniques.append(item)
+        if len(uniques) >= MAX_HEADLINES:
             break
 
-    return unique
+    log(f"  {region} : {len(uniques)} retenues, {len(rejetees)} ecartees")
+    for titre, motif in rejetees[:4]:
+        log(f"      ecarte — {titre[:58]} [{motif[:38]}]")
+    return uniques
 
 
-def format_headlines(entries):
-    """Convertit les entrées RSS en format indicators.json"""
-    headlines = []
-    for e in entries:
-        headlines.append({
-            "title": {
-                "fr": e["title_en"],  # RSS en anglais, FR = même texte (à traduire manuellement)
-                "en": e["title_en"],
-            },
+def formater_actualites(items):
+    sorties = []
+    for e in items:
+        sorties.append({
+            "title": {"fr": e["titre"], "en": e["titre"]},
             "url": e["url"],
             "theme": e["theme"],
-            "time": e["time"],
+            "time": temps_relatif(e["moment"]),
+            "publishedAt": e["moment"].isoformat() if e["moment"] else None,
             "impact": e["impact"],
             "source": e["source"],
         })
-    return headlines
+    return sorties
 
 
 # ============================================================
-# MISE À JOUR DU JSON
+# RESUMES ET SENTIMENT — composes, jamais rediges d'avance
+# ============================================================
+
+THEMES_FR = {"trade": "commerce", "monetary": "politique monétaire",
+             "energy": "énergie", "tech": "technologie",
+             "geopolitics": "géopolitique"}
+THEMES_EN = {"trade": "trade", "monetary": "monetary policy",
+             "energy": "energy", "tech": "technology",
+             "geopolitics": "geopolitics"}
+
+NOMS_REGIONS = {
+    "CA": ("L'économie canadienne", "The Canadian economy"),
+    "US": ("L'économie américaine", "The US economy"),
+    "CN": ("L'économie chinoise", "The Chinese economy"),
+    "IN": ("L'économie indienne", "The Indian economy"),
+    "WORLD": ("L'économie mondiale", "The global economy"),
+}
+
+
+def periode_en(periode):
+    """« Juill. 2026 » devient « July 2026 ».
+
+    Les libelles de prevision (« 2026F », « FY26F », « 2026 cible ») ne
+    designent pas un mois : seul « cible » est traduit.
+    """
+    if not isinstance(periode, str) or not periode.strip():
+        return periode
+    morceaux = periode.strip().split()
+    if len(morceaux) == 2:
+        numero = numero_mois(morceaux[0])
+        if numero:
+            return f"{MOIS_EN[numero - 1]} {morceaux[1]}"
+    return periode.replace("cible", "target")
+
+
+def est_mois(periode):
+    """Vrai si le libelle designe un mois, donc s'il se met en minuscules."""
+    morceaux = str(periode).strip().split()
+    return len(morceaux) == 2 and numero_mois(morceaux[0]) is not None
+
+
+def en_minuscules(periode):
+    """« Juin 2026 » devient « juin 2026 » ; « 2026F » reste « 2026F »."""
+    return str(periode).lower() if est_mois(periode) else str(periode)
+
+
+def nombre_fr(x):
+    """Espace insecable comme separateur de milliers, virgule decimale."""
+    if isinstance(x, float) and not x.is_integer():
+        entier, decimale = f"{abs(x):.1f}".split(".")
+        signe = "-" if x < 0 else ""
+        return f"{signe}{int(entier):,}".replace(",", " ") + f",{decimale}"
+    return f"{int(x):,}".replace(",", " ")
+
+
+def phrase_emploi(emploi, chomage, langue):
+    """« +75 100 emplois en juillet, chômage à 6,4 % »."""
+    if not emploi and not chomage:
+        return None
+    bouts = []
+    if emploi:
+        milliers = emploi["value"]
+        postes = int(round(milliers * 1000))
+        mois = MOIS_FR_LONG[emploi["mois"] - 1]
+        if langue == "fr":
+            verbe = "a créé" if milliers >= 0 else "a perdu"
+            bouts.append(f"{verbe} {nombre_fr(abs(postes))} emplois en {mois}")
+        else:
+            verbe = "added" if milliers >= 0 else "shed"
+            bouts.append(f"{verbe} {abs(postes):,} jobs in "
+                         f"{datetime(2000, emploi['mois'], 1).strftime('%B')}")
+    if chomage:
+        if langue == "fr":
+            taux = str(chomage["value"]).replace(".", ",")
+            bouts.append(f"le taux de chômage s'établit à {taux} % "
+                         f"({en_minuscules(chomage['period'])})")
+        else:
+            bouts.append(f"unemployment stands at {chomage['value']}% "
+                         f"({periode_en(chomage['period'])})")
+    return ", ".join(bouts)
+
+
+def composer_resume(region, indicateurs, actualites, emploi, chomage):
+    """Un resume de trois a quatre phrases, entierement derive des donnees."""
+    nom_fr, nom_en = NOMS_REGIONS[region]
+    fr, en = [], []
+
+    def val(cle):
+        ind = indicateurs.get(cle) or {}
+        return ind.get("value"), ind.get("period", "")
+
+    pib, pib_per = val("gdp")
+    infl, infl_per = val("inflation")
+    taux, taux_per = val("rate")
+    bourse = indicateurs.get("stockIndex") or {}
+
+    # 1. Activite
+    emploi_fr = phrase_emploi(emploi, chomage, "fr")
+    emploi_en = phrase_emploi(emploi, chomage, "en")
+    if emploi_fr:
+        fr.append(f"{nom_fr} {emploi_fr}.")
+        en.append(f"{nom_en} {emploi_en}.")
+    elif pib is not None:
+        fr.append(f"{nom_fr} progresse à un rythme de "
+                  f"{str(pib).replace('.', ',')} % ({pib_per}).")
+        en.append(f"{nom_en} is growing at {pib}% ({periode_en(pib_per)}).")
+
+    # 2. Prix et taux
+    if infl is not None and taux is not None:
+        fr.append(f"L'inflation ressort à {str(infl).replace('.', ',')} % "
+                  f"({en_minuscules(infl_per)}) pour un taux directeur de "
+                  f"{str(taux).replace('.', ',')} % ({en_minuscules(taux_per)}).")
+        en.append(f"Inflation is {infl}% ({periode_en(infl_per)}) against a "
+                  f"policy rate of {taux}% ({periode_en(taux_per)}).")
+    elif infl is not None:
+        fr.append(f"L'inflation ressort à {str(infl).replace('.', ',')} % "
+                  f"({en_minuscules(infl_per)}).")
+        en.append(f"Inflation is {infl}% ({periode_en(infl_per)}).")
+
+    # 3. Marches
+    if bourse.get("value") and bourse.get("change") is not None:
+        nom_indice = bourse.get("name", "L'indice de référence")
+        variation = bourse["change"]
+        sens_fr = "gagne" if variation >= 0 else "cède"
+        sens_en = "is up" if variation >= 0 else "is down"
+        fr.append(f"{nom_indice} {sens_fr} "
+                  f"{str(abs(variation)).replace('.', ',')} % sur la séance.")
+        en.append(f"{nom_indice} {sens_en} {abs(variation)}% on the session.")
+
+    # 4. Ce que dit l'actualite du jour
+    if actualites:
+        comptes = {}
+        for a in actualites:
+            comptes[a["theme"]] = comptes.get(a["theme"], 0) + 1
+        dominant = max(comptes, key=comptes.get)
+        n = comptes[dominant]
+        fr.append(f"Sur les {len(actualites)} nouvelles retenues aujourd'hui, "
+                  f"{n} relèvent du thème « {THEMES_FR[dominant]} ».")
+        en.append(f"Of the {len(actualites)} stories retained today, {n} fall "
+                  f"under {THEMES_EN[dominant]}.")
+
+    return {"fr": " ".join(fr), "en": " ".join(en)}
+
+
+def calculer_sentiment(region, indicateurs, emploi, chomage, chomage_precedent):
+    """Sentiment derive de regles explicites, pas d'une appreciation figee."""
+    points, raisons_fr, raisons_en = 0, [], []
+
+    # Fourchette de maitrise de l'inflation plutot qu'une cible ponctuelle :
+    # la Banque du Canada et la Fed visent 2 % dans une bande de 1 a 3 %, la
+    # RBI vise 4 % dans une bande de 2 a 6 %. Juger l'Inde a 2,7 % « en risque
+    # deflationniste » etait un artefact de la cible ponctuelle.
+    bande = {"CA": (1.0, 3.0), "US": (1.0, 3.0), "CN": (0.5, 3.0),
+             "IN": (2.0, 6.0), "WORLD": (2.0, 4.0)}[region]
+    infl = (indicateurs.get("inflation") or {}).get("value")
+    if isinstance(infl, (int, float)):
+        bas, haut = bande
+        if infl > haut:
+            points -= 1
+            raisons_fr.append(f"inflation à {str(infl).replace('.', ',')} %, "
+                              f"au-dessus de la fourchette")
+            raisons_en.append(f"inflation at {infl}%, above the target band")
+        elif infl < bas:
+            points -= 1
+            raisons_fr.append(f"inflation à {str(infl).replace('.', ',')} %, "
+                              f"risque déflationniste")
+            raisons_en.append(f"inflation at {infl}%, deflation risk")
+        else:
+            points += 1
+            raisons_fr.append("inflation dans la fourchette cible")
+            raisons_en.append("inflation within the target band")
+
+    if emploi:
+        if emploi["value"] > 0:
+            points += 1
+            raisons_fr.append("emploi en hausse")
+            raisons_en.append("employment rising")
+        else:
+            points -= 1
+            raisons_fr.append("emploi en recul")
+            raisons_en.append("employment falling")
+
+    if chomage and isinstance(chomage_precedent, (int, float)):
+        if chomage["value"] > chomage_precedent:
+            points -= 1
+            raisons_fr.append("chômage en hausse")
+            raisons_en.append("unemployment rising")
+        elif chomage["value"] < chomage_precedent:
+            points += 1
+            raisons_fr.append("chômage en baisse")
+            raisons_en.append("unemployment falling")
+
+    pib = (indicateurs.get("gdp") or {}).get("value")
+    if isinstance(pib, (int, float)):
+        seuil = 5.0 if region in ("CN", "IN") else 1.5
+        if pib >= seuil:
+            points += 1
+            raisons_fr.append(f"croissance de {str(pib).replace('.', ',')} %")
+            raisons_en.append(f"growth of {pib}%")
+        else:
+            points -= 1
+            raisons_fr.append(f"croissance faible ({str(pib).replace('.', ',')} %)")
+            raisons_en.append(f"weak growth ({pib}%)")
+
+    if points >= 2:
+        valeur, label_fr, label_en = "positive", "Positif", "Positive"
+    elif points <= -2:
+        valeur, label_fr, label_en = "negative", "Négatif", "Negative"
+    else:
+        valeur, label_fr, label_en = "neutral", "Neutre", "Neutral"
+
+    return {
+        "value": valeur,
+        "label": {"fr": label_fr, "en": label_en},
+        "reason": {"fr": ", ".join(raisons_fr) or "données insuffisantes",
+                   "en": ", ".join(raisons_en) or "insufficient data"},
+    }
+
+
+# ============================================================
+# PROGRAMME PRINCIPAL
 # ============================================================
 
 def update_indicators():
-    """Fonction principale de mise à jour"""
     log("=" * 60)
-    log("GeoEcon Pulse — Mise à jour automatique des données")
+    log("GeoEcon Pulse — Mise a jour des donnees")
     log("=" * 60)
 
-    # Charger le JSON existant
     if not DATA_FILE.exists():
-        log(f"ERREUR: {DATA_FILE} introuvable")
+        log(f"ERREUR : {DATA_FILE} introuvable")
         sys.exit(1)
 
     with open(DATA_FILE, "r", encoding="utf-8") as f:
@@ -643,105 +1069,102 @@ def update_indicators():
     # --- Taux de change ---
     fx = fetch_exchange_rates()
     if fx:
-        date_str = fx["date"]
-        if fx["CAD"]:
-            ca = data["regions"]["CA"]["indicators"]["exchange"]
-            old_val = ca["value"]
-            ca["value"] = round(fx["CAD"], 3)
-            ca["trend"] = "up" if fx["CAD"] > old_val else ("down" if fx["CAD"] < old_val else "stable")
-            ca["period"] = date_str
-            ca["source"] = "Frankfurter/ECB"
+        for region, devise, arrondi in (("CA", "CAD", 3), ("CN", "CNY", 3),
+                                        ("IN", "INR", 2)):
+            if fx.get(devise):
+                appliquer(data["regions"][region]["indicators"]["exchange"],
+                          {"value": round(fx[devise], arrondi), "period": fx["date"]},
+                          "Frankfurter/BCE")
 
-        if fx["CNY"]:
-            cn = data["regions"]["CN"]["indicators"]["exchange"]
-            old_val = cn["value"]
-            cn["value"] = round(fx["CNY"], 3)
-            cn["trend"] = "up" if fx["CNY"] > old_val else ("down" if fx["CNY"] < old_val else "stable")
-            cn["period"] = date_str
-            cn["source"] = "Frankfurter/ECB"
+    # --- Indicateurs macro ---
+    log("Recuperation des indicateurs macro...")
+    ca = data["regions"]["CA"]["indicators"]
+    us = data["regions"]["US"]["indicators"]
 
-        if fx["INR"]:
-            ind = data["regions"]["IN"]["indicators"]["exchange"]
-            old_val = ind["value"]
-            ind["value"] = round(fx["INR"], 2)
-            ind["trend"] = "up" if fx["INR"] > old_val else ("down" if fx["INR"] < old_val else "stable")
-            ind["period"] = date_str
-            ind["source"] = "Frankfurter/ECB"
+    chomage_ca_avant = (ca.get("unemployment") or {}).get("value")
+    chomage_us_avant = (us.get("unemployment") or {}).get("value")
 
-    # --- Taux directeurs et inflation ---
-    log("Récupération des indicateurs macro...")
-    ca_ind = data["regions"]["CA"]["indicators"]
-    appliquer(ca_ind["rate"], fetch_taux_directeur_canada(), "Banque du Canada")
-    appliquer(ca_ind["inflation"], fetch_inflation_canada(), "Banque du Canada (IPC)")
+    appliquer(ca["rate"], fetch_taux_directeur_canada(), "Banque du Canada")
+    appliquer(ca["inflation"], fetch_inflation_canada(), "Banque du Canada (IPC)")
+    chomage_ca = fetch_chomage_canada()
+    creer_ou_appliquer(ca, "unemployment", chomage_ca, "Statistique Canada",
+                       "%", "Taux de chômage", "Unemployment")
+    emploi_ca = fetch_variation_emploi_canada()
 
-    us_ind = data["regions"]["US"]["indicators"]
-    appliquer(us_ind["rate"], fetch_taux_directeur_us(), "Federal Reserve (NY Fed)")
-    appliquer(us_ind["inflation"], fetch_inflation_us(), "BLS")
+    appliquer(us["rate"], fetch_taux_directeur_us(), "Federal Reserve (NY Fed)")
+    appliquer(us["inflation"], fetch_inflation_us(), "BLS")
+    chomage_us = fetch_chomage_us()
+    creer_ou_appliquer(us, "unemployment", chomage_us, "BLS",
+                       "%", "Taux de chômage", "Unemployment")
+    emploi_us = fetch_variation_emploi_us()
 
-    # --- Indices boursiers ---
-    stocks = fetch_all_stocks()
-    for region, quote in stocks.items():
+    # --- Bourses ---
+    for region, quote in fetch_all_stocks().items():
         if region in data["regions"]:
-            stock = data["regions"][region]["indicators"]["stockIndex"]
-            stock["value"] = quote["value"]
-            stock["change"] = quote["change"]
-            stock["trend"] = quote["trend"]
-            stock["period"] = today
+            action = data["regions"][region]["indicators"]["stockIndex"]
+            action.update({"value": quote["value"], "change": quote["change"],
+                           "trend": quote["trend"], "period": today})
 
-    # --- Sparklines (indices boursiers) ---
-    log("Récupération des données sparkline...")
-    sparkline_map = {
-        "US": ("^GSPC", "S&P 500 (12 mois)", "S&P 500 (12 months)"),
-        "IN": ("^BSESN", "SENSEX (12 mois)", "SENSEX (12 months)"),
-    }
-    for region, (symbol, label_fr, label_en) in sparkline_map.items():
-        spark_data = fetch_sparkline_data(symbol)
-        if spark_data:
-            clean = [v for v in spark_data if v is not None]
-            if len(clean) >= 6:
-                data["regions"][region]["sparkline"]["data"] = clean[-12:]
-                log(f"  Sparkline {region}: {len(clean)} points")
-        time.sleep(0.5)
+    # --- Sparklines ---
+    log("Recuperation des sparklines...")
+    for region, symbole in (("US", "^GSPC"), ("IN", "^BSESN")):
+        if poser_sparkline(data["regions"][region], fetch_sparkline_data(symbole)):
+            log(f"  Sparkline {region} : posee")
+        time.sleep(0.4)
 
-    # Sparkline Canada — inflation (pas d'API simple, on garde les données manuelles)
-    # Sparkline Chine — Yuan/USD via frankfurter
-    yuan_spark = fetch_exchange_sparkline("USD", "CNY")
-    if yuan_spark and len(yuan_spark) >= 6:
-        data["regions"]["CN"]["sparkline"]["data"] = yuan_spark[-12:]
-        log(f"  Sparkline CN (Yuan/USD): {len(yuan_spark)} points")
+    poser_sparkline(data["regions"]["CA"], fetch_sparkline_inflation_canada())
+    poser_sparkline(data["regions"]["CN"], fetch_exchange_sparkline("USD", "CNY"))
+    poser_sparkline(data["regions"]["WORLD"], fetch_sparkline_data("BZ=F"))
 
-    # Sparkline Monde — Brent via Yahoo
-    brent_spark = fetch_sparkline_data("BZ=F")
-    if brent_spark:
-        clean = [v for v in brent_spark if v is not None]
-        if len(clean) >= 6:
-            data["regions"]["WORLD"]["sparkline"]["data"] = clean[-12:]
-            log(f"  Sparkline WORLD (Brent): {len(clean)} points")
-
-    # --- Headlines RSS ---
-    log("Récupération des headlines RSS...")
+    # --- Actualites ---
+    log("Recuperation des actualites...")
+    actualites_par_region = {}
     for region in ["CA", "US", "CN", "IN", "WORLD"]:
-        entries = fetch_rss_headlines(region)
-        if entries:
-            headlines = format_headlines(entries)
-            data["regions"][region]["headlines"] = headlines
-            log(f"  {region}: {len(headlines)} headlines récupérées")
+        items = recuperer_actualites(region)
+        actualites_par_region[region] = items
+        if items:
+            data["regions"][region]["headlines"] = formater_actualites(items)
         else:
-            log(f"  {region}: aucune headline (flux RSS indisponibles)")
+            log(f"  {region} : aucune actualite retenue, ancien lot conserve")
         time.sleep(0.3)
 
-    # --- Controle de fraicheur ---
-    signaler_indicateurs_perimes(data)
+    # --- Resumes et sentiment ---
+    log("Composition des resumes et du sentiment...")
+    emplois = {"CA": emploi_ca, "US": emploi_us}
+    chomages = {"CA": chomage_ca, "US": chomage_us}
+    avant = {"CA": chomage_ca_avant, "US": chomage_us_avant}
+    for region in ["CA", "US", "CN", "IN", "WORLD"]:
+        contenu = data["regions"][region]
+        contenu["summary"] = composer_resume(
+            region, contenu["indicators"], actualites_par_region.get(region, []),
+            emplois.get(region), chomages.get(region))
+        contenu["sentiment"] = calculer_sentiment(
+            region, contenu["indicators"], emplois.get(region),
+            chomages.get(region), avant.get(region))
+        log(f"  {region} : sentiment {contenu['sentiment']['value']}")
 
-    # --- Sauvegarder ---
+    # --- Fraicheur ---
+    ajouter_periodes_anglaises(data)
+    perimes = controler_fraicheur(data)
+    data["staleIndicators"] = perimes
+
+    # --- Sauvegarde ---
     log("Sauvegarde de indicators.json...")
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     log("=" * 60)
-    log(f"Mise à jour terminée — {today}")
+    log(f"Mise a jour terminee — {today}")
     log("=" * 60)
+
+    if perimes:
+        # Sortie non nulle : le workflow marque l'execution en echec et
+        # GitHub envoie un courriel. C'est le seul rappel fiable pour les
+        # champs qui n'ont pas de source automatisable.
+        log("Indicateurs perimes detectes, voir ci-dessus.")
+        return 2
+    return 0
 
 
 if __name__ == "__main__":
-    update_indicators()
+    sys.exit(update_indicators())
