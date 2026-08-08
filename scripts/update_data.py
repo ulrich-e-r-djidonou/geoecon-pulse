@@ -163,6 +163,11 @@ VALET_URL = "https://www.bankofcanada.ca/valet/observations/{series}/json?recent
 NYFED_EFFR_URL = "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/1.json"
 
 # Bureau of Labor Statistics, API publique v1.
+#
+# DBnomics a ete evalue comme source de repli pour le BLS et comme source
+# automatisable pour l'IPC de la Chine et de l'Inde : son miroir du BLS
+# s'arretait a janvier 2025 et ses series FMI a juillet 2025, soit plus d'un
+# an de retard sur les sources d'origine. Ecarte pour cette raison.
 BLS_URL = "https://api.bls.gov/publicAPI/v1/timeseries/data/{serie}"
 BLS_IPC = "CUUR0000SA0"
 BLS_CHOMAGE = "LNS14000000"
@@ -191,6 +196,34 @@ MOIS_EN = [
 
 def log(msg):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}")
+
+
+def obtenir(url, methode="get", tentatives=3, **kwargs):
+    """Requete HTTP avec quelques reprises sur panne passagere.
+
+    Le BLS renvoie regulierement un 503 « Temporarily Down for Maintenance »
+    de quelques minutes. Sans reprise, une seule seconde mal tombee prive le
+    tableau des chiffres d'emploi americains jusqu'au passage suivant.
+    Les erreurs 4xx ne sont pas reessayees : elles ne guerissent pas d'
+    elles-memes.
+    """
+    kwargs.setdefault("headers", UA)
+    kwargs.setdefault("timeout", TIMEOUT)
+    derniere = None
+    for essai in range(tentatives):
+        try:
+            resp = getattr(requests, methode)(url, **kwargs)
+            if resp.status_code < 400:
+                return resp
+            derniere = requests.HTTPError(
+                f"{resp.status_code} pour {url}", response=resp)
+            if resp.status_code < 500:
+                break
+        except requests.RequestException as e:
+            derniere = e
+        if essai < tentatives - 1:
+            time.sleep(2 * (essai + 1))
+    raise derniere
 
 
 def periode_fr(annee, mois):
@@ -235,8 +268,7 @@ def variation_annuelle(recent, an_avant):
 # ============================================================
 
 def fetch_valet(series, n):
-    resp = requests.get(VALET_URL.format(series=series, n=n),
-                        headers=UA, timeout=TIMEOUT)
+    resp = obtenir(VALET_URL.format(series=series, n=n))
     resp.raise_for_status()
     return resp.json().get("observations", [])
 
@@ -305,9 +337,8 @@ def fetch_sparkline_inflation_canada():
 
 def fetch_statcan_vecteur(vecteur, n=14):
     """Points d'un vecteur StatCan, du plus ancien au plus recent."""
-    resp = requests.post(STATCAN_WDS,
-                         json=[{"vectorId": vecteur, "latestN": n}],
-                         headers=UA, timeout=TIMEOUT)
+    resp = obtenir(STATCAN_WDS, "post",
+                   json=[{"vectorId": vecteur, "latestN": n}])
     resp.raise_for_status()
     charge = resp.json()
     if not charge or charge[0].get("status") != "SUCCESS":
@@ -361,7 +392,7 @@ def fetch_variation_emploi_canada():
 
 def fetch_taux_directeur_us():
     try:
-        resp = requests.get(NYFED_EFFR_URL, headers=UA, timeout=TIMEOUT)
+        resp = obtenir(NYFED_EFFR_URL)
         resp.raise_for_status()
         taux = resp.json()["refRates"][0]
         milieu = (taux["targetRateFrom"] + taux["targetRateTo"]) / 2
@@ -380,7 +411,7 @@ def _bls_mensuels(serie):
     M13 designe une moyenne annuelle qu'il ne faut pas melanger aux mois, et
     le BLS renvoie des entrees vides pour les mois pas encore publies.
     """
-    resp = requests.get(BLS_URL.format(serie=serie), headers=UA, timeout=TIMEOUT)
+    resp = obtenir(BLS_URL.format(serie=serie))
     resp.raise_for_status()
     charge = resp.json()
     if charge.get("status") != "REQUEST_SUCCEEDED":
@@ -549,7 +580,7 @@ def controler_fraicheur(data, seuil_jours=100):
 def fetch_exchange_rates():
     log("Recuperation des taux de change...")
     try:
-        resp = requests.get(EXCHANGE_RATES_URL, headers=UA, timeout=TIMEOUT)
+        resp = obtenir(EXCHANGE_RATES_URL)
         resp.raise_for_status()
         data = resp.json()
         rates = data.get("rates", {})
@@ -565,7 +596,7 @@ def fetch_stock_quote(symbol):
     try:
         url = (f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
                f"?interval=1d&range=1d")
-        resp = requests.get(url, headers=UA, timeout=TIMEOUT)
+        resp = obtenir(url)
         resp.raise_for_status()
         meta = resp.json()["chart"]["result"][0]["meta"]
         price = meta.get("regularMarketPrice", 0)
@@ -606,7 +637,7 @@ def fetch_sparkline_data(symbol, interval="1mo", range_str="1y"):
     try:
         url = (f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
                f"?interval={interval}&range={range_str}")
-        resp = requests.get(url, headers=UA, timeout=TIMEOUT)
+        resp = obtenir(url)
         resp.raise_for_status()
         resultat = resp.json()["chart"]["result"][0]
         closes = resultat["indicators"]["quote"][0]["close"]
@@ -652,7 +683,7 @@ def fetch_exchange_sparkline(from_currency, to_currency):
         start = end - timedelta(days=365)
         url = (f"https://api.frankfurter.app/{start.strftime('%Y-%m-%d')}"
                f"..{end.strftime('%Y-%m-%d')}?from={from_currency}&to={to_currency}")
-        resp = requests.get(url, headers=UA, timeout=TIMEOUT)
+        resp = obtenir(url)
         resp.raise_for_status()
         rates = resp.json().get("rates", {})
         points, dernier_mois = [], None
@@ -678,7 +709,7 @@ def charger_flux(url):
     timeout : un serveur qui ne repond jamais bloquait le workflow entier.
     On passe par requests, qui en a un.
     """
-    resp = requests.get(url, headers=UA, timeout=TIMEOUT)
+    resp = obtenir(url)
     resp.raise_for_status()
     return feedparser.parse(resp.content)
 
