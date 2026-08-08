@@ -18,6 +18,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   update-data:
@@ -68,15 +69,28 @@ jobs:
           git commit -m "Mise à jour des données — $(date +%Y-%m-%d)"
           git push
 
-      # Dernière étape volontairement : les données sont déjà publiées quand
-      # elle échoue. L'échec sert d'alerte par courriel pour les quelques
-      # champs sans source automatisable (voir MISE_A_JOUR_MANUELLE.md).
-      - name: Alerte sur les indicateurs périmés
+      # Les indicateurs périmés passent par une issue plutôt que par un échec
+      # du job. Faire échouer la course affichait une croix rouge permanente
+      # dans l'onglet Actions d'un dépôt public servant de pièce de portfolio,
+      # alors que rien n'était cassé. Une issue notifie aussi bien par
+      # courriel, se referme quand c'est réglé, et laisse l'historique vert.
+      - name: Signaler les indicateurs périmés
         if: steps.maj.outputs.code == '2'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          echo "Des indicateurs saisis à la main ont dépassé leur seuil."
-          echo "Voir le journal ci-dessus et MISE_A_JOUR_MANUELLE.md."
-          exit 1
+          TITRE="Indicateurs à rafraîchir à la main"
+          python scripts/corps_issue.py > /tmp/corps_issue.md
+          CORPS=$(cat /tmp/corps_issue.md)
+          EXISTANTE=$(gh issue list --state open --search "$TITRE in:title" \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTANTE" ]; then
+            gh issue edit "$EXISTANTE" --body "$CORPS"
+            echo "Issue #$EXISTANTE mise à jour."
+          else
+            gh issue create --title "$TITRE" --body "$CORPS"
+          fi
+          echo "::warning::Des indicateurs saisis à la main ont dépassé leur seuil."
 
       # Un échec réel du script (code autre que 0 ou 2) doit aussi remonter.
       - name: Échec du script de mise à jour
