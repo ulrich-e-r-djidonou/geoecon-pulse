@@ -49,7 +49,8 @@ import requests
 import feedparser
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from news_filter import evaluer, nettoyer_titre, source_fiable, normaliser  # noqa: E402
+from news_filter import (evaluer, nettoyer_titre, source_fiable, normaliser,  # noqa: E402
+                         zone_mentionnee)
 
 # ============================================================
 # CONFIG
@@ -65,6 +66,13 @@ REJETS_FILE = BASE_DIR / "data" / "rejets.json"
 # qu'on voie d'un coup d'oeil ce qui est juge par un humain.
 CHRONO_FILE = BASE_DIR / "data" / "chronologie.json"
 ANALYSE_FILE = BASE_DIR / "data" / "analyse_provinciale.json"
+INTERCO_FILE = BASE_DIR / "data" / "interconnexions.json"
+
+# Controle de coherence (chaque valeur face a une seconde source) et sante
+# des flux (alerte quand un flux cesse de repondre). Voir les sections plus
+# bas ; l'un compare, l'autre persiste d'un passage a l'autre.
+COHERENCE_FILE = BASE_DIR / "data" / "coherence.json"
+SANTE_FLUX_FILE = BASE_DIR / "data" / "sante_flux.json"
 
 TIMEOUT = 15
 UA = {"User-Agent": "Mozilla/5.0 (compatible; GeoEconPulse/1.0)"}
@@ -175,9 +183,24 @@ RSS_FEEDS_FR = {
     ],
 }
 
+# Flux exemptes de la preuve de zone (voir zone_mentionnee, news_filter.py) :
+# l'institution propre a une region parle d'elle par construction, inutile
+# de lui demander de se citer elle-meme.
+FLUX_EXEMPTS_ZONE = {
+    "https://www.bankofcanada.ca/feed/",
+    "https://www.federalreserve.gov/feeds/press_all.xml",
+}
+
 # Tout ce que le filtre ecarte, avec le motif. Ecrit dans data/rejets.json a
 # la fin du passage et repris par le rapport hebdomadaire.
 JOURNAL_REJETS = []
+
+# Sante des flux : combien d'echecs consecutifs, sur combien de passages.
+# Charge depuis data/sante_flux.json au debut du passage, mis a jour flux par
+# flux, sauvegarde a la fin. Contrairement a JOURNAL_REJETS, cet etat doit
+# survivre d'un passage a l'autre pour compter des echecs *consecutifs*.
+SANTE_FLUX = {}
+SEUIL_FLUX_EN_PANNE = 6  # ~2 jours a trois passages quotidiens
 
 MAX_HEADLINES = 8
 
@@ -677,14 +700,43 @@ def ajouter_periodes_anglaises(data):
                 ind["periodEn"] = periode_en(periode)
 
 
-def poser_contenu_editorial(data):
-    """Recopie la chronologie et la matrice provinciale depuis leurs gabarits.
+def _substituer_marqueurs(gabarit, brent, cad, inr):
+    """Remplace {{brent}}, {{cad}} et {{inr}} par les valeurs vivantes du jour.
 
-    Les marqueurs {{brent}} et {{cad}} sont remplaces par les valeurs du jour.
+    Six marqueurs et non trois : le francais separe ses milliers par une
+    espace insecable et decime par une virgule, l'anglais fait l'inverse. Le
+    huard et la roupie gardent leurs deux decimales, la ou nombre_fr()
+    laisserait « 1,4 » pour un taux qui s'ecrit « 1,40 ».
+
+    Leve une erreur si un marqueur reste non substitue : mieux vaut garder
+    l'ancienne version d'un fichier editorial que publier un « {{brent}} »
+    litteral.
+    """
+    rendu = (gabarit
+             .replace("{{brent}}", nombre_fr(round(float(brent))))
+             .replace("{{brentEn}}", f"{round(float(brent)):,}")
+             .replace("{{cad}}", f"{float(cad):.2f}".replace(".", ","))
+             .replace("{{cadEn}}", f"{float(cad):.2f}"))
+    if inr is not None:
+        rendu = (rendu
+                 .replace("{{inr}}", f"{float(inr):.2f}".replace(".", ","))
+                 .replace("{{inrEn}}", f"{float(inr):.2f}"))
+    if "{{" in rendu:
+        raise ValueError("marqueur non substitue dans le gabarit")
+    return rendu
+
+
+def poser_contenu_editorial(data):
+    """Recopie la chronologie, la matrice provinciale et les interconnexions
+    depuis leurs gabarits.
+
     Le texte annoncait « Brent a 90 $ » et « 1,38 CAD/USD » longtemps apres
     que le baril soit passe par 118 $ puis 70 $ et que le huard soit tombe a
     1,40 : un chiffre ecrit en dur dans une analyse ne vieillit pas
-    visiblement, il devient simplement faux.
+    visiblement, il devient simplement faux. Meme logique pour les
+    interconnexions : l'onglet datait de mars et decrivait Ormuz comme ferme
+    sans interruption, une roupie a 92,54/USD comme un record encore valide,
+    et une inflation indienne projetee a 4,5 % que l'OCDE dementait deja.
     """
     log("Contenu editorial...")
 
@@ -704,30 +756,34 @@ def poser_contenu_editorial(data):
 
     brent = (data["regions"]["WORLD"]["sparkline"]["data"] or [None])[-1]
     cad = data["regions"]["CA"]["indicators"]["exchange"].get("value")
+    inr = data["regions"]["IN"]["indicators"]["exchange"].get("value")
     if brent is None or cad is None:
-        log("  Brent ou huard indisponible, matrice provinciale inchangee")
+        log("  Brent ou huard indisponible, contenu vivant inchange")
         return
 
     try:
         with open(ANALYSE_FILE, encoding="utf-8") as f:
             gabarit = json.dumps(json.load(f)["provincialAnalysis"],
                                  ensure_ascii=False)
-        # Quatre marqueurs et non deux : le francais separe ses milliers par
-        # une espace insecable et decime par une virgule, l'anglais fait
-        # l'inverse. Le huard garde ses deux decimales, la ou nombre_fr()
-        # laisserait « 1,4 » pour un taux qui s'ecrit « 1,40 ».
-        rendu = (gabarit
-                 .replace("{{brent}}", nombre_fr(round(float(brent))))
-                 .replace("{{brentEn}}", f"{round(float(brent)):,}")
-                 .replace("{{cad}}", f"{float(cad):.2f}".replace(".", ","))
-                 .replace("{{cadEn}}", f"{float(cad):.2f}"))
-        if "{{" in rendu:
-            raise ValueError("marqueur non substitue dans le gabarit")
+        rendu = _substituer_marqueurs(gabarit, brent, cad, inr)
         data["regions"]["CA"]["provincialAnalysis"] = json.loads(rendu)
         log(f"  Matrice provinciale : Brent {round(float(brent))} $, "
             f"huard {round(float(cad), 2)}")
     except Exception as e:
         log(f"  ERREUR matrice provinciale : {e}, ancienne version conservee")
+
+    try:
+        with open(INTERCO_FILE, encoding="utf-8") as f:
+            liens = json.load(f)["interconnections"]
+        gabarit = json.dumps(liens, ensure_ascii=False)
+        rendu = _substituer_marqueurs(gabarit, brent, cad, inr)
+        data["interconnections"] = [
+            {c: e[c] for c in ("from", "to", "type", "title", "description", "impact")}
+            for e in json.loads(rendu)
+        ]
+        log(f"  Interconnexions : {len(data['interconnections'])} liens")
+    except Exception as e:
+        log(f"  ERREUR interconnexions : {e}, ancienne version conservee")
 
 
 def controler_fraicheur(data, seuil_jours=100):
@@ -746,6 +802,70 @@ def controler_fraicheur(data, seuil_jours=100):
         log(f"  {len(perimes)} indicateur(s) a rafraichir a la main "
             f"(voir MISE_A_JOUR_MANUELLE.md).")
     return perimes
+
+
+# ============================================================
+# CONTROLE DE COHERENCE — chaque valeur face a une seconde source
+# ============================================================
+#
+# Un pipeline qui ne lit qu'une source par indicateur ne peut pas distinguer
+# une vraie donnee d'une erreur de lecture qui ressemble a une vraie donnee :
+# une colonne SDMX mal alignee, un decalage d'index, une conversion d'unite
+# oubliee rendent tous un nombre plausible en apparence. Ce controle relit
+# les indicateurs qui ont une seconde source publique independante et
+# signale l'ecart plutot que de le publier en silence. Ceux qui n'en ont pas
+# passent par une borne de plausibilite a la place : ca n'attrape pas une
+# petite erreur, mais ca attrape un chiffre qui a change de colonne ou
+# d'unite.
+
+SEUIL_ECART_INFLATION = 0.5   # points de pourcentage
+SEUIL_ECART_TAUX = 0.25       # points de pourcentage
+SEUIL_ECART_CHANGE = 0.03     # relatif (3 %)
+
+BORNES_PLAUSIBLES = {
+    "inflation": (-5, 30),
+    "rate": (0, 20),
+    "unemployment": (1, 40),
+    "gdp": (-15, 20),
+}
+
+
+def comparer_sources(nom, valeur_a, source_a, valeur_b, source_b, seuil, relatif=False):
+    """Compare deux lectures independantes du meme indicateur.
+
+    None si l'une des deux valeurs manque : une source secondaire
+    indisponible n'est pas un desaccord, juste un controle qui n'a pas pu
+    avoir lieu.
+    """
+    if valeur_a is None or valeur_b is None:
+        return None
+    ecart = abs(float(valeur_a) - float(valeur_b))
+    ecart_mesure = ecart / abs(float(valeur_b)) if relatif and valeur_b else ecart
+    suspect = ecart_mesure > seuil
+    if suspect:
+        log(f"  ECART {nom} : {source_a}={valeur_a} vs {source_b}={valeur_b}")
+    return {"indicateur": nom, "type": "source_double",
+            "sourceA": source_a, "valeurA": valeur_a,
+            "sourceB": source_b, "valeurB": valeur_b,
+            "ecart": round(ecart_mesure, 4), "suspect": suspect}
+
+
+def verifier_borne(nom, valeur, source, cle_borne):
+    """Signale une valeur hors de toute plausibilite, faute de seconde source.
+
+    N'attrape pas une petite erreur de lecture, seulement un chiffre qui a
+    change de colonne ou d'unite (un indice pris pour un taux, par exemple).
+    """
+    if valeur is None:
+        return None
+    mini, maxi = BORNES_PLAUSIBLES[cle_borne]
+    suspect = not (mini <= float(valeur) <= maxi)
+    if suspect:
+        log(f"  HORS BORNES {nom} : {valeur} ({source}), attendu [{mini}, {maxi}]")
+    return {"indicateur": nom, "type": "borne_plausibilite",
+            "sourceA": source, "valeurA": valeur,
+            "sourceB": None, "valeurB": f"[{mini}, {maxi}]",
+            "ecart": None, "suspect": suspect}
 
 
 # ============================================================
@@ -867,6 +987,22 @@ def fetch_stock_quote(symbol):
         return {"value": round(price), "change": change, "trend": trend}
     except Exception as e:
         log(f"  ERREUR Yahoo Finance ({symbol}) : {e}")
+        return None
+
+
+def fetch_taux_change_yahoo(ticker):
+    """Cotation d'une paire de change chez Yahoo, en seconde source du taux
+    de change Frankfurter/BCE. fetch_stock_quote() arrondit a l'entier, ce
+    qui efface un huard a 1,40 ; ce prix-ci garde ses decimales."""
+    try:
+        url = (f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
+               f"?interval=1d&range=1d")
+        resp = obtenir(url)
+        resp.raise_for_status()
+        prix = resp.json()["chart"]["result"][0]["meta"].get("regularMarketPrice")
+        return round(prix, 4) if prix else None
+    except Exception as e:
+        log(f"  ERREUR Yahoo Finance ({ticker}) : {e}")
         return None
 
 
@@ -1033,6 +1169,44 @@ def estimer_impact(titre, score):
     return "low"
 
 
+def charger_sante_flux():
+    """Etat de sante des flux au dernier passage, ou vide si absent."""
+    try:
+        with open(SANTE_FLUX_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def noter_flux(url, nom, ok):
+    """Enregistre un succes ou un echec pour un flux.
+
+    Le compteur d'echecs consecutifs repart a zero au premier succes : une
+    panne passagere (un 503, un timeout) ne doit pas s'additionner
+    indefiniment avec la precedente si le flux repond entre-temps.
+    """
+    entree = SANTE_FLUX.setdefault(url, {"nom": nom, "echecsConsecutifs": 0,
+                                         "dernierSucces": None})
+    if nom:
+        entree["nom"] = nom
+    if ok:
+        entree["echecsConsecutifs"] = 0
+        entree["dernierSucces"] = datetime.now().strftime("%Y-%m-%d %H:%M")
+    else:
+        entree["echecsConsecutifs"] = entree.get("echecsConsecutifs", 0) + 1
+
+
+def flux_en_panne():
+    """Flux dont les echecs consecutifs depassent le seuil."""
+    return [
+        {"url": url, "nom": e.get("nom") or url,
+         "echecsConsecutifs": e["echecsConsecutifs"],
+         "dernierSucces": e.get("dernierSucces")}
+        for url, e in SANTE_FLUX.items()
+        if e.get("echecsConsecutifs", 0) >= SEUIL_FLUX_EN_PANNE
+    ]
+
+
 def recuperer_actualites(region, langue="en"):
     """Actualites filtrees d'une region, les plus recentes d'abord.
 
@@ -1046,9 +1220,11 @@ def recuperer_actualites(region, langue="en"):
     for url_flux, nom_source in flux_region:
         try:
             flux = charger_flux(url_flux)
+            noter_flux(url_flux, nom_source, True)
         except Exception as e:
             log(f"    flux indisponible ({nom_source or 'Google News'}) : "
                 f"{type(e).__name__}")
+            noter_flux(url_flux, nom_source, False)
             continue
 
         for entree in flux.entries[:40]:
@@ -1071,6 +1247,19 @@ def recuperer_actualites(region, langue="en"):
             verdict = evaluer(titre)
             if not verdict["accepte"]:
                 rejetees.append((titre, verdict["motif"]))
+                continue
+
+            # Une redaction nationale ou un flux economique generaliste
+            # couvre aussi l'etranger : un article de la CBC sur des centres
+            # de donnees au Texas s'est deja retrouve sous l'onglet Canada
+            # faute de le verifier. Verifie apres le filtre thematique, pour
+            # que le motif de rejet d'un hors-sujet reste « hors sujet » et
+            # non « hors zone ». Exempte : l'institution propre a la region
+            # (elle parle d'elle-meme) et RESTE DU MONDE (rien a prouver).
+            if (nom_source is not None and region != "WORLD"
+                    and url_flux not in FLUX_EXEMPTS_ZONE
+                    and not zone_mentionnee(titre, region)):
+                rejetees.append((titre, f"hors zone {region} : mentionne une autre zone"))
                 continue
 
             vus_urls.add(lien)
@@ -1394,6 +1583,9 @@ def update_indicators():
     today = datetime.now().strftime("%Y-%m-%d")
     data["lastUpdated"] = today
 
+    SANTE_FLUX.update(charger_sante_flux())
+    verifications = []
+
     # --- Taux de change ---
     fx = fetch_exchange_rates()
     if fx:
@@ -1404,6 +1596,18 @@ def update_indicators():
                           {"value": round(fx[devise], arrondi), "period": fx["date"]},
                           "Frankfurter/BCE")
 
+    # Seconde source des taux de change : Yahoo Finance, qui lit les paires
+    # de change comme des cotations boursières. Un ecart ici trahit plus
+    # souvent une devise mal alignee dans la reponse Frankfurter qu'un vrai
+    # desaccord de marche.
+    for region, devise, ticker in (("CA", "CAD", "CAD=X"), ("CN", "CNY", "CNY=X"),
+                                   ("IN", "INR", "INR=X")):
+        if fx and fx.get(devise):
+            secours = fetch_taux_change_yahoo(ticker)
+            verifications.append(comparer_sources(
+                f"Taux de change {region}", fx[devise], "Frankfurter/BCE",
+                secours, "Yahoo Finance", SEUIL_ECART_CHANGE, relatif=True))
+
     # --- Indicateurs macro ---
     log("Recuperation des indicateurs macro...")
     ca = data["regions"]["CA"]["indicators"]
@@ -1412,32 +1616,59 @@ def update_indicators():
     chomage_ca_avant = (ca.get("unemployment") or {}).get("value")
     chomage_us_avant = (us.get("unemployment") or {}).get("value")
 
-    appliquer(ca["rate"], fetch_taux_directeur_canada(), "Banque du Canada")
-    appliquer(ca["inflation"], fetch_inflation_canada(), "Banque du Canada (IPC)")
+    taux_ca = fetch_taux_directeur_canada()
+    appliquer(ca["rate"], taux_ca, "Banque du Canada")
+    inflation_ca = fetch_inflation_canada()
+    appliquer(ca["inflation"], inflation_ca, "Banque du Canada (IPC)")
     chomage_ca = fetch_chomage_canada()
     creer_ou_appliquer(ca, "unemployment", chomage_ca, "Statistique Canada",
                        "%", "Taux de chômage", "Unemployment")
     emploi_ca = fetch_variation_emploi_canada()
 
-    appliquer(us["rate"], fetch_taux_directeur_us(), "Federal Reserve (NY Fed)")
+    # Secondes sources CA : la BRI republie le taux directeur canadien, et
+    # l'OCDE republie son IPC. Toutes deux independantes de la Banque du
+    # Canada, qui reste la source appliquee au tableau.
+    taux_ca_bri = fetch_taux_directeur_bri("CA", "CA (controle)")
+    verifications.append(comparer_sources(
+        "Taux directeur CA", taux_ca and taux_ca["value"], "Banque du Canada",
+        taux_ca_bri and taux_ca_bri["value"], "BRI", SEUIL_ECART_TAUX))
+    inflation_ca_ocde, _ = fetch_inflation_ocde("CAN", "CA (controle)")
+    verifications.append(comparer_sources(
+        "Inflation CA", inflation_ca and inflation_ca["value"], "Banque du Canada",
+        inflation_ca_ocde and inflation_ca_ocde["value"], "OCDE", SEUIL_ECART_INFLATION))
+
+    taux_us = fetch_taux_directeur_us()
+    appliquer(us["rate"], taux_us, "Federal Reserve (NY Fed)")
+    taux_us_bri = fetch_taux_directeur_bri("US", "US (controle)")
+    verifications.append(comparer_sources(
+        "Taux directeur US", taux_us and taux_us["value"], "Federal Reserve (NY Fed)",
+        taux_us_bri and taux_us_bri["value"], "BRI", SEUIL_ECART_TAUX))
 
     # Le BLS a rendu des 503 pendant toute la mise en place de ce pipeline.
     # L'OCDE republie le meme IPC americain (3,53 % pour juin 2026, contre
     # 3,5 % chez le BLS) : c'est un repli qui evite qu'une panne chez un seul
-    # diffuseur fige l'inflation des Etats-Unis sur le site.
+    # diffuseur fige l'inflation des Etats-Unis sur le site. On la recupere
+    # dans tous les cas, panne ou pas, pour l'utiliser aussi en seconde
+    # source de controle.
     inflation_us = fetch_inflation_us()
+    inflation_us_ocde, _ = fetch_inflation_ocde("USA", "US (controle)")
     if inflation_us:
         appliquer(us["inflation"], inflation_us, "BLS")
     else:
-        secours_us, _ = fetch_inflation_ocde("USA", "US (repli)")
-        appliquer(us["inflation"], secours_us, "OCDE (IPC, source BLS)")
+        appliquer(us["inflation"], inflation_us_ocde, "OCDE (IPC, source BLS)")
+    verifications.append(comparer_sources(
+        "Inflation US", inflation_us and inflation_us["value"], "BLS",
+        inflation_us_ocde and inflation_us_ocde["value"], "OCDE", SEUIL_ECART_INFLATION))
+
     chomage_us = fetch_chomage_us()
     creer_ou_appliquer(us, "unemployment", chomage_us, "BLS",
                        "%", "Taux de chômage", "Unemployment")
     emploi_us = fetch_variation_emploi_us()
 
     # Chine et Inde : ces quatre champs etaient saisis a la main et derivaient
-    # de plusieurs mois. L'OCDE et la BRI les servent sans cle d'API.
+    # de plusieurs mois. L'OCDE et la BRI les servent sans cle d'API. Ni l'une
+    # ni l'autre n'a de seconde source publique facilement accessible pour
+    # ces deux pays : verifier_borne() controle au moins la plausibilite.
     cn = data["regions"]["CN"]["indicators"]
     ind = data["regions"]["IN"]["indicators"]
 
@@ -1446,10 +1677,23 @@ def update_indicators():
     inflation_in, serie_in = fetch_inflation_ocde("IND", "IN")
     appliquer(ind["inflation"], inflation_in, "OCDE (IPC, source MoSPI)")
 
-    appliquer(cn["rate"], fetch_taux_directeur_bri("CN", "CN"),
-              "BRI (PBoC, taux préférentiel 1 an)")
-    appliquer(ind["rate"], fetch_taux_directeur_bri("IN", "IN"),
-              "BRI (RBI, taux de prise en pension)")
+    taux_cn = fetch_taux_directeur_bri("CN", "CN")
+    appliquer(cn["rate"], taux_cn, "BRI (PBoC, taux préférentiel 1 an)")
+    taux_in = fetch_taux_directeur_bri("IN", "IN")
+    appliquer(ind["rate"], taux_in, "BRI (RBI, taux de prise en pension)")
+
+    verifications.append(verifier_borne("Inflation CN", inflation_cn and inflation_cn["value"],
+                                        "OCDE", "inflation"))
+    verifications.append(verifier_borne("Inflation IN", inflation_in and inflation_in["value"],
+                                        "OCDE", "inflation"))
+    verifications.append(verifier_borne("Taux directeur CN", taux_cn and taux_cn["value"],
+                                        "BRI", "rate"))
+    verifications.append(verifier_borne("Taux directeur IN", taux_in and taux_in["value"],
+                                        "BRI", "rate"))
+    verifications.append(verifier_borne("Chômage CA", chomage_ca and chomage_ca["value"],
+                                        "Statistique Canada", "unemployment"))
+    verifications.append(verifier_borne("Chômage US", chomage_us and chomage_us["value"],
+                                        "BLS", "unemployment"))
 
     # Ce qui reste a la main porte la marque. Ce sont des previsions annuelles
     # revisees une ou deux fois l'an, pas des series mensuelles : leur age ne
@@ -1460,6 +1704,14 @@ def update_indicators():
             cible = data["regions"][region]["indicators"].get(cle)
             if cible is not None and not cible.get("source", "").startswith("OCDE"):
                 cible["manual"] = True
+            # Aucune de ces previsions n'a de seconde source verifiable en
+            # continu (BdC, Fed, FMI...) : une borne de plausibilite reste le
+            # seul filet qui attrape un chiffre saisi hors de son ordre de
+            # grandeur.
+            if cible is not None:
+                verifications.append(verifier_borne(
+                    f"{cle.upper()} {region}", cible.get("value"),
+                    cible.get("source", "?"), cle))
 
     # --- Bourses ---
     for region, quote in fetch_all_stocks().items():
@@ -1534,6 +1786,25 @@ def update_indicators():
     perimes = controler_fraicheur(data)
     data["staleIndicators"] = perimes
 
+    # --- Coherence ---
+    verifications = [v for v in verifications if v is not None]
+    incoherences = [v for v in verifications if v["suspect"]]
+    log(f"Controle de coherence : {len(verifications)} controle(s), "
+        f"{len(incoherences)} ecart(s) suspect(s).")
+    with open(COHERENCE_FILE, "w", encoding="utf-8") as f:
+        json.dump({"date": today, "controles": verifications}, f,
+                  ensure_ascii=False, indent=2)
+
+    # --- Sante des flux ---
+    kaput = flux_en_panne()
+    if kaput:
+        log(f"  {len(kaput)} flux en panne depuis {SEUIL_FLUX_EN_PANNE} passages ou plus.")
+        for flux_mort in kaput:
+            log(f"    EN PANNE {flux_mort['nom']} : {flux_mort['echecsConsecutifs']} echecs, "
+                f"dernier succes {flux_mort['dernierSucces'] or 'jamais'}")
+    with open(SANTE_FLUX_FILE, "w", encoding="utf-8") as f:
+        json.dump(SANTE_FLUX, f, ensure_ascii=False, indent=2)
+
     # --- Sauvegarde ---
     log("Sauvegarde de indicators.json...")
     with open(DATA_FILE, "w", encoding="utf-8") as f:
@@ -1550,11 +1821,12 @@ def update_indicators():
     log(f"Mise a jour terminee — {today}")
     log("=" * 60)
 
-    if perimes:
+    if perimes or incoherences or kaput:
         # Sortie non nulle : le workflow marque l'execution en echec et
-        # GitHub envoie un courriel. C'est le seul rappel fiable pour les
-        # champs qui n'ont pas de source automatisable.
-        log("Indicateurs perimes detectes, voir ci-dessus.")
+        # GitHub envoie un courriel. C'est le seul rappel fiable pour ce qui
+        # n'a pas de source automatisable, ce qui contredit une seconde
+        # source, ou ce qui a cesse de repondre.
+        log("Anomalies detectees, voir ci-dessus.")
         return 2
     return 0
 

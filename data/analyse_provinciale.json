@@ -10,7 +10,12 @@
     "reste plausible longtemps apres etre devenu faux.",
     "",
     "Le reste du texte est structurel (parts de PIB, parts d'exportation)",
-    "et se revise a la main. Derniere revision : 2026-08-08."
+    "et se revise a la main.",
+    "",
+    "2026-08-08 (deuxieme passage) : les listes strengths/weaknesses",
+    "ecrivaient encore « Brent a 90$+ » en dur, hors de portee de la",
+    "substitution qui ne touchait que le texte `analysis`. Meme defaut que",
+    "celui deja corrige dans `analysis` : passees aux marqueurs."
   ],
   "provincialAnalysis": {
     "shocks": [
@@ -150,13 +155,13 @@
         },
         "strengths": {
           "fr": [
-            "Revenus pétroliers exceptionnels (Brent à 90$+)",
+            "Revenus pétroliers exceptionnels (Brent à {{brent}} $)",
             "Saskatchewan : double gain pétrole + canola",
             "Dollar canadien faible amplifie les revenus en CAD",
             "Terre-Neuve : production offshore Hibernia/Terra Nova en pleine capacité"
           ],
           "en": [
-            "Exceptional oil revenues (Brent at $90+)",
+            "Exceptional oil revenues (Brent at ${{brentEn}})",
             "Saskatchewan: double gain from oil + canola",
             "Weak Canadian dollar amplifies CAD revenues",
             "Newfoundland: Hibernia/Terra Nova offshore at full capacity"
@@ -165,12 +170,12 @@
         "weaknesses": {
           "fr": [
             "Tarifs US de 25% sur l'acier ralentissent les projets d'infrastructure",
-            "Dépendance au cycle pétrolier — vulnérabilité si le conflit iranien se résout rapidement",
+            "Dépendance au cycle pétrolier, devenu instable : Ormuz a rouvert puis refermé en 2026",
             "Ralentissement chinois réduit la demande structurelle de brut"
           ],
           "en": [
             "US 25% steel tariffs slow infrastructure projects",
-            "Oil cycle dependence — vulnerable if Iran conflict resolves quickly",
+            "Oil cycle dependence, now unstable: Hormuz reopened then re-closed in 2026",
             "Chinese slowdown reduces structural crude demand"
           ]
         }
@@ -212,13 +217,13 @@
           "fr": [
             "Tarifs de 25% : impact direct sur 46% du PIB manufacturier canadien",
             "Aluminium québécois : 2,8 Mds$ d'exports vers les US menacés",
-            "Pétrole à 90$+ : hausse des coûts de transport et d'intrants",
+            "Pétrole à {{brent}} $ : hausse des coûts de transport et d'intrants",
             "Incertitude CUSMA pèse sur les décisions d'investissement"
           ],
           "en": [
             "25% tariffs: direct impact on 46% of Canadian manufacturing GDP",
             "Quebec aluminum: $2.8B in US exports threatened",
-            "Oil at $90+: rising transport and input costs",
+            "Oil at ${{brentEn}}: rising transport and input costs",
             "CUSMA uncertainty weighs on investment decisions"
           ]
         }
@@ -307,13 +312,13 @@
         },
         "weaknesses": {
           "fr": [
-            "Importatrices nettes d'énergie — plein impact du pétrole à 90$+",
+            "Importatrices nettes d'énergie — plein impact du pétrole à {{brent}} $",
             "Dépendance aux transferts fédéraux (35-40% des revenus)",
             "Ralentissement ON/QC réduit la base de péréquation",
             "Marges de raffinage comprimées par la volatilité du brut"
           ],
           "en": [
-            "Net energy importers — full impact of oil at $90+",
+            "Net energy importers — full impact of oil at ${{brentEn}}",
             "Dependence on federal transfers (35-40% of revenues)",
             "ON/QC slowdown reduces equalization base",
             "Refining margins squeezed by crude price volatility"

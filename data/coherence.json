@@ -1,0 +1,175 @@
+{
+  "date": "2026-08-08",
+  "controles": [
+    {
+      "indicateur": "Taux de change CA",
+      "type": "source_double",
+      "sourceA": "Frankfurter/BCE",
+      "valeurA": 1.401,
+      "sourceB": "Yahoo Finance",
+      "valeurB": 1.3938,
+      "ecart": 0.0052,
+      "suspect": false
+    },
+    {
+      "indicateur": "Taux de change CN",
+      "type": "source_double",
+      "sourceA": "Frankfurter/BCE",
+      "valeurA": 6.7476,
+      "sourceB": "Yahoo Finance",
+      "valeurB": 6.7372,
+      "ecart": 0.0015,
+      "suspect": false
+    },
+    {
+      "indicateur": "Taux de change IN",
+      "type": "source_double",
+      "sourceA": "Frankfurter/BCE",
+      "valeurA": 95.21,
+      "sourceB": "Yahoo Finance",
+      "valeurB": 95.2,
+      "ecart": 0.0001,
+      "suspect": false
+    },
+    {
+      "indicateur": "Taux directeur CA",
+      "type": "source_double",
+      "sourceA": "Banque du Canada",
+      "valeurA": 2.25,
+      "sourceB": "BRI",
+      "valeurB": 2.25,
+      "ecart": 0.0,
+      "suspect": false
+    },
+    {
+      "indicateur": "Inflation CA",
+      "type": "source_double",
+      "sourceA": "Banque du Canada",
+      "valeurA": 2.8,
+      "sourceB": "OCDE",
+      "valeurB": 2.8,
+      "ecart": 0.0,
+      "suspect": false
+    },
+    {
+      "indicateur": "Taux directeur US",
+      "type": "source_double",
+      "sourceA": "Federal Reserve (NY Fed)",
+      "valeurA": 3.625,
+      "sourceB": "BRI",
+      "valeurB": 3.625,
+      "ecart": 0.0,
+      "suspect": false
+    },
+    {
+      "indicateur": "Inflation CN",
+      "type": "borne_plausibilite",
+      "sourceA": "OCDE",
+      "valeurA": 1.0,
+      "sourceB": null,
+      "valeurB": "[-5, 30]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "Inflation IN",
+      "type": "borne_plausibilite",
+      "sourceA": "OCDE",
+      "valeurA": 4.8,
+      "sourceB": null,
+      "valeurB": "[-5, 30]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "Taux directeur CN",
+      "type": "borne_plausibilite",
+      "sourceA": "BRI",
+      "valeurA": 3.0,
+      "sourceB": null,
+      "valeurB": "[0, 20]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "Taux directeur IN",
+      "type": "borne_plausibilite",
+      "sourceA": "BRI",
+      "valeurA": 5.25,
+      "sourceB": null,
+      "valeurB": "[0, 20]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "Chômage CA",
+      "type": "borne_plausibilite",
+      "sourceA": "Statistique Canada",
+      "valeurA": 6.4,
+      "sourceB": null,
+      "valeurB": "[1, 40]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "GDP CA",
+      "type": "borne_plausibilite",
+      "sourceA": "Banque du Canada (RPM juillet 2026)",
+      "valeurA": 0.7,
+      "sourceB": null,
+      "valeurB": "[-15, 20]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "GDP US",
+      "type": "borne_plausibilite",
+      "sourceA": "Federal Reserve (SEP juin 2026)",
+      "valeurA": 2.2,
+      "sourceB": null,
+      "valeurB": "[-15, 20]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "GDP CN",
+      "type": "borne_plausibilite",
+      "sourceA": "Conseil d'État",
+      "valeurA": 4.5,
+      "sourceB": null,
+      "valeurB": "[-15, 20]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "GDP IN",
+      "type": "borne_plausibilite",
+      "sourceA": "Fitch Ratings",
+      "valeurA": 7.5,
+      "sourceB": null,
+      "valeurB": "[-15, 20]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "GDP WORLD",
+      "type": "borne_plausibilite",
+      "sourceA": "FMI (WEO juillet 2026)",
+      "valeurA": 3.0,
+      "sourceB": null,
+      "valeurB": "[-15, 20]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "INFLATION WORLD",
+      "type": "borne_plausibilite",
+      "sourceA": "FMI (WEO juillet 2026)",
+      "valeurA": 4.7,
+      "sourceB": null,
+      "valeurB": "[-5, 30]",
+      "ecart": null,
+      "suspect": false
+    }
+  ]
+}

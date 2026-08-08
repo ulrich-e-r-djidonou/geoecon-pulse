@@ -282,11 +282,22 @@ td strong { color: var(--text-primary); }
       <tr>
         <td><strong>Croissance du PIB</strong> (prévisions)</td>
         <td>Toutes</td>
-        <td><span class="tag manuel">Saisi à la main</span> Banque du Canada, Fed, Conseil d'État chinois, Fitch, FMI</td>
-        <td>Annuelle ou semestrielle</td>
+        <td><span class="tag manuel">Saisi à la main</span> Banque du Canada (Rapport sur la politique monétaire), Fed (Summary of Economic Projections), Conseil d'État chinois, Fitch, FMI (World Economic Outlook)</td>
+        <td>Trimestrielle à semestrielle</td>
       </tr>
     </tbody>
   </table>
+  </div>
+
+  <div class="note">
+    <p>
+      <strong>Dernière relecture des prévisions : 8 août 2026.</strong>
+      Canada et États-Unis contre les éditions les plus récentes du Rapport
+      sur la politique monétaire (15 juillet 2026, 0,7 %) et du Summary of
+      Economic Projections (17 juin 2026, 2,2 %) ; l'agrégat mondial contre
+      la mise à jour de juillet 2026 des Perspectives de l'économie mondiale
+      du FMI (3,0 % de croissance, 4,7 % d'inflation).
+    </p>
   </div>
 
   <div class="note">
@@ -334,6 +345,62 @@ td strong { color: var(--text-primary); }
     annuelles sont exclues du contrôle : une prévision pour 2026 publiée en
     avril reste la prévision courante en décembre, son âge en jours ne veut
     rien dire.
+  </p>
+
+  <h2>Contrôle de cohérence</h2>
+
+  <p>
+    Un pipeline qui ne lit qu'une source par indicateur ne peut pas distinguer
+    une vraie donnée d'une erreur de lecture qui en a l'air : une colonne mal
+    alignée, un décalage d'index, une conversion d'unité oubliée rendent tous
+    un nombre plausible. Chaque indicateur qui a une seconde source publique
+    indépendante est donc relu deux fois, et l'écart entre les deux est
+    mesuré à chaque passage.
+  </p>
+
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Indicateur</th><th>Source principale</th><th>Seconde source</th><th>Seuil</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Inflation CA</td><td>Banque du Canada</td><td>OCDE</td><td>0,5 point</td></tr>
+      <tr><td>Inflation US</td><td>BLS</td><td>OCDE</td><td>0,5 point</td></tr>
+      <tr><td>Taux directeur CA</td><td>Banque du Canada</td><td>BRI</td><td>0,25 point</td></tr>
+      <tr><td>Taux directeur US</td><td>Fed de New York</td><td>BRI</td><td>0,25 point</td></tr>
+      <tr><td>Taux de change (CA, CN, IN)</td><td>Frankfurter / BCE</td><td>Yahoo Finance</td><td>3 %</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>
+    L'inflation et le taux directeur de la Chine et de l'Inde n'ont pas de
+    seconde source publique aisément accessible : ils passent par une borne
+    de plausibilité plutôt qu'une comparaison, tout comme le chômage, les
+    prévisions de croissance et l'agrégat mondial. Une borne n'attrape pas
+    une petite erreur, mais elle attrape un chiffre qui a changé de colonne
+    ou d'unité, par exemple un indice pris pour un taux.
+  </p>
+
+  <p>
+    Un écart au-delà du seuil ne signifie pas forcément une erreur : deux
+    sources peuvent viser une date de référence légèrement différente. Il
+    déclenche la même issue de maintenance que les indicateurs manuels
+    périmés, avec le détail des deux valeurs, pour qu'un humain tranche.
+    Le résultat complet de chaque passage, écarts compris, est publié dans
+    <code>data/coherence.json</code>.
+  </p>
+
+  <h2>Santé des flux</h2>
+
+  <p>
+    Un flux RSS qui cesse de répondre ne fait planter aucune requête : le
+    pipeline le note et continue avec les autres. Sans suivi, une source
+    coupée depuis des mois peut passer inaperçue derrière celles qui
+    marchent encore. <code>data/sante_flux.json</code> compte les échecs
+    consécutifs de chaque flux d'un passage à l'autre ; au-delà de six,
+    environ deux jours à trois passages quotidiens, il est signalé dans la
+    même issue de maintenance, avec la date de son dernier succès.
   </p>
 
   <h2>Sélection des actualités</h2>
@@ -452,13 +519,40 @@ td strong { color: var(--text-primary); }
     terrain de golf.
   </p>
 
+  <h3>Rattachement à la zone, pas à l'éditeur</h3>
+  <p>
+    Une rédaction nationale couvre aussi l'étranger, et un flux économique
+    généraliste (<em>Financial Times</em>, BBC Business, Nikkei Asia, SCMP…)
+    n'a par construction aucune zone propre. Un article sur des centres de
+    données au Texas ou sur le détroit d'Ormuz s'est déjà retrouvé sous
+    l'onglet Canada au seul motif que son flux d'origine était rangé dans la
+    liste canadienne.
+  </p>
+  <p>
+    Chaque titre issu d'un flux qui n'est pas l'institution propre à sa zone
+    (une banque centrale parle d'elle-même par construction) est donc confronté
+    à une deuxième vérification : mentionne-t-il une <em>autre</em> zone
+    précise ou un sujet mondial (Ormuz, l'OPEP, le FMI, l'Union européenne…) ?
+    Si oui, il est écarté de celle-ci. La règle exige la preuve du contraire et
+    non la preuve elle-même, parce que la presse économique domestique nomme
+    rarement son propre pays : un titre indien sur l'UPI ne dit ni « Inde » ni
+    « roupie », et une règle qui exigerait la mention l'aurait rejeté à tort.
+  </p>
+  <p>
+    Le compromis a un coût assumé : un titre bilatéral (« les prix
+    d'importation américains montent avec le coût des produits chinois »)
+    peut être écarté de la zone où son flux est classé, parce qu'il nomme
+    surtout l'autre pays. RESTE DU MONDE n'a rien à prouver : c'est la zone
+    qui accueille par construction ce qui ne vise aucune zone en particulier.
+  </p>
+
   <h3>Non-régression</h3>
   <p>
-    Le filtre est verrouillé par une suite de <strong>90 cas</strong> tirés de
-    titres réellement parus, en français comme en anglais, dont tous ceux qui
-    ont motivé une correction. Elle s'exécute avant chaque mise à jour : si un
-    cas régresse, la publication ne part pas. Tout nouveau cas douteux y est
-    ajouté plutôt que d'élargir les listes de mots-clés à l'aveugle.
+    Le filtre est verrouillé par une suite de <strong>107 cas</strong> tirés
+    de titres réellement parus, en français comme en anglais, dont tous ceux
+    qui ont motivé une correction. Elle s'exécute avant chaque mise à jour :
+    si un cas régresse, la publication ne part pas. Tout nouveau cas douteux y
+    est ajouté plutôt que d'élargir les listes de mots-clés à l'aveugle.
   </p>
 
   <h3>Rapport hebdomadaire des rejets</h3>
@@ -507,21 +601,25 @@ td strong { color: var(--text-primary); }
   <h2>Contenu jugé par un humain</h2>
 
   <p>
-    La chronologie des chocs et la matrice d'impact provincial relèvent de
-    l'analyse, pas de la donnée. Elles vivent dans leurs propres fichiers,
-    <code>data/chronologie.json</code> et
-    <code>data/analyse_provinciale.json</code>, pour qu'une mise à jour
+    La chronologie des chocs, la matrice d'impact provincial et les
+    interconnexions géoéconomiques relèvent de l'analyse, pas de la donnée.
+    Elles vivent dans leurs propres fichiers,
+    <code>data/chronologie.json</code>,
+    <code>data/analyse_provinciale.json</code> et
+    <code>data/interconnexions.json</code>, pour qu'une mise à jour
     automatique ne puisse pas les écraser et qu'on voie d'un coup d'œil ce qui
-    est écrit à la main. Chaque événement de la chronologie porte l'URL
-    consultée.
+    est écrit à la main. Chaque événement de la chronologie et chaque
+    interconnexion portent l'URL consultée.
   </p>
 
   <p>
-    Les chiffres conjoncturels cités dans l'analyse provinciale, cours du Brent
-    et taux du dollar canadien, sont des marqueurs remplacés à chaque passage
-    par les valeurs du jour. Une version antérieure annonçait « Brent à 90 $ »
-    et « 1,38 CAD/USD » plusieurs mois après que ces deux chiffres soient
-    devenus faux.
+    Les chiffres conjoncturels cités dans ces analyses (cours du Brent, taux
+    du dollar canadien et de la roupie indienne) sont des marqueurs remplacés
+    à chaque passage par les valeurs du jour. Une version antérieure
+    annonçait « Brent à 90 $ » et « 1,38 CAD/USD » plusieurs mois après que
+    ces deux chiffres soient devenus faux, et l'onglet Interconnexions
+    décrivait encore le détroit d'Ormuz comme fermé sans interruption alors
+    qu'il avait rouvert puis refermé entre-temps.
   </p>
 
   <h2>Limites connues</h2>
@@ -543,10 +641,17 @@ td strong { color: var(--text-primary); }
       parfois moins de huit titres, ou retombe sur l'anglais.
     </li>
     <li>
-      L'affectation d'un titre à une zone suit l'éditeur, pas le sujet. La
-      rubrique économie d'un quotidien canadien alimente la section Canada, y
-      compris quand l'article porte sur le Texas ou sur le détroit d'Ormuz. Le
-      rattachement dit donc « vu d'ici » plutôt que « à propos d'ici ».
+      Le rattachement à la zone (voir plus haut) est une preuve du contraire,
+      pas une preuve positive : un titre qui ne nomme aucune zone en
+      particulier reste attribué à son flux d'origine par défaut. Un article
+      généraliste sans portée géographique explicite peut donc apparaître
+      sous une zone à laquelle il ne se rapporte pas vraiment.
+    </li>
+    <li>
+      Le contrôle de cohérence ne couvre que les indicateurs qui ont une
+      seconde source publique accessible sans clé. L'inflation et le taux
+      directeur chinois et indien n'en ont pas ; ils passent par une simple
+      borne de plausibilité, qui n'attrape pas une petite erreur.
     </li>
     <li>
       Le filtre privilégie la précision sur le rappel. Il écarte des sujets
@@ -564,9 +669,11 @@ td strong { color: var(--text-primary); }
     sa non-régression dans
     <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/test_news_filter.py" target="_blank" rel="noopener"><code>scripts/test_news_filter.py</code></a>,
     le pipeline dans
-    <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/update_data.py" target="_blank" rel="noopener"><code>scripts/update_data.py</code></a>
-    et le rapport de rejets dans
-    <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/rapport_rejets.py" target="_blank" rel="noopener"><code>scripts/rapport_rejets.py</code></a>.
+    <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/update_data.py" target="_blank" rel="noopener"><code>scripts/update_data.py</code></a>,
+    le rapport de rejets dans
+    <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/rapport_rejets.py" target="_blank" rel="noopener"><code>scripts/rapport_rejets.py</code></a>
+    et la composition de l'issue de maintenance dans
+    <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/corps_issue.py" target="_blank" rel="noopener"><code>scripts/corps_issue.py</code></a>.
   </p>
 
   <footer class="footer">

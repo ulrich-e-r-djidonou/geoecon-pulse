@@ -18,7 +18,7 @@ sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from news_filter import evaluer, nettoyer_titre  # noqa: E402
+from news_filter import evaluer, nettoyer_titre, zone_mentionnee  # noqa: E402
 
 # ------------------------------------------------------------
 # Doivent etre REJETES
@@ -168,6 +168,37 @@ ACCEPTES = [
 ]
 
 # ------------------------------------------------------------
+# Rattachement a la zone (flux generalistes)
+# ------------------------------------------------------------
+# Les deux cas reels qui ont motive la fonction : un article generaliste sur
+# des centres de donnees au Texas, et un autre sur le detroit d'Ormuz, se
+# sont retrouves sous l'onglet Canada au seul motif que le flux d'origine
+# etait dans la liste CA.
+ZONES = [
+    ("Data centre boom drives record power demand across Texas", "CA", False),
+    ("Attacks on tankers renew fears over the Strait of Hormuz", "CA", False),
+    ("Bank of Canada holds policy rate at 2.25%", "CA", True),
+    ("Canada adds 75,000 jobs in July, unemployment falls to 6.4%", "CA", True),
+    ("Federal Reserve holds rates steady as inflation cools", "US", True),
+    ("European Central Bank raises rates to fight inflation", "US", False),
+    ("China's exports jump in July, boosting the yuan", "CN", True),
+    ("RBI cuts repo rate to support growth", "IN", True),
+    # La presse domestique ne nomme pas toujours son propre pays : un titre
+    # indien sur l'UPI ne dit ni « Inde » ni « roupie ». Faute de preuve
+    # CONTRAIRE (aucune autre zone nommee), le titre reste retenu plutot que
+    # rejete par simple absence de preuve pour la sienne.
+    ("UPI to remain free for users; nominal fee may apply to select transactions", "IN", True),
+    # Deux faux positifs releves sur un passage reel du pipeline. « American »
+    # matche dans « North American » sans designer les Etats-Unis ; « RBI »
+    # designe ici Restaurant Brands International (Tim Hortons), pas la
+    # Reserve Bank of India.
+    ("Dairy producer plans to ramp up North American manufacturing", "CA", True),
+    ("Burger King dethrones Tim Hortons as sales growth slows at parent RBI", "CA", True),
+    # RESTE DU MONDE n'a rien a prouver.
+    ("Oil prices surge on Strait of Hormuz closure", "WORLD", True),
+]
+
+# ------------------------------------------------------------
 # Nettoyage des suffixes Google News
 # ------------------------------------------------------------
 SUFFIXES = [
@@ -212,6 +243,17 @@ def principal():
 
     print()
     print("=" * 72)
+    print("RATTACHEMENT A LA ZONE")
+    print("=" * 72)
+    for titre, region, attendu in ZONES:
+        obtenu = zone_mentionnee(titre, region)
+        ok = obtenu == attendu
+        print(f"  {'ok  ' if ok else 'ECHEC'} [{region:<5}] {titre[:55]:<55} {obtenu}")
+        if not ok:
+            echecs.append(("zone", titre, f"région {region} : attendu {attendu}, obtenu {obtenu}"))
+
+    print()
+    print("=" * 72)
     print("NETTOYAGE DES SUFFIXES")
     print("=" * 72)
     for brut, source, attendu in SUFFIXES:
@@ -223,7 +265,7 @@ def principal():
 
     print()
     print("=" * 72)
-    total = len(REJETS) + len(ACCEPTES) + len(SUFFIXES)
+    total = len(REJETS) + len(ACCEPTES) + len(ZONES) + len(SUFFIXES)
     if echecs:
         print(f"{len(echecs)} echec(s) sur {total} cas")
         for genre, titre, detail in echecs:

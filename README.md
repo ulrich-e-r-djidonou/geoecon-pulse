@@ -64,9 +64,17 @@ Les titres retenus sont ensuite dédupliqués par recouvrement de vocabulaire et
 
 Jusqu'à trois des huit places sont réservées aux sources d'analyse (*Financial Times*, *The Economist*, Bloomberg, *WSJ*, *New York Times*, Peterson Institute, *Globe and Mail*, *Le Monde*, *Les Échos*, *La Presse*, *Le Devoir*, Nikkei Asia, SCMP). Sans cette réserve, un classement par pure fraîcheur laissait la dépêche du jour repousser systématiquement l'analyse de la veille.
 
-`scripts/test_news_filter.py` rejoue 95 titres réellement parus, en français comme en anglais, dont ceux qui n'avaient rien à y faire. Le workflow refuse de publier si ce test échoue.
+`scripts/test_news_filter.py` rejoue 107 titres réellement parus, en français comme en anglais, dont ceux qui n'avaient rien à y faire. Le workflow refuse de publier si ce test échoue.
 
 Les faux positifs se voient immédiatement, ils atterrissent en page d'accueil ; les faux négatifs sont invisibles par construction. `scripts/rapport_rejets.py` agrège chaque lundi les titres écartés de la semaine et met en avant ceux qui portaient un vocabulaire économique malgré leur rejet.
+
+Un titre issu d'un flux qui n'est pas l'institution propre à sa zone (une banque centrale parle d'elle-même par construction) doit en plus ne nommer aucune *autre* zone précise ni sujet mondial (Ormuz, l'OPEP, le FMI…) pour y rester rattaché : un article généraliste sur des centres de données au Texas ou sur le détroit d'Ormuz s'était déjà retrouvé sous l'onglet Canada au seul motif que son flux d'origine y était classé. La règle exige la preuve du contraire plutôt que la preuve elle-même, la presse domestique nommant rarement son propre pays.
+
+### Contrôle de cohérence et santé des flux
+
+Chaque indicateur qui a une seconde source publique indépendante est relu deux fois : inflation et taux directeur canadiens et américains contre l'OCDE et la BRI, taux de change contre Yahoo Finance. Un écart au-delà du seuil (0,5 point pour l'inflation, 0,25 pour un taux directeur, 3 % pour un taux de change) est publié dans `data/coherence.json` et signalé dans une issue. Ce qui n'a pas de seconde source (inflation et taux chinois et indiens, chômage, prévisions de croissance) passe par une borne de plausibilité à la place.
+
+`data/sante_flux.json` compte les échecs consécutifs de chaque flux RSS d'un passage à l'autre ; au-delà de six (environ deux jours), le flux est signalé dans la même issue, qui se referme d'elle-même une fois les trois familles d'anomalies (indicateurs périmés, écarts suspects, flux en panne) revenues à zéro.
 
 ### Actualités en français
 
@@ -76,7 +84,7 @@ Le mode français ne traduit pas les titres anglais : il lit la presse francopho
 Ni l'un ni l'autre n'est rédigé d'avance. Le résumé est composé à partir des valeurs du jour, et le sentiment découle de règles explicites : position de l'inflation dans la fourchette cible de la banque centrale concernée, sens de la variation de l'emploi et du chômage, niveau de croissance. Un paragraphe figé reste plausible longtemps après être devenu faux ; un paragraphe calculé ne peut pas contredire le tableau qu'il accompagne.
 
 ### Module Interconnexions
-Les liens géoéconomiques sont identifiés à partir de l'analyse des canaux de transmission : commerce bilatéral, prix des matières premières, flux de capitaux, politique monétaire. Chaque interconnexion est documentée avec son mécanisme causal et son niveau d'impact.
+Les liens géoéconomiques sont identifiés à partir de l'analyse des canaux de transmission : commerce bilatéral, prix des matières premières, flux de capitaux, politique monétaire. Chaque interconnexion est documentée avec son mécanisme causal, son niveau d'impact et l'URL qui l'atteste, dans `data/interconnexions.json`. Les chiffres conjoncturels qu'elle cite (Brent, dollar canadien, roupie) sont des marqueurs substitués à chaque passage, sur le même principe que la matrice provinciale : à revoir à la main quand un choc majeur change la structure des liens, pas à date fixe.
 
 ## Stack technique
 
@@ -95,12 +103,15 @@ methodologie.html                page publique : sources, filtre, seuils
 data/indicators.json             données consommées par la page
 data/chronologie.json            chronologie des chocs, écrite à la main
 data/analyse_provinciale.json    matrice d'impact provincial, écrite à la main
+data/interconnexions.json        liens géoéconomiques, écrits à la main
 data/rejets.json                 titres écartés au dernier passage
-scripts/update_data.py           collecte, calcul des résumés, contrôle de fraîcheur
+data/coherence.json              écarts entre sources au dernier passage
+data/sante_flux.json             échecs consécutifs de chaque flux RSS
+scripts/update_data.py           collecte, calcul des résumés, contrôle de fraîcheur et de cohérence
 scripts/news_filter.py           filtre de pertinence géoéconomique
 scripts/test_news_filter.py      non-régression du filtre sur des cas réels
 scripts/rapport_rejets.py        rapport hebdomadaire des titres écartés
-scripts/corps_issue.py           corps de l'issue « indicateurs à rafraîchir »
+scripts/corps_issue.py           corps de l'issue de maintenance
 MISE_A_JOUR_MANUELLE.md          ce qui reste sans source automatisable
 .github/workflows/               mise à jour planifiée, rapport hebdomadaire, Pages
 ```

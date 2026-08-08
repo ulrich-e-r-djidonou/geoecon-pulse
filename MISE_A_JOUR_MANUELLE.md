@@ -7,10 +7,13 @@ Il n'y a plus de série mensuelle à saisir. Ne restent que des **prévisions
 annuelles**, révisées une ou deux fois l'an par leurs émetteurs, et des blocs
 d'**analyse** qui relèvent du jugement plutôt que de la donnée.
 
-Quand un indicateur daté dépasse 100 jours d'âge, le workflow **ouvre une
-issue** sur le dépôt plutôt que d'échouer : une croix rouge permanente dans
-l'onglet Actions d'un dépôt public dessert le projet alors que rien n'est
-cassé. L'issue est réécrite à chaque passage et se referme quand c'est réglé.
+Quand un indicateur daté dépasse 100 jours d'âge, qu'un écart suspect
+apparaît entre deux sources indépendantes, ou qu'un flux RSS ne répond plus
+depuis six passages, le workflow **ouvre une issue** intitulée
+« Anomalies à vérifier » sur le dépôt plutôt que d'échouer : une croix rouge
+permanente dans l'onglet Actions d'un dépôt public dessert le projet alors
+que rien n'est cassé. L'issue est réécrite à chaque passage et se referme
+d'elle-même une fois les trois familles d'anomalies revenues à zéro.
 
 **Rythme conseillé : une passe par trimestre** pour les prévisions, et une
 revue de l'analyse quand un choc majeur change la donne.
@@ -33,7 +36,9 @@ revue de l'analyse quand un choc majeur change la donne.
 | Sparklines | toutes | Valet, OCDE, Yahoo | quotidienne |
 | Actualités FR et EN | toutes | flux d'éditeurs + Google News filtré | 3 fois par jour |
 | Résumés et sentiment | toutes | calculés depuis les indicateurs ci-dessus | 3 fois par jour |
-| Cours du Brent et du huard cités dans l'analyse provinciale | CA | substitués à chaque passage | 3 fois par jour |
+| Cours du Brent, du huard et de la roupie cités dans l'analyse provinciale et les interconnexions | CA, IN | substitués à chaque passage | 3 fois par jour |
+| Contrôle de cohérence (seconde source ou borne de plausibilité) | toutes | OCDE, BRI, Yahoo Finance | 3 fois par jour |
+| Santé des flux RSS (échecs consécutifs) | toutes | interne au pipeline | 3 fois par jour |
 
 L'inflation et les taux directeurs de la Chine et de l'Inde étaient saisis à
 la main jusqu'au 8 août 2026. Ils dérivaient : l'IPC indien affiché datait de
@@ -51,12 +56,12 @@ la période** ensemble : c'est la période affichée qui rend le chiffre honnêt
 Quatre émetteurs différents, ce qui est assumé mais limite la comparabilité
 entre zones. La carte affiche la source pour cette raison.
 
-| Zone | Source | Libellé de période | Rythme |
-|---|---|---|---|
-| CA | Banque du Canada, *Rapport sur la politique monétaire* | `2026F` | trimestriel |
-| US | Federal Reserve, *Summary of Economic Projections* | `2026F` | trimestriel |
-| CN | Cible annoncée à l'Assemblée nationale populaire | `2026 cible` | annuel (mars) |
-| IN | Fitch Ratings | `FY26F` | révisions ponctuelles |
+| Zone | Source | Dernière relecture | Libellé de période | Rythme |
+|---|---|---|---|---|
+| CA | Banque du Canada, *Rapport sur la politique monétaire* | 15 juillet 2026 (0,7 %) | `2026F` | trimestriel |
+| US | Federal Reserve, *Summary of Economic Projections* | 17 juin 2026 (2,2 %) | `2026F` | trimestriel |
+| CN | Cible annoncée à l'Assemblée nationale populaire | 5 mars 2026 (4,5-5 %) | `2026 cible` | annuel (mars) |
+| IN | Fitch Ratings | — | `FY26F` | révisions ponctuelles |
 
 - Banque du Canada : <https://www.bankofcanada.ca/publications/mpr/>
 - Federal Reserve : <https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm>
@@ -71,6 +76,12 @@ Ces chiffres ne sont pas automatisables : l'API DataMapper du FMI est bloquée
 par son réseau de diffusion, et son entrepôt SDMX ne publie que le millésime
 d'octobre 2025, antérieur à l'édition d'avril 2026. Les relever dans le
 tableau 1 du communiqué.
+
+Dernière relecture : mise à jour de juillet 2026 (3,0 % de croissance
+mondiale, 4,7 % d'inflation), <https://www.imf.org/en/publications/weo/issues/2026/07/08/world-economic-outlook-update-july-2026>.
+La page du FMI bloque la récupération automatique (même 403 que le
+DataMapper) : ces deux chiffres ont été relevés par recherche, à recouper
+au prochain passage si une lecture directe de la page redevient possible.
 
 Garder le libellé `2026F` tant qu'il s'agit d'une prévision : le contrôle de
 fraîcheur ignore les libellés de prévision, puisqu'ils n'ont pas d'âge à
@@ -103,10 +114,16 @@ que ces deux chiffres soient devenus faux. Si un nouveau chiffre vivant doit
 apparaître dans le texte, ajouter un marqueur et l'alimenter dans
 `poser_contenu_editorial()`.
 
-### `regions.interconnections` dans `data/indicators.json`
+### `data/interconnexions.json`
 
-Les canaux de transmission entre régions. À revoir quand un choc majeur change
-la structure des liens, pas à date fixe.
+Les canaux de transmission entre régions, recopiés dans
+`regions.interconnections` de `data/indicators.json` à chaque passage. Chaque
+lien porte un champ `source` (non publié, sert à le vérifier dans le dépôt) et
+peut citer les mêmes marqueurs `{{brent}}`/`{{cad}}`/`{{inr}}` que la matrice
+provinciale. À revoir quand un choc majeur change la structure des liens, pas
+à date fixe : une version antérieure décrivait encore le détroit d'Ormuz comme
+fermé sans interruption, plusieurs mois après sa réouverture puis sa
+refermeture.
 
 ---
 
@@ -118,5 +135,7 @@ python scripts/update_data.py          # recharge tout et recalcule les résumé
 python scripts/rapport_rejets.py       # ce que le filtre a écarté, et pourquoi
 ```
 
-Un code de sortie 2 signifie « données publiées, mais des champs manuels sont
-périmés ». Un code 1 signifie que le script a réellement échoué.
+Un code de sortie 2 signifie « données publiées, mais quelque chose demande
+une vérification humaine » (champ manuel périmé, écart suspect entre deux
+sources, ou flux RSS en panne : voir `data/coherence.json` et
+`data/sante_flux.json`). Un code 1 signifie que le script a réellement échoué.

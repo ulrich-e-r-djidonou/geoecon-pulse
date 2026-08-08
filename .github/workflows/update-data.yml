@@ -53,13 +53,15 @@ jobs:
           echo "code=$?" >> $GITHUB_OUTPUT
           exit 0
 
-      # data/rejets.json est versionne au meme titre que les donnees : le
-      # rapport hebdomadaire reconstitue la semaine a partir de l'historique
-      # Git plutot que d'un journal cumulatif qui grossirait sans fin.
+      # data/rejets.json, data/coherence.json et data/sante_flux.json sont
+      # versionnes au meme titre que les donnees : le rapport hebdomadaire et
+      # l'issue de maintenance reconstituent leur historique depuis Git
+      # plutot que depuis un journal cumulatif qui grossirait sans fin.
       - name: Vérification des changements
         id: check
         run: |
           git diff --quiet data/indicators.json data/rejets.json \
+            data/coherence.json data/sante_flux.json \
             && echo "changed=false" >> $GITHUB_OUTPUT \
             || echo "changed=true" >> $GITHUB_OUTPUT
 
@@ -68,21 +70,21 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/indicators.json data/rejets.json
+          git add data/indicators.json data/rejets.json data/coherence.json data/sante_flux.json
           git commit -m "Mise à jour des données — $(date +%Y-%m-%d)"
           git push
 
-      # Les indicateurs périmés passent par une issue plutôt que par un échec
-      # du job. Faire échouer la course affichait une croix rouge permanente
-      # dans l'onglet Actions d'un dépôt public servant de pièce de portfolio,
-      # alors que rien n'était cassé. Une issue notifie aussi bien par
-      # courriel, se referme quand c'est réglé, et laisse l'historique vert.
-      - name: Signaler les indicateurs périmés
+      # Trois familles de problemes passent par la meme issue plutot que par
+      # un echec du job : indicateur manuel perime, ecart suspect entre deux
+      # sources, flux qui ne repond plus. Faire echouer la course afficherait
+      # une croix rouge permanente dans l'onglet Actions d'un depot public
+      # servant de piece de portfolio, alors que rien n'est casse.
+      - name: Signaler les anomalies
         if: steps.maj.outputs.code == '2'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          TITRE="Indicateurs à rafraîchir à la main"
+          TITRE="Anomalies à vérifier"
           python scripts/corps_issue.py > /tmp/corps_issue.md
           CORPS=$(cat /tmp/corps_issue.md)
           EXISTANTE=$(gh issue list --state open --search "$TITRE in:title" \
@@ -93,7 +95,24 @@ jobs:
           else
             gh issue create --title "$TITRE" --body "$CORPS"
           fi
-          echo "::warning::Des indicateurs saisis à la main ont dépassé leur seuil."
+          echo "::warning::Le pipeline a détecté une anomalie à vérifier."
+
+      # Le pendant du signalement : une fois les trois familles de problemes
+      # revenues a zero, l'issue se referme d'elle-meme plutot que d'attendre
+      # qu'quelqu'un y pense.
+      - name: Refermer l'issue si tout est réglé
+        if: steps.maj.outputs.code == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITRE="Anomalies à vérifier"
+          EXISTANTE=$(gh issue list --state open --search "$TITRE in:title" \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTANTE" ]; then
+            gh issue close "$EXISTANTE" \
+              --comment "Plus aucune anomalie au passage du $(date +%Y-%m-%d) : indicateurs à jour, écarts sous le seuil, flux tous en ligne."
+            echo "Issue #$EXISTANTE refermée."
+          fi
 
       # Un échec réel du script (code autre que 0 ou 2) doit aussi remonter.
       - name: Échec du script de mise à jour

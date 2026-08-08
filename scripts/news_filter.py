@@ -644,6 +644,103 @@ SOURCES_FIABLES = [
 ]
 
 
+# ============================================================
+# ZONE — un flux generaliste ne prouve pas son sujet en etant liste sous
+# une region : le titre doit y correspondre
+# ============================================================
+#
+# Un article de la CBC ou du Globe and Mail sur des centres de donnees au
+# Texas s'est deja retrouve sous l'onglet Canada, tout comme un article sur
+# le detroit d'Ormuz : le rattachement suivait l'editeur (« ce flux est dans
+# la liste CA »), pas le sujet du titre. Une redaction nationale couvre
+# aussi l'etranger, et un flux economique generaliste (Financial Times, BBC
+# Business, Nikkei Asia, SCMP...) n'a par construction aucune region propre.
+#
+# Ces listes servent a la fonction zone_mentionnee() ci-dessous, qui exige
+# la preuve du contraire plutot que la preuve elle-meme : voir sa
+# documentation pour la raison (la presse domestique nomme rarement son
+# propre pays).
+MOTS_ZONE = {
+    "CA": [
+        "canada", "canadian", "canadien", "canadienne", "ottawa", "toronto",
+        "quebec", "ontario", "montreal", "vancouver", "alberta",
+        "colombie-britannique", "british columbia", "saskatchewan",
+        "manitoba", "halifax", "nouvelle-ecosse", "nova scotia",
+        "winnipeg", "calgary", "edmonton", "loonie", "huard",
+        "bank of canada", "banque du canada", "statistics canada",
+        "statistique canada", "cusma", "usmca", "aceum", "tsx",
+        "macklem", "carney",
+    ],
+    "US": [
+        # « america »/« american » sont volontairement absents : mots
+        # entiers, ils matchent aussi bien dans « North American » ou
+        # « Latin America », qui ne designent pas les Etats-Unis.
+        "united states", "u.s.", "washington", "federal reserve", "the fed",
+        "fomc", "wall street", "white house", "maison blanche", "congress",
+        "congres americain", "u.s. treasury", "texas", "california",
+        "californie", "s&p 500", "nasdaq", "dow jones", "powell",
+    ],
+    "CN": [
+        "china", "chinese", "chine", "chinois", "chinoise", "beijing",
+        "pekin", "shanghai", "hong kong", "yuan", "renminbi", "pboc",
+        "xi jinping", "shanghai composite", "hang seng",
+    ],
+    "IN": [
+        # « rbi » est volontairement absent : l'acronyme designe aussi bien
+        # la Reserve Bank of India que Restaurant Brands International
+        # (Tim Hortons, Burger King), frequent dans la presse economique
+        # canadienne. « bharat » est le nom de l'Inde en hindi, utilise dans
+        # la communication gouvernementale (« Viksit Bharat 2047 »).
+        "india", "indian", "inde", "indien", "indienne", "bharat", "delhi",
+        "new delhi", "mumbai", "rupee", "roupie", "modi", "sensex", "nifty",
+    ],
+}
+MOTIFS_ZONE = {r: compiler(m) for r, m in MOTS_ZONE.items()}
+
+# Exiger la mention de la zone elle-meme, sans exception, a un cout : la
+# presse economique domestique nomme rarement son propre pays (un titre
+# indien sur l'UPI ou un titre canadien sur le taux d'inflation ne disent ni
+# « Inde » ni « Canada », le contexte est le lectorat). Une regle « il faut
+# la preuve » aurait rejete ces titres domestiques faute de preuve, sans
+# jamais avoir tort sur le cas reel qui a motive la fonction (Texas, Ormuz)
+# ni raison sur celui qui ne l'a pas motivee (UPI).
+#
+# La regle retenue est donc « preuve du contraire » : un titre est presume
+# appartenir a la zone de son flux, sauf s'il nomme precisement une autre
+# zone suivie (Etats-Unis sous Canada) ou un sujet mondial/systemique qui
+# n'appartient a aucune des quatre zones (Ormuz, OPEP, FMI, UE...).
+MOTS_AUTRE_ZONE = [
+    "european union", "union europeenne", "eurozone", "zone euro",
+    "european central bank", "banque centrale europeenne", "brussels",
+    "bruxelles", "united kingdom", "royaume-uni", "britain", "british",
+    "bank of england", "japan", "japon", "bank of japan", "boj",
+    "russia", "russie", "ukraine", "brazil", "bresil", "mexico", "mexique",
+    "iran", "israel", "saudi arabia", "arabie saoudite",
+    "strait of hormuz", "detroit d'ormuz", "opec", "opep", "imf", "fmi",
+    "world bank", "banque mondiale", "wto", "omc", "g7", "g20", "brics",
+]
+MOTIF_AUTRE_ZONE = compiler(MOTS_AUTRE_ZONE)
+
+
+def zone_mentionnee(titre, region):
+    """Faux seulement si le titre nomme une autre zone, pas par simple
+    absence de preuve pour celle-ci (voir note ci-dessus)."""
+    motif_ici = MOTIFS_ZONE.get(region)
+    if motif_ici is None:
+        return True  # RESTE DU MONDE : rien a prouver
+
+    texte = normaliser(titre)
+    if motif_ici.search(texte):
+        return True
+
+    for autre, motif in MOTIFS_ZONE.items():
+        if autre != region and motif.search(texte):
+            return False
+    if MOTIF_AUTRE_ZONE.search(texte):
+        return False
+    return True
+
+
 def source_fiable(nom):
     """Vrai si l'editeur figure parmi les sources de reference.
 

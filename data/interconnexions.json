@@ -1,0 +1,110 @@
+{
+  "_lisezMoi": [
+    "Liens geoeconomiques de l'onglet Interconnexions. Recopie dans",
+    "indicators.json a chaque passage du pipeline, apres substitution des",
+    "marqueurs {{brent}}, {{cad}} et {{inr}} par les valeurs du jour, sur le",
+    "meme principe que data/analyse_provinciale.json.",
+    "",
+    "Regle : chaque lien doit etre verifiable. Le champ `source` porte l'URL",
+    "consultee ; il n'est pas publie sur le site, il sert a rendre chaque",
+    "carte verifiable dans le depot.",
+    "",
+    "Derniere revision manuelle : 2026-08-08. La version precedente datait de",
+    "mars 2026 : elle decrivait Ormuz comme ferme sans interruption, citait",
+    "une roupie a 92,54/USD comme un record encore valide, et une inflation",
+    "indienne projetee a 4,5 % alors que l'OCDE mesure desormais 4,8 % pour",
+    "juin. Voir data/chronologie.json pour le detail des evenements cites ici."
+  ],
+  "interconnections": [
+    {
+      "from": "US",
+      "to": "CA",
+      "type": "trade",
+      "title": {
+        "fr": "Tarifs US sur l'acier et l'aluminium : l'ACEUM survit mais passe à des révisions annuelles",
+        "en": "US steel and aluminum tariffs: USMCA survives but moves to yearly reviews"
+      },
+      "description": {
+        "fr": "Les tarifs américains de 25 % sur l'acier et l'aluminium canadiens, en vigueur depuis 2025, ont réduit le PIB canadien de 1,5 à 2 points de pourcentage selon Bloomberg. Le 1er juillet 2026, Washington a refusé de reconduire l'ACEUM dans sa forme actuelle : l'accord n'est pas rompu, mais passe d'un examen sexennal à des révisions annuelles, ce qui prolonge l'incertitude pour les décisions d'investissement des deux côtés de la frontière.",
+        "en": "US 25% tariffs on Canadian steel and aluminum, in place since 2025, have cut Canadian GDP by 1.5 to 2 percentage points according to Bloomberg. On 1 July 2026, Washington declined to renew USMCA as it stands: the deal is not broken, but shifts from a six-year review cycle to yearly reviews, extending uncertainty for investment decisions on both sides of the border."
+      },
+      "impact": "high",
+      "source": "https://www.cnbc.com/2026/07/01/trump-usmca-canada-mexico-trade-treaty.html"
+    },
+    {
+      "from": "CN",
+      "to": "US",
+      "type": "tech",
+      "title": {
+        "fr": "Pékin resserre les exportations de pièces de drones vers les États-Unis",
+        "en": "Beijing tightens drone-parts exports to the United States"
+      },
+      "description": {
+        "fr": "Le 5 août 2026, la Chine a durci ses contrôles à l'exportation sur les pièces de drones destinées aux États-Unis, dans la continuité des enquêtes Section 301 lancées par l'USTR en mars 2026 contre les surcapacités manufacturières chinoises. L'escalade touche une chaîne d'approvisionnement où la Chine domine la production de composants, un levier déjà utilisé sur les terres rares.",
+        "en": "On 5 August 2026, China tightened export controls on drone parts bound for the United States, continuing the escalation from the Section 301 investigations the USTR launched in March 2026 over Chinese manufacturing overcapacity. The move hits a supply chain China dominates in component production, a lever already used on rare earths."
+      },
+      "impact": "high",
+      "source": "https://www.globaltimes.cn/page/202608/1367569.shtml"
+    },
+    {
+      "from": "CA",
+      "to": "CN",
+      "type": "trade",
+      "title": {
+        "fr": "Accord Canada-Chine de janvier 2026 : tarifs réduits sur le canola et les véhicules électriques",
+        "en": "January 2026 Canada-China deal: reduced tariffs on canola and EVs"
+      },
+      "description": {
+        "fr": "Face aux tarifs américains, le Canada s'est tourné vers la Chine. L'accord préliminaire annoncé le 16 janvier 2026 par le premier ministre Mark Carney réduit les tarifs chinois sur le canola canadien de 84 % à environ 15 % à compter du 1er mars, en échange d'une baisse des tarifs canadiens sur les véhicules électriques chinois. Environ 4 Mds$ d'exportations annuelles de canola sont concernées, un pivot commercial notable pour la Saskatchewan.",
+        "en": "Facing US tariffs, Canada pivoted toward China. The preliminary deal Prime Minister Mark Carney announced on 16 January 2026 cuts Chinese tariffs on Canadian canola from 84% to about 15% starting 1 March, in exchange for lower Canadian tariffs on Chinese EVs. Roughly $4B in annual canola exports are affected, a notable trade pivot for Saskatchewan."
+      },
+      "impact": "high",
+      "source": "https://www.aljazeera.com/economy/2026/1/16/canada-china-strike-trade-deals-to-slash-tariffs-on-evs-canola"
+    },
+    {
+      "from": "WORLD",
+      "to": "IN",
+      "type": "energy",
+      "title": {
+        "fr": "Ormuz, rouvert puis refermé, garde la roupie sous pression",
+        "en": "Hormuz, reopened then re-closed, keeps the rupee under pressure"
+      },
+      "description": {
+        "fr": "Le conflit autour du détroit d'Ormuz fait osciller le Brent depuis février 2026 : culminant près de 118 $ en mars, retombé sous 70 $ le 1er juillet après un protocole d'entente américano-iranien, puis reparti à la hausse après le 10 juillet quand des attaques contre des navires marchands ont refermé le détroit au trafic courant. Le Brent se négocie à {{brent}} $ au dernier passage. L'Inde, importatrice nette de pétrole, encaisse chaque à-coup par sa monnaie et ses prix : la roupie s'échange à {{inr}} INR/USD, et l'inflation est ressortie à 4,8 % en juin selon l'OCDE, contre 2,7 % affiché en début d'année sur une donnée qui datait de janvier.",
+        "en": "The standoff over the Strait of Hormuz has swung Brent since February 2026: peaking near $118 in March, falling below $70 on 1 July after a US-Iran understanding, then climbing again after 10 July when attacks on merchant vessels re-closed the strait to routine traffic. Brent last traded at ${{brentEn}}. India, a net oil importer, absorbs each swing through its currency and its prices: the rupee trades at {{inrEn}} INR/USD, and inflation came in at 4.8% in June per the OECD, against a 2.7% figure shown earlier in the year that dated back to January."
+      },
+      "impact": "high",
+      "source": "https://finance.yahoo.com/energy/articles/implications-renewed-closure-strait-hormuz-070646525.html"
+    },
+    {
+      "from": "CN",
+      "to": "WORLD",
+      "type": "tech",
+      "title": {
+        "fr": "Pékin interdit l'exportation de terres rares vers quatorze entreprises européennes",
+        "en": "Beijing bans rare earth exports to fourteen European companies"
+      },
+      "description": {
+        "fr": "Le 24 juillet 2026, la Chine a interdit l'exportation de terres rares vers quatorze entreprises européennes, un levier direct sur des chaînes d'approvisionnement critiques pour l'automobile, la défense et l'électronique. La Chine raffine l'essentiel des terres rares mondiales, ce qui rend la mesure difficile à contourner à court terme pour les industries touchées.",
+        "en": "On 24 July 2026, China banned rare earth exports to fourteen European companies, a direct lever on supply chains critical to automotive, defence and electronics manufacturing. China refines most of the world's rare earths, making the measure hard for affected industries to route around in the short term."
+      },
+      "impact": "medium",
+      "source": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/072426-china-bans-rare-earth-exports-to-14-european-companies"
+    },
+    {
+      "from": "CN",
+      "to": "WORLD",
+      "type": "trade",
+      "title": {
+        "fr": "Cible de croissance chinoise la plus basse depuis 1991 : la demande de matières premières s'en ressent",
+        "en": "China's lowest growth target since 1991 weighs on commodity demand"
+      },
+      "description": {
+        "fr": "Le 5 mars 2026, la Chine a fixé sa cible de croissance annuelle à 4,5-5 %, la plus basse depuis 1991, signe d'un ralentissement structurel assumé par Pékin. La demande réduite en métaux, énergie et matières premières touche les pays exportateurs : l'Australie, le Brésil, et au Canada la Colombie-Britannique, dont 51 % des exportations de bois brut partent vers la Chine.",
+        "en": "On 5 March 2026, China set its annual growth target at 4.5-5%, the lowest since 1991, a structural slowdown Beijing itself acknowledges. Reduced demand for metals, energy and raw materials hits exporting countries: Australia, Brazil, and in Canada, British Columbia, which sends 51% of its raw log exports to China."
+      },
+      "impact": "medium",
+      "source": "https://www.aljazeera.com/news/2026/3/5/china-economic-growth-target-set-below-5-for-the-first-time-at-key-meeting"
+    }
+  ]
+}

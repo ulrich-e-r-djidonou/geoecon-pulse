@@ -6,3 +6,7 @@ Thumbs.db
 
 # Claude Code local settings (ne jamais committer)
 **/.claude/settings.local.json
+**/.claude/scheduled_tasks.lock
+
+# Artefacts de vérification locale (Playwright MCP)
+.playwright-mcp/
