@@ -844,7 +844,7 @@ function buildAllPanels() {
     const indCards = buildIndicatorCards(r.indicators, key);
 
     // Build headlines
-    const headlines = buildHeadlines(r.headlines, key);
+    const headlines = buildHeadlines(pickHeadlines(r), key);
 
     const panel = document.createElement('div');
     panel.className = 'panel';
@@ -1001,6 +1001,18 @@ function relativeTime(publishedAt, fallback) {
   if (hours < 24) return Math.floor(hours) + 'h';
   if (hours < 168) return Math.floor(hours / 24) + 'j';
   return Math.floor(hours / 168) + 's';
+}
+
+// Le mode francais sert des titres tires de la presse francophone, et non une
+// traduction automatique des titres anglais : reecrire par machine un titre
+// attribue nommement a son editeur en ferait une citation fausse. Si le lot
+// francais manque pour une region, on retombe sur l'anglais plutot que de
+// laisser la section vide.
+function pickHeadlines(r) {
+  if (currentLang === 'fr' && Array.isArray(r.headlinesFr) && r.headlinesFr.length) {
+    return r.headlinesFr;
+  }
+  return r.headlines || [];
 }
 
 function buildHeadlines(headlines, regionKey) {

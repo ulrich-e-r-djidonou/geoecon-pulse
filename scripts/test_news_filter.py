@@ -67,6 +67,31 @@ REJETS = [
     "Savers Value Village thrift store launches new AI tool to price items",
     "My adult kids are big earners. Should I do a Roth conversion now?",
     "Taiwan's William Lai rehearses late-night emergency escape during military drill",
+    # ------------------------------------------------------------
+    # Flux francophones, ajoutes avec le mode FR du site. Ces titres sont
+    # parus tels quels chez Radio-Canada, Les Affaires, Le Monde, RFI et
+    # La Presse. Le meme bruit qu'en anglais, dans une autre langue : le
+    # filtre doit le couper sans qu'on ait deux jeux de regles a maintenir.
+    # ------------------------------------------------------------
+    "Un feu de forêt violent force de nouvelles évacuations en Colombie-Britannique",
+    "Un suspect armé arrêté à Bedford, le confinement est levé à Halifax",
+    "L'Omnium Banque Nationale fonce contre vents et marées vers un record d'assistance",
+    "Rappel de soufflés et grignotines de maïs cheddar à base de plantes de marque PC Biologique",
+    "Le gouvernement du Canada accorde un soutien financier au Festival AfroMonde",
+    "La Société Canadian Tire soutient les initiatives de secours liées aux feux de forêt au Canada",
+    "Trottinettes électriques à Paris : casque et gilet réfléchissant sont désormais obligatoires",
+    "Le business de la nostalgie: comment le passé est devenu un marché extrêmement rentable",
+    "Michaël Boumendil, l'homme qui donne une voix aux marques",
+    "Coût de la vie | Le prix du burrito fait débat au parti de Trump",
+    "ÉTAMPES (91) - Conférence : L'Inde, future troisième grande puissance",
+    "Les régulateurs de vol de Jazz ratifient la convention collective",
+    "Sécheresse et canicules : les agriculteurs face à une catastrophe climatique inédite",
+    "Les déboires du leader européen du vélo Accell entraînent Cycles Lapierre dans sa chute",
+    # Cas limite assume, pendant francais de l'amende Meta ci-dessus : une
+    # analyse de geographie economique reste un sujet de magazine tant qu'elle
+    # ne porte ni chiffre ni decision. Ecarte au profit de la stricte
+    # pertinence, comme le veut la regle du projet.
+    "Chine : ces dix provinces qui concentrent la croissance de l'atelier du monde",
 ]
 
 # ------------------------------------------------------------
@@ -104,6 +129,26 @@ ACCEPTES = [
     ("Lithuania gives EUR 30,000 to help developing economies join trade talks", None),
     ("Consumer prices rose 3.5% annually in June, less than expected", "monetary"),
     ("Wholesale prices unexpectedly declined 0.3% in June on big drop in energy", None),
+    # ------------------------------------------------------------
+    # Flux francophones. Ces titres doivent passer avec le meme jeu de regles
+    # que l'anglais, sans liste de mots-cles parallele a entretenir.
+    # ------------------------------------------------------------
+    ("Quelles sont les répercussions des tarifs douaniers sur l'engrais russe, 4 ans plus tard?", "trade"),
+    ("Le taux de chômage a un peu baissé en juillet, mais le marché du travail n'est pas encore solide", "monetary"),
+    ("Démystifier l'économie | Trump pourrait-il simplement se retirer de l'ACEUM ?", "trade"),
+    ("L'emploi a bondi en juillet, mais la Banque du Canada devrait maintenir ses taux inchangés", "monetary"),
+    ("Les exportations de la Chine ont battu les attentes en juillet, portées par la tech", None),
+    ("Chine : les exportations et importations solides en juillet", None),
+    ("Le Sénat des États-Unis adopte une nouvelle série de sanctions contre Moscou", None),
+    ("Ouverture du détroit d'Ormuz : l'Iran se dit très proche d'un accord avec Oman", "energy"),
+    ("Le Pentagone va investir 400 millions de dollars dans une mine australienne de terres rares", "tech"),
+    ("Attaques de gazoduc, centrales hors service : l'Ukraine menacée de pénurie d'énergie", "energy"),
+    ("La roupie indienne stagne, l'intervention de la banque centrale tempère les inquiétudes", "monetary"),
+    ("Le Canada envisage plusieurs nouvelles concessions pour éviter les tarifs douaniers américains", "trade"),
+    ("La semaine à venir à Wall Street : les chiffres de l'inflation mettront à l'épreuve les actions", "monetary"),
+    # Lacune reelle du filtre, presente aussi en anglais : la liste connaissait
+    # le controle et l'interdiction des exportations, mais pas la restriction.
+    ("La Chine annonce des restrictions sur les exportations de pièces de drones vers les Etats-Unis", "trade"),
 ]
 
 # ------------------------------------------------------------

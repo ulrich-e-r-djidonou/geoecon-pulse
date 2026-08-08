@@ -1,0 +1,325 @@
+{
+  "_lisezMoi": [
+    "Gabarit de la matrice d'impact provincial. Recopie dans",
+    "indicators.json a chaque passage du pipeline, apres substitution des",
+    "marqueurs {{brent}} et {{cad}} par les valeurs du jour.",
+    "",
+    "Pourquoi des marqueurs : la version precedente annoncait « Brent a",
+    "90 $ » et « 1,38 CAD/USD », deux chiffres de mars 2026 qu'aucun",
+    "mecanisme ne rafraichissait. Un chiffre ecrit en dur dans une analyse",
+    "reste plausible longtemps apres etre devenu faux.",
+    "",
+    "Le reste du texte est structurel (parts de PIB, parts d'exportation)",
+    "et se revise a la main. Derniere revision : 2026-08-08."
+  ],
+  "provincialAnalysis": {
+    "shocks": [
+      {
+        "id": "iran_oil",
+        "label": {
+          "fr": "Détroit d'Ormuz fermé, Brent à {{brent}} $",
+          "en": "Strait of Hormuz closed, Brent at ${{brentEn}}"
+        },
+        "theme": "energy"
+      },
+      {
+        "id": "us_tariffs",
+        "label": {
+          "fr": "Tarifs US 25% acier/aluminium",
+          "en": "US 25% steel/aluminum tariffs"
+        },
+        "theme": "trade"
+      },
+      {
+        "id": "china_canola",
+        "label": {
+          "fr": "Accord Canada-Chine (canola/VÉ)",
+          "en": "Canada-China deal (canola/EVs)"
+        },
+        "theme": "trade"
+      },
+      {
+        "id": "china_slowdown",
+        "label": {
+          "fr": "Ralentissement chinois (cible 4,5%)",
+          "en": "Chinese slowdown (4.5% target)"
+        },
+        "theme": "trade"
+      },
+      {
+        "id": "weak_cad",
+        "label": {
+          "fr": "Dollar canadien à {{cad}} CAD/USD",
+          "en": "Canadian dollar at {{cadEn}} CAD/USD"
+        },
+        "theme": "monetary"
+      }
+    ],
+    "impactMatrix": {
+      "AB": {
+        "iran_oil": 2,
+        "us_tariffs": -1,
+        "china_canola": 1,
+        "china_slowdown": -1,
+        "weak_cad": 2
+      },
+      "SK": {
+        "iran_oil": 2,
+        "us_tariffs": -1,
+        "china_canola": 2,
+        "china_slowdown": -1,
+        "weak_cad": 2
+      },
+      "NL": {
+        "iran_oil": 2,
+        "us_tariffs": 0,
+        "china_canola": 0,
+        "china_slowdown": -1,
+        "weak_cad": 1
+      },
+      "ON": {
+        "iran_oil": -2,
+        "us_tariffs": -2,
+        "china_canola": 0,
+        "china_slowdown": -1,
+        "weak_cad": 1
+      },
+      "QC": {
+        "iran_oil": -1,
+        "us_tariffs": -2,
+        "china_canola": 0,
+        "china_slowdown": -1,
+        "weak_cad": 1
+      },
+      "BC": {
+        "iran_oil": -1,
+        "us_tariffs": -1,
+        "china_canola": 1,
+        "china_slowdown": -2,
+        "weak_cad": 1
+      },
+      "MB": {
+        "iran_oil": -1,
+        "us_tariffs": 0,
+        "china_canola": 1,
+        "china_slowdown": -1,
+        "weak_cad": 1
+      },
+      "NB": {
+        "iran_oil": -1,
+        "us_tariffs": 0,
+        "china_canola": 0,
+        "china_slowdown": 0,
+        "weak_cad": 1
+      },
+      "NS": {
+        "iran_oil": -1,
+        "us_tariffs": 0,
+        "china_canola": 0,
+        "china_slowdown": 0,
+        "weak_cad": 1
+      },
+      "PE": {
+        "iran_oil": -1,
+        "us_tariffs": 0,
+        "china_canola": 1,
+        "china_slowdown": 0,
+        "weak_cad": 1
+      }
+    },
+    "groups": [
+      {
+        "id": "oil",
+        "label": {
+          "fr": "Provinces pétrolières",
+          "en": "Oil-producing provinces"
+        },
+        "provinces": [
+          "AB",
+          "SK",
+          "NL"
+        ],
+        "verdict": {
+          "fr": "Gagnantes nettes",
+          "en": "Net winners"
+        },
+        "verdictType": "positive",
+        "analysis": {
+          "fr": "Le Brent à {{brent}} $/baril reste un choc positif pour l'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador, mais c'est un choc devenu instable : le baril a culminé près de 118 $ en mars après la fermeture du détroit d'Ormuz, est retombé sous 70 $ le 1er juillet à la faveur du protocole d'entente États-Unis – Iran, puis est reparti à la hausse quand l'entente s'est délitée. La rente est réelle, la planification budgétaire ne l'est plus. Le secteur pétrolier et gazier représente environ 25% du PIB albertain (88 Mds$ en 2024, Alberta Economic Dashboard) et 13% du PIB saskatchewanais (Statistique Canada, 2024). Chaque hausse de 10 USD/baril du Brent génère environ 1,2 Md$ de revenus additionnels pour l'Alberta seule (Trésor de l'Alberta, Budget 2025).\n\nLa Saskatchewan bénéficie d'un double avantage : la hausse pétrolière ET l'accord Canada-Chine sur le canola. La province produit 55% du canola canadien (Canola Council of Canada), et la réduction des tarifs chinois de 84% à 15% rouvre un marché de 4 Mds$/an (Affaires mondiales Canada, mars 2026).\n\nRisques : les tarifs américains de 25% sur l'acier affectent les investissements dans les infrastructures pétrolières. Le ralentissement chinois (cible de croissance la plus basse depuis les années 90) réduit la demande mondiale de brut à moyen terme.",
+          "en": "Brent at ${{brentEn}}/barrel remains a positive shock for Alberta, Saskatchewan and Newfoundland & Labrador, but an unstable one: the barrel peaked near $118 in March after the Strait of Hormuz closed, fell below $70 on 1 July under the US-Iran memorandum, then climbed again as that understanding unravelled. The windfall is real; budget planning against it is not. Oil and gas accounts for roughly 25% of Alberta's GDP ($88B in 2024, Alberta Economic Dashboard) and 13% of Saskatchewan's GDP (Statistics Canada, 2024). Each $10 USD/barrel increase in Brent generates approximately $1.2B in additional revenue for Alberta alone (Alberta Treasury, Budget 2025).\n\nSaskatchewan benefits from a double tailwind: oil price surge AND the Canada-China canola deal. The province produces 55% of Canadian canola (Canola Council of Canada), and the tariff reduction from 84% to 15% reopens a $4B/year market (Global Affairs Canada, March 2026).\n\nRisks: US 25% steel tariffs affect investment in oil infrastructure. Chinese slowdown (lowest growth target since the 90s) reduces global crude demand in the medium term."
+        },
+        "strengths": {
+          "fr": [
+            "Revenus pétroliers exceptionnels (Brent à 90$+)",
+            "Saskatchewan : double gain pétrole + canola",
+            "Dollar canadien faible amplifie les revenus en CAD",
+            "Terre-Neuve : production offshore Hibernia/Terra Nova en pleine capacité"
+          ],
+          "en": [
+            "Exceptional oil revenues (Brent at $90+)",
+            "Saskatchewan: double gain from oil + canola",
+            "Weak Canadian dollar amplifies CAD revenues",
+            "Newfoundland: Hibernia/Terra Nova offshore at full capacity"
+          ]
+        },
+        "weaknesses": {
+          "fr": [
+            "Tarifs US de 25% sur l'acier ralentissent les projets d'infrastructure",
+            "Dépendance au cycle pétrolier — vulnérabilité si le conflit iranien se résout rapidement",
+            "Ralentissement chinois réduit la demande structurelle de brut"
+          ],
+          "en": [
+            "US 25% steel tariffs slow infrastructure projects",
+            "Oil cycle dependence — vulnerable if Iran conflict resolves quickly",
+            "Chinese slowdown reduces structural crude demand"
+          ]
+        }
+      },
+      {
+        "id": "manufacturing",
+        "label": {
+          "fr": "Provinces manufacturières",
+          "en": "Manufacturing provinces"
+        },
+        "provinces": [
+          "ON",
+          "QC"
+        ],
+        "verdict": {
+          "fr": "Perdantes nettes",
+          "en": "Net losers"
+        },
+        "verdictType": "negative",
+        "analysis": {
+          "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien à {{cad}} CAD/USD améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
+          "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the Canadian dollar at {{cadEn}} CAD/USD improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
+        },
+        "strengths": {
+          "fr": [
+            "Dollar faible améliore la compétitivité hors tarifs",
+            "Diversification sectorielle (tech, services financiers en Ontario)",
+            "Hydroélectricité québécoise : immunité partielle au choc pétrolier",
+            "Rebond manufacturier au T3 2025 (+1,0% en Ontario)"
+          ],
+          "en": [
+            "Weak dollar improves non-tariff competitiveness",
+            "Sectoral diversification (tech, financial services in Ontario)",
+            "Quebec hydroelectricity: partial immunity to oil shock",
+            "Manufacturing rebound in Q3 2025 (+1.0% in Ontario)"
+          ]
+        },
+        "weaknesses": {
+          "fr": [
+            "Tarifs de 25% : impact direct sur 46% du PIB manufacturier canadien",
+            "Aluminium québécois : 2,8 Mds$ d'exports vers les US menacés",
+            "Pétrole à 90$+ : hausse des coûts de transport et d'intrants",
+            "Incertitude CUSMA pèse sur les décisions d'investissement"
+          ],
+          "en": [
+            "25% tariffs: direct impact on 46% of Canadian manufacturing GDP",
+            "Quebec aluminum: $2.8B in US exports threatened",
+            "Oil at $90+: rising transport and input costs",
+            "CUSMA uncertainty weighs on investment decisions"
+          ]
+        }
+      },
+      {
+        "id": "resources",
+        "label": {
+          "fr": "Provinces exportatrices de ressources",
+          "en": "Resource-exporting provinces"
+        },
+        "provinces": [
+          "BC",
+          "MB",
+          "PE"
+        ],
+        "verdict": {
+          "fr": "Mixte",
+          "en": "Mixed"
+        },
+        "verdictType": "neutral",
+        "analysis": {
+          "fr": "La Colombie-Britannique est la province la plus exposée au ralentissement chinois. La Chine absorbe 51% des exportations de billes de bois brut de la C.-B. (BC Forest Product Exports, 2025), et les exportations forestières ont reculé de 8% en 2025. Le secteur forestier est pris en étau entre les tarifs américains sur le bois d'oeuvre et la demande chinoise en berne. La province a signé un protocole d'entente avec la Chine pour développer le marché du bois d'oeuvre (gouvernement de la C.-B., 2025).\n\nLe Manitoba bénéficie modérément de l'accord canola avec la Chine — la province est le troisième producteur canadien. L'Île-du-Prince-Édouard, dont l'économie repose sur l'agriculture (pommes de terre) et la pêche, profite du dollar faible pour ses exportations mais subit la hausse des coûts énergétiques.\n\nLa croissance de la C.-B. est projetée à 1,5% en 2026 (CPABC, Q1 2026), sous la moyenne nationale, reflétant ces vents contraires.",
+          "en": "British Columbia is the province most exposed to the Chinese slowdown. China absorbs 51% of BC's raw log exports (BC Forest Product Exports, 2025), and forestry exports fell 8% in 2025. The forestry sector is caught between US lumber tariffs and declining Chinese demand. The province signed an MOU with China to develop the softwood lumber market (BC Government, 2025).\n\nManitoba moderately benefits from the canola deal with China — the province is Canada's third-largest canola producer. Prince Edward Island, whose economy relies on agriculture (potatoes) and fishing, benefits from the weak dollar for exports but faces rising energy costs.\n\nBC growth is projected at 1.5% in 2026 (CPABC, Q1 2026), below the national average, reflecting these headwinds."
+        },
+        "strengths": {
+          "fr": [
+            "C.-B. : diversification vers les marchés asiatiques (protocole avec la Chine)",
+            "Manitoba : bénéficiaire de l'accord canola",
+            "Dollar faible stimule les exports agricoles et halieutiques",
+            "C.-B. : secteur tech (Vancouver) peu exposé aux tarifs"
+          ],
+          "en": [
+            "BC: diversifying to Asian markets (MOU with China)",
+            "Manitoba: canola deal beneficiary",
+            "Weak dollar boosts agricultural and fishery exports",
+            "BC: tech sector (Vancouver) less exposed to tariffs"
+          ]
+        },
+        "weaknesses": {
+          "fr": [
+            "C.-B. : 51% des exports de bois brut vont en Chine — vulnérable au ralentissement",
+            "Exports forestières en recul de 8% en 2025",
+            "Hausse des coûts énergétiques pour les provinces importatrices",
+            "Î.-P.-É. : économie trop petite pour absorber les chocs"
+          ],
+          "en": [
+            "BC: 51% of raw log exports go to China — vulnerable to slowdown",
+            "Forestry exports down 8% in 2025",
+            "Rising energy costs for importing provinces",
+            "PEI: economy too small to absorb shocks"
+          ]
+        }
+      },
+      {
+        "id": "atlantic",
+        "label": {
+          "fr": "Provinces atlantiques",
+          "en": "Atlantic provinces"
+        },
+        "provinces": [
+          "NB",
+          "NS"
+        ],
+        "verdict": {
+          "fr": "Perdantes modérées",
+          "en": "Moderate losers"
+        },
+        "verdictType": "negative",
+        "analysis": {
+          "fr": "Le Nouveau-Brunswick et la Nouvelle-Écosse sont les provinces les plus vulnérables au choc pétrolier par le canal des coûts. Importatrices nettes d'énergie, elles subissent la hausse du Brent sans en tirer de revenus. Le Nouveau-Brunswick héberge la seule raffinerie majeure de l'Est (Irving Oil, Saint John), qui traite 320 000 barils/jour, mais les marges de raffinage sont comprimées par la volatilité des prix du brut.\n\nL'exposition directe aux tarifs américains est limitée : les exportations atlantiques sont dominées par les produits de la mer (homard, crabe), largement exemptés des surtaxes. Le dollar faible est un facteur positif pour ces exportations.\n\nLe risque principal est indirect : le ralentissement manufacturier en Ontario et au Québec réduit les transferts fédéraux de péréquation dont dépendent ces provinces (35 à 40% des revenus provinciaux, Finances Canada).",
+          "en": "New Brunswick and Nova Scotia are the most vulnerable provinces to the oil shock through the cost channel. As net energy importers, they bear higher Brent prices without earning revenues. New Brunswick hosts the only major eastern refinery (Irving Oil, Saint John), processing 320,000 barrels/day, but refining margins are squeezed by crude price volatility.\n\nDirect exposure to US tariffs is limited: Atlantic exports are dominated by seafood (lobster, crab), largely exempt from surcharges. The weak dollar is a positive factor for these exports.\n\nThe main risk is indirect: the manufacturing slowdown in Ontario and Quebec reduces federal equalization transfers on which these provinces depend (35 to 40% of provincial revenues, Finance Canada)."
+        },
+        "strengths": {
+          "fr": [
+            "Faible exposition directe aux tarifs US",
+            "Exports de produits de la mer peu affectés",
+            "Dollar faible bénéficie aux exports de homard/crabe",
+            "Irving Oil : capacité de raffinage stratégique"
+          ],
+          "en": [
+            "Low direct exposure to US tariffs",
+            "Seafood exports largely unaffected",
+            "Weak dollar benefits lobster/crab exports",
+            "Irving Oil: strategic refining capacity"
+          ]
+        },
+        "weaknesses": {
+          "fr": [
+            "Importatrices nettes d'énergie — plein impact du pétrole à 90$+",
+            "Dépendance aux transferts fédéraux (35-40% des revenus)",
+            "Ralentissement ON/QC réduit la base de péréquation",
+            "Marges de raffinage comprimées par la volatilité du brut"
+          ],
+          "en": [
+            "Net energy importers — full impact of oil at $90+",
+            "Dependence on federal transfers (35-40% of revenues)",
+            "ON/QC slowdown reduces equalization base",
+            "Refining margins squeezed by crude price volatility"
+          ]
+        }
+      }
+    ]
+  }
+}

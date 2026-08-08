@@ -19,12 +19,15 @@ cle d'API. Trois choix de conception meritent d'etre expliques.
    valeurs du jour, donc ils ne peuvent pas contredire le tableau.
 
 3. Ce qui reste saisi a la main est signale comme tel.
-   L'IPC de la Chine et de l'Inde n'a pas de source publique ouverte et sans
-   cle en frequence mensuelle. Ces champs portent "manual": true, leur periode
-   reste affichee, et le controle de fraicheur fait echouer le workflow quand
-   ils depassent leur seuil, au lieu de les laisser vieillir en silence.
+   L'inflation et les taux directeurs de la Chine et de l'Inde sont desormais
+   lus chez l'OCDE et la BRI, deux entrepots SDMX publics et sans cle. Il ne
+   reste a la main que les previsions annuelles de croissance et les agregats
+   du FMI. Ces champs portent "manual": true, leur periode reste affichee, et
+   le controle de fraicheur ouvre une issue quand ils depassent leur seuil,
+   au lieu de les laisser vieillir en silence.
 """
 
+import csv
 import io
 import json
 import re
@@ -54,6 +57,14 @@ from news_filter import evaluer, nettoyer_titre, source_fiable, normaliser  # no
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_FILE = BASE_DIR / "data" / "indicators.json"
+REJETS_FILE = BASE_DIR / "data" / "rejets.json"
+
+# Contenu editorial : ce que le pipeline ne peut pas deduire. Il vit dans ses
+# propres fichiers plutot que dans indicators.json, pour qu'une mise a jour
+# automatique ne puisse pas ecraser une analyse ecrite a la main, et pour
+# qu'on voie d'un coup d'oeil ce qui est juge par un humain.
+CHRONO_FILE = BASE_DIR / "data" / "chronologie.json"
+ANALYSE_FILE = BASE_DIR / "data" / "analyse_provinciale.json"
 
 TIMEOUT = 15
 UA = {"User-Agent": "Mozilla/5.0 (compatible; GeoEconPulse/1.0)"}
@@ -115,6 +126,50 @@ RSS_FEEDS = {
         ("https://news.google.com/rss/search?q=(tariffs+OR+%22trade+war%22+OR+sanctions+OR+%22supply+chain%22+OR+OPEC+OR+%22export+controls%22)+when:3d&hl=en&gl=US&ceid=US:en", None),
     ],
 }
+
+# Le site se dit bilingue mais servait les memes titres anglais dans les deux
+# langues. Traduire automatiquement aurait demande une cle d'API et, surtout,
+# aurait fait reecrire par une machine des titres de presse attribues nommement
+# a leur editeur : un contresens de traduction devient alors une citation
+# fausse. On lit donc la presse francophone a la source.
+#
+# Les flux ci-dessous ont ete testes un par un. Radio-Canada International
+# (404), Les Echos (403) et France 24 (boucle de redirections) ne repondent
+# pas et ne sont pas cables : c'est la lecon des flux Reuters morts, qui
+# faisaient racler le fond de flux generalistes.
+RSS_FEEDS_FR = {
+    "CA": [
+        ("https://ici.radio-canada.ca/rss/4159", "Radio-Canada"),
+        ("https://www.ledevoir.com/rss/section/economie.xml", "Le Devoir"),
+        ("https://www.lapresse.ca/affaires/rss", "La Presse"),
+        ("https://news.google.com/rss/search?q=Canada+(tarifs+OR+commerce+OR+%22Banque+du+Canada%22+OR+economie+OR+exportations)+when:4d&hl=fr&gl=CA&ceid=CA:fr", None),
+    ],
+    "US": [
+        ("https://www.lemonde.fr/economie/rss_full.xml", "Le Monde"),
+        ("https://www.latribune.fr/feed.xml", "La Tribune"),
+        ("https://news.google.com/rss/search?q=(Etats-Unis+OR+Fed)+(tarifs+OR+inflation+OR+commerce+OR+sanctions)+when:4d&hl=fr&gl=FR&ceid=FR:fr", None),
+    ],
+    "CN": [
+        ("https://news.google.com/rss/search?q=Chine+(economie+OR+exportations+OR+yuan+OR+semi-conducteurs+OR+%22terres+rares%22)+when:4d&hl=fr&gl=FR&ceid=FR:fr", None),
+        ("https://www.rfi.fr/fr/economie/rss", "RFI"),
+    ],
+    "IN": [
+        ("https://news.google.com/rss/search?q=Inde+(economie+OR+roupie+OR+commerce+OR+exportations+OR+%22banque+centrale%22)+when:4d&hl=fr&gl=FR&ceid=FR:fr", None),
+        # Une seule requete ne rendait qu'un titre retenu sur trente-huit : la
+        # presse francophone couvre peu l'Inde. Un second angle, sur les
+        # droits de douane et la croissance, elargit le vivier.
+        ("https://news.google.com/rss/search?q=(Inde+OR+%22New+Delhi%22)+(%22droits+de+douane%22+OR+tarifs+OR+importations+OR+croissance+OR+inflation+OR+investissement)+when:7d&hl=fr&gl=FR&ceid=FR:fr", None),
+    ],
+    "WORLD": [
+        ("https://www.latribune.fr/feed.xml", "La Tribune"),
+        ("https://www.rfi.fr/fr/economie/rss", "RFI"),
+        ("https://news.google.com/rss/search?q=(tarifs+douaniers+OR+%22guerre+commerciale%22+OR+sanctions+OR+OPEP+OR+%22chaine+d%27approvisionnement%22)+when:3d&hl=fr&gl=FR&ceid=FR:fr", None),
+    ],
+}
+
+# Tout ce que le filtre ecarte, avec le motif. Ecrit dans data/rejets.json a
+# la fin du passage et repris par le rapport hebdomadaire.
+JOURNAL_REJETS = []
 
 MAX_HEADLINES = 8
 
@@ -179,6 +234,23 @@ STATCAN_WDS = ("https://www150.statcan.gc.ca/t1/wds/rest/"
                "getDataFromVectorsAndLatestNPeriods")
 STATCAN_CHOMAGE = 2062815   # taux de chomage, %
 STATCAN_EMPLOI = 2062811    # emploi, milliers
+
+# OCDE, entrepot SDMX public. Le jeu DF_PRICES_ALL couvre les non-membres,
+# dont la Chine et l'Inde : c'est ce qui permet de sortir leur inflation de la
+# saisie manuelle. La cle est REF_AREA.M.N.CPI.PA._T.N.GY, soit indice des
+# prix a la consommation, tous postes, glissement annuel.
+OCDE_PRIX = ("https://sdmx.oecd.org/public/rest/data/"
+             "OECD.SDD.TPS,DSD_PRICES@DF_PRICES_ALL,1.0/"
+             "{pays}.M.N.CPI.PA._T.N.GY"
+             "?lastNObservations={n}&format=csv")
+
+# Banque des reglements internationaux, portail v2. WS_CBPOL rassemble les
+# taux directeurs officiels d'une quarantaine de banques centrales, dont la
+# PBoC (taux preferentiel a un an) et la RBI (taux de prise en pension).
+# La serie quotidienne est plus fraiche que la mensuelle ; on garde la
+# mensuelle en repli.
+BRI_TAUX = ("https://stats.bis.org/api/v2/data/dataflow/BIS/WS_CBPOL/1.0/"
+            "{freq}.{pays}?lastNObservations={n}&format=csv")
 
 MOIS_FR = [
     "Janv.", "Fév.", "Mars", "Avril", "Mai", "Juin",
@@ -555,6 +627,59 @@ def ajouter_periodes_anglaises(data):
                 ind["periodEn"] = periode_en(periode)
 
 
+def poser_contenu_editorial(data):
+    """Recopie la chronologie et la matrice provinciale depuis leurs gabarits.
+
+    Les marqueurs {{brent}} et {{cad}} sont remplaces par les valeurs du jour.
+    Le texte annoncait « Brent a 90 $ » et « 1,38 CAD/USD » longtemps apres
+    que le baril soit passe par 118 $ puis 70 $ et que le huard soit tombe a
+    1,40 : un chiffre ecrit en dur dans une analyse ne vieillit pas
+    visiblement, il devient simplement faux.
+    """
+    log("Contenu editorial...")
+
+    try:
+        with open(CHRONO_FILE, encoding="utf-8") as f:
+            evenements = json.load(f)["evenements"]
+        # Le site attend des entrees sans le champ `source`, qui ne sert qu'a
+        # rendre chaque ligne verifiable dans le depot.
+        data["timeline"] = [
+            {c: e[c] for c in ("date", "title", "regions", "theme")}
+            for e in sorted(evenements, key=lambda e: e["date"])
+        ]
+        log(f"  Chronologie : {len(data['timeline'])} evenements, "
+            f"du {data['timeline'][0]['date']} au {data['timeline'][-1]['date']}")
+    except Exception as e:
+        log(f"  ERREUR chronologie : {e}, ancienne version conservee")
+
+    brent = (data["regions"]["WORLD"]["sparkline"]["data"] or [None])[-1]
+    cad = data["regions"]["CA"]["indicators"]["exchange"].get("value")
+    if brent is None or cad is None:
+        log("  Brent ou huard indisponible, matrice provinciale inchangee")
+        return
+
+    try:
+        with open(ANALYSE_FILE, encoding="utf-8") as f:
+            gabarit = json.dumps(json.load(f)["provincialAnalysis"],
+                                 ensure_ascii=False)
+        # Quatre marqueurs et non deux : le francais separe ses milliers par
+        # une espace insecable et decime par une virgule, l'anglais fait
+        # l'inverse. Le huard garde ses deux decimales, la ou nombre_fr()
+        # laisserait « 1,4 » pour un taux qui s'ecrit « 1,40 ».
+        rendu = (gabarit
+                 .replace("{{brent}}", nombre_fr(round(float(brent))))
+                 .replace("{{brentEn}}", f"{round(float(brent)):,}")
+                 .replace("{{cad}}", f"{float(cad):.2f}".replace(".", ","))
+                 .replace("{{cadEn}}", f"{float(cad):.2f}"))
+        if "{{" in rendu:
+            raise ValueError("marqueur non substitue dans le gabarit")
+        data["regions"]["CA"]["provincialAnalysis"] = json.loads(rendu)
+        log(f"  Matrice provinciale : Brent {round(float(brent))} $, "
+            f"huard {round(float(cad), 2)}")
+    except Exception as e:
+        log(f"  ERREUR matrice provinciale : {e}, ancienne version conservee")
+
+
 def controler_fraicheur(data, seuil_jours=100):
     """Liste les indicateurs devenus trop vieux. Retourne les manquements."""
     log(f"Controle de fraicheur (seuil : {seuil_jours} jours)...")
@@ -571,6 +696,92 @@ def controler_fraicheur(data, seuil_jours=100):
         log(f"  {len(perimes)} indicateur(s) a rafraichir a la main "
             f"(voir MISE_A_JOUR_MANUELLE.md).")
     return perimes
+
+
+# ============================================================
+# CHINE ET INDE — OCDE (prix) et BRI (taux directeurs)
+# ============================================================
+#
+# Ces deux blocs remplacent la saisie manuelle. Avant leur mise en place,
+# l'IPC de l'Inde affiche sur le site datait de janvier 2026 (2,7 %) alors
+# que la serie de l'OCDE donnait 4,76 % pour juin : ce n'etait pas un retard
+# d'affichage, c'etait un chiffre faux de deux points.
+#
+# Les deux API parlent SDMX et savent rendre du CSV a plat, ce qui evite
+# d'avoir a demeler l'indexation par position du JSON SDMX.
+
+def lire_csv_sdmx(texte):
+    """Extrait les couples (periode, valeur) d'une reponse SDMX en CSV.
+
+    Les deux entrepots exposent les memes colonnes TIME_PERIOD et OBS_VALUE
+    au milieu de metadonnees differentes. On ne lit que ces deux-la, triees
+    du plus ancien au plus recent.
+    """
+    lignes = csv.DictReader(io.StringIO(texte))
+    points = []
+    for ligne in lignes:
+        periode = (ligne.get("TIME_PERIOD") or "").strip()
+        brut = (ligne.get("OBS_VALUE") or "").strip()
+        if not periode or not brut:
+            continue
+        try:
+            points.append((periode, float(brut)))
+        except ValueError:
+            continue
+    return sorted(points, key=lambda x: x[0])
+
+
+def _periode_ocde(jeton):
+    """« 2026-06 » vers un couple (annee, mois)."""
+    annee, mois = jeton.split("-")[:2]
+    return int(annee), int(mois)
+
+
+def fetch_inflation_ocde(pays, libelle, n=18):
+    """Inflation annuelle d'un pays chez l'OCDE, en points de pourcentage."""
+    try:
+        resp = obtenir(OCDE_PRIX.format(pays=pays, n=n))
+        resp.raise_for_status()
+        points = lire_csv_sdmx(resp.text)
+        if not points:
+            log(f"  ERREUR inflation {libelle} : aucune observation OCDE")
+            return None, None
+        periode, valeur = points[-1]
+        annee, mois = _periode_ocde(periode)
+        log(f"  Inflation {libelle} : {round(valeur, 1)} % ({periode}, OCDE)")
+        mesure = {"value": round(valeur, 1),
+                  "period": periode_fr(annee, mois)}
+        serie = [(datetime(*_periode_ocde(p), 1), round(v, 1))
+                 for p, v in points]
+        return mesure, serie
+    except Exception as e:
+        log(f"  ERREUR inflation {libelle} : {e}")
+        return None, None
+
+
+def fetch_taux_directeur_bri(pays, libelle):
+    """Taux directeur officiel chez la BRI.
+
+    La serie quotidienne est essayee d'abord : elle devance la mensuelle de
+    plusieurs semaines. La mensuelle sert de repli si la premiere ne rend
+    rien, pour ne pas dependre d'un seul point de defaillance.
+    """
+    for freq, n in (("D", 40), ("M", 6)):
+        try:
+            resp = obtenir(BRI_TAUX.format(freq=freq, pays=pays, n=n))
+            resp.raise_for_status()
+            points = lire_csv_sdmx(resp.text)
+            if not points:
+                continue
+            periode, valeur = points[-1]
+            annee, mois = _periode_ocde(periode)
+            log(f"  Taux directeur {libelle} : {valeur} % "
+                f"({periode}, BRI {freq})")
+            return {"value": round(valeur, 3),
+                    "period": periode_fr(annee, mois)}
+        except Exception as e:
+            log(f"  ERREUR taux directeur {libelle} ({freq}) : {e}")
+    return None
 
 
 # ============================================================
@@ -772,11 +983,17 @@ def estimer_impact(titre, score):
     return "low"
 
 
-def recuperer_actualites(region):
-    """Actualites filtrees d'une region, les plus recentes d'abord."""
+def recuperer_actualites(region, langue="en"):
+    """Actualites filtrees d'une region, les plus recentes d'abord.
+
+    `langue` choisit le jeu de flux : anglophone ou francophone. Le filtre est
+    le meme dans les deux cas, ses listes de mots-cles etant deja bilingues et
+    insensibles aux accents.
+    """
+    flux_region = (RSS_FEEDS if langue == "en" else RSS_FEEDS_FR).get(region, [])
     retenues, rejetees, vus_urls = [], [], set()
 
-    for url_flux, nom_source in RSS_FEEDS.get(region, []):
+    for url_flux, nom_source in flux_region:
         try:
             flux = charger_flux(url_flux)
         except Exception as e:
@@ -837,9 +1054,17 @@ def recuperer_actualites(region):
         if len(uniques) >= MAX_HEADLINES:
             break
 
-    log(f"  {region} : {len(uniques)} retenues, {len(rejetees)} ecartees")
+    log(f"  {region} ({langue}) : {len(uniques)} retenues, "
+        f"{len(rejetees)} ecartees")
     for titre, motif in rejetees[:4]:
         log(f"      ecarte — {titre[:58]} [{motif[:38]}]")
+
+    # Les rejets alimentent le rapport hebdomadaire. Un filtre qui ne rend
+    # jamais compte de ce qu'il coupe finit par couper des choses justes sans
+    # que personne ne s'en apercoive.
+    for titre, motif in rejetees:
+        JOURNAL_REJETS.append({"region": region, "langue": langue,
+                               "titre": titre, "motif": motif})
     return uniques
 
 
@@ -1123,11 +1348,46 @@ def update_indicators():
     emploi_ca = fetch_variation_emploi_canada()
 
     appliquer(us["rate"], fetch_taux_directeur_us(), "Federal Reserve (NY Fed)")
-    appliquer(us["inflation"], fetch_inflation_us(), "BLS")
+
+    # Le BLS a rendu des 503 pendant toute la mise en place de ce pipeline.
+    # L'OCDE republie le meme IPC americain (3,53 % pour juin 2026, contre
+    # 3,5 % chez le BLS) : c'est un repli qui evite qu'une panne chez un seul
+    # diffuseur fige l'inflation des Etats-Unis sur le site.
+    inflation_us = fetch_inflation_us()
+    if inflation_us:
+        appliquer(us["inflation"], inflation_us, "BLS")
+    else:
+        secours_us, _ = fetch_inflation_ocde("USA", "US (repli)")
+        appliquer(us["inflation"], secours_us, "OCDE (IPC, source BLS)")
     chomage_us = fetch_chomage_us()
     creer_ou_appliquer(us, "unemployment", chomage_us, "BLS",
                        "%", "Taux de chômage", "Unemployment")
     emploi_us = fetch_variation_emploi_us()
+
+    # Chine et Inde : ces quatre champs etaient saisis a la main et derivaient
+    # de plusieurs mois. L'OCDE et la BRI les servent sans cle d'API.
+    cn = data["regions"]["CN"]["indicators"]
+    ind = data["regions"]["IN"]["indicators"]
+
+    inflation_cn, serie_cn = fetch_inflation_ocde("CHN", "CN")
+    appliquer(cn["inflation"], inflation_cn, "OCDE (IPC, source NBS)")
+    inflation_in, serie_in = fetch_inflation_ocde("IND", "IN")
+    appliquer(ind["inflation"], inflation_in, "OCDE (IPC, source MoSPI)")
+
+    appliquer(cn["rate"], fetch_taux_directeur_bri("CN", "CN"),
+              "BRI (PBoC, taux préférentiel 1 an)")
+    appliquer(ind["rate"], fetch_taux_directeur_bri("IN", "IN"),
+              "BRI (RBI, taux de prise en pension)")
+
+    # Ce qui reste a la main porte la marque. Ce sont des previsions annuelles
+    # revisees une ou deux fois l'an, pas des series mensuelles : leur age ne
+    # se mesure pas en jours, et le controle de fraicheur les ignore deja.
+    for region, cles in (("CA", ("gdp",)), ("US", ("gdp",)), ("CN", ("gdp",)),
+                         ("IN", ("gdp",)), ("WORLD", ("gdp", "inflation"))):
+        for cle in cles:
+            cible = data["regions"][region]["indicators"].get(cle)
+            if cible is not None and not cible.get("source", "").startswith("OCDE"):
+                cible["manual"] = True
 
     # --- Bourses ---
     for region, quote in fetch_all_stocks().items():
@@ -1138,25 +1398,45 @@ def update_indicators():
 
     # --- Sparklines ---
     log("Recuperation des sparklines...")
-    for region, symbole in (("US", "^GSPC"), ("IN", "^BSESN")):
-        if poser_sparkline(data["regions"][region], fetch_sparkline_data(symbole)):
-            log(f"  Sparkline {region} : posee")
-        time.sleep(0.4)
+    if poser_sparkline(data["regions"]["US"], fetch_sparkline_data("^GSPC")):
+        log("  Sparkline US : posee")
 
     poser_sparkline(data["regions"]["CA"], fetch_sparkline_inflation_canada())
-    poser_sparkline(data["regions"]["CN"], fetch_exchange_sparkline("USD", "CNY"))
+
+    # La courbe de l'Inde etait alimentee par le Sensex tout en s'annoncant
+    # « Croissance PIB (trimestres) » : l'etiquette decrivait autre chose que
+    # la donnee tracee. Celle de la Chine repetait la carte du taux de change.
+    # Les deux passent a l'inflation, desormais disponible chez l'OCDE, ce qui
+    # aligne les cinq zones sur une lecture comparable.
+    libelle_inflation = {"fr": "Inflation (12 mois)",
+                         "en": "Inflation (12 months)"}
+    if serie_cn:
+        poser_sparkline(data["regions"]["CN"], serie_cn, libelle_inflation)
+    else:
+        poser_sparkline(data["regions"]["CN"], fetch_exchange_sparkline("USD", "CNY"))
+    if serie_in:
+        poser_sparkline(data["regions"]["IN"], serie_in, libelle_inflation)
     poser_sparkline(data["regions"]["WORLD"], fetch_sparkline_data("BZ=F"))
 
     # --- Actualites ---
     log("Recuperation des actualites...")
     actualites_par_region = {}
     for region in ["CA", "US", "CN", "IN", "WORLD"]:
-        items = recuperer_actualites(region)
+        items = recuperer_actualites(region, "en")
         actualites_par_region[region] = items
         if items:
             data["regions"][region]["headlines"] = formater_actualites(items)
         else:
             log(f"  {region} : aucune actualite retenue, ancien lot conserve")
+
+        # Les titres francais viennent de la presse francophone, pas d'une
+        # traduction automatique : un titre de presse est attribue a son
+        # editeur, le reecrire par machine en ferait une citation fausse.
+        items_fr = recuperer_actualites(region, "fr")
+        if items_fr:
+            data["regions"][region]["headlinesFr"] = formater_actualites(items_fr)
+        else:
+            log(f"  {region} : aucune actualite francophone, lot anglais servi")
         time.sleep(0.3)
 
     # --- Resumes et sentiment ---
@@ -1174,6 +1454,9 @@ def update_indicators():
             chomages.get(region), avant.get(region))
         log(f"  {region} : sentiment {contenu['sentiment']['value']}")
 
+    # --- Contenu editorial ---
+    poser_contenu_editorial(data)
+
     # --- Fraicheur ---
     ajouter_periodes_anglaises(data)
     perimes = controler_fraicheur(data)
@@ -1183,6 +1466,13 @@ def update_indicators():
     log("Sauvegarde de indicators.json...")
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+    # Journal des rejets : un instantane par passage, ecrase a chaque fois.
+    # Le rapport hebdomadaire agrege ces instantanes depuis l'historique Git.
+    log(f"Journal des rejets : {len(JOURNAL_REJETS)} titres ecartes.")
+    with open(REJETS_FILE, "w", encoding="utf-8") as f:
+        json.dump({"date": today, "rejets": JOURNAL_REJETS},
+                  f, ensure_ascii=False, indent=2)
 
     log("=" * 60)
     log(f"Mise a jour terminee — {today}")

@@ -183,6 +183,14 @@ FORT_COMMERCE = [
     "deficit commercial", "trade barrier", "barriere commerciale",
     "export control", "export controls", "controle des exportations",
     "export ban", "embargo", "entity list", "quota d'importation",
+    # « La Chine annonce des restrictions sur les exportations de pieces de
+    # drones » etait ecarte : la liste connaissait le controle et l'interdiction
+    # des exportations, mais pas la restriction. Lacune presente aussi en
+    # anglais, decouverte en passant les flux francophones dans le filtre.
+    "export restriction", "export restrictions", "import restriction",
+    "import restrictions", "restrictions sur les exportations",
+    "restriction des exportations", "restrictions a l'exportation",
+    "restrictions sur les importations", "restrictions a l'importation",
     "safeguard investigation", "safeguard measure", "trade remedy",
     "enquete de sauvegarde", "mesure de sauvegarde",
     "duties", "additional duties", "droits additionnels",
@@ -565,6 +573,14 @@ SOURCES_FIABLES = [
     "indian express", "moneycontrol", "business today",
     # Moyen-Orient et international
     "al jazeera", "the national", "gulf news", "arab news",
+    # presse francophone — ajoutee avec les flux FR, qui alimentent le mode
+    # francais du site. Meme exigence que pour l'anglais : l'editeur doit etre
+    # identifiable, sinon le titre ne passe pas.
+    "la tribune", "le figaro", "l'opinion", "challenges", "l'express",
+    "l'usine nouvelle", "le point", "liberation", "la croix", "le temps",
+    "l'echo", "rtbf", "rfi", "france info", "franceinfo", "boursorama",
+    "la presse canadienne", "ici radio-canada", "le journal de montreal",
+    "le soleil", "les echos investir", "l'agefi", "le nouvel economiste",
     # institutions et think tanks
     "imf", "international monetary fund", "world bank", "wto",
     "world trade organization", "oecd", "bank of canada", "banque du canada",

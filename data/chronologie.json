@@ -1,0 +1,205 @@
+{
+  "_lisezMoi": [
+    "Chronologie des chocs geoeconomiques. Source unique de verite : ce",
+    "fichier est recopie tel quel dans indicators.json a chaque passage du",
+    "pipeline, ce qui evite qu'une mise a jour automatique ecrase une entree",
+    "ecrite a la main.",
+    "",
+    "Regle : chaque evenement doit etre verifiable. Le champ `source` porte",
+    "l'URL consultee. Ne rien ajouter qui ne soit pas date et attribuable.",
+    "",
+    "Derniere revision manuelle : 2026-08-08. La version precedente s'arretait",
+    "au 14 mars 2026 et decrivait encore le detroit d'Ormuz comme ferme depuis",
+    "mars, sans mentionner ni la reouverture de juin ni sa refermeture de",
+    "juillet."
+  ],
+  "evenements": [
+    {
+      "date": "2026-02-06",
+      "title": {
+        "fr": "Washington ramène de 50 % à 18 % les droits sur les exportations indiennes",
+        "en": "Washington cuts tariffs on Indian exports from 50% to 18%"
+      },
+      "regions": ["US", "IN"],
+      "theme": "trade",
+      "source": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-the-united-states-and-india-announce-historic-trade-deal/"
+    },
+    {
+      "date": "2026-02-28",
+      "title": {
+        "fr": "Les États-Unis et Israël lancent des frappes contre l'Iran ; Téhéran ferme le détroit d'Ormuz",
+        "en": "US and Israel launch strikes against Iran; Tehran closes the Strait of Hormuz"
+      },
+      "regions": ["US", "WORLD"],
+      "theme": "geopolitics",
+      "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-10636/"
+    },
+    {
+      "date": "2026-03-02",
+      "title": {
+        "fr": "Le Brent culmine près de 118 $/baril, environ 64 % au-dessus de son niveau d'avant la fermeture",
+        "en": "Brent peaks near $118/barrel, about 64% above its pre-closure level"
+      },
+      "regions": ["WORLD"],
+      "theme": "energy",
+      "source": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Another-Month-of-Hormuz-Closure-Means-Over-100-Brent-Throughout-2026.html"
+    },
+    {
+      "date": "2026-03-05",
+      "title": {
+        "fr": "Bloomberg : les tarifs américains ont amputé le PIB canadien de 1,5 à 2 %",
+        "en": "Bloomberg: US tariffs cut Canadian GDP by 1.5-2%"
+      },
+      "regions": ["CA", "US"],
+      "theme": "trade"
+    },
+    {
+      "date": "2026-03-06",
+      "title": {
+        "fr": "Pékin fixe sa cible de croissance la plus basse depuis les années 1990",
+        "en": "Beijing sets its lowest growth target since the 1990s"
+      },
+      "regions": ["CN"],
+      "theme": "trade"
+    },
+    {
+      "date": "2026-03-11",
+      "title": {
+        "fr": "L'USTR lance de nouvelles enquêtes Section 301 contre la Chine",
+        "en": "USTR launches new Section 301 investigations against China"
+      },
+      "regions": ["US", "CN"],
+      "theme": "trade"
+    },
+    {
+      "date": "2026-04-08",
+      "title": {
+        "fr": "Cessez-le-feu négocié par Islamabad : réouverture partielle d'Ormuz, le Brent repasse sous 100 $",
+        "en": "Islamabad-brokered ceasefire: partial reopening of Hormuz, Brent falls below $100"
+      },
+      "regions": ["WORLD"],
+      "theme": "energy",
+      "source": "https://www.newsonair.gov.in/us-iran-agree-for-two-week-ceasefire-with-safe-passage-through-strait-of-hormuz"
+    },
+    {
+      "date": "2026-04-18",
+      "title": {
+        "fr": "L'Iran referme officiellement le détroit, invoquant le blocus portuaire américain",
+        "en": "Iran formally re-closes the strait, citing the US port blockade"
+      },
+      "regions": ["WORLD"],
+      "theme": "geopolitics",
+      "source": "https://commonslibrary.parliament.uk/research-briefings/cbp-10636/"
+    },
+    {
+      "date": "2026-04-24",
+      "title": {
+        "fr": "L'accord commercial Inde – États-Unis est retardé par une décision tarifaire américaine et la guerre en Iran",
+        "en": "The India-US trade agreement is delayed by a US tariff ruling and the Iran war"
+      },
+      "regions": ["IN", "US"],
+      "theme": "trade",
+      "source": "https://www.cnbc.com/2026/04/24/india-trade-deal-delay-us-tariff-ruling-iran-war-risk.html"
+    },
+    {
+      "date": "2026-06-02",
+      "title": {
+        "fr": "Ottawa demande une reconduction de l'ACEUM pour seize ans et l'ouverture de discussions sectorielles",
+        "en": "Ottawa seeks a 16-year USMCA renewal and sectoral tariff talks"
+      },
+      "regions": ["CA", "US"],
+      "theme": "trade",
+      "source": "https://www.aljazeera.com/economy/2026/6/2/canada-seeks-usmca-renewal-for-16-years-sector-tariff-discussions"
+    },
+    {
+      "date": "2026-06-18",
+      "title": {
+        "fr": "Un protocole d'entente États-Unis – Iran met fin au conflit et rouvre le détroit d'Ormuz",
+        "en": "A US-Iran memorandum of understanding ends the conflict and reopens the Strait of Hormuz"
+      },
+      "regions": ["WORLD", "US"],
+      "theme": "geopolitics",
+      "source": "https://www.marketscale.com/industries/energy/eia-slashes-oil-price-forecast-14-after-us-iran-deal-reopens-strait-of-hormuz"
+    },
+    {
+      "date": "2026-07-01",
+      "title": {
+        "fr": "Washington refuse de reconduire l'ACEUM en l'état ; l'accord survit mais passe à des révisions annuelles",
+        "en": "Washington declines to renew USMCA as it stands; the deal survives but shifts to yearly reviews"
+      },
+      "regions": ["CA", "US"],
+      "theme": "trade",
+      "source": "https://www.cnbc.com/2026/07/01/trump-usmca-canada-mexico-trade-treaty.html"
+    },
+    {
+      "date": "2026-07-01",
+      "title": {
+        "fr": "Le Brent retombe sous 70 $, son niveau d'avant la fermeture du détroit",
+        "en": "Brent falls back below $70, its level before the strait closed"
+      },
+      "regions": ["WORLD"],
+      "theme": "energy",
+      "source": "https://www.marketscale.com/industries/energy/eia-slashes-oil-price-forecast-14-after-us-iran-deal-reopens-strait-of-hormuz"
+    },
+    {
+      "date": "2026-07-10",
+      "title": {
+        "fr": "L'entente se délite après des attaques sur des navires marchands ; Ormuz redevient impraticable au trafic courant",
+        "en": "The agreement unravels after attacks on merchant vessels; Hormuz is again effectively closed to routine traffic"
+      },
+      "regions": ["WORLD"],
+      "theme": "energy",
+      "source": "https://finance.yahoo.com/energy/articles/implications-renewed-closure-strait-hormuz-070646525.html"
+    },
+    {
+      "date": "2026-07-15",
+      "title": {
+        "fr": "La Banque du Canada maintient son taux directeur à 2,25 % pour une sixième décision d'affilée",
+        "en": "The Bank of Canada holds its policy rate at 2.25% for a sixth consecutive decision"
+      },
+      "regions": ["CA"],
+      "theme": "monetary",
+      "source": "https://www.bankofcanada.ca/2026/07/fad-press-release-2026-07-15/"
+    },
+    {
+      "date": "2026-07-24",
+      "title": {
+        "fr": "Pékin interdit l'exportation de terres rares vers quatorze entreprises européennes",
+        "en": "Beijing bans rare earth exports to fourteen European companies"
+      },
+      "regions": ["CN", "WORLD"],
+      "theme": "tech",
+      "source": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/072426-china-bans-rare-earth-exports-to-14-european-companies"
+    },
+    {
+      "date": "2026-07-29",
+      "title": {
+        "fr": "La Fed maintient sa fourchette à 3,50 – 3,75 %, avec trois dissidences sur douze voix",
+        "en": "The Fed holds its range at 3.50-3.75%, with three dissents out of twelve votes"
+      },
+      "regions": ["US"],
+      "theme": "monetary",
+      "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    },
+    {
+      "date": "2026-08-05",
+      "title": {
+        "fr": "La Chine durcit le contrôle des exportations de pièces de drones vers les États-Unis",
+        "en": "China tightens export controls on drone parts bound for the United States"
+      },
+      "regions": ["CN", "US"],
+      "theme": "tech",
+      "source": "https://www.globaltimes.cn/page/202608/1367569.shtml"
+    },
+    {
+      "date": "2026-08-07",
+      "title": {
+        "fr": "Le Canada crée 75 000 emplois en juillet ; le chômage recule à 6,4 %, son plus bas depuis juillet 2024",
+        "en": "Canada adds 75,000 jobs in July; unemployment falls to 6.4%, its lowest since July 2024"
+      },
+      "regions": ["CA"],
+      "theme": "monetary",
+      "source": "https://www150.statcan.gc.ca/n1/daily-quotidien/260807/dq260807a-eng.htm"
+    }
+  ]
+}
