@@ -18,7 +18,8 @@
 - **Mini-graphiques de tendance** — Sparklines sur 12 mois pour un indicateur clé par région
 - **Module Interconnexions** — Visualisation en réseau des liens économiques entre régions + chronologie des événements clés
 - **Filtres thématiques** — Commerce, Politique monétaire, Énergie, Tech, Géopolitique
-- **Bilingue FR/EN** — Toggle instantané entre français et anglais
+- **Bilingue FR/EN** — Bascule instantanée, avec des actualités lues dans la presse de chaque langue plutôt que traduites automatiquement
+- **Méthodologie publique** — [Une page](methodologie.html) qui expose les sources, le filtre d'actualités et les seuils de fraîcheur
 - **Responsive** — Optimisé pour desktop et mobile
 - **Zéro dépendance de build** — Un seul fichier HTML, déployable en ouvrant le fichier
 
@@ -26,15 +27,21 @@
 
 Les données sont stockées dans `data/indicators.json` et rafraîchies automatiquement trois fois par jour par GitHub Actions.
 
+Toutes les API listées ci-dessous sont publiques et ne demandent aucune clé. Aucun jeton n'est stocké dans le dépôt.
+
 | Indicateur | Régions | Source lue automatiquement |
 |---|---|---|
+| Taux de chômage, variation de l'emploi | Canada, États-Unis | Statistique Canada (Web Data Service), Bureau of Labor Statistics |
+| Inflation IPC | Canada | Banque du Canada (API Valet) |
+| Inflation IPC | États-Unis, Chine, Inde | BLS, avec l'entrepôt SDMX de l'OCDE en source première pour la Chine et l'Inde et en repli pour les États-Unis |
 | Taux directeur | Canada, États-Unis | Banque du Canada (API Valet), Fed de New York |
-| Inflation IPC | Canada, États-Unis | Banque du Canada (API Valet), Bureau of Labor Statistics |
-| Taux de chômage, variation de l'emploi | Canada, États-Unis | Statistique Canada (Web Data Service), BLS |
+| Taux directeur | Chine, Inde | Banque des règlements internationaux (jeu WS_CBPOL) |
 | Taux de change | Canada, Chine, Inde | Frankfurter / Banque centrale européenne |
-| Indices boursiers et sparklines | toutes | Yahoo Finance, Frankfurter, Valet |
+| Indices boursiers et sparklines | toutes | Yahoo Finance, OCDE, Valet |
 
-Cinq champs n'ont pas de source publique ouverte en fréquence mensuelle et restent saisis à la main : inflation et croissance de la Chine, inflation et taux directeur de l'Inde, agrégats mondiaux du FMI. Le pipeline surveille leur âge et fait échouer le workflow au-delà de 100 jours, ce qui déclenche une alerte par courriel. La procédure est détaillée dans [MISE_A_JOUR_MANUELLE.md](MISE_A_JOUR_MANUELLE.md).
+Ne restent saisies à la main que les prévisions annuelles de croissance et les agrégats mondiaux du FMI, révisés une ou deux fois l'an. Le pipeline surveille l'âge de chaque indicateur daté et ouvre une issue au-delà de 100 jours, sans interrompre la publication des données fraîches du même passage. La procédure est détaillée dans [MISE_A_JOUR_MANUELLE.md](MISE_A_JOUR_MANUELLE.md).
+
+Trois sources ont été évaluées puis écartées, faute d'être à jour : DBnomics (miroir du BLS arrêté à janvier 2025), l'API DataMapper du FMI (bloquée par son réseau de diffusion) et l'entrepôt SDMX du FMI (millésime d'octobre 2025, antérieur au WEO d'avril 2026).
 
 ### Cadence
 
@@ -55,7 +62,13 @@ Le filtre est implémenté dans `scripts/news_filter.py`. Un titre doit franchir
 
 Les titres retenus sont ensuite dédupliqués par recouvrement de vocabulaire et plafonnés à trois par éditeur, pour éviter qu'un flux bavard n'occupe une région entière.
 
-`scripts/test_news_filter.py` rejoue soixante titres réellement parus sur le site, dont ceux qui n'avaient rien à y faire. Le workflow refuse de publier si ce test échoue.
+`scripts/test_news_filter.py` rejoue 90 titres réellement parus, en français comme en anglais, dont ceux qui n'avaient rien à y faire. Le workflow refuse de publier si ce test échoue.
+
+Les faux positifs se voient immédiatement, ils atterrissent en page d'accueil ; les faux négatifs sont invisibles par construction. `scripts/rapport_rejets.py` agrège chaque lundi les titres écartés de la semaine et met en avant ceux qui portaient un vocabulaire économique malgré leur rejet.
+
+### Actualités en français
+
+Le mode français ne traduit pas les titres anglais : il lit la presse francophone à la source, avec le même filtre. Faire réécrire par une machine un titre attribué nommément à son éditeur transformerait un contresens de traduction en citation fausse. Quand une zone ne rend pas assez de titres francophones, le lot anglais est servi plutôt qu'une section vide.
 
 ### Sentiment et résumés
 Ni l'un ni l'autre n'est rédigé d'avance. Le résumé est composé à partir des valeurs du jour, et le sentiment découle de règles explicites : position de l'inflation dans la fourchette cible de la banque centrale concernée, sens de la variation de l'emploi et du chômage, niveau de croissance. Un paragraphe figé reste plausible longtemps après être devenu faux ; un paragraphe calculé ne peut pas contredire le tableau qu'il accompagne.
@@ -75,14 +88,22 @@ Les liens géoéconomiques sont identifiés à partir de l'analyse des canaux de
 ### Structure
 
 ```
-index.html                     dashboard complet (HTML + CSS + JS)
-data/indicators.json           données consommées par la page
-scripts/update_data.py         collecte, calcul des résumés, contrôle de fraîcheur
-scripts/news_filter.py         filtre de pertinence géoéconomique
-scripts/test_news_filter.py    non-régression du filtre sur des cas réels
-MISE_A_JOUR_MANUELLE.md        les cinq champs sans source automatisable
-.github/workflows/             mise à jour planifiée et déploiement Pages
+index.html                       dashboard complet (HTML + CSS + JS)
+methodologie.html                page publique : sources, filtre, seuils
+data/indicators.json             données consommées par la page
+data/chronologie.json            chronologie des chocs, écrite à la main
+data/analyse_provinciale.json    matrice d'impact provincial, écrite à la main
+data/rejets.json                 titres écartés au dernier passage
+scripts/update_data.py           collecte, calcul des résumés, contrôle de fraîcheur
+scripts/news_filter.py           filtre de pertinence géoéconomique
+scripts/test_news_filter.py      non-régression du filtre sur des cas réels
+scripts/rapport_rejets.py        rapport hebdomadaire des titres écartés
+scripts/corps_issue.py           corps de l'issue « indicateurs à rafraîchir »
+MISE_A_JOUR_MANUELLE.md          ce qui reste sans source automatisable
+.github/workflows/               mise à jour planifiée, rapport hebdomadaire, Pages
 ```
+
+Le contenu éditorial vit dans ses propres fichiers : une mise à jour automatique ne peut donc pas écraser une analyse écrite à la main, et la frontière entre ce qui est calculé et ce qui est jugé reste lisible.
 
 ## Déploiement
 

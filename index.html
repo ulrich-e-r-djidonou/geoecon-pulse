@@ -744,7 +744,7 @@ body::after {
   <!-- FOOTER -->
   <footer class="footer">
     <p data-i18n="footer_text">Conçu par Ulrich E. R. Djidonou — Économiste</p>
-    <p style="margin-top:6px;"><a href="https://www.linkedin.com/in/ulrich-djidonou/" target="_blank">LinkedIn</a> · <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse" target="_blank">GitHub</a></p>
+    <p style="margin-top:6px;"><a href="./methodologie.html" data-i18n="footer_method">Méthodologie</a> · <a href="https://www.linkedin.com/in/ulrich-djidonou/" target="_blank">LinkedIn</a> · <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse" target="_blank">GitHub</a></p>
   </footer>
 </div>
 
@@ -766,6 +766,7 @@ const T = {
     links_detail: "Analyse des liens",
     timeline_title: "Chronologie des événements clés",
     footer_text: "Conçu par Ulrich E. R. Djidonou — Économiste",
+    footer_method: "Méthodologie",
     indicator_gdp: "Croissance PIB", indicator_inflation: "Inflation", indicator_rate: "Taux directeur",
     indicator_exchange: "Taux de change", indicator_stock: "Indice boursier",
     indicator_unemployment: "Taux de chômage",
@@ -791,6 +792,7 @@ const T = {
     links_detail: "Link Analysis",
     timeline_title: "Key Events Timeline",
     footer_text: "Built by Ulrich E. R. Djidonou — Economist",
+    footer_method: "Methodology",
     indicator_gdp: "GDP Growth", indicator_inflation: "Inflation", indicator_rate: "Policy Rate",
     indicator_exchange: "Exchange Rate", indicator_stock: "Stock Index",
     indicator_unemployment: "Unemployment",
@@ -967,7 +969,7 @@ function buildIndicatorCards(indicators, regionKey) {
     if (ind.value === null) continue;
     const trendArrows = { up: '↑', down: '↓', stable: '→' };
     const isStock = key === 'stockIndex';
-    const displayVal = isStock ? ind.value.toLocaleString() : ind.value;
+    const displayVal = formatNumber(ind.value, isStock);
     const unit = isStock ? '' : ind.unit;
     const label = isStock ? ind.name : labels[key];
     const period = (lang === 'en' && ind.periodEn) ? ind.periodEn : ind.period;
@@ -1001,6 +1003,21 @@ function relativeTime(publishedAt, fallback) {
   if (hours < 24) return Math.floor(hours) + 'h';
   if (hours < 168) return Math.floor(hours / 24) + 'j';
   return Math.floor(hours / 168) + 's';
+}
+
+// Un tableau de bord qui s'adresse d'abord a un lectorat francophone
+// affichait « 2.8 % » et « 4.5 % » : le separateur de milliers etait
+// francise, la virgule decimale ne l'etait pas. Intl s'en charge dans les
+// deux langues, en gardant la precision reelle de la valeur plutot qu'un
+// nombre fixe de decimales — 2,25 % ne doit pas devenir 2,3 %.
+function formatNumber(valeur, estIndice) {
+  if (typeof valeur !== 'number' || !isFinite(valeur)) return valeur;
+  const locale = currentLang === 'fr' ? 'fr-CA' : 'en-CA';
+  const decimales = estIndice ? 0 : (String(valeur).split('.')[1] || '').length;
+  return valeur.toLocaleString(locale, {
+    minimumFractionDigits: decimales,
+    maximumFractionDigits: decimales
+  });
 }
 
 // Le mode francais sert des titres tires de la presse francophone, et non une

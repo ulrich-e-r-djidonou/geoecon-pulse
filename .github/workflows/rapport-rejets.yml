@@ -1,0 +1,49 @@
+name: Rapport hebdomadaire des titres écartés
+
+# Le filtre coupe entre soixante et cent titres par zone et par passage pour
+# en retenir huit. Ses faux positifs se voient tout de suite : ils atterrissent
+# sur la page d'accueil. Ses faux negatifs, eux, sont invisibles par
+# construction. Ce rapport les rend visibles une fois par semaine.
+#
+# Il ne bloque rien et ne modifie aucune donnee : il ouvre une issue a lire.
+on:
+  schedule:
+    - cron: '0 12 * * 1'   # lundi matin, 8 h HAE
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  rapport:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Le rapport lit data/rejets.json a travers `git log` sur sept jours :
+      # sans historique complet, il ne verrait que le dernier passage.
+      - name: Checkout du dépôt avec son historique
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Installation de Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Composition du rapport
+        run: python scripts/rapport_rejets.py > /tmp/rapport.md
+
+      # Une issue neuve chaque semaine, et non une issue reecrite : le but
+      # est de pouvoir comparer une semaine a la precedente. Elles portent
+      # leur date en titre et se referment a la lecture.
+      - name: Ouverture de l'issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITRE="Titres écartés — semaine du $(date +%Y-%m-%d)"
+          gh issue create --title "$TITRE" \
+            --body-file /tmp/rapport.md \
+            --label "veille" 2>/dev/null \
+            || gh issue create --title "$TITRE" --body-file /tmp/rapport.md

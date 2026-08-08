@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Méthodologie — GeoEcon Pulse</title>
+<meta name="description" content="Comment GeoEcon Pulse choisit ses sources, filtre ses actualités et surveille la fraîcheur de ses indicateurs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.08);
+  --border-light: rgba(255,255,255,0.12);
+  --text-primary: #e8e6e3;
+  --text-secondary: #9a9a9a;
+  --text-muted: #666;
+  --accent-links: #8B5CF6;
+  --positive: #22c55e;
+  --negative: #ef4444;
+  --neutral-color: #eab308;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --radius: 12px;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 820px; margin: 0 auto; padding: 0 20px; }
+
+.header {
+  padding: 40px 0 24px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 36px;
+}
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+h1 {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.lede { color: var(--text-secondary); font-size: 1.02rem; max-width: 62ch; }
+
+h2 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 400;
+  margin: 44px 0 14px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 24px 0 8px;
+  color: var(--text-primary);
+}
+p { margin-bottom: 14px; max-width: 68ch; }
+p, li { color: var(--text-secondary); }
+strong { color: var(--text-primary); font-weight: 600; }
+
+ul, ol { margin: 0 0 16px 20px; max-width: 68ch; }
+li { margin-bottom: 7px; }
+
+a { color: var(--accent-links); text-decoration: none; border-bottom: 1px solid rgba(139,92,246,0.35); }
+a:hover { border-bottom-color: var(--accent-links); }
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.86em;
+  background: rgba(255,255,255,0.06);
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--text-primary);
+}
+
+.table-wrap { overflow-x: auto; margin-bottom: 20px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.87rem; min-width: 520px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--text-muted); font-weight: 600; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.06em; }
+td { color: var(--text-secondary); }
+td strong { color: var(--text-primary); }
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 18px;
+}
+.card p:last-child { margin-bottom: 0; }
+.card-title { font-weight: 600; color: var(--text-primary); margin-bottom: 8px; font-size: 0.92rem; }
+
+.step { display: flex; gap: 14px; margin-bottom: 16px; align-items: flex-start; }
+.step-num {
+  flex: 0 0 26px; height: 26px; border-radius: 50%;
+  background: rgba(139,92,246,0.15); border: 1px solid rgba(139,92,246,0.4);
+  color: var(--accent-links); font-size: 0.78rem; font-weight: 600;
+  display: flex; align-items: center; justify-content: center; margin-top: 2px;
+}
+.step-body { flex: 1; }
+.step-body p { margin-bottom: 6px; }
+
+.tag {
+  display: inline-block; font-size: 0.72rem; padding: 2px 8px;
+  border-radius: 20px; border: 1px solid var(--border-light);
+  color: var(--text-muted); margin-right: 6px;
+}
+.tag.auto { color: var(--positive); border-color: rgba(34,197,94,0.35); }
+.tag.manuel { color: var(--neutral-color); border-color: rgba(234,179,8,0.35); }
+
+.note {
+  border-left: 2px solid var(--border-light);
+  padding: 4px 0 4px 16px;
+  margin: 18px 0;
+  color: var(--text-muted);
+  font-size: 0.89rem;
+}
+.note p { color: var(--text-muted); margin-bottom: 8px; }
+.note p:last-child { margin-bottom: 0; }
+
+.footer {
+  text-align: center; padding: 32px 0; margin-top: 48px;
+  border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.8rem;
+}
+.footer a { color: var(--text-secondary); border-bottom: none; }
+.footer a:hover { color: var(--text-primary); }
+
+.back { display: inline-block; margin-bottom: 20px; font-size: 0.85rem; border-bottom: none; }
+.back:hover { border-bottom: none; }
+
+@media (max-width: 640px) {
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.25rem; }
+  .container { padding: 0 16px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <a class="back" href="./">← Retour au tableau de bord</a>
+    <div class="eyebrow">GeoEcon Pulse</div>
+    <h1>Méthodologie</h1>
+    <p class="lede">
+      Ce que ce tableau de bord lit à la source, ce qu'il calcule, ce qu'il
+      écarte et ce qui reste jugé par un humain. Chaque règle décrite ici est
+      appliquée par du code public et vérifiable dans le dépôt.
+    </p>
+  </div>
+
+  <h2>Le principe</h2>
+
+  <p>
+    Un tableau de bord économique ment rarement d'un coup. Il vieillit. Un
+    chiffre juste au moment où on l'écrit reste plausible longtemps après être
+    devenu faux, et rien dans sa présentation ne le signale. Trois règles
+    découlent de ce constat et gouvernent tout le reste.
+  </p>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <p><strong>Tout ce qui peut être lu à la source l'est.</strong></p>
+      <p>
+        Aucun indicateur conjoncturel n'est saisi à la main. Ils viennent des
+        diffuseurs officiels, par leurs API publiques, sans clé.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <p><strong>Les résumés sont calculés, jamais rédigés d'avance.</strong></p>
+      <p>
+        Le texte de synthèse et l'indice de sentiment de chaque zone sont
+        composés à partir des valeurs du jour. Ils ne peuvent donc pas
+        contredire les cartes affichées au-dessus d'eux.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <p><strong>Ce qui reste manuel est signalé et surveillé.</strong></p>
+      <p>
+        Les rares champs sans source automatisable portent une marque dans les
+        données, et leur âge est contrôlé à chaque passage.
+      </p>
+    </div>
+  </div>
+
+  <h2>Sources des indicateurs</h2>
+
+  <p>
+    Toutes les API listées ci-dessous sont publiques et ne demandent aucune
+    clé d'authentification. Aucun jeton n'est stocké dans le dépôt.
+  </p>
+
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Indicateur</th><th>Zones</th><th>Source</th><th>Fréquence</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Chômage</strong>, variation de l'emploi</td>
+        <td>CA</td>
+        <td><a href="https://www.statcan.gc.ca/fr/developpeurs" target="_blank" rel="noopener">Statistique Canada</a>, Web Data Service (Enquête sur la population active)</td>
+        <td>Mensuelle</td>
+      </tr>
+      <tr>
+        <td><strong>Chômage</strong>, variation de l'emploi</td>
+        <td>US</td>
+        <td><a href="https://www.bls.gov/developers/" target="_blank" rel="noopener">Bureau of Labor Statistics</a>, API publique v1</td>
+        <td>Mensuelle</td>
+      </tr>
+      <tr>
+        <td><strong>Inflation</strong> (IPC, glissement annuel)</td>
+        <td>CA</td>
+        <td><a href="https://www.bankofcanada.ca/valet/docs" target="_blank" rel="noopener">Banque du Canada</a>, API Valet</td>
+        <td>Mensuelle</td>
+      </tr>
+      <tr>
+        <td><strong>Inflation</strong> (IPC, glissement annuel)</td>
+        <td>US, CN, IN</td>
+        <td><a href="https://sdmx.oecd.org/" target="_blank" rel="noopener">OCDE</a>, entrepôt SDMX public. Le BLS reste la source première pour les États-Unis ; l'OCDE prend le relais quand il est indisponible.</td>
+        <td>Mensuelle</td>
+      </tr>
+      <tr>
+        <td><strong>Taux directeur</strong></td>
+        <td>CA</td>
+        <td>Banque du Canada, API Valet</td>
+        <td>À chaque décision</td>
+      </tr>
+      <tr>
+        <td><strong>Taux directeur</strong></td>
+        <td>US</td>
+        <td><a href="https://markets.newyorkfed.org/static/docs/markets-api.html" target="_blank" rel="noopener">Fed de New York</a>, taux de référence</td>
+        <td>Quotidienne</td>
+      </tr>
+      <tr>
+        <td><strong>Taux directeur</strong></td>
+        <td>CN, IN</td>
+        <td><a href="https://stats.bis.org/" target="_blank" rel="noopener">Banque des règlements internationaux</a>, jeu WS_CBPOL</td>
+        <td>Quotidienne</td>
+      </tr>
+      <tr>
+        <td><strong>Taux de change</strong></td>
+        <td>CA, CN, IN</td>
+        <td><a href="https://frankfurter.dev/" target="_blank" rel="noopener">Frankfurter</a>, adossé aux taux de référence de la BCE</td>
+        <td>Quotidienne</td>
+      </tr>
+      <tr>
+        <td><strong>Indices boursiers</strong>, pétrole Brent</td>
+        <td>Toutes</td>
+        <td>API de cotation de Yahoo Finance</td>
+        <td>Quotidienne</td>
+      </tr>
+      <tr>
+        <td><strong>Croissance du PIB</strong> (prévisions)</td>
+        <td>Toutes</td>
+        <td><span class="tag manuel">Saisi à la main</span> Banque du Canada, Fed, Conseil d'État chinois, Fitch, FMI</td>
+        <td>Annuelle ou semestrielle</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="note">
+    <p>
+      <strong>Sources écartées, et pourquoi.</strong> DBnomics a été évalué
+      comme miroir de secours : sa copie du BLS s'arrêtait à janvier 2025 et
+      ses séries du FMI à juillet 2025, soit plus d'un an de retard sur les
+      sources d'origine. L'API DataMapper du FMI est bloquée par son réseau de
+      diffusion. Son entrepôt SDMX répond, mais ne publie que le millésime
+      d'octobre 2025 des Perspectives de l'économie mondiale, antérieur à
+      l'édition d'avril 2026. Dans les trois cas, brancher la source aurait
+      rendu le tableau moins à jour, pas plus.
+    </p>
+  </div>
+
+  <h2>Cadence de rafraîchissement</h2>
+
+  <p>
+    Le pipeline s'exécute trois fois par jour, à des heures alignées sur le
+    calendrier des diffuseurs et non sur une heure arbitraire. Statistique
+    Canada et le Bureau of Labor Statistics publient à 8 h 30, heure de l'Est.
+    Un passage unique en milieu de matinée UTC tombait systématiquement avant
+    la diffusion et ajoutait près de vingt-quatre heures de retard à chaque
+    publication mensuelle.
+  </p>
+
+  <ul>
+    <li><strong>12 h 50 UTC</strong> — 8 h 50 heure avancée de l'Est, après les diffusions d'été</li>
+    <li><strong>13 h 50 UTC</strong> — 8 h 50 heure normale de l'Est, après les diffusions d'hiver</li>
+    <li><strong>21 h 30 UTC</strong> — après la clôture de New York et de Toronto</li>
+  </ul>
+
+  <h2>Contrôle de fraîcheur</h2>
+
+  <p>
+    À chaque passage, l'âge de chaque indicateur est calculé à partir de la
+    période qu'il affiche. Au-delà de <strong>100 jours</strong>, il est
+    déclaré périmé.
+  </p>
+
+  <p>
+    Un indicateur périmé n'interrompt pas la publication : les données fraîches
+    du même passage partent quand même. Il ouvre une issue sur le dépôt, qui
+    liste les champs concernés et se referme une fois corrigés. Les prévisions
+    annuelles sont exclues du contrôle : une prévision pour 2026 publiée en
+    avril reste la prévision courante en décembre, son âge en jours ne veut
+    rien dire.
+  </p>
+
+  <h2>Sélection des actualités</h2>
+
+  <p>
+    C'est la partie la plus exigeante du système, et la seule dont une
+    défaillance se voit immédiatement. Entre soixante et cent titres sont
+    évalués par zone et par passage ; huit sont retenus. La règle est stricte :
+    seuls la <strong>géopolitique</strong>, le <strong>commerce</strong>,
+    l'<strong>énergie</strong>, la <strong>technologie</strong> et la
+    <strong>politique monétaire</strong> ont leur place. Le sport, les faits
+    divers, la météo, le divertissement et la politique intérieure de
+    procédure sont exclus sans exception.
+  </p>
+
+  <p>Chaque titre passe quatre étages, dans cet ordre.</p>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <p><strong>Veto catégoriel.</strong></p>
+      <p>
+        Un vocabulaire de sport, de fait divers, de divertissement ou de
+        curiosité écarte le titre sans examen. Un veto spécifique vise les
+        événements commandités, où le nom d'une institution financière
+        n'apparaît que comme commanditaire : <em>Omnium Banque Nationale</em>
+        contient bien le mot « banque », et c'est précisément le piège.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <p><strong>Veto conditionnel.</strong></p>
+      <p>
+        Météo, rappels de produits et procédure politique intérieure sont
+        écartés, sauf si le titre porte par ailleurs un signal économique fort.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <p><strong>Score de pertinence, sur deux axes.</strong></p>
+      <p>
+        Un axe mesure le <em>sujet</em> : termes forts (droits de douane,
+        taux directeur, contrôle des exportations, terres rares…) et termes
+        moyens (commerce, industrie, fret…). L'autre mesure la
+        <em>portée</em> : pays, institutions, agrégats macroéconomiques. Un
+        signal fort suffit. Deux signaux moyens ne suffisent que s'ils sont
+        accompagnés d'une portée macro, ce qui écarte les résultats
+        d'entreprise isolés.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <p><strong>Crédibilité de l'éditeur.</strong></p>
+      <p>
+        Les rubriques choisies à la main sont fiables par construction. Ce qui
+        remonte d'une requête doit prouver son éditeur contre une liste
+        d'environ cent titres de référence. Une source faible coûte aussi cher
+        à la crédibilité qu'un hors-sujet.
+      </p>
+    </div>
+  </div>
+
+  <p>
+    Deux passes finales retirent les doublons, par recouvrement de vocabulaire
+    plutôt que par comparaison de chaînes, et plafonnent à trois le nombre de
+    titres d'un même éditeur, pour qu'une seule rédaction ne monopolise pas la
+    section.
+  </p>
+
+  <h3>Un nom propre ne compte pour rien</h3>
+  <p>
+    Les noms de dirigeants sont volontairement absents de toutes les listes.
+    Un chef d'État est un acteur, pas un sujet : sa présence dans un titre
+    n'indique rien sur la nature géoéconomique de la nouvelle. C'est ce qui a
+    laissé passer, dans une version antérieure, un fait divers survenu sur un
+    terrain de golf.
+  </p>
+
+  <h3>Non-régression</h3>
+  <p>
+    Le filtre est verrouillé par une suite de <strong>90 cas</strong> tirés de
+    titres réellement parus, en français comme en anglais, dont tous ceux qui
+    ont motivé une correction. Elle s'exécute avant chaque mise à jour : si un
+    cas régresse, la publication ne part pas. Tout nouveau cas douteux y est
+    ajouté plutôt que d'élargir les listes de mots-clés à l'aveugle.
+  </p>
+
+  <h3>Rapport hebdomadaire des rejets</h3>
+  <p>
+    Les faux positifs se voient tout de suite, ils atterrissent en page
+    d'accueil. Les faux négatifs sont invisibles par construction. Chaque
+    lundi, un rapport agrège les titres écartés de la semaine, classe les
+    motifs et met en avant ceux qui portaient un vocabulaire économique malgré
+    leur rejet. Il est publié en clair sur le dépôt.
+  </p>
+
+  <h2>Actualités en français</h2>
+
+  <p>
+    Le mode français ne traduit pas les titres anglais : il lit la presse
+    francophone à la source, avec le même filtre et les mêmes exigences
+    d'éditeur. Faire réécrire par une machine un titre de presse attribué
+    nommément à son éditeur transformerait un contresens de traduction en
+    citation fausse. Quand une zone ne rend pas assez de titres francophones,
+    le lot anglais est servi plutôt qu'une section vide.
+  </p>
+
+  <h2>Résumés et sentiment</h2>
+
+  <p>
+    <span class="tag auto">Aucun modèle de langage</span>
+    Les résumés sont composés en Python à partir des valeurs du jour, par
+    assemblage de phrases. Le sentiment est une note calculée sur l'inflation,
+    l'emploi, la variation du taux directeur et la tendance boursière.
+  </p>
+
+  <p>
+    L'inflation est jugée par rapport à une <strong>bande</strong> propre à
+    chaque banque centrale, et non à une cible ponctuelle : l'Inde vise 4 % à
+    plus ou moins 2 points, la Banque du Canada 2 % dans une fourchette de 1 à
+    3. Sans cette distinction, une inflation indienne de 2,7 % était signalée
+    comme un risque déflationniste alors qu'elle se situait dans la bande.
+  </p>
+
+  <p>
+    Ce choix a un coût : la prose est plus sèche qu'un texte rédigé. Il a un
+    avantage décisif : un résumé calculé ne peut pas inventer un chiffre, ni
+    survivre à la donnée qu'il décrit.
+  </p>
+
+  <h2>Contenu jugé par un humain</h2>
+
+  <p>
+    La chronologie des chocs et la matrice d'impact provincial relèvent de
+    l'analyse, pas de la donnée. Elles vivent dans leurs propres fichiers,
+    <code>data/chronologie.json</code> et
+    <code>data/analyse_provinciale.json</code>, pour qu'une mise à jour
+    automatique ne puisse pas les écraser et qu'on voie d'un coup d'œil ce qui
+    est écrit à la main. Chaque événement de la chronologie porte l'URL
+    consultée.
+  </p>
+
+  <p>
+    Les chiffres conjoncturels cités dans l'analyse provinciale, cours du Brent
+    et taux du dollar canadien, sont des marqueurs remplacés à chaque passage
+    par les valeurs du jour. Une version antérieure annonçait « Brent à 90 $ »
+    et « 1,38 CAD/USD » plusieurs mois après que ces deux chiffres soient
+    devenus faux.
+  </p>
+
+  <h2>Limites connues</h2>
+
+  <ul>
+    <li>
+      Les prévisions de croissance proviennent de cinq émetteurs différents
+      (banques centrales, agence de notation, gouvernement, FMI). Elles ne sont
+      pas strictement comparables entre zones, et la carte l'indique par sa
+      source.
+    </li>
+    <li>
+      L'inflation de l'OCDE est un IPC harmonisé dans sa méthode de
+      publication, pas dans son panier. Un écart de quelques dixièmes avec le
+      chiffre national est normal.
+    </li>
+    <li>
+      La couverture francophone de l'Inde est mince. Le mode français y sert
+      parfois moins de huit titres, ou retombe sur l'anglais.
+    </li>
+    <li>
+      Le filtre privilégie la précision sur le rappel. Il écarte des sujets
+      défendables, notamment les résultats d'entreprise sans portée
+      macroéconomique. Le rapport hebdomadaire existe pour rendre cet arbitrage
+      visible plutôt que silencieux.
+    </li>
+  </ul>
+
+  <h2>Code</h2>
+
+  <p>
+    Tout est public. Le filtre est dans
+    <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/news_filter.py" target="_blank" rel="noopener"><code>scripts/news_filter.py</code></a>,
+    sa non-régression dans
+    <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/test_news_filter.py" target="_blank" rel="noopener"><code>scripts/test_news_filter.py</code></a>,
+    le pipeline dans
+    <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/update_data.py" target="_blank" rel="noopener"><code>scripts/update_data.py</code></a>
+    et le rapport de rejets dans
+    <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse/blob/master/scripts/rapport_rejets.py" target="_blank" rel="noopener"><code>scripts/rapport_rejets.py</code></a>.
+  </p>
+
+  <footer class="footer">
+    <p>Conçu par Ulrich E. R. Djidonou — Économiste</p>
+    <p style="margin-top:6px;">
+      <a href="./">Tableau de bord</a> ·
+      <a href="https://www.linkedin.com/in/ulrich-djidonou/" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://github.com/ulrich-e-r-djidonou/geoecon-pulse" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -53,10 +53,13 @@ jobs:
           echo "code=$?" >> $GITHUB_OUTPUT
           exit 0
 
+      # data/rejets.json est versionne au meme titre que les donnees : le
+      # rapport hebdomadaire reconstitue la semaine a partir de l'historique
+      # Git plutot que d'un journal cumulatif qui grossirait sans fin.
       - name: Vérification des changements
         id: check
         run: |
-          git diff --quiet data/indicators.json \
+          git diff --quiet data/indicators.json data/rejets.json \
             && echo "changed=false" >> $GITHUB_OUTPUT \
             || echo "changed=true" >> $GITHUB_OUTPUT
 
@@ -65,7 +68,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/indicators.json
+          git add data/indicators.json data/rejets.json
           git commit -m "Mise à jour des données — $(date +%Y-%m-%d)"
           git push
 
