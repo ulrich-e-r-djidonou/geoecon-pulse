@@ -3,6 +3,14 @@ name: Déploiement GitHub Pages
 on:
   push:
     branches: ["master"]
+  # GitHub n'enchaine pas un workflow sur un push effectue avec le
+  # GITHUB_TOKEN par defaut (regle anti-boucle), donc le push automatique de
+  # "Mise a jour des donnees GeoEcon Pulse" ne declenchait jamais ce
+  # deploiement : le site servait des donnees perimees malgre un depot a
+  # jour. Ce second declencheur republie des que ce workflow-la se termine.
+  workflow_run:
+    workflows: ["Mise à jour des données GeoEcon Pulse"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -16,6 +24,9 @@ concurrency:
 
 jobs:
   deploy:
+    # Ne pas republier si la mise a jour des donnees a echoue : mieux vaut
+    # servir les dernieres donnees valides que republier un echec.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
