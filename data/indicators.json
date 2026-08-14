@@ -47,19 +47,19 @@
           "periodEn": "Aug. 2026"
         },
         "exchange": {
-          "value": 1.395,
+          "value": 1.387,
           "unit": "CAD/USD",
-          "trend": "stable",
-          "period": "2026-08-13",
+          "trend": "down",
+          "period": "2026-08-14",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-08-13"
+          "periodEn": "2026-08-14"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 36826,
-          "trend": "up",
-          "change": 0.18,
+          "value": 36720,
+          "trend": "down",
+          "change": -0.11,
           "period": "2026-08-14",
           "periodEn": "2026-08-14"
         },
@@ -148,8 +148,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a créé 75 100 emplois en juillet, le taux de chômage s'établit à 6,4 % (juill. 2026). L'inflation ressort à 2,8 % (juin 2026) pour un taux directeur de 2,25 % (août 2026). S&P/TSX gagne 0,18 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « commerce ».",
-        "en": "The Canadian economy added 75,100 jobs in July, unemployment stands at 6.4% (July 2026). Inflation is 2.8% (June 2026) against a policy rate of 2.25% (Aug. 2026). S&P/TSX is up 0.18% on the session. Of the 8 stories retained today, 5 fall under trade."
+        "fr": "L'économie canadienne a créé 75 100 emplois en juillet. L'inflation ressort à 2,8 % (juin 2026) pour un taux directeur de 2,25 % (août 2026). S&P/TSX cède 0,11 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « commerce ».",
+        "en": "The Canadian economy added 75,100 jobs in July. Inflation is 2.8% (June 2026) against a policy rate of 2.25% (Aug. 2026). S&P/TSX is down 0.11% on the session. Of the 8 stories retained today, 5 fall under trade."
       },
       "headlines": [
         {
@@ -159,7 +159,7 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-power-crisis-short-circuits-ontarios-housing-goals-the-home-of-the/",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-14T12:30:00+00:00",
           "impact": "high",
           "source": "The Globe and Mail"
@@ -208,7 +208,7 @@
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0yX01vcWpHU3RSZGlZcE91aDlMTWE2bC1wc3RuTnJLX19GOVVKc1Izc3p6VkFYaUZHaU9vS29mZTBqUnUxZEp4dDF3eVg3NkkzaDBPaHBTd1RvZw?oc=5",
           "theme": "trade",
           "time": "12h",
-          "publishedAt": "2026-08-14T02:02:25+00:00",
+          "publishedAt": "2026-08-14T02:05:57+00:00",
           "impact": "high",
           "source": "CBC"
         },
@@ -219,7 +219,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOTI1M1RiLVl4cXJYa3NVRVBKaVFwTnptQU1KX1BaLVFaUE1iVGJTajd0OHhuQXl5bmtIWnBZYWdCVnFkNV9XVk9yM21ncGdhaU5RWDI1YU1QSmlZWFduUGc4TVFZdVdaMjhRMG43M2R6YjZWcmZGaFg1NnUxRi1OTVB6R0UzS1RkV21XdGVFVDIyNXdzMk80bG9tampEbG1TUTFkdFJyTW40OVR6ZlRYVDlhVjZCazlxVHc?oc=5",
           "theme": "trade",
-          "time": "14h",
+          "time": "15h",
           "publishedAt": "2026-08-13T23:16:43+00:00",
           "impact": "high",
           "source": "Reuters"
@@ -243,7 +243,7 @@
           },
           "url": "https://www.cbc.ca/news/canada/kitchener-waterloo/doug-ford-ai-data-centre-framework-ontario-moratorium-9.7306166?cmp=rss",
           "theme": "tech",
-          "time": "20h",
+          "time": "21h",
           "publishedAt": "2026-08-13T17:18:59+00:00",
           "impact": "medium",
           "source": "CBC"
@@ -254,8 +254,8 @@
           {
             "id": "iran_oil",
             "label": {
-              "fr": "Détroit d'Ormuz fermé, Brent à 87 $",
-              "en": "Strait of Hormuz closed, Brent at $87"
+              "fr": "Détroit d'Ormuz fermé, Brent à 88 $",
+              "en": "Strait of Hormuz closed, Brent at $88"
             },
             "theme": "energy"
           },
@@ -286,8 +286,8 @@
           {
             "id": "weak_cad",
             "label": {
-              "fr": "Dollar canadien à 1,40 CAD/USD",
-              "en": "Canadian dollar at 1.40 CAD/USD"
+              "fr": "Dollar canadien à 1,39 CAD/USD",
+              "en": "Canadian dollar at 1.39 CAD/USD"
             },
             "theme": "monetary"
           }
@@ -382,18 +382,18 @@
             },
             "verdictType": "positive",
             "analysis": {
-              "fr": "Le Brent à 87 $/baril reste un choc positif pour l'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador, mais c'est un choc devenu instable : le baril a culminé près de 118 $ en mars après la fermeture du détroit d'Ormuz, est retombé sous 70 $ le 1er juillet à la faveur du protocole d'entente États-Unis – Iran, puis est reparti à la hausse quand l'entente s'est délitée. La rente est réelle, la planification budgétaire ne l'est plus. Le secteur pétrolier et gazier représente environ 25% du PIB albertain (88 Mds$ en 2024, Alberta Economic Dashboard) et 13% du PIB saskatchewanais (Statistique Canada, 2024). Chaque hausse de 10 USD/baril du Brent génère environ 1,2 Md$ de revenus additionnels pour l'Alberta seule (Trésor de l'Alberta, Budget 2025).\n\nLa Saskatchewan bénéficie d'un double avantage : la hausse pétrolière ET l'accord Canada-Chine sur le canola. La province produit 55% du canola canadien (Canola Council of Canada), et la réduction des tarifs chinois de 84% à 15% rouvre un marché de 4 Mds$/an (Affaires mondiales Canada, mars 2026).\n\nRisques : les tarifs américains de 25% sur l'acier affectent les investissements dans les infrastructures pétrolières. Le ralentissement chinois (cible de croissance la plus basse depuis les années 90) réduit la demande mondiale de brut à moyen terme.",
-              "en": "Brent at $87/barrel remains a positive shock for Alberta, Saskatchewan and Newfoundland & Labrador, but an unstable one: the barrel peaked near $118 in March after the Strait of Hormuz closed, fell below $70 on 1 July under the US-Iran memorandum, then climbed again as that understanding unravelled. The windfall is real; budget planning against it is not. Oil and gas accounts for roughly 25% of Alberta's GDP ($88B in 2024, Alberta Economic Dashboard) and 13% of Saskatchewan's GDP (Statistics Canada, 2024). Each $10 USD/barrel increase in Brent generates approximately $1.2B in additional revenue for Alberta alone (Alberta Treasury, Budget 2025).\n\nSaskatchewan benefits from a double tailwind: oil price surge AND the Canada-China canola deal. The province produces 55% of Canadian canola (Canola Council of Canada), and the tariff reduction from 84% to 15% reopens a $4B/year market (Global Affairs Canada, March 2026).\n\nRisks: US 25% steel tariffs affect investment in oil infrastructure. Chinese slowdown (lowest growth target since the 90s) reduces global crude demand in the medium term."
+              "fr": "Le Brent à 88 $/baril reste un choc positif pour l'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador, mais c'est un choc devenu instable : le baril a culminé près de 118 $ en mars après la fermeture du détroit d'Ormuz, est retombé sous 70 $ le 1er juillet à la faveur du protocole d'entente États-Unis – Iran, puis est reparti à la hausse quand l'entente s'est délitée. La rente est réelle, la planification budgétaire ne l'est plus. Le secteur pétrolier et gazier représente environ 25% du PIB albertain (88 Mds$ en 2024, Alberta Economic Dashboard) et 13% du PIB saskatchewanais (Statistique Canada, 2024). Chaque hausse de 10 USD/baril du Brent génère environ 1,2 Md$ de revenus additionnels pour l'Alberta seule (Trésor de l'Alberta, Budget 2025).\n\nLa Saskatchewan bénéficie d'un double avantage : la hausse pétrolière ET l'accord Canada-Chine sur le canola. La province produit 55% du canola canadien (Canola Council of Canada), et la réduction des tarifs chinois de 84% à 15% rouvre un marché de 4 Mds$/an (Affaires mondiales Canada, mars 2026).\n\nRisques : les tarifs américains de 25% sur l'acier affectent les investissements dans les infrastructures pétrolières. Le ralentissement chinois (cible de croissance la plus basse depuis les années 90) réduit la demande mondiale de brut à moyen terme.",
+              "en": "Brent at $88/barrel remains a positive shock for Alberta, Saskatchewan and Newfoundland & Labrador, but an unstable one: the barrel peaked near $118 in March after the Strait of Hormuz closed, fell below $70 on 1 July under the US-Iran memorandum, then climbed again as that understanding unravelled. The windfall is real; budget planning against it is not. Oil and gas accounts for roughly 25% of Alberta's GDP ($88B in 2024, Alberta Economic Dashboard) and 13% of Saskatchewan's GDP (Statistics Canada, 2024). Each $10 USD/barrel increase in Brent generates approximately $1.2B in additional revenue for Alberta alone (Alberta Treasury, Budget 2025).\n\nSaskatchewan benefits from a double tailwind: oil price surge AND the Canada-China canola deal. The province produces 55% of Canadian canola (Canola Council of Canada), and the tariff reduction from 84% to 15% reopens a $4B/year market (Global Affairs Canada, March 2026).\n\nRisks: US 25% steel tariffs affect investment in oil infrastructure. Chinese slowdown (lowest growth target since the 90s) reduces global crude demand in the medium term."
             },
             "strengths": {
               "fr": [
-                "Revenus pétroliers exceptionnels (Brent à 87 $)",
+                "Revenus pétroliers exceptionnels (Brent à 88 $)",
                 "Saskatchewan : double gain pétrole + canola",
                 "Dollar canadien faible amplifie les revenus en CAD",
                 "Terre-Neuve : production offshore Hibernia/Terra Nova en pleine capacité"
               ],
               "en": [
-                "Exceptional oil revenues (Brent at $87)",
+                "Exceptional oil revenues (Brent at $88)",
                 "Saskatchewan: double gain from oil + canola",
                 "Weak Canadian dollar amplifies CAD revenues",
                 "Newfoundland: Hibernia/Terra Nova offshore at full capacity"
@@ -428,8 +428,8 @@
             },
             "verdictType": "negative",
             "analysis": {
-              "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien à 1,40 CAD/USD améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
-              "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the Canadian dollar at 1.40 CAD/USD improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
+              "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien à 1,39 CAD/USD améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
+              "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the Canadian dollar at 1.39 CAD/USD improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
             },
             "strengths": {
               "fr": [
@@ -449,13 +449,13 @@
               "fr": [
                 "Tarifs de 25% : impact direct sur 46% du PIB manufacturier canadien",
                 "Aluminium québécois : 2,8 Mds$ d'exports vers les US menacés",
-                "Pétrole à 87 $ : hausse des coûts de transport et d'intrants",
+                "Pétrole à 88 $ : hausse des coûts de transport et d'intrants",
                 "Incertitude CUSMA pèse sur les décisions d'investissement"
               ],
               "en": [
                 "25% tariffs: direct impact on 46% of Canadian manufacturing GDP",
                 "Quebec aluminum: $2.8B in US exports threatened",
-                "Oil at $87: rising transport and input costs",
+                "Oil at $88: rising transport and input costs",
                 "CUSMA uncertainty weighs on investment decisions"
               ]
             }
@@ -544,13 +544,13 @@
             },
             "weaknesses": {
               "fr": [
-                "Importatrices nettes d'énergie — plein impact du pétrole à 87 $",
+                "Importatrices nettes d'énergie — plein impact du pétrole à 88 $",
                 "Dépendance aux transferts fédéraux (35-40% des revenus)",
                 "Ralentissement ON/QC réduit la base de péréquation",
                 "Marges de raffinage comprimées par la volatilité du brut"
               ],
               "en": [
-                "Net energy importers — full impact of oil at $87",
+                "Net energy importers — full impact of oil at $88",
                 "Dependence on federal transfers (35-40% of revenues)",
                 "ON/QC slowdown reduces equalization base",
                 "Refining margins squeezed by crude price volatility"
@@ -579,7 +579,7 @@
           },
           "url": "https://www.ledevoir.com/economie/1001825/entreprises-canadiennes-parient-trump-va-reculer-nouveaux-droits-douane",
           "theme": "trade",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-08-14T11:43:16+00:00",
           "impact": "medium",
           "source": "Le Devoir"
@@ -591,7 +591,7 @@
           },
           "url": "https://www.ledevoir.com/economie/1001822/trump-impose-droits-douane-drones-soutenir-industrie-americaine",
           "theme": "trade",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-08-14T11:27:49+00:00",
           "impact": "high",
           "source": "Le Devoir"
@@ -639,7 +639,7 @@
           },
           "url": "https://www.ledevoir.com/economie/consommation/1001750/canadian-tire-appuie-ia-stimuler-croissance-face-economie-morose",
           "theme": "tech",
-          "time": "16h",
+          "time": "17h",
           "publishedAt": "2026-08-13T21:16:00+00:00",
           "impact": "medium",
           "source": "Le Devoir"
@@ -688,7 +688,7 @@
         "inflation": {
           "value": 3.4,
           "unit": "%",
-          "trend": "down",
+          "trend": "stable",
           "period": "Juill. 2026",
           "source": "BLS",
           "periodEn": "July 2026",
@@ -712,9 +712,9 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7808,
-          "trend": "up",
-          "change": 0.11,
+          "value": 7794,
+          "trend": "stable",
+          "change": -0.07,
           "period": "2026-08-14",
           "periodEn": "2026-08-14"
         },
@@ -749,7 +749,7 @@
           7580.06,
           7499.36,
           7489.72,
-          7807.71
+          7793.66
         ],
         "labels": [
           {
@@ -803,22 +803,10 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a perdu 23 000 emplois en juillet, le taux de chômage s'établit à 4,1 % (juill. 2026). L'inflation ressort à 3,4 % (juill. 2026) pour un taux directeur de 3,625 % (août 2026). S&P 500 gagne 0,11 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
-        "en": "The US economy shed 23,000 jobs in July, unemployment stands at 4.1% (July 2026). Inflation is 3.4% (July 2026) against a policy rate of 3.625% (Aug. 2026). S&P 500 is up 0.11% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
+        "fr": "L'économie américaine a perdu 23 000 emplois en juillet, le taux de chômage s'établit à 4,1 % (juill. 2026). L'inflation ressort à 3,4 % (juill. 2026) pour un taux directeur de 3,625 % (août 2026). S&P 500 cède 0,07 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 6 relèvent du thème « politique monétaire ».",
+        "en": "The US economy shed 23,000 jobs in July, unemployment stands at 4.1% (July 2026). Inflation is 3.4% (July 2026) against a policy rate of 3.625% (Aug. 2026). S&P 500 is down 0.07% on the session. Of the 8 stories retained today, 6 fall under monetary policy."
       },
       "headlines": [
-        {
-          "title": {
-            "fr": "Gold Steadies as Traders Weigh Fed Rate Path and Mideast Tension",
-            "en": "Gold Steadies as Traders Weigh Fed Rate Path and Mideast Tension"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQlRPMWZWcUgtdkNQZHp1Wmt3U3RMb21PVGxHNjVIZzVIUFJnLXUxS09ySjVUNWlEY3MwWi1BNmdWZmtTSUdlMWg1Rzd3ZzVFMDFORHladGw2WmJhS1g5azQwcWJFd1FJSS1YWGI3OGVZQ19VR19pX2w2bm0yck1qT0dOLWRvempuZE1QWjhpb2ZNYjFncXNLS3hKU3dwalVYSGY0NC1CbjBrVVdyMXBSRzZBdGZ4QQ?oc=5",
-          "theme": "monetary",
-          "time": "14h",
-          "publishedAt": "2026-08-13T23:24:16+00:00",
-          "impact": "low",
-          "source": "Bloomberg"
-        },
         {
           "title": {
             "fr": "US sells 30-year bonds at highest borrowing costs since 2001",
@@ -826,7 +814,7 @@
           },
           "url": "https://www.ft.com/content/9c9c948f-dc8b-4385-a9b9-4b98dc1eadd9?syn-25a6b1a6=1",
           "theme": "monetary",
-          "time": "16h",
+          "time": "17h",
           "publishedAt": "2026-08-13T21:21:32+00:00",
           "impact": "low",
           "source": "Financial Times"
@@ -840,6 +828,18 @@
           "theme": "monetary",
           "time": "18h",
           "publishedAt": "2026-08-13T19:58:13+00:00",
+          "impact": "high",
+          "source": "Bloomberg"
+        },
+        {
+          "title": {
+            "fr": "Traders Pare Bets on Fed Rate Hike This Year as Oil Prices Fall",
+            "en": "Traders Pare Bets on Fed Rate Hike This Year as Oil Prices Fall"
+          },
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdVRlWHhiTTJfVHFqR3dnVFhQSVhqMnFlV29rRm5QTWJrZF9LNXZLUm9CZDRsZ3hUc1VGQU5vaHlqYnFPUUg5RjZ1WUFsVE5RdFA4RnBGZ2N4TmJULUJVc1dFNkRlQ2VsVUxVbjQ3NURyMmFlOHVjcXZpTi02WkU2RDlMQUxnSmM4SlNVUWQwUUw5VDRTc21mOWU4SnVETVJtU2ZybUF3OU5uQlhnNUYyTmpha2I?oc=5",
+          "theme": "monetary",
+          "time": "20h",
+          "publishedAt": "2026-08-13T17:43:34+00:00",
           "impact": "high",
           "source": "Bloomberg"
         },
@@ -862,7 +862,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPUkZXRWJRcG5ubW04ZjBhdDkwOUlnN3hwMEZlQ2RqT3pURzFiWmYtcmV2WUZ5dDVxZ3RzV2l3ZEVKSXEycEY5bUhJbzJWZ2ZtZkMyV1dyRUpuZXJZS0t3dElZSl83SDhSOEJXeXIySDBLWENHLVZjNE5vLTBOYmFEeGZGLXkwUlpHczNjNVJZTi1vUE5qU2M3ZmJmR0ZpbXhiSVB4cy1Tel9BQTB5VXJkRUZOc2pIazVoWFBYRldvSWJNWEotcGdsV0I1dTFoQQ?oc=5",
           "theme": "monetary",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-08-14T10:42:02+00:00",
           "impact": "medium",
           "source": "Reuters"
@@ -881,18 +881,6 @@
         },
         {
           "title": {
-            "fr": "US accuses dozens of countries of helping China avoid Trump’s tariffs",
-            "en": "US accuses dozens of countries of helping China avoid Trump’s tariffs"
-          },
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOEMwejVqZjZkUFFubWNDWUs2bHVQRjdHcW0xWnNFeVZrUG1iNVBYN2JLSGZFRmdvUl9tMlZoeWVSa0lHZVFUVnU3MnduUlUzRXdBTm1PNEhJMGVSY181WTV1dkE5R1NsRUptcWtRYm1LTGlYdWh6ODVZM3cyaGV6eDNzMlE2d0JkOTZTWWsyci1LOC1IaG5rNEliZTlxZTRHTzRfbHFKQlJ5SVgwdlFPNjhn0gG3AUFVX3lxTE5Ba1hZZHBpNHgzRnVBZWVFdzJpUklCb2NKSnhNQjRUU2JqSTJvUlJVUm1jMFhQd2pZdUlmRnZ4UklWSGFacnpldlJWRkloOWhtdkx6YkhHWWRkZVcwTkQyZkFyRGRHNUV3VVJLdjBZaDhxWUdCZnY5dlF5c0RQMFI2bWsxWmg1R0ozLXhxaFlfblFONFBDVEZaTkwxN2puZ3J4Y21penZCYjdFOTdFV2gtcDQ0bjZNMA?oc=5",
-          "theme": "trade",
-          "time": "5h",
-          "publishedAt": "2026-08-14T08:49:34+00:00",
-          "impact": "high",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": {
             "fr": "Brazil begins exploring retaliatory options to new US tariffs",
             "en": "Brazil begins exploring retaliatory options to new US tariffs"
           },
@@ -902,6 +890,18 @@
           "publishedAt": "2026-08-14T04:02:39+00:00",
           "impact": "high",
           "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "'I lost $14,000 in a month': Investors hit by Korean stock market's wild swings",
+            "en": "'I lost $14,000 in a month': Investors hit by Korean stock market's wild swings"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/c2k7zj4knwlo?at_medium=RSS&at_campaign=rss",
+          "theme": "monetary",
+          "time": "16h",
+          "publishedAt": "2026-08-13T22:00:10+00:00",
+          "impact": "medium",
+          "source": "BBC"
         }
       ],
       "headlinesFr": [
@@ -912,7 +912,7 @@
           },
           "url": "https://www.lemonde.fr/economie/article/2026/08/14/dans-les-librairies-gibert-les-rayons-se-vident-et-le-plan-de-relance-de-la-direction-inquiete-les-salaries_6746253_3234.html",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-14T12:30:06+00:00",
           "impact": "low",
           "source": "Le Monde"
@@ -936,7 +936,7 @@
           },
           "url": "https://www.lemonde.fr/pixels/article/2026/08/13/la-plateforme-des-impots-victime-d-une-cyberattaque_6745830_4408996.html",
           "theme": "tech",
-          "time": "20h",
+          "time": "21h",
           "publishedAt": "2026-08-13T17:35:58+00:00",
           "impact": "medium",
           "source": "Le Monde"
@@ -972,7 +972,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPX1kxUkEwVE1uaEpOdmF2ZXFTTFJLaHFjUktkcTE2dHRjLUhQWWR0LTlNYUVnaGlVbmxkU2IzZk92S2huc0ZBb190TEF5V3dPY0dNUm53dWpFaGV5LTYzOXdxSmVTUnhwNFI3a3dEcXNGLXVIR2Z0bm8wUnFLVmdTa01yRGxJZHM0TzZqenFLZHgzTlZSX1QwVDlvRnRFUkVYdTQtWHBadzRoVG1HVkZUZDhHai1xOXNSbmR4UENHR1JFYTYyMEFIUzhVamhMblBwN2tjMzhHZFg?oc=5",
           "theme": "monetary",
-          "time": "17h",
+          "time": "18h",
           "publishedAt": "2026-08-13T20:13:09+00:00",
           "impact": "medium",
           "source": "France 24"
@@ -996,7 +996,7 @@
           },
           "url": "https://www.latribune.fr/article/economie/finances-publiques/13120099713159/politiques-familiales-les-pistes-deconomies-explosives-de-ligf-et-de-ligas",
           "theme": "monetary",
-          "time": "21h",
+          "time": "22h",
           "publishedAt": "2026-08-13T16:20:23+00:00",
           "impact": "low",
           "source": "La Tribune"
@@ -1049,13 +1049,13 @@
           "manual": false
         },
         "exchange": {
-          "value": 6.743,
+          "value": 6.741,
           "unit": "CNY/USD",
-          "trend": "stable",
-          "period": "2026-08-13",
+          "trend": "down",
+          "period": "2026-08-14",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-08-13"
+          "periodEn": "2026-08-14"
         },
         "stockIndex": {
           "name": "SSE Composite",
@@ -1160,7 +1160,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVVNUN0tLQUM2eGtfTFdNdlFpRE1XWHFMYmpmaEphQ2x2R3dvbGVLVFdCU0tibXE3MEhCSnpQNzVUb1pCY0VlZGpoOGgyRHJJZGJHTkdJak9QdWhsQ2ZKRXUzNEFVUFpQcVNEU3FGa0RPWFFJU2lzRm05WTY4anlPdFVqRUtpQUs1NmxEd05HeU80N1h2OWZhS2h0VTFrU29iV1EwMExvN0xwOTlTR0thMw?oc=5",
           "theme": "trade",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-14T12:36:00+00:00",
           "impact": "high",
           "source": "Nikkei Asia"
@@ -1220,7 +1220,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWjFXMjdobXhQVG1kNHlDU2lLZWZHQmxnd2lRRnZwaDUxZU00SHo3eExRWVVjSm9EN21KbDlZNmJadDUyUnQ2eG5sRll6TVdiamszbzBjbFNfbWVBbF9sTVZOcGF1clhzOGVmTVJueTNOTXJScEZXU3ZqMWZSMDJRcjFmWWNXZC1KWUQwbXQtTDdDejVyUFVHTlNEUENzWlhsb2VOdkZkRzFWci1oTzkwMUlTN2U?oc=5",
           "theme": "monetary",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-08-14T10:33:29+00:00",
           "impact": "high",
           "source": "Reuters"
@@ -1232,7 +1232,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTl9rN1VFalExV3BseFRBRGFjZjJBVzJOejAxSURNakZNankwNF9QcTVVbmhDbFp2Q0xaQW4xdFR6Y21hVnZzUUZjZGN0djMzU0QtQlNScmZTVnNIRFZIWHM3aXhTaEwwa1QwMlBHR1VfM0FJamU2QlUxYlo1RXlYU1R2c3JpT3FvOEZkZ1VPekZjOHdDcFhCcWt2d0FlT0VrSTBqeVhqY1hadjUwT01TeA?oc=5",
           "theme": "trade",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-08-14T09:41:00+00:00",
           "impact": "high",
           "source": "WSJ"
@@ -1258,7 +1258,7 @@
           },
           "url": "https://www.rfi.fr/fr/%C3%A9conomie/20260813-c%C3%A9r%C3%A9ales-ukrainiennes-les-attaques-russes-perturbent-les-exportations-et-inqui%C3%A8tent-les-march%C3%A9s-mondiaux",
           "theme": "trade",
-          "time": "21h",
+          "time": "22h",
           "publishedAt": "2026-08-13T16:08:02+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1359,13 +1359,13 @@
           "manual": false
         },
         "exchange": {
-          "value": 95.44,
+          "value": 95.43,
           "unit": "INR/USD",
-          "trend": "stable",
-          "period": "2026-08-13",
+          "trend": "down",
+          "period": "2026-08-14",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-08-13"
+          "periodEn": "2026-08-14"
         },
         "stockIndex": {
           "name": "SENSEX",
@@ -1453,25 +1453,25 @@
       "headlines": [
         {
           "title": {
-            "fr": "Easing India Rupee Volatility May Help Attract More Foreign Money",
-            "en": "Easing India Rupee Volatility May Help Attract More Foreign Money"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZVdhVTZCMzVoVms0azREcGgyMWtubW5WUG1XX3JHR29pOUNYUjNtLUFHSXYzTTlQdnJzS2Q0YUhIMk5hRjF6UVp3dnZ5aDdiODhLYURVYjdSeEZ4T1FOSEY5UTdHRlJ6a3RCWFd1TjVYNUVDSjVGVEpSNzJneG1fY0pXczI5a3p1WWpuSkRfcFlhZGRUOUVVZmxReDFTRTZ4UEdhMkcxUkRVeXh6OHp5NXlFbDktX2hjVzlV?oc=5",
-          "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-08-14T13:12:41+00:00",
-          "impact": "medium",
-          "source": "Bloomberg"
-        },
-        {
-          "title": {
             "fr": "India Raises $50 Billion of Diaspora Dollars, Ends Swap Facility",
             "en": "India Raises $50 Billion of Diaspora Dollars, Ends Swap Facility"
           },
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWjdIV3BMT0VsQzgwQWJHT2F3QnRMNzJVc2dTU0lnV1VLSFRCRFdGMVRfZ0VHaU80c3Z3Y25pei15VE9KUmRMYTJwMzNWNXBvaEpuaVYzZ0M4M0JjOXoyOWFxM3ZsMVd3OVJZaG1LRTE1MHY0Nk1QSFRMcjdIS1pYaFVfLWcxcV9VWk9sS0pYRkktaXFJckdHOTJkU2RMQnpKZnlad1lHNTJ5SjVyT09DSWtDSQ?oc=5",
           "theme": "monetary",
           "time": "1h",
-          "publishedAt": "2026-08-14T12:37:27+00:00",
+          "publishedAt": "2026-08-14T13:42:03+00:00",
+          "impact": "medium",
+          "source": "Bloomberg"
+        },
+        {
+          "title": {
+            "fr": "Easing India Rupee Volatility May Help Attract More Foreign Money",
+            "en": "Easing India Rupee Volatility May Help Attract More Foreign Money"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZVdhVTZCMzVoVms0azREcGgyMWtubW5WUG1XX3JHR29pOUNYUjNtLUFHSXYzTTlQdnJzS2Q0YUhIMk5hRjF6UVp3dnZ5aDdiODhLYURVYjdSeEZ4T1FOSEY5UTdHRlJ6a3RCWFd1TjVYNUVDSjVGVEpSNzJneG1fY0pXczI5a3p1WWpuSkRfcFlhZGRUOUVVZmxReDFTRTZ4UEdhMkcxUkRVeXh6OHp5NXlFbDktX2hjVzlV?oc=5",
+          "theme": "monetary",
+          "time": "1h",
+          "publishedAt": "2026-08-14T13:12:41+00:00",
           "impact": "medium",
           "source": "Bloomberg"
         },
@@ -1482,10 +1482,46 @@
           },
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPV1dLY3VxWjJvTnp4aTFkSjlpbENIc0h6RzRqcUR5YzZHSFg3Z0hFSFdnZ3h6MTFvZ1BYNTd6eUttZnJaaGZoR2xfSXFLVzNxOG5LT0dCdU1ZcTc1VnNHcF91VjV5QWszTkRLSm9PXzRmUGoxY0RveGJoQVE3c2t6cGVfTHNyWEtqdG0wUktGU3FheTE3QlpmMjdJbC1ERy16VUhmY1JaU1d4NlVLYnlvc01n?oc=5",
           "theme": "monetary",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-08-14T08:08:29+00:00",
           "impact": "high",
           "source": "Bloomberg"
+        },
+        {
+          "title": {
+            "fr": "India's April-June balance of payments records $8.1 billion deficit, June turns surplus",
+            "en": "India's April-June balance of payments records $8.1 billion deficit, June turns surplus"
+          },
+          "url": "https://economictimes.indiatimes.com/news/economy/finance/indias-april-june-balance-of-payments-records-8-1-billion-deficit-june-turns-surplus/articleshow/133244572.cms",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-08-14T14:27:30+00:00",
+          "impact": "high",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "US stocks: US market opens mixed as investors weigh Middle East tensions, data",
+            "en": "US stocks: US market opens mixed as investors weigh Middle East tensions, data"
+          },
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-market-opens-mixed-as-investors-weigh-middle-east-tensions-data/articleshow/133243568.cms",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-08-14T14:03:13+00:00",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "Cochin Shipyard Q1 Results: Profit falls 19% YoY to Rs 151 crore, revenue up marginally",
+            "en": "Cochin Shipyard Q1 Results: Profit falls 19% YoY to Rs 151 crore, revenue up marginally"
+          },
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/cochin-shipyard-q1-results-profit-falls-19-yoy-to-rs-151-crore-revenue-up-marginally/articleshow/133243674.cms",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-08-14T13:59:26+00:00",
+          "impact": "medium",
+          "source": "Economic Times"
         },
         {
           "title": {
@@ -1494,22 +1530,10 @@
           },
           "url": "https://www.business-standard.com/economy/news/wholesale-inflation-eases-marginally-to-9-78-in-july-as-fuel-prices-cool-126081401771_1.html",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-08-14T13:42:27+00:00",
           "impact": "medium",
           "source": "Business Standard"
-        },
-        {
-          "title": {
-            "fr": "RBI shortens FCNR (B) deposit swap window to Aug 31",
-            "en": "RBI shortens FCNR (B) deposit swap window to Aug 31"
-          },
-          "url": "https://economictimes.indiatimes.com/news/economy/finance/rbi-shortens-fcnr-b-deposit-swap-window-to-aug-31/articleshow/133243209.cms",
-          "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-08-14T13:42:16+00:00",
-          "impact": "low",
-          "source": "Economic Times"
         },
         {
           "title": {
@@ -1518,34 +1542,10 @@
           },
           "url": "https://www.business-standard.com/economy/news/india-s-forex-reserves-climb-past-700-billion-on-robust-inflows-126081401447_1.html",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-08-14T13:19:17+00:00",
           "impact": "low",
           "source": "Business Standard"
-        },
-        {
-          "title": {
-            "fr": "Anchor investors stay put after IPO lock-in, but half their bets are gone within a year: Sebi",
-            "en": "Anchor investors stay put after IPO lock-in, but half their bets are gone within a year: Sebi"
-          },
-          "url": "https://economictimes.indiatimes.com/markets/stocks/news/anchor-investors-stay-put-after-ipo-lock-in-but-half-their-bets-are-gone-within-a-year-sebi/articleshow/133242283.cms",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-08-14T13:03:35+00:00",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "RBI to close FCNR(B) forex swap facility early after strong dollar inflow",
-            "en": "RBI to close FCNR(B) forex swap facility early after strong dollar inflow"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNTFMTzAybFJTUTFSMTFYM2h3QjFlNDFOc0xlLW1wZWdYVE9Mcms5aEwzRHp1WERYZVJtSTVHNGt1MU53Mkd5cE5jZHRGVFl6dlZTVGlaRk9jSGZKZTN0NENUaGwzdVViZWFZY0EtalMwVGZMRkM2eE43ekNyaXB4M2RXRmhZNTVQUENiZTNjNllZZC1vLVd4ekw5S1VLMG5XM3pRVkxXbkttNFRrNWhqTHRhVm1WdnQ3RzYxRjVWTGNJNUR4ODFpOHZ2eWYyTnNVaFHSAdcBQVVfeXFMT2dBOGlmaG9wMWJ6ZjNGaWV6YWVIYjZvZ0tCT2Y1YXc4c3d6bTdJN1E4VmRVS0NTako1MFhrUDY2VlBlMmxxak16NHIxTnhoOV9tSmdzVkdvbWJMa3VzcmZJczkxV3I0S3NzdmdSN1BIUmJrX0lpOGtWclhrOXFPMnNIZ0d4TUk1b3NYRmFidl9HeW5LZ2lwUzlibEFUYkFLSzc0cEFmTTFOU0VRWXk0ZTc5VjNPSURic2VWZ1U3Njl3V1kyaWFqNkVDcEt6S2VVV3lfRU9uZVE?oc=5",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-08-14T12:46:36+00:00",
-          "impact": "medium",
-          "source": "Economic Times"
         }
       ],
       "headlinesFr": [
@@ -1639,9 +1639,9 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 163,
-          "trend": "up",
-          "change": 0.14,
+          "value": 162,
+          "trend": "stable",
+          "change": -0.03,
           "period": "2026-08-14",
           "periodEn": "2026-08-14"
         }
@@ -1661,7 +1661,7 @@
           92.05,
           72.92,
           90.12,
-          86.92
+          87.61
         ],
         "labels": [
           {
@@ -1707,8 +1707,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 0,14 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 6 relèvent du thème « commerce ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 0.14% on the session. Of the 8 stories retained today, 6 fall under trade."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,03 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « commerce ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.03% on the session. Of the 8 stories retained today, 5 fall under trade."
       },
       "headlines": [
         {
@@ -1737,27 +1737,51 @@
         },
         {
           "title": {
+            "fr": "Watch US Targets Iran with New Sanctions and 'Economic Fury'",
+            "en": "Watch US Targets Iran with New Sanctions and 'Economic Fury'"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNd0lkcHhCeFIxMldfZ1BTdURJODVKcWdNc0kwblVwOXNsV0RFTlZBMm1DRGl5ZFo0ZzJEd2tQLU1KeWlVZzg1bHlFcHBFZGhKbWp2eVFJREtRQnh5RkZkalluTkthd3JGcGRydzRmRFpET2laMUgtWHJqREEwa25xYU1DUlQyLUgwVExEOTlndFE4bVFqR3VfeldpWnhpaTBEMFpN?oc=5",
+          "theme": "geopolitics",
+          "time": "1h",
+          "publishedAt": "2026-08-14T12:58:06+00:00",
+          "impact": "high",
+          "source": "Bloomberg"
+        },
+        {
+          "title": {
+            "fr": "Colorado treasurer claims tariffs hurting craft beer and wine industries",
+            "en": "Colorado treasurer claims tariffs hurting craft beer and wine industries"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc2hNc3ZSb1VlR241U2xJeTlZMmR0RnJfSG94N1FtVXJ6dUw0OENZV2ZQRHRqamZoeFlMYWNFZmJkeW13eHZDU0V6YjlrUC1WTDI1b1BYUTRUcXEtSDAxaGtMcXM0VmFFSGdVZ2tKbGdxQ2ViVERtRHo3MjRKcGlFb0hKUlpUYWtqcTBJcHZZbnpMQ19vRkRoX1lKMzRUMmdUSjZ0dHdIMzE2TEU?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-14T14:06:10+00:00",
+          "impact": "high",
+          "source": "CBS News"
+        },
+        {
+          "title": {
+            "fr": "Drone stocks rally after Trump orders tariffs on foreign-made components",
+            "en": "Drone stocks rally after Trump orders tariffs on foreign-made components"
+          },
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1GQUF6cHZWVVdJZEduVGlfaVp6b1JYa1U5V0VtS2RuWVNYNFFDbXI5RDZqYm9JUmhTVUhuZHE1RDloYjlibGdCb28zaHY1cFdnR1VwYmd0NlVMS1o2eFRvcG5UMGVZQUpqMTJjTjlqN1LSAXZBVV95cUxNUHgzYzlnclN3VDZraEc3U0JQY3FCd1NzcE5zZ0dwQzdjUWhZR05wdGNRMlcxb2hxZTZaaE1RRDJMY2EtX0ZobXJTV1JQdmFiRFJfZHRyaHl5ZS1mMVprYkw5cnAyQVJ4SHRUeWtkUWhBRGpWajZR?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-14T14:01:32+00:00",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
             "fr": "Trump's tariffs unevenly reshape American manufacturing",
             "en": "Trump's tariffs unevenly reshape American manufacturing"
           },
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVVNUN0tLQUM2eGtfTFdNdlFpRE1XWHFMYmpmaEphQ2x2R3dvbGVLVFdCU0tibXE3MEhCSnpQNzVUb1pCY0VlZGpoOGgyRHJJZGJHTkdJak9QdWhsQ2ZKRXUzNEFVUFpQcVNEU3FGa0RPWFFJU2lzRm05WTY4anlPdFVqRUtpQUs1NmxEd05HeU80N1h2OWZhS2h0VTFrU29iV1EwMExvN0xwOTlTR0thMw?oc=5",
           "theme": "trade",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-14T12:36:00+00:00",
           "impact": "high",
           "source": "Nikkei Asia"
-        },
-        {
-          "title": {
-            "fr": "Colorado's state treasurer claims tariffs hurting craft beer and wine industry",
-            "en": "Colorado's state treasurer claims tariffs hurting craft beer and wine industry"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQ0UwVjJ6RExmUVRYOU01ZldsemZCem1lUjlqUUNBajlsTVVRTlZ3clJSeDdQR0E4TVI4eG9TNkZ5bWREbFpmTFJuYnNsSU5KX1B2dXVaUE1LMTVyMGpLMGNtYV8xNFlPYzFqQWZHeGRKZUE5MWR5NUU3LUhzVnlzcFdvdEpfTThYXzRJWXUwamU2VkVrWnp4a2hpR0VCS01zUS1CSGppal8tSENkdU5lTUdRMUtxekpN?oc=5",
-          "theme": "trade",
-          "time": "<1h",
-          "publishedAt": "2026-08-14T13:37:00+00:00",
-          "impact": "high",
-          "source": "CBS News"
         },
         {
           "title": {
@@ -1782,30 +1806,6 @@
           "publishedAt": "2026-08-14T11:46:00+00:00",
           "impact": "high",
           "source": "WSJ"
-        },
-        {
-          "title": {
-            "fr": "AeroVironment, Ondas, and Kratos Rising as Trump Levies Tariffs on Drone Imports",
-            "en": "AeroVironment, Ondas, and Kratos Rising as Trump Levies Tariffs on Drone Imports"
-          },
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYUtZMTJ5UHE1bUVSOWRZdUVUMFFNNmZJVy1BMjJHMkZiZ0xKNGFQZ1Jfb2pmdlJqQWFQeHQ3SjVEdTh4UVkydmkyTXRBZlg5SXNaR1pQTVFHQ2ZDeFJGWHdmMW9YMzFoaXlzTmZOeERfaEU0WHBYMDlNcG5Na2RWVjhUVzZ2M3ZiaHZOazRET294UQ?oc=5",
-          "theme": "trade",
-          "time": "2h",
-          "publishedAt": "2026-08-14T11:45:00+00:00",
-          "impact": "high",
-          "source": "Barron's"
-        },
-        {
-          "title": {
-            "fr": "White House Slaps Tariffs On Imported Drones—Shares Of Trump Jr.-Linked Drone Maker Soar",
-            "en": "White House Slaps Tariffs On Imported Drones—Shares Of Trump Jr.-Linked Drone Maker Soar"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOS2VfTlBxMkdseHlsZ0lOdElVbGRoNVpCYUltMmNpUDd2Mkl6akFDdHowSTJpdzBpcVRPcnBqQUxfWG1zRmxiRGx4MkxZVGZrX09YaWtNUy13VHd3V202dDVUcnFmcFJraUdLeUc4ZzhFcWpVbElDeHhJU24xdGI5X3ZmQkJ3MEdaaUtYLXFMM0I5RktfUmlqTlFJX0xMcURnSmhOWWduRnRFVXNYdTF0am9BZWtnNTUtS0I2TnFFRTA2RGxrX3RqeDdNSE1xNHhTY2c0VmVRclM?oc=5",
-          "theme": "trade",
-          "time": "2h",
-          "publishedAt": "2026-08-14T11:33:50+00:00",
-          "impact": "high",
-          "source": "Forbes"
         }
       ],
       "headlinesFr": [
@@ -1828,7 +1828,7 @@
           },
           "url": "https://www.latribune.fr/article/economie/finances-publiques/13120099713159/politiques-familiales-les-pistes-deconomies-explosives-de-ligf-et-de-ligas",
           "theme": "monetary",
-          "time": "21h",
+          "time": "22h",
           "publishedAt": "2026-08-13T16:20:23+00:00",
           "impact": "low",
           "source": "La Tribune"
@@ -1840,7 +1840,7 @@
           },
           "url": "https://www.rfi.fr/fr/%C3%A9conomie/20260813-c%C3%A9r%C3%A9ales-ukrainiennes-les-attaques-russes-perturbent-les-exportations-et-inqui%C3%A8tent-les-march%C3%A9s-mondiaux",
           "theme": "trade",
-          "time": "21h",
+          "time": "22h",
           "publishedAt": "2026-08-13T16:08:02+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1871,18 +1871,6 @@
         },
         {
           "title": {
-            "fr": "Les tarifs américains de 50% feraient mal aux PME",
-            "en": "Les tarifs américains de 50% feraient mal aux PME"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOX1VodlJib2xneVMxT19haEN5SEczX2NLaVpXUEtFSlFJZElscmpLZkZpZFptNHNDOW44ZzVJUWZUWE1MVEx3NGw1WHlvT0lDT3NpNWhHaXZudExfa0Q1U0hzZENQU1kyRmlsNjBzbjlTTkVId3F5ZHU2bVFmNmlHNDAtTnRTVjFaaFNNNlBQdEdJZElWLXhMamIxTHZuMUFYNmhjY0I3MFBtYUF4Xy1Xb3FzejJWdw?oc=5",
-          "theme": "trade",
-          "time": "1j",
-          "publishedAt": "2026-08-12T21:08:34+00:00",
-          "impact": "high",
-          "source": "Les Affaires"
-        },
-        {
-          "title": {
             "fr": "Tarifs : l’opposition dénonce la mise sur pied tardive de cellules de crise par Fréchette",
             "en": "Tarifs : l’opposition dénonce la mise sur pied tardive de cellules de crise par Fréchette"
           },
@@ -1904,6 +1892,18 @@
           "publishedAt": "2026-08-11T17:33:51+00:00",
           "impact": "high",
           "source": "Les Affaires"
+        },
+        {
+          "title": {
+            "fr": "Pharmaceutique: un rapprochement à près de 350 milliards d'euros en réponse à «la falaise des brevets»",
+            "en": "Pharmaceutique: un rapprochement à près de 350 milliards d'euros en réponse à «la falaise des brevets»"
+          },
+          "url": "https://www.rfi.fr/fr/%C3%A9conomie/20260804-pharmaceutique-un-rapprochement-%C3%A0-pr%C3%A8s-de-350-milliards-d-euros-en-r%C3%A9ponse-%C3%A0-la-falaise-des-brevets",
+          "theme": "monetary",
+          "time": "1s",
+          "publishedAt": "2026-08-04T09:50:20+00:00",
+          "impact": "medium",
+          "source": "RFI"
         }
       ]
     }
@@ -1960,8 +1960,8 @@
         "en": "Hormuz, reopened then re-closed, keeps the rupee under pressure"
       },
       "description": {
-        "fr": "Le conflit autour du détroit d'Ormuz fait osciller le Brent depuis février 2026 : culminant près de 118 $ en mars, retombé sous 70 $ le 1er juillet après un protocole d'entente américano-iranien, puis reparti à la hausse après le 10 juillet quand des attaques contre des navires marchands ont refermé le détroit au trafic courant. Le Brent se négocie à 87 $ au dernier passage. L'Inde, importatrice nette de pétrole, encaisse chaque à-coup par sa monnaie et ses prix : la roupie s'échange à 95,44 INR/USD, et l'inflation est ressortie à 4,8 % en juin selon l'OCDE, contre 2,7 % affiché en début d'année sur une donnée qui datait de janvier.",
-        "en": "The standoff over the Strait of Hormuz has swung Brent since February 2026: peaking near $118 in March, falling below $70 on 1 July after a US-Iran understanding, then climbing again after 10 July when attacks on merchant vessels re-closed the strait to routine traffic. Brent last traded at $87. India, a net oil importer, absorbs each swing through its currency and its prices: the rupee trades at 95.44 INR/USD, and inflation came in at 4.8% in June per the OECD, against a 2.7% figure shown earlier in the year that dated back to January."
+        "fr": "Le conflit autour du détroit d'Ormuz fait osciller le Brent depuis février 2026 : culminant près de 118 $ en mars, retombé sous 70 $ le 1er juillet après un protocole d'entente américano-iranien, puis reparti à la hausse après le 10 juillet quand des attaques contre des navires marchands ont refermé le détroit au trafic courant. Le Brent se négocie à 88 $ au dernier passage. L'Inde, importatrice nette de pétrole, encaisse chaque à-coup par sa monnaie et ses prix : la roupie s'échange à 95,43 INR/USD, et l'inflation est ressortie à 4,8 % en juin selon l'OCDE, contre 2,7 % affiché en début d'année sur une donnée qui datait de janvier.",
+        "en": "The standoff over the Strait of Hormuz has swung Brent since February 2026: peaking near $118 in March, falling below $70 on 1 July after a US-Iran understanding, then climbing again after 10 July when attacks on merchant vessels re-closed the strait to routine traffic. Brent last traded at $88. India, a net oil importer, absorbs each swing through its currency and its prices: the rupee trades at 95.43 INR/USD, and inflation came in at 4.8% in June per the OECD, against a 2.7% figure shown earlier in the year that dated back to January."
       },
       "impact": "high"
     },
