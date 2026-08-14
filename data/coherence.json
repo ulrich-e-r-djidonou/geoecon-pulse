@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-13",
+  "date": "2026-08-14",
   "controles": [
     {
       "indicateur": "Taux de change CA",
@@ -7,8 +7,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 1.3949,
       "sourceB": "Yahoo Finance",
-      "valeurB": 1.393,
-      "ecart": 0.0014,
+      "valeurB": 1.3867,
+      "ecart": 0.0059,
       "suspect": false
     },
     {
@@ -17,8 +17,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 6.743,
       "sourceB": "Yahoo Finance",
-      "valeurB": 6.7423,
-      "ecart": 0.0001,
+      "valeurB": 6.7302,
+      "ecart": 0.0019,
       "suspect": false
     },
     {
@@ -27,8 +27,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 95.44,
       "sourceB": "Yahoo Finance",
-      "valeurB": 95.43,
-      "ecart": 0.0001,
+      "valeurB": 95.415,
+      "ecart": 0.0003,
       "suspect": false
     },
     {
@@ -58,6 +58,16 @@
       "valeurA": 3.625,
       "sourceB": "BRI",
       "valeurB": 3.625,
+      "ecart": 0.0,
+      "suspect": false
+    },
+    {
+      "indicateur": "Inflation US",
+      "type": "source_double",
+      "sourceA": "BLS",
+      "valeurA": 3.4,
+      "sourceB": "OCDE",
+      "valeurB": 3.4,
       "ecart": 0.0,
       "suspect": false
     },
@@ -106,6 +116,16 @@
       "type": "borne_plausibilite",
       "sourceA": "Statistique Canada",
       "valeurA": 6.4,
+      "sourceB": null,
+      "valeurB": "[1, 40]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "Chômage US",
+      "type": "borne_plausibilite",
+      "sourceA": "BLS",
+      "valeurA": 4.1,
       "sourceB": null,
       "valeurB": "[1, 40]",
       "ecart": null,
