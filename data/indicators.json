@@ -47,19 +47,19 @@
           "periodEn": "Aug. 2026"
         },
         "exchange": {
-          "value": 1.374,
+          "value": 1.385,
           "unit": "CAD/USD",
-          "trend": "stable",
-          "period": "2026-08-21",
+          "trend": "up",
+          "period": "2026-08-24",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-08-21"
+          "periodEn": "2026-08-24"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 36559,
-          "trend": "down",
-          "change": -0.17,
+          "value": 36691,
+          "trend": "up",
+          "change": 0.19,
           "period": "2026-08-24",
           "periodEn": "2026-08-24"
         },
@@ -148,45 +148,81 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a créé 75 100 emplois en juillet, le taux de chômage s'établit à 6,4 % (juill. 2026). L'inflation ressort à 3,0 % (juill. 2026) pour un taux directeur de 2,25 % (août 2026). S&P/TSX cède 0,17 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « commerce ».",
-        "en": "The Canadian economy added 75,100 jobs in July, unemployment stands at 6.4% (July 2026). Inflation is 3.0% (July 2026) against a policy rate of 2.25% (Aug. 2026). S&P/TSX is down 0.17% on the session. Of the 8 stories retained today, 8 fall under trade."
+        "fr": "L'économie canadienne a créé 75 100 emplois en juillet, le taux de chômage s'établit à 6,4 % (juill. 2026). L'inflation ressort à 3,0 % (juill. 2026) pour un taux directeur de 2,25 % (août 2026). S&P/TSX gagne 0,19 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « commerce ».",
+        "en": "The Canadian economy added 75,100 jobs in July, unemployment stands at 6.4% (July 2026). Inflation is 3.0% (July 2026) against a policy rate of 2.25% (Aug. 2026). S&P/TSX is up 0.19% on the session. Of the 8 stories retained today, 8 fall under trade."
       },
       "headlines": [
         {
           "title": {
-            "fr": "Trade war could affect defence relationship between Canada and U.S., experts warn",
-            "en": "Trade war could affect defence relationship between Canada and U.S., experts warn"
+            "fr": "Trump says U.S. will raise tariffs on Canadian autos, introduce new levies on auto parts",
+            "en": "Trump says U.S. will raise tariffs on Canadian autos, introduce new levies on auto parts"
           },
-          "url": "https://www.theglobeandmail.com/business/article-trade-war-could-affect-defence-relationship-between-canada-and-us/",
+          "url": "https://www.theglobeandmail.com/politics/article-trump-trade-auto-tariffs-canada/",
           "theme": "trade",
-          "time": "4h",
-          "publishedAt": "2026-08-24T09:00:00+00:00",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T14:12:11+00:00",
           "impact": "high",
           "source": "The Globe and Mail"
         },
         {
           "title": {
-            "fr": "Canada Sees Long Trade War With US That May Last Beyond Midterms",
-            "en": "Canada Sees Long Trade War With US That May Last Beyond Midterms"
+            "fr": "Canada's united front against Trump returns after trade talks collapse",
+            "en": "Canada's united front against Trump returns after trade talks collapse"
           },
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNb25wTkZ2N3FmdGNyQl9uWkdtWW54WTVmNEpMUjJDSWRsbm53c2JEVVNEQmdqd1l1RVQ5cFdnMUNkSE10emxWVTdGTkJvRndnb3BwaDNaVWtCYUJSMDlFOEJHSFVPQ2Y2QjhvQURLX1ZMbG1VZEFrQkVQSHdpUzE1REgzYm5HWE40bmY1Q3Uxeml6dkJDeGNVNm1Db3dlcjI0WDczQU9Gek9VTGpMTmdxcVg1TzFlZw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNejEzbFpOeEgzejFyRUJnY3oyTTNCWlVrM2xrY0ZvWDVFOGZJRVQyY3plbldoZWdmd1hHcHByUUgzTE5EMDlaQUY1SnE1NWtUdEtIRkRfQ19XaDF1aUMxZUM0Ty11UURLeWQ3Q2FiQkFxdXZwaWtsVVdLLW1CYXpmUExsdjRzTlBQVm5uTnNIMzlYdzNVMWxFdVlZZE1yMWFLc0g0ZG4xNzUzX2h0a002QVBrNUxqYmVUQUxYanNCZ1NBVHprMnd5MDJjVU9BVzJFWkttamNndVZnam00?oc=5",
           "theme": "trade",
-          "time": "13h",
-          "publishedAt": "2026-08-23T23:59:52+00:00",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T14:09:29+00:00",
+          "impact": "high",
+          "source": "Le Monde"
+        },
+        {
+          "title": {
+            "fr": "Trump Vows to Double Tariffs on Canadian Autos, Escalating Fight",
+            "en": "Trump Vows to Double Tariffs on Canadian Autos, Escalating Fight"
+          },
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPU1JGVVVpMmhhajM5X0w2MG5ld0RJbzZxR1l1Rm9admRBNHRSUndMb3dkdzd3VTdCenR5QnRFdHR4Smo0M2x0bkxtN3RrVXJzYVlIelBaM0FCSVoxVGZKUXNZWHg5Q1JNUURpc1FmOFRvemVyYlRnWlJidUxoWFI4ZnFUYmZfMGJpOVpjTnFobFpGUDJmWFlfQ251b05kMnNtX0d2MVV4NEdubzAweTJOU181a3c?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T13:50:26+00:00",
           "impact": "high",
           "source": "Bloomberg"
         },
         {
           "title": {
-            "fr": "US-Canada Trade Talks Fell Apart Over Fine Print, Envoy Says",
-            "en": "US-Canada Trade Talks Fell Apart Over Fine Print, Envoy Says"
+            "fr": "Ford to speak in Hamilton amid Canada-U.S. trade war",
+            "en": "Ford to speak in Hamilton amid Canada-U.S. trade war"
           },
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQT3l4QkxOSjFveE9pWW9MYzhQaXEySERWV1Z3eGNpV3NPaW9PZEFBRnBSeC1rMWo5VDFnekdFcHZPWjJUUDNLLWp3RjZwTnI5M1FJWmJoLUc4ODVNOFVjRTdSVkstTE9RRWlKU1h2dlZ6cFB3QUN6LVI1LTNhNmJKcnJpWlNHQXdXV1JwZ3EwbGQ2M25CTF9OTDA2blFqeVNOUHhVcWdlU3RadlAydWNrQ2Nn?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTHlRUGV1Q1pwdnJJc2I1bG1hYzZ1bHNHREVpRVVBVDZfVlR6Z0s3SjlOSjJqOW5nM0p1emdGRGsxbmY3WU5lTTUzaUd5Z24ydi0zc0xpWUhic1NTYm5DamU3ZVc0ZnBVNl9BaGdrWDJEcG92OGxEcHRmbExoMEtVT0hXR2FvU1IxYW81dzdyTjFEM1E?oc=5",
           "theme": "trade",
-          "time": "18h",
-          "publishedAt": "2026-08-23T19:33:43+00:00",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T14:21:24+00:00",
           "impact": "high",
-          "source": "Bloomberg"
+          "source": "CBC"
+        },
+        {
+          "title": {
+            "fr": "Canada sees long trade war with U.S. that may last beyond midterms",
+            "en": "Canada sees long trade war with U.S. that may last beyond midterms"
+          },
+          "url": "https://financialpost.com/news/economy/canada-sees-long-trade-war",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T13:41:13+00:00",
+          "impact": "high",
+          "source": "Financial Post"
+        },
+        {
+          "title": {
+            "fr": "Canada to match U.S. tariffs dollar-for-dollar",
+            "en": "Canada to match U.S. tariffs dollar-for-dollar"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSzZTMDg0UmxER0JhZlFkYjBVbXBUMkpuRGVsNl9TZWVxMXhVYlRiTzdoUkdRd084SVpNR3QyN3prcjdlaTJDR0dqYmRNenBnLVpZZEVPWndqWHdwNHo2THpuLTBFNVQ0NWtMcGtMa0tHdTBMQTRXd3Y2ZVd6dXVBazVScWhYWWJLWVR2NDZFZW5tZ0xWV3dzWDliRnRCUjd3V1dxZ3BGNG0?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T13:38:44+00:00",
+          "impact": "high",
+          "source": "BNN Bloomberg"
         },
         {
           "title": {
@@ -211,42 +247,6 @@
           "publishedAt": "2026-08-24T13:29:58+00:00",
           "impact": "high",
           "source": "Radio-Canada"
-        },
-        {
-          "title": {
-            "fr": "U.S. Tariffs Go Ahead, Canada Plans Counter-Tariffs",
-            "en": "U.S. Tariffs Go Ahead, Canada Plans Counter-Tariffs"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4wRlZBbktjMlBlMHNsSUNLWG5ra2d1WXhzX2tLQWJxdk9mM0wxNEpLVldScUpZVE1ycldkYWhZaWEwdFFNZmZzMGNndEpPUFVjdjB1cUxmcDZzYkprMEE?oc=5",
-          "theme": "trade",
-          "time": "<1h",
-          "publishedAt": "2026-08-24T13:26:21+00:00",
-          "impact": "high",
-          "source": "TD Economics"
-        },
-        {
-          "title": {
-            "fr": "Canada-U.S. trade: Hear from federal leaders after talks collapsed",
-            "en": "Canada-U.S. trade: Hear from federal leaders after talks collapsed"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OOHdZNG1LYzRjOVZ3em85QzZGOWlWZDNvU0tUeGpDZnBURm1FU2ZxWGNKVDlSOGRZeHBpcGNUdHV5d3FSOVRtX2k1R2dLV1RxY0FDNFV4MDdoQQ?oc=5",
-          "theme": "trade",
-          "time": "<1h",
-          "publishedAt": "2026-08-24T13:00:00+00:00",
-          "impact": "high",
-          "source": "CBC"
-        },
-        {
-          "title": {
-            "fr": "Poilievre asks Carney to recall Parliament to discuss collapsed U.S. trade deal",
-            "en": "Poilievre asks Carney to recall Parliament to discuss collapsed U.S. trade deal"
-          },
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMkRUc3JVNVFwOW93aW1IakxTQnNKZ3ZEV0xfQ1pURW9QbzI2QktqN085NXlCSlR0NlNvaEhmejdJaUJQUXRhX3JlaHhvUUZPdFIyc1pQLUVPYnVJQl9YbnBaOHAtRmFCWnpjdVdzNlRYeklWZE5xdm1DeEg1RjViMkQ5NkhJZHRBOTl4a3dhWQ?oc=5",
-          "theme": "trade",
-          "time": "1h",
-          "publishedAt": "2026-08-24T12:15:10+00:00",
-          "impact": "high",
-          "source": "CBC"
         }
       ],
       "provincialAnalysis": {
@@ -254,8 +254,8 @@
           {
             "id": "iran_oil",
             "label": {
-              "fr": "Détroit d'Ormuz fermé, Brent à 94 $",
-              "en": "Strait of Hormuz closed, Brent at $94"
+              "fr": "Détroit d'Ormuz fermé, Brent à 93 $",
+              "en": "Strait of Hormuz closed, Brent at $93"
             },
             "theme": "energy"
           },
@@ -286,8 +286,8 @@
           {
             "id": "weak_cad",
             "label": {
-              "fr": "Dollar canadien à 1,37 CAD/USD",
-              "en": "Canadian dollar at 1.37 CAD/USD"
+              "fr": "Dollar canadien à 1,39 CAD/USD",
+              "en": "Canadian dollar at 1.39 CAD/USD"
             },
             "theme": "monetary"
           }
@@ -382,18 +382,18 @@
             },
             "verdictType": "positive",
             "analysis": {
-              "fr": "Le Brent à 94 $/baril reste un choc positif pour l'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador, mais c'est un choc devenu instable : le baril a culminé près de 118 $ en mars après la fermeture du détroit d'Ormuz, est retombé sous 70 $ le 1er juillet à la faveur du protocole d'entente États-Unis – Iran, puis est reparti à la hausse quand l'entente s'est délitée. La rente est réelle, la planification budgétaire ne l'est plus. Le secteur pétrolier et gazier représente environ 25% du PIB albertain (88 Mds$ en 2024, Alberta Economic Dashboard) et 13% du PIB saskatchewanais (Statistique Canada, 2024). Chaque hausse de 10 USD/baril du Brent génère environ 1,2 Md$ de revenus additionnels pour l'Alberta seule (Trésor de l'Alberta, Budget 2025).\n\nLa Saskatchewan bénéficie d'un double avantage : la hausse pétrolière ET l'accord Canada-Chine sur le canola. La province produit 55% du canola canadien (Canola Council of Canada), et la réduction des tarifs chinois de 84% à 15% rouvre un marché de 4 Mds$/an (Affaires mondiales Canada, mars 2026).\n\nRisques : les tarifs américains de 25% sur l'acier affectent les investissements dans les infrastructures pétrolières. Le ralentissement chinois (cible de croissance la plus basse depuis les années 90) réduit la demande mondiale de brut à moyen terme.",
-              "en": "Brent at $94/barrel remains a positive shock for Alberta, Saskatchewan and Newfoundland & Labrador, but an unstable one: the barrel peaked near $118 in March after the Strait of Hormuz closed, fell below $70 on 1 July under the US-Iran memorandum, then climbed again as that understanding unravelled. The windfall is real; budget planning against it is not. Oil and gas accounts for roughly 25% of Alberta's GDP ($88B in 2024, Alberta Economic Dashboard) and 13% of Saskatchewan's GDP (Statistics Canada, 2024). Each $10 USD/barrel increase in Brent generates approximately $1.2B in additional revenue for Alberta alone (Alberta Treasury, Budget 2025).\n\nSaskatchewan benefits from a double tailwind: oil price surge AND the Canada-China canola deal. The province produces 55% of Canadian canola (Canola Council of Canada), and the tariff reduction from 84% to 15% reopens a $4B/year market (Global Affairs Canada, March 2026).\n\nRisks: US 25% steel tariffs affect investment in oil infrastructure. Chinese slowdown (lowest growth target since the 90s) reduces global crude demand in the medium term."
+              "fr": "Le Brent à 93 $/baril reste un choc positif pour l'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador, mais c'est un choc devenu instable : le baril a culminé près de 118 $ en mars après la fermeture du détroit d'Ormuz, est retombé sous 70 $ le 1er juillet à la faveur du protocole d'entente États-Unis – Iran, puis est reparti à la hausse quand l'entente s'est délitée. La rente est réelle, la planification budgétaire ne l'est plus. Le secteur pétrolier et gazier représente environ 25% du PIB albertain (88 Mds$ en 2024, Alberta Economic Dashboard) et 13% du PIB saskatchewanais (Statistique Canada, 2024). Chaque hausse de 10 USD/baril du Brent génère environ 1,2 Md$ de revenus additionnels pour l'Alberta seule (Trésor de l'Alberta, Budget 2025).\n\nLa Saskatchewan bénéficie d'un double avantage : la hausse pétrolière ET l'accord Canada-Chine sur le canola. La province produit 55% du canola canadien (Canola Council of Canada), et la réduction des tarifs chinois de 84% à 15% rouvre un marché de 4 Mds$/an (Affaires mondiales Canada, mars 2026).\n\nRisques : les tarifs américains de 25% sur l'acier affectent les investissements dans les infrastructures pétrolières. Le ralentissement chinois (cible de croissance la plus basse depuis les années 90) réduit la demande mondiale de brut à moyen terme.",
+              "en": "Brent at $93/barrel remains a positive shock for Alberta, Saskatchewan and Newfoundland & Labrador, but an unstable one: the barrel peaked near $118 in March after the Strait of Hormuz closed, fell below $70 on 1 July under the US-Iran memorandum, then climbed again as that understanding unravelled. The windfall is real; budget planning against it is not. Oil and gas accounts for roughly 25% of Alberta's GDP ($88B in 2024, Alberta Economic Dashboard) and 13% of Saskatchewan's GDP (Statistics Canada, 2024). Each $10 USD/barrel increase in Brent generates approximately $1.2B in additional revenue for Alberta alone (Alberta Treasury, Budget 2025).\n\nSaskatchewan benefits from a double tailwind: oil price surge AND the Canada-China canola deal. The province produces 55% of Canadian canola (Canola Council of Canada), and the tariff reduction from 84% to 15% reopens a $4B/year market (Global Affairs Canada, March 2026).\n\nRisks: US 25% steel tariffs affect investment in oil infrastructure. Chinese slowdown (lowest growth target since the 90s) reduces global crude demand in the medium term."
             },
             "strengths": {
               "fr": [
-                "Revenus pétroliers exceptionnels (Brent à 94 $)",
+                "Revenus pétroliers exceptionnels (Brent à 93 $)",
                 "Saskatchewan : double gain pétrole + canola",
                 "Dollar canadien faible amplifie les revenus en CAD",
                 "Terre-Neuve : production offshore Hibernia/Terra Nova en pleine capacité"
               ],
               "en": [
-                "Exceptional oil revenues (Brent at $94)",
+                "Exceptional oil revenues (Brent at $93)",
                 "Saskatchewan: double gain from oil + canola",
                 "Weak Canadian dollar amplifies CAD revenues",
                 "Newfoundland: Hibernia/Terra Nova offshore at full capacity"
@@ -428,8 +428,8 @@
             },
             "verdictType": "negative",
             "analysis": {
-              "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien à 1,37 CAD/USD améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
-              "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the Canadian dollar at 1.37 CAD/USD improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
+              "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien à 1,39 CAD/USD améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
+              "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the Canadian dollar at 1.39 CAD/USD improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
             },
             "strengths": {
               "fr": [
@@ -449,13 +449,13 @@
               "fr": [
                 "Tarifs de 25% : impact direct sur 46% du PIB manufacturier canadien",
                 "Aluminium québécois : 2,8 Mds$ d'exports vers les US menacés",
-                "Pétrole à 94 $ : hausse des coûts de transport et d'intrants",
+                "Pétrole à 93 $ : hausse des coûts de transport et d'intrants",
                 "Incertitude CUSMA pèse sur les décisions d'investissement"
               ],
               "en": [
                 "25% tariffs: direct impact on 46% of Canadian manufacturing GDP",
                 "Quebec aluminum: $2.8B in US exports threatened",
-                "Oil at $94: rising transport and input costs",
+                "Oil at $93: rising transport and input costs",
                 "CUSMA uncertainty weighs on investment decisions"
               ]
             }
@@ -544,13 +544,13 @@
             },
             "weaknesses": {
               "fr": [
-                "Importatrices nettes d'énergie — plein impact du pétrole à 94 $",
+                "Importatrices nettes d'énergie — plein impact du pétrole à 93 $",
                 "Dépendance aux transferts fédéraux (35-40% des revenus)",
                 "Ralentissement ON/QC réduit la base de péréquation",
                 "Marges de raffinage comprimées par la volatilité du brut"
               ],
               "en": [
-                "Net energy importers — full impact of oil at $94",
+                "Net energy importers — full impact of oil at $93",
                 "Dependence on federal transfers (35-40% of revenues)",
                 "ON/QC slowdown reduces equalization base",
                 "Refining margins squeezed by crude price volatility"
@@ -562,12 +562,24 @@
       "headlinesFr": [
         {
           "title": {
+            "fr": "Trump menace les voitures produites au Canada de 50 % de tarifs dès janvier 2027",
+            "en": "Trump menace les voitures produites au Canada de 50 % de tarifs dès janvier 2027"
+          },
+          "url": "https://www.ledevoir.com/economie/1003622/trump-menace-voitures-produites-canada-50-tarifs-janvier-2027",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T14:09:53+00:00",
+          "impact": "high",
+          "source": "Le Devoir"
+        },
+        {
+          "title": {
             "fr": "Planète économique | La « Pologne 2.0 » arrive par l’investissement étranger",
             "en": "Planète économique | La « Pologne 2.0 » arrive par l’investissement étranger"
           },
           "url": "https://www.lapresse.ca/affaires/economie/2026-08-24/planete-economique/la-pologne-2-0-arrive-par-l-investissement-etranger.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "geopolitics",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-08-24T11:00:00+00:00",
           "impact": "medium",
           "source": "La Presse"
@@ -579,10 +591,34 @@
           },
           "url": "https://www.lapresse.ca/affaires/economie/2026-08-24/guerre-commerciale/les-trois-quarts-des-canadiens-approuvent-le-refus-de-negocier-de-carney.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "trade",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-08-24T09:00:00+00:00",
           "impact": "high",
           "source": "La Presse"
+        },
+        {
+          "title": {
+            "fr": "Guerre commerciale : nouvelle menace de Trump visant le secteur automobile",
+            "en": "Guerre commerciale : nouvelle menace de Trump visant le secteur automobile"
+          },
+          "url": "https://ici.radio-canada.ca/info/en-direct/1014142/guerre-commerciale-tarifs-provinces-opposition-trump",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T14:09:12+00:00",
+          "impact": "high",
+          "source": "Radio-Canada"
+        },
+        {
+          "title": {
+            "fr": "Guerre commerciale : Pierre Poilievre demande à Mark Carney de convoquer les Communes",
+            "en": "Guerre commerciale : Pierre Poilievre demande à Mark Carney de convoquer les Communes"
+          },
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNd0FqdktmeFczOW1PZWNZY1RScHNOR0pnOWo5c1UtblQ2d0JzUUpYc2tVcUc1eEZ0TUczNjRkX2FFZnRGUXpyWTNoNVZnX2dvQ1pMVC1rZXNhZUZzaUFPUmwyNzFMSW1nR1lFemZ0OUVTdGFjODJpOWg1T2JGLTlNOGlLcGJxUC1wTHpBb05QQnZSVGQzcTdKZy13?oc=5",
+          "theme": "trade",
+          "time": "2h",
+          "publishedAt": "2026-08-24T11:44:04+00:00",
+          "impact": "high",
+          "source": "Radio-Canada"
         },
         {
           "title": {
@@ -591,22 +627,10 @@
           },
           "url": "https://www.lapresse.ca/affaires/economie/2026-08-24/articles-generaux-et-insolites/quels-produits-canadiens-seront-soumis-aux-droits-de-douane.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "trade",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-08-24T04:00:00+00:00",
           "impact": "medium",
           "source": "La Presse"
-        },
-        {
-          "title": {
-            "fr": "Guerre commerciale : Pierre Poilievre demande à Mark Carney de convoquer les Communes",
-            "en": "Guerre commerciale : Pierre Poilievre demande à Mark Carney de convoquer les Communes"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2277186/poilievre-demande-carney-convoque-communes-tarifs",
-          "theme": "trade",
-          "time": "1h",
-          "publishedAt": "2026-08-24T11:44:04+00:00",
-          "impact": "high",
-          "source": "Radio-Canada"
         },
         {
           "title": {
@@ -615,22 +639,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSm1taHJRWlBpZUFmd1l6bWxfQ05yQ0pnaEZBYlVIZ05xWWx6Z2c0d293X2ZwNGxWaHRZTHpHUURWVzA3Z2hKU3RjeGFkdWtXOTBrclVvRUNvZVFlSzgyNlQ3bHFMWnI5dGtQTWVfOXoxRTNTLWxpYjlVVU5say04Mkh4S2dvNDZJQURxT1FOX1NDSllWekJhR0ZfNmt6QmpTbTdKU3FQMA?oc=5",
           "theme": "trade",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-08-24T04:00:00+00:00",
           "impact": "high",
           "source": "Le Journal de Montréal"
-        },
-        {
-          "title": {
-            "fr": "Tarifs douaniers : Christine Fréchette critique la stratégie d'Ottawa",
-            "en": "Tarifs douaniers : Christine Fréchette critique la stratégie d'Ottawa"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTFg0RzRwOTNRbDJSX0pKejY3ZVNXS0ZONXU5SEhCRGpJNld4VGZOajlRT0NTejE1MlFNUGtNVkhTME5XUGd5NmNOZDl0RUM2U3RLcG1OTlMzb1VTS25aQzVQaVFHUnFKMmE0cEVGekxrRkRGdjlkbVFsYkVsNTF4M0hYT0MwT2FLRVdOSTJsS3laSjhwZmVmTlpSMlZ0Y0pGUjJUbmNEcVRENGFJdktCMkR6dw?oc=5",
-          "theme": "trade",
-          "time": "10h",
-          "publishedAt": "2026-08-24T03:15:06+00:00",
-          "impact": "high",
-          "source": "Radio-Canada"
         },
         {
           "title": {
@@ -639,22 +651,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWVVGbGFmMUg4SE9hSUJYR2ZwZi1wUF9NSmVqMjM1dUtzOWVjZ1FRanhwcElKdHhYcGZIVmZXSld1eC1RNGRBVlNxQzd4amctWGVUbDhhWnU2Tjl1aGdVRTZmdTJPUEpoZ2VkLWl2emJ2MnFieXZZSVp4bzc4LUlpWEFHRWFENmdfZnlVeGY1ZHdRZ0pZZERXUFFYMTZUblpIaENKWm1Gc082RXBrRTBSZGdB?oc=5",
           "theme": "trade",
-          "time": "10h",
+          "time": "11h",
           "publishedAt": "2026-08-24T03:10:03+00:00",
           "impact": "high",
           "source": "Radio-Canada"
-        },
-        {
-          "title": {
-            "fr": "Face aux tarifs douaniers américains, les entreprises québécoises demandent plus que des prêts",
-            "en": "Face aux tarifs douaniers américains, les entreprises québécoises demandent plus que des prêts"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUjcwN2VsNUpPN2VxdVJjSWhnYWJJWmxIaWhGeTJkMHYyOVBuem1NeUYtbnlwRnZvV2c3bDFlZS0xTmw0OTZfQTN6ZzJNQlVHUUt2QUp3c19pNHE2OFlueF9SUUlrUUM0UmRjb0xkRGFEYkxadzN6aUNNU1E0Wi1mSEZwblEtU1pMUUtSWWR6QWRyNmRiYmhLcE1TNmVJdmVOdjRRbTF0bDYydHJVdUV5akl0aTZjeWhscDg4?oc=5",
-          "theme": "trade",
-          "time": "13h",
-          "publishedAt": "2026-08-24T00:00:18+00:00",
-          "impact": "high",
-          "source": "Le Devoir"
         }
       ]
     },
@@ -712,9 +712,9 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7650,
+          "value": 7646,
           "trend": "down",
-          "change": -0.32,
+          "change": -0.37,
           "period": "2026-08-24",
           "periodEn": "2026-08-24"
         },
@@ -749,7 +749,7 @@
           7580.06,
           7499.36,
           7489.72,
-          7649.08
+          7645.72
         ],
         "labels": [
           {
@@ -803,8 +803,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a perdu 23 000 emplois en juillet, le taux de chômage s'établit à 4,1 % (juill. 2026). L'inflation ressort à 3,4 % (juill. 2026) pour un taux directeur de 3,625 % (août 2026). S&P 500 cède 0,32 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
-        "en": "The US economy shed 23,000 jobs in July, unemployment stands at 4.1% (July 2026). Inflation is 3.4% (July 2026) against a policy rate of 3.625% (Aug. 2026). S&P 500 is down 0.32% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
+        "fr": "L'économie américaine a perdu 23 000 emplois en juillet, le taux de chômage s'établit à 4,1 % (juill. 2026). L'inflation ressort à 3,4 % (juill. 2026) pour un taux directeur de 3,625 % (août 2026). S&P 500 cède 0,37 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
+        "en": "The US economy shed 23,000 jobs in July, unemployment stands at 4.1% (July 2026). Inflation is 3.4% (July 2026) against a policy rate of 3.625% (Aug. 2026). S&P 500 is down 0.37% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
       },
       "headlines": [
         {
@@ -814,7 +814,7 @@
           },
           "url": "https://www.ft.com/content/7a9f5756-bf18-4a42-80d1-653c955447aa?syn-25a6b1a6=1",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-24T12:00:01+00:00",
           "impact": "medium",
           "source": "Financial Times"
@@ -826,7 +826,7 @@
           },
           "url": "https://www.ft.com/content/ec7c91bb-358b-44ad-bced-8c901f7339e2?syn-25a6b1a6=1",
           "theme": "geopolitics",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-08-24T10:00:12+00:00",
           "impact": "medium",
           "source": "Financial Times"
@@ -838,10 +838,22 @@
           },
           "url": "https://www.ft.com/content/77b94c4a-4b4b-4983-9138-7db6926150f4?syn-25a6b1a6=1",
           "theme": "tech",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-08-24T04:00:05+00:00",
           "impact": "medium",
           "source": "Financial Times"
+        },
+        {
+          "title": {
+            "fr": "Gold rally gains momentum ahead of US inflation, Jackson Hole event",
+            "en": "Gold rally gains momentum ahead of US inflation, Jackson Hole event"
+          },
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUkZtQVBPdjlyb21JaVBxeFRicDFEeHVNQ21pZzdGQnlSMUpFYV80MEl3RjJUbF9tYWxmdkZqY2NpaXh5S0NPd1lhbFZxUHZMVVFkTHNyNktCX2hrUU5KN3hjcWRUVTlaQ0hwcmVoMV9VZjBmUkFjMGtTUUY5MXBwRDRFWXBwQnhZTzU1dV81LThOaTNZR1BLVDRGU1JtbDczRjVweFByWkVQbWhhX3VwYTlJZ0VYblU?oc=5",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T14:08:00+00:00",
+          "impact": "medium",
+          "source": "Reuters"
         },
         {
           "title": {
@@ -862,22 +874,10 @@
           },
           "url": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-08-24T13:17:35+00:00",
           "impact": "medium",
           "source": "CNBC"
-        },
-        {
-          "title": {
-            "fr": "Bond market anxiety raises stakes for Warsh's debut Jackson Hole speech",
-            "en": "Bond market anxiety raises stakes for Warsh's debut Jackson Hole speech"
-          },
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcnNlclhfMG4yZE9OTExTUEQ4Zi1sUml5RFdoUVZiU2tXd3EtaTJSc0E4YlRBQUp4T1hvSzdmVHRBeFhobTMxV1hodmhsRl80Zm4zSldlTzBWTGJMeTNEd0RnekpmLV9RaVprUWp4SlBCQXJheXc1ZUt4NEx2T3pON0NQQTVlQTlldVA0SWRWdmN6OWVwc25jUlRBeGFTUFIzaC1YNlRQSzFrREtrQ3FXWQ?oc=5",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-08-24T12:21:07+00:00",
-          "impact": "high",
-          "source": "Reuters"
         },
         {
           "title": {
@@ -886,7 +886,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/crerd8l3pw5o?at_medium=RSS&at_campaign=rss",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-08-24T10:55:47+00:00",
           "impact": "low",
           "source": "BBC"
@@ -898,7 +898,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYzJ1cVl2Ny1WanlFSEpJczFRQ19DSnJoeUJQNmwxNFVvZm1OUXVodzRPVElZZXBNLW5Ndnp5REdRRjB5Z19fREtlX09qNXBtNll3WlBud3ptZnFtdWtwbzFLVkw2MHJId3FXMGFhZTF0d2x0ZnNsdUthU1ZmaW1URmIzZ1kxR0JUU2lwTG41aE44YlotT3hIUjlDZ1VhSThxelVTNjRreWhnbWtqRjZEMjhLekJuWDZfZUFqcVJGcDJnZk0?oc=5",
           "theme": "monetary",
-          "time": "6h",
+          "time": "7h",
           "publishedAt": "2026-08-24T07:03:00+00:00",
           "impact": "medium",
           "source": "The Guardian"
@@ -924,7 +924,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQZUlaTjFuMGpILVBJWmc5aTVRdGhPYWJxUlY5bXJsaWxMbTVYSjVnZDdIOHJaaEdlNlJZOVR6dlJKd0FuQTUtSWxVNGZJTUs5NFlYZ1FkWEJEMEVMTXlXUjJiRk9waW9kQ3Q0dGxGcHQ4UDZ1dXJ0YWllZ2Nfc01xZVh0UHEyYlVZX1Q5TEc5OVlTOFU3TDBodzMtM2taN2dTUEJ1aW5wcmZ2SUkyX0x5Vk55czYyVjIxaGFrSmdHc3FqUXpTSHVMX3VZS1RMNW1WU1lHc09mXy1zb1YtMTVDNmkxbjJXMGxjYlF5WTVIejdXbGotQ3B5OFczc08waUFDOUFvTGpOVEZsR0wyU3o0?oc=5",
           "theme": "geopolitics",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-08-24T10:15:56+00:00",
           "impact": "high",
           "source": "Le Monde"
@@ -936,7 +936,7 @@
           },
           "url": "https://www.lemonde.fr/economie/article/2026/08/24/shein-champion-mondial-de-l-ultrafast-fashion-se-lance-en-bourse-avec-des-ambitions-bridees-par-le-ralentissement-de-sa-croissance_6754988_3234.html",
           "theme": "monetary",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-08-24T06:02:00+00:00",
           "impact": "low",
           "source": "Le Monde"
@@ -948,7 +948,7 @@
           },
           "url": "https://www.latribune.fr/article/entreprises-finance/industrie/40357250230107/le-credit-dimpot-industrie-verte-prolonge-et-focalise-sur-quatre-industries-cles",
           "theme": "trade",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-24T12:22:54+00:00",
           "impact": "medium",
           "source": "La Tribune"
@@ -960,7 +960,7 @@
           },
           "url": "https://www.latribune.fr/article/entreprises-finance/energie-environnement/1811842693243714/face-au-carburant-cher-le-gouvernement-veut-prolonger-les-aides-sans-en-devoiler-le-cout",
           "theme": "monetary",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-08-24T08:03:54+00:00",
           "impact": "medium",
           "source": "La Tribune"
@@ -972,7 +972,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQaVo2WTBuZndpZzZFbzVpQlFuOUlKcnpJS2FaRXRTNGlpVnpiVzhiSkxKdUp4dlJRRGlnU2x6cjJCQUNjTHpYM2t2Wi14bWJfVVJNd2UtQmlnLTRzZG5Rb3lVSmVZTDJ5ZkxnQVFfOVpZbTZjVk4wcFVNWDUwanBVQzFDSlZBUHlPNWN6aTRpekxMRGRlOTZ1Q3FTRHpqNVJuVkRzR1hjd0E3OVZydDc1TnpXLW5OT3dyM0FDNmFMWndXLTJhdHVjVHFkNXB5ZE52TW9aS3FTUlFsMGNWZVV0ODJnY2tIR2RqLXVCT3dOUzY5X2prMlVaSDBVemNPVlk4YVdmS0ZKMEZvODVIUVdPN3Q0dlYwSWhsVm83Wk4xREtsMURKVGhHa0JpOVJpZms?oc=5",
           "theme": "geopolitics",
-          "time": "21h",
+          "time": "22h",
           "publishedAt": "2026-08-23T16:13:29+00:00",
           "impact": "high",
           "source": "Les Echos"
@@ -984,7 +984,7 @@
           },
           "url": "https://www.latribune.fr/article/transports/automobile/41402546413102/emplois-usines-surcapacites-volkswagen-durcit-son-plan-d-economies",
           "theme": "monetary",
-          "time": "22h",
+          "time": "23h",
           "publishedAt": "2026-08-23T15:06:32+00:00",
           "impact": "medium",
           "source": "La Tribune"
@@ -1049,13 +1049,13 @@
           "manual": false
         },
         "exchange": {
-          "value": 6.721,
+          "value": 6.723,
           "unit": "CNY/USD",
-          "trend": "stable",
-          "period": "2026-08-21",
+          "trend": "up",
+          "period": "2026-08-24",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-08-21"
+          "periodEn": "2026-08-24"
         },
         "stockIndex": {
           "name": "SSE Composite",
@@ -1160,7 +1160,7 @@
           },
           "url": "https://www.scmp.com/business/article/3365088/kerry-properties-targets-hong-kong-sites-eyes-luxury-market-mainland-growth-slumps?utm_source=rss_feed",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-24T12:20:58+00:00",
           "impact": "low",
           "source": "South China Morning Post"
@@ -1172,7 +1172,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOb2NaZnZMMVJrYmhpZmE3YmxhZlBmcVdoSGJ5dXNEUkF0Qms1VTlJNFd5X2dxdUttckl4TWY5SnBDNDB4czhaTGlRUDUtd3BNRWFJcEZZRTNtQVBqRHVpWTl4dGdWRnpVTlhuU1BRY0x4TGl6OFBxSXowa05HNzlMU2J6LVdiWmlPVkswdUwtcjI3eXVLNU1aLU5jVHhxX0RGMWhuMHZtdXRiQ0Z3RWhHZGYtcG1FbDVxNlI4Ty1xOS1fUXdqcXd0dDVab3VMYnNk0gHQAUFVX3lxTE5vY1pmdkwxUmtiaGlmYTdibGFmUGZxV2hIYnl1c0RSQXRCazVVOUk0V3lfZ3F1S21ySXhNZjlKcEM0MHhzOFpMaVFQNS13cE1FYUlwRllFM21BUGpEdWlZOXh0Z1ZGelVOWG5TUFFjTHhMaXo4UHFJejBrTkc3OUxTYnotV2JaaU9WSzB1TC1yMjd5dUs1TVotTmNUeHFfREYxaG4wdm11dGJDRndFaEdkZi1wbUVsNXE2UjhPLXE5LV9Rd2pxd3R0NVpvdUxic2Q?oc=5",
           "theme": "trade",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-24T12:00:09+00:00",
           "impact": "medium",
           "source": "South China Morning Post"
@@ -1184,7 +1184,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZ2VSRllRaTg1YmZHU1Z4M0tIQ1UweV93Z2ZZeE13anhHbE9oZDNBMUltd2Z3ZHY5TmZuSmdsalh5MW9icjkzVHpyY2RNVW96RUFXb1kydENhQ0o2TVRBSmlETnlJUUFqZEJ0S1VlR2xJOHA3TzVnRzA4VURHdVpuVC1UbjVDa2gtRC0tZGxoWHdOS0tlaG1nM0Y3ZTlLaGotb1B4SzA3THZDU3h2bVdTSEtKSHVIYmk2SDBfMEI0ZXZXQ1BpSDZyQWhFMWVwSVU?oc=5",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-08-24T10:49:43+00:00",
           "impact": "medium",
           "source": "Reuters"
@@ -1208,7 +1208,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTXBBTGdHMmNJRGlxaXhkNDJoS1JCZEE2TW9adUttLVE0MzdXVlNNM2VnNUlrbTFGRkpnN2hOU19tN3pLbV9BY01mZ2FpYTZQZE81OGtkcER3S1pfY0pKZFRDcFBXWG9OVVNKbU5HQlNOLXBaWUh2TXRfTW1VVlVNT2JvT09XanN5SzNlNGcybncxcHNwbGk3VjhvSDBGRVFldy1lZ29IV3FhY1JBQ0NB?oc=5",
           "theme": "trade",
-          "time": "10h",
+          "time": "11h",
           "publishedAt": "2026-08-24T02:57:00+00:00",
           "impact": "high",
           "source": "Bloomberg"
@@ -1220,7 +1220,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNQWtuOFl5ZjFzTnZoenNqeTY4V01sSEFLdkYyNGpWZzRhdzZxRDBfb3hkVC1NQmNjUGhxNU1HOW00MWhRM2JVcnE5SkNkcFV5THZFVmRuYm1VbFBHMFBRbFVzSnk4Z3ZrNXh5dnhET09LWTRKTXNJVVUyM3lLdS1kb2NWQ3RyXzB2a0hSMlk5TEF1NmJ4TFdlT0piTDR0aXpCTmxoZEVmUXhhTjZmUGt6U1Z3YXRsSnhrMmcyblZxLTVrRDV6dlpFdVVaeG04dEVWXzhkdkFJTQ?oc=5",
           "theme": "tech",
-          "time": "12h",
+          "time": "13h",
           "publishedAt": "2026-08-24T00:59:30+00:00",
           "impact": "medium",
           "source": "Le Monde"
@@ -1246,7 +1246,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNamFKV3p1Vy04Sm53OExwRXNvc1hQcVFHTV82ZUMwZ29BTUQ5NC1aTEZsNkRSWjlDOEI2SUpwbWhwS2ozc0ZOUmNqLVJSb1Vza3VxSkVQRXpMMVBuMFUxeUJkUWk2Tm1yZ1JpM19QMVdoUDBJbncxQWxzV1BZUmR4Zm16VWNfY1UtZmNBMEVLRGU3ZTZIaXZrVzdFVktDVGZJWE5Kek53UmJNQk5aTkFQUWxqN1ZpS1A2NG9yQTNXMkNQRXhaUERTYXp4NGRWeTJlLWVxOUhUb0NHMkMtczg3V2FIVmFTRG5VVVhVdWk3NlFTUE9YYnZhYkY1YXEwTnM2TnRaNXFZUV9aRXJjUTlpcNIBkAJBVV95cUxNamFKV3p1Vy04Sm53OExwRXNvc1hQcVFHTV82ZUMwZ29BTUQ5NC1aTEZsNkRSWjlDOEI2SUpwbWhwS2ozc0ZOUmNqLVJSb1Vza3VxSkVQRXpMMVBuMFUxeUJkUWk2Tm1yZ1JpM19QMVdoUDBJbncxQWxzV1BZUmR4Zm16VWNfY1UtZmNBMEVLRGU3ZTZIaXZrVzdFVktDVGZJWE5Kek53UmJNQk5aTkFQUWxqN1ZpS1A2NG9yQTNXMkNQRXhaUERTYXp4NGRWeTJlLWVxOUhUb0NHMkMtczg3V2FIVmFTRG5VVVhVdWk3NlFTUE9YYnZhYkY1YXEwTnM2TnRaNXFZUV9aRXJjUTlpcA?oc=5",
           "theme": "tech",
-          "time": "6h",
+          "time": "7h",
           "publishedAt": "2026-08-24T06:51:59+00:00",
           "impact": "medium",
           "source": "Boursorama"
@@ -1282,7 +1282,7 @@
           },
           "url": "https://www.rfi.fr/fr/%C3%A9conomie/20260819-cyberattaques-en-s%C3%A9rie-contre-le-fisc-en-france-le-gouvernement-sur-la-d%C3%A9fensive",
           "theme": "tech",
-          "time": "4j",
+          "time": "5j",
           "publishedAt": "2026-08-19T14:12:02+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1347,13 +1347,13 @@
           "manual": false
         },
         "exchange": {
-          "value": 95.7,
+          "value": 95.76,
           "unit": "INR/USD",
-          "trend": "stable",
-          "period": "2026-08-21",
+          "trend": "up",
+          "period": "2026-08-24",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-08-21"
+          "periodEn": "2026-08-24"
         },
         "stockIndex": {
           "name": "SENSEX",
@@ -1446,7 +1446,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTzc5NEFHWFNzOXR5VElCWG1sMjhIZ1dGOFpVQWR4ZC04Vkk0WUhVVE5neVdRS0xWYm9KcTgwMHFwSkFzT1lkM0dFWU0xTnR2RDdicFhJX05ZSXdxT3dmT2lndDVMeGljY1FQd3Q1R3BsczEycGp4UWIyOUJPekhUVDA0REhEQjhHSDRBUFBwWFFVUTRWODNpdG1EUTJuR3hhRXhOT3M3dE9CVHd0Ymk5dUo3TQ?oc=5",
           "theme": "trade",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-08-24T09:08:09+00:00",
           "impact": "high",
           "source": "Bloomberg"
@@ -1470,7 +1470,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQckFfNGR5cnlseVlXODhNTGNhNjI1d09FUjZsbWx2UkFGOEZOeWEwZWE0Zll1TkpSOVlxRmxnUkVzSGhLU1JUS2R1U1hFWTc4T1JScWEybDBlUGhuMzZSeDgzQzhxQXZEYm1vS1J1Z1FEVzBoTWJEZXZOMjMwbm1QNFNqaHFxVjdQX2NrUUVwLUNqSDFSaWZhSE5jNlpBdjBzQTMzWGZlbkNUdDFlWEhsaUVYWS1JaVlYelhZQU84UQ?oc=5",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-08-24T13:13:44+00:00",
           "impact": "low",
           "source": "Reuters"
@@ -1482,7 +1482,7 @@
           },
           "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-exports-to-iran-set-to-fall-further-due-to-dubai-halt-us-sanctions/articleshow/133467129.cms",
           "theme": "geopolitics",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-08-24T12:56:33+00:00",
           "impact": "high",
           "source": "Economic Times"
@@ -1494,7 +1494,7 @@
           },
           "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-introduces-it-resilience-index-for-market-infrastructure-institutions-heres-what-you-need-to-know/articleshow/133466515.cms",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-08-24T12:48:51+00:00",
           "impact": "low",
           "source": "Economic Times"
@@ -1617,7 +1617,7 @@
           "name": "MSCI World",
           "value": 160,
           "trend": "down",
-          "change": -0.5,
+          "change": -0.52,
           "period": "2026-08-24",
           "periodEn": "2026-08-24"
         }
@@ -1637,7 +1637,7 @@
           92.05,
           72.92,
           90.12,
-          93.51
+          92.87
         ],
         "labels": [
           {
@@ -1683,8 +1683,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,5 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « géopolitique ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.5% on the session. Of the 8 stories retained today, 4 fall under geopolitics."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,52 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « commerce ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.52% on the session. Of the 8 stories retained today, 5 fall under trade."
       },
       "headlines": [
         {
@@ -1713,78 +1713,90 @@
         },
         {
           "title": {
-            "fr": "High asset prices, not low interest rates, are driving inflation",
-            "en": "High asset prices, not low interest rates, are driving inflation"
+            "fr": "Trump Vows to Double Tariffs on Canadian Autos, Escalating Fight",
+            "en": "Trump Vows to Double Tariffs on Canadian Autos, Escalating Fight"
           },
-          "url": "https://www.ft.com/content/7a9f5756-bf18-4a42-80d1-653c955447aa?syn-25a6b1a6=1",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-08-24T12:00:01+00:00",
-          "impact": "medium",
-          "source": "Financial Times"
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPU1JGVVVpMmhhajM5X0w2MG5ld0RJbzZxR1l1Rm9admRBNHRSUndMb3dkdzd3VTdCenR5QnRFdHR4Smo0M2x0bkxtN3RrVXJzYVlIelBaM0FCSVoxVGZKUXNZWHg5Q1JNUURpc1FmOFRvemVyYlRnWlJidUxoWFI4ZnFUYmZfMGJpOVpjTnFobFpGUDJmWFlfQ251b05kMnNtX0d2MVV4NEdubzAweTJOU181a3c?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T13:50:26+00:00",
+          "impact": "high",
+          "source": "Bloomberg"
         },
         {
           "title": {
-            "fr": "U.S. Treasury to broaden scope of secondary sanctions on Iran, source says",
-            "en": "U.S. Treasury to broaden scope of secondary sanctions on Iran, source says"
+            "fr": "Trump announces 50% tariffs on Canadian auto and steel imports starting in 2027",
+            "en": "Trump announces 50% tariffs on Canadian auto and steel imports starting in 2027"
           },
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb0FZaGVaRDU5ZGhzbm1uaHBtUDIwNEhOUk96ZkxVNlRubGFIbHdXTmZhTU1YM2lrclBjNkpkNmlQWnIwUW9pS0xkazBKU2VTZXZMR2RlR0RWTTBnRUVKb2J1SzdyOGNGRjBBWFo4ZnRVQ1dLNG9KT2hTNU5SUGRNNDFERkctaW5oYlhjbTF6VjZNZmZBZHNjemVYZzZCZkFRRkE3MFlJMFlrTl9qT3VaZWQzQ3NnYlE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2OHRGOXIza0dzMS1neUR1N1hJbllUaDVDb1YzcGRTNTdySkxSZkdseVFlbWZhTUJVNXNyeWZHTHBvUkJxNVVoN0JBc09NSGl5VmtBMDlpZlRIdlRrcW0wZWxaS1ZvaWZjeVR1OU4yeUhTcVFkU2Y0bg?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T14:18:11+00:00",
+          "impact": "high",
+          "source": "CBS News"
+        },
+        {
+          "title": {
+            "fr": "Trump hits back at Carney, threatens to hike auto, truck, metals tariffs to 50%",
+            "en": "Trump hits back at Carney, threatens to hike auto, truck, metals tariffs to 50%"
+          },
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNd1lmcVp0cU5yRWMtV3Y0eU4xUlR2aENvZ2hHZi1mM3ZYY1YzV0Z4UUw5STQ4Tms3X0N4S04zS3ppdWZObGpMcVNHZU5IN1lpOW51U2ZoRkhZbzFoMUJlc0tZYWYtWUdKMTRseTNkYWt6dGJwaVZXOG1Xc0lZZHRGMXhWckpfdU1HY09JRnRB?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T14:03:00+00:00",
+          "impact": "high",
+          "source": "NBC News"
+        },
+        {
+          "title": {
+            "fr": "Can Iran survive Trump's new sanctions?",
+            "en": "Can Iran survive Trump's new sanctions?"
+          },
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MTk9lSXJvYzFESWRfMDVBYi1SR3o2bHVDZ3FTM0dsWFFqMW9kekhMeW5JWXM5azluTmdTNUFvMDZ0QkZob1N4Z292V0p0ZW1qTTR2LXJVNmdVejh4SHZLRjV4dmtzdTdmTDdERU1BM3pMZFJvSnJVNDZ0TVJkaU0?oc=5",
           "theme": "geopolitics",
           "time": "<1h",
-          "publishedAt": "2026-08-24T12:52:46+00:00",
-          "impact": "high",
-          "source": "Reuters"
-        },
-        {
-          "title": {
-            "fr": "Treasury Secretary Scott Bessent to unveil new economic sanctions on Iran",
-            "en": "Treasury Secretary Scott Bessent to unveil new economic sanctions on Iran"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVVlnRnlJRzZOY2ZlQTVmSGpoR0tPbmMwMi1ZRmtIa2c1Y2lVWTN2U3MxdzdsUFFMX0VHWmwxcDhTc0JRS0VvWkdGb0lkTmRYZjV2akt3aWpiai0tRC1FNDgtZlhhQXFNSzhrNWdNWkpoZ181Z085ak1lQlRfZ1c0aFhGSkdVZTNwbHJRV09JTTRLckZCSEU0NmNWNGhOMFNjaUVKMFhHeDU5WWVZcmdUY3BrX1EzVE0?oc=5",
-          "theme": "geopolitics",
-          "time": "1h",
-          "publishedAt": "2026-08-24T12:26:00+00:00",
-          "impact": "high",
-          "source": "NPR"
-        },
-        {
-          "title": {
-            "fr": "Posthaste: Here's how Trump's fresh wave of tariffs will hit Canada the hardest",
-            "en": "Posthaste: Here's how Trump's fresh wave of tariffs will hit Canada the hardest"
-          },
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB4Ty03SmlDSndOYi1yTENLX25zdmtIUkZPdEVfWk5wSkN3UU4xOHFydVlxRlNTcG1PbGFRelpwVE9tRWpLOVZXamRaTVExbTFQN0dnXzV0aVBMSmVFV1ZHUUl4MFQwQnZ4UnZNMkJINVJNZw?oc=5",
-          "theme": "trade",
-          "time": "1h",
-          "publishedAt": "2026-08-24T12:09:44+00:00",
-          "impact": "high",
-          "source": "Financial Post"
-        },
-        {
-          "title": {
-            "fr": "Iran vows to retaliate against countries that cooperate with fresh US sanctions",
-            "en": "Iran vows to retaliate against countries that cooperate with fresh US sanctions"
-          },
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPak82UEwxTDF0OGtaQXNfNlBLbGhQSUxOSGhqOWJoczRoTUh6YUE2Tkd2dkZlYllib1RtdGVqblNzRGdSU1BXQWxjSXRjbDY2R3BwN2RKZ3AyZG1KSVUwOC1hTTU3OG00LTFlV0pUaWhrenFOcFc5cm8yR1pKQl82ektsRkNQMnZnMXRlRDNNZHVUY29BNEZKZW1pWUtpR1RnM01VbUVFcw?oc=5",
-          "theme": "geopolitics",
-          "time": "1h",
-          "publishedAt": "2026-08-24T12:07:00+00:00",
-          "impact": "high",
-          "source": "The Guardian"
-        },
-        {
-          "title": {
-            "fr": "US to unveil new Iran sanctions, says war entering 'endgame'",
-            "en": "US to unveil new Iran sanctions, says war entering 'endgame'"
-          },
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUXVOdHdUNW51Wi1qNTBfMjdtZTJKY3NHTXFNSGkxa0xxRjZLUXNmT3RfOFRoekloYXUzN2tHal9kYUhMei1abU1oUVk4dURZRWtKYWxUSUViTkMyLVpkbVlQVnVwbHFhbXdWR2FNNTgxcFpSZjJ4TVBMRzRha1AwQ2YxZTNseGExMmEtY1dvMXhWV1d30gGUAUFVX3lxTE9XQ1BJYXczV0ZsM2JHWHMwWXFhVFhIaGszNHhPWVRVaXpMbjVZZHlzWWNKM3ZTb3p1WFFKYy0tR3JYbG5mY3lhVTBmREhzN3RsZmhpeGp1OTdudEJsRVNhb1BWeTRfQ2VvNl9oMFRNdEMteVBkQjd3cUJHS2VqNElSY1RkdzZRRmZpbEUtcnhRcVBXbGo?oc=5",
-          "theme": "geopolitics",
-          "time": "1h",
-          "publishedAt": "2026-08-24T11:41:01+00:00",
+          "publishedAt": "2026-08-24T13:55:49+00:00",
           "impact": "high",
           "source": "Deutsche Welle"
+        },
+        {
+          "title": {
+            "fr": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates",
+            "en": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates"
+          },
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5NVnNJWGhDdTFvVFBMaGVjcldDel91bGg5eW1IdDNOOGJ0cWVnWVFTOWE0S3VHZlpjcWRIdW5lc1hCWEg5RGVMeXBBMDQ5aUpaR2xyRTZIVnAxUDJTdzJNWEkwd0drdjdiUk5TQmw5ejJFQTcyMjY0Wm9WRzjSAYIBQVVfeXFMUElPMnVlU3BVRGRvR19leEtvUzI0akZTdVRDb1VRY1NOcmQzMmVFdFNlUVZleU5LRDg0T01YRlM1djFUUmhPRTV1RjUwZlhWTV84UGFyVFl0bl9FQ1MzOHNEdUFEeHBTVzhwdEJUNTJKZlRaQzc2Q2tUSWhDR3NIVGFLdw?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T13:52:06+00:00",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "US threatens Iran with 'economic D-Day' as markets await sanctions announcement",
+            "en": "US threatens Iran with 'economic D-Day' as markets await sanctions announcement"
+          },
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYmU3c0hSVmI2U3RpdG94M3psRDZqdW9rRjQwU3paM3VWd0VTZUxoNE1QMkdoeU5IYVc4YmF2b1dHV0RpS3lHSHhVbFVUZ1M4cFpJOW9LTTFGS09TOWNVVmFEaFhDRFdUbzdVQUxoR0FsR0p4QWV6eTFOVVJEcm8tVXR6OW1qUzZpelhzVTBzeUdmbjNmZlNrYWtXaHZKS1JmRk01SjFXUmJhYkdObDFIQVdidjV5SzlIMkFJdy04cw?oc=5",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T13:40:15+00:00",
+          "impact": "high",
+          "source": "Euronews"
         }
       ],
       "headlinesFr": [
+        {
+          "title": {
+            "fr": "Trump menace les voitures produites au Canada de 50 % de tarifs dès janvier 2027",
+            "en": "Trump menace les voitures produites au Canada de 50 % de tarifs dès janvier 2027"
+          },
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQ3pkYTQ0TDkteHdmXzN4bXlpemhMMFB6MWFWc1E3bGJXZ0pGQTZiTGRkc25JUkNEcHcybm5LX1pCM21fcXdRS0JOQzgzbFZCYV9nNXJPbHpDVjIzMFc2X3dwUzl5dHQ3YW4tcFUydzRSclJkUThiSFdBMkxzaXRkZkFDOVdpN20wZXp1TC1JRHk5bGlhVWhUU2xFcm10cm1NWnBUSWdB?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T14:09:53+00:00",
+          "impact": "high",
+          "source": "Le Devoir"
+        },
         {
           "title": {
             "fr": "Face aux tarifs douaniers américains, les entreprises québécoises demandent plus que des prêts",
@@ -1792,7 +1804,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUjcwN2VsNUpPN2VxdVJjSWhnYWJJWmxIaWhGeTJkMHYyOVBuem1NeUYtbnlwRnZvV2c3bDFlZS0xTmw0OTZfQTN6ZzJNQlVHUUt2QUp3c19pNHE2OFlueF9SUUlrUUM0UmRjb0xkRGFEYkxadzN6aUNNU1E0Wi1mSEZwblEtU1pMUUtSWWR6QWRyNmRiYmhLcE1TNmVJdmVOdjRRbTF0bDYydHJVdUV5akl0aTZjeWhscDg4?oc=5",
           "theme": "trade",
-          "time": "13h",
+          "time": "14h",
           "publishedAt": "2026-08-24T00:00:18+00:00",
           "impact": "high",
           "source": "Le Devoir"
@@ -1811,15 +1823,27 @@
         },
         {
           "title": {
-            "fr": "Droits de douane | Carney annonce des contre-tarifs",
-            "en": "Droits de douane | Carney annonce des contre-tarifs"
+            "fr": "«Une des pires nations au monde avec qui négocier»: Donald Trump menace d'imposer de nouveaux droits de douane au Canada dès le 1er janvier",
+            "en": "«Une des pires nations au monde avec qui négocier»: Donald Trump menace d'imposer de nouveaux droits de douane au Canada dès le 1er janvier"
           },
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRGstMEtuTE52Vmp4dmV4NWZwNkU2NXM3YUFpRHU4ZGpBTjRhek9BbG5sU3JYR3ZTQWw1NmpwQ2tGTk5VYzNtZHNheHJ0NDdBM2lnNl9qUm1KNGRKWks3SXd3UlNrS0w4RTBDQmJnczBTZ1JtZC1sejhzTFpKdklyZ01jUElfTEd3cjlMNldPMXhVZjBmZE4tSmN0SDFKb2lSTlR0MVBjZF83UQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNS09oajg2WUJTd0h6TmxHX3ZKYk9WVkRSNDROeTZ2SXNCWVk5Mmp5R0thb0dvNUxXTTdaSkg1WHJvVTdPMTZXenRqZDZvWkNjcWVoRUE2d0JGOFhqQ0xTNXZ1N0pLUE90NE9yYjFfRW9ncEY3UWJHQWFrQVppU0JpNzdaTzVnRnI0ZnZUQXNxWHphMnk0SDdKZ3kwQXdLMW04SkRLMzFBM0NMOXE0RGNVd1ZsMkVHWEl4SXNEbGJIRkZlaDg1N2x2c2hWLWJxRk1feTN5ZHg3b0lvcVVBWDBLS3BpNll5Y05lSmFRb3JIeHh6YUt5Z1pndmhnWElxRzNaNlZONER4cG41bEZt?oc=5",
           "theme": "trade",
-          "time": "2j",
-          "publishedAt": "2026-08-22T13:07:34+00:00",
-          "impact": "high",
-          "source": "La Presse"
+          "time": "<1h",
+          "publishedAt": "2026-08-24T13:49:43+00:00",
+          "impact": "medium",
+          "source": "Le Journal de Montréal"
+        },
+        {
+          "title": {
+            "fr": "Mises à pied, fermetures d’entreprises et délocalisations: «Acheter québécois, c’est plus nécessaire que jamais», affirme Bernard Drainville",
+            "en": "Mises à pied, fermetures d’entreprises et délocalisations: «Acheter québécois, c’est plus nécessaire que jamais», affirme Bernard Drainville"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOT0hHYUhRR0l0NU9ESk5YY3A4RngydTdsTFNTdXo2UVBZd2hWQV9YT0x0UzE0VXhVMVNSbm9VbTBIc24yVXdGbC1lanZFSWZkRkk5QVlEc3dCZGltaUdhQndldnZVYmVkMXhYZ3RRY2VVMkwtRGNBUHZsc01qQXFkQzNpdGc4aHZGYkdtSG1HZHNmeDF4U19zNDdxZ1BtZTZRYW5DRUtRV3lvcTVjUzZaVVFLd3NqaW9meEZtT0xWTnF6WUtJUnA2cHpicGttZUdqTEtTai1GbmlaTUpmdm43bUpNdW9wUlFhdXJhZGtBaXpKNjk2dnVyVnM3TlMtSUJ1MDVkSWxTbEw?oc=5",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-08-24T13:31:00+00:00",
+          "impact": "low",
+          "source": "Le Journal de Montréal"
         },
         {
           "title": {
@@ -1828,7 +1852,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMV9zc3k0VVN2ZktDNk5fdEtpYkFkRGtWQ0tJb1JkNWFmV19PZU4xS3RrM0Q4eDlUd3otVTZQS1Jrd1RXUklMTGhpb1p2QXRrTXBSdi1yTnNWeUlhaUlEd0lkZ1d4Uk5EYkNLdWRxVG5zbkw3Tm5vc3pRTVJxT3J0UnpnVDdrMlgwNDFkTGkzZW9vVTVGTmVJ?oc=5",
           "theme": "trade",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-08-24T12:41:25+00:00",
           "impact": "high",
           "source": "Les Affaires"
@@ -1840,7 +1864,7 @@
           },
           "url": "https://www.latribune.fr/article/entreprises-finance/industrie/40357250230107/le-credit-dimpot-industrie-verte-prolonge-et-focalise-sur-quatre-industries-cles",
           "theme": "trade",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-24T12:22:54+00:00",
           "impact": "medium",
           "source": "La Tribune"
@@ -1852,34 +1876,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNd0FqdktmeFczOW1PZWNZY1RScHNOR0pnOWo5c1UtblQ2d0JzUUpYc2tVcUc1eEZ0TUczNjRkX2FFZnRGUXpyWTNoNVZnX2dvQ1pMVC1rZXNhZUZzaUFPUmwyNzFMSW1nR1lFemZ0OUVTdGFjODJpOWg1T2JGLTlNOGlLcGJxUC1wTHpBb05QQnZSVGQzcTdKZy13?oc=5",
           "theme": "trade",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-24T11:44:04+00:00",
           "impact": "high",
           "source": "Radio-Canada"
-        },
-        {
-          "title": {
-            "fr": "Face au carburant cher, le gouvernement veut prolonger les aides sans en dévoiler le coût",
-            "en": "Face au carburant cher, le gouvernement veut prolonger les aides sans en dévoiler le coût"
-          },
-          "url": "https://www.latribune.fr/article/entreprises-finance/energie-environnement/1811842693243714/face-au-carburant-cher-le-gouvernement-veut-prolonger-les-aides-sans-en-devoiler-le-cout",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-08-24T08:03:54+00:00",
-          "impact": "medium",
-          "source": "La Tribune"
-        },
-        {
-          "title": {
-            "fr": "La chronologie de l’intensification de la guerre commerciale entre le Canada et les États-Unis",
-            "en": "La chronologie de l’intensification de la guerre commerciale entre le Canada et les États-Unis"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMEM0SmpTWUVlcjFXU2hZdlltQWJhVTRJRXBKVFk3dDB1SGhKOUpGbXZQOEhpVTNpOER6aVNaRW9TLWs0RWpGRHEzcmVPSGFwS1V1R3hCLVl3VzNZbExTYmlaSHRBNE5WNDFJV0RLdHltMGZWUEpMVEtIU2lCdTYzbzJhWnBCb3llYlVIWFlxaERfaWYwcFV6LUJaSUpDNndETEtRWHRxbTNtQ0pBckxXek42TFVLTllaNHhPOWVsZHgwY0d1MHpudXE1UXR0N3Z4SUJrVg?oc=5",
-          "theme": "trade",
-          "time": "9h",
-          "publishedAt": "2026-08-24T04:00:00+00:00",
-          "impact": "high",
-          "source": "Le Journal de Montréal"
         }
       ]
     }
@@ -1936,8 +1936,8 @@
         "en": "Hormuz, reopened then re-closed, keeps the rupee under pressure"
       },
       "description": {
-        "fr": "Le conflit autour du détroit d'Ormuz fait osciller le Brent depuis février 2026 : culminant près de 118 $ en mars, retombé sous 70 $ le 1er juillet après un protocole d'entente américano-iranien, puis reparti à la hausse après le 10 juillet quand des attaques contre des navires marchands ont refermé le détroit au trafic courant. Le Brent se négocie à 94 $ au dernier passage. L'Inde, importatrice nette de pétrole, encaisse chaque à-coup par sa monnaie et ses prix : la roupie s'échange à 95,70 INR/USD, et l'inflation est ressortie à 4,8 % en juin selon l'OCDE, contre 2,7 % affiché en début d'année sur une donnée qui datait de janvier.",
-        "en": "The standoff over the Strait of Hormuz has swung Brent since February 2026: peaking near $118 in March, falling below $70 on 1 July after a US-Iran understanding, then climbing again after 10 July when attacks on merchant vessels re-closed the strait to routine traffic. Brent last traded at $94. India, a net oil importer, absorbs each swing through its currency and its prices: the rupee trades at 95.70 INR/USD, and inflation came in at 4.8% in June per the OECD, against a 2.7% figure shown earlier in the year that dated back to January."
+        "fr": "Le conflit autour du détroit d'Ormuz fait osciller le Brent depuis février 2026 : culminant près de 118 $ en mars, retombé sous 70 $ le 1er juillet après un protocole d'entente américano-iranien, puis reparti à la hausse après le 10 juillet quand des attaques contre des navires marchands ont refermé le détroit au trafic courant. Le Brent se négocie à 93 $ au dernier passage. L'Inde, importatrice nette de pétrole, encaisse chaque à-coup par sa monnaie et ses prix : la roupie s'échange à 95,76 INR/USD, et l'inflation est ressortie à 4,8 % en juin selon l'OCDE, contre 2,7 % affiché en début d'année sur une donnée qui datait de janvier.",
+        "en": "The standoff over the Strait of Hormuz has swung Brent since February 2026: peaking near $118 in March, falling below $70 on 1 July after a US-Iran understanding, then climbing again after 10 July when attacks on merchant vessels re-closed the strait to routine traffic. Brent last traded at $93. India, a net oil importer, absorbs each swing through its currency and its prices: the rupee trades at 95.76 INR/USD, and inflation came in at 4.8% in June per the OECD, against a 2.7% figure shown earlier in the year that dated back to January."
       },
       "impact": "high"
     },
