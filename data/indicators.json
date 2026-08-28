@@ -49,7 +49,7 @@
         "exchange": {
           "value": 1.385,
           "unit": "CAD/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-08-28",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -154,12 +154,24 @@
       "headlines": [
         {
           "title": {
+            "fr": "Economy rebounds in the second quarter, but trade tensions could shift outlook",
+            "en": "Economy rebounds in the second quarter, but trade tensions could shift outlook"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-economy-rebounds-second-quarter-trade-tensions-shift-outlook/",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-28T23:01:31+00:00",
+          "impact": "medium",
+          "source": "The Globe and Mail"
+        },
+        {
+          "title": {
             "fr": "Trans Mountain pumps $450-million into federal coffers as pipeline runs near capacity",
             "en": "Trans Mountain pumps $450-million into federal coffers as pipeline runs near capacity"
           },
           "url": "https://www.theglobeandmail.com/business/article-trans-mountain-pumps-450-million-into-federal-coffers-as-pipeline-runs/",
           "theme": "energy",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-08-28T21:45:39+00:00",
           "impact": "medium",
           "source": "The Globe and Mail"
@@ -178,37 +190,13 @@
         },
         {
           "title": {
-            "fr": "Xanadu secures $195-million from Ottawa for quantum computing in Canada",
-            "en": "Xanadu secures $195-million from Ottawa for quantum computing in Canada"
+            "fr": "Canada's economy sees 3.3% growth in 2nd quarter",
+            "en": "Canada's economy sees 3.3% growth in 2nd quarter"
           },
-          "url": "https://www.theglobeandmail.com/business/article-xanadu-secures-195-million-from-ottawa-for-quantum-computing-in-canada/",
-          "theme": "tech",
-          "time": "4h",
-          "publishedAt": "2026-08-28T17:58:28+00:00",
-          "impact": "medium",
-          "source": "The Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Using energy exports to punish U.S. would be unwise, Trans Mountain chief says",
-            "en": "Using energy exports to punish U.S. would be unwise, Trans Mountain chief says"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQb3VyLVdxZDJKV0pyOTltZjRldjlteFZOcnZWRnpmY0JJaVZLZVVKbl82NGtqbjBZVVk5X29KcU1PNmhKdlNiZkNaaXFqSlNhcktUam1JU29WV3R5NFYxU2RqMmVaOW1YaDVOVnV5ZlZUczFkOTItZVljNmZtOVJ4SksxaERneDBUakJHVlJENVUwbTA1bWd3WTBZUVpzN0MwMHJZTlJ5bzJ5c2lfYmFvek9uZEI0T0xnQmc?oc=5",
-          "theme": "trade",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA4b3NmZklnY0dUc2VmRGNIN0RkZm5vVU53Z3hHaHdtcVZyYnRSUnNnR0tLclJVejhaM0NEanc4ZzJBRGxHMkEwTllibnVmZ2VNb0t6RVVZS3hSQQ?oc=5",
+          "theme": "monetary",
           "time": "<1h",
-          "publishedAt": "2026-08-28T21:48:38+00:00",
-          "impact": "medium",
-          "source": "BNN Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "Charette says Canada consistently raised auto industry in U.S. trade negotiations",
-            "en": "Charette says Canada consistently raised auto industry in U.S. trade negotiations"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5veWRoa2JzVmw3X1g1VWJyaXBzdFU4Ym1ta0NickxFZmFxaEcxM0FYTHdVS2lFQU1VOEtWa0NNaW5zRUFicHBSMTRxaE83MkNoR0FrMldBLTl4QQ?oc=5",
-          "theme": "trade",
-          "time": "1h",
-          "publishedAt": "2026-08-28T21:34:58+00:00",
+          "publishedAt": "2026-08-28T22:49:19+00:00",
           "impact": "medium",
           "source": "CBC"
         },
@@ -219,8 +207,8 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1raDZJRUdzcTdtdkNYTGY3VE9UOEVWclN0VXRDQTFQUXZDa2JVeVZjX3B3Q2tyM0MyNzhXQTR2bDM5MlJnRWgwcGFDUkttYThfNWRDaXVwVmdNZw?oc=5",
           "theme": "trade",
-          "time": "1h",
-          "publishedAt": "2026-08-28T21:27:40+00:00",
+          "time": "<1h",
+          "publishedAt": "2026-08-28T22:23:14+00:00",
           "impact": "medium",
           "source": "CBC"
         },
@@ -243,10 +231,22 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNU1yQWh5TXNEQkhaQmhsSDkwMmZCTEJpNF9TcHlueXJnV2RTM3A5NGVUTUtZNWExQ3hBRFI3UTBBQ1pvUVBEOXRwWmZkMXVNRXkzRk1nM3d2SnRFWDJwSS1wQ1hRYnBIbjh5eTVVZmhSVlVtblFqd25RRmM5Uy1VZDN3?oc=5",
           "theme": "trade",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-08-28T19:57:25+00:00",
           "impact": "high",
           "source": "Financial Post"
+        },
+        {
+          "title": {
+            "fr": "Seth Meyers calls Donald Trump’s trade war with Canada ‘lunacy,’ pokes fun at ‘bad cop’ Doug Ford",
+            "en": "Seth Meyers calls Donald Trump’s trade war with Canada ‘lunacy,’ pokes fun at ‘bad cop’ Doug Ford"
+          },
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPY0pvZ1hmQWNuQklPeHQwRVhqSm1xOFR0YnMwSmZ1dmpFVzZwSzEtcGUtbklIRU5KbHZveEdtYXpqR254YWtvc2UtclhHYTAzQ093ZGprMXVfeG9nbEhNck93bVZqb19BV1FmT1VOdEdSdlkwRmtFMThsOFRzaVpWUVpZU18ybmRFOTY1R0JqcTY2QkV5UGp6d2VsWl9uSF9Udy1QTGZRbW1iX1pOVDZDQU12UlJUaDN1TWJUTE9fc3I2Z3dfQmZHdnl5clVYMFZfYW1QTUh4TGZDNk5yeTNIRDg5a2ZMQ1BXd0hhOHItRS1MRzZjNUFMQk54WC0zR1E?oc=5",
+          "theme": "trade",
+          "time": "5h",
+          "publishedAt": "2026-08-28T18:07:01+00:00",
+          "impact": "high",
+          "source": "Toronto Star"
         }
       ],
       "provincialAnalysis": {
@@ -567,7 +567,7 @@
           },
           "url": "https://www.ledevoir.com/economie/1004819/quebec-elargit-programme-aide-plus-pme-touchees-tarifs-americains",
           "theme": "trade",
-          "time": "6h",
+          "time": "7h",
           "publishedAt": "2026-08-28T15:58:00+00:00",
           "impact": "high",
           "source": "Le Devoir"
@@ -591,19 +591,31 @@
           },
           "url": "https://www.lapresse.ca/affaires/marches/2026-08-28/wall-street-cloture-en-baisse-apres-les-avertissements-de-warsh-sur-l-inflation.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "monetary",
-          "time": "8h",
+          "time": "9h",
           "publishedAt": "2026-08-28T13:49:42+00:00",
           "impact": "high",
           "source": "La Presse"
         },
         {
           "title": {
+            "fr": "Échec des négociations commerciales : Janice Charette réfute les allégations américaines",
+            "en": "Échec des négociations commerciales : Janice Charette réfute les allégations américaines"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2278684/janice-charette-negociations-commerciales-tarifs",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-08-28T22:59:07+00:00",
+          "impact": "medium",
+          "source": "Radio-Canada"
+        },
+        {
+          "title": {
             "fr": "Guerre tarifaire : le commerce interprovincial progresse, non sans difficultés",
             "en": "Guerre tarifaire : le commerce interprovincial progresse, non sans difficultés"
           },
-          "url": "https://ici.radio-canada.ca/nouvelle/2278606/commerce-interprovincial-progression-trump-tarifs",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOODVpa1kzdnZBM1JkVm1VUWsxOVBOaGxUbTdOcU84MDFqSERtWWhqcTBVSkRoN2FNNkV3bllpRWpQR0dlXzFIMERfa0lwbHIwRVhzUWNjQWRBczdRMTVQMnA0R1RwVTRaOXl5dUNVVWx0dVdvZ3pBOEhaaGFRTC1adDRNZVljMTRqc0E1bmJhNldpU1VZaUhpb29n?oc=5",
           "theme": "trade",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-08-28T20:12:55+00:00",
           "impact": "high",
           "source": "Radio-Canada"
@@ -615,7 +627,7 @@
           },
           "url": "https://www.ledevoir.com/economie/1004780/guerre-tarifaire-pourrait-modifier-durablement-echanges-commerciaux-canado-americains",
           "theme": "trade",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-08-28T13:03:57+00:00",
           "impact": "high",
           "source": "Le Devoir"
@@ -627,7 +639,7 @@
           },
           "url": "https://ici.radio-canada.ca/nouvelle/2278413/auto-ontario-tarifs-douaniers-canada-etats-unis",
           "theme": "trade",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-08-28T12:47:58+00:00",
           "impact": "high",
           "source": "Radio-Canada"
@@ -639,22 +651,10 @@
           },
           "url": "https://www.lapresse.ca/affaires/economie/2026-08-28/deuxieme-trimestre/le-pib-a-affiche-une-croissance-de-3-3.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "monetary",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-08-28T12:45:09+00:00",
           "impact": "medium",
           "source": "La Presse"
-        },
-        {
-          "title": {
-            "fr": "Crise énergétique, défis logistiques : la sécheresse fragilise les fleuves européens",
-            "en": "Crise énergétique, défis logistiques : la sécheresse fragilise les fleuves européens"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2276767/secheresse-estivale-europe-grands-fleuves",
-          "theme": "trade",
-          "time": "14h",
-          "publishedAt": "2026-08-28T08:00:00+00:00",
-          "impact": "high",
-          "source": "Radio-Canada"
         }
       ]
     },
@@ -827,21 +827,33 @@
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPV0RZc2d1bUQzUzdVeGVnNVZmQjhpeDExd29aMHRoN3dHaFRScVkwdnJRSVJTeDFnNU42RGxGd3pkN0trMGdMLU9RZ2RyTW1EMkRpcUx0TTVoSEE2QXJVeTFHQVFQbXEzLTBaUHQ1bDZQekhzWFJjM0dfTlg4bjVlVnhQTC01T0xldWdHY2p4OHh1cEhEdi0xNFJjRS1KeXhOdVl5cERacDhxSnRaMFJOemVFUUtXWTNVbW9vT3ZaUXhKcm8tcWRFTmE3RGxXbnc?oc=5",
           "theme": "monetary",
           "time": "1h",
-          "publishedAt": "2026-08-28T20:53:00+00:00",
+          "publishedAt": "2026-08-28T21:29:38+00:00",
           "impact": "high",
           "source": "WSJ"
         },
         {
           "title": {
-            "fr": "Investors Expect Higher Rates After Fed Chairman’s Inflation Pledge",
-            "en": "Investors Expect Higher Rates After Fed Chairman’s Inflation Pledge"
+            "fr": "Fed Chairman Warsh Seeks to Calm Elevated Inflation Concerns",
+            "en": "Fed Chairman Warsh Seeks to Calm Elevated Inflation Concerns"
           },
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZVVNSWJVV19KbXhlZEVYaEU2eUlsUUVaeGV0QjBlYUtKU0ZZOEg0MExlOFBobmk5YkFPUVoyRlJjMnh5WmxQWWNCTHo4NTZBdVdYSVBLeVVDS0czcGVKNWRGM1RNT1NMTUtQOEk1WHVHTHlvQ0p2Zjg3SUoyQ1lqSVpVUDRGdmdaek5zSjVpTnc4dw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeXgwVmE4SkVPN3VMZkRoUGc5MTlnNlgyRHo2NVhZNGpSWmtPZ09oTnczOWtoX3M5QjlqdnN2d0cyRW5lZTNKYUhGRHdVdGk3VS1MSkFkczJ2dzQ2RkoyV2FNZVJaZ01OY3dnMUxMU0R0QmF3Q3hsTVEtT0RjQnhUX2hzcC05TjlQ?oc=5",
           "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-08-28T18:49:59+00:00",
+          "time": "4h",
+          "publishedAt": "2026-08-28T19:11:23+00:00",
           "impact": "high",
           "source": "The New York Times"
+        },
+        {
+          "title": {
+            "fr": "Fed chair Warsh, concerned about inflation, says bank may have ‘work to do’",
+            "en": "Fed chair Warsh, concerned about inflation, says bank may have ‘work to do’"
+          },
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaDFpTWxQbW1YQ0U3M0pkd2xDc0F4UUJSYTZmTjc0VUthQ3YxLWhoa3pjU2tvaDdYVUtXNTkzQXIzb3VpaVpYOTZHREtWSllxSXJtM2ZyTWVoNDdLZHp4bmRralNuWkRiWWtXR1BaSHlEU1l1ZTk3MXVpaDNHMUN3RHVaWlY4MkJDUjNQSTQtbTRza0NxMU9JQ2tSbUdNaUU?oc=5",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-08-28T23:09:28+00:00",
+          "impact": "high",
+          "source": "The Washington Post"
         },
         {
           "title": {
@@ -854,18 +866,6 @@
           "publishedAt": "2026-08-28T21:43:00+00:00",
           "impact": "high",
           "source": "Barron's"
-        },
-        {
-          "title": {
-            "fr": "Fed chair Warsh, concerned about inflation, says bank may have ‘work to do’",
-            "en": "Fed chair Warsh, concerned about inflation, says bank may have ‘work to do’"
-          },
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaDFpTWxQbW1YQ0U3M0pkd2xDc0F4UUJSYTZmTjc0VUthQ3YxLWhoa3pjU2tvaDdYVUtXNTkzQXIzb3VpaVpYOTZHREtWSllxSXJtM2ZyTWVoNDdLZHp4bmRralNuWkRiWWtXR1BaSHlEU1l1ZTk3MXVpaDNHMUN3RHVaWlY4MkJDUjNQSTQtbTRza0NxMU9JQ2tSbUdNaUU?oc=5",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-08-28T21:39:28+00:00",
-          "impact": "high",
-          "source": "The Washington Post"
         },
         {
           "title": {
@@ -886,7 +886,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTFNpQU9NM3NYRVdWSFpUUjNFZGREaWhQN2d2VTdZYnhCQ1Azd2pEZk9vLVUtTTZhYkRXZHNJUlpwbVFpN2dNNmVhZ2Iwd0lMNkpLOUZiRzE4WVluWWNXVVZ4VnFmOTJOUUt2M3Q1bFppcDdnZjRfdEJkbDROX05fazZIS2tUTzJaZkFUUEtYaG44RWtKamVJS1c5SF9sT0VrV1ZieTYxZjhHNWkyR2oxa2ZPRjhRQTU4enVZ?oc=5",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-28T20:46:18+00:00",
           "impact": "high",
           "source": "Forbes"
@@ -898,7 +898,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYzAxVXUwU21Ham5qTENZQVJYUUU4X2xqNW8xTTRER2xNaGlXcm0xQjRyNmZBRnRRQzlEYkZxdnA5U2NJd0Jxa3NCc1dXTlgtLWUtNTVoemlQZ25Jc3JJOHpjY2lJQmJMV1lKWTdjdWl5MElKY251TVRNRmllMkczZmtqdS1CdFV1cERHa3c5VThYdVB1SkE?oc=5",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-08-28T20:46:07+00:00",
           "impact": "medium",
           "source": "CNBC"
@@ -936,7 +936,7 @@
           },
           "url": "https://www.lemonde.fr/economie/article/2026/08/28/kevin-warsh-le-president-de-la-fed-trouve-preoccupante-l-inflation-aux-etats-unis_6759047_3234.html",
           "theme": "monetary",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-08-28T15:01:46+00:00",
           "impact": "high",
           "source": "Le Monde"
@@ -972,7 +972,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxOVk04SFl5MEhLaXd2a2xUX2hNYm1wbWpGQTNqTjJETVlZemU2ZnNqWFpuTGpnSVVkeGhZV2ctWGNSRHhVOHJSZU5aRl9yRlpMV3l4UV9rclB2VWNzU1N3LXExd3N5NVlhZFpHeUJLUDRqZDktcU83ZVR5UHFaczdocVA0SUEwckROcEpOYU9udDNtbDQxdFE3NFBLTFVscVNzWG92cFlzWmVKbnVFMTZKNjZ1RnFLcVlGNjhqakFBQ2hyNTdoU2dvRWlmSVlsUUl6RW80cUFhN0U2Vm5oNHFmVkEtVHdKQVBNVzJ1UE40cjlJZmVmT0RBSFlYMmRmZEtCMlBHWVNqQVNzczBuOWdYRXU5QnNCcU5YQkFxVHBnQW1oaUdnV2hPd1JIUU5Yd3ozbUw4Um9kU1h6QnkwS1ZJONIBwAJBVV95cUxOVk04SFl5MEhLaXd2a2xUX2hNYm1wbWpGQTNqTjJETVlZemU2ZnNqWFpuTGpnSVVkeGhZV2ctWGNSRHhVOHJSZU5aRl9yRlpMV3l4UV9rclB2VWNzU1N3LXExd3N5NVlhZFpHeUJLUDRqZDktcU83ZVR5UHFaczdocVA0SUEwckROcEpOYU9udDNtbDQxdFE3NFBLTFVscVNzWG92cFlzWmVKbnVFMTZKNjZ1RnFLcVlGNjhqakFBQ2hyNTdoU2dvRWlmSVlsUUl6RW80cUFhN0U2Vm5oNHFmVkEtVHdKQVBNVzJ1UE40cjlJZmVmT0RBSFlYMmRmZEtCMlBHWVNqQVNzczBuOWdYRXU5QnNCcU5YQkFxVHBnQW1oaUdnV2hPd1JIUU5Yd3ozbUw4Um9kU1h6QnkwS1ZJOA?oc=5",
           "theme": "monetary",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-08-28T19:08:36+00:00",
           "impact": "high",
           "source": "Boursorama"
@@ -1051,7 +1051,7 @@
         "exchange": {
           "value": 6.721,
           "unit": "CNY/USD",
-          "trend": "up",
+          "trend": "stable",
           "period": "2026-08-28",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1137,8 +1137,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie chinoise progresse à un rythme de 4,5 % (2026 cible). L'inflation ressort à 0,5 % (juill. 2026) pour un taux directeur de 3,0 % (juill. 2026). SSE Composite gagne 1,01 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « commerce ».",
-        "en": "The Chinese economy is growing at 4.5% (2026 target). Inflation is 0.5% (July 2026) against a policy rate of 3.0% (July 2026). SSE Composite is up 1.01% on the session. Of the 8 stories retained today, 4 fall under trade."
+        "fr": "L'économie chinoise progresse à un rythme de 4,5 % (2026 cible). L'inflation ressort à 0,5 % (juill. 2026) pour un taux directeur de 3,0 % (juill. 2026). SSE Composite gagne 1,01 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « politique monétaire ».",
+        "en": "The Chinese economy is growing at 4.5% (2026 target). Inflation is 0.5% (July 2026) against a policy rate of 3.0% (July 2026). SSE Composite is up 1.01% on the session. Of the 8 stories retained today, 4 fall under monetary policy."
       },
       "headlines": [
         {
@@ -1148,7 +1148,7 @@
           },
           "url": "https://www.scmp.com/news/world/united-states-canada/article/3365658/warsh-says-us-fed-has-work-do-if-above-target-inflation-lingers?utm_source=rss_feed",
           "theme": "monetary",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-08-28T15:13:26+00:00",
           "impact": "high",
           "source": "South China Morning Post"
@@ -1160,7 +1160,7 @@
           },
           "url": "https://www.scmp.com/business/china-evs/article/3365652/byd-posts-us12-billion-profit-second-quarter-surging-global-demand?utm_source=rss_feed",
           "theme": "monetary",
-          "time": "8h",
+          "time": "9h",
           "publishedAt": "2026-08-28T14:11:21+00:00",
           "impact": "medium",
           "source": "South China Morning Post"
@@ -1172,7 +1172,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdGJORW14TlNLWFZONE5lWlFSbVdLeFpUVkdzcnk2RktHSWlqMlkwd1pERjhJVFBoSmVSd3JWbXUyX1Bjel9scG1vUWF6Yk5aUlBWTVAzV2pRRGtVS3NiSXQxZko0d0hRMk10UXhrazNodGE1aHB1d1p2VzdjTmFtc3pNOV9YSmdER0g0bE53aHp0eU45LTk1ZkNR?oc=5",
           "theme": "monetary",
-          "time": "8h",
+          "time": "9h",
           "publishedAt": "2026-08-28T14:00:00+00:00",
           "impact": "medium",
           "source": "WSJ"
@@ -1196,7 +1196,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPU1ZXNU9fd1hpWlVSVmIxMjlaTmIyZFBqSjBnYi1WR2dnUkE4eWtnUHF0ZFdrTnVkNTBhZ1kxcklyN1c5Q3JKa1hFTzNuR2h4V1hwVjJxNFpaOWhmak9hNDBNVnlCSEJQalJyWjdUX3FaaFY5UFE3OUlUQ3AzMjFta01XVDlIVUlkSmNOWWUzNm04ZmZ2VkNGNW5zYU1MZk1SbmRMeVlscTI0NHByblY4MHZ4R2hHdw?oc=5",
           "theme": "trade",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-08-28T12:54:18+00:00",
           "impact": "low",
           "source": "Bloomberg"
@@ -1227,18 +1227,30 @@
         },
         {
           "title": {
-            "fr": "U.S. considers fresh round of tariffs on semiconductors, report says",
-            "en": "U.S. considers fresh round of tariffs on semiconductors, report says"
+            "fr": "Yuan Traders Are Brushing Off US Sanction Threats Over Iran",
+            "en": "Yuan Traders Are Brushing Off US Sanction Threats Over Iran"
           },
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1ZbEtsZDlYNTdIVUYxVllfejNWRHd3QTVQdk95N2owMGVGU1FGOHJqczQtY3ItZ1RPcUYyMkFyOG5aWUt6WjF1bzE5amd3QVJyWEZaREFGbi1oUEJFZl9odG5RS2xWRl9hREtEbkRKVTZjbWVpeXBLSNIBfkFVX3lxTE1UTlVnRGphd2ljM01TbWc0a0FtdUJtdjFjdFdtZXpyNEJMb29QcWtpODBWZzcwWk41QTVaTGRpQUI3N1FjeUVrZGoyWk1YNWJnR1lQTFpwOFpQMk9xMVNwdXMzd3Y5MUVLbHRoWHJHTnBTRDAzSDNNdHR0MEh5Zw?oc=5",
-          "theme": "trade",
-          "time": "1j",
-          "publishedAt": "2026-08-27T11:29:19+00:00",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdjF3RnQ2VmluRTFGRENFOEowMlhVQ3hVT215NFhZSUhMMFVSVU9maUg0TmtFNUQyN3NmN2xfNEVYY3h2ajc4V2FEYTJTWC1SNHFNWmdJT1RhS19RY2Z2SXRxZXdlZEs5MEZIMW5GLWs1SF9HN2VnU0VzVnREYUdPNU5qQXQ5UnhibEd5Q1labi1jbTdNM3dlQWdCTFR1Nl8weFhnMHo4QXV6Wkk?oc=5",
+          "theme": "monetary",
+          "time": "20h",
+          "publishedAt": "2026-08-28T02:30:00+00:00",
           "impact": "high",
-          "source": "CNBC"
+          "source": "Bloomberg"
         }
       ],
       "headlinesFr": [
+        {
+          "title": {
+            "fr": "Ni les Etats-Unis ni la Chine ne peuvent compter sur la demande des ménages pour soutenir leur croissance",
+            "en": "Ni les Etats-Unis ni la Chine ne peuvent compter sur la demande des ménages pour soutenir leur croissance"
+          },
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNN3BHcm9ieWI3QU1UWTNwLU5xNVBKbVVKZXRSUklmcGxLNnFPV0hHT20zNlJWaUxIN0paR0JmNjNad2N6RWU5U0tsZ1c3Qy1ZVEJTQVNFWDBJdUFRR2xOYTJhdXdXNnExTkliSzZVemNWRWEwRi13VUx4a09sbE5ZNkthZXIwQ1I2R1lGbU5HX2U4aUNBTWVnQm1BTGJIZXlnbjhqLUhXeVlrbkM2ei1CMk9DVTVHWGtXLUs3anh4UVAtdUJFVzYwd1NuNGhLM2J5dWRSVmlXOFNwOXBqZXJHQUxkdV9rWTZLcHNwZnFJRXFHZjNVNFNScHh3?oc=5",
+          "theme": "monetary",
+          "time": "3j",
+          "publishedAt": "2026-08-25T15:15:33+00:00",
+          "impact": "low",
+          "source": "Les Echos"
+        },
         {
           "title": {
             "fr": "La France échappe de justesse à la récession au deuxième trimestre, selon l'Insee",
@@ -1250,6 +1262,18 @@
           "publishedAt": "2026-08-28T10:15:31+00:00",
           "impact": "medium",
           "source": "RFI"
+        },
+        {
+          "title": {
+            "fr": "Sanctions américaines contre l’Iran : Pékin n’hésitera pas à riposter",
+            "en": "Sanctions américaines contre l’Iran : Pékin n’hésitera pas à riposter"
+          },
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNa0R5bVRmelVqSm1UbFZCNU9tNGRZWVBBV05DWGJGQWRzckFuWjBvblpwRUJLUk1EYTBVbWR0aVNZNElkbFlTckpMRnI1bjBFU3ZZaXpVVkZRd3Y1NUp2emhXdktNUk56WVBHNW9SdXo2UU1UR0p5RjI0NTVCZHluRC1ETW1mOTI4bHJlMjI1UmVLbDhWcmc?oc=5",
+          "theme": "geopolitics",
+          "time": "2j",
+          "publishedAt": "2026-08-26T11:40:37+00:00",
+          "impact": "high",
+          "source": "l'Opinion"
         },
         {
           "title": {
@@ -1325,7 +1349,7 @@
         "exchange": {
           "value": 95.39,
           "unit": "INR/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-08-28",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1446,7 +1470,7 @@
           },
           "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-canada-ready-to-fast-track-bilateral-investment-treaty-talks/articleshow/133597934.cms",
           "theme": "geopolitics",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-08-28T18:08:42+00:00",
           "impact": "medium",
           "source": "Economic Times"
@@ -1458,7 +1482,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQOTJOdnNyT0ROZU5XSUtCY0RfYWlHMmV1OXRyZVhzcXhPOUlOMlpnYVA3Y2Q3RUdrTmY0SExEZC1HajJyNjFMRzQwbHFzLTJyclUteXBWU2NVT0VBVk93STRzQWJlbjBDTGJyNExRa0JwakJGZldLdzdfSWdBZ1NHTkRnRThndEZEbHBneGI5NFh5Sm5ZYmZ3eDZYaVN0Ylh2a3BaOTJvY3dBYmF5NzgtV3FZX3lLNnNqUE1ISURnNk1La2FaV3FXWGpUYXVsX2NPQnI0aUh3OXNhaG9XWkJkQjRrVnlMTEQ0TjlNUEgxMy0yT0ZUaXY0dWFpN3oyQdIBgwJBVV95cUxQUWJvWXo0RUxhN0lGbHpFZ0Vqd29pMEgyOHc0N1duRWlLQi1Xb2trNVVpSWRmeE5kempfdHV1ZDFEcEk5cDFWM2pjNTFuVXBjaDBkWEhIby1hWmVzRWhpcjhTMHJUczFDV2p3alZjM0w4VW5oRnFNdnJjMHcyLXIyVThpakpvbW1ScUd6M09TS05NWlZGZjBuN3dIRFl6RVZiWXNOcHEtNVV3YS1TUVY0Y0VHRWhMaEFzSXR1ZTVMVDg1MDFqSjgyelhkUzN1bmVxRFpDZFhUMUY3T3hDWVp4TkhwXzBWcHp1NVVkTnJaQXlTbkY2UkVsb1FiRUlUbV93Y2Nv?oc=5",
           "theme": "trade",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-08-28T16:44:32+00:00",
           "impact": "high",
           "source": "The Times of India"
@@ -1489,13 +1513,13 @@
         },
         {
           "title": {
-            "fr": "RBI to conduct Rs 6 trillion 15 day auction to suck out liquidity",
-            "en": "RBI to conduct Rs 6 trillion 15 day auction to suck out liquidity"
+            "fr": "RBI to conduct ₹6 trillion VRRR auction to soak up excess liquidity",
+            "en": "RBI to conduct ₹6 trillion VRRR auction to soak up excess liquidity"
           },
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSVpiZnV1RVZzdm9kZGlkWmhVX016RGlfYnppZ0xHNFNhSUhCNlUyZlVhZmxiN1BGUUdzclROMjlZZ251azJlem4zbXBhLXZBWXZQTTJaeWppM1F6ZXRuRzhMUzVjQ0ZNYkFLUmszcVdIT2VBdms2YlRFc1BoQk8wdE5ZNzFjck51dHVEeVlPTjhkZ2NTTUM0UExkVHBoVDRTaS16UVZ2eG5vMWppT1hUQmxLQUJ5TmtXTG9sd1RKSDBPeHREWDRpLUdwemRSN03SAdQBQVVfeXFMTjltTFdlMjA5RFJjbUxWUFU4bENFZWpsNDFzQzJLOUNxNzJob3o5TlJ4SkZuTTV4clJ5NGV0cDRVUktzZmlHcnplOVJwN1k5MWFkdFZka29lWUF3V2k3MUNlN0wxbzB1dWloN0s3aVVtRkRoY3l3YXA4ZW1zeWhKRFZGNUVTM2x5ODhtdkIxU2JYWllUd0dNdVh0VWtDRUEzam1QMm9OcWlrdWVFVzBOMHN6Y1dEZFM1RkFYYTZvWVZZSmNqbDlnYWVWSG4zUVdKWXlGN20?oc=5",
           "theme": "monetary",
           "time": "9h",
-          "publishedAt": "2026-08-28T13:36:38+00:00",
+          "publishedAt": "2026-08-28T13:36:13+00:00",
           "impact": "medium",
           "source": "Business Standard"
         },
@@ -1683,8 +1707,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,27 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 6 relèvent du thème « commerce ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.27% on the session. Of the 8 stories retained today, 6 fall under trade."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,27 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 7 relèvent du thème « commerce ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.27% on the session. Of the 8 stories retained today, 7 fall under trade."
       },
       "headlines": [
         {
@@ -1713,15 +1737,15 @@
         },
         {
           "title": {
-            "fr": "How Will the New Canadian Tariffs Affect the U.S. Economy?",
-            "en": "How Will the New Canadian Tariffs Affect the U.S. Economy?"
+            "fr": "Watch Tariffs Could Bring Canada Auto \"To Its Knees\"",
+            "en": "Watch Tariffs Could Bring Canada Auto \"To Its Knees\""
           },
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOUZ3T2JDeUpVQkdBTk5JOE54eVVnSThTRnluQldoUjZRUzg0bktWWFRPckVWOWgyRUhrXzRWa29hNTVUc0dIMUpDWjRIR0dzNWFsNTNWakF1YnkzSmRHTFY1cjh1ZGpmUEpNQk1lanZldXN4WHRDc3d0bHhCMlFtczJR?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQOWhsMURFNktfLUxiZW05OHdMNHBEV2lSenFGRWdobmJ2NlRrd09sOFN2TGlTSnI0VHVZdFJOSGVPMTVzcG1mQjVDb2s3d1VuWHlVRVd4TXFwU3BCbmtHaHYtMWRScTcyVDhDZWpHSWxUTlV0aUpKOHVMTWhWZTVrdzRSVlJSdFZ6QkVUWGxESnh4TWFjZHBKWHFpYkJnQXhO?oc=5",
           "theme": "trade",
-          "time": "4h",
-          "publishedAt": "2026-08-28T18:06:45+00:00",
+          "time": "1h",
+          "publishedAt": "2026-08-28T21:25:17+00:00",
           "impact": "high",
-          "source": "WSJ"
+          "source": "Bloomberg"
         },
         {
           "title": {
@@ -1731,7 +1755,7 @@
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3aFhpS0tGal9udUVDeTA4djZSeUEtOEkzbklHUUpOTGZmMlk3dUJqQVlLMEpWSEQzQkUtczJwaWpWZTZZcHhHUXl3QnhETEs5LWVXQVpJNU0wbHR1dnJGZXhxMGtJLWNEYVBXV282eTZsdGo4d19fY1BjeVlhQQ?oc=5",
           "theme": "trade",
           "time": "<1h",
-          "publishedAt": "2026-08-28T21:53:52+00:00",
+          "publishedAt": "2026-08-28T22:53:44+00:00",
           "impact": "high",
           "source": "The Washington Post"
         },
@@ -1773,15 +1797,15 @@
         },
         {
           "title": {
-            "fr": "Initially delayed, the pass-through of tariffs to consumer prices has arrived",
-            "en": "Initially delayed, the pass-through of tariffs to consumer prices has arrived"
+            "fr": "Tariffs, the price of ground beef, and Donald Trump",
+            "en": "Tariffs, the price of ground beef, and Donald Trump"
           },
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUWg2eldKLVFBS19TRjZpOXFfclZmMG1wRFlaYmhydWxpNllIN0ZoMUo1dnBJbGFhS0hGMUQtWWJ3cDdTQVh1M0otSTZfMXRud1Rpc2E0VHNyREc5aEtpVVBKalIxbm90NmE4LVBZc1p5d1YyOHBsNWp3N0prVXRhVWZhMmthS0p6LVRTUFd1aEdPMWtzamc5WmhiOGlNeXVBNjRwYVhGWld6ZFZxcmFBSzdsbjRscVQtTEVnZg?oc=5",
-          "theme": "monetary",
-          "time": "2h",
-          "publishedAt": "2026-08-28T20:15:00+00:00",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOeWNXQWtCcjR4Nk5YcUItODZEc0djQ0lqTTU4MktUQjNqd2xocEZTQ2xBTkgyQTc5LXh0blg4UVEwRkNYVXVYcUh2WTJYVlY4Rk5XY0NfR1MzUjZIWEhIMFlrVC1Xb09NbHY1N1dkcTBESDRFWENKSU1LOTBOTU9PVTVmTDZncnc?oc=5",
+          "theme": "trade",
+          "time": "5h",
+          "publishedAt": "2026-08-28T18:11:40+00:00",
           "impact": "high",
-          "source": "Federal Reserve Bank of Minneapolis"
+          "source": "The Washington Post"
         }
       ],
       "headlinesFr": [
@@ -1792,7 +1816,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaFkyYy1LT3NRcWt2c2p5aVJMZ2h3WVhPUkpYRU1qeEtXdDU0NGIwUlJUSi1fZjBFcWJEN1RQdWM3aFVXR2pxamFyNUZmbHBSSzhNdWpHRGExWUJ2a0VqcTVMSlQ1Q0JUZElpQjhNZFJMTTMzT1R1allVSTV5ZHVTTllwcWhVRG5qbkk2YW5lMEZGX2tIc1l3Yl9ETjJaYUlBcUhyT2RvVXlEeHc?oc=5",
           "theme": "trade",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-08-28T19:06:37+00:00",
           "impact": "high",
           "source": "Le Devoir"
@@ -1828,7 +1852,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPWnB2cktYYmVQTlZQSWU4MEM3ME0yVjkyUERDT3EzeFpqLVI0Zll6U1IyaUhmSUU1VS1KZkE1LTc4SDF2NG9vTzJ0N0NleWotWTA5NWgzel9GcUNNRnNjSW5tdDV0OUZzXzQ4akZDaGFnVUZZWXcxeDN6RkJZaGZRMTR1QUw0NWdOcDdmY25wdTlYOWVzUkNFVTNsYS1FOEN5elJVV2RBd3RLdGozaUVfc1YtQUd3bUw4TE1JcUlpTnFWMjVkWU1oRkRiaEZHelR5NFkwRm5EQmJmODVQVlFKOXhR?oc=5",
           "theme": "trade",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-08-28T15:00:33+00:00",
           "impact": "high",
           "source": "Les Affaires"
@@ -1840,7 +1864,7 @@
           },
           "url": "https://www.latribune.fr/article/economie/25278884896766/taux-directeurs-linflation-est-preoccupante-aux-etats-unis-selon-le-patron-de-la-fed",
           "theme": "monetary",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-08-28T14:53:04+00:00",
           "impact": "high",
           "source": "La Tribune"
@@ -1852,7 +1876,7 @@
           },
           "url": "https://www.latribune.fr/article/banques-finance/assurance/78576511734439/megafeux-dans-le-sud-deja-500-millions-d-euros-de-degats-pour-les-assureurs",
           "theme": "monetary",
-          "time": "8h",
+          "time": "9h",
           "publishedAt": "2026-08-28T13:56:06+00:00",
           "impact": "low",
           "source": "La Tribune"
@@ -1876,7 +1900,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOS2UtU3YzWF83amtmNkZPX2g5QnU4dThXNl9MMzdZbjU3eWNwZnU5YVZzYTZxaTg0bGlJVDJqQ0xQREZiQVhqNHlxQ2I1RENCUm1ZdDFXOGo5djItUDdScWwydE1ZUFYzT3ZFZEs5VC0wX3JYRTF2cG5FSmFVN08xclJvTnRLa1A4RkNNT3JzOTdvd0NFeERqMzdOTkoyNHVJ?oc=5",
           "theme": "trade",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-08-28T12:47:58+00:00",
           "impact": "high",
           "source": "Radio-Canada"
