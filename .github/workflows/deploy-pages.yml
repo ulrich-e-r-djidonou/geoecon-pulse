@@ -29,7 +29,8 @@ jobs:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url
+        || steps.deployment_reprise.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -43,6 +44,29 @@ jobs:
         with:
           path: '.'
 
+      # actions/deploy-pages interroge l'API des artefacts juste apres avoir
+      # televerse l'archive. Cet appel a deja renvoye un 403 « Error from
+      # intermediary » alors que l'upload venait de reussir : une defaillance
+      # passagere du cote de GitHub, sans rapport avec le depot, que l'action
+      # elle-meme invite a rejouer plus tard. Le workflow de donnees passant
+      # trois fois par jour, l'echec se resorbait seul, mais laissait entre
+      # temps une croix rouge dans l'onglet Actions d'un depot public servant
+      # de piece de portfolio, pour un site qui n'avait rien de casse.
+      #
+      # Une premiere tentative toleree puis une seconde apres une pause
+      # absorbent le blip sans ajouter d'action tierce a la chaine
+      # d'approvisionnement. Un 403 qui persiste sur les deux tentatives reste
+      # un echec : la croix rouge signale alors un vrai probleme.
       - name: Déploiement sur GitHub Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Pause avant la seconde tentative
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - name: Déploiement sur GitHub Pages (seconde tentative)
+        id: deployment_reprise
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
