@@ -1,23 +1,23 @@
 {
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "controles": [
     {
       "indicateur": "Taux de change CA",
       "type": "source_double",
       "sourceA": "Frankfurter/BCE",
-      "valeurA": 1.3805,
+      "valeurA": 1.3768,
       "sourceB": "Yahoo Finance",
-      "valeurB": 1.378,
-      "ecart": 0.0018,
+      "valeurB": 1.3804,
+      "ecart": 0.0026,
       "suspect": false
     },
     {
       "indicateur": "Taux de change CN",
       "type": "source_double",
       "sourceA": "Frankfurter/BCE",
-      "valeurA": 6.7105,
+      "valeurA": 6.7078,
       "sourceB": "Yahoo Finance",
-      "valeurB": 6.6992,
+      "valeurB": 6.6966,
       "ecart": 0.0017,
       "suspect": false
     },
@@ -25,9 +25,9 @@
       "indicateur": "Taux de change IN",
       "type": "source_double",
       "sourceA": "Frankfurter/BCE",
-      "valeurA": 94.83,
+      "valeurA": 95.11,
       "sourceB": "Yahoo Finance",
-      "valeurB": 94.808,
+      "valeurB": 95.095,
       "ecart": 0.0002,
       "suspect": false
     },
