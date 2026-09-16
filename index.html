@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'none'; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>GeoEcon Pulse — Veille géoéconomique mondiale</title>
 <meta name="description" content="Dashboard interactif de veille géoéconomique couvrant le Canada, les États-Unis, la Chine, l'Inde et le reste du monde.">
 <meta property="og:title" content="GeoEcon Pulse — Global Geoeconomic Intelligence">
@@ -11,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" integrity="sha384-vsrfeLOOY6KuIYKDlmVH5UiBmgIdB1oEf7p01YgWHuqmOHfZr374+odEv96n9tNC" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <style>
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -830,6 +832,21 @@ async function init() {
   showRegion('CA');
 }
 
+// ===== ECHAPPEMENT =====
+// Les manchettes, resumes et titres proviennent de flux RSS tiers : tout ce qui
+// vient de indicators.json doit passer par esc() avant d'entrer dans innerHTML.
+function esc(v) {
+  if (v === null || v === undefined) return '';
+  return String(v)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+// Seuls http(s) sont rendus cliquables : bloque javascript: et data:.
+function safeUrl(v) {
+  const u = String(v || '').trim();
+  return /^https?:\/\//i.test(u) ? esc(u) : '#';
+}
+
 // ===== BUILD PANELS =====
 function buildAllPanels() {
   const container = document.getElementById('panels-container');
@@ -853,11 +870,11 @@ function buildAllPanels() {
     panel.id = `panel-${key}`;
     panel.innerHTML = `
       <!-- Sentiment -->
-      <div class="sentiment-bar" data-sentiment="${r.sentiment.value}">
-        <div class="sentiment-icon">${sentimentIcons[r.sentiment.value]}</div>
+      <div class="sentiment-bar" data-sentiment="${esc(r.sentiment.value)}">
+        <div class="sentiment-icon">${esc(sentimentIcons[r.sentiment.value] || '')}</div>
         <div class="sentiment-text">
-          <div class="sentiment-label">${r.sentiment.label[lang]}</div>
-          <div class="sentiment-reason">${r.sentiment.reason[lang]}</div>
+          <div class="sentiment-label">${esc(r.sentiment.label[lang])}</div>
+          <div class="sentiment-reason">${esc(r.sentiment.reason[lang])}</div>
         </div>
       </div>
 
@@ -868,13 +885,13 @@ function buildAllPanels() {
       <!-- Sparkline -->
       <h2 class="section-title" data-i18n="section_trend">${T[lang].section_trend}</h2>
       <div class="sparkline-container">
-        <div class="sparkline-label">${r.sparkline.label[lang]}</div>
+        <div class="sparkline-label">${esc(r.sparkline.label[lang])}</div>
         <div class="sparkline-wrap"><canvas id="spark-${key}"></canvas></div>
       </div>
 
       <!-- Summary -->
       <h2 class="section-title" data-i18n="section_summary">${T[lang].section_summary}</h2>
-      <div class="summary-box" style="--region-color: ${color};">${r.summary[lang]}</div>
+      <div class="summary-box" style="--region-color: ${color};">${esc(r.summary[lang])}</div>
 
       <!-- Headlines -->
       <h2 class="section-title" data-i18n="section_headlines">${T[lang].section_headlines}</h2>
@@ -1038,14 +1055,14 @@ function buildHeadlines(headlines, regionKey) {
   const badgeClasses = { trade: 'badge-trade', monetary: 'badge-monetary', energy: 'badge-energy', tech: 'badge-tech', geopolitics: 'badge-geopolitics' };
 
   return headlines.map(h => `
-    <div class="headline-item" data-theme="${h.theme}">
-      <div class="headline-impact ${h.impact}"></div>
+    <div class="headline-item" data-theme="${esc(h.theme)}">
+      <div class="headline-impact ${esc(h.impact)}"></div>
       <div class="headline-content">
-        <a class="headline-link" href="${h.url}" target="_blank" rel="noopener">${h.title[lang]}</a>
+        <a class="headline-link" href="${safeUrl(h.url)}" target="_blank" rel="noopener noreferrer">${esc(h.title[lang])}</a>
         <div class="headline-meta">
-          <span class="headline-badge ${badgeClasses[h.theme]}">${themeLabels[h.theme] || h.theme}</span>
-          <span class="headline-time">${relativeTime(h.publishedAt, h.time)}</span>
-          <span class="headline-source">${h.source}</span>
+          <span class="headline-badge ${esc(badgeClasses[h.theme] || '')}">${esc(themeLabels[h.theme] || h.theme)}</span>
+          <span class="headline-time">${esc(relativeTime(h.publishedAt, h.time))}</span>
+          <span class="headline-source">${esc(h.source)}</span>
         </div>
       </div>
     </div>
@@ -1135,17 +1152,17 @@ function buildInterconnections() {
     const impactClass = ic.impact === 'high' ? 'impact-high' : 'impact-medium';
     const impactLabel = ic.impact === 'high' ? T[lang].impact_high : T[lang].impact_medium;
     return `
-      <div class="interconnection-card" data-theme="${ic.type}">
+      <div class="interconnection-card" data-theme="${esc(ic.type)}">
         <div class="interconnection-header">
           <div class="interconnection-regions">
-            <span class="region-badge region-badge-${ic.from}">${DATA.regions[ic.from]?.flag || ''} ${DATA.regions[ic.from]?.name[lang] || ic.from}</span>
+            <span class="region-badge region-badge-${esc(ic.from)}">${esc(DATA.regions[ic.from]?.flag || '')} ${esc(DATA.regions[ic.from]?.name[lang] || ic.from)}</span>
             <span class="interconnection-arrow">→</span>
-            <span class="region-badge region-badge-${ic.to}">${DATA.regions[ic.to]?.flag || ''} ${DATA.regions[ic.to]?.name[lang] || ic.to}</span>
+            <span class="region-badge region-badge-${esc(ic.to)}">${esc(DATA.regions[ic.to]?.flag || '')} ${esc(DATA.regions[ic.to]?.name[lang] || ic.to)}</span>
           </div>
-          <span class="interconnection-impact-badge ${impactClass}">${impactLabel}</span>
+          <span class="interconnection-impact-badge ${impactClass}">${esc(impactLabel)}</span>
         </div>
-        <div class="interconnection-title">${ic.title[lang]}</div>
-        <div class="interconnection-desc">${ic.description[lang]}</div>
+        <div class="interconnection-title">${esc(ic.title[lang])}</div>
+        <div class="interconnection-desc">${esc(ic.description[lang])}</div>
       </div>
     `;
   }).join('');
@@ -1219,19 +1236,19 @@ function buildTimeline() {
   container.innerHTML = DATA.timeline.map(ev => {
     const tags = ev.regions.map(r => {
       const region = DATA.regions[r];
-      return `<span class="timeline-tag region-badge-${r}">${region?.flag || ''} ${region?.name[lang] || r}</span>`;
+      return `<span class="timeline-tag region-badge-${esc(r)}">${esc(region?.flag || '')} ${esc(region?.name[lang] || r)}</span>`;
     }).join('');
 
     const themeLabel = T[lang].themes[ev.theme] || ev.theme;
     const badgeClass = `badge-${ev.theme}`;
 
     return `
-      <div class="timeline-event" data-theme="${ev.theme}">
-        <div class="timeline-date">${ev.date}</div>
-        <div class="timeline-title">${ev.title[lang]}</div>
+      <div class="timeline-event" data-theme="${esc(ev.theme)}">
+        <div class="timeline-date">${esc(ev.date)}</div>
+        <div class="timeline-title">${esc(ev.title[lang])}</div>
         <div class="timeline-tags">
           ${tags}
-          <span class="timeline-tag headline-badge ${badgeClass}">${themeLabel}</span>
+          <span class="timeline-tag headline-badge ${esc(badgeClass)}">${esc(themeLabel)}</span>
         </div>
       </div>
     `;
