@@ -42,6 +42,12 @@ jobs:
       - name: Test du filtre d'actualités
         run: python scripts/test_news_filter.py
 
+      # Seconde barrière : les titres RSS entrent dans innerHTML. Si une
+      # interpolation perd son esc(), l'injection HTML par les flux redevient
+      # possible et la mise à jour ne doit pas partir.
+      - name: Test de l'échappement HTML
+        run: python scripts/test_echappement_html.py
+
       # Le script sort en 2 quand un indicateur saisi à la main a dépassé son
       # seuil de fraîcheur. Ce n'est pas une raison de jeter des données
       # fraîches : on note le code et on publie quand même.

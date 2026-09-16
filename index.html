@@ -5,11 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'none'; base-uri 'self'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://djidonou.com/geoecon-pulse/">
 <title>GeoEcon Pulse — Veille géoéconomique mondiale</title>
 <meta name="description" content="Dashboard interactif de veille géoéconomique couvrant le Canada, les États-Unis, la Chine, l'Inde et le reste du monde.">
 <meta property="og:title" content="GeoEcon Pulse — Global Geoeconomic Intelligence">
 <meta property="og:description" content="Interactive geoeconomic intelligence dashboard covering Canada, US, China, India and the World.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://djidonou.com/geoecon-pulse/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -990,16 +992,16 @@ function buildIndicatorCards(indicators, regionKey) {
     const unit = isStock ? '' : ind.unit;
     const label = isStock ? ind.name : labels[key];
     const period = (lang === 'en' && ind.periodEn) ? ind.periodEn : ind.period;
-    const change = isStock && ind.change ? ` (${ind.change > 0 ? '+' : ''}${ind.change}%)` : '';
+    const change = isStock && ind.change ? ` (${ind.change > 0 ? '+' : ''}${esc(ind.change)}%)` : '';
     const trend = ind.trend || 'stable';
 
     html += `
       <div class="indicator-card">
-        <div class="indicator-label">${label}</div>
-        <div class="indicator-value">${displayVal}<span class="indicator-unit">${unit ? ' ' + unit : ''}</span></div>
+        <div class="indicator-label">${esc(label)}</div>
+        <div class="indicator-value">${esc(displayVal)}<span class="indicator-unit">${unit ? ' ' + esc(unit) : ''}</span></div>
         <div class="indicator-meta">
-          <span class="trend-arrow ${trend}">${trendArrows[trend]}</span>
-          <span>${period}${change}</span>
+          <span class="trend-arrow ${esc(trend)}">${esc(trendArrows[trend] || '')}</span>
+          <span>${esc(period)}${esc(change)}</span>
         </div>
       </div>
     `;
@@ -1219,8 +1221,8 @@ function drawNetwork() {
   for (const [key, node] of Object.entries(nodes)) {
     svgContent += `
       <circle cx="${node.x}" cy="${node.y}" r="30" fill="${node.color}20" stroke="${node.color}" stroke-width="2" filter="url(#glow)" />
-      <text x="${node.x}" y="${node.y + 5}" text-anchor="middle" font-size="20">${node.flag}</text>
-      <text x="${node.x}" y="${node.y + 50}" text-anchor="middle" fill="#e8e6e3" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600">${node.label}</text>
+      <text x="${node.x}" y="${node.y + 5}" text-anchor="middle" font-size="20">${esc(node.flag)}</text>
+      <text x="${node.x}" y="${node.y + 50}" text-anchor="middle" fill="#e8e6e3" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600">${esc(node.label)}</text>
     `;
   }
 
@@ -1240,7 +1242,7 @@ function buildTimeline() {
     }).join('');
 
     const themeLabel = T[lang].themes[ev.theme] || ev.theme;
-    const badgeClass = `badge-${ev.theme}`;
+    const badgeClass = `badge-${esc(ev.theme)}`;
 
     return `
       <div class="timeline-event" data-theme="${esc(ev.theme)}">
