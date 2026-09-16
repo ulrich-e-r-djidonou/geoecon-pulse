@@ -49,7 +49,7 @@
         "exchange": {
           "value": 1.394,
           "unit": "CAD/USD",
-          "trend": "up",
+          "trend": "stable",
           "period": "2026-09-16",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -57,9 +57,9 @@
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35679,
+          "value": 35700,
           "trend": "up",
-          "change": 0.27,
+          "change": 0.33,
           "period": "2026-09-16",
           "periodEn": "2026-09-16"
         },
@@ -148,10 +148,34 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a perdu 41 700 emplois en août, le taux de chômage s'établit à 6,4 % (août 2026). L'inflation ressort à 3,0 % (août 2026) pour un taux directeur de 2,25 % (sept. 2026). S&P/TSX gagne 0,27 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « commerce ».",
-        "en": "The Canadian economy shed 41,700 jobs in August, unemployment stands at 6.4% (Aug. 2026). Inflation is 3.0% (Aug. 2026) against a policy rate of 2.25% (Sep. 2026). S&P/TSX is up 0.27% on the session. Of the 8 stories retained today, 4 fall under trade."
+        "fr": "L'économie canadienne a perdu 41 700 emplois en août, le taux de chômage s'établit à 6,4 % (août 2026). L'inflation ressort à 3,0 % (août 2026) pour un taux directeur de 2,25 % (sept. 2026). S&P/TSX gagne 0,33 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
+        "en": "The Canadian economy shed 41,700 jobs in August, unemployment stands at 6.4% (Aug. 2026). Inflation is 3.0% (Aug. 2026) against a policy rate of 2.25% (Sep. 2026). S&P/TSX is up 0.33% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
       },
       "headlines": [
+        {
+          "title": {
+            "fr": "BoC concerned trade war will weigh on confidence, deliberations show",
+            "en": "BoC concerned trade war will weigh on confidence, deliberations show"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-boc-worried-trade-war-will-weigh-on-confidence-deliberations-show/",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-09-16T17:43:19+00:00",
+          "impact": "high",
+          "source": "The Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Bank of Canada Troubled By High Gas Prices, Warns of Hike Risk",
+            "en": "Bank of Canada Troubled By High Gas Prices, Warns of Hike Risk"
+          },
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWW9Qa3pCenhLTUhfT3pKbktMMDBMNnZjUUpzOU1vcUNVbnZEeG45emItb0ZscXpLS0JRVHhUZjNFMnNQcEQ3TEk2YmJ2b0xwSU5VSEh1cjBQZTc4ME1RLVBUamQybVhZUFN5M1Y3Yl9DdmY0a3lfV3hhWHlKYlVvaWUwbTM5THZ0aTdJaEhFNFhjOHJZSUExbUpjbVRySWctZVR1WjB4Q2V5NGhTMzM5YWdR?oc=5",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-09-16T17:30:00+00:00",
+          "impact": "high",
+          "source": "Bloomberg"
+        },
         {
           "title": {
             "fr": "A list of Ontario cities that are weighing restrictions on AI data centres",
@@ -159,7 +183,7 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-ontario-ai-data-centres-restrictions-moratoriums-list/",
           "theme": "tech",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-09-16T15:21:14+00:00",
           "impact": "medium",
           "source": "The Globe and Mail"
@@ -178,15 +202,15 @@
         },
         {
           "title": {
-            "fr": "Yoshua Bengio’s non-profit to get up to $300-million from Canada, Germany to expand safe AI development",
-            "en": "Yoshua Bengio’s non-profit to get up to $300-million from Canada, Germany to expand safe AI development"
+            "fr": "Fed seen hiking rates in defiance of Trump",
+            "en": "Fed seen hiking rates in defiance of Trump"
           },
-          "url": "https://www.theglobeandmail.com/business/article-yoshua-bengio-lawzero-receives-300-million-from-canada-germany/",
-          "theme": "tech",
-          "time": "2h",
-          "publishedAt": "2026-09-16T15:00:49+00:00",
-          "impact": "medium",
-          "source": "The Globe and Mail"
+          "url": "https://financialpost.com/news/economy/fed-seen-hiking-rates-in-defiance-of-trump-decision-day-guide",
+          "theme": "monetary",
+          "time": "3h",
+          "publishedAt": "2026-09-16T13:51:50+00:00",
+          "impact": "low",
+          "source": "Financial Post"
         },
         {
           "title": {
@@ -207,7 +231,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ3VUOXdYQW1tN0NhQjBPR0pMQ0hWUXpYdTB3emtBcWlmVTlKbTU1Vk51QUMzNzk2WjhsVnlUZkh1ZjRzU1dnTUJwY0R2ZFhaOWtlb1daeG12LWFGZkpySVdOYUdxU2lSVVhiT2VGTUFKTzJnN3RvOVRlWjA2SWpfeF9DcW9QLUlDWmJZXzVqYWVEa0UzZUxoMEdwTDMwV3JSVC1wZndrZFoxeWRz?oc=5",
           "theme": "monetary",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-09-16T12:22:57+00:00",
           "impact": "medium",
           "source": "Reuters"
@@ -223,30 +247,6 @@
           "publishedAt": "2026-09-16T12:00:06+00:00",
           "impact": "medium",
           "source": "Financial Post"
-        },
-        {
-          "title": {
-            "fr": "Trade war is a selling point at Carney’s investment show",
-            "en": "Trade war is a selling point at Carney’s investment show"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWDdhWDA4a1BGNDA0T21ESkdmSEMtSDhmQnU4eVVva3RmNUJKaXpleHdwcE02S0JqRUlEU0pjUVN4Z08zR2ptVUFRd2dKMzJCczltRDdyQ0RnSDFSS2E1RndLZGhvbnZaNUdQaFBXWGQwelBrN1p2NndDOGlPVDJmcHB5TWpEbTVmMUlGdXJ3THBFOVo3SnM3R3ZGS0NYM1FTYURybDZwUnY?oc=5",
-          "theme": "trade",
-          "time": "7h",
-          "publishedAt": "2026-09-16T09:55:00+00:00",
-          "impact": "high",
-          "source": "Politico"
-        },
-        {
-          "title": {
-            "fr": "Carney visits Europe: Can Canada seek refuge with the EU amid US trade war?",
-            "en": "Carney visits Europe: Can Canada seek refuge with the EU amid US trade war?"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRC02SHFoalp1YWZWeExESS1GNS1VeFM5aUZQVjUybU5RdEVwOHk4RFZnOXEzMGZnb2k2YU1mbU9qbHU1ZGdzcmNLY0dfS2N5VE1CaEVTcXZwcVluWFEyTEZmRnJmeEtMWG1YdVI5NFAxdnp2V2tTZkZfdURxbEVweEhyQkhaRzBxVUF2QXZwRllNenFxZ3dILWlxb3R3VXl5THBJSFl1d2R2cmNFVUxvMnFsOHDSAboBQVVfeXFMTll5VWJPRjREMWc0WFZPU0NjTXF0c2tRQlpXVWVEc2JfUXM0X2ZMOHFlX3c1ZkxfRklGaTJkMEdXd3d4b3N4WE0tZkxJS001dnQ1NS05MWpTdWhEUTZWVXNIaGVhbXRickhrR3BVdVVpTlB0ODBCbU5kdWFKMGYwTmJSWVp0bEU2ZUx5N2dNb3BIVExvNnBrellhZEtvR3g5X3plRGJSRENJejU4YWJra3FPcHBzdjhTVXNB?oc=5",
-          "theme": "trade",
-          "time": "9h",
-          "publishedAt": "2026-09-16T07:30:01+00:00",
-          "impact": "high",
-          "source": "Al Jazeera"
         }
       ],
       "provincialAnalysis": {
@@ -567,7 +567,7 @@
           },
           "url": "https://www.lapresse.ca/affaires/2026-09-16/sommet-canadien-de-l-investissement/les-grands-projets-se-heurtent-a-des-obstacles.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-09-16T15:39:45+00:00",
           "impact": "low",
           "source": "La Presse"
@@ -627,7 +627,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNYW55NjJMdFU2WUVMTFU5dF9iQzBoWTZQS0t1dGR2d0RWYmJEQWZnVlJ4UV9acTB3TVpkYjhxVkZyc2JicEdxRHpqV2hGaDJFSHdMZDNpUFRENVRRMVY2aEJWT1ZFS2ZwR2tXLWRnUXk5RXhuZ01FRHl6Y2NXWjZVZ1J1TmRuRXM5UVhj?oc=5",
           "theme": "trade",
-          "time": "18h",
+          "time": "19h",
           "publishedAt": "2026-09-15T22:27:57+00:00",
           "impact": "high",
           "source": "Radio-Canada"
@@ -651,7 +651,7 @@
           },
           "url": "https://ici.radio-canada.ca/nouvelle/2284059/intelligence-artificielle-cohere-canada-etats-unis-dangers",
           "theme": "tech",
-          "time": "20h",
+          "time": "21h",
           "publishedAt": "2026-09-15T20:26:31+00:00",
           "impact": "medium",
           "source": "Radio-Canada"
@@ -712,9 +712,9 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7609,
+          "value": 7606,
           "trend": "up",
-          "change": 0.31,
+          "change": 0.26,
           "period": "2026-09-16",
           "periodEn": "2026-09-16"
         },
@@ -749,7 +749,7 @@
           7499.36,
           7489.72,
           7686.14,
-          7609.18
+          7605.64
         ],
         "labels": [
           {
@@ -803,10 +803,22 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a créé 162 000 emplois en août, le taux de chômage s'établit à 4,1 % (août 2026). L'inflation ressort à 3,4 % (août 2026) pour un taux directeur de 3,625 % (sept. 2026). S&P 500 gagne 0,31 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
-        "en": "The US economy added 162,000 jobs in August, unemployment stands at 4.1% (Aug. 2026). Inflation is 3.4% (Aug. 2026) against a policy rate of 3.625% (Sep. 2026). S&P 500 is up 0.31% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
+        "fr": "L'économie américaine a créé 162 000 emplois en août, le taux de chômage s'établit à 4,1 % (août 2026). L'inflation ressort à 3,4 % (août 2026) pour un taux directeur de 3,625 % (sept. 2026). S&P 500 gagne 0,26 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
+        "en": "The US economy added 162,000 jobs in August, unemployment stands at 4.1% (Aug. 2026). Inflation is 3.4% (Aug. 2026) against a policy rate of 3.625% (Sep. 2026). S&P 500 is up 0.26% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
       },
       "headlines": [
+        {
+          "title": {
+            "fr": "Bond Traders Are Convinced the Fed Will Hike Interest Rates",
+            "en": "Bond Traders Are Convinced the Fed Will Hike Interest Rates"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPU1ZWc1pSWnVudHRMTnZQU205aUd4YnlnR01FNXlCaFU1VFNBaHZsVjRJdzRTYkhzRWVWVnBFa3FOWnNiTmUzX19meXpXQlF3RVNvTFZMaVR2QnFfNXRFWnozMmdWZ1pHb3EwVFR5UFI5ZXNXMGV2aTFYa1hpNXB1U25DM1lfSWRyY213bG13YXI2dXBNaFZpV21GMTA0V01uOWlCemlxNXRweG0wQ3dxRzVyVQ?oc=5",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-09-16T17:40:21+00:00",
+          "impact": "medium",
+          "source": "Bloomberg"
+        },
         {
           "title": {
             "fr": "After Talking the Talk on Inflation, Fed’s Warsh May Be Made to Walk",
@@ -821,25 +833,13 @@
         },
         {
           "title": {
-            "fr": "Bond Traders Are Convinced the Fed Will Hike Interest Rates",
-            "en": "Bond Traders Are Convinced the Fed Will Hike Interest Rates"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPU1ZWc1pSWnVudHRMTnZQU205aUd4YnlnR01FNXlCaFU1VFNBaHZsVjRJdzRTYkhzRWVWVnBFa3FOWnNiTmUzX19meXpXQlF3RVNvTFZMaVR2QnFfNXRFWnozMmdWZ1pHb3EwVFR5UFI5ZXNXMGV2aTFYa1hpNXB1U25DM1lfSWRyY213bG13YXI2dXBNaFZpV21GMTA0V01uOWlCemlxNXRweG0wQ3dxRzVyVQ?oc=5",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-09-16T16:10:21+00:00",
-          "impact": "medium",
-          "source": "Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "Trump’s Latest Threats Loom Over Fed’s Interest Rate Decision",
-            "en": "Trump’s Latest Threats Loom Over Fed’s Interest Rate Decision"
+            "fr": "Trump’s Latest Threats Loom Over Fed Rate Decision",
+            "en": "Trump’s Latest Threats Loom Over Fed Rate Decision"
           },
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSzFrSUxudFNUNnZmaVdnRWltT1NvaHR3OFZSNlpFRzUtbm1MOEo2Z3JSM1BXVmU0TU96QVlsbDZpcGFNQmFacXUzR1hVbHkzTTJuREs5eGJ6dUZXNEdZVU54cTZqNG0zb0pCUHR4aGhKQWg2VEh0djhHZWkwX1ZGNVFoYlNnb0VF?oc=5",
           "theme": "monetary",
           "time": "1h",
-          "publishedAt": "2026-09-16T15:59:53+00:00",
+          "publishedAt": "2026-09-16T15:59:54+00:00",
           "impact": "medium",
           "source": "The New York Times"
         },
@@ -851,7 +851,7 @@
           "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html",
           "theme": "monetary",
           "time": "<1h",
-          "publishedAt": "2026-09-16T16:57:42+00:00",
+          "publishedAt": "2026-09-16T17:29:19+00:00",
           "impact": "medium",
           "source": "CNBC"
         },
@@ -874,7 +874,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWHQzSC11Z3EtOUFVMG9sQnYwOHhnZkJGM2VoVWtFNWp1Y0ZlM2lIMEhoSnkzaExSQlZ4SzVFRkk0aHR3S0NUWC1ZdWQ0MXdJNmxoYWdxdGJJcmtDWENDa0JvNE9fQjFCTFhqTVZZR0NuQmNDNE03dHVEcUVmZDdpaUhXUTFWdzdmeXJUVkxGdThDaG8wNGRWSXl3V09DZVNDN1BzbllrN0tSZw?oc=5",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-09-16T15:19:50+00:00",
           "impact": "medium",
           "source": "Reuters"
@@ -898,7 +898,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBpUVgwbnd0X05XenhFY3VNS2hOWDdMUUpsWVE0ZFNEeV92SFZ4dDRScFVPdW5SQ2lWZnVwUlVuaGluOE9qX0s1dDVIT2NtVE5mMnlsdGMwRklZOFhsZUt4aERVS0FfN2x5RFJRQTNkRTluQVR6NHd2SXhIYS0?oc=5",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-09-16T14:34:11+00:00",
           "impact": "high",
           "source": "Afp"
@@ -912,7 +912,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNVFgyVXFQcGdzeGw3TFNOMHB1UXdPT1FiWWFud1A1cE13WmlMeEwyT1FJZmlDM2Q4RVlhMkhycHNCQUk3ZXpUaTZXbDloYk56ak5rT0p3ckFOeXdjTVN5RC1uLWpza0lscFVDOWVxcVVRMEoxbjFsbkUxN1VGemVhYTI5T185bUJ6c0Y2S2FrYXZ2TlgzaVNiVmVEdjE3UmJyZWJHUHNZSkN3Q2MySG1xRk10MUJJOFdfbGdmS0I4R2JHOG1SVzdYRklvcDJNUGNCQnV6dGlJYnRDX3JoVnlrX3BIQUxuNUpxNXc2bURJNTk5QzBXakN2ZEhFX2EwSlJJeVc4YnFGbHFhWlA0LUZObXBWeUI1a0ZERExQdG12UHM?oc=5",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-09-16T15:41:29+00:00",
           "impact": "low",
           "source": "Les Echos"
@@ -948,7 +948,7 @@
           },
           "url": "https://www.latribune.fr/article/banques-finance/industrie-financiere/12004782415563/avec-61-milliards-d-euros-de-dividendes-la-france-prend-la-tete-en-europe",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-09-16T15:42:23+00:00",
           "impact": "medium",
           "source": "La Tribune"
@@ -1051,7 +1051,7 @@
         "exchange": {
           "value": 6.707,
           "unit": "CNY/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-09-16",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1148,7 +1148,7 @@
           },
           "url": "https://www.scmp.com/news/world/middle-east/article/3367764/who-abdul-malik-al-houthi-elusive-yemeni-commander-behind-red-sea-saudi-blitz?utm_source=rss_feed",
           "theme": "energy",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-09-16T14:32:02+00:00",
           "impact": "medium",
           "source": "South China Morning Post"
@@ -1160,7 +1160,7 @@
           },
           "url": "https://www.scmp.com/tech/tech-trends/article/3367755/chinas-zai-raises-revenue-target-25-after-us5-billion-cash-injection?utm_source=rss_feed",
           "theme": "monetary",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-09-16T13:31:13+00:00",
           "impact": "medium",
           "source": "South China Morning Post"
@@ -1172,7 +1172,7 @@
           },
           "url": "https://www.scmp.com/tech/tech-trends/article/3367745/chinas-ai-chip-stocks-face-crucial-test-metax-lock-period-expires?utm_source=rss_feed",
           "theme": "tech",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-09-16T12:25:00+00:00",
           "impact": "medium",
           "source": "South China Morning Post"
@@ -1208,7 +1208,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMGllM051TUhYNEdTTFRzV3JNSGtaZjZFVHJueHZmdzBic2FHY1hwSXl2X1RxRjB4YlF4MExvRXJmUks5Sk13cXpoZ3JrYUNBeWpMcEhpaHdFa25PYmdOQ1NvVHdZSXhObTFFZ1NSdl9RU0xJN2NvX2R6aTVRMHJiVEdxSUdfZjFtNXhsZkVvNzExWnN3Rk1Gc2pWd1NqR0R6NkcyN20xWTJzMkJCYnRTcnFuUEFydw?oc=5",
           "theme": "trade",
-          "time": "10h",
+          "time": "11h",
           "publishedAt": "2026-09-16T06:30:00+00:00",
           "impact": "high",
           "source": "Bloomberg"
@@ -1258,22 +1258,10 @@
           },
           "url": "http://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260916-canal-panama-el-nino-commerce-mondial",
           "theme": "energy",
-          "time": "6h",
+          "time": "7h",
           "publishedAt": "2026-09-16T10:40:30+00:00",
           "impact": "medium",
           "source": "RFI"
-        },
-        {
-          "title": {
-            "fr": "La Chine célèbre ses Nouvelles routes de la soie, avec la guerre Israël-Hamas en fond",
-            "en": "La Chine célèbre ses Nouvelles routes de la soie, avec la guerre Israël-Hamas en fond"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdWFSQnhfcDVaT2xfYTNhVEwyY19oa19hTVRnQzdvcUw4dFFMTE1ZR3VvYUhuS21hY1dMTFllUHpFd3lnNGl5cW5tQ3hpWDNJWjhGWVppMmtUZUNUNTYwVEtpeHUxWFN1UFMySEVKdTFySnZxUXgyYTBHeFRKMTFMdjRMTWlTXy0zUW42dkFLVXhaZjhJdGhZV0plUHVvR1ZMS0N2cXNXdzdpZGRNencxbGFrRzhCRnQydDdSVjNhWVlkS2JZdmN5dw?oc=5",
-          "theme": "geopolitics",
-          "time": "1j",
-          "publishedAt": "2026-09-15T08:15:14+00:00",
-          "impact": "high",
-          "source": "Arab News FR"
         },
         {
           "title": {
@@ -1518,22 +1506,10 @@
           },
           "url": "https://www.livemint.com/economy/india-uk-ceta-car-imports-trq-642-cars-11789561559622.html",
           "theme": "trade",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-09-16T14:27:09+00:00",
           "impact": "high",
           "source": "Mint"
-        },
-        {
-          "title": {
-            "fr": "India’s metals, ores exports account for just 1.8% of global demand: NITI Aayog",
-            "en": "India’s metals, ores exports account for just 1.8% of global demand: NITI Aayog"
-          },
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPM3A1SkUtMEZtc3BaalFrWDB6TzFfYjhBNkhwYXRsbk1DMkFKVENVOUFWMi1PVm5Qd0xCcTlfSU5USm1kUzBJWXlxZmRyN1I5VG01NUM4aTRTalEzVlhINl9VcG1SMFc1WExFVTdhaWN6VTNFenZMNUhvNWdRT0dvYVdCRWJoV0VCVnhKa3RDeGZkUU8tTlNINVRQQ2ZXX0N1YzRkdHJTVGFMY0lscng0R2ZTVFdfMlhHU21fYkhCbjlPbXRaenc5UjNTNUhpUdIB0wFBVV95cUxQZGhlZDUxZTRMbmNMdjdKUzNPY0VjdG1idy1FXy1Oc010MTVUYU5vc3lwdmw1Q05ySUxlcUZ5c3FHVTRKcEUzYWxJbENQSTFRM01mdjV0Mlh1eW5nVVNfRDJja2FkUG9EZktXQktCVGhQWTRKU3BqSUZrRE5PazUwRzBNZDdOdVFpUzJhdVJ2SEp3SDRrTW5halBnQ2FjS2lGbXdBQVg1SnRLbTRQVktkTW1TcEdDLXptZC1oWGFWYVgxX0Iwanp4dTZYcl93S0FleU9n?oc=5",
-          "theme": "trade",
-          "time": "3h",
-          "publishedAt": "2026-09-16T13:39:00+00:00",
-          "impact": "medium",
-          "source": "Moneycontrol"
         },
         {
           "title": {
@@ -1558,6 +1534,18 @@
           "publishedAt": "2026-09-16T12:00:55+00:00",
           "impact": "medium",
           "source": "The Hindu"
+        },
+        {
+          "title": {
+            "fr": "India-New Zealand FTA: New Zealand clears path for trade deal –  What it means?",
+            "en": "India-New Zealand FTA: New Zealand clears path for trade deal –  What it means?"
+          },
+          "url": "https://www.livemint.com/economy/indianew-zealand-fta-new-zealand-clears-path-for-trade-deal-what-it-means-11789550057021.html",
+          "theme": "trade",
+          "time": "6h",
+          "publishedAt": "2026-09-16T10:48:04+00:00",
+          "impact": "high",
+          "source": "Mint"
         }
       ],
       "headlinesFr": [
@@ -1653,7 +1641,7 @@
           "name": "MSCI World",
           "value": 159,
           "trend": "up",
-          "change": 0.4,
+          "change": 0.36,
           "period": "2026-09-16",
           "periodEn": "2026-09-16"
         }
@@ -1673,7 +1661,7 @@
           72.92,
           90.12,
           90.49,
-          105.89
+          105.72
         ],
         "labels": [
           {
@@ -1719,8 +1707,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 0,4 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « politique monétaire ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 0.4% on the session. Of the 8 stories retained today, 4 fall under monetary policy."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 0,36 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « politique monétaire ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 0.36% on the session. Of the 8 stories retained today, 4 fall under monetary policy."
       },
       "headlines": [
         {
@@ -1761,6 +1749,18 @@
         },
         {
           "title": {
+            "fr": "South Africa slam planned US sanctions over alleged racial discrimination",
+            "en": "South Africa slam planned US sanctions over alleged racial discrimination"
+          },
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdGd6VzFxNUtmQzhwVHZxc1N2VWpkWDRKWElibmRfNFJYalBtcElBSFpjMlJZMVJPMkFObF9Cb2tIWjNKSm9tOUVfRXNfQl91aDZwVnVRVkdDNVk5eEhZcUZlNkRlQXJ2czE0ODN2bkZZWmJNNlVWT1Y0TUJ1TDhkUUxFNEcwT21MUUMwS05RVG5OVWRnbHlsSUF5RkdVLXRyRVVoTUdZdWx3N1l6UThVY1hid2PSAboBQVVfeXFMT0FHT0tnOW1zTnJMcUhnbTNLRnRiUnFNQ05sQjd4M3M3eFFLQ3FiVmFXVlVDOGVubnp0cVNMU0lOaGR4dmx2a2s0NEs1Skxod2tqTkFxR1VkMldfeHg4THhRUEpWcGRpN3NlazRmdVJSTi15REE0Q2FVQ2tVTTJ0NmNpSFc1TW12ZHFGaEtyVEZ3dC1YcHpsSFRLRkJuYlRSUC11VE1qN1RRaGdKNlA1TVVMeW5UMVk5ckVR?oc=5",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "publishedAt": "2026-09-16T17:15:00+00:00",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
             "fr": "Belarus Releases 25 Political Prisoners in Exchange for U.S. Easing of Sanctions",
             "en": "Belarus Releases 25 Political Prisoners in Exchange for U.S. Easing of Sanctions"
           },
@@ -1778,7 +1778,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcFhvRmY4VGxlaUd4NFpmcDNQR296QkhNUkdwM0U5RnQ3ZmJVT0UybXZSVEdxeDZhWHhIUFQwV0V1cWxXQzZLS0FLZ1h6WHNBN3VCQ1JCT1VES1M4ZzFWXzBHaVR3eE1xS0FYS01mOXluRU9QS1lLbklCSlY0OURHZjFUdTBmbkdGNUHSAY8BQVVfeXFMTVluWlFjSDFCMGw2U0dtak5mR2ZOV0ZicXlhQzBiWVhfRTdWNzNuYUxkOW9YOVZlRUplNk9YazR4TllhYjJfY2Y0LVZRMkt2Z0N6alJfTUEwYTRvUW1FNXlaODBxeExzbE4yMGplZ0xkZVRYSlltejJOWThQQUt2WHlvYWUyQmp0UmJTek8yMDg?oc=5",
           "theme": "geopolitics",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-09-16T15:27:46+00:00",
           "impact": "high",
           "source": "CNBC"
@@ -1802,22 +1802,10 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cv2dw7lw4rkpo?at_medium=RSS&at_campaign=rss",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-09-16T14:30:51+00:00",
           "impact": "medium",
           "source": "BBC"
-        },
-        {
-          "title": {
-            "fr": "Chinese oil prices hit record highs after attacks on Saudi pipeline",
-            "en": "Chinese oil prices hit record highs after attacks on Saudi pipeline"
-          },
-          "url": "https://www.ft.com/content/3a88d016-9575-4c11-bd34-14606964a867?syn-25a6b1a6=1",
-          "theme": "energy",
-          "time": "3h",
-          "publishedAt": "2026-09-16T13:24:01+00:00",
-          "impact": "high",
-          "source": "Financial Times"
         }
       ],
       "headlinesFr": [
@@ -1852,7 +1840,7 @@
           },
           "url": "https://www.latribune.fr/article/banques-finance/industrie-financiere/12004782415563/avec-61-milliards-d-euros-de-dividendes-la-france-prend-la-tete-en-europe",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-09-16T15:42:23+00:00",
           "impact": "medium",
           "source": "La Tribune"
@@ -1888,7 +1876,7 @@
           },
           "url": "http://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260916-canal-panama-el-nino-commerce-mondial",
           "theme": "energy",
-          "time": "6h",
+          "time": "7h",
           "publishedAt": "2026-09-16T10:40:30+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1900,7 +1888,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNG1HT2s3RkM5WjVGNFhDYTNZZ3kzRWVnU1o5dXR1aVc2Y2JITVlDejhUZDdzRnJCWFpYRHFkZW14azFBMXF1R2M3cUF6bHJiUXkyUEREOUVOUmI0cU40ZEl5V0JrT19fM1g3SzJhREhLalRZUjdJX1Q3aVI2TjV0akdVSWhrQjVrV1ppMEhydlhFM0RwejZPdERXMmc4b3ozT1BKaG9xY01CMFhtcVdFZm5WekJ6VF9fX0d6bDVjeE9IQXNWZGxBWWZYMVk1eGUzSGVJQQ?oc=5",
           "theme": "trade",
-          "time": "21h",
+          "time": "22h",
           "publishedAt": "2026-09-15T19:41:43+00:00",
           "impact": "high",
           "source": "Challenges TN"
