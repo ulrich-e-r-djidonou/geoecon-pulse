@@ -914,15 +914,15 @@ function buildProvincialAnalysis(pa) {
   var impactClasses = { '2': 'impact-pp', '1': 'impact-p', '0': 'impact-zero', '-1': 'impact-n', '-2': 'impact-nn' };
 
   // Build matrix header
-  var thCells = provKeys.map(function(p) { return '<th>' + p + '</th>'; }).join('');
+  var thCells = provKeys.map(function(p) { return '<th>' + esc(p) + '</th>'; }).join('');
 
   // Build matrix rows
   var matrixRows = pa.shocks.map(function(shock) {
     var cells = provKeys.map(function(prov) {
       var val = pa.impactMatrix[prov][shock.id];
-      return '<td class="impact-cell ' + impactClasses[val] + '">' + impactSymbols[val] + '</td>';
+      return '<td class="impact-cell ' + esc(impactClasses[val] || '') + '">' + esc(impactSymbols[val] || '') + '</td>';
     }).join('');
-    return '<tr><td>' + shock.label[lang] + '</td>' + cells + '</tr>';
+    return '<tr><td>' + esc(shock.label[lang]) + '</td>' + cells + '</tr>';
   }).join('');
 
   // Score row
@@ -935,21 +935,21 @@ function buildProvincialAnalysis(pa) {
 
   // Build group cards
   var groups = pa.groups.map(function(g) {
-    var provTags = g.provinces.map(function(p) { return '<span class="province-tag">' + p + '</span>'; }).join('');
-    var strengthsList = g.strengths[lang].map(function(s) { return '<li>' + s + '</li>'; }).join('');
-    var weaknessesList = g.weaknesses[lang].map(function(w) { return '<li>' + w + '</li>'; }).join('');
+    var provTags = g.provinces.map(function(p) { return '<span class="province-tag">' + esc(p) + '</span>'; }).join('');
+    var strengthsList = g.strengths[lang].map(function(s) { return '<li>' + esc(s) + '</li>'; }).join('');
+    var weaknessesList = g.weaknesses[lang].map(function(w) { return '<li>' + esc(w) + '</li>'; }).join('');
 
-    return '<div class="province-group" id="pgroup-' + g.id + '">' +
-      '<div class="province-group-header" onclick="toggleProvinceGroup(\'' + g.id + '\')">' +
+    return '<div class="province-group" id="pgroup-' + esc(g.id) + '">' +
+      '<div class="province-group-header" onclick="toggleProvinceGroup(&quot;' + encodeURIComponent(g.id) + '&quot;)">' +
         '<div class="province-group-left"><div>' +
-          '<div class="province-group-title">' + g.label[lang] + '</div>' +
+          '<div class="province-group-title">' + esc(g.label[lang]) + '</div>' +
           '<div class="province-group-provinces" style="margin-top:4px;">' + provTags + '</div>' +
         '</div></div>' +
-        '<span class="verdict-badge verdict-' + g.verdictType + '">' + g.verdict[lang] + '</span>' +
+        '<span class="verdict-badge verdict-' + esc(g.verdictType) + '">' + esc(g.verdict[lang]) + '</span>' +
         '<span class="province-group-chevron">\u25BC</span>' +
       '</div>' +
       '<div class="province-group-body">' +
-        '<div class="province-analysis-text">' + g.analysis[lang] + '</div>' +
+        '<div class="province-analysis-text">' + esc(g.analysis[lang]) + '</div>' +
         '<div class="strengths-weaknesses">' +
           '<div class="sw-card strengths"><div class="sw-title">' + t.strengths_label + '</div><ul class="sw-list">' + strengthsList + '</ul></div>' +
           '<div class="sw-card weaknesses"><div class="sw-title">' + t.weaknesses_label + '</div><ul class="sw-list">' + weaknessesList + '</ul></div>' +
@@ -1306,7 +1306,10 @@ function setFilter(theme) {
   applyFilter();
 }
 
-function toggleProvinceGroup(id) {
+function toggleProvinceGroup(idEncode) {
+  // L'identifiant arrive encode depuis l'attribut onclick : sans cela, un id
+  // du JSON contenant une apostrophe s'evaderait du contexte JavaScript.
+  const id = decodeURIComponent(idEncode);
   const el = document.getElementById('pgroup-' + id);
   if (el) el.classList.toggle('open');
 }
