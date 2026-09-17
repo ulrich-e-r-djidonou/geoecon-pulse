@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-16",
+  "lastUpdated": "2026-09-17",
   "regions": {
     "CA": {
       "name": {
@@ -47,21 +47,21 @@
           "periodEn": "Sep. 2026"
         },
         "exchange": {
-          "value": 1.394,
+          "value": 1.399,
           "unit": "CAD/USD",
-          "trend": "stable",
-          "period": "2026-09-16",
+          "trend": "up",
+          "period": "2026-09-17",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-09-16"
+          "periodEn": "2026-09-17"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35491,
-          "trend": "down",
-          "change": -0.26,
-          "period": "2026-09-16",
-          "periodEn": "2026-09-16"
+          "value": 35860,
+          "trend": "up",
+          "change": 1.04,
+          "period": "2026-09-17",
+          "periodEn": "2026-09-17"
         },
         "unemployment": {
           "value": 6.4,
@@ -148,10 +148,22 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a perdu 41 700 emplois en août, le taux de chômage s'établit à 6,4 % (août 2026). L'inflation ressort à 3,0 % (août 2026) pour un taux directeur de 2,25 % (sept. 2026). S&P/TSX cède 0,26 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
-        "en": "The Canadian economy shed 41,700 jobs in August, unemployment stands at 6.4% (Aug. 2026). Inflation is 3.0% (Aug. 2026) against a policy rate of 2.25% (Sep. 2026). S&P/TSX is down 0.26% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
+        "fr": "L'économie canadienne a perdu 41 700 emplois en août, le taux de chômage s'établit à 6,4 % (août 2026). L'inflation ressort à 3,0 % (août 2026) pour un taux directeur de 2,25 % (sept. 2026). S&P/TSX gagne 1,04 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « commerce ».",
+        "en": "The Canadian economy shed 41,700 jobs in August, unemployment stands at 6.4% (Aug. 2026). Inflation is 3.0% (Aug. 2026) against a policy rate of 2.25% (Sep. 2026). S&P/TSX is up 1.04% on the session. Of the 8 stories retained today, 5 fall under trade."
       },
       "headlines": [
+        {
+          "title": {
+            "fr": "Cost of Canada Child Benefit program jumped sharply during post-COVID inflation, PBO says",
+            "en": "Cost of Canada Child Benefit program jumped sharply during post-COVID inflation, PBO says"
+          },
+          "url": "https://www.theglobeandmail.com/canada/article-cost-of-canada-child-benefit-pbo-report/",
+          "theme": "monetary",
+          "time": "1h",
+          "publishedAt": "2026-09-17T15:37:01+00:00",
+          "impact": "medium",
+          "source": "The Globe and Mail"
+        },
         {
           "title": {
             "fr": "Canada has a post-summit glow. Here’s what’s still needed to spur major investments",
@@ -159,7 +171,7 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-canada-has-a-post-summit-glow-heres-whats-still-needed-to-spur-major/",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "17h",
           "publishedAt": "2026-09-16T23:38:04+00:00",
           "impact": "low",
           "source": "The Globe and Mail"
@@ -171,34 +183,46 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-amazon-raises-warehouse-wages-by-1-an-hour-across-canada-amid-union/",
           "theme": "trade",
-          "time": "<1h",
+          "time": "18h",
           "publishedAt": "2026-09-16T22:54:41+00:00",
           "impact": "high",
           "source": "The Globe and Mail"
         },
         {
           "title": {
-            "fr": "What are Carney’s next moves after EU meetings and the investment summit? Ask us your questions",
-            "en": "What are Carney’s next moves after EU meetings and the investment summit? Ask us your questions"
+            "fr": "Republicans search for a winning message as Canadian tariffs bite",
+            "en": "Republicans search for a winning message as Canadian tariffs bite"
           },
-          "url": "https://www.theglobeandmail.com/business/article-carney-european-union-investment-summit-reader-questions/",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-09-16T22:10:29+00:00",
-          "impact": "low",
-          "source": "The Globe and Mail"
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQa0ZFSkcteFZSTGt3bUFmYXFIT3dGd2xHc3FKTkdubmd4TlpyQnRhSmNOcFRsTVpKaWxaZGszOF9XZE0zcGU5SXpENHBudllEZEFjVFVQN0J1bzIyRUQ4OGtMZ05iNHhvZHZBSGI1X25qV1NFbjNFQlBUVktpX21YcFd0WmRfclBBYmplTzJCQkdZeHVGMWMzaWd2cHNsWlhfUDFhc1M3YUdmMGRZMUF6cWN4OU1ReVFOMDlLek5qbFlyWF9KSE5v?oc=5",
+          "theme": "trade",
+          "time": "3h",
+          "publishedAt": "2026-09-17T13:50:14+00:00",
+          "impact": "high",
+          "source": "BNN Bloomberg"
         },
         {
           "title": {
-            "fr": "New York City businesses say tariffs, boycotts hitting them hard",
-            "en": "New York City businesses say tariffs, boycotts hitting them hard"
+            "fr": "Trump calls possible Canada-EU move a hostile act after escalating trade war",
+            "en": "Trump calls possible Canada-EU move a hostile act after escalating trade war"
           },
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRWVtT1FkaXVJOGZ3SjVqc1ZaZXVlcjJTRDdkS1NzeFRZLXE2Rlh5S3pibWxwN1ROQW9CQkNpZlVSN004b3FndjB2NEJUTC1jRU1ONXFraVRsdXRTcDZSZko0OEZiczk2ZUZnbXhRZm42UVUzcUJ2QjlHMGpvN3hwaGc1d0JadlJBVnNlRnJaMmlybXN6WWdpNjBfMVNWWXRia3UzQjc5S1A1S01QSWNJNmZET0JoajNYb0VCQl9BU1VvVU9zQkszYU9vOWV3SE51X2c?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNdEN1Y2FERTNWWkNhcmRMU0YtTXhteXRnMnhEeWMzQ0FCWllpZUJLWXp1M1kybHlvNDhWQ0VwM1lDZXJkclpfdlF4NVVNU3k0clVUWUxzNGw3NmlibmVvRXFzb0ZWNlVuenVFQTdUY2Q3U1lSbzc5akpyQXozVjhzOWVOUnpwajJxNEE0anFHOXpkSzEtWHByampHS0FTNXRobUNqOWdpZFJnNnVBVjh2UmM3eE80Q1FzNm9hb0tiYmFVelZUMDhJeldRZ2pwVlFEUm05UnYyNzNzYWJNYnFZa1lOZ3hLeGd4bjlOSGZueTFjVFdOWHBaR3pPTFlGUEVF?oc=5",
           "theme": "trade",
-          "time": "1h",
-          "publishedAt": "2026-09-16T22:22:12+00:00",
+          "time": "7h",
+          "publishedAt": "2026-09-17T09:33:35+00:00",
           "impact": "high",
           "source": "Toronto Star"
+        },
+        {
+          "title": {
+            "fr": "Trump threatens new tariffs over Canada-EU alliance if it's 'a hostile act'",
+            "en": "Trump threatens new tariffs over Canada-EU alliance if it's 'a hostile act'"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zRUFRMG5VOEFkWm93SFZ6dlhqNktIUkJWcDRMMjRER3h2VmlBWEdIZGNFRWM2MTdKNVU2ZzhpT1dlbkZyUHFMdUZJNlNkbkoxYnBoOUZzM2xFdw?oc=5",
+          "theme": "trade",
+          "time": "14h",
+          "publishedAt": "2026-09-17T02:28:46+00:00",
+          "impact": "high",
+          "source": "CBC"
         },
         {
           "title": {
@@ -207,7 +231,7 @@
           },
           "url": "https://financialpost.com/news/economy/fed-policymakers-price-stability-flag-rate-hike",
           "theme": "monetary",
-          "time": "1h",
+          "time": "19h",
           "publishedAt": "2026-09-16T21:55:16+00:00",
           "impact": "medium",
           "source": "Financial Post"
@@ -219,34 +243,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVnY3SU1FT2RPNTR5UXhkVmhrSlVCdUp6UlVmY0pKVmpaWmpPWGoydVR6ZnozVnpJaXJPZ1BlLUlxR3dNM1Mwa3laUUtpYVZOWmpubDF2N2RDQ2JyeE5WcU5uY0RhOHFYTTlCMlpkTzFPUlJoUGdGRUdSWHlaWi1zUHZrVU0wLW9Q?oc=5",
           "theme": "trade",
-          "time": "3h",
+          "time": "21h",
           "publishedAt": "2026-09-16T20:01:38+00:00",
           "impact": "high",
           "source": "Council on Foreign Relations"
-        },
-        {
-          "title": {
-            "fr": "Ongoing trade tensions, Iran war top concerns for Bank of Canada despite economic growth, deliberations show",
-            "en": "Ongoing trade tensions, Iran war top concerns for Bank of Canada despite economic growth, deliberations show"
-          },
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVW1vdVJBYnR0ZlpwZFp6UGRfVmZGVzlmZS16eFptZmM3OUpOWFN5dUY0am9Od2taLUxwZTlHaUdEeTlxNFN5YXRNMjlUQm9nN3p3OGpUMjF2XzJMNGt5bHZjYkxacXBNQVBXVDFmbnVHdTZud3V2UXZLSGFUWGVLTXJoZkUzUXo1VjhWRXoxYXd5TjV1TWc?oc=5",
-          "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-09-16T19:49:18+00:00",
-          "impact": "high",
-          "source": "Financial Post"
-        },
-        {
-          "title": {
-            "fr": "Bank of Canada Flags Need for Rate Boost Should High Fuel Costs Spill Over, Minutes Say",
-            "en": "Bank of Canada Flags Need for Rate Boost Should High Fuel Costs Spill Over, Minutes Say"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcC1wMjZRUVAzajVibUxEa2hScVZsYlNVRzRDaHBSeGNDTWJZZ2JXQWk2UkhsZ013N2J6VUFLVXQtcjBxOEhPb1V5M05ZcHVjQmNvM2dlZmFKOF9XT0dsMjg5eVJxdWNpYjBJcEstY1NlbElOOU8zN1owQ1dRR1djYXRpSmhqQ0JHaW1wT3dJZXdtaVM5NnJzV1VWLU1zMm0zb3JFWUpmQXBrLU4xUnFjZnc4NEJYMXpFNU9zQ3htRHl4T1M5N2wxUFFMbl9lQ1BFRVRkVTZiTQ?oc=5",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-09-16T17:59:00+00:00",
-          "impact": "high",
-          "source": "WSJ"
         }
       ],
       "provincialAnalysis": {
@@ -254,8 +254,8 @@
           {
             "id": "iran_oil",
             "label": {
-              "fr": "Détroit d'Ormuz fermé, Brent à 106 $",
-              "en": "Strait of Hormuz closed, Brent at $106"
+              "fr": "Détroit d'Ormuz fermé, Brent à 105 $",
+              "en": "Strait of Hormuz closed, Brent at $105"
             },
             "theme": "energy"
           },
@@ -286,8 +286,8 @@
           {
             "id": "weak_cad",
             "label": {
-              "fr": "Dollar canadien à 1,39 CAD/USD",
-              "en": "Canadian dollar at 1.39 CAD/USD"
+              "fr": "Dollar canadien à 1,40 CAD/USD",
+              "en": "Canadian dollar at 1.40 CAD/USD"
             },
             "theme": "monetary"
           }
@@ -382,18 +382,18 @@
             },
             "verdictType": "positive",
             "analysis": {
-              "fr": "Le Brent à 106 $/baril reste un choc positif pour l'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador, mais c'est un choc devenu instable : le baril a culminé près de 118 $ en mars après la fermeture du détroit d'Ormuz, est retombé sous 70 $ le 1er juillet à la faveur du protocole d'entente États-Unis – Iran, puis est reparti à la hausse quand l'entente s'est délitée. La rente est réelle, la planification budgétaire ne l'est plus. Le secteur pétrolier et gazier représente environ 25% du PIB albertain (88 Mds$ en 2024, Alberta Economic Dashboard) et 13% du PIB saskatchewanais (Statistique Canada, 2024). Chaque hausse de 10 USD/baril du Brent génère environ 1,2 Md$ de revenus additionnels pour l'Alberta seule (Trésor de l'Alberta, Budget 2025).\n\nLa Saskatchewan bénéficie d'un double avantage : la hausse pétrolière ET l'accord Canada-Chine sur le canola. La province produit 55% du canola canadien (Canola Council of Canada), et la réduction des tarifs chinois de 84% à 15% rouvre un marché de 4 Mds$/an (Affaires mondiales Canada, mars 2026).\n\nRisques : les tarifs américains de 25% sur l'acier affectent les investissements dans les infrastructures pétrolières. Le ralentissement chinois (cible de croissance la plus basse depuis les années 90) réduit la demande mondiale de brut à moyen terme.",
-              "en": "Brent at $106/barrel remains a positive shock for Alberta, Saskatchewan and Newfoundland & Labrador, but an unstable one: the barrel peaked near $118 in March after the Strait of Hormuz closed, fell below $70 on 1 July under the US-Iran memorandum, then climbed again as that understanding unravelled. The windfall is real; budget planning against it is not. Oil and gas accounts for roughly 25% of Alberta's GDP ($88B in 2024, Alberta Economic Dashboard) and 13% of Saskatchewan's GDP (Statistics Canada, 2024). Each $10 USD/barrel increase in Brent generates approximately $1.2B in additional revenue for Alberta alone (Alberta Treasury, Budget 2025).\n\nSaskatchewan benefits from a double tailwind: oil price surge AND the Canada-China canola deal. The province produces 55% of Canadian canola (Canola Council of Canada), and the tariff reduction from 84% to 15% reopens a $4B/year market (Global Affairs Canada, March 2026).\n\nRisks: US 25% steel tariffs affect investment in oil infrastructure. Chinese slowdown (lowest growth target since the 90s) reduces global crude demand in the medium term."
+              "fr": "Le Brent à 105 $/baril reste un choc positif pour l'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador, mais c'est un choc devenu instable : le baril a culminé près de 118 $ en mars après la fermeture du détroit d'Ormuz, est retombé sous 70 $ le 1er juillet à la faveur du protocole d'entente États-Unis – Iran, puis est reparti à la hausse quand l'entente s'est délitée. La rente est réelle, la planification budgétaire ne l'est plus. Le secteur pétrolier et gazier représente environ 25% du PIB albertain (88 Mds$ en 2024, Alberta Economic Dashboard) et 13% du PIB saskatchewanais (Statistique Canada, 2024). Chaque hausse de 10 USD/baril du Brent génère environ 1,2 Md$ de revenus additionnels pour l'Alberta seule (Trésor de l'Alberta, Budget 2025).\n\nLa Saskatchewan bénéficie d'un double avantage : la hausse pétrolière ET l'accord Canada-Chine sur le canola. La province produit 55% du canola canadien (Canola Council of Canada), et la réduction des tarifs chinois de 84% à 15% rouvre un marché de 4 Mds$/an (Affaires mondiales Canada, mars 2026).\n\nRisques : les tarifs américains de 25% sur l'acier affectent les investissements dans les infrastructures pétrolières. Le ralentissement chinois (cible de croissance la plus basse depuis les années 90) réduit la demande mondiale de brut à moyen terme.",
+              "en": "Brent at $105/barrel remains a positive shock for Alberta, Saskatchewan and Newfoundland & Labrador, but an unstable one: the barrel peaked near $118 in March after the Strait of Hormuz closed, fell below $70 on 1 July under the US-Iran memorandum, then climbed again as that understanding unravelled. The windfall is real; budget planning against it is not. Oil and gas accounts for roughly 25% of Alberta's GDP ($88B in 2024, Alberta Economic Dashboard) and 13% of Saskatchewan's GDP (Statistics Canada, 2024). Each $10 USD/barrel increase in Brent generates approximately $1.2B in additional revenue for Alberta alone (Alberta Treasury, Budget 2025).\n\nSaskatchewan benefits from a double tailwind: oil price surge AND the Canada-China canola deal. The province produces 55% of Canadian canola (Canola Council of Canada), and the tariff reduction from 84% to 15% reopens a $4B/year market (Global Affairs Canada, March 2026).\n\nRisks: US 25% steel tariffs affect investment in oil infrastructure. Chinese slowdown (lowest growth target since the 90s) reduces global crude demand in the medium term."
             },
             "strengths": {
               "fr": [
-                "Revenus pétroliers exceptionnels (Brent à 106 $)",
+                "Revenus pétroliers exceptionnels (Brent à 105 $)",
                 "Saskatchewan : double gain pétrole + canola",
                 "Dollar canadien faible amplifie les revenus en CAD",
                 "Terre-Neuve : production offshore Hibernia/Terra Nova en pleine capacité"
               ],
               "en": [
-                "Exceptional oil revenues (Brent at $106)",
+                "Exceptional oil revenues (Brent at $105)",
                 "Saskatchewan: double gain from oil + canola",
                 "Weak Canadian dollar amplifies CAD revenues",
                 "Newfoundland: Hibernia/Terra Nova offshore at full capacity"
@@ -428,8 +428,8 @@
             },
             "verdictType": "negative",
             "analysis": {
-              "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien à 1,39 CAD/USD améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
-              "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the Canadian dollar at 1.39 CAD/USD improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
+              "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien à 1,40 CAD/USD améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
+              "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the Canadian dollar at 1.40 CAD/USD improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
             },
             "strengths": {
               "fr": [
@@ -449,13 +449,13 @@
               "fr": [
                 "Tarifs de 25% : impact direct sur 46% du PIB manufacturier canadien",
                 "Aluminium québécois : 2,8 Mds$ d'exports vers les US menacés",
-                "Pétrole à 106 $ : hausse des coûts de transport et d'intrants",
+                "Pétrole à 105 $ : hausse des coûts de transport et d'intrants",
                 "Incertitude CUSMA pèse sur les décisions d'investissement"
               ],
               "en": [
                 "25% tariffs: direct impact on 46% of Canadian manufacturing GDP",
                 "Quebec aluminum: $2.8B in US exports threatened",
-                "Oil at $106: rising transport and input costs",
+                "Oil at $105: rising transport and input costs",
                 "CUSMA uncertainty weighs on investment decisions"
               ]
             }
@@ -544,13 +544,13 @@
             },
             "weaknesses": {
               "fr": [
-                "Importatrices nettes d'énergie — plein impact du pétrole à 106 $",
+                "Importatrices nettes d'énergie — plein impact du pétrole à 105 $",
                 "Dépendance aux transferts fédéraux (35-40% des revenus)",
                 "Ralentissement ON/QC réduit la base de péréquation",
                 "Marges de raffinage comprimées par la volatilité du brut"
               ],
               "en": [
-                "Net energy importers — full impact of oil at $106",
+                "Net energy importers — full impact of oil at $105",
                 "Dependence on federal transfers (35-40% of revenues)",
                 "ON/QC slowdown reduces equalization base",
                 "Refining margins squeezed by crude price volatility"
@@ -562,39 +562,63 @@
       "headlinesFr": [
         {
           "title": {
+            "fr": "Selon le Bureau de la directrice parlementaire du budget | L’inflation a fait flamber les coûts liés aux allocations pour enfants",
+            "en": "Selon le Bureau de la directrice parlementaire du budget | L’inflation a fait flamber les coûts liés aux allocations pour enfants"
+          },
+          "url": "https://www.lapresse.ca/affaires/economie/2026-09-17/selon-le-bureau-de-la-directrice-parlementaire-du-budget/l-inflation-a-fait-flamber-les-couts-lies-aux-allocations-pour-enfants.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
+          "theme": "monetary",
+          "time": "1h",
+          "publishedAt": "2026-09-17T16:14:28+00:00",
+          "impact": "medium",
+          "source": "La Presse"
+        },
+        {
+          "title": {
+            "fr": "Wall Street ouvre en hausse, rassurée sur l’inflation",
+            "en": "Wall Street ouvre en hausse, rassurée sur l’inflation"
+          },
+          "url": "https://www.lapresse.ca/affaires/marches/2026-09-17/wall-street-ouvre-en-hausse-rassuree-sur-l-inflation.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
+          "theme": "monetary",
+          "time": "3h",
+          "publishedAt": "2026-09-17T13:49:36+00:00",
+          "impact": "medium",
+          "source": "La Presse"
+        },
+        {
+          "title": {
             "fr": "Guerre commerciale | Les produits canadiens exclus des marchés publics fédéraux américains",
             "en": "Guerre commerciale | Les produits canadiens exclus des marchés publics fédéraux américains"
           },
           "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRFVMQ2FtbUNhYUJnRjRYNEtEZ1ExZkFYU2Y0ZEZESmp4RGRxS3BVNlIxQmVhN3lpeW5aR002a2FYTjhZS2xGQ2JjQ0VyWDE5WXJHcjF0NEN4bFBiRXpGcGJVZ0lQU3dXU2ZxMXZpOFpWZzBvY2FVUUR4UjdrTkJKZF9Nc0hLUmpVcjBhZmpGcDdCOWVhTUxpWmtCM0VqVGJFdElsZEJMdXhoQ2NKbkNDZGl4VGpHdXNqdzZEc2FXV0RtS0xyRWFiZGcyZEYydTViQ0FDTXFZOTZZR2VKVnc?oc=5",
           "theme": "trade",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:07:00+00:00",
+          "time": "19h",
+          "publishedAt": "2026-09-16T21:31:06+00:00",
           "impact": "high",
           "source": "La Presse"
         },
         {
           "title": {
-            "fr": "L’inflation «trop élevée» pousse la Fed à serrer la vis et braver Trump",
-            "en": "L’inflation «trop élevée» pousse la Fed à serrer la vis et braver Trump"
+            "fr": "Jusqu’à 30 000 emplois à risque à cause de la guerre commerciale, dit Fréchette",
+            "en": "Jusqu’à 30 000 emplois à risque à cause de la guerre commerciale, dit Fréchette"
           },
-          "url": "https://www.ledevoir.com/economie/1009553/fed-releve-taux-face-inflation-contre-courant-trump",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-09-16T18:28:00+00:00",
-          "impact": "medium",
-          "source": "Le Devoir"
+          "url": "https://ici.radio-canada.ca/info/en-direct/1014354/elections-quebec-jour-22-campagne-17-septembre-2026",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-09-17T16:58:58+00:00",
+          "impact": "high",
+          "source": "Radio-Canada"
         },
         {
           "title": {
-            "fr": "États-Unis | L’inflation « trop élevée » pousse la Fed à relever ses taux d’intérêt",
-            "en": "États-Unis | L’inflation « trop élevée » pousse la Fed à relever ses taux d’intérêt"
+            "fr": "Rapport d'EDC : le Canada pourrait accroître de 100 milliards de dollars les retombées économiques de ses échanges internationaux",
+            "en": "Rapport d'EDC : le Canada pourrait accroître de 100 milliards de dollars les retombées économiques de ses échanges internationaux"
           },
-          "url": "https://www.lapresse.ca/affaires/economie/2026-09-16/etats-unis/l-inflation-trop-elevee-pousse-la-fed-a-relever-ses-taux-d-interet.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNOWZPSTMxWVhDSTgwTnBodG03TndKeHkyTDM0bHd0TWVuaHNFbUJINUZ5Q01rNFNEVHBtYWNRREpRTjlGRHkyUXRBX3pjX2lyV1hycGRRcnNuMTJmc1N2Qlhwdlc2SnZmS2NxY19DT3FYeEZXS2hfM19vbHBjcEt3WTM4M1Z4bDdyTWxmbmFFV2l5TGRnOHRLLW9XYnJuMUpLOWR1ZFREZC13RTVNUUlMTXBlUkJLejZOMVlNRll0bF9iQnZxSkcyeFNQaTRzcUdacndYV1NwUjA4b1hwNkZNWDcxanVmTmR4MUx0LVdHc3ZNNWtsdmwwdmYwUXZTZ3d6WWlUdHdJVQ?oc=5",
           "theme": "monetary",
           "time": "5h",
-          "publishedAt": "2026-09-16T18:08:18+00:00",
+          "publishedAt": "2026-09-17T12:14:46+00:00",
           "impact": "medium",
-          "source": "La Presse"
+          "source": "Les Affaires"
         },
         {
           "title": {
@@ -603,8 +627,8 @@
           },
           "url": "https://ici.radio-canada.ca/nouvelle/2284360/fed-taux-interet-hausse-trump",
           "theme": "monetary",
-          "time": "2h",
-          "publishedAt": "2026-09-16T21:37:46+00:00",
+          "time": "16h",
+          "publishedAt": "2026-09-17T00:55:09+00:00",
           "impact": "low",
           "source": "Radio-Canada"
         },
@@ -615,46 +639,22 @@
           },
           "url": "https://ici.radio-canada.ca/nouvelle/2284427/banque-canada-craint-conflit-commercial-avec-eu-entame-confiance",
           "theme": "monetary",
-          "time": "3h",
+          "time": "21h",
           "publishedAt": "2026-09-16T20:07:25+00:00",
           "impact": "high",
           "source": "Radio-Canada"
         },
         {
           "title": {
-            "fr": "Guerre commerciale | La Banque du Canada craint un effet sur la confiance des entreprises et des consommateurs",
-            "en": "Guerre commerciale | La Banque du Canada craint un effet sur la confiance des entreprises et des consommateurs"
+            "fr": "L’inflation «trop élevée» pousse la Fed à serrer la vis et braver Trump",
+            "en": "L’inflation «trop élevée» pousse la Fed à serrer la vis et braver Trump"
           },
-          "url": "https://www.lapresse.ca/affaires/2026-09-16/guerre-commerciale/la-banque-du-canada-craint-un-effet-sur-la-confiance-des-entreprises-et-des-consommateurs.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
+          "url": "https://www.ledevoir.com/economie/1009553/fed-releve-taux-face-inflation-contre-courant-trump",
           "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-09-16T17:59:44+00:00",
-          "impact": "high",
-          "source": "La Presse"
-        },
-        {
-          "title": {
-            "fr": "Sommet canadien de l’investissement : les investisseurs internationaux estiment que le Canada a du potentiel, mais ils attendent des mesures concrètes",
-            "en": "Sommet canadien de l’investissement : les investisseurs internationaux estiment que le Canada a du potentiel, mais ils attendent des mesures concrètes"
-          },
-          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNc0ZxU0tJenJ6OThZUHJ3Z0p1eXJtNkR3RTh5T19fUDlBdGFVdGJmem9vT2FkQkI1UF9WTDVvai1rMEc4YllDV0JJeDg5UW9KdGxteHZLQUpwaHFjam9MMFVlQ3IwQTZNYzY1UHlIWURsQnd5Q0ZBbGRHOWFwZEw2d1p2TjhLdk5sZERCWFhMX2JEazRsa09UejZGZXV4bV9ERndPNzNseTdLWTRYWno5UlM1eTFGMHNWNHk2aXNIbEszRS1rQmstbTJ2NjhjaFBkN2RRX0g3RTVtcWFCWk1COTY2b0l0NEQzS0JNVWNNeDJNUkNDT2ZZaWFEeFVpSlBrSk0tM0hEamFtSzhtQ2JxbFY3bUNZMm1R?oc=5",
-          "theme": "monetary",
-          "time": "12h",
-          "publishedAt": "2026-09-16T11:00:06+00:00",
+          "time": "22h",
+          "publishedAt": "2026-09-16T18:28:00+00:00",
           "impact": "medium",
-          "source": "Morningstar"
-        },
-        {
-          "title": {
-            "fr": "Des entreprises yukonnaises aidées face aux tarifs américains",
-            "en": "Des entreprises yukonnaises aidées face aux tarifs américains"
-          },
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeXZ2ZjVzd0s3UEM0cmRqQmRQNGp2bEc1bkd0QWktamVoRDVvbmptYlI5VGlTR3NKU1lZUkJjOHFzUjB2dmViMFgwVGZaSnEzeWIyUE50S0dSQXFsUzhxUi1rWnVGNUZ3RHlsUnl5VXV4cWdmS3Fuc1lBRGE3R3E0ZA?oc=5",
-          "theme": "trade",
-          "time": "20h",
-          "publishedAt": "2026-09-16T02:47:08+00:00",
-          "impact": "high",
-          "source": "Radio-Canada"
+          "source": "Le Devoir"
         }
       ]
     },
@@ -712,11 +712,11 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7552,
-          "trend": "down",
-          "change": -0.45,
-          "period": "2026-09-16",
-          "periodEn": "2026-09-16"
+          "value": 7633,
+          "trend": "up",
+          "change": 1.08,
+          "period": "2026-09-17",
+          "periodEn": "2026-09-17"
         },
         "unemployment": {
           "value": 4.1,
@@ -749,7 +749,7 @@
           7499.36,
           7489.72,
           7686.14,
-          7551.81
+          7633.1
         ],
         "labels": [
           {
@@ -803,33 +803,33 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a créé 162 000 emplois en août, le taux de chômage s'établit à 4,1 % (août 2026). L'inflation ressort à 3,4 % (août 2026) pour un taux directeur de 3,625 % (sept. 2026). S&P 500 cède 0,45 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
-        "en": "The US economy added 162,000 jobs in August, unemployment stands at 4.1% (Aug. 2026). Inflation is 3.4% (Aug. 2026) against a policy rate of 3.625% (Sep. 2026). S&P 500 is down 0.45% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
+        "fr": "L'économie américaine a créé 162 000 emplois en août, le taux de chômage s'établit à 4,1 % (août 2026). L'inflation ressort à 3,4 % (août 2026) pour un taux directeur de 3,625 % (sept. 2026). S&P 500 gagne 1,08 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
+        "en": "The US economy added 162,000 jobs in August, unemployment stands at 4.1% (Aug. 2026). Inflation is 3.4% (Aug. 2026) against a policy rate of 3.625% (Sep. 2026). S&P 500 is up 1.08% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
       },
       "headlines": [
         {
           "title": {
-            "fr": "Fed defies Trump with first rate rise since 2023",
-            "en": "Fed defies Trump with first rate rise since 2023"
+            "fr": "U.S. Treasury Yields Fall as Fed Regains Trust, BOE Leaves Rates Unchanged",
+            "en": "U.S. Treasury Yields Fall as Fed Regains Trust, BOE Leaves Rates Unchanged"
           },
-          "url": "https://www.ft.com/content/f5ce5c38-76e3-4212-8c60-4c868f6dee70?syn-25a6b1a6=1",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVER1UFJ0ZVpGNjRWcnkxSU96Z01OUHY4MVVqQmcyZDYwZVhkNFdpMWlyU1NnNjhSQmZpSG5FODhMLXktd1laTjRESnhfc2pLenBvckhkWmRSNDFxMEw0Yi1DenJEc3l0bzExaGVZaDc3RDFUT3FkN2dmZGEzOVI4WkxadmZ4ZGtaaFVNUGFPeHhlNnQ5UkZXQkx0OVFPcWdVWWtVR0FISmRXb0s5dUI4aThxSmQ2dGktYTdySlJFcldQMEhOWkE?oc=5",
           "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:18:26+00:00",
-          "impact": "low",
-          "source": "Financial Times"
+          "time": "2h",
+          "publishedAt": "2026-09-17T14:49:00+00:00",
+          "impact": "high",
+          "source": "WSJ"
         },
         {
           "title": {
-            "fr": "Fed Raises Rates in First Major Step by Warsh to Contain Inflation",
-            "en": "Fed Raises Rates in First Major Step by Warsh to Contain Inflation"
+            "fr": "Why the Bank of England Didn’t Follow the Fed in Raising Interest Rates",
+            "en": "Why the Bank of England Didn’t Follow the Fed in Raising Interest Rates"
           },
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRXNJaUw1MEZvcHA2N19Dd0hBbjlCYkFqOFNjclNYRTl4WkxkRENSbnZ2b1djdnZEN2FXZjJWVktja1BINHUxNkp6dFNPTHdkYy1nWXNVSUV4U1RzazVUajhndFlwUU5NVU10WkJ6MmU0YUhsa2tMTUVoVmV0c1BidFU1OHFiOXZ0bkpoaHdjWjh1a2piWWVqSw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUHFTTGwzMjhlWGxWVjNMWDhmTnhicmVwazdvSDgzRU00SjkxR3ZVLXJzc0hEd1dBOWVkOFJEX1hQVUl2VHdVZk5sdjF5Qnk2VVBjd3pqX1hlNDRxOEIyZG91VFVoT0l2bng0VFVfV0g5dXNmaTBVNGwzaGtiaXJIemNaYkZMTmc3aHJGbW9LVm9LNjRRZy05T0R4RDlqNE5DOG5fNEpGeEZ6eGpoNEQwbXV3OUJQN3dpSVpSRXdsc24?oc=5",
           "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:11:44+00:00",
+          "time": "2h",
+          "publishedAt": "2026-09-17T14:42:00+00:00",
           "impact": "high",
-          "source": "The New York Times"
+          "source": "WSJ"
         },
         {
           "title": {
@@ -838,168 +838,168 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSzFrSUxudFNUNnZmaVdnRWltT1NvaHR3OFZSNlpFRzUtbm1MOEo2Z3JSM1BXVmU0TU96QVlsbDZpcGFNQmFacXUzR1hVbHkzTTJuREs5eGJ6dUZXNEdZVU54cTZqNG0zb0pCUHR4aGhKQWg2VEh0djhHZWkwX1ZGNVFoYlNnb0VF?oc=5",
           "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:10:47+00:00",
+          "time": "3h",
+          "publishedAt": "2026-09-17T13:39:00+00:00",
           "impact": "medium",
           "source": "The New York Times"
         },
         {
           "title": {
-            "fr": "Federal Reserve hikes key rate for 1st time in 3 years, defying Trump demands for a cut",
-            "en": "Federal Reserve hikes key rate for 1st time in 3 years, defying Trump demands for a cut"
+            "fr": "Wall St rises as oil slide offers respite after Fed rate hike",
+            "en": "Wall St rises as oil slide offers respite after Fed rate hike"
           },
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVlB2TmNqY1dILUtfRTFBQ0JPSk53elRnU1QzdmhIQ3VvTWlkelRTd3haWHJ4bmxiY2ZOcGhvd09wMTllVkVLQzk5NkdKZzNPeHpaZTRHQ242Ynd2Q1ZIUU50cUp1N2JYd1lCQndZQlhMUTZFekFZWWNueUxNbmRiUHdBZ2dWbDgzNlhmejZneHptaFhGbDI1M0JPbk8zZw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORkVra0Q0cjNkbjlDN0N2SENMZHYyeVVFSU1tcG5LOXhBTk5leFlZNjFNRGpad3NoWmhnaWZVd2I3N19oa2hQSERYZzBQWFcxaUJQNDZaSHMwVjFrNGlKbGRUNjg5TEt2WENpMUJiUFRVTjR6WlQyc0IzY2V2M05FanNlWExPdUZ2bTJFUlp4YW5HdTAwTExfNTI3MWkwVEVTMTRZUURlR01lVHA5?oc=5",
           "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:28:00+00:00",
+          "time": "1h",
+          "publishedAt": "2026-09-17T16:12:50+00:00",
           "impact": "medium",
-          "source": "AP News"
+          "source": "Reuters"
         },
         {
           "title": {
-            "fr": "Federal Reserve decision as it happened: Trump calls for rates to be 1% or less after Fed tightens monetary policy",
-            "en": "Federal Reserve decision as it happened: Trump calls for rates to be 1% or less after Fed tightens monetary policy"
+            "fr": "Fed has shown it's serious about getting inflation down to 2%: Former Fed President Raphael Bostic",
+            "en": "Fed has shown it's serious about getting inflation down to 2%: Former Fed President Raphael Bostic"
           },
-          "url": "https://www.ft.com/content/61b5fbae-9dd6-4980-bd1f-effe54b72d84",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNb0tORklDMzV6bXV6bDV0WnV0c3dGRERtUlhEZTU4bTNrQk5QNGVGRDZrRVY4OEtId3NIMWJhMzN3TzdYZzc0ZGlQS2JWU0pLWjlTWjBTbV9adnR2bE9yTDcxdGQyd3dYOTdoc0h2MUZ4ZGJLVjhmREdIUFpJUUl6NndNbDBZR3lfaHJMdXU0dlVwbTc2TDItd3hoOTFhU1EzNUF1cXdmdkRoWVJHSmFoOWp0cUpjR2ZKcDVqRlRBYzc3RFRrcFVQQU1sWFpIYVdfdjZsZUdsc0VOUWNPeFRV?oc=5",
           "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T22:49:33+00:00",
+          "time": "1h",
+          "publishedAt": "2026-09-17T15:38:41+00:00",
+          "impact": "medium",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Stocks climb as oil retreats, Fed calms inflation fears",
+            "en": "Stocks climb as oil retreats, Fed calms inflation fears"
+          },
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xNGhpbThSd3dRVThwUXNIS2NnZFVxQUtZS2JETkFHbUItMHlYbDRXNGduemJESHQ1Mmk4SWtuMm5fM2RaeFFRZFVIZXdscG5GNlNUTmlNR2gzZDVuc3N4SHo4QnRSbTBFbXpYZ1BMVFlTNmtIUmdkdzFIMmowTGM?oc=5",
+          "theme": "monetary",
+          "time": "2h",
+          "publishedAt": "2026-09-17T14:20:59+00:00",
+          "impact": "high",
+          "source": "Afp"
+        },
+        {
+          "title": {
+            "fr": "Fed Raises Rates in First Major Step by Warsh to Contain Inflation",
+            "en": "Fed Raises Rates in First Major Step by Warsh to Contain Inflation"
+          },
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRXNJaUw1MEZvcHA2N19Dd0hBbjlCYkFqOFNjclNYRTl4WkxkRENSbnZ2b1djdnZEN2FXZjJWVktja1BINHUxNkp6dFNPTHdkYy1nWXNVSUV4U1RzazVUajhndFlwUU5NVU10WkJ6MmU0YUhsa2tMTUVoVmV0c1BidFU1OHFiOXZ0bkpoaHdjWjh1a2piWWVqSw?oc=5",
+          "theme": "monetary",
+          "time": "3h",
+          "publishedAt": "2026-09-17T13:31:00+00:00",
+          "impact": "high",
+          "source": "The New York Times"
+        },
+        {
+          "title": {
+            "fr": "UK lenders raise mortgage rates as inflation fears intensify",
+            "en": "UK lenders raise mortgage rates as inflation fears intensify"
+          },
+          "url": "https://www.ft.com/content/72e4a91f-5d56-4971-8083-f7ea919c2a29?syn-25a6b1a6=1",
+          "theme": "monetary",
+          "time": "5h",
+          "publishedAt": "2026-09-17T11:33:25+00:00",
           "impact": "high",
           "source": "Financial Times"
-        },
-        {
-          "title": {
-            "fr": "Fed Raises Interest Rates",
-            "en": "Fed Raises Interest Rates"
-          },
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5WQmtTcXM5ZVlud3czbGxZUU13OVNscm5Lc0ZJRXRnbnRlWlVSdEtPOHotLUpmTnlGZlcxRTFkcHlDRktISE9vYjNYRHBHWnI4STFZSkNxSzY1aTgydXM0UjljaG9uSlMwZ0EzNU5sOGthMkZaYk5haG9pX1BEWEU?oc=5",
-          "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T22:49:23+00:00",
-          "impact": "low",
-          "source": "The New York Times"
-        },
-        {
-          "title": {
-            "fr": "Fed raises rates in search of 'timelier' drop in inflation, sees more tightening ahead",
-            "en": "Fed raises rates in search of 'timelier' drop in inflation, sees more tightening ahead"
-          },
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd0VZMTZPMGRVWVVTY0lVRERxMHhQdlNnb2NBOHROMDJETXBLVmJFTW12SmFybUloWGRfYm1ueDhEZHJuOWNPQXh3RHpDVllhRVpSUVFVeDJmMGFNNTM2RTRqMkVFaXdwTmM1eG1UeVhqLXNuYW5LMjZGYUFCYUV0djFqUTUxRkF2Vk9NeTh5VU44bENZYi1kaTBnS1NuVngtX1dIeEVtaw?oc=5",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-09-16T22:38:52+00:00",
-          "impact": "medium",
-          "source": "Reuters"
-        },
-        {
-          "title": {
-            "fr": "Trump lashes out at Fed after Warsh backs rate hike",
-            "en": "Trump lashes out at Fed after Warsh backs rate hike"
-          },
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ09wMmRRbG83OVR3anZpSGk2VGxLdFRXVFpiMHRDcVZTSldiNTNBNUZlckZlR2k2dEY0Q2F4TFVEdzJ1aC12Z3hacGoyWWkwZjlDNWE4ZGpPejU0V1hVazhVRktwampUZTlkdEpRZWhySlFMZnVTUEtlbVU3T3RUS1hjaFJGcHdMSXMwRERiazVqbTBxOXJlMkVR?oc=5",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-09-16T22:37:59+00:00",
-          "impact": "high",
-          "source": "Reuters"
         }
       ],
       "headlinesFr": [
         {
           "title": {
-            "fr": "Démarchage téléphonique : une amende de 1,1 million d’euros infligée à l’opérateur Syma Mobile",
-            "en": "Démarchage téléphonique : une amende de 1,1 million d’euros infligée à l’opérateur Syma Mobile"
+            "fr": "Le virage \"hawkish\" met en avant l'indépendance de la Fed, mais le marché reste nerveux",
+            "en": "Le virage \"hawkish\" met en avant l'indépendance de la Fed, mais le marché reste nerveux"
           },
-          "url": "https://www.lemonde.fr/economie/article/2026/09/16/demarchage-telephonique-une-amende-de-1-1-million-d-euros-infligee-a-l-operateur-syma-mobile_6775458_3234.html",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNGV0YTFnZlQ2UEo1YlE3MUwyem41b2V4TkhST2R0Q2pTeEVuWWNGcHNDbUtjbWw4UmVpR05Jb1hfd1JPeUx4NElJbVI4MENTTXJWLW9JRVpESlpieGNIQ2Y3V2NMSmQyaVhBZE1SRFFsZTYxcmtqbDBGc1ZNd0NNM0hvRGdvdVk5R24ybkViZXlWWUJvS1JiWFBwMnhnOWRrV2RkQ0ZNZENvMkxIVWtieUxMc0lIa0ZkUm9aeDhMYi1NSExJLUkyelByNUJMQ3U1eUJzNWw5QjdXZGJvdUhvQjViVQ?oc=5",
           "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-09-16T18:35:13+00:00",
+          "time": "6h",
+          "publishedAt": "2026-09-17T11:06:00+00:00",
           "impact": "medium",
-          "source": "Le Monde"
+          "source": "Les Echos"
         },
         {
           "title": {
-            "fr": "La Fed va à l’encontre de Donald Trump et augmente ses taux directeurs pour lutter contre l’inflation aux Etats-Unis",
-            "en": "La Fed va à l’encontre de Donald Trump et augmente ses taux directeurs pour lutter contre l’inflation aux Etats-Unis"
+            "fr": "Le Cac 40 avance tranquillement après la Fed, la baisse des cours du pétrole en soutien supplémentaire pour les marchés actions",
+            "en": "Le Cac 40 avance tranquillement après la Fed, la baisse des cours du pétrole en soutien supplémentaire pour les marchés actions"
           },
-          "url": "https://www.lemonde.fr/economie/article/2026/09/16/la-fed-va-a-l-encontre-de-donald-trump-et-augmente-ses-taux-directeurs-pour-lutter-contre-l-inflation-aux-etats-unis_6775456_3234.html",
+          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQTlNRZGdNR2ptSWhPdmYtcEc0VVFoVE52eWk3bUYtWnJ6SGt0VTV2WFg5V2lSQTdQVGpqbk9kbFpPOHBWUlJlY0hRX2FyYXMyX3d1TUhHOXQ3eFJ6aXl6dkhRaVoyckJxcnNpUkhKOUhkRmc1MThKX0NySzVNLWlyaUdLblkyb0oycDdvLTRrWFNXWDJCUUttRmRlSzg3Y2pzN2Zra2VCUlR4S3NqTXpfbGhvZE1reDJ6NzB2VnpIeUl3UXdCV0VtY0FXRDY3YngtY3MybmcxTDc2cG9TWkpEVFhOUTFfZEV1N1E1TDN5MkMtb2JqN1RwOWs3SlZpLVctR01md1FENDkySW5zZjVsMFliU1MtTzBrMWRhdFRWZkZEUTg?oc=5",
           "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-09-16T18:15:14+00:00",
+          "time": "6h",
+          "publishedAt": "2026-09-17T10:50:26+00:00",
+          "impact": "medium",
+          "source": "Les Echos"
+        },
+        {
+          "title": {
+            "fr": "« Kevin Warsh a renforcé la crédibilité de la Fed en matière de lutte contre l'inflation », le Cac 40 monte encore un peu",
+            "en": "« Kevin Warsh a renforcé la crédibilité de la Fed en matière de lutte contre l'inflation », le Cac 40 monte encore un peu"
+          },
+          "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQZWdxZ2h5dHFmdEthTU5iRGZRR0lheEVrcXRlaEx4eksxMC1lQm84TUplSTdCS2FiVTZRS2kxSkN3ZDZwQU1wTU1pOUVvWWM2Z1ZiZlJnUEZESXcwV09VRXlUMkQ1Mkp4ZFdEWkdrWjdTeUdlbFlKZ3hjbkc3YjYwRG5FaGQ1WnlRSnpUQ2ExdmpVSlQ0Sm9pTC05RDBNbFczWm0tSzZ4NzNZVFRobU9rX3htSFFSa3J4NWdQQVdaQV9RZDlfRXNfMFBERXAwOU1yVEEydUZXWVRzaVNsVE9ubjhtbWR0ZGphY2JfYmVCUzFOUDZrUnJtWHFtMHVwVVM5amJad3ZJcEtfMHI0em9kRkRwRTBuUQ?oc=5",
+          "theme": "monetary",
+          "time": "10h",
+          "publishedAt": "2026-09-17T07:16:01+00:00",
           "impact": "high",
-          "source": "Le Monde"
+          "source": "Les Echos"
         },
         {
           "title": {
-            "fr": "États-Unis | L’inflation pousse la Fed à relever ses taux d’intérêt",
-            "en": "États-Unis | L’inflation pousse la Fed à relever ses taux d’intérêt"
+            "fr": "L’IA fait gagner du temps aux salariés, mais la productivité française reste à l’arrêt",
+            "en": "L’IA fait gagner du temps aux salariés, mais la productivité française reste à l’arrêt"
           },
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQb0xtdFhDbW1WLTllc1VYNDhmTlFLeUJ4MWUxd19JNGpsTjBSOVp5blQ0MzA5Qlc4bGhCZGdQaGFqNW1JMTF1WHJPMERveGl6eFAwVDVzQnZ0SWZMckR0SFVUVjdoYUQwRHBBS1ltWjc1Nms2RjMzTXNBSDJzc1VtNjlDUWJhYTFFM2dFcnFDbW81dFNHMXJ0enh5QzgyNEp6Mk9BNno0MWI5Q0FyN0FFX3lZYzVtSjEtRXk4R18zMA?oc=5",
+          "url": "https://www.latribune.fr/article/tech/intelligence-artificielle/1026387883690114/l-ia-fait-gagner-du-temps-aux-salaries-mais-la-productivite-francaise-reste-a-l-arret",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-09-17T16:52:57+00:00",
+          "impact": "medium",
+          "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "Pendant que la France continue d'emprunter à des niveaux alarmants, l'Espagne ramène sa dette sous les 100% du PIB",
+            "en": "Pendant que la France continue d'emprunter à des niveaux alarmants, l'Espagne ramène sa dette sous les 100% du PIB"
+          },
+          "url": "https://www.latribune.fr/article/economie/finances-publiques/83235549613565/pendant-que-la-france-continue-demprunter-a-des-niveaux-alarmants-lespagne-ramene-sa-dette-sous-les-100-du-pib",
           "theme": "monetary",
           "time": "5h",
-          "publishedAt": "2026-09-16T18:08:18+00:00",
-          "impact": "medium",
-          "source": "La Presse"
-        },
-        {
-          "title": {
-            "fr": "La Fed relève ses taux pour un recul plus rapide de l'inflation et anticipe de nouveaux resserrements",
-            "en": "La Fed relève ses taux pour un recul plus rapide de l'inflation et anticipe de nouveaux resserrements"
-          },
-          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNSmkxbXZmbEtzYjkxQzMxakh3aXVjSjJRNmNfMHhnMmFPYTlFQVBucm5xM2NrTFdiSUwtbDRiWFlEQnpkMFhXWDZfTVlBRGpiMml2WGFsanJFNEpzQjBPNHhDLXhtVU5nUlpLUWxMak9mbDk5TG1ZSmdiNzhxOEpiUlZrODN2ZnZza3A3WE1TVm9ub0t3dVk5eEpfNGNocnozMzZEWXpJcml5T05KXzBiZmFtQjVidFFMU0NPZXFKWUk3cVprbjN5NVp3V3FIekZzc19tRDBkRFM1UU5lWG9oUFBsZUhkd3RET0paWkZLVm55enZYX3RuMk9SNk0zdjVXTFdhVURKd0R0T2ZRSDZYVtIBkAJBVV95cUxNSmkxbXZmbEtzYjkxQzMxakh3aXVjSjJRNmNfMHhnMmFPYTlFQVBucm5xM2NrTFdiSUwtbDRiWFlEQnpkMFhXWDZfTVlBRGpiMml2WGFsanJFNEpzQjBPNHhDLXhtVU5nUlpLUWxMak9mbDk5TG1ZSmdiNzhxOEpiUlZrODN2ZnZza3A3WE1TVm9ub0t3dVk5eEpfNGNocnozMzZEWXpJcml5T05KXzBiZmFtQjVidFFMU0NPZXFKWUk3cVprbjN5NVp3V3FIekZzc19tRDBkRFM1UU5lWG9oUFBsZUhkd3RET0paWkZLVm55enZYX3RuMk9SNk0zdjVXTFdhVURKd0R0T2ZRSDZYVg?oc=5",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-09-16T22:04:43+00:00",
-          "impact": "medium",
-          "source": "Boursorama"
-        },
-        {
-          "title": {
-            "fr": "Wall Street clôture en baisse après la hausse des taux d'intérêt décidée par la Fed, qui laisse entrevoir de n",
-            "en": "Wall Street clôture en baisse après la hausse des taux d'intérêt décidée par la Fed, qui laisse entrevoir de n"
-          },
-          "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPOGUxTl9MYVl3UHBDTWFBbmNiQzFoOEJJSGFWWkNxbFhlSzJVelNfblBkNnVjTnhyWmU4RE1ac24yc2RKR09PUFdfbThsM0pubFp5amlaS05oMzIxNl8yZGRka1prYkU2NXN6QWJEUFZvczhCZllUODdEQlJiMjIwMmpFbHRrRTNuZWpuV19hdGFDdU9yTlp6aklaUlBfZ1gwSnY0TlNaamNnTEJTNHBJbmlzRGxrREpfcVVYWWRxaUFWUHJoUTQxZmNWWEFWa0M5UXBtZGxITWVNYVlPX0NuRDJ0Unk4LTRCNHhCMVYtSFBMNm94cThEdTlNajlJYUtoSERSQWxzM21aZV9XTWpxUXJYbU5WTHZnU0ZQeURvV0d4Q0YyVndmTXV5U0NxS3RCYjNSX0p4QnI5OFdPNXc5cXFTUk9IQdIBxgJBVV95cUxPOGUxTl9MYVl3UHBDTWFBbmNiQzFoOEJJSGFWWkNxbFhlSzJVelNfblBkNnVjTnhyWmU4RE1ac24yc2RKR09PUFdfbThsM0pubFp5amlaS05oMzIxNl8yZGRka1prYkU2NXN6QWJEUFZvczhCZllUODdEQlJiMjIwMmpFbHRrRTNuZWpuV19hdGFDdU9yTlp6aklaUlBfZ1gwSnY0TlNaamNnTEJTNHBJbmlzRGxrREpfcVVYWWRxaUFWUHJoUTQxZmNWWEFWa0M5UXBtZGxITWVNYVlPX0NuRDJ0Unk4LTRCNHhCMVYtSFBMNm94cThEdTlNajlJYUtoSERSQWxzM21aZV9XTWpxUXJYbU5WTHZnU0ZQeURvV0d4Q0YyVndmTXV5U0NxS3RCYjNSX0p4QnI5OFdPNXc5cXFTUk9IQQ?oc=5",
-          "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-09-16T20:25:27+00:00",
-          "impact": "low",
-          "source": "Boursorama"
-        },
-        {
-          "title": {
-            "fr": "Selon Kevin Warsh, la Fed n'a pas besoin de nuire à un marché de l'emploi en situation de plein emploi pour fa",
-            "en": "Selon Kevin Warsh, la Fed n'a pas besoin de nuire à un marché de l'emploi en situation de plein emploi pour fa"
-          },
-          "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxOUWFxWGUwc3NZa1pncExTMnpKTFdZOWlFaHBXam9EdlVoVkdZVUw3YWxQVnFYZlpLdm42OVlTN0o0WGF1UmFObUxxQzN5Q0x1NU1sZmZpVGRPeW1rWWJGUjNGRGlOMWw5b1g3bmstbzVqVDFkcmpJYzEtaDhOZk03M01FVmhhWlg3NlpMVnpWNWNDb0JxWVdNY1lHYWdRWDF1WDdhS2RZNGNfOUxSd0RmdFFCQTZNUjBUWm1iaTZjbkp5UFVmNDFlUmRmbURrWHBDYlBXa09uVmJnLVhKS3hLeHhxRmdON0lmMk1tdXVyOFo4cjBxd1hlNWswREp3Qlo1eGRHNHdNRWV4SkpFNEdJZ0RhNVAxb2c2ckN5V0lQTzJ3LVM0NlBxVFJ3RHJ5aDR5R0M3TlhBVDFqVWF5UC1qQ3RfakVPWUpKMngyetIBzAJBVV95cUxOUWFxWGUwc3NZa1pncExTMnpKTFdZOWlFaHBXam9EdlVoVkdZVUw3YWxQVnFYZlpLdm42OVlTN0o0WGF1UmFObUxxQzN5Q0x1NU1sZmZpVGRPeW1rWWJGUjNGRGlOMWw5b1g3bmstbzVqVDFkcmpJYzEtaDhOZk03M01FVmhhWlg3NlpMVnpWNWNDb0JxWVdNY1lHYWdRWDF1WDdhS2RZNGNfOUxSd0RmdFFCQTZNUjBUWm1iaTZjbkp5UFVmNDFlUmRmbURrWHBDYlBXa09uVmJnLVhKS3hLeHhxRmdON0lmMk1tdXVyOFo4cjBxd1hlNWswREp3Qlo1eGRHNHdNRWV4SkpFNEdJZ0RhNVAxb2c2ckN5V0lQTzJ3LVM0NlBxVFJ3RHJ5aDR5R0M3TlhBVDFqVWF5UC1qQ3RfakVPWUpKMngyeg?oc=5",
-          "theme": "monetary",
-          "time": "4h",
-          "publishedAt": "2026-09-16T19:18:34+00:00",
+          "publishedAt": "2026-09-17T11:29:34+00:00",
           "impact": "high",
+          "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "Terres rares : la start-up Pasqal veut mettre le calcul quantique au service de l’industrie",
+            "en": "Terres rares : la start-up Pasqal veut mettre le calcul quantique au service de l’industrie"
+          },
+          "url": "https://www.latribune.fr/article/entreprises-finance/industrie/41335194989953/terres-rares-la-start-up-pasqal-veut-mettre-le-calcul-quantique-au-service-de-l-industrie",
+          "theme": "tech",
+          "time": "6h",
+          "publishedAt": "2026-09-17T11:00:47+00:00",
+          "impact": "medium",
+          "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "Fed : la porte ouverte à de nouvelles hausses de taux",
+            "en": "Fed : la porte ouverte à de nouvelles hausses de taux"
+          },
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdXZQUW1MaUVveUVlU2dBVDZaMnVNejdRMkVmYkFScllsS3g2bExkY3NmaHJZXzk3TzRsd1lGc1BWZGRLaDFoQmtzNHhxUFZWRjVNWmtzSVJQWXJVeWY4VjBTQTdOMXk2ak14SFhLeGM5STYtUmRmam8wcHZtOEJDeTd4a2JRdVZxTnM2WkY0ZDVqVjBFMFkxUW5TTkxDODV1VE11cm5MSG1sYV95MTVqeHBZTm1pcV9reVNIWkdqcHdUOU1hY2x0Ui1aYXBhUdIBzgFBVV95cUxPdXZQUW1MaUVveUVlU2dBVDZaMnVNejdRMkVmYkFScllsS3g2bExkY3NmaHJZXzk3TzRsd1lGc1BWZGRLaDFoQmtzNHhxUFZWRjVNWmtzSVJQWXJVeWY4VjBTQTdOMXk2ak14SFhLeGM5STYtUmRmam8wcHZtOEJDeTd4a2JRdVZxTnM2WkY0ZDVqVjBFMFkxUW5TTkxDODV1VE11cm5MSG1sYV95MTVqeHBZTm1pcV9reVNIWkdqcHdUOU1hY2x0Ui1aYXBhUQ?oc=5",
+          "theme": "monetary",
+          "time": "7h",
+          "publishedAt": "2026-09-17T09:19:21+00:00",
+          "impact": "medium",
           "source": "Boursorama"
         },
         {
           "title": {
-            "fr": "États-Unis: la Fed relève ses taux pour freiner l’inflation, à rebours des exigences de Trump",
-            "en": "États-Unis: la Fed relève ses taux pour freiner l’inflation, à rebours des exigences de Trump"
+            "fr": "Pourquoi la banque centrale américaine relève ses taux malgré les pressions de Donald Trump",
+            "en": "Pourquoi la banque centrale américaine relève ses taux malgré les pressions de Donald Trump"
           },
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNeGcteHB1RnJxeVlfTjBTYkZRTDBqQ0h4WlNGdHV5MFU2YUF2cU5PMV9paTlXNzVWT0Nwd29oVnFkYld5LTR3WktTbk53V3ppYXFjVnJEbDRsWGVESkVDZU92R0N6VlBiRDluSGtiZHlJMU96dF9WZkZRc25mVVdsT3dsbDlLSmI1Nks5Y3VEdnJzaC1MVHJLcW9qVTIzNnNFWVJSZ2hTb1FFMElRQ1NWMk12dzB1ejRLb0V5X2hHNHNCSUV4WmdSeVpodU1MazJLdEFmUjVJbHNDSGlzZHlnLUhWWE82aU0?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNkp1OWJac1paZXlVdEJCNXRhakpqOFB0MzA3bjZjanNmTW1INGhwTXdEY3RaaURpdTFQWHAwMW52RloyNzNzNGdkaWZaXzFFQU1nMDJLU2RDYWhUeVQ0U0o5OFlJREQyOXd2ZDlRV0xxLUg1dVN5UjdjNzVHTkgwaF9taXJ5SjBDalpkRklTbzA2X2pyal83VmFSaGhaTU1OQWtEb2ZWU3BoMTdLaENhcXdUYlJ3OTFYT0V5NlJR?oc=5",
           "theme": "monetary",
-          "time": "4h",
-          "publishedAt": "2026-09-16T19:01:29+00:00",
-          "impact": "medium",
+          "time": "8h",
+          "publishedAt": "2026-09-17T09:07:47+00:00",
+          "impact": "high",
           "source": "RFI"
-        },
-        {
-          "title": {
-            "fr": "Inflation hors de contrôle, aggravation de la crise en Iran… La Fed contrainte de relever ses taux pour la première fois depuis 2023",
-            "en": "Inflation hors de contrôle, aggravation de la crise en Iran… La Fed contrainte de relever ses taux pour la première fois depuis 2023"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNRU41TmFLTnl2SVBVdTF1dk85SmxUTE1BZ2lfbmZJbWU2d1BkZmtOYnd0bllGb05ianpOZGdPYVEwNEJNLUFTYWxBOVJ5a2t5TFZDVG14TWwyaVlqN3pWSkdiU2VPLUZLajlxWTFncVplRTlTRW9aZmozb1J5cXpTWVlfdDZuam5zdnl3RHMyVGwxTUVLVEM1SkZjaUFwM0hnYU1KNEVhTjVLNEpVYTJhTWstcFMydDloZ2NpM002R1VuQWZ4SE5jbTYtZ2tybHhnTm55aFdDVk1RcXhSVFE4Umt5SFh2LS1RZGN3OUJJdVQwanpCUjE2R25HX0JSQ3d3Q1E?oc=5",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-09-16T18:21:00+00:00",
-          "impact": "high",
-          "source": "Challenges"
         }
       ]
     },
@@ -1052,18 +1052,18 @@
           "value": 6.707,
           "unit": "CNY/USD",
           "trend": "stable",
-          "period": "2026-09-16",
+          "period": "2026-09-17",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-09-16"
+          "periodEn": "2026-09-17"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 3892,
+          "value": 3876,
           "trend": "up",
-          "change": 0.16,
-          "period": "2026-09-16",
-          "periodEn": "2026-09-16"
+          "change": 0.29,
+          "period": "2026-09-17",
+          "periodEn": "2026-09-17"
         }
       },
       "sparkline": {
@@ -1137,119 +1137,119 @@
         ]
       },
       "summary": {
-        "fr": "L'économie chinoise progresse à un rythme de 4,5 % (2026 cible). L'inflation ressort à 0,8 % (août 2026) pour un taux directeur de 3,0 % (sept. 2026). SSE Composite gagne 0,16 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 3 relèvent du thème « commerce ».",
-        "en": "The Chinese economy is growing at 4.5% (2026 target). Inflation is 0.8% (Aug. 2026) against a policy rate of 3.0% (Sep. 2026). SSE Composite is up 0.16% on the session. Of the 8 stories retained today, 3 fall under trade."
+        "fr": "L'économie chinoise progresse à un rythme de 4,5 % (2026 cible). L'inflation ressort à 0,8 % (août 2026) pour un taux directeur de 3,0 % (sept. 2026). SSE Composite gagne 0,29 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « commerce ».",
+        "en": "The Chinese economy is growing at 4.5% (2026 target). Inflation is 0.8% (Aug. 2026) against a policy rate of 3.0% (Sep. 2026). SSE Composite is up 0.29% on the session. Of the 8 stories retained today, 5 fall under trade."
       },
       "headlines": [
         {
           "title": {
-            "fr": "Breaking | Congress passes bill targeting Russia’s leading energy buyers – China and India",
-            "en": "Breaking | Congress passes bill targeting Russia’s leading energy buyers – China and India"
+            "fr": "How Huawei plans to bypass US chip curbs with its new UnifiedBus technology",
+            "en": "How Huawei plans to bypass US chip curbs with its new UnifiedBus technology"
           },
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPV0xaZ3d0ajUyQUY0OFNpTFZmV1IxVjJSZ0ZxMFItS2Q1SnhuTGNPOTFQS2s0Qmx4eGZETk9YaU5xaTBnejBTUHFMbDlBekU5S29HQ2pJQ0xtTkZ4ZEdFb1RTblUzclJjRGFURTFLdGJFNnVpTHNMOW9mUkdrZ3FZdTBudGlpWW95NGZCeGtJbC1NQlhKTThZTU90TW9uZlU2SmFHZm53V21qQnVMbWU1cm5LT29DSkNldF90WkNBYW5HWldFTE81bDVTbzhhZUVLb1FRM1FkVm9RaUtEZ3RuTtIB4AFBVV95cUxQcHZGbDJZdWNhYjdvaVVNMTc5MTNRdG1hUlJzRFBSaFlPZDVkVGNjUTd3ZUtZbkRfOGRwbExsc2s0SnREZGZqV1gxbzEwRkZrbm8teHlpVTBnbnFWYUxiNDU2ekxKTGdjOFJsU0E3SFpwUlZsYkVoanA0UUpqZ1RWUmRSWFMzNURUNjBqT0ZFZFZxMkp2VFAwal9KN19MLXhUdWJMOUVBb2hWMldxMXVXNmpLZWlZODNIMzY5c0FmVzFtN09tMy1sV212N2hfcWhVUnRvbU5uT0lyZktOMU4xWA?oc=5",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T22:50:16+00:00",
-          "impact": "medium",
-          "source": "South China Morning Post"
-        },
-        {
-          "title": {
-            "fr": "China’s rocket boom turns Hainan into a space hub. Can launches fuel wider growth?",
-            "en": "China’s rocket boom turns Hainan into a space hub. Can launches fuel wider growth?"
-          },
-          "url": "https://www.scmp.com/tech/policy/article/3367752/chinas-rocket-boom-turns-hainan-space-hub-can-launches-fuel-wider-growth?utm_source=rss_feed",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-09-16T22:00:08+00:00",
-          "impact": "low",
-          "source": "South China Morning Post"
-        },
-        {
-          "title": {
-            "fr": "US troops must prepare to fight around the moon, Trump’s top military adviser says",
-            "en": "US troops must prepare to fight around the moon, Trump’s top military adviser says"
-          },
-          "url": "https://www.scmp.com/news/world/united-states-canada/article/3367778/us-troops-must-prepare-fight-around-moon-trumps-top-military-adviser-says?utm_source=rss_feed",
-          "theme": "geopolitics",
-          "time": "1h",
-          "publishedAt": "2026-09-16T21:47:55+00:00",
-          "impact": "low",
-          "source": "South China Morning Post"
-        },
-        {
-          "title": {
-            "fr": "China, US Discuss Tariff Concessions to Extend Trade Truce",
-            "en": "China, US Discuss Tariff Concessions to Extend Trade Truce"
-          },
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcVkwVGd2bHJhRGRCUFdxNHFqTE11eDZiblVkM2R1SUVwZHVOelNRSTZjbHA4ODlHS3dVOHkzdU5MR0RuTTlfcG5oc3ZDUjZjd2t2b28xMDdlSEJ3ZXp1ejJtTWpNakpYem9yd2poSjZaWDlDb25PdkNxVlZDX092YzdUTnVpWGYxbzcyd2xLYTlvZUct?oc=5",
-          "theme": "trade",
-          "time": "12h",
-          "publishedAt": "2026-09-16T11:00:01+00:00",
-          "impact": "high",
-          "source": "Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "Nissan Says UK May Need to Impose China Car Tariffs for EU Deal",
-            "en": "Nissan Says UK May Need to Impose China Car Tariffs for EU Deal"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcTgyN2p1OXNlUVBFNlV6OW9XMDVSNFZCMnJDSEYyM3NDRks5NDNHeFMwbzdFbW9ORDM4LXY0aVp1MG0yVk9jMVNTR1h2S2Ftal9VQlJ5NXBJcjFldHdJd200Y0dGVnp2SWdlX3JkQjlucXhISWpMVUVaajFWNlRBOXI1Y3hCczZXMF9PNmtjQ1FwMkxsR0I1YUhVdTAwYkRNRzU0cmJqdm9XQzBWMVJXM3VWYjI?oc=5",
-          "theme": "trade",
-          "time": "13h",
-          "publishedAt": "2026-09-16T09:53:56+00:00",
-          "impact": "high",
-          "source": "Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "US-China Discuss Cutting Some Tariffs as Leaders Prepare to Meet",
-            "en": "US-China Discuss Cutting Some Tariffs as Leaders Prepare to Meet"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMGllM051TUhYNEdTTFRzV3JNSGtaZjZFVHJueHZmdzBic2FHY1hwSXl2X1RxRjB4YlF4MExvRXJmUks5Sk13cXpoZ3JrYUNBeWpMcEhpaHdFa25PYmdOQ1NvVHdZSXhObTFFZ1NSdl9RU0xJN2NvX2R6aTVRMHJiVEdxSUdfZjFtNXhsZkVvNzExWnN3Rk1Gc2pWd1NqR0R6NkcyN20xWTJzMkJCYnRTcnFuUEFydw?oc=5",
-          "theme": "trade",
-          "time": "17h",
-          "publishedAt": "2026-09-16T06:30:00+00:00",
-          "impact": "high",
-          "source": "Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "China's AI leaders keep quiet despite U.S. 'publicity' on tech risks",
-            "en": "China's AI leaders keep quiet despite U.S. 'publicity' on tech risks"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZXMwWTgyQmJoUkMyalVsWWZBRmNpVEdJLTR1cVQ3UFlXNFA4UkRGNk9OdWQtcjEzYThGNnpuRVpLODhOM3dlcmlZTHlpTWJOcFUwM25rUk9WRFgtNHY2WUlnSWJFbHJUUkFYRFVUQUFOWVVhdUc3OFlfYmNMZDdOUXp4NlMtXzJlNXg1S19VaklJQ25qeWRlMG5oY1ZETG03enfSAacBQVVfeXFMTTVCTWIxalA1a1BIbjd4UlFNODRlY24xWERLM1Z5NnlaV2JmbWJDaFZTd2VrQnlyMjRDRElueEc2TEw5UGJtbXF0WkFveXdtMUhvaExiVkJVbElEcVhnZFJJU0p3Y3JIZnpKMHNwUUlnUjVpQ0p3WDdWVHRtOG9NNXFya3d2NUJvcWUxVzUyZU5zRjFLbWFFdmQwYmV0YWNDVEFsMmFJVFk?oc=5",
+          "url": "https://www.scmp.com/tech/big-tech/article/3367882/how-huawei-plans-bypass-us-chip-curbs-its-new-unifiedbus-technology?utm_source=rss_feed",
           "theme": "tech",
-          "time": "19h",
-          "publishedAt": "2026-09-16T04:01:59+00:00",
+          "time": "5h",
+          "publishedAt": "2026-09-17T12:00:07+00:00",
           "impact": "medium",
+          "source": "South China Morning Post"
+        },
+        {
+          "title": {
+            "fr": "China hits back as US Congress approves tariffs on top buyers of Russian energy",
+            "en": "China hits back as US Congress approves tariffs on top buyers of Russian energy"
+          },
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMEItMnotS05rVVRCOFl4UzFsWnZQZ2pjbXpqaVRnQmxfS2JGMW00c0trcEJmLW9CM1lIY1pmXzZrd3cxcjBRbjhjc3ZSbW5mWTZaY1B2c0xsSDlULVdmeklFRF8xU3dUanlLeFI1SkN5dFVYZWNpRE9QUmc1RFE1V2pFbkdBNlN4UmZmTnQ0OTJhTkJWZHVJYnJfMkVuTWVuVl9rVEVGT0NNb0hyUWJXZ1FZNUFEbTd2WDRITmlEdF8tU29WTkhz0gHHAUFVX3lxTFBZU2hKSU82RkdwTVh6a0N0alVXTXB4MG1ZTGxBakJ4c2pGMlJyb1k5cHc1d21aZ1lPOTltcDBzZG5YZVBJRDdWTHRaVkJPdlpkMnpMNXZicFlkZUFLVVptNEdsWUgzbzltVE40ZGlIR3dnUnRWUGF2Q0tsNjVYZDg4N0l3SWFUNlFyRGJuMV82WE1pUmVmYnlEaElra01iTUctMnBYZklROTd4VGVWdFhNUnZuOTBhODhkOTVfMExxM3BKN2hsdnc?oc=5",
+          "theme": "trade",
+          "time": "5h",
+          "publishedAt": "2026-09-17T11:33:13+00:00",
+          "impact": "high",
+          "source": "South China Morning Post"
+        },
+        {
+          "title": {
+            "fr": "What does the rate increase by the US Fed mean for the Chinese yuan?",
+            "en": "What does the rate increase by the US Fed mean for the Chinese yuan?"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOM2U5aU93NW9OdjZNd2JSQUx1c3JmSmo2UFF1dmFSdUhTRFFJdGp6bEpmbnRTM3Vqa1E2OEI5Q2tOZU9hT215dmlCWE5Xb1llMVVZeENlZ2FCRDNRN000UEZmTzdwQ2pqRjN6SmNiYzRxM0duUktHeV9Zd1Fjd0VZbmpRU2Jnd2NlVkZjVHVLSFM2YXowanIxUlBuQ2ZlUjE3QWZCMll5SGNlOGhWZUJDTVdQdUNVUXpacGs5V2FiaWlncjJJcTZuZTVR0gHKAUFVX3lxTFBmblFSQTRONFh2alVBeUdVc1k1RXA3NUFuc2kwNUlreGNkcnI1dXJNbnhmcHdLNmFsZWF4NFYzUWUxc0Y1Ync1dHZWX0xTOWNZZTNxSjRkZEhzano4ZksxSl9Wb3o1Z3plLVFQM2Z5alp6UGMtRUdzYUxlREc0ZUlZa0xnRjJHUjhBWS02dk9ZTDR2QTFVbGNYeVBSQ2lOQXFYQUNkMGxUWmhacGdvYXdPd0JmSVp5T1JWY05QRjYzQVdHNVNLTnVBRHc?oc=5",
+          "theme": "monetary",
+          "time": "6h",
+          "publishedAt": "2026-09-17T11:00:05+00:00",
+          "impact": "high",
+          "source": "South China Morning Post"
+        },
+        {
+          "title": {
+            "fr": "A Chinese AI company just connected its model to Wall Street's leading data providers",
+            "en": "A Chinese AI company just connected its model to Wall Street's leading data providers"
+          },
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOWlmNmR0T1BVWmdrUS1pdHJ0N3htUjFnM2V0WGs5RV81TExhdXRIM3JJMzNvT1VZUG9HTzZyT3luOGJZSHRsR2xWWkpad2JnWEtTU1U1THNZb3lOYUJtLUFGTjluRGE0Rm9Xdy1oZTN0R21BTUlVSVZrNnhCcEMtUtIBhgFBVV95cUxQNWlURkQ4dDgtaGVkczdMZjRSWnc1eFY1WWxJbGpXdHFHLTRtMi1Ra25USHNiZHVoeDVwTEVwVXBxY3JRWFBGdWFPSHBlank1alpwcmRIdlJIdnVfZWR5YlhNYUxEYmdyeWR4bnhEYWVXS2lMT1B5NU1XcUNsbU1kUHRBcHBqUQ?oc=5",
+          "theme": "tech",
+          "time": "2h",
+          "publishedAt": "2026-09-17T14:30:25+00:00",
+          "impact": "low",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "China's August oil throughput rises as fuel exports rebound amid Iran war",
-            "en": "China's August oil throughput rises as fuel exports rebound amid Iran war"
+            "fr": "US tariffs against Russian oil buyers pass: What it means for China, India",
+            "en": "US tariffs against Russian oil buyers pass: What it means for China, India"
           },
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNY3JiM0k1cEJ2SDhnVmNCbHJpeWlQWTJyWjVTUDlSX0dhM0I4MHAwOHltcFl6WW5RazFEWE0yYk1ja0hJcnE1cWpJYVZDZFp0cW1XeVpMeXFEc01veFFRRmNZeFhkSXBIeFphV0pYU3NGZjJNbzhfRlFrUk5Gc3puWVo2SllOZm5CM19xZ2dSWGV3aGpzdkdOTFpRVHVMNDRyMTB1WWJRSVFKbVV6YXRJNG9JZU1iMk9XRF9KMlFXUHdNZw?oc=5",
-          "theme": "energy",
-          "time": "1j",
-          "publishedAt": "2026-09-15T05:12:00+00:00",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeEJUT1htTWxONlVOMWNoZHhkdTdacDF0Rm84Rkc3c2E3eE5IUTNfeU4wclhMYWhHQVkyVWZxTHFoMGxVRmZKRFFyMWpvWmNZdHdEWDQ0bGVySXhuTWp6MktCSjd5Q1lUdDRUUldEUlZWYUtrckZVMFgzb041WTRHeWV2R3JEUTVIUnRTaE95aUdGRzNhY1NKOXhtQ2FQNWkya0Q4dFpLMzF3M1IyQ2F5dNIBtgFBVV95cUxPN0hieUNPSkFYa3Z3QXAwTnhHRENsU2htdnFPX2JRNklvR2c5TnpCT256U2RaYTAwSFlqRzV0cWlfRFM5aE4tTkRsc3ZDbFpLYXJUSWtUVmVPeG94TXdSZ2ViQmZaLUJ3OEJad1JmbjRrd2NYczZCNFB4Nml6ZlBVamx0cEIxaGVia19rcDRxWkptbm1xbUE0QUxJQmx6enV1RWh5NHU4UHVLR3hBTzhXNXVYYV9fZw?oc=5",
+          "theme": "trade",
+          "time": "4h",
+          "publishedAt": "2026-09-17T13:03:19+00:00",
           "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Trump gains a tariff weapon against China and India. Will he use it?",
+            "en": "Trump gains a tariff weapon against China and India. Will he use it?"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORVJ2bjZBQTBob3Vmb1JCWDh0TERtZ21NVllFVVlLN2R6Z0JWanEyc2dTTTFHcUQzTndJWGViRlRvVWZMOUxvU19ydjkxWlZWc0hYRkh6OEF5LUdxMHlxT0RyS1Zfbk5pY29VMDliWFRNNE8ySmE0SElIMGJ5NGhkT0JTRFNjT1BJbXdr?oc=5",
+          "theme": "trade",
+          "time": "8h",
+          "publishedAt": "2026-09-17T08:46:04+00:00",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "India faces 100% tariff threat over Russian oil after US House vote",
+            "en": "India faces 100% tariff threat over Russian oil after US House vote"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBoVV9BNjBYTTRFMFg1V01KazlncmxrX0hkSmM3UXNCbHR0SlowdU9ST2VaRVNvT3J0MFIwc0c0ZUxGM3NLV1A2ZEZwVVFDd1JaZDI3dHlqQzRwdFk?oc=5",
+          "theme": "trade",
+          "time": "11h",
+          "publishedAt": "2026-09-17T05:33:29+00:00",
+          "impact": "high",
+          "source": "BBC"
+        },
+        {
+          "title": {
+            "fr": "EU seeks China curbs on hybrid car exports to avert trade row, FT reports",
+            "en": "EU seeks China curbs on hybrid car exports to avert trade row, FT reports"
+          },
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRWJJNjFfalQxUWJJTEI1UjBCNDhyUFpvOXpqTUNHeW9ucXFJemVLajBadkQ5aF9tWnpjdWFoZ282dXM2b3pTbHpmQUtVVzNteTZXUjNEN1ZqQUJnWEFuUkQtMXpXYS1OX1oySWVNcXJVaE1uc2ViaE5lTDlFbUd5UEFNVGVQN3BlVlUzVWo0VFU2cjlrdjNfR2o1Y2FEdVpXamF3ZEgtcWNHU25iU2E4Y3cxaVc?oc=5",
+          "theme": "trade",
+          "time": "12h",
+          "publishedAt": "2026-09-17T05:15:00+00:00",
+          "impact": "medium",
           "source": "Reuters"
         }
       ],
       "headlinesFr": [
         {
           "title": {
-            "fr": "En Belgique, une affaire d’espionnage au profit de la Chine dans une société de semi-conducteurs",
-            "en": "En Belgique, une affaire d’espionnage au profit de la Chine dans une société de semi-conducteurs"
+            "fr": "Pourquoi la banque centrale américaine relève ses taux malgré les pressions de Donald Trump",
+            "en": "Pourquoi la banque centrale américaine relève ses taux malgré les pressions de Donald Trump"
           },
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxORTZEeTFESHU1cHNCd19VU2hxMUFCU1V3dE5IQVBhOGlKVXF1UGFsVUs0cnBlMzVJTjdFcTNmZlFLUmlqMEpCb24xZjJ3V3EyTnZ6eTFTUjQ3bTRXQXBZaGdaWW9LTDVhOHFnN2FKblNSTEpHRkJWU3o4Ti1vMFJyRTBOb0IzMmt5ZVJQOFBEWHkyLW1uRmRpd2JXRWhWcWhmLTBpMld5WlhrNGY3RHktREMyZkRITXZzdDg4b3lwWThNQVFYZlJ1all4QlJVWUhZWFVmV2lkTi1kTWFlZXh3X0R4Nmc3WjdhNzE1dHFqQ2xXelFQMkJN?oc=5",
-          "theme": "tech",
-          "time": "1j",
-          "publishedAt": "2026-09-15T10:30:03+00:00",
-          "impact": "medium",
-          "source": "Le Monde"
+          "url": "http://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260917-fed-hausse-taux-interet-donald-trump-reserve-federale",
+          "theme": "monetary",
+          "time": "8h",
+          "publishedAt": "2026-09-17T09:07:47+00:00",
+          "impact": "high",
+          "source": "RFI"
         },
         {
           "title": {
@@ -1258,22 +1258,10 @@
           },
           "url": "http://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260916-canal-panama-el-nino-commerce-mondial",
           "theme": "energy",
-          "time": "13h",
+          "time": "1j",
           "publishedAt": "2026-09-16T10:40:30+00:00",
           "impact": "medium",
           "source": "RFI"
-        },
-        {
-          "title": {
-            "fr": "Chine, Canada, IA : Von der Leyen bascule vers une Europe de sécurité économique",
-            "en": "Chine, Canada, IA : Von der Leyen bascule vers une Europe de sécurité économique"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOeUtfVkVUV0UwU3lJeXpWQzJoV3B4RTNNdnRlQ0JLcTRuc2lwallTLURRTWhzaWZWdmREUjYycXhaS25lNGtUOTl5RE5vQm9pREhZazBhQURBNE00YWlhM0w0MnpLVlBuT0VLQzVFTDJJS2swX3VMeFpNNlc5Q2JCdmNfNzJTRXNWdlkzS00tRER2TDdDUU5uek41QWlaSHQ1MDl3cVRSclNOa3NuM0FiUXc4ZEVFaGxfdHVvVEVYQzJOZVRVaERuUW84anBTOFEzX1lVclpSX1l4QnFia3dPS3BKb19LNHdHR0R2aWpuVmw0bl9GSUZBUHRB?oc=5",
-          "theme": "tech",
-          "time": "19h",
-          "publishedAt": "2026-09-16T04:00:15+00:00",
-          "impact": "medium",
-          "source": "La Tribune"
         },
         {
           "title": {
@@ -1282,34 +1270,22 @@
           },
           "url": "http://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260915-ia-openai-anthropic-ralentir-course-intelligence-artificielle",
           "theme": "tech",
-          "time": "1j",
+          "time": "2j",
           "publishedAt": "2026-09-15T07:40:18+00:00",
           "impact": "medium",
           "source": "RFI"
         },
         {
           "title": {
-            "fr": "En pleine guerre commerciale, le Canada augmente ses exportations vers la Chine",
-            "en": "En pleine guerre commerciale, le Canada augmente ses exportations vers la Chine"
+            "fr": "Comment Pékin tisse, pas à pas, la toile mondiale du yuan face au dollar",
+            "en": "Comment Pékin tisse, pas à pas, la toile mondiale du yuan face au dollar"
           },
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNc1VoeE82N2tHRmlXODlyZVBCOVdsU3lkbzRNajc4bXFrQXBHS1hZQ1VtRWZEWEwtQk1hQnRtdXQxdmdKcDFpemNSNzFGOGV2OVFBY1V4ZnZtNXd3U3dvUENLRTVwMndVR2dTRHpZOTlpcTBsZ1dhc0d5Z3NIZzdVOEpIRHhDY3VHQXBva2l1ZVpqMFFzd1o3YUt4MTZJbkU?oc=5",
-          "theme": "trade",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMGg2ZmxwaG1CSkZYTXJyQnpvd2tRVFloRmdLaFc2SnlIRWdpaWVhTlN6UEdoSmExcmVxd0s3WWFiSDBjS1V3SGg4THN3OG11dWFUMVBxOE9RNmktQUg3Rm8yNW9KR2ZJb3hIT2ZfOVhtWHVxUkxnYWRfZ1Fva2t0VWR1bkNqQ2dRVE9LU0I4TWMyMGJiU1E4Q3RHMndmeFRQNG10UnQwUm5UcHlqY0dHU3M1U2ZSQQ?oc=5",
+          "theme": "monetary",
           "time": "2j",
-          "publishedAt": "2026-09-14T14:29:30+00:00",
-          "impact": "high",
-          "source": "Radio-Canada"
-        },
-        {
-          "title": {
-            "fr": "Dangote: pourquoi la raffinerie nigériane entre en Bourse à Lagos",
-            "en": "Dangote: pourquoi la raffinerie nigériane entre en Bourse à Lagos"
-          },
-          "url": "http://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260914-dangote-raffinerie-entree-bourse-lagos-nigeria",
-          "theme": "energy",
-          "time": "2j",
-          "publishedAt": "2026-09-14T08:55:34+00:00",
+          "publishedAt": "2026-09-15T04:15:00+00:00",
           "impact": "medium",
-          "source": "RFI"
+          "source": "Le Figaro"
         }
       ]
     },
@@ -1359,21 +1335,21 @@
           "manual": false
         },
         "exchange": {
-          "value": 95.96,
+          "value": 95.94,
           "unit": "INR/USD",
-          "trend": "stable",
-          "period": "2026-09-16",
+          "trend": "down",
+          "period": "2026-09-17",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-09-16"
+          "periodEn": "2026-09-17"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 74336,
-          "trend": "down",
-          "change": -0.6,
-          "period": "2026-09-16",
-          "periodEn": "2026-09-16"
+          "value": 74315,
+          "trend": "up",
+          "change": 0.42,
+          "period": "2026-09-17",
+          "periodEn": "2026-09-17"
         }
       },
       "sparkline": {
@@ -1447,105 +1423,105 @@
         ]
       },
       "summary": {
-        "fr": "L'économie indienne progresse à un rythme de 7,5 % (FY26F). L'inflation ressort à 4,6 % (juill. 2026) pour un taux directeur de 5,25 % (juill. 2026). SENSEX cède 0,6 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
-        "en": "The Indian economy is growing at 7.5% (FY26F). Inflation is 4.6% (July 2026) against a policy rate of 5.25% (July 2026). SENSEX is down 0.6% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
+        "fr": "L'économie indienne progresse à un rythme de 7,5 % (FY26F). L'inflation ressort à 4,6 % (juill. 2026) pour un taux directeur de 5,25 % (juill. 2026). SENSEX gagne 0,42 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « commerce ».",
+        "en": "The Indian economy is growing at 7.5% (FY26F). Inflation is 4.6% (July 2026) against a policy rate of 5.25% (July 2026). SENSEX is up 0.42% on the session. Of the 8 stories retained today, 4 fall under trade."
       },
       "headlines": [
         {
           "title": {
-            "fr": "US House passes 100% Russia sanctions bill, India faces risk of higher tariffs",
-            "en": "US House passes 100% Russia sanctions bill, India faces risk of higher tariffs"
+            "fr": "'People first': India's envoy to US strikes defiant note as Trump's 100% tariffs loom",
+            "en": "'People first': India's envoy to US strikes defiant note as Trump's 100% tariffs loom"
           },
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaUdKaWtWcUZNem1UTXRIdnd5OVZNOXhHRVJ4Mm9OLWRpcEZfVU15TDJYdVhkVjlsMWxCckN4QnhEZVUzQzFyaTVNTXdaRHBfRHJvYXlnS20ybzd0WmlIUGh2dC1aU3FhOUNSbHhBUDk4NzhXQzNiT0s4eERHZ2RQMmYxbEs0alhGMGQ5ZTJtZWg0RGpsWDJoZlNVXzhvaTBpeTR2Mlo4aVpqTjJ0aVNpbXVCRWVnaVlUQ243UDNEOG05VlVwYnd3NXN30gHPAUFVX3lxTE8tX1F2c0pVNGtMYkRaTUNIb3RzbE10cGJNTDF4MDJaQTFvcjd0YUROUnlMd056U0hqcmotN2lxSHZfNjZNN25jQXRBdHpTTFQwY0FkV2s4TE1JN1BVQ1JoQWl0alpmNm9hNFJwY25SLVF4RktvdGtFRjVLaGFzTUYtWGlZMDZZM3BuMllwUkk4U0hGS3ZHVWFLdUY3TGxlYVVveW5oMy05SUhwQ2JRM3lQRmxhMGZGbXNtMFV5SWc3VGNaZ211RWhVZTJqREpkYw?oc=5",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:13:59+00:00",
-          "impact": "high",
-          "source": "Moneycontrol"
-        },
-        {
-          "title": {
-            "fr": "Trade row escalates: Trump signs memorandum to block Canadian goods from US federal procurement",
-            "en": "Trade row escalates: Trump signs memorandum to block Canadian goods from US federal procurement"
-          },
-          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPbmFJWkNRbVhhOWZSX3JjWGpjVm5EcV9Zekl3b2dQVGhaT2hXTXZFeFhCQlBTQUhQM0xKSGZ2WTV6cmRNSS1ZOXRvY0l2QXhWSnNpbmpldmpoSXNlSk5WZWNYSDY3WG0tQmI4WG1kd3dvR25WUFQzcHMyUlJxN19uVmhuQl84UGhvc1Z5b3dGUjBpdllzekNwQ1hlODhiNkZfWmFkcG1ONGdOM1JCOVpQNVpuU0dkYnlseVN1YmktbTRzWmlPcEVVUkFabkp4RGVlN1JBbXJRLThTUjhubjQzLVNwMHhQRzhqQ2Y0aHVNQWJ5TVptMmpaTmVhT1N2OEktRzJWMWNpVFE1MGszaTJuRUFoMEZFUjjSAZwCQVVfeXFMUFJiUGgzSUtkMHFNdmlNQ2VmRXBJOEVxaEhDR1VOZ3ktbzRqdXpZbXZSY0ZqOVpJRE92Qjh6NTNCTnU3MklMUHdfaVhLcndBLUk1dXgtb3c1ZWE1M1VKWXczVUVTRUZnZDdvcTNlNGRZR3ZpMXJBeWlXRkVsbjB4QW4tSGtfUXRYTk51NGJNb21XSnVkNkNRTWM3WWJOdU5vZV9jQS1WenhEVldKd0tHVjNlVVFSc1pIQ2VlYm5uaFlHTTV1OVlSeENZcmNJc29Ic3pGbDNlNmlVU1pORHhyZHF0NU5ia1VLVkRNZWs4c3dYVG40S3dRdC1GaU44VTMyRDIzMm1NWVhzUHRUTUVYajJmOWVtQ0xkVVR1VGU?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRzdHYWtmWUs2TzZ1ZTQ4OGV5eHIxOGxuR3FOSlhFMHpLbHFQOEdydmY5Q2s5cWxsY3ZoWGZOUWk5U2RuOUFpWlJaOVNLZF80MGZKWG5sQ2ktUEZRU2d2TExkWUdLaDVPZ2l0NlhmVDdNNVBlN3V0eW1VX3AydEpjdEtTQS1oT21tVENrMTY0Snd6S3FnSzRjZ2lPZG9JMngxeFJ5TmM4aDdQT016Y2x5SUR5Y0RsVWI0NTNtMVllNnRmVC1XUlNGbkY3NkV0VkRoY3lHUHRwN0liNFNVQ0JXS9IB5gFBVV95cUxPbHFqckp3SHE3LXJfbkZPaVlGcEVFQW9WMlYtYVRaOXVyd2FqbFpQTFVFOThsZi1uSl9NUnBtUGJadV9USlNOMzkyc0pkVFdxZ2FGOVRZZk1QN3pveE4wenhGUk5yZkVzbWMyRnA1OUszbzlYQkFKdENPMERGTk5EcjM0b0VKdkJXU2FqRHBPYTlURmFCdVRQZzk1STJzd0hsYS1EZXNkRVE1Qk5wZnFvdmxLcE5jVXBwS0ZTcVBmVWhObktUcG51UUoyTEJVS2dLdGlGbUUtbndBbVFMaTNzR05xVGJKQQ?oc=5",
           "theme": "trade",
-          "time": "2h",
-          "publishedAt": "2026-09-16T20:52:00+00:00",
-          "impact": "medium",
+          "time": "<1h",
+          "publishedAt": "2026-09-17T16:49:00+00:00",
+          "impact": "high",
           "source": "The Times of India"
         },
         {
           "title": {
-            "fr": "Shorter-dated US Treasury yields surge in anticipation of another Fed rate hike",
-            "en": "Shorter-dated US Treasury yields surge in anticipation of another Fed rate hike"
+            "fr": "'How seamlessly can rupee move..,' Why UPI could drive India’s next crypto wave | Coinbase boss explains",
+            "en": "'How seamlessly can rupee move..,' Why UPI could drive India’s next crypto wave | Coinbase boss explains"
           },
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/shorter-dated-us-treasury-yields-surge-in-anticipation-of-another-fed-rate-hike/articleshow/134296264.cms",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNWlZHY3JHa2wybGl3cDNIRmJuS2lxOWNGRTFvekw3SThqcGlTa0JFcDB0dnY2UDNnMThEdGNSaUFYZF8wUXBrdzRDcEZid2Vtc2g5cVoxTVpNWFFWeDBKa19tQVFjOWx0YVIwVU15eFJrLTVSQzFrRFh2bWdORDBaOGFNa2xRSjIyLWNYUEUwWkczUWtSSXhHdmZxdjVrSFFNUnhXYjh5QWVhVUsxZGpvT0s2bTZSTlVaY1phM0ptM2JZWUd1XzNKSUZ1ZmNQV2k1M204ektRUVpaYTZXbGdqSVpEUEl2U2Z0c20wcDZtRWhYUUNPSlB4ONIB_gFBVV95cUxNUmhhN1cwamJxZkd5VEZJajRPa1pySklXeERMa1k0c3BkbHNPOXVucTAxZGx1ZEVNMVQ4RzlxQjVETXRiUGl1TkFPVG5PTWVRMjM1WTBlOWpPN2s5dzdoOVRndU80Qm5TYlFPR0VFUkRzaTgtZlNCZkxZZ0xmWkE3eFlqcW1jTFNRUXJ4OXdjd2ZMZTg5SlNTMHZXLVd6c0hLZjJDUG5KdHlKV1BCNzZTbjF4S1dLVVo2U25pYnFWMTREYUEtekFWWTBVTHpET3F3d3hRdGJXeFZIQWpTWWtJanFoZVh3c19VdWNDd0ZBZ0UwaG53d2ljSEZ5SnBPZw?oc=5",
           "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-09-16T20:16:21+00:00",
+          "time": "1h",
+          "publishedAt": "2026-09-17T16:08:35+00:00",
+          "impact": "medium",
+          "source": "Mint"
+        },
+        {
+          "title": {
+            "fr": "Why RBI is mopping up cash from banks",
+            "en": "Why RBI is mopping up cash from banks"
+          },
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZDF6QXpLWEhJTk9CQ3B0a05wWEdET3RTZHVzSU11ZVdUZDBGbE1nWFZHQzQ4ZExXYlFNa0tLX0dXeG1qMXRaclR2cnFLV3R5ZW85dUZ5U3RGZmQ2akNkdGZKdWFleUVOZk5vb3RjNDl2N3hpWDZTdHd1czhYdk5oc3pQYnRkVnhFUnF2Uk0xWHE4bm94YS0zNtIBpgFBVV95cUxNaUpXN0pWeGFLYi0xdmlXU1ZsMDVTTnVIRUkwbHdMLTBPdEY4ajJXbjUweEtpR2hSS2p1VlFsSllMQWpxUFJGQVhNcFVmQWFWd095Vlo3MXoyY1RXaHJQV2hiY2wwZGNPOURUNDFDYURFR1JSVzJOUXhTMzVQMHlFZnFoVThQdG9ja0pXemo2ajd4U1ZLaEkxQ1VnZDhTS1VNaWlJdXRR?oc=5",
+          "theme": "monetary",
+          "time": "1h",
+          "publishedAt": "2026-09-17T15:53:19+00:00",
           "impact": "high",
+          "source": "The New Indian Express"
+        },
+        {
+          "title": {
+            "fr": "India proposes 8 guardrails in softening of stance on plurilateral pacts at WTO",
+            "en": "India proposes 8 guardrails in softening of stance on plurilateral pacts at WTO"
+          },
+          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-proposes-8-guardrails-in-softening-of-stance-on-plurilateral-pacts-at-wto/articleshow/134316283.cms",
+          "theme": "trade",
+          "time": "1h",
+          "publishedAt": "2026-09-17T15:49:24+00:00",
+          "impact": "medium",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "Dollar rises after Fed hikes rates in bid to counter inflation",
-            "en": "Dollar rises after Fed hikes rates in bid to counter inflation"
+            "fr": "Ahead of Market: 10 things that will decide stock market action on Friday",
+            "en": "Ahead of Market: 10 things that will decide stock market action on Friday"
           },
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/dollar-rises-after-fed-hikes-rates-in-bid-to-counter-inflation/articleshow/134296325.cms",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-friday/articleshow/134316208.cms",
           "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-09-16T20:15:14+00:00",
-          "impact": "high",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Gold falls more than 1% after Fed hikes interest rates",
-            "en": "Gold falls more than 1% after Fed hikes interest rates"
-          },
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/gold-falls-more-than-1-after-fed-hikes-interest-rates/articleshow/134296279.cms",
-          "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-09-16T20:09:38+00:00",
+          "time": "1h",
+          "publishedAt": "2026-09-17T15:39:44+00:00",
           "impact": "low",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "US Fed rate hike impact on Indian economy: FOMC outcome effect decoded",
-            "en": "US Fed rate hike impact on Indian economy: FOMC outcome effect decoded"
+            "fr": "Rising margins, volumes, new markets drive India's petroleum exports higher",
+            "en": "Rising margins, volumes, new markets drive India's petroleum exports higher"
           },
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdE1NbXBpZzM3RmUtUFpDX28wTmduWjRHT3pmSklsbGFWeVNRVFo3YVRxU01JaVFPRU9kdDgyUUhKQlFBcFNMdFpkQzJQSFNmcnBDUWdvemljM1FzSGdBU19TaGk0czdGT21idzZURmxEMEk5OFFUenFnZFJRNTEySV93Y1B1cnhBLUpZSFVhOTlJSE43a1JIaExYQWJSMk9lS21zazBQcTQ0dE12c041TkNyOGFyWGpRMGJmZlBOTUlJUEZBbnFoY0UtaUhCUGxNWl96aTlB0gHbAUFVX3lxTE9EMnFoUEtWc0U4QmlUU2FSTEkzdUJpWVdjUUo4cGk2aTFnWnRmVmdlTnI0cXlGWnJlcDJyVUxvSkRjNGZjRDNTaE5keWEwLXFJOTJiWXA5ZDNGVGtySDQxZHNJbXFoVWdUWW1oNnJ6bzdORXk2SjVQWk9KOThwbmNHRE1ZRll6ekxrRERtSFUwTTJ0Nk5zZHBiT0lFY1dvbXQtQjhhUU5XaGlycWNySHZ6WElNTnc1ZGo4aGdQbkhRRW01VXRSNkhoSHBwYmJ4Wk9zQUNsOFRXWWVZMA?oc=5",
-          "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-09-16T19:43:18+00:00",
-          "impact": "high",
-          "source": "Mint"
-        },
-        {
-          "title": {
-            "fr": "US Fed raises interest rates as Kevin Warsh bucks Donald Trump to control inflation",
-            "en": "US Fed raises interest rates as Kevin Warsh bucks Donald Trump to control inflation"
-          },
-          "url": "https://www.livemint.com/economy/us-federal-reserve-interest-rates-kevin-warsh-us-inflation-economy-11789581910559.html",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-09-16T18:11:29+00:00",
-          "impact": "high",
-          "source": "Mint"
-        },
-        {
-          "title": {
-            "fr": "New Zealand Parliament Passes India Trade Deal Bill, 95% Exports Get Tariff Relief",
-            "en": "New Zealand Parliament Passes India Trade Deal Bill, 95% Exports Get Tariff Relief"
-          },
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNa3oxRlkyQmJvVnR0YWxOUm1HandvMmVJakF2N0R6OXlfdWlsRWFuQWIzNzkyWE42Ymd0c2JLak43MnJmekpOUEpiQVlvY2FUb1QtNmRrbzdkbkVhQXZFV1JZUURyTGRnUzlGRktGd2JwUXlrd04tLXpRUWNoVW1maTFGLW9jOU1WMjl4SUVqLUsyblVySXhucklSS1NoQTl3SnpXbDVsamM4Mkd6ZnlQRDM2MTh4QnM5ZDZBeXNJMHhTSVdWWEttSVEtQWPSAdIBQVVfeXFMT19mVkozX3lVVkV6Y2FldS1PRVZaSUJ6Rm5uTXlZNkl2bVI3V09IRWdvU0Z6dVU5MUpMRTFkTW5OaUsxelU2UkFJMVdBR3Q2MG9fSzBnYVF4S0pfU1NXOE5pM3pIdUhDdm8tTng3SG9Ed0FEMVlQNDRyRS13NzFxN0hveGUtTGRvM0NPYVlock9oWkNnRUFXZ0ZTNFZoOVYwcERXMWtPTWVQRVU2dFNqa0NBbHNnUzJFWjFRd3FMb25ZTk56eElHTkRlekdjRTBjWExn?oc=5",
+          "url": "https://www.business-standard.com/economy/news/rising-margins-volumes-new-markets-drive-india-s-petroleum-exports-higher-126091701335_1.html",
           "theme": "trade",
-          "time": "8h",
-          "publishedAt": "2026-09-16T14:59:46+00:00",
-          "impact": "high",
-          "source": "Mint"
+          "time": "2h",
+          "publishedAt": "2026-09-17T15:11:08+00:00",
+          "impact": "medium",
+          "source": "Business Standard"
+        },
+        {
+          "title": {
+            "fr": "Fed builds credibility, but hawkish turn leaves investors edgy",
+            "en": "Fed builds credibility, but hawkish turn leaves investors edgy"
+          },
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/fed-builds-credibility-but-hawkish-turn-leaves-investors-edgy/articleshow/134314932.cms",
+          "theme": "monetary",
+          "time": "2h",
+          "publishedAt": "2026-09-17T14:31:34+00:00",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "EU curbs fail to dent India’s steel push: 80% exports retain FTA benefits",
+            "en": "EU curbs fail to dent India’s steel push: 80% exports retain FTA benefits"
+          },
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc1VxSUxvUExyYWI1dW1BUVEtS2dRcEhEdVlKQ2R0aDlhS0ZtTlFtN0JETjJkd3hGakMyMlRYS04zdEdadTE2dnRGTC1XcDdjcHIyNThrNF9kRnBNcXVNZU5oQkFGN19MWmJyeUNSeThYZ3QzbHNIa2RVRlBmNW9jLS1LNTNpOUVyV24tOUQyNENGbVloV2IzczViVmdYN2dOU3BhYURSLWlDOHdjTHVKOVc1MGo0TDZ5eldiQURPbmxCYS1VQkZkLTBQR1ROUdIB1AFBVV95cUxQQjhMeURRNFU4VGwwMlo0V25fUThtaFBPaTNPMFhSSXpFRkRxNFdRNVNMODQzdjBKaHh5dms3dzdmNVVCRkh2WXBWa3pPMng0RXQ3cGtnMC15aDB2bGM3STEzX1ozZko2RlF3VXREODAtRmZxLU5mZkJZcXVsaC1UVFRsdVc1Ui1CRXNONTVQZzFsblZLc0stRGtsNGdSbzVBazRDcEZYeVhITDNSdVNRZkJ4RmxHdTRkMUJsQVNRbnIyQjRWNzVwcURRZl91eGcyVnItQQ?oc=5",
+          "theme": "trade",
+          "time": "3h",
+          "publishedAt": "2026-09-17T13:49:02+00:00",
+          "impact": "medium",
+          "source": "The Hindu"
         }
       ],
       "headlinesFr": [
@@ -1556,7 +1532,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcEFCTTdfbnpaTFZfajR0NVVZZzF6UTAyaE1fcEtlODN3aGlocktMbmM1aG11N3ZFZTU5SzFEYW9uRTFCSmxGelpENlNQemN6ZUdmTGJJd3RES3oxdmZ1X1YxS3NxUnRjU3JXSEJRVDZkZ0xrSFB6ckxaaUwtYTRhMkNyV3ZxcXk4Q2RQOEhvUTBmTEtaSkdjN2I0cmVJOVAtRU5kX2lwX3R1RFpGTkdaclM2cG5TcmRNOWRNbmZtNXlfQTFCdy1Nalpadm9oMjZTTk1pWkZ3ckZteDA?oc=5",
           "theme": "trade",
-          "time": "3j",
+          "time": "4j",
           "publishedAt": "2026-09-13T16:00:00+00:00",
           "impact": "medium",
           "source": "Challenges"
@@ -1568,7 +1544,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQU3ZXX2hTUkh5T2xSQ3JNak9LMEZULS1OZDJ3MExFaFptSUZtbTJJWHJ0dzdhdWJ6cG1HTVJQWGs2LTFWOHctaURtY3BFelF3dTI0UF9QLWtuSVp5S0tyZ3E2R0c2NzctcTh2Tnk1M0FDZkI4ZXZTWlhjZk9CN3RSRmNzQU9kZjNSOFBTVWhKWkViZ0hDemhacUVhYlZtZ0FZekloeUJPR09iOEZyVzQ3b3lHSGUyQnR5WGNJYndqZXVraXVNS0pOREkyc3ZEUTY1eUE?oc=5",
           "theme": "geopolitics",
-          "time": "3j",
+          "time": "4j",
           "publishedAt": "2026-09-13T08:15:16+00:00",
           "impact": "medium",
           "source": "France 24"
@@ -1627,11 +1603,11 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 158,
-          "trend": "down",
-          "change": -0.37,
-          "period": "2026-09-16",
-          "periodEn": "2026-09-16"
+          "value": 159,
+          "trend": "up",
+          "change": 1.19,
+          "period": "2026-09-17",
+          "periodEn": "2026-09-17"
         }
       },
       "sparkline": {
@@ -1649,7 +1625,7 @@
           72.92,
           90.12,
           90.49,
-          105.58
+          104.69
         ],
         "labels": [
           {
@@ -1695,8 +1671,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,37 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « géopolitique ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.37% on the session. Of the 8 stories retained today, 4 fall under geopolitics."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 1,19 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 3 relèvent du thème « commerce ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 1.19% on the session. Of the 8 stories retained today, 3 fall under trade."
       },
       "headlines": [
         {
@@ -1737,101 +1713,137 @@
         },
         {
           "title": {
-            "fr": "House approves sweeping Russia sanctions bill, sending it to Trump",
-            "en": "House approves sweeping Russia sanctions bill, sending it to Trump"
+            "fr": "What are all the sanctions Iran is under?",
+            "en": "What are all the sanctions Iran is under?"
           },
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQnh0S0FWVVRkVmxPNVBfeTlCSnlsSHBOM0VzZWRjYU5mSVNORWd1UnpBSmhFT2V6aktBMHc3V0lOVGpiUHlBUFFDV1RYRE1pYWFsNHgtd0xlZFcybFA3ODF3LVVFSzEyaUN6WmJtclE5ZEJUSUF6U0F1cUpWbWJndENiaTRuSEtaWU4yTEs0dmJ1b1I1a2UzMXpNRm5nWjUtZV95c09Lbw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcDNSdWU2Z3NCQWhfNU03dG5CcTc1bmxlZnZmaUdCbmRPRTRER19GTGQwWHIxUnppa0lVZkRhY2RqWDkwcnc5d1puMzc5Z2JYTzJNYUFfREp1VUdTd1VoN0Z4M3oyankwYzR4Y1hXV01BZ3ExdVY4VXNqS3J1ZDd2VHhic1A0dTNX0gGOAUFVX3lxTE80ZjJiVEE5MzRaWldZYmFjNU5iNkNmbFc5M1J2bUhySUQ3ME1MNDF1UGhqUS05aUMzNW9DZE5FdTlpNDdGLUNjdGZLbEIxUzdaQWFGSHA1SEFjeTdqTzJkZHliRUZxMEpwRkdISmFJZ3VOeEdqYmFRN2YyaEhoZ04tSW1vVVByamJ6VGhyR2c?oc=5",
           "theme": "geopolitics",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:35:00+00:00",
+          "time": "2h",
+          "publishedAt": "2026-09-17T15:05:21+00:00",
           "impact": "high",
-          "source": "AP News"
+          "source": "Al Jazeera"
         },
         {
           "title": {
-            "fr": "Fed defies Trump with first rate rise since 2023",
-            "en": "Fed defies Trump with first rate rise since 2023"
+            "fr": "As Canadian tariffs bite, Republicans search for a winning message",
+            "en": "As Canadian tariffs bite, Republicans search for a winning message"
           },
-          "url": "https://www.ft.com/content/f5ce5c38-76e3-4212-8c60-4c868f6dee70?syn-25a6b1a6=1",
-          "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:18:26+00:00",
-          "impact": "low",
-          "source": "Financial Times"
-        },
-        {
-          "title": {
-            "fr": "US Congress passes Russia sanctions bill",
-            "en": "US Congress passes Russia sanctions bill"
-          },
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RUFVzeUhxTjN5UEpCUEN4bU14T3lYOVBROGxCckticlZFbGJWRTNGSU9IN3h5MDZCMTktVUpQREViUF9qYmRuZ1NwNWZPOHd0VW1lODBHYTFlUDk5czM4X3FOMDQyOTc1OE9YZzE1VG5DOHlDMVktWUxzWjg4QdIBfkFVX3lxTE5mQWlNTk5ST3BkWHFwZGhZaHZTMkdHZDlIVDNUd0pjcy16R083VkZWclNhd2FUTVRvQ3d4a01lRW1LcGl4TkNEdkdsUjhNUVVONFR5T3daQTNSZzlFa2VBTjFlQWU3QnhmSWo2a2VMU1BRV29UWEFWRi1CRXRaQQ?oc=5",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:07:02+00:00",
-          "impact": "high",
-          "source": "Deutsche Welle"
-        },
-        {
-          "title": {
-            "fr": "House passes Russia sanctions bill, overcoming Democratic opposition",
-            "en": "House passes Russia sanctions bill, overcoming Democratic opposition"
-          },
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOHdjVEpfbkVvelpUSVlpbmJRS2t6VGptdXJBQ2ZDYWJZSGpmZHoxb0dSMkk5ZGkwOE4xaFgxNVV1aUZOc3BfZVJFWkFVTmNjbGw3YlRYb252VE1nbEtVTTBFUnpfZEFaZDM0VXpwS0EybmlDR1llbENFWVhGVjlQaDl6SVI0NEdwWTlNZWU3Y1huT21qNEZzLXR6cDRHcXg0QV95TEhZclB0d0FDbm9Yak9jUGZ0MmRNdmZZUTJEX1dFNWRMYU1B?oc=5",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T23:06:29+00:00",
-          "impact": "high",
-          "source": "The Washington Post"
-        },
-        {
-          "title": {
-            "fr": "US House passes Russia sanctions bill championed by late Senator Graham",
-            "en": "US House passes Russia sanctions bill championed by late Senator Graham"
-          },
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdGtKVXRwQXN1c3J1bnpHcXNvRzJEbE9DVEVqV3JOQWttNmNhbHR3ekdVNWhKY1VUSHVuUmZvLXJILXNXRWI1bWhpSnJNV1BqUGhESUl0dGFpUUJDVmtvTmZpeV9ZR3F3bUhJZGFfNllUdENsemJHd0xubFBzUy0yanFES0xxX0FPc1p4UHpNQnh6VU1NSmhwOHp1ZHdka0ItUGlKN0NlcE1Id2J1RjVpcUVZLVZlcFZ6bnd1R0FMVQ?oc=5",
-          "theme": "geopolitics",
-          "time": "<1h",
-          "publishedAt": "2026-09-16T22:54:05+00:00",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSVhnekctZ2hvV3gzNllkMEl6ZG1kSWtScDJTNFl2azh0ZGI1dTR1ZzVrTW5ydERBWXBTUmhYaHBWdldiTG05Rnh6Tk1CUE8yUDZfMElHSHNfZElSdm84QTB3M2VMMGFiUWo4R0xjdy00VVdDV3RfOFNtZDN3TWh2LTF3T0dYVVQzY2U4MkJYZk4ydm1WSWZNQ21MTk5VZi1BQ2VpVTRySkZpM0ZQY1E?oc=5",
+          "theme": "trade",
+          "time": "2h",
+          "publishedAt": "2026-09-17T14:38:23+00:00",
           "impact": "high",
           "source": "Reuters"
+        },
+        {
+          "title": {
+            "fr": "US tariffs against Russian oil buyers pass: What it means for China, India",
+            "en": "US tariffs against Russian oil buyers pass: What it means for China, India"
+          },
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeEJUT1htTWxONlVOMWNoZHhkdTdacDF0Rm84Rkc3c2E3eE5IUTNfeU4wclhMYWhHQVkyVWZxTHFoMGxVRmZKRFFyMWpvWmNZdHdEWDQ0bGVySXhuTWp6MktCSjd5Q1lUdDRUUldEUlZWYUtrckZVMFgzb041WTRHeWV2R3JEUTVIUnRTaE95aUdGRzNhY1NKOXhtQ2FQNWkya0Q4dFpLMzF3M1IyQ2F5dNIBtgFBVV95cUxPN0hieUNPSkFYa3Z3QXAwTnhHRENsU2htdnFPX2JRNklvR2c5TnpCT256U2RaYTAwSFlqRzV0cWlfRFM5aE4tTkRsc3ZDbFpLYXJUSWtUVmVPeG94TXdSZ2ViQmZaLUJ3OEJad1JmbjRrd2NYczZCNFB4Nml6ZlBVamx0cEIxaGVia19rcDRxWkptbm1xbUE0QUxJQmx6enV1RWh5NHU4UHVLR3hBTzhXNXVYYV9fZw?oc=5",
+          "theme": "trade",
+          "time": "4h",
+          "publishedAt": "2026-09-17T13:03:19+00:00",
+          "impact": "high",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": {
+            "fr": "Argentina's Milei submits bill to strengthen sanctions on Falklands activities",
+            "en": "Argentina's Milei submits bill to strengthen sanctions on Falklands activities"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZGxIcFBTbjQwYTVrR0xvYUFSZHBseU5QaGEyN1c2X3VlMkY4Q3ZwWEtQcDQtZENNZHczOHFNQW93bk5HN0N1QnJ3SUp6TXQ1YWRxTDFISWk3R29RcklHeE1FdFd2cFNuTy0wM0JMVGhRS0xtRjJ2VGJMb3JyTmNfZHJsVXo1Q0htSmhONWtnenhuWHBGRVlMdnVwcUFYa3YyeThmckFRWlp6azBWdE1uSHNHN0VxdjZPdkkw?oc=5",
+          "theme": "geopolitics",
+          "time": "4h",
+          "publishedAt": "2026-09-17T13:02:07+00:00",
+          "impact": "high",
+          "source": "Reuters"
+        },
+        {
+          "title": {
+            "fr": "First Thing: Trump threatens EU with tariffs over membership offer to Canada",
+            "en": "First Thing: Trump threatens EU with tariffs over membership offer to Canada"
+          },
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaFZTOEZSVDRtUmM0c3dXeHRoMFExdVV4MHptd0JkdDdPRmdwX3Y4elJoeFJtczkxMXRTdHBzckwtVVRHRkl1S09KaV8xM19vMFpHbFNhY282dEh3OHl6NERsXzZlVjdJR0VrR1Frc1ZjOTl0dkJxY0dRUDA3X0QxXzdic1hJUm9TemItRmpUaDlPZ0dlNUJCWGhDaWhJazdMOFZIMFl1QQ?oc=5",
+          "theme": "trade",
+          "time": "5h",
+          "publishedAt": "2026-09-17T11:52:00+00:00",
+          "impact": "high",
+          "source": "The Guardian"
         }
       ],
       "headlinesFr": [
         {
           "title": {
-            "fr": "La Fed relève ses taux et ouvre une nouvelle séquence monétaire",
-            "en": "La Fed relève ses taux et ouvre une nouvelle séquence monétaire"
+            "fr": "De nouveaux droits de douane américains entrent en vigueur au Canada",
+            "en": "De nouveaux droits de douane américains entrent en vigueur au Canada"
           },
-          "url": "https://www.latribune.fr/article/economie/72507394881742/la-fed-releve-ses-taux-et-ouvre-une-nouvelle-sequence-monetaire",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-09-16T18:07:43+00:00",
-          "impact": "low",
-          "source": "La Tribune"
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPemhCUHRJZHdBZ2sxQjl6OHhVRkJkZEYycnJZd2ZnU1pjM04yVDNhWWVoWVZuR0YwcFppN1UzcUgyX012RXJJY2dGbHIyWTlNSlRkVm10b3lVSllmTktxWWFhVVdubnV2dllBWFZfbTYzTkowTWZWUGZSZm5KWUg3WnBGN3BER3RBUVBYeURuR3dZQ0kyd0FEZThCd1FvYWlNS3h3OUpuT25DNFU?oc=5",
+          "theme": "trade",
+          "time": "2j",
+          "publishedAt": "2026-09-15T10:26:00+00:00",
+          "impact": "medium",
+          "source": "Le Devoir"
         },
         {
           "title": {
-            "fr": "Avec 61 milliards d’euros de dividendes, la France prend la tête en Europe",
-            "en": "Avec 61 milliards d’euros de dividendes, la France prend la tête en Europe"
+            "fr": "L’IA fait gagner du temps aux salariés, mais la productivité française reste à l’arrêt",
+            "en": "L’IA fait gagner du temps aux salariés, mais la productivité française reste à l’arrêt"
           },
-          "url": "https://www.latribune.fr/article/banques-finance/industrie-financiere/12004782415563/avec-61-milliards-d-euros-de-dividendes-la-france-prend-la-tete-en-europe",
+          "url": "https://www.latribune.fr/article/tech/intelligence-artificielle/1026387883690114/l-ia-fait-gagner-du-temps-aux-salaries-mais-la-productivite-francaise-reste-a-l-arret",
           "theme": "monetary",
-          "time": "8h",
-          "publishedAt": "2026-09-16T15:42:23+00:00",
+          "time": "<1h",
+          "publishedAt": "2026-09-17T16:52:57+00:00",
           "impact": "medium",
           "source": "La Tribune"
         },
         {
           "title": {
-            "fr": "Le prix du gasoil peut-il vraiment atteindre 3 euros le litre ?",
-            "en": "Le prix du gasoil peut-il vraiment atteindre 3 euros le litre ?"
+            "fr": "Pendant que la France continue d'emprunter à des niveaux alarmants, l'Espagne ramène sa dette sous les 100% du PIB",
+            "en": "Pendant que la France continue d'emprunter à des niveaux alarmants, l'Espagne ramène sa dette sous les 100% du PIB"
           },
-          "url": "https://www.latribune.fr/article/economie/agroconso/54858597315738/le-prix-du-gasoil-peut-il-vraiment-atteindre-3-euros-le-litre",
+          "url": "https://www.latribune.fr/article/economie/finances-publiques/83235549613565/pendant-que-la-france-continue-demprunter-a-des-niveaux-alarmants-lespagne-ramene-sa-dette-sous-les-100-du-pib",
           "theme": "monetary",
-          "time": "9h",
-          "publishedAt": "2026-09-16T13:53:44+00:00",
-          "impact": "low",
+          "time": "5h",
+          "publishedAt": "2026-09-17T11:29:34+00:00",
+          "impact": "high",
           "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "Terres rares : la start-up Pasqal veut mettre le calcul quantique au service de l’industrie",
+            "en": "Terres rares : la start-up Pasqal veut mettre le calcul quantique au service de l’industrie"
+          },
+          "url": "https://www.latribune.fr/article/entreprises-finance/industrie/41335194989953/terres-rares-la-start-up-pasqal-veut-mettre-le-calcul-quantique-au-service-de-l-industrie",
+          "theme": "tech",
+          "time": "6h",
+          "publishedAt": "2026-09-17T11:00:47+00:00",
+          "impact": "medium",
+          "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "Pourquoi la banque centrale américaine relève ses taux malgré les pressions de Donald Trump",
+            "en": "Pourquoi la banque centrale américaine relève ses taux malgré les pressions de Donald Trump"
+          },
+          "url": "http://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260917-fed-hausse-taux-interet-donald-trump-reserve-federale",
+          "theme": "monetary",
+          "time": "8h",
+          "publishedAt": "2026-09-17T09:07:47+00:00",
+          "impact": "high",
+          "source": "RFI"
+        },
+        {
+          "title": {
+            "fr": "Guerre commerciale: et Trump signa encore un décret",
+            "en": "Guerre commerciale: et Trump signa encore un décret"
+          },
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbU5ZRDN5UDZ5N3lhX2VzZHB2blRoemJXR3IzX050dU5hOGFaTXlsZVJ1anE3eWtmTHktcjEzdFl4dDlWMVhwWHZWSG5tbjJqMW9ZN0RtUmJDZFg3VVlFS2NzZG1iWFJnbUg4TVJwM05mVlBVMU9mYl9WZXJmeDNQWFN3Q0lvUQ?oc=5",
+          "theme": "trade",
+          "time": "19h",
+          "publishedAt": "2026-09-16T21:48:26+00:00",
+          "impact": "high",
+          "source": "Les Affaires"
         },
         {
           "title": {
@@ -1840,7 +1852,7 @@
           },
           "url": "http://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260916-canal-panama-el-nino-commerce-mondial",
           "theme": "energy",
-          "time": "13h",
+          "time": "1j",
           "publishedAt": "2026-09-16T10:40:30+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1855,43 +1867,7 @@
           "time": "1j",
           "publishedAt": "2026-09-15T19:41:43+00:00",
           "impact": "high",
-          "source": "Challenges TN"
-        },
-        {
-          "title": {
-            "fr": "De nouveaux droits de douane américains entrent en vigueur",
-            "en": "De nouveaux droits de douane américains entrent en vigueur"
-          },
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMXBqdFY2OGNicWJ6YWh5RzdLc1Zhcmk3X3RENXV6YnlyZnJiZ3lGOEluQTRFTzRaNUpXTGNuRl9BenU5NEF6MjdoRVI0RDZaSUpzTERUNTZJb3J4RTc5MGVyVU95WE5XRnVOV1A0Wk56SHVFcDRXWkNPNUZaZ0F5cHZNSlA?oc=5",
-          "theme": "trade",
-          "time": "1j",
-          "publishedAt": "2026-09-15T13:14:18+00:00",
-          "impact": "medium",
-          "source": "Radio-Canada"
-        },
-        {
-          "title": {
-            "fr": "Guerre commerciale: des produits canadiens frappés par une surtaxe de 50% à l’entrée aux États-Unis",
-            "en": "Guerre commerciale: des produits canadiens frappés par une surtaxe de 50% à l’entrée aux États-Unis"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeVktc0FnVDdKRklTYTNOYjB2dzZKUzdBSExPaWpHZ1c2TmFpNC1WWUt0U0xfa3owQTJOdGt5UEQ3Vk5OVzB4b2txekFJTUllZmdULUswTXVkLXhRc2J1TWtuZWxVYVFMdTNUMUJaaXJXTktEaUY5NUx5ZXZIdFN5cFVJMDExX3EweGF6LWdfNHVuenBMSTlwMXgyaU9Gd2JHdTFpZzZtVGlVS3BNcll5T1RsY0lKZTJMdEpDcDJ1V1RCUGl2VjVrMDJXWDBDQkdvOEp0R0lYQng?oc=5",
-          "theme": "trade",
-          "time": "1j",
-          "publishedAt": "2026-09-15T10:11:56+00:00",
-          "impact": "high",
-          "source": "Le Journal de Montréal"
-        },
-        {
-          "title": {
-            "fr": "IA: pourquoi OpenAI et Anthropic veulent ralentir la course à l’intelligence artificielle",
-            "en": "IA: pourquoi OpenAI et Anthropic veulent ralentir la course à l’intelligence artificielle"
-          },
-          "url": "http://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260915-ia-openai-anthropic-ralentir-course-intelligence-artificielle",
-          "theme": "tech",
-          "time": "1j",
-          "publishedAt": "2026-09-15T07:40:18+00:00",
-          "impact": "medium",
-          "source": "RFI"
+          "source": "challenges.tn"
         }
       ]
     }
@@ -1948,8 +1924,8 @@
         "en": "Hormuz, reopened then re-closed, keeps the rupee under pressure"
       },
       "description": {
-        "fr": "Le conflit autour du détroit d'Ormuz fait osciller le Brent depuis février 2026 : culminant près de 118 $ en mars, retombé sous 70 $ le 1er juillet après un protocole d'entente américano-iranien, puis reparti à la hausse après le 10 juillet quand des attaques contre des navires marchands ont refermé le détroit au trafic courant. Le Brent se négocie à 106 $ au dernier passage. L'Inde, importatrice nette de pétrole, encaisse chaque à-coup par sa monnaie et ses prix : la roupie s'échange à 95,96 INR/USD, et l'inflation est ressortie à 4,8 % en juin selon l'OCDE, contre 2,7 % affiché en début d'année sur une donnée qui datait de janvier.",
-        "en": "The standoff over the Strait of Hormuz has swung Brent since February 2026: peaking near $118 in March, falling below $70 on 1 July after a US-Iran understanding, then climbing again after 10 July when attacks on merchant vessels re-closed the strait to routine traffic. Brent last traded at $106. India, a net oil importer, absorbs each swing through its currency and its prices: the rupee trades at 95.96 INR/USD, and inflation came in at 4.8% in June per the OECD, against a 2.7% figure shown earlier in the year that dated back to January."
+        "fr": "Le conflit autour du détroit d'Ormuz fait osciller le Brent depuis février 2026 : culminant près de 118 $ en mars, retombé sous 70 $ le 1er juillet après un protocole d'entente américano-iranien, puis reparti à la hausse après le 10 juillet quand des attaques contre des navires marchands ont refermé le détroit au trafic courant. Le Brent se négocie à 105 $ au dernier passage. L'Inde, importatrice nette de pétrole, encaisse chaque à-coup par sa monnaie et ses prix : la roupie s'échange à 95,94 INR/USD, et l'inflation est ressortie à 4,8 % en juin selon l'OCDE, contre 2,7 % affiché en début d'année sur une donnée qui datait de janvier.",
+        "en": "The standoff over the Strait of Hormuz has swung Brent since February 2026: peaking near $118 in March, falling below $70 on 1 July after a US-Iran understanding, then climbing again after 10 July when attacks on merchant vessels re-closed the strait to routine traffic. Brent last traded at $105. India, a net oil importer, absorbs each swing through its currency and its prices: the rupee trades at 95.94 INR/USD, and inflation came in at 4.8% in June per the OECD, against a 2.7% figure shown earlier in the year that dated back to January."
       },
       "impact": "high"
     },
