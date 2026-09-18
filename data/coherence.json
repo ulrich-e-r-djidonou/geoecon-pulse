@@ -1,33 +1,33 @@
 {
-  "date": "2026-09-17",
+  "date": "2026-09-18",
   "controles": [
     {
       "indicateur": "Taux de change CA",
       "type": "source_double",
       "sourceA": "Frankfurter/BCE",
-      "valeurA": 1.3995,
+      "valeurA": 1.401,
       "sourceB": "Yahoo Finance",
-      "valeurB": 1.3991,
-      "ecart": 0.0003,
+      "valeurB": 1.4001,
+      "ecart": 0.0006,
       "suspect": false
     },
     {
       "indicateur": "Taux de change CN",
       "type": "source_double",
       "sourceA": "Frankfurter/BCE",
-      "valeurA": 6.7075,
+      "valeurA": 6.6976,
       "sourceB": "Yahoo Finance",
-      "valeurB": 6.6961,
-      "ecart": 0.0017,
+      "valeurB": 6.688,
+      "ecart": 0.0014,
       "suspect": false
     },
     {
       "indicateur": "Taux de change IN",
       "type": "source_double",
       "sourceA": "Frankfurter/BCE",
-      "valeurA": 95.94,
+      "valeurA": 95.88,
       "sourceB": "Yahoo Finance",
-      "valeurB": 95.92,
+      "valeurB": 95.863,
       "ecart": 0.0002,
       "suspect": false
     },
@@ -55,10 +55,10 @@
       "indicateur": "Taux directeur US",
       "type": "source_double",
       "sourceA": "Federal Reserve (NY Fed)",
-      "valeurA": 3.625,
+      "valeurA": 3.875,
       "sourceB": "BRI",
       "valeurB": 3.625,
-      "ecart": 0.0,
+      "ecart": 0.25,
       "suspect": false
     },
     {
