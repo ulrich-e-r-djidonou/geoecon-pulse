@@ -2,36 +2,6 @@
   "date": "2026-10-06",
   "controles": [
     {
-      "indicateur": "Taux de change CA",
-      "type": "source_double",
-      "sourceA": "Frankfurter/BCE",
-      "valeurA": 1.4253,
-      "sourceB": "Yahoo Finance",
-      "valeurB": 1.4259,
-      "ecart": 0.0004,
-      "suspect": false
-    },
-    {
-      "indicateur": "Taux de change CN",
-      "type": "source_double",
-      "sourceA": "Frankfurter/BCE",
-      "valeurA": 6.7046,
-      "sourceB": "Yahoo Finance",
-      "valeurB": 6.6938,
-      "ecart": 0.0016,
-      "suspect": false
-    },
-    {
-      "indicateur": "Taux de change IN",
-      "type": "source_double",
-      "sourceA": "Frankfurter/BCE",
-      "valeurA": 96.3,
-      "sourceB": "Yahoo Finance",
-      "valeurB": 96.3,
-      "ecart": 0.0,
-      "suspect": false
-    },
-    {
       "indicateur": "Taux directeur CA",
       "type": "source_double",
       "sourceA": "Banque du Canada",
