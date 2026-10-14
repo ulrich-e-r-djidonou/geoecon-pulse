@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13",
+  "lastUpdated": "2026-10-14",
   "regions": {
     "CA": {
       "name": {
@@ -57,11 +57,11 @@
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35982,
+          "value": 35984,
           "trend": "up",
-          "change": 0.89,
-          "period": "2026-10-13",
-          "periodEn": "2026-10-13"
+          "change": 0.9,
+          "period": "2026-10-14",
+          "periodEn": "2026-10-14"
         },
         "unemployment": {
           "value": 6.5,
@@ -148,10 +148,22 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a perdu 68 300 emplois en septembre, le taux de chômage s'établit à 6,5 % (sept. 2026). L'inflation ressort à 3,0 % (août 2026) pour un taux directeur de 2,25 % (oct. 2026). S&P/TSX gagne 0,89 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 3 relèvent du thème « commerce ».",
-        "en": "The Canadian economy shed 68,300 jobs in September, unemployment stands at 6.5% (Sep. 2026). Inflation is 3.0% (Aug. 2026) against a policy rate of 2.25% (Oct. 2026). S&P/TSX is up 0.89% on the session. Of the 8 stories retained today, 3 fall under trade."
+        "fr": "L'économie canadienne a perdu 68 300 emplois en septembre, le taux de chômage s'établit à 6,5 % (sept. 2026). L'inflation ressort à 3,0 % (août 2026) pour un taux directeur de 2,25 % (oct. 2026). S&P/TSX gagne 0,9 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 2 relèvent du thème « géopolitique ».",
+        "en": "The Canadian economy shed 68,300 jobs in September, unemployment stands at 6.5% (Sep. 2026). Inflation is 3.0% (Aug. 2026) against a policy rate of 2.25% (Oct. 2026). S&P/TSX is up 0.9% on the session. Of the 8 stories retained today, 2 fall under geopolitics."
       },
       "headlines": [
+        {
+          "title": {
+            "fr": "Saudi Aramco headquarters hit by ballistic missile as Houthi conflict escalates",
+            "en": "Saudi Aramco headquarters hit by ballistic missile as Houthi conflict escalates"
+          },
+          "url": "https://www.theglobeandmail.com/world/article-saudi-aramco-missile-houthi-iran-war/",
+          "theme": "geopolitics",
+          "time": "2h",
+          "publishedAt": "2026-10-13T21:31:15+00:00",
+          "impact": "low",
+          "source": "The Globe and Mail"
+        },
         {
           "title": {
             "fr": "How will taking stress leave affect my job prospects?",
@@ -159,7 +171,7 @@
           },
           "url": "https://www.theglobeandmail.com/business/careers/career-advice/article-how-will-taking-stress-leave-affect-my-job-prospects/",
           "theme": "monetary",
-          "time": "6h",
+          "time": "11h",
           "publishedAt": "2026-10-13T13:00:00+00:00",
           "impact": "low",
           "source": "The Globe and Mail"
@@ -171,21 +183,9 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-scientists-international-body-regulate-artificial-intelligence/",
           "theme": "tech",
-          "time": "9h",
+          "time": "14h",
           "publishedAt": "2026-10-13T10:00:00+00:00",
           "impact": "medium",
-          "source": "The Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "How Montreal’s Eugeria is redesigning aging as trade war tests its borderless approach",
-            "en": "How Montreal’s Eugeria is redesigning aging as trade war tests its borderless approach"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-how-montreals-eugeria-is-redesigning-aging-as-trade-war-tests-its/",
-          "theme": "trade",
-          "time": "9h",
-          "publishedAt": "2026-10-13T10:00:00+00:00",
-          "impact": "high",
           "source": "The Globe and Mail"
         },
         {
@@ -195,7 +195,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMXdURmZoNGZvalI4b3BkTXQ2XzRHM2F2dWRxYWpKcmhMVTZlYXJtaUR4MFc1SENsZTVWV3pUQm41SU9oWEw2MFRnR0tqbnZ6M3NoWHlLd1dOLVBjeVpiOWwtRjd5NnZOMElhcWROSTV3N3lUeTluQ3ZDMjNoUjM0NlIyNnZDZw?oc=5",
           "theme": "trade",
-          "time": "<1h",
+          "time": "4h",
           "publishedAt": "2026-10-13T19:31:38+00:00",
           "impact": "medium",
           "source": "CBC"
@@ -207,7 +207,7 @@
           },
           "url": "https://financialpost.com/news/economy/defence/dominion-dynamics-make-land-drones-ukrainian-military",
           "theme": "geopolitics",
-          "time": "2h",
+          "time": "7h",
           "publishedAt": "2026-10-13T17:26:10+00:00",
           "impact": "medium",
           "source": "Financial Post"
@@ -219,7 +219,7 @@
           },
           "url": "https://financialpost.com/commodities/energy/oil-gas/tc-energy-sells-pipeline-stake-first-nations",
           "theme": "energy",
-          "time": "4h",
+          "time": "8h",
           "publishedAt": "2026-10-13T15:50:35+00:00",
           "impact": "medium",
           "source": "Financial Post"
@@ -231,7 +231,7 @@
           },
           "url": "https://financialpost.com/news/retail-marketing/a-trade-war-two-beer-importers-two-very-different-outcomes",
           "theme": "trade",
-          "time": "9h",
+          "time": "14h",
           "publishedAt": "2026-10-13T10:00:59+00:00",
           "impact": "high",
           "source": "Financial Post"
@@ -243,7 +243,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYlRhZGRkQXlXcFJwZnJ1ZmxYOUJMdlFDN0lkeXltV1AxaWZFd3VjN2IxUnRHNEpSS1FVaU0xaG1qMVZob3pQNUxod19na3drR1V1M1pnYkhRRHNMeUd4ZXREMnlQTjFqY05aaGJ2cmZ3ejBKRTRjd3EtR2Y2WjJaWkJlZVRRUWRyU3BDaGJqMWtNSWdRNW5Pd1JIdENtYjRyeERlUVgydGN6a3RMcjZTZmJxbw?oc=5",
           "theme": "tech",
-          "time": "22h",
+          "time": "1j",
           "publishedAt": "2026-10-12T21:31:32+00:00",
           "impact": "medium",
           "source": "The Hill Times"
@@ -562,27 +562,51 @@
       "headlinesFr": [
         {
           "title": {
+            "fr": "Guerre commerciale | Poilievre se rend à Detroit pour plaider en faveur d’un « libre-échange sans tarifs »",
+            "en": "Guerre commerciale | Poilievre se rend à Detroit pour plaider en faveur d’un « libre-échange sans tarifs »"
+          },
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPVDMwNGNEMk11bmYtWURFTnJfeURtVlJ1MW1HcmZZU3RCMkplaEd0bC1oa1hKQ2c2Ymw3UXVDWmJLb0lYX0IxVF9nRzRWYWlXcnpaV0JXQzNpUFNWMUFGY2VaLXFWazBvMDZVbkxBSlpyWVFVblFnRjUwLWVjMTNMOEdwWTcwaUhNcTVPSTFNbFp5d3dkak5hWFNZTFNBVVgtQVN0S09xYXBQWWllelN4bEVma3U1SU5ad0dxYkNGUzBUTkozdEJQR1NXbHJfNDdzemhlek1PQldZb0VRdnJmTlVQd1Vsekk5dmk5dFFn?oc=5",
+          "theme": "trade",
+          "time": "1h",
+          "publishedAt": "2026-10-13T22:44:04+00:00",
+          "impact": "high",
+          "source": "La Presse"
+        },
+        {
+          "title": {
+            "fr": "Compagnie montréalaise de logiciels | Lightspeed supprime 250 postes",
+            "en": "Compagnie montréalaise de logiciels | Lightspeed supprime 250 postes"
+          },
+          "url": "https://www.lapresse.ca/affaires/entreprises/2026-10-13/compagnie-montrealaise-de-logiciels/lightspeed-supprime-250-postes.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
+          "theme": "tech",
+          "time": "3h",
+          "publishedAt": "2026-10-13T20:47:20+00:00",
+          "impact": "medium",
+          "source": "La Presse"
+        },
+        {
+          "title": {
             "fr": "Gazoduc Coastal GasLink | TC Énergie conclut un accord avec des Premières Nations",
             "en": "Gazoduc Coastal GasLink | TC Énergie conclut un accord avec des Premières Nations"
           },
           "url": "https://www.lapresse.ca/affaires/2026-10-13/gazoduc-coastal-gaslink/tc-energie-conclut-un-accord-avec-des-premieres-nations.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "energy",
-          "time": "<1h",
+          "time": "4h",
           "publishedAt": "2026-10-13T19:44:59+00:00",
           "impact": "medium",
           "source": "La Presse"
         },
         {
           "title": {
-            "fr": "Guerre commerciale | Poilievre se rend à Detroit pour plaider en faveur d’un « libre-échange sans tarifs »",
-            "en": "Guerre commerciale | Poilievre se rend à Detroit pour plaider en faveur d’un « libre-échange sans tarifs »"
+            "fr": "Ce que les pertes d’emploi de septembre laissent présager quant aux perspectives de la Banque du Canada en matière de taux d’intérêt",
+            "en": "Ce que les pertes d’emploi de septembre laissent présager quant aux perspectives de la Banque du Canada en matière de taux d’intérêt"
           },
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPVDMwNGNEMk11bmYtWURFTnJfeURtVlJ1MW1HcmZZU3RCMkplaEd0bC1oa1hKQ2c2Ymw3UXVDWmJLb0lYX0IxVF9nRzRWYWlXcnpaV0JXQzNpUFNWMUFGY2VaLXFWazBvMDZVbkxBSlpyWVFVblFnRjUwLWVjMTNMOEdwWTcwaUhNcTVPSTFNbFp5d3dkak5hWFNZTFNBVVgtQVN0S09xYXBQWWllelN4bEVma3U1SU5ad0dxYkNGUzBUTkozdEJQR1NXbHJfNDdzemhlek1PQldZb0VRdnJmTlVQd1Vsekk5dmk5dFFn?oc=5",
-          "theme": "trade",
-          "time": "4h",
-          "publishedAt": "2026-10-13T15:33:42+00:00",
+          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPU0cxR2g4aW9RN3p3RE1nVTl3bkZqdWdaMV9yelhteFNxS1Mya19qcmZJTHg1emhybDFadEhCdmJaT0U4UVpVMk5KcGFXeDFvX2xpRTk5eHhJR3RnUng3OUpveXE3WTFoUEQ1ck5qdFJhaHNTRWZSODNDU2Z3dlRRQWNrdVRaVFF3XzAwcldqZi1xT2dIb01abU8yMlhhdEtneEFMeG56akNNQnZQcWZVWE5WMEVkbUdnRUZMRTdYOHhMOXhieU9NWUd0aGpmTGllbEFIMUFiN3lrT09lN1hCcFFHM0RORXVCTjY0dFFJRDBJeDVZYVo5dE1TR3VsQjRwdlE?oc=5",
+          "theme": "monetary",
+          "time": "9h",
+          "publishedAt": "2026-10-13T14:35:25+00:00",
           "impact": "high",
-          "source": "La Presse"
+          "source": "Morningstar"
         },
         {
           "title": {
@@ -595,18 +619,6 @@
           "publishedAt": "2026-10-12T12:10:00+00:00",
           "impact": "low",
           "source": "Le Devoir"
-        },
-        {
-          "title": {
-            "fr": "Ce que les pertes d’emploi de septembre laissent présager quant aux perspectives de la Banque du Canada en matière de taux d’intérêt",
-            "en": "Ce que les pertes d’emploi de septembre laissent présager quant aux perspectives de la Banque du Canada en matière de taux d’intérêt"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPU0cxR2g4aW9RN3p3RE1nVTl3bkZqdWdaMV9yelhteFNxS1Mya19qcmZJTHg1emhybDFadEhCdmJaT0U4UVpVMk5KcGFXeDFvX2xpRTk5eHhJR3RnUng3OUpveXE3WTFoUEQ1ck5qdFJhaHNTRWZSODNDU2Z3dlRRQWNrdVRaVFF3XzAwcldqZi1xT2dIb01abU8yMlhhdEtneEFMeG56akNNQnZQcWZVWE5WMEVkbUdnRUZMRTdYOHhMOXhieU9NWUd0aGpmTGllbEFIMUFiN3lrT09lN1hCcFFHM0RORXVCTjY0dFFJRDBJeDVZYVo5dE1TR3VsQjRwdlE?oc=5",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-10-13T14:35:25+00:00",
-          "impact": "high",
-          "source": "Morningstar"
         },
         {
           "title": {
@@ -631,18 +643,6 @@
           "publishedAt": "2026-10-10T19:12:27+00:00",
           "impact": "high",
           "source": "Les Affaires"
-        },
-        {
-          "title": {
-            "fr": "L’impact des droits de douane réciproques envers les États-Unis sur le prix des produits au Canada",
-            "en": "L’impact des droits de douane réciproques envers les États-Unis sur le prix des produits au Canada"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQcTJlRERLamlON1BSdmNTNXRBdVByOEtpczRJLTdMZ192YTVybThJQ1RHMnJickVoaHphX1NmWHNkRjRBS2lRMHg2b2pTeF9haWw2RDJQb3JUZzFTQ0ZicHZCUUdmUFV4bk9NblE1QlFvZENBdW4zLUpGcjh4eURNczljLTFITDBKcEY0T1FKbnp6bkhLRXZFbWxucVJlQktUQ1g4SkVCMm1FWWFRTGg0NGI2NzlEdkxOR29SZThOeHdhRjd6aUpLZHYyZko3XzVNb3N0bHNNQXBBWjBNRHBpR0RrU1ZMZFlMTGM5NzNqSWItVHpRaXhsQy1EeEgzY3YyMlZrX2kxUTEzUQ?oc=5",
-          "theme": "trade",
-          "time": "3j",
-          "publishedAt": "2026-10-10T11:00:00+00:00",
-          "impact": "medium",
-          "source": "La Presse"
         },
         {
           "title": {
@@ -712,11 +712,11 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7804,
+          "value": 7805,
           "trend": "stable",
-          "change": -0.04,
-          "period": "2026-10-13",
-          "periodEn": "2026-10-13"
+          "change": -0.08,
+          "period": "2026-10-14",
+          "periodEn": "2026-10-14"
         },
         "unemployment": {
           "value": 4.2,
@@ -749,7 +749,7 @@
           7489.72,
           7686.14,
           7651.54,
-          7804.03
+          7805.45
         ],
         "labels": [
           {
@@ -803,10 +803,34 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a créé 29 000 emplois en septembre, le taux de chômage s'établit à 4,2 % (sept. 2026). L'inflation ressort à 3,4 % (août 2026) pour un taux directeur de 3,875 % (oct. 2026). S&P 500 cède 0,04 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
-        "en": "The US economy added 29,000 jobs in September, unemployment stands at 4.2% (Sep. 2026). Inflation is 3.4% (Aug. 2026) against a policy rate of 3.875% (Oct. 2026). S&P 500 is down 0.04% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
+        "fr": "L'économie américaine a créé 29 000 emplois en septembre, le taux de chômage s'établit à 4,2 % (sept. 2026). L'inflation ressort à 3,4 % (août 2026) pour un taux directeur de 3,875 % (oct. 2026). S&P 500 cède 0,08 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
+        "en": "The US economy added 29,000 jobs in September, unemployment stands at 4.2% (Sep. 2026). Inflation is 3.4% (Aug. 2026) against a policy rate of 3.875% (Oct. 2026). S&P 500 is down 0.08% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
       },
       "headlines": [
+        {
+          "title": {
+            "fr": "One More U.S. Interest-Rate Increase May Be Appropriate, Fed’s Williams Says",
+            "en": "One More U.S. Interest-Rate Increase May Be Appropriate, Fed’s Williams Says"
+          },
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSW1RS05MdnMwMjY4RW1VR0dhSkw0dUpSdkp6NFBFcllqMTdmcVpqZkZhbEx3ZWZSMnR3UVYzbTZVUEZkUVFOUWxMWFpzZDZ0SkxZOTBnYVVJNWFMTGZkd3IxaFBobG1JV2tmSm8yQTVqNm5rSDhwMEpPbVBQejFWM0VzR2ZOMmJ6YU5RR0RyeHF4LUZBb3ZfQkJpczVKd01yRFBpcXV1UWh3ZC11ajM4VjdjdHZxaFlfMFpTRmxEOTV0RWNG?oc=5",
+          "theme": "monetary",
+          "time": "4h",
+          "publishedAt": "2026-10-13T20:07:00+00:00",
+          "impact": "medium",
+          "source": "WSJ"
+        },
+        {
+          "title": {
+            "fr": "Fed’s Collins Sees Higher Rates Likely This Year to Tame Prices",
+            "en": "Fed’s Collins Sees Higher Rates Likely This Year to Tame Prices"
+          },
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPblhrenBSaG5hbXFGMWlESlVpYklwVnhCWHdJc2stVUVhZUdRUG9uTVdfS0ZnTjZOQ1VvRzBoWWUwNV9keThBUlJVYXNIYU16dGxUalBWckUwMjdzWHpLWG1vd3RLOW5KMHVjVjl1S1Znc1lqakxtd1JPdjVWTlZRM3ZOMUNsQ011V0czd0NzX3RnUW5DMXBramQyZ1FfNnVfVTBtUTJWTndFdkNkYThwSjBDTzc?oc=5",
+          "theme": "monetary",
+          "time": "4h",
+          "publishedAt": "2026-10-13T20:00:00+00:00",
+          "impact": "medium",
+          "source": "Bloomberg"
+        },
         {
           "title": {
             "fr": "Fed’s Williams Interview With Bloomberg News: Full Transcript",
@@ -814,34 +838,46 @@
           },
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTGMwQ3dOMERyZmpMdFRUOEoyV1BZNE1aNlhTV2RMbUpXZHluUGFEdGVFMy15UzI4SFJlekh0V2JhLXpGX1RRVTJmTUNkRDdqUDE3RHQ4OGhkUHZsUGV4S3EwTmhWN2tWb0FRTUZaUl85dklOQXFZWU1ZSXYybkdCWWRkTGZPOUpEaVRMN0lLZ2tSUGQwR2tybmlPbnMza19LNVBuekU5NVhaLVl5SEFTaQ?oc=5",
           "theme": "monetary",
-          "time": "1h",
+          "time": "6h",
           "publishedAt": "2026-10-13T18:07:10+00:00",
           "impact": "low",
           "source": "Bloomberg"
         },
         {
           "title": {
-            "fr": "Is the US economy as narrow as its stock market?",
-            "en": "Is the US economy as narrow as its stock market?"
+            "fr": "Singapore third-quarter GDP growth softens from four-year high but beats estimates",
+            "en": "Singapore third-quarter GDP growth softens from four-year high but beats estimates"
           },
-          "url": "https://www.ft.com/content/2aa849df-5670-4577-87dd-2c40f2bac2aa?syn-25a6b1a6=1",
+          "url": "https://www.cnbc.com/2026/10/14/singapore-gdp-q3.html",
           "theme": "monetary",
-          "time": "1j",
-          "publishedAt": "2026-10-12T05:30:05+00:00",
+          "time": "<1h",
+          "publishedAt": "2026-10-14T00:12:23+00:00",
           "impact": "medium",
-          "source": "Financial Times"
+          "source": "CNBC"
         },
         {
           "title": {
-            "fr": "‘Worrying omens’ stalk global economy despite resilient growth",
-            "en": "‘Worrying omens’ stalk global economy despite resilient growth"
+            "fr": "Williams says Fed may not have to hike rates in 2027, at odds with traders",
+            "en": "Williams says Fed may not have to hike rates in 2027, at odds with traders"
           },
-          "url": "https://www.ft.com/content/e0457dd5-8e75-4803-8ce8-6651157d2229?syn-25a6b1a6=1",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5VSndIVE1JX2VXdmZyMWVSRmFUMS1Senp5cWt3c1hocHY2dVVfbkNkbVhHQnYyZXpmUGIwQWRaY19CZFQ2RWpDYkRKZjFPZ18zdTVXV0k0V1IyeWs0ejRTMjYyQVl5TmMxQXBObWVSQTlEUG5fY1ZCQnF30gF_QVVfeXFMT0dnRDVFSGJQejktSTNBdS1xeGdpSU0weXp0UlJLVms4Z0lxcUVfV254RnNiWi1mcDdXM0prWFp2aV8tT2NDN1pZZV83Qk83TkVqS0FzWHNsTlBLUkdmeC1PTmhlSmg5SGEtbXA4SXFRT0l1bjJZS0lKSHNCQlRaZw?oc=5",
           "theme": "monetary",
-          "time": "1j",
-          "publishedAt": "2026-10-12T04:00:16+00:00",
+          "time": "4h",
+          "publishedAt": "2026-10-13T19:46:12+00:00",
+          "impact": "low",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Fed's Williams sees no need for rate hike in 2027, Bloomberg News reports",
+            "en": "Fed's Williams sees no need for rate hike in 2027, Bloomberg News reports"
+          },
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVlpnSjdVeERKaFdNRkxCTHhRNmY5Y0FFN3k0by1ndE9MYXIzN0pybnJzUFBqR1hOaHpUYjFjODI1ZGNSMjVLRF83S19ZNXB6eGU0YU5MUUVMWEFtSjN4UlRReUpsWFktZ2lfX1pQZDBNS1Qtbk02bXNGRVNQZUlSS2pKZ2wxRUtGZzBWYUxCdGJpbHZkOFlMYWhtb0lRNFZEMDd6ZnY2RjdDRXpVdWhsUVhwN3ZsZ1k?oc=5",
+          "theme": "monetary",
+          "time": "5h",
+          "publishedAt": "2026-10-13T19:23:55+00:00",
           "impact": "medium",
-          "source": "Financial Times"
+          "source": "Reuters"
         },
         {
           "title": {
@@ -850,7 +886,7 @@
           },
           "url": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
           "theme": "monetary",
-          "time": "1h",
+          "time": "6h",
           "publishedAt": "2026-10-13T18:05:57+00:00",
           "impact": "medium",
           "source": "CNBC"
@@ -862,46 +898,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdHM0clpOMnFqajYyN2FLbEZGZ0FyRUxDc1B1WGI4Nnd1ZDV0dUtEQ3BOa2lEbHBUN3JmWklkNGhuZDZ2dHJmTTZ0STRseE1KU1JHSlkySXhXbHRzMGdZbkh0OUM2NGdtbVhwUU9UbkRIeFhNWjUtbEJ3aDN6RjhzMXgwMUdtSXpaQmF0ajBCSTdzNnZIZENIMTRXMlhEc1NXeUdNczRxdm1CMnBsYmJETk5ibGV5Z19jMzNn?oc=5",
           "theme": "monetary",
-          "time": "5h",
+          "time": "9h",
           "publishedAt": "2026-10-13T14:39:22+00:00",
           "impact": "medium",
           "source": "Reuters"
-        },
-        {
-          "title": {
-            "fr": "US inflation expectations are well anchored, Fed's Waller says",
-            "en": "US inflation expectations are well anchored, Fed's Waller says"
-          },
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVFBFRTZLXzRkVnlnU0FveXV5eHd5NHpLdGZ6VjY5NFBJYVUzUWJCMnAzUTJjbTVNN19yYldxQUM0M1BEQUVPRUZscFB4dTJRNUo4UlJBVzF6VE9JTDdVU1NBYVBkYlpLNE0yU2QwRkVCR21YZW5wd3ZUejdyMUhmNW82OFdlZ0RaQVlSRl9ZengxNkU0YS1WMjR6cHhGcnJjZUk0RERFSlBtT0FKLUE?oc=5",
-          "theme": "monetary",
-          "time": "8h",
-          "publishedAt": "2026-10-13T11:21:33+00:00",
-          "impact": "high",
-          "source": "Reuters"
-        },
-        {
-          "title": {
-            "fr": "UK growth forecast upgraded but higher energy prices to hit economy next year",
-            "en": "UK growth forecast upgraded but higher energy prices to hit economy next year"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/cmglw0r21zexo?at_medium=RSS&at_campaign=rss",
-          "theme": "monetary",
-          "time": "10h",
-          "publishedAt": "2026-10-13T09:38:54+00:00",
-          "impact": "medium",
-          "source": "BBC"
-        },
-        {
-          "title": {
-            "fr": "IMF forecasts US inflation will pick up in 2026 before easing next year",
-            "en": "IMF forecasts US inflation will pick up in 2026 before easing next year"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOHZxbUJWVU5pd2c2U2NRWUVyX0ZhdmpXYmlOQmM3NXZ0MFRLUUEzdFBmRDlKYi1pa1hfdkFrZnNKdW5kangwM1JPX3VRTldKNmJCV0poeFFfOC1uU3A0eF9nN3l4RUlOZV80bnpsM2xDR2o1V0piYzZ4QVQ1QWprTXhxMG9PX3hva0NYYUpvV3kyWUFyMkRIMEd0OHoydXlFZG02bXBHMktvdjc5SnkxdW5UMjRsM0IxY1hycnpZdVd5RVAwdlFBQVVKdDcyNlVT0gHkAUFVX3lxTE82ZTlkcldFRVNOWXFFekNsVm1BQkhvOTJ1T2tka3JfSDFHWFoyaWVTaGRDM0dFRW5XQUtfdm5TMnR1SUVIUTQ5b0c3M1RWa3pvNDkyV0d5dGt0TzZ3WXR5Tk5RZTlLRTRfLTd4ZGNSbG8tUVc2QjZRQlhPYUUwd3M3WWIybTR0cUJRRjdIM2c0NEFEajVNTUxXMTRSRC1ESGF6RmdMcGxqZ1g4UWdfVDBmNVdHV3BrVUF6NXpNRVl5cVZBQy1qeE5mbmh5VkNMRjc1NGRjM1AwLXNCaG9EeVFoSHhnaw?oc=5",
-          "theme": "monetary",
-          "time": "12h",
-          "publishedAt": "2026-10-13T07:30:27+00:00",
-          "impact": "medium",
-          "source": "EL PAÍS English"
         }
       ],
       "headlinesFr": [
@@ -912,7 +912,7 @@
           },
           "url": "https://www.lemonde.fr/pixels/article/2026/10/13/ia-l-entreprise-americaine-nvidia-entre-au-capital-du-francais-doctolib-en-tant-qu-actionnaire-minoritaire_6793162_4408996.html",
           "theme": "tech",
-          "time": "2h",
+          "time": "7h",
           "publishedAt": "2026-10-13T17:06:03+00:00",
           "impact": "low",
           "source": "Le Monde"
@@ -924,7 +924,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQTAxWk8xVmVCYTUwSlQ5bU11akdqMmFIdFB6OS1fM2RES1pUR2ktY1pIMTAtd0lJRmh0OXJTdXhlYmd0QWNEcWZFNmxfLXd3bHAwU3d5aWg5T3JwS0ZTcnFER2hNNDB5aXV5ajJveEZLR2tiMGVTdGdFajBsZlh5QTgxM0RlNWp4S0p4UldfZFRwajNVX21XeGo4VHdRaTdsQU43dGNKY2lrSGRoNkhrQVp3XzVNZw?oc=5",
           "theme": "monetary",
-          "time": "4h",
+          "time": "9h",
           "publishedAt": "2026-10-13T15:00:00+00:00",
           "impact": "medium",
           "source": "Les Echos"
@@ -936,7 +936,7 @@
           },
           "url": "https://www.lemonde.fr/pixels/article/2026/10/13/cyberattaque-contre-les-supermarches-apres-ceux-de-l-entreprise-danfoss-d-autres-systemes-de-refrigeration-ont-ete-vises_6793121_4408996.html",
           "theme": "tech",
-          "time": "5h",
+          "time": "10h",
           "publishedAt": "2026-10-13T14:21:12+00:00",
           "impact": "low",
           "source": "Le Monde"
@@ -948,7 +948,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZUR0cEx5UklpTEhSd1FKeGh3VlBoOGdzRmNIMEJVVmNNWUs5Q3RZY3h0clR4SFE3R0R0Z0hDSVFVb01oblFuTk9uMGI1bG5JX0Q3WjJ6N2lXTlFFQXhaSDJ3YnJRUGdnemZZVXhNbUVVVXVka2pNWTAwZ0xMOWZGZkZ1RkdzQlo2NElxSGRrMVo2WWVaSXBOTnZjYzVBcm1TSjF6WVFyZjNMc29kSzROOU9iaVFsYmdfckhKa2EwcmRfZDJBRWY0QVZqUVNCU2JwVjhqWVFYZjc4d3RDcmtUZE1XYV9vUdIB5gFBVV95cUxOZUR0cEx5UklpTEhSd1FKeGh3VlBoOGdzRmNIMEJVVmNNWUs5Q3RZY3h0clR4SFE3R0R0Z0hDSVFVb01oblFuTk9uMGI1bG5JX0Q3WjJ6N2lXTlFFQXhaSDJ3YnJRUGdnemZZVXhNbUVVVXVka2pNWTAwZ0xMOWZGZkZ1RkdzQlo2NElxSGRrMVo2WWVaSXBOTnZjYzVBcm1TSjF6WVFyZjNMc29kSzROOU9iaVFsYmdfckhKa2EwcmRfZDJBRWY0QVZqUVNCU2JwVjhqWVFYZjc4d3RDcmtUZE1XYV9vUQ?oc=5",
           "theme": "monetary",
-          "time": "4h",
+          "time": "9h",
           "publishedAt": "2026-10-13T15:07:00+00:00",
           "impact": "medium",
           "source": "Boursorama"
@@ -960,7 +960,7 @@
           },
           "url": "https://www.lemonde.fr/economie/article/2026/10/13/au-nigeria-le-milliardaire-aliko-dangote-veut-faire-de-l-entree-en-bourse-de-sa-raffinerie-de-lagos-une-operation-populaire_6793110_3234.html",
           "theme": "energy",
-          "time": "6h",
+          "time": "10h",
           "publishedAt": "2026-10-13T13:30:13+00:00",
           "impact": "medium",
           "source": "Le Monde"
@@ -972,7 +972,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQQ0FaaGRsNXd1X2o0cGR5Qm5OR21lMmJMdGV2czljeG15bTRORDc4LWhHNzBXWTJIa3FWVFQwV1g5RGlCWThRMHVvbXozVWRvZFlhdWFZdzhodXJtZmlwY3phVVBYR0tUVlljN0l3WkJzSEprLUs3X1M2OGdPdjBzTGJoeHVoUWxDeUZIck0ySU5LRXMtREhveFp4RC1feWxqbk9qNmZLeTZucnRZN1Fpd0ZySGRFT1hwTnFLellfSnlDcS1lNkV0bGZCdkN0RzlCcnlvWjZuWnFuNGg0V1BUemdDdVoxSVhYeEtmclBSRnpBZldt0gH0AUFVX3lxTFBDQVpoZGw1d3VfajRwZHlCbk5HbWUyYkx0ZXZzOWN4bXltNE5ENzgtaEc3MFdZMkhrcVZUVDBXWDlEaUJZOFEwdW9tejNVZG9kWWF1YVl3OGh1cm1maXBjemFVUFhHS1RWWWM3SXdaQnNISmstSzdfUzY4Z092MHNMYmh4dWhRbEN5RkhyTTJJTktFcy1ESG94WnhELV95bGpuT2o2Zkt5Nm5ydFk3UWl3RnJIZEVPWHBOcUt6WV9KeUNxLWU2RXRsZkJ2Q3RHOUJyeW9aNm5acW40aDRXUFR6Z0N1WjFJWFh4S2ZyUFJGekFmV20?oc=5",
           "theme": "monetary",
-          "time": "7h",
+          "time": "11h",
           "publishedAt": "2026-10-13T12:46:00+00:00",
           "impact": "high",
           "source": "Boursorama"
@@ -984,7 +984,7 @@
           },
           "url": "https://www.latribune.fr/article/entreprises-finance/42535487557594/samantha-mane-nos-acquisitions-doivent-renforcer-nos-competences-pas-les-remplacer",
           "theme": "trade",
-          "time": "14h",
+          "time": "18h",
           "publishedAt": "2026-10-13T05:30:02+00:00",
           "impact": "low",
           "source": "La Tribune"
@@ -1062,8 +1062,8 @@
           "value": 3801,
           "trend": "down",
           "change": -0.34,
-          "period": "2026-10-13",
-          "periodEn": "2026-10-13"
+          "period": "2026-10-14",
+          "periodEn": "2026-10-14"
         }
       },
       "sparkline": {
@@ -1143,38 +1143,38 @@
       "headlines": [
         {
           "title": {
+            "fr": "Henderson banks on tenant ‘FOMO’ to fill up US$8b Central Yards project",
+            "en": "Henderson banks on tenant ‘FOMO’ to fill up US$8b Central Yards project"
+          },
+          "url": "https://www.scmp.com/business/companies/article/3370761/henderson-banks-tenant-fomo-fill-us8b-central-yards-project?utm_source=rss_feed",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-10-14T00:00:20+00:00",
+          "impact": "high",
+          "source": "South China Morning Post"
+        },
+        {
+          "title": {
+            "fr": "US fines Bank of America US$1.2 billion, says it violated money laundering, sanctions laws",
+            "en": "US fines Bank of America US$1.2 billion, says it violated money laundering, sanctions laws"
+          },
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3370791/us-fines-bank-america-us12-billion-says-it-violated-money-laundering-sanctions-laws?utm_source=rss_feed",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "publishedAt": "2026-10-13T23:55:49+00:00",
+          "impact": "high",
+          "source": "South China Morning Post"
+        },
+        {
+          "title": {
             "fr": "Huawei, once hobbled by US sanctions, passes 100 million Kirin chip milestone",
             "en": "Huawei, once hobbled by US sanctions, passes 100 million Kirin chip milestone"
           },
           "url": "https://www.scmp.com/tech/big-tech/article/3370766/huawei-once-hobbled-us-sanctions-passes-100-million-kirin-chip-milestone?utm_source=rss_feed",
           "theme": "geopolitics",
-          "time": "6h",
+          "time": "11h",
           "publishedAt": "2026-10-13T13:00:08+00:00",
           "impact": "high",
-          "source": "South China Morning Post"
-        },
-        {
-          "title": {
-            "fr": "Long Before his Nobel win, Michael Woodford was influencing China’s central bank",
-            "en": "Long Before his Nobel win, Michael Woodford was influencing China’s central bank"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSVFuWklPUjlPV2lRVWZON0NfSGJaZm5rSjB4V2d6ZlJFTU5lYkEtU01oYzAtYzZzWF8yTno1UEFreFhfa0VuWWt4ZWtEcFNiSFB5ZTFiSjIxVl9ZaWlHbTVaR1Byek8zUTR3d2ViZzdDMmlaSHJZQW9XdVBBTkt3RkYtZHNKVlh5SXRIaDBFNDhIU05nMEZJZDJKbHRITmZ6QkNLcHlkRWVoT2RZbWtoQS1DZFlKOVcxUVRSU2h2dEg4YV9Bci1HT3h5c9IBywFBVV95cUxQSVFuWklPUjlPV2lRVWZON0NfSGJaZm5rSjB4V2d6ZlJFTU5lYkEtU01oYzAtYzZzWF8yTno1UEFreFhfa0VuWWt4ZWtEcFNiSFB5ZTFiSjIxVl9ZaWlHbTVaR1Byek8zUTR3d2ViZzdDMmlaSHJZQW9XdVBBTkt3RkYtZHNKVlh5SXRIaDBFNDhIU05nMEZJZDJKbHRITmZ6QkNLcHlkRWVoT2RZbWtoQS1DZFlKOVcxUVRSU2h2dEg4YV9Bci1HT3h5cw?oc=5",
-          "theme": "monetary",
-          "time": "7h",
-          "publishedAt": "2026-10-13T12:00:08+00:00",
-          "impact": "high",
-          "source": "South China Morning Post"
-        },
-        {
-          "title": {
-            "fr": "PBOC adds most gold in three years amid China pivot from US dollar",
-            "en": "PBOC adds most gold in three years amid China pivot from US dollar"
-          },
-          "url": "https://www.scmp.com/plus/business/commodities/article/3370735/pboc-adds-most-gold-three-years-amid-china-pivot-us-dollar?utm_source=rss_feed",
-          "theme": "monetary",
-          "time": "10h",
-          "publishedAt": "2026-10-13T09:40:58+00:00",
-          "impact": "medium",
           "source": "South China Morning Post"
         },
         {
@@ -1184,34 +1184,22 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZmJOc0k0ZnFTSU8xM1V5UmVGLWpwbG9Cbmh3MlkxMVQ4S2h1aWxuSTVCTXdZY3cxZTFDOWVhcEF4UTRkZGxZY1dwT2FLTUxYUENtcHZyTHNXNHNtUktVd0JqLVlFUmFmLXRLUlhBVFpTNGxvb01GSU1pYlZHMnVJbG5oekhBR2RNdzAzbjJUTFVUeXZUdjVzMnJEaDB2OUJiejlNcEJkQXNRbUhlczFya3FQMk9WM1FpN0dJ?oc=5",
           "theme": "monetary",
-          "time": "1h",
+          "time": "6h",
           "publishedAt": "2026-10-13T18:19:00+00:00",
           "impact": "medium",
           "source": "Caixin Global"
         },
         {
           "title": {
-            "fr": "Europe's alternative to Trump's China trade war",
-            "en": "Europe's alternative to Trump's China trade war"
+            "fr": "Germany shifts toward tougher EU trade defenses as pressure from Chinese competition grows",
+            "en": "Germany shifts toward tougher EU trade defenses as pressure from Chinese competition grows"
           },
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX3VXMHRaOWxfdlNqcjBPcDE3SmlBY2ZvMG1SX0tSeXV6OU9ZcEJBTWNJMjh6cU5oX1F1X3lVMmV4dDFDZEVsLUNvZU52MlpmaktsLXBET2VhRXd4UFFyVzJfZXBGOFpMVlNONVZYd0Z4SmFJZjlEdHpHMnd5dUUwZUI3RGM?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRXpoSGxnbGVuMHJnTzZMekxDbVh6S003bDlWLTYtS29OclQtM3duN3lKYjFfd0lrWXFzOUIxUmI4R0JjUktvMXVkTXVSZDBhQ3JWaHQ2MmI3VUJWTTdRRnRXWDMwMGdaMTJ5ZHBCSDlmdzdFU3NoWEdETEw2LUkzRzdJNUlyaW5DNVJ4V1lCaWNYZFFaX0NiS3pVVU1BT2ZxUnlJZXNBcnB5XzBBaW9N0gGvAUFVX3lxTFBoMDJhdkhiQnB0YXdxZTZmajRTT1FhUUYtcXNOWTdxamN0MjBqVkp2MU15U0NwN1c0aHdmVTlLYzhsTXNHSUZhX3g3NEdMMHNOS09GWDNHQXNMb2t5TzgxOV9iV1R6ZHNyXzlHbTFvUlZqbERTc090ZzdCenBkX2lpbmx0Q2V6S0dRNTZmNzhvS2dDUnpiYmJabTJlRVdnUThNOEZVR2V5RzZteWVSVGM?oc=5",
           "theme": "trade",
-          "time": "3h",
-          "publishedAt": "2026-10-13T16:54:54+00:00",
+          "time": "15h",
+          "publishedAt": "2026-10-13T08:48:49+00:00",
           "impact": "high",
-          "source": "Axios"
-        },
-        {
-          "title": {
-            "fr": "IMF flags risks to global economy from AI market correction, war and debt",
-            "en": "IMF flags risks to global economy from AI market correction, war and debt"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTXc4YzNuVFU1U2dtSjE1SG9xRUIxZTRtMU1xdXNodDkxMTRGaE9yQTJIVVVoeVJjdnFsbi0yeUJ6a09ZbGJ0Z3N5V1NiV1RGZlVDekptcUVqcTVtNGRsdDNpZkd1akEyN2hybUx5aFlXM05pZENOVFdfTXI3XzBxaGRMZ0NVcFFRVXZRbHlZYUNleHhiTTJ1UTN0dXJ6U0h2V3ZoWGdqOWp5SmdCMjFab1doZw?oc=5",
-          "theme": "tech",
-          "time": "3h",
-          "publishedAt": "2026-10-13T16:15:03+00:00",
-          "impact": "high",
-          "source": "Reuters"
+          "source": "Deutsche Welle"
         },
         {
           "title": {
@@ -1220,22 +1208,34 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQV1lLRy1MeHV6cXZGQ0NkdmNFdUV5dmljenhqQy1mVDRCOTZzRU1UU1hGVU00ekJRMVNJUjM3bkp4cldYTlNYV0R5NmUxRmJmWnRFT1Z5c1ZVUW41SUp3NmN3RFYzRFI1ZHN0dmRhMWVSclF4UFJqV0dxdmdKRE85TEZNT0xJS1hRdlNFWjhmWV8xeC1Ma0N5Ui1xU0xudllacVpRbjJUVWE4ak5wLXZSZWdoX21STFhD?oc=5",
           "theme": "monetary",
-          "time": "11h",
+          "time": "15h",
           "publishedAt": "2026-10-13T08:29:00+00:00",
           "impact": "medium",
           "source": "Caixin Global"
         },
         {
           "title": {
-            "fr": "South Africa Factories Crater as China Imports Stunt Revival",
-            "en": "South Africa Factories Crater as China Imports Stunt Revival"
+            "fr": "COMMENTARY: Europe gets the yuan rise it wants — just not the way it wanted: Mike Dolan",
+            "en": "COMMENTARY: Europe gets the yuan rise it wants — just not the way it wanted: Mike Dolan"
           },
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNenphelJyYjZ2WnJSeWw1OUQwNXlYUklsT0RNWGM1SDBJUEVJZmFNRVZIbmxEeHAzTUZKNGc0VlVacGtmbG1GeG94ZnF1dG5XSFpzQVVxZnJENDFuV3NuQVh6ZkI2TVRwNTEzS0ZmQ2VqV2tjRDdzbl8xc182OE41NEJhQkFiZkdCSl9sMzE0ZGNjRHlFaXZic0lDQ0RQS1VjeXdUZ2Nud2RuWnRtcS1oc2lB?oc=5",
-          "theme": "trade",
-          "time": "12h",
-          "publishedAt": "2026-10-13T07:28:46+00:00",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPT1lpTHMyYkJVQWluMXdsN21kTTRtSnR3aXgzUHB6X2JUeXFCMmVPMlFXdDVHUkV3UHd4ZjlZTU5JX21CM1I3NzhqWTZzeU5yVXpvZHFaZDZoS1VCNUhmOWw3Rlc0NV9sanRwZnF4SE9YV1VPRFI5NnpvckQxZmxDdlE1ZmNuSjlIbGZ3N3lmVXpDOEJ1WFc0c2dBWHdWUk5jejRrRFdGTDdYQUlkSElSOHFneDZKQmpQZjg1NWxfR25jVldzMVFuN2xFTmNudw?oc=5",
+          "theme": "monetary",
+          "time": "1j",
+          "publishedAt": "2026-10-13T00:00:00+00:00",
           "impact": "medium",
-          "source": "Bloomberg"
+          "source": "Reuters"
+        },
+        {
+          "title": {
+            "fr": "Europe's alternative to Trump's China trade war",
+            "en": "Europe's alternative to Trump's China trade war"
+          },
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX3VXMHRaOWxfdlNqcjBPcDE3SmlBY2ZvMG1SX0tSeXV6OU9ZcEJBTWNJMjh6cU5oX1F1X3lVMmV4dDFDZEVsLUNvZU52MlpmaktsLXBET2VhRXd4UFFyVzJfZXBGOFpMVlNONVZYd0Z4SmFJZjlEdHpHMnd5dUUwZUI3RGM?oc=5",
+          "theme": "trade",
+          "time": "1j",
+          "publishedAt": "2026-10-12T22:57:00+00:00",
+          "impact": "high",
+          "source": "Axios"
         }
       ],
       "headlinesFr": [
@@ -1246,7 +1246,7 @@
           },
           "url": "https://www.rfi.fr/fr/%C3%A9conomie/20261013-france-le-g%C3%A9ant-am%C3%A9ricain-nvidia-entre-au-capital-de-la-plateforme-doctolib",
           "theme": "monetary",
-          "time": "2h",
+          "time": "6h",
           "publishedAt": "2026-10-13T17:30:47+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1258,7 +1258,7 @@
           },
           "url": "https://www.rfi.fr/fr/%C3%A9conomie/20261013-cuba-lib%C3%A9ralise-son-secteur-des-hydrocarbures-sous-la-pression-du-blocus-am%C3%A9ricain",
           "theme": "geopolitics",
-          "time": "4h",
+          "time": "9h",
           "publishedAt": "2026-10-13T15:25:36+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1270,7 +1270,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOekMwc1ZuLW12Qjh3aDFMOU9DTk8tMGNrT3VKOXBIYzhQSHRhU3p2NnVma1BhUEQ0MEJBeXBtT3ZMVXBKcFg4NUFQc1BTbVFNZVFjVl9WZWcxN0s3VDZuVGpubWxxODJfajNqYV9femUyRmFETHItYUxWaTYzTUZWZ0VyN3ZmSy1iemRaelZyUGlGSG1tNXc1WFNpWVpPN25KMXZqVGwzOXB1RC1ibnZTZlRWT3FPTHlJQWNObWI3VXFwMHhTcUN3TERlXzBUQQ?oc=5",
           "theme": "monetary",
-          "time": "6h",
+          "time": "11h",
           "publishedAt": "2026-10-13T13:14:41+00:00",
           "impact": "high",
           "source": "La Tribune"
@@ -1282,7 +1282,7 @@
           },
           "url": "https://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20261013-en-france-l-intelligence-artificielle-menace-d%C3%A9j%C3%A0-l-emploi-des-plus-jeunes",
           "theme": "tech",
-          "time": "9h",
+          "time": "14h",
           "publishedAt": "2026-10-13T10:05:56+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1295,7 +1295,7 @@
           "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQMU0tSDBUVFdXcnJ1amNRVlJ6RXZNQ015ZGcxTVFCSkJKR3lmdmpoSEl4YVNvZFJEWTdrT0ZNQnZ6ZHBjeUNOZVNxZzdGMTFtZU5OQ3d5aU40MVJFQkUxd0ZDeG13LVkyVzhtdlNRSmtSeWRTeklwYnlTeWFNVmh0OXZXUlVUbURiTGxVcWFlV1NUNVJ6TzBLcFN5TmdsWU9fQkVPYXhTSlhDYVcxVVp6Wmd1UGN4ZjVILVF2TEUxdWdsWjJCa25jb0M1MlNqQUxFZUFZWDFPWnBHTXFOX2w4?oc=5",
           "theme": "monetary",
           "time": "1j",
-          "publishedAt": "2026-10-12T09:23:03+00:00",
+          "publishedAt": "2026-10-12T09:15:00+00:00",
           "impact": "medium",
           "source": "RTBF"
         },
@@ -1372,8 +1372,8 @@
           "value": 73034,
           "trend": "up",
           "change": 0.77,
-          "period": "2026-10-13",
-          "periodEn": "2026-10-13"
+          "period": "2026-10-14",
+          "periodEn": "2026-10-14"
         }
       },
       "sparkline": {
@@ -1453,12 +1453,24 @@
       "headlines": [
         {
           "title": {
+            "fr": "India’s Rupee Rescue Is Getting Desperate",
+            "en": "India’s Rupee Rescue Is Getting Desperate"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb29mN1dZb05qX3laSm9fcEVrX2xZYk13OHdsOXJiazJhMTRFcjNPRTlERHIzdERtbm1OMnV6TTI0WWNaWHJDRnlfNXd4eXRVLXF4ZjNhaWxkSXZuNV9RRy1ncWFJWlU2TjdrQ2xmN1VReXZlRVN6cVdQZjJ6Sk9WUTRkdmIyYlg4OWZjWkJtMTktNmdaWERKWlhEOTFpbU5Vb0dxNHdSdEpBVnRIZ09lM3NXbw?oc=5",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-10-13T23:30:50+00:00",
+          "impact": "medium",
+          "source": "Bloomberg"
+        },
+        {
+          "title": {
             "fr": "Watch Jaishankar: India-US Trade Talks Heading in Right Direction",
             "en": "Watch Jaishankar: India-US Trade Talks Heading in Right Direction"
           },
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMXYzY243YmFyNV91NUY3eUZYREZzUy05eGlraDlieXY1Rm9sVHZwRG56RnQ0THp1a2xuRTRRQmtpMzBoNlpkYUl1b1VLQzQ4TGtIdWNrelppOGNycElFNFRQNzVIVVdhTnJnQVhHSERNazVwTjU0SmVUNlIyUXhEOC1aSDB0WnZvRGpIZ1RuZGtHWDgxa2hfTlVJZWpvclZ0el9SU2Z2VWNmVzdkSDJR?oc=5",
           "theme": "trade",
-          "time": "2h",
+          "time": "7h",
           "publishedAt": "2026-10-13T17:25:43+00:00",
           "impact": "high",
           "source": "Bloomberg"
@@ -1470,22 +1482,58 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWnA5YTQ4UzBIOGVaY2NEbHBwbWQ4b1QyYUY3SFExaE9qX2VJemNDbUFGS3hNN0lfTk9CT1JHLUgxZURJQ19zWU5tSHViYTNGY3pINi01czlOWWgzTHZoU3lQdnFtUXkxYVRwSWE0UHJZRjN3X3VjMy1YRWNZc1UtSkhuWTl0R1JCbUo1c2lzbmo1Y212b2FzM3o0cW9ZMF9ZZ2RhQl8xVGZNTjVYT1Jzbkt6Uk8?oc=5",
           "theme": "monetary",
-          "time": "15h",
+          "time": "19h",
           "publishedAt": "2026-10-13T04:55:00+00:00",
           "impact": "high",
           "source": "Bloomberg"
         },
         {
           "title": {
-            "fr": "Why the Rupee Is So Weak Despite India’s Fast-Growing Economy",
-            "en": "Why the Rupee Is So Weak Despite India’s Fast-Growing Economy"
+            "fr": "Sebi extends IPO size flexibility by six months",
+            "en": "Sebi extends IPO size flexibility by six months"
           },
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa2FUR252VzJjVlNaZncyWnFVdkNUOEo1enJKb2c3clBodVZEZmMxdi1xUUlIZDgzZEx4WlJqVTFqTHpFVjM3bk1KZUxidUliYVR4UnFJZHhpUE1YSXVQZFRMQ2xDQkpvOE5CUktVZllmZG83SGZkNDE2YzBGN2pVdC0xc2xDTzJpcVQ2ME8yX1J0NHYtTEpINTZ4U1I0Y2JEOXNwS0tleXdLNVBfckxOZU40Zw?oc=5",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-extends-ipo-size-flexibility-by-six-months/articleshow/134929354.cms",
           "theme": "monetary",
-          "time": "16h",
-          "publishedAt": "2026-10-13T03:50:00+00:00",
+          "time": "<1h",
+          "publishedAt": "2026-10-14T00:00:07+00:00",
           "impact": "medium",
-          "source": "Bloomberg"
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "FM Sitharaman ready to hear out stock market tax debate",
+            "en": "FM Sitharaman ready to hear out stock market tax debate"
+          },
+          "url": "https://economictimes.indiatimes.com/news/economy/policy/fm-sitharaman-ready-to-hear-out-stock-market-tax-debate-rbi-rupee-dollar-rate/articleshow/134925828.cms",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-10-14T00:00:00+00:00",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "RBI's moves to shore up rupee patches on long-term weakness",
+            "en": "RBI's moves to shore up rupee patches on long-term weakness"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNV1FaTjBKY3hGQVZrdTFrSzVfTE1pVVphQ1pYMjY5VDI4eDlLMzQzU1c0VGI1ZUJjdV9tQWlPVkczbk8tUDRIZmFWRklIRjhMRHBRbUY2UjFFdzlIbmN2UDQ5Zl9GNVBkVkZadTIzdGpBWkw4YnVZRjQ0SkdIbzY5aDNIZV90cVpOLUFNU3pwa2NUYmNVTFh3YnpIa0pFcE80b3JaN01WOGN5a2JiODQzUHdtc9IBwAFBVV95cUxPaE5XUHY5NnZ2aFVwRno1cll4cU1OZC1Hdk5YVUdOclJ2NlNfcmFNQmJVYlg5MjNHbkk3Mkw4d2c1QnhWbUtkNTVCdWFINmZXa2J3eDhjblMwRFBmUlo1aFNWZHI3bE4zaHN5R0dQUVJPTTM4U1Y4anpjZVlVdThwMldMQWxTVExGWVRFOUZ1LThJdmlzbWxxNzZGTXBhenNTck1wM21RU0FHQ1VzLU5oUDhKWnhQOS02cWxUbkx2cnk?oc=5",
+          "theme": "monetary",
+          "time": "2h",
+          "publishedAt": "2026-10-13T21:33:37+00:00",
+          "impact": "medium",
+          "source": "The New Indian Express"
+        },
+        {
+          "title": {
+            "fr": "Rupee up 49 paise, RBI governor says curbs to halt speculation",
+            "en": "Rupee up 49 paise, RBI governor says curbs to halt speculation"
+          },
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPTkFfY1BZdkNDekNqNm9YblVMdFlBbFZDZS1FRnVRbVpWSHJzN0ktZVdEbkFYZ1E2QXU2b19fdmF5eFlCMlE3SVpPbk9rbXEtRXFGaWFVa2p3SFctUHc5MlVFS1QyTWxMdnNPcXlCNzZKSlpfX3ZpQ1hLdTNCNTgwOTRBTExYTjZscmRRV2p5UDdGdmxGb3ZjOU9EbWJRV00xTU9FNncyeFVPcE9NYjBMcVB4SFAzeEZaWl8tVFFRdEhWTnl1TEZ2eXdjbHpMYVU2eUZEazd4Q1pRZDB2MERredIB5gFBVV95cUxPZ3ZoQm5kREVQR1NWUjRJcTJSXzl6dmQteWVXVVBueF8walluS2xHWVJlcnU1MW5QOThtZ241Z1AtakRmcDVDcURsMWcxQTNyd0hTbEdVZVA1R0J3V1UtMkRsTU1QZzFQLVdPTXRicjNOZE5PcGMydHJSaFVlajZnUGVRcDd0YkU2QUliYjkyX1dwcnJoRXh5Yl9ndEkzS3pHbjg5d0JtSnFkMzFjVk5JS3RFUVJva01qbUhNampUSUxPbm9uQkVpUWx1M2dDdmVRT2I0VU1mRENHQ0hVUXVRVWN4Ykh4dw?oc=5",
+          "theme": "monetary",
+          "time": "3h",
+          "publishedAt": "2026-10-13T20:36:00+00:00",
+          "impact": "medium",
+          "source": "The Times of India"
         },
         {
           "title": {
@@ -1494,73 +1542,13 @@
           },
           "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/unlocking-global-markets-how-indian-msmes-can-thrive-through-quality-and-cost-competitiveness-in-new-ftas/articleshow/134925948.cms",
           "theme": "trade",
-          "time": "<1h",
+          "time": "5h",
           "publishedAt": "2026-10-13T19:09:16+00:00",
           "impact": "medium",
           "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "NY Fed President Williams sees no need for a rate hike in 2027",
-            "en": "NY Fed President Williams sees no need for a rate hike in 2027"
-          },
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/ny-fed-president-williams-sees-no-need-for-a-rate-hike-in-2027/articleshow/134925718.cms",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-10-13T18:58:02+00:00",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "India should let rupee find its own level: Uday Kotak calls for focus on competitiveness, innovation",
-            "en": "India should let rupee find its own level: Uday Kotak calls for focus on competitiveness, innovation"
-          },
-          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPbFdCbWtpRTJuanYxX0FUcXlZcWhSY0VTQ3o5UTFTVG9BNEkyUmpKc09PLVZFVlhIWWtTaXFJbWtucXhZRGxzcUtoNWtCQm5WTTdSNlRhQzRJbUFxM2hEMDFNaGVNOG1TdDhxbTQ1a0NpdWxwNlY2a0dsbUJpeXp5eWFVZnNoUnNtbnJSMW56WHNJa3lsb1JwZ19wWjhkbXU3X0dNbG1CYlJ3SEVzaGQ4MFRRc2ZsM1I5YlItX2lydm1pSGsxd0RQU0pIYk5kODl4STZvaXhweWRtVU1QZjN1QlJ6VFd4TnU2V0R3TUZWWUpKd29QSnMyd3lKN29BRjc3VU9wSHh5bzR5UUhHUHJN?oc=5",
-          "theme": "monetary",
-          "time": "2h",
-          "publishedAt": "2026-10-13T17:38:25+00:00",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Speculative attack on rupee promoted foreign exchange measures: RBI",
-            "en": "Speculative attack on rupee promoted foreign exchange measures: RBI"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNUFKUU4zOTl6cVpOSUJwd0I4aVBXcG03UEJrd1NDOVcxSGhEYmVEUHV4b29NTGZjTTRZci15WFNWN1hjbUx1X2VHVW1ZbG9aeWJMZHFGemJBTGhmQ3ZTd1FGc3RzSGtIMXgwVTlyWVBMckFOMkE4eFhsMGU5UWFGVmFUV3NQVzBzY3JKR3lmZE05SVFsbk14VU40eTdtRjRYUzlzMnE1c09NcDJsME1uUUF2SzlyT2NfbUphSzh5SE9HUUxHUG0tVk1pVmRJYlZTQndIQtIB2gFBVV95cUxPdU1rTFNXa3dXMkdZTDg2bkZBd2FVTzE3blF6Q3VjMVplV09XTmV4SmhpZXo0NjZ5VmFzNjFwN29vQWNENWZ6eFJmUW8xOHdja0pCandKX0twTlM1UXpZZlZYOUhSS2VNSEMyZzNjSnJHMEJmN0NLUUhhMjk3ZW1BZkdHell0RVpxajRHcHhuYUQ5bXlFa3UySTUtUU5CZExkSmpjejhJS1A0R3dERmJwUURzZUVMcGZpVTFFOUw2ejdwcDVsWjJZSzB4REZfck1LSFpKVk4yNERJUQ?oc=5",
-          "theme": "monetary",
-          "time": "2h",
-          "publishedAt": "2026-10-13T17:17:00+00:00",
-          "impact": "medium",
-          "source": "The Times of India"
-        },
-        {
-          "title": {
-            "fr": "RBI governor says FX curbs to quell speculation; rates, financial stability interlinked",
-            "en": "RBI governor says FX curbs to quell speculation; rates, financial stability interlinked"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTm9zLTFKSjBRWDVkVjJ2STZVUU1qRDRVX3poU2VYcERtSWF3MHMyM2JYbVhsc0ptNWVyVW1lUm1vRXdHRnBQNTF0RXhjYV9vbXBWV2JkNkFNNDgwY0F3X2ZYZnQ3RHM4enlVV1haME8tSUpQeGh5eTZSQWp4TVlFTFphSEdCekZua2hoRVRIa01FR2ZCQnV5UHZiV0xoazBNM04tbG41VGpmOTdJUV9peUtrUkZybmtlOWc?oc=5",
-          "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-10-13T16:41:33+00:00",
-          "impact": "low",
-          "source": "Reuters"
         }
       ],
       "headlinesFr": [
-        {
-          "title": {
-            "fr": "Musk promet un service Starlink abordable en Inde, quelques jours avant l'introduction en bourse record de Jio",
-            "en": "Musk promet un service Starlink abordable en Inde, quelques jours avant l'introduction en bourse record de Jio"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxONXc3VEMtcjZiVWlPREtoSTdtOWlLVEJmOTlsdW5tTkc5WDBHQXZGOWJLdmpEUW1ILTNVaVp4R1ZqNVppX3IxMlFQakRKYWxyNGI1MEk4NmhZU1NOc01HWnNJTmZtRDV5eFJnXzlockcwUlNTWFdXN3U4Vnd4Q0JqY3hJRGZxbWRFUjlEaXdSb1JGb3d6TC02TVlYM2pWQnhUMzB3WlZiT2treFdFMVZNRzBTQUpRNnMtM2JOLUtGZEt4ajliVkxCSVFUX2o0QmhjaE9yU05ocDk4NTJJelJmbnJoZFl4bTNkZFhicWRWZnVvRTVrVExXMGRHMEpJdW9oMmRZankxMVFmUmVYd2tNMnBJdjZLQkpmbmYzbFFXbURSaHRTUEE1amVHWjQxQ0FzMUI0StIBtAJBVV95cUxONXc3VEMtcjZiVWlPREtoSTdtOWlLVEJmOTlsdW5tTkc5WDBHQXZGOWJLdmpEUW1ILTNVaVp4R1ZqNVppX3IxMlFQakRKYWxyNGI1MEk4NmhZU1NOc01HWnNJTmZtRDV5eFJnXzlockcwUlNTWFdXN3U4Vnd4Q0JqY3hJRGZxbWRFUjlEaXdSb1JGb3d6TC02TVlYM2pWQnhUMzB3WlZiT2treFdFMVZNRzBTQUpRNnMtM2JOLUtGZEt4ajliVkxCSVFUX2o0QmhjaE9yU05ocDk4NTJJelJmbnJoZFl4bTNkZFhicWRWZnVvRTVrVExXMGRHMEpJdW9oMmRZankxMVFmUmVYd2tNMnBJdjZLQkpmbmYzbFFXbURSaHRTUEE1amVHWjQxQ0FzMUI0Sg?oc=5",
-          "theme": "monetary",
-          "time": "2j",
-          "publishedAt": "2026-10-11T07:03:47+00:00",
-          "impact": "high",
-          "source": "Boursorama"
-        },
         {
           "title": {
             "fr": "Aujourd'hui l'économie - Inde: pourquoi les investisseurs étrangers retirent leur argent malgré une croissance solide",
@@ -1629,9 +1617,9 @@
           "name": "MSCI World",
           "value": 161,
           "trend": "stable",
-          "change": -0.01,
-          "period": "2026-10-13",
-          "periodEn": "2026-10-13"
+          "change": 0.04,
+          "period": "2026-10-14",
+          "periodEn": "2026-10-14"
         }
       },
       "sparkline": {
@@ -1649,7 +1637,7 @@
           90.12,
           90.49,
           103.53,
-          106.11
+          106.38
         ],
         "labels": [
           {
@@ -1695,8 +1683,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,01 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 3 relèvent du thème « géopolitique ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.01% on the session. Of the 8 stories retained today, 3 fall under geopolitics."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 0,04 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « géopolitique ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 0.04% on the session. Of the 8 stories retained today, 5 fall under geopolitics."
       },
       "headlines": [
         {
@@ -1713,75 +1701,27 @@
         },
         {
           "title": {
-            "fr": "Submit your questions: Who’s winning the trade war with China — the EU or US?",
-            "en": "Submit your questions: Who’s winning the trade war with China — the EU or US?"
+            "fr": "Bank of America to Pay $1.2 Billion to Settle Violations of Money Laundering, Sanctions Laws",
+            "en": "Bank of America to Pay $1.2 Billion to Settle Violations of Money Laundering, Sanctions Laws"
           },
-          "url": "https://www.ft.com/content/0a39fcdb-860c-4739-8454-21fb429f6336?syn-25a6b1a6=1",
-          "theme": "trade",
-          "time": "5h",
-          "publishedAt": "2026-10-13T14:16:40+00:00",
-          "impact": "high",
-          "source": "Financial Times"
-        },
-        {
-          "title": {
-            "fr": "OPEC Cuts Demand Growth Forecast Again as Gulf Supply Risks Mount",
-            "en": "OPEC Cuts Demand Growth Forecast Again as Gulf Supply Risks Mount"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUEt1NmxaOWtwZ2RBbVh1Q01nZjU2TlZCR1gtRm5sOElDQXFOaVJuTWRQVkhKcGxwNG5KYkhITnJsamhoV1JxVDlxc3p6RlJNR0FCUEtoWm1NQlpNcHN5TXh0RFZJYkhqUFlVdnBXQm5IUFMzdzBqNHRNSk9BelFWbEkwOEJ3bVJLLTZLUjU3Slo3UXVUZjk2YkpySnN5Sl83LWN6Mzdka0MyZzBfTUEtVldmU0Q?oc=5",
-          "theme": "energy",
-          "time": "7h",
-          "publishedAt": "2026-10-13T12:32:00+00:00",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNemVIQ2FhSTdKUkpYbmtTR1h6LVNyVmlNVG84ZUVRdW5FMV80V18wa0Q5YmR5UzVzZDRiYXZXbFJPdkVmVkZLVm9QaDlTNmdwUWJ0YldDaXB5N0I1cng5NHY1VnFTYUNfYmVjNlhmcWZCRllXbmRQUFJvYm54YjkwOWNYVU1Oa1hrVUFzWHU5dzhLWUlMOTVMc3pWUl9uNE1vREZYa0lJVXZsVjRlM09DeUR4M3M1YVVxSG41THpJOXloZTRzTkl4a0VfT3lEeVVIVEswd1BB?oc=5",
+          "theme": "geopolitics",
+          "time": "2h",
+          "publishedAt": "2026-10-13T22:05:00+00:00",
           "impact": "high",
           "source": "WSJ"
         },
         {
           "title": {
-            "fr": "OPEC cuts oil demand projections for remainder of 2026",
-            "en": "OPEC cuts oil demand projections for remainder of 2026"
+            "fr": "Submit your questions: Who’s winning the trade war with China — the EU or US?",
+            "en": "Submit your questions: Who’s winning the trade war with China — the EU or US?"
           },
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONzdWR1dwVnFnSXBCTFJWRkV0SUZjNTlLOU5jX0sxR09PSXB4cGVxMkRURUFXNTJOUHo2RWxVWk4yVEdCNVljYnpKV0h0TXQxUkh2MkdUNF91M1poWmNYOEtFd2RSVlpmb25YQkV2U0RVN0lrVlg4OEdPWmdSSFVRbmNxelBnTExwT2pvYkx4OXZfTG5nbGfSAZsBQVVfeXFMTU02aWNVeGM5MWlBWFBRWlNoOUxIdDN4OTlMYVRoaWlhb196MmRsYXFad0gxWDE4SHZIT3V4VS1tdUZQcUZNa0dMUC02OUlNMV85bzc2MmFNWS15RjJHR3pnTFhtSEs5WEJxQURnODBZa2hrMkNmWnNKQVFNYmxSUDdBcFgzb3haaExxbUNSS3ZUdXA0MC1hTEJIREU?oc=5",
-          "theme": "energy",
-          "time": "<1h",
-          "publishedAt": "2026-10-13T19:04:00+00:00",
-          "impact": "high",
-          "source": "The Hill"
-        },
-        {
-          "title": {
-            "fr": "Paris St-Germain boss Luis Enrique hopes Man City will avoid sanctions",
-            "en": "Paris St-Germain boss Luis Enrique hopes Man City will avoid sanctions"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1jUGFzdWlad3VlS0FmRmVHUWw2UGdEUjRHdzRCdGZmbkRSc1gzVGNaTG1KbXZ0d0VkTjNtQ3IzbFRHcDhlaFkta1owZGZRTy1YZzJmRmROR1VMN2hQOGlVTGJNb3g5eXc0?oc=5",
-          "theme": "geopolitics",
-          "time": "2h",
-          "publishedAt": "2026-10-13T17:33:33+00:00",
-          "impact": "high",
-          "source": "BBC"
-        },
-        {
-          "title": {
-            "fr": "Manchester City v PSG is a reminder of the path not taken in sanctions battles",
-            "en": "Manchester City v PSG is a reminder of the path not taken in sanctions battles"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPc0g1RklKVlhOYnlpMmhKcmpFVDNudS1abGdyREhfbEhzSW9PNG5hbGVRcFdtUm9YRXV5cDA1a1BKOExwaXp0a044TlpsLVJXWFp3MkVObjVvSXl1bjh0YWhBUzZUUFFBRmllTDZzdHpPX2tYTXBtejlkUTREY2lGb2Rqd2NGenZsVHg5Y1ZCanpISFdMdkloQWd1enZ3cGNEME42Zm00QmROZk8xUVNlU1c0RU03eWM3TFpLNnEwRzk1VzBBQjAwSnlVVHNiNEVaWW43RGdR?oc=5",
-          "theme": "geopolitics",
-          "time": "2h",
-          "publishedAt": "2026-10-13T17:06:00+00:00",
-          "impact": "high",
-          "source": "The Guardian"
-        },
-        {
-          "title": {
-            "fr": "Europe's alternative to Trump's China trade war",
-            "en": "Europe's alternative to Trump's China trade war"
-          },
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX3VXMHRaOWxfdlNqcjBPcDE3SmlBY2ZvMG1SX0tSeXV6OU9ZcEJBTWNJMjh6cU5oX1F1X3lVMmV4dDFDZEVsLUNvZU52MlpmaktsLXBET2VhRXd4UFFyVzJfZXBGOFpMVlNONVZYd0Z4SmFJZjlEdHpHMnd5dUUwZUI3RGM?oc=5",
+          "url": "https://www.ft.com/content/0a39fcdb-860c-4739-8454-21fb429f6336?syn-25a6b1a6=1",
           "theme": "trade",
-          "time": "3h",
-          "publishedAt": "2026-10-13T16:54:54+00:00",
+          "time": "10h",
+          "publishedAt": "2026-10-13T14:16:40+00:00",
           "impact": "high",
-          "source": "Axios"
+          "source": "Financial Times"
         },
         {
           "title": {
@@ -1790,10 +1730,58 @@
           },
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaUw3MWFmUmFCR1JXdS1RaDJDXzczUnFLMG1EVXJMZzVHYlMyNG1fcmkzWDRsdzg1eUh3RC1vU1RaY1RSRTh1WHNFWTRJSDNnVG9ORW5JSEQwRy0zcEZldjhIMDhQb09ndkRBY3VfckdRNzhVbkZZVXdaTEpCc0ppbFRiQVVpTlJqVEhOeGhLbUc0MWJVRTZQZWVLa1k4UGlJcTJxeUoyS0JyUThadlJLOVZwVlpkelRaVlJzeS1ZZkRhaUYw?oc=5",
           "theme": "geopolitics",
-          "time": "3h",
-          "publishedAt": "2026-10-13T16:52:09+00:00",
+          "time": "1h",
+          "publishedAt": "2026-10-13T23:06:03+00:00",
           "impact": "high",
           "source": "Reuters"
+        },
+        {
+          "title": {
+            "fr": "Treasury fines Bank of America $1.2B for violating money laundering, sanctions law",
+            "en": "Treasury fines Bank of America $1.2B for violating money laundering, sanctions law"
+          },
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE00Z3pwamtKUjQ4a2lmdEg4YjJuRkdiWnZlV21WRWEwOWF3dHR1VzV1ZXlTLVE5c19NTDFZVW1hcGlXVWFyLTIyTkNqRUR5YmFJUTZoZm1FLUpWa21KMVhjUktwNzRFZkdKQXVJd3p5Sm1mUdIBd0FVX3lxTFAtZ2VTbEFmaGlfTm5RdXcwOHN2Y2w2SFpJLXZiUHRQeVBKd09sOW1qaUtfX0s5LUJRY1JPYXZodkhiYkIyMlBNS0FnNmliTU8wN016enY5dkVSTjB5Y3AyVzR6Y25SRkdnbjFQSERWUU9memQtRHgw?oc=5",
+          "theme": "geopolitics",
+          "time": "2h",
+          "publishedAt": "2026-10-13T21:45:00+00:00",
+          "impact": "high",
+          "source": "The Hill"
+        },
+        {
+          "title": {
+            "fr": "Don’t hold your breath for Russia sanctions",
+            "en": "Don’t hold your breath for Russia sanctions"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTzN5QjFNMk5GN2d5ZVAxTmppWnljTGVvaEhCSHRIaWxQdTVIa3dOeFB2RWxzWFd5dS1FNUNaYkRIMGdZazhpUzA3QUl4ekpVX2kwVHpaaWYyalFkOUZ2ZW14ZktXbnZXVzZLa19YTVRyOGpqeWlUcXkzTEY3RmRxOEthaTYzM0FXWGZaQktqcDZMNnJ2MklXdmM3NUFIM2V0N09Lc1FSUDlvV0ZxazRHVlFJM0hWa3o3SjJkV2RIRnI?oc=5",
+          "theme": "geopolitics",
+          "time": "4h",
+          "publishedAt": "2026-10-13T20:24:44+00:00",
+          "impact": "high",
+          "source": "Politico"
+        },
+        {
+          "title": {
+            "fr": "Bank of America ordered to pay historic $1.2 billion over alleged sanctions law violations",
+            "en": "Bank of America ordered to pay historic $1.2 billion over alleged sanctions law violations"
+          },
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaHg3bnQ0NFJmOTAyR2VWejEwQVlSbHhfVDBhdjRTSFBsTFVOUkh5dGdZUjJMc18zRWo4VUtsRng0akZkU2VFb01CaDhxa1VRZXdMa2ZOZEhYc3ZRYlRGNDNRZXRWbXF4N1BuMDZKOVozYUhod3RqR0JtMnh4QUkzblE2OG5rdkVsSFBnQ0dRREVlZzBhb2ZJQXFiQXEtWHM?oc=5",
+          "theme": "geopolitics",
+          "time": "4h",
+          "publishedAt": "2026-10-13T20:15:10+00:00",
+          "impact": "high",
+          "source": "NBC News"
+        },
+        {
+          "title": {
+            "fr": "OPEC cuts oil demand projections for remainder of 2026",
+            "en": "OPEC cuts oil demand projections for remainder of 2026"
+          },
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONzdWR1dwVnFnSXBCTFJWRkV0SUZjNTlLOU5jX0sxR09PSXB4cGVxMkRURUFXNTJOUHo2RWxVWk4yVEdCNVljYnpKV0h0TXQxUkh2MkdUNF91M1poWmNYOEtFd2RSVlpmb25YQkV2U0RVN0lrVlg4OEdPWmdSSFVRbmNxelBnTExwT2pvYkx4OXZfTG5nbGfSAZsBQVVfeXFMTU02aWNVeGM5MWlBWFBRWlNoOUxIdDN4OTlMYVRoaWlhb196MmRsYXFad0gxWDE4SHZIT3V4VS1tdUZQcUZNa0dMUC02OUlNMV85bzc2MmFNWS15RjJHR3pnTFhtSEs5WEJxQURnODBZa2hrMkNmWnNKQVFNYmxSUDdBcFgzb3haaExxbUNSS3ZUdXA0MC1hTEJIREU?oc=5",
+          "theme": "energy",
+          "time": "5h",
+          "publishedAt": "2026-10-13T19:04:00+00:00",
+          "impact": "high",
+          "source": "The Hill"
         }
       ],
       "headlinesFr": [
@@ -1804,8 +1792,8 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPVDMwNGNEMk11bmYtWURFTnJfeURtVlJ1MW1HcmZZU3RCMkplaEd0bC1oa1hKQ2c2Ymw3UXVDWmJLb0lYX0IxVF9nRzRWYWlXcnpaV0JXQzNpUFNWMUFGY2VaLXFWazBvMDZVbkxBSlpyWVFVblFnRjUwLWVjMTNMOEdwWTcwaUhNcTVPSTFNbFp5d3dkak5hWFNZTFNBVVgtQVN0S09xYXBQWWllelN4bEVma3U1SU5ad0dxYkNGUzBUTkozdEJQR1NXbHJfNDdzemhlek1PQldZb0VRdnJmTlVQd1Vsekk5dmk5dFFn?oc=5",
           "theme": "trade",
-          "time": "4h",
-          "publishedAt": "2026-10-13T15:33:42+00:00",
+          "time": "1h",
+          "publishedAt": "2026-10-13T22:44:04+00:00",
           "impact": "high",
           "source": "La Presse"
         },
@@ -1816,7 +1804,7 @@
           },
           "url": "https://www.rfi.fr/fr/%C3%A9conomie/20261013-france-le-g%C3%A9ant-am%C3%A9ricain-nvidia-entre-au-capital-de-la-plateforme-doctolib",
           "theme": "monetary",
-          "time": "2h",
+          "time": "6h",
           "publishedAt": "2026-10-13T17:30:47+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1828,7 +1816,7 @@
           },
           "url": "https://www.rfi.fr/fr/%C3%A9conomie/20261013-cuba-lib%C3%A9ralise-son-secteur-des-hydrocarbures-sous-la-pression-du-blocus-am%C3%A9ricain",
           "theme": "geopolitics",
-          "time": "4h",
+          "time": "9h",
           "publishedAt": "2026-10-13T15:25:36+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1840,7 +1828,7 @@
           },
           "url": "https://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20261013-en-france-l-intelligence-artificielle-menace-d%C3%A9j%C3%A0-l-emploi-des-plus-jeunes",
           "theme": "tech",
-          "time": "9h",
+          "time": "14h",
           "publishedAt": "2026-10-13T10:05:56+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1852,7 +1840,7 @@
           },
           "url": "https://www.latribune.fr/article/tech/12241525731335/data-centers-pourquoi-les-frappes-de-drones-sur-yandex-en-russie-inquietent-le-secteur-du-cloud",
           "theme": "tech",
-          "time": "10h",
+          "time": "14h",
           "publishedAt": "2026-10-13T09:35:25+00:00",
           "impact": "high",
           "source": "La Tribune"
@@ -1864,22 +1852,10 @@
           },
           "url": "https://www.latribune.fr/article/entreprises-finance/42535487557594/samantha-mane-nos-acquisitions-doivent-renforcer-nos-competences-pas-les-remplacer",
           "theme": "trade",
-          "time": "14h",
+          "time": "18h",
           "publishedAt": "2026-10-13T05:30:02+00:00",
           "impact": "low",
           "source": "La Tribune"
-        },
-        {
-          "title": {
-            "fr": "10 000 travailleurs québécois ont eu besoin d'aide d'un programme de Mark Carney",
-            "en": "10 000 travailleurs québécois ont eu besoin d'aide d'un programme de Mark Carney"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZEpHTnhHNkp6Ui00Y0l4Vkk2SjhRWEx1SzdIN1J1MnVsSTJLUnM2bWJJVU9vcElqLVlSazBCTDJXVEVXWm5JWWducDZyM2xVaURZQnZLQUxWMkdVZVN3RXRmRFh0ZEt2UjIzTlFSUjMtYTZPWFRxc2JCX1d1ejFIV3RpeXpSbnUwS09xZENPSWU1M3B0eEMwSjZES0hjRkJPdGRnYlhzbWJQLUQwMzg5dnBUaGQxTHVubmE1Y1ZOV1I?oc=5",
-          "theme": "monetary",
-          "time": "15h",
-          "publishedAt": "2026-10-13T04:00:00+00:00",
-          "impact": "medium",
-          "source": "Le Journal de Montréal"
         },
         {
           "title": {
@@ -1892,6 +1868,18 @@
           "publishedAt": "2026-10-12T08:00:00+00:00",
           "impact": "low",
           "source": "Radio-Canada"
+        },
+        {
+          "title": {
+            "fr": "Guerre commerciale: les industriels américains pénalisés par Trump avant les élections de mi-mandat",
+            "en": "Guerre commerciale: les industriels américains pénalisés par Trump avant les élections de mi-mandat"
+          },
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQ2pfLUV0MWxORkpyR1hfTnh5TGlkVFUxZmlDQkpiOXBaZ0NpUFo1QmpOY3pFOUxFQ3dadHpLZ002ZjF5T0dPcS1oZTFCYXdhZHVaWWR3UXFsR2lXTkdYWWxEZnhLakhZemtnaFd3WVRUbEpFQlFXeWhLd1ZiTi1YLWJXMXRDU0pqR2ozS2h2ZC1xN3UwOUg0SlQtYnZrZGg5Y3FkSTAxRGtwMTdqUkdQQUdyNFcxamhSZFpDc3phcFE5QUJrUnRGaUJMTkg3amtYbDZtWkhaLXZYZW8?oc=5",
+          "theme": "trade",
+          "time": "2j",
+          "publishedAt": "2026-10-11T19:26:02+00:00",
+          "impact": "high",
+          "source": "Les Affaires"
         }
       ]
     }
@@ -2204,6 +2192,6 @@
     }
   ],
   "staleIndicators": [
-    "IN.rate = Juill. 2026 (104 j)"
+    "IN.rate = Juill. 2026 (105 j)"
   ]
 }
