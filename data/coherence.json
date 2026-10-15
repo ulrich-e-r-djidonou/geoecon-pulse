@@ -7,8 +7,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 1.4207,
       "sourceB": "Yahoo Finance",
-      "valeurB": 1.4194,
-      "ecart": 0.0009,
+      "valeurB": 1.4188,
+      "ecart": 0.0013,
       "suspect": false
     },
     {
@@ -67,15 +67,15 @@
       "sourceA": "BLS",
       "valeurA": 3.7,
       "sourceB": "OCDE",
-      "valeurB": 3.4,
-      "ecart": 0.3,
+      "valeurB": 3.7,
+      "ecart": 0.0,
       "suspect": false
     },
     {
       "indicateur": "Inflation CN",
       "type": "borne_plausibilite",
       "sourceA": "OCDE",
-      "valeurA": 0.8,
+      "valeurA": 0.9,
       "sourceB": null,
       "valeurB": "[-5, 30]",
       "ecart": null,
