@@ -49,7 +49,7 @@
         "exchange": {
           "value": 1.416,
           "unit": "CAD/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-10-16",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -57,9 +57,9 @@
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 36150,
+          "value": 36135,
           "trend": "stable",
-          "change": 0.03,
+          "change": -0.0,
           "period": "2026-10-16",
           "periodEn": "2026-10-16"
         },
@@ -148,10 +148,22 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a perdu 68 300 emplois en septembre, le taux de chômage s'établit à 6,5 % (sept. 2026). L'inflation ressort à 3,0 % (août 2026) pour un taux directeur de 2,25 % (oct. 2026). S&P/TSX gagne 0,03 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 7 relèvent du thème « politique monétaire ».",
-        "en": "The Canadian economy shed 68,300 jobs in September, unemployment stands at 6.5% (Sep. 2026). Inflation is 3.0% (Aug. 2026) against a policy rate of 2.25% (Oct. 2026). S&P/TSX is up 0.03% on the session. Of the 8 stories retained today, 7 fall under monetary policy."
+        "fr": "L'économie canadienne a perdu 68 300 emplois en septembre, le taux de chômage s'établit à 6,5 % (sept. 2026). L'inflation ressort à 3,0 % (août 2026) pour un taux directeur de 2,25 % (oct. 2026). S&P/TSX gagne 0,0 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 6 relèvent du thème « politique monétaire ».",
+        "en": "The Canadian economy shed 68,300 jobs in September, unemployment stands at 6.5% (Sep. 2026). Inflation is 3.0% (Aug. 2026) against a policy rate of 2.25% (Oct. 2026). S&P/TSX is up 0.0% on the session. Of the 8 stories retained today, 6 fall under monetary policy."
       },
       "headlines": [
+        {
+          "title": {
+            "fr": "Nova Scotia’s EverWind proposes $10-billion AI data centre in Cape Breton",
+            "en": "Nova Scotia’s EverWind proposes $10-billion AI data centre in Cape Breton"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-everwind-proposes-10-billion-ai-data-centre-nova-scotia/",
+          "theme": "tech",
+          "time": "<1h",
+          "publishedAt": "2026-10-16T17:12:54+00:00",
+          "impact": "medium",
+          "source": "The Globe and Mail"
+        },
         {
           "title": {
             "fr": "Investors Prepare for Data Dump That Will Determine Canada’s Rate Path",
@@ -159,7 +171,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTkJESy1NbkVLTzV1dkx2M3VENk5UUFh6R3pwZm1EdlE1bHJqLUtiM0RpelpHZmFmSVRNZzVDUjdrVFR1ekJERUZSOEFDUzRRdWZUX09JSGNYMFllckpYNUFyTnVpZE5jM1pqZG1BX3JPYlUycldsNURMUjMzVG4wNk9yWjRNZnh5MXgxakRQdlVPenFlRHhSaHY3aTRqc0VDTXFwTTIweUJkZVpmdGN1RGlsc0E4RjJ3UXVN?oc=5",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-10-16T14:00:40+00:00",
           "impact": "low",
           "source": "Bloomberg"
@@ -173,18 +185,6 @@
           "theme": "monetary",
           "time": "3h",
           "publishedAt": "2026-10-16T13:55:25+00:00",
-          "impact": "high",
-          "source": "The Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Investors reportedly temper Anthropic IPO valuation expectations over revenue growth slowdown",
-            "en": "Investors reportedly temper Anthropic IPO valuation expectations over revenue growth slowdown"
-          },
-          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-investors-reportedly-temper-anthropic-ipo-valuation-expectations-over/",
-          "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-10-16T13:19:33+00:00",
           "impact": "high",
           "source": "The Globe and Mail"
         },
@@ -219,21 +219,21 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRXFJRWY3WS1Uanpqc0lFZDc1Yl9vNDI4SmZ4cTMzajNhaE1NVTI2amNfeGxEeUdHUEVZTnVMRlBFWmRGaUEyMzRLMHV2M1lNdkd3TWxVLURqam1zUTgwSWJzcDZsSE5nZUNpaWpXMlJBNENKbGs5OUhOZFhpVFE5TXplZGRTR1RsanhESmVNdDRZUlAtVFl5V3I1Nno4dHdVdnc5OEk3Z2tsSE1fbGhrUUFHbjlSby01NGFnNkdwTXBJeWN4c3hjbzdBNjhEbEY2WXVMQg?oc=5",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-16T15:04:48+00:00",
           "impact": "high",
           "source": "BNN Bloomberg"
         },
         {
           "title": {
-            "fr": "AI is making the job hunt more unfair",
-            "en": "AI is making the job hunt more unfair"
+            "fr": "Investors reportedly temper Anthropic IPO valuation expectations over revenue growth slowdown",
+            "en": "Investors reportedly temper Anthropic IPO valuation expectations over revenue growth slowdown"
           },
-          "url": "https://www.theglobeandmail.com/business/careers/talent/article-ai-is-making-the-job-hunt-more-unfair/",
+          "url": "https://www.theglobeandmail.com/business/international-business/us-business/article-investors-reportedly-temper-anthropic-ipo-valuation-expectations-over/",
           "theme": "monetary",
           "time": "4h",
-          "publishedAt": "2026-10-16T13:00:00+00:00",
-          "impact": "medium",
+          "publishedAt": "2026-10-16T13:19:33+00:00",
+          "impact": "high",
           "source": "The Globe and Mail"
         },
         {
@@ -567,7 +567,7 @@
           },
           "url": "https://www.lapresse.ca/affaires/marche-immobilier/2026-10-16/canada/le-rythme-annuel-des-mises-en-chantier-d-habitations-augmente-en-septembre.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-16T15:13:46+00:00",
           "impact": "medium",
           "source": "La Presse"
@@ -579,7 +579,7 @@
           },
           "url": "https://www.lapresse.ca/affaires/economie/2026-10-16/etats-unis/entre-inflation-et-ia-le-president-de-la-fed-salue-la-resilience-inattendue-de-l-economie-mondiale.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "monetary",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-10-16T11:09:27+00:00",
           "impact": "high",
           "source": "La Presse"
@@ -610,24 +610,12 @@
         },
         {
           "title": {
-            "fr": "Un centre de données de plus de 1,5 milliard $ à Ottawa",
-            "en": "Un centre de données de plus de 1,5 milliard $ à Ottawa"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2293169/centre-donnees-ottawa-defense",
-          "theme": "tech",
-          "time": "2h",
-          "publishedAt": "2026-10-16T14:47:07+00:00",
-          "impact": "medium",
-          "source": "Radio-Canada"
-        },
-        {
-          "title": {
             "fr": "Immobilier : le recul des ventes résidentielles se poursuit",
             "en": "Immobilier : le recul des ventes résidentielles se poursuit"
           },
           "url": "https://ici.radio-canada.ca/nouvelle/2293178/immobilier-ventes-residentielles-baisse-aci-previsions",
           "theme": "monetary",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-10-16T12:08:40+00:00",
           "impact": "low",
           "source": "Radio-Canada"
@@ -639,7 +627,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPT01iNC1ndkRWckp1cUVldFR1N2tFUUlJRG4xQkVnMExDNTJRblUzY0RVVnlWSzVQVkVwOFVJaHdRYmdjUGhEa19zYXFLb1QyQ25uQmxOeExNaFJjVUQ4dG1RREliZFB6c2lNMGFiMXkzZXFPd0FzelhxXzM3YnBTN0szcnN4QlNaWWRuVkdMWUJ5aFFQY1dTcHFNSC0yTFdrOGNkS0tmQVFkR19LeWVESkc1bkI4N1dOdVlma2ZVZ1h4R1FBQ0tnTnlDODlQUlJZYk1BSjVXdnpxNUpwaU5ldDVkUmJuX2hpMUlr?oc=5",
           "theme": "monetary",
-          "time": "6h",
+          "time": "7h",
           "publishedAt": "2026-10-16T10:20:53+00:00",
           "impact": "high",
           "source": "Le Soleil"
@@ -651,10 +639,22 @@
           },
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcTd6Q0Zzel8xVzFDMkxjVDhjLWhXSzJ3d2YyQWJOS0lKUXV0d3F6enpIcEpEUzFwQ3MxZ2Z5RHpXcHJLRDhfWFlxNjlSQ1NXdXVoY01iT0ZEa1BYMjhHMG1DNm5HbzQ4YjFlSGN6clVrVFpVSGJRdGxzc0tUZ3Q3RFEzZ3AxUV9MbzhJWmFoWWxZSkFtQ0d2MzJiVHNCejhHWUxkZA?oc=5",
           "theme": "monetary",
-          "time": "18h",
+          "time": "19h",
           "publishedAt": "2026-10-15T22:31:08+00:00",
           "impact": "low",
           "source": "Morningstar"
+        },
+        {
+          "title": {
+            "fr": "Les tarifs sur le bois d’œuvre canadien baissent, après une révision des États-Unis",
+            "en": "Les tarifs sur le bois d’œuvre canadien baissent, après une révision des États-Unis"
+          },
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBQYnBfOXBiUlpXWXA1STB1MXh4cU1JM0Qxci1LRkhuS056cjVST1cwOEYwZTQ5TEhqc3pUWmJ1ZVR5ZEtLa3VxanFjV0RLTUZKQzhuckRRSUFJU3JNUzlEM1Z5NGRwVGg4RmYyNG1oeHlLV2F2Tlp0Vng0NnN0dw?oc=5",
+          "theme": "trade",
+          "time": "20h",
+          "publishedAt": "2026-10-15T21:24:05+00:00",
+          "impact": "high",
+          "source": "Radio-Canada"
         }
       ]
     },
@@ -712,9 +712,9 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7687,
+          "value": 7680,
           "trend": "down",
-          "change": -0.73,
+          "change": -0.83,
           "period": "2026-10-16",
           "periodEn": "2026-10-16"
         },
@@ -749,7 +749,7 @@
           7489.72,
           7686.14,
           7651.54,
-          7686.43
+          7680.06
         ],
         "labels": [
           {
@@ -803,8 +803,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a créé 29 000 emplois en septembre, le taux de chômage s'établit à 4,2 % (sept. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (oct. 2026). S&P 500 cède 0,73 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
-        "en": "The US economy added 29,000 jobs in September, unemployment stands at 4.2% (Sep. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Oct. 2026). S&P 500 is down 0.73% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
+        "fr": "L'économie américaine a créé 29 000 emplois en septembre, le taux de chômage s'établit à 4,2 % (sept. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (oct. 2026). S&P 500 cède 0,83 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
+        "en": "The US economy added 29,000 jobs in September, unemployment stands at 4.2% (Sep. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Oct. 2026). S&P 500 is down 0.83% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
       },
       "headlines": [
         {
@@ -826,7 +826,7 @@
           },
           "url": "https://www.ft.com/content/5b36d8a4-49f1-4877-8719-2db984c13081",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-10-16T14:39:32+00:00",
           "impact": "low",
           "source": "Financial Times"
@@ -838,10 +838,22 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdHZhMDY1QkVFRU1NQ0c1NkxlNzR2cDR4NEgwbVFMSkQ3RzFSNlFYT1Q0d1BzOWpRUGtLcTg1YUk0UkxOc2tKWENkTGxkRWc5SFAwWDFMS3JxdXJfWUIyNmwzR1Z0T3B5SmF0R2hjc0lDdXppV0wzQmw2bHh0a0FZS1BsUXVJdkdyZF9YcWIxMlZ3RnMwOVZ0YlFDeHdFWE5nTXdSdlQwb2NfZw?oc=5",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-10-16T14:23:04+00:00",
           "impact": "high",
           "source": "Bloomberg"
+        },
+        {
+          "title": {
+            "fr": "Warsh signals steady Fed outlook despite inflation jump",
+            "en": "Warsh signals steady Fed outlook despite inflation jump"
+          },
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5vdDlnWkJWbS02TGQ5aTdkUGlZblZZd25lUkhmeHl6NU5KN2xFYTA2THljemlNQ296SWNMcG5kcUViWjhucHM3dWFGOEVPSjZ4X2pBNXZOUXJUUXQyMjQwWlFQU3BXQXRwLXpOT2FMa2pvMDNUblZaMA?oc=5",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-10-16T17:11:48+00:00",
+          "impact": "high",
+          "source": "Axios"
         },
         {
           "title": {
@@ -862,7 +874,7 @@
           },
           "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-16T16:27:31+00:00",
           "impact": "high",
           "source": "CNBC"
@@ -890,18 +902,6 @@
           "publishedAt": "2026-10-16T13:57:00+00:00",
           "impact": "high",
           "source": "Barron's"
-        },
-        {
-          "title": {
-            "fr": "When Will the Fed Move on Rates?",
-            "en": "When Will the Fed Move on Rates?"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS0JUekVRemNTNkdtSVhkb2tuZUpaanJleG1oSW15TXVCOU5mcXhUSmE2eXNETXhGc0NyQjliWF9NU1hzNFdOLVJCZFpuQUU2aV9faHNsQ191ZDhTeUlWVUZzSEY3N1NXZHNfQWlQb2VsY3EwcUk1S3VKRkQ5RGJ2dHFvdTZGcl9SUTVR?oc=5",
-          "theme": "monetary",
-          "time": "4h",
-          "publishedAt": "2026-10-16T12:00:34+00:00",
-          "impact": "low",
-          "source": "The New York Times"
         }
       ],
       "headlinesFr": [
@@ -912,7 +912,7 @@
           },
           "url": "https://www.lemonde.fr/economie/article/2026/10/16/le-regulateur-des-telecoms-peine-a-rassurer-la-filiere-sur-l-equilibre-economique-des-reseaux-ruraux-de-fibre-optique_6795567_3234.html",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-16T15:04:01+00:00",
           "impact": "low",
           "source": "Le Monde"
@@ -948,7 +948,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOdG1ta0JhUnBOX0dzT0dQSDhOb2FGUjhwSGdIbnZOOHFBdElURWZtcm40SDFrWUxWMy1nM0VmNEtKY29NY1Nxei11LUFjdS1QNEdNU2M3WEthUHotZ2E5djZLd0RIZ1YydDB2NjNkSWdpYjNfSHVXYnZmSHFiM0RRUEFsQnJoaFNMVTdJR2FzRDY2SjhCOXhKak5aWW9zRkU0aWdOb2xqaGNzdGQxbFh2NDVSYU53bGR1VElfMFhsWXQwQnpTeVdHLXNDWDFUbDRzRG1IQ0hWZVhkMFd5NVlQUUV4Sk1qS0FENDNRYjNqU2xGa3FQb0VOdkRRZmhXZGpGM2hlX1NwNlRSS2RzT1RmN9IBkAJBVV95cUxOdG1ta0JhUnBOX0dzT0dQSDhOb2FGUjhwSGdIbnZOOHFBdElURWZtcm40SDFrWUxWMy1nM0VmNEtKY29NY1Nxei11LUFjdS1QNEdNU2M3WEthUHotZ2E5djZLd0RIZ1YydDB2NjNkSWdpYjNfSHVXYnZmSHFiM0RRUEFsQnJoaFNMVTdJR2FzRDY2SjhCOXhKak5aWW9zRkU0aWdOb2xqaGNzdGQxbFh2NDVSYU53bGR1VElfMFhsWXQwQnpTeVdHLXNDWDFUbDRzRG1IQ0hWZVhkMFd5NVlQUUV4Sk1qS0FENDNRYjNqU2xGa3FQb0VOdkRRZmhXZGpGM2hlX1NwNlRSS2RzT1RmNw?oc=5",
           "theme": "monetary",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-10-16T09:33:38+00:00",
           "impact": "high",
           "source": "Boursorama"
@@ -1031,12 +1031,12 @@
           "manual": true
         },
         "inflation": {
-          "value": 0.8,
+          "value": 0.9,
           "unit": "%",
-          "trend": "stable",
-          "period": "Août 2026",
+          "trend": "up",
+          "period": "Sept. 2026",
           "source": "OCDE (IPC, source NBS)",
-          "periodEn": "Aug. 2026",
+          "periodEn": "Sep. 2026",
           "manual": false
         },
         "rate": {
@@ -1051,7 +1051,7 @@
         "exchange": {
           "value": 6.686,
           "unit": "CNY/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-10-16",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1072,7 +1072,6 @@
           "en": "Inflation (12 months)"
         },
         "data": [
-          -0.3,
           0.2,
           0.7,
           0.8,
@@ -1083,13 +1082,10 @@
           1.2,
           1.0,
           0.5,
-          0.8
+          0.8,
+          0.9
         ],
         "labels": [
-          {
-            "fr": "Sept",
-            "en": "Sep"
-          },
           {
             "fr": "Oct",
             "en": "Oct"
@@ -1133,12 +1129,16 @@
           {
             "fr": "Août",
             "en": "Aug"
+          },
+          {
+            "fr": "Sept",
+            "en": "Sep"
           }
         ]
       },
       "summary": {
-        "fr": "L'économie chinoise progresse à un rythme de 4,5 % (2026 cible). L'inflation ressort à 0,8 % (août 2026) pour un taux directeur de 3,0 % (oct. 2026). SSE Composite cède 1,35 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « technologie ».",
-        "en": "The Chinese economy is growing at 4.5% (2026 target). Inflation is 0.8% (Aug. 2026) against a policy rate of 3.0% (Oct. 2026). SSE Composite is down 1.35% on the session. Of the 8 stories retained today, 5 fall under technology."
+        "fr": "L'économie chinoise progresse à un rythme de 4,5 % (2026 cible). L'inflation ressort à 0,9 % (sept. 2026) pour un taux directeur de 3,0 % (oct. 2026). SSE Composite cède 1,35 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « technologie ».",
+        "en": "The Chinese economy is growing at 4.5% (2026 target). Inflation is 0.9% (Sep. 2026) against a policy rate of 3.0% (Oct. 2026). SSE Composite is down 1.35% on the session. Of the 8 stories retained today, 5 fall under technology."
       },
       "headlines": [
         {
@@ -1160,7 +1160,7 @@
           },
           "url": "https://www.scmp.com/tech/tech-trends/article/3371159/chinas-ai-boom-self-sufficiency-push-fuel-earnings-surge-local-chip-firms?utm_source=rss_feed",
           "theme": "tech",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-10-16T09:30:09+00:00",
           "impact": "high",
           "source": "South China Morning Post"
@@ -1172,10 +1172,22 @@
           },
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYnM0UER5dXhTaXU0cW83R3lzSUtwV3F4Wk10SWlISFc1aVN6Mm9KcW0yLU8zcGJpallBdnE2eUROWEFiQjJQUVpYcm56RWpqLU5sLUVINlBxN1Q4b0FLTy1hYlZBNEJjbEVIRFNmWmpMVlo2MlQ4b1BYbUZRWnkxcFdtVUpmWklmc2N4U0FXM0Z0UnJVMHN4d0lKX3FsdGJweXJOeXhaNjMwS05kNGc?oc=5",
           "theme": "trade",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-10-16T09:20:35+00:00",
           "impact": "medium",
           "source": "Bloomberg"
+        },
+        {
+          "title": {
+            "fr": "A first step, but no real rebalancing in the European Union’s trade deal with China",
+            "en": "A first step, but no real rebalancing in the European Union’s trade deal with China"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOenpTWDYzYjQxQWk0V3dpMTZGSy1UTncxOVF1Q1hkby13QVU3YnN5eVdsc3drc3BuWENZX1NSbHpCcTFJLWxOWXR6NmVLNmVrNmV0VlRJRC1YNURYWlRVVnpDa28wUlJjMk1HYTV1WldVZ05XeC1oZXlPWXhDRWlLblZzbGNvTEZOeFg5bDJNYllPUVU4NkRKbXhlT0JVN1JpX1E?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-10-16T16:53:18+00:00",
+          "impact": "medium",
+          "source": "Bruegel"
         },
         {
           "title": {
@@ -1184,22 +1196,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBFVGpQanppbWVHNWRNclEtTC1ORHlMTEVuY2ZKVm45WHQwNTZXNzE1X3M0TTlBNlducVRydGlxbmdFa19NUmFlSUNVcjgzRmd3elB1R0xHcWxQeDUwRC1CRGRtUllrbGFtbFFka0tfTGlCekliSGVFRll3?oc=5",
           "theme": "tech",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-16T16:37:00+00:00",
           "impact": "medium",
           "source": "Barron's"
-        },
-        {
-          "title": {
-            "fr": "China moves to curb tech exports, including AI, citing national security risks",
-            "en": "China moves to curb tech exports, including AI, citing national security risks"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNT29aZXRiY19TanJRalZkMnRoXzdUYkxkdzM0Y2hnUXppLWZzQWlWLVUzM2dHT25ucVF1RF9qSnVjaWtTWk1sS21MRmFQbU5qalZPWnFYcmx5R290eU1SMXVZMTVLVV9tZTBXZ1BreFBCOVZXX1RZUnNWdU9ld1REN1g5MVVDX1ZXQ2NVSC16c3Y2V2VuVGFqTERoS21xR3NSOTZFRlVsd2pPNFEwa0dDWjUxN1BwVk1KNzR5ZEdwM0FERGV4YXI2LXNaRG1uV3l3ckxNeEFQVnBTdw?oc=5",
-          "theme": "tech",
-          "time": "<1h",
-          "publishedAt": "2026-10-16T16:25:10+00:00",
-          "impact": "medium",
-          "source": "The Washington Post"
         },
         {
           "title": {
@@ -1208,34 +1208,34 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZXhXODFvTFFaWHlxeU12eEdra21OdFZ3UXdHc09PV1V2YTJQNVpCWGhnMUllZjYwdkw5d2R0MkhQV01rcTJDdEt1U09Lb1ZaMnVHamJ6UmFGOU4wZXd6dGVlRHdvdG9DeEJTZlNfamxDYXRYaVJGS2Fadmp6RnRkcmNJd2tWS2YtWHU2MElxdkV1YnlOdGxjTTBNbHp5R0RTUi1hX082VTBhRmJIdVRvSmE0dVVZVWhnNEZPNmxUaUNld2RHV1J4SUpRaGV0d2N6MWI0SmJn?oc=5",
           "theme": "tech",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-16T15:29:27+00:00",
           "impact": "high",
           "source": "The National"
         },
         {
           "title": {
-            "fr": "China's economy is much weaker than the data would normally suggest, says Leland Miller",
-            "en": "China's economy is much weaker than the data would normally suggest, says Leland Miller"
+            "fr": "After years of U.S. export bans, China plans its own: 40 AI, chip and solar technologies could be restricted",
+            "en": "After years of U.S. export bans, China plans its own: 40 AI, chip and solar technologies could be restricted"
           },
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN1JRVkR6M21jYUJWY2xkTnR3UHVmbC1IUHNsZ01YVzNOMlFsMGxmLWtGcXN6NTJhbnpOd0lJbEZtMWs4QzM2NzVNTk16THQ0VkJsUzRmejBvQ0l3bWFQcG1wRHAwc0ZPdHNTSnYyNk42UngwZEtpZks2UXRlb2dRREprY1JubFc2VGw2c01VaFNzaUE5dC1jZnA1U092ejlybVpRY2ZObzRvVE5VSnhNZUlIa3NXLV9zSnBJdC1GMWpKT1dPWWlv?oc=5",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-10-16T11:21:09+00:00",
-          "impact": "medium",
-          "source": "CNBC"
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYTMzSUVVVGFLdGJPU01kOGJESE5IQjZCWEE4eFBjVVpOOVplNjREbGlIdGxzbTZ6ajRPOGhCUUw0bkZfYlEyYXRaSnBEUlpZU2VkRUJaWjdoY2cyLVEtVk5QOTBKLVhUQk9oM1pJZnBFN2dPMDZMWFpvd3g1RktRT19VdzU3bG9ZRmMwYXBXNUQxUQ?oc=5",
+          "theme": "tech",
+          "time": "3h",
+          "publishedAt": "2026-10-16T14:33:00+00:00",
+          "impact": "high",
+          "source": "Fortune"
         },
         {
           "title": {
-            "fr": "China moves to restrict exports of its own AI models, chips and agents",
-            "en": "China moves to restrict exports of its own AI models, chips and agents"
+            "fr": "China moves to curb tech exports, including AI, citing national security risks",
+            "en": "China moves to curb tech exports, including AI, citing national security risks"
           },
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeTAwckRZSEpOdm5maDlSZUpiODViMVR0RjNOb2g0TTJqQ0Q0NmJiR25YNktzX29jaVZmUGU2QWY4TEUybE5lelE3REVacllyblNNdUowR2tpSTdJWlJQTGVmVE04OGZPOG1YcTVfd0VjOW1LODRqMmRpM3BqajdWQnBtbkUyd3VRWWJFUXJxYk9JZTNCZlRmOTBzUzNUUQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQb2duemp3VHhsa2I4R0syMUJaYlJFUFNfNnpnR3k3RlBVY3V4ckk1Mmg0aDFFbEVkeWdRd1hLUEduZ1Y0MlUxc2kzY2xSTlBHNnF2bWtwM1lKWnc4dVdaMGo2TWNqaHY4aUFSWnRpUktrS21nRUVNUjNNTnpkX3BubF92NzBQNlk5Uzk1aTZvTm9Dc0xYTEtncnU4amk2MUtram81UTJkTHBZX3hlY2psQTM2SVl5Vm5RNklzRFFTZnotOU1vS3QyRzBrWUd3amptT3ZfNjQ5UFBSZlNhQjhPSGIwMTFFRXJIM19EaXFSdVotN3l4cWQ1aEx3?oc=5",
           "theme": "tech",
-          "time": "7h",
-          "publishedAt": "2026-10-16T09:15:10+00:00",
+          "time": "5h",
+          "publishedAt": "2026-10-16T12:21:29+00:00",
           "impact": "medium",
-          "source": "Startup Fortune"
+          "source": "Toronto Star"
         }
       ],
       "headlinesFr": [
@@ -1385,7 +1385,7 @@
         "exchange": {
           "value": 94.96,
           "unit": "INR/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-10-16",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1482,7 +1482,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUEZ3eVZBZUdzSlZWTlViSXc2QWNtUHA2Q29xZ3JoNEZKTWstNTdGSEpVVXpNLXZkSFdTMkdfdkVxckRPdVBoWFRYSVowTHRlUEZUcjA0N1dSaVNaQUNQUlYyMnc5anIwRmFqUlNRa1JoSVl5NFIzc0dZWDAtdGtiXzBPQkRpUW5oZ2k2N2VsLVdZWklxVElZa2xkcnZJdjhoczdKVlFWV2p2UW5QcEtqYWtB?oc=5",
           "theme": "monetary",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-10-16T13:01:05+00:00",
           "impact": "medium",
           "source": "Bloomberg"
@@ -1506,7 +1506,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOS2RHcDkzUEVwLWF5ZF94T1l5WkUtTGNkTGM3OFpLaWg0cEIwVVRGQUVKQnlMYzdWRkVYZ2hRenJDSnNHeVR1TGVseTlydzF0MTBjWmVwMFZQMTBCWmFGSWhVQm5nU3JmN0haQk5URnRlZkhmeTZLekhxYVlndkFzQm1kWFpzQzFtQVJpdC1ZVzV0MFFGRGRRelUxcXFaUmxCX2ZvN1FIUXhZV25iZUtOR0dfMHJMT2ti0gG_AUFVX3lxTE5UT1ZING8wVE9BcGE2emp4c2R5WlRwak9VT28zREpXNmNWa2M5ZDRMdTVVbkF4V2xKVVNqRXFhTXphTWoydXJvRDZaTGRZYnVta29JOWxxUFo2R1FDQU91M3FZM24wcUVYSjhPRXEydTFWVUdYYjZKeUFlb1FCR2I1a01BeGEtYXZ3bWx6bTBsOE5FQy1UU3lsZjJtQno0c3l3dzJSNk9scXRuVG12dl9zTkJsWHRkZWdPRjIxX2NN?oc=5",
           "theme": "trade",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-16T16:26:48+00:00",
           "impact": "high",
           "source": "The Hindu"
@@ -1518,7 +1518,7 @@
           },
           "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/crompton-greaves-q2-results-profit-surges-65-to-rs-124-crore/articleshow/134998426.cms",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-16T15:33:01+00:00",
           "impact": "high",
           "source": "Economic Times"
@@ -1554,7 +1554,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVmtsLVhGX3NWTEpfeDE5OHBNS2R6RnZDMmtzMXZMeXA0SmtJVjEyd3E4VjVMYWlkc1IyNUpkMXZsLWtwdHpCV3lTVmZFX3YyYkRheVN4Q2dpbnRRaU50MVA1aGRKWk1RYnRQdFlySGZDd0pCZWp5SmNTVjg1eWl0Ym9GaU5Qbm9Td2JGVW1UZXRSUGRPcy1Pa24xc1o4NUo0eTdiU2FENk1HX1MxNDhKN3hBVnNiUdIBwwFBVV95cUxQZmxrUnRqNmRLRW52b0FoMzBkZlFmcy0wZ0pvNy1Xa1pLdXI5cWN4TjlGVTRHdkN0RkVJemtJRmhPRHBTWWpZNUFPSGlsbWtuOEt0ZmFJNWNvMWVoLUNobE1TcFA0SDdXYzNTRC1QTUdheGYxQWV2aXdDQ2RzU1IzaVA5cmtXTmlnNW5HZDl1eENxbWpjRUYyQmNMdGdvcTRLc25LbFdxR1NBWGV0ZkppbDZnQV84alEwR0RDYXRjeTNqejQ?oc=5",
           "theme": "trade",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-10-16T14:31:28+00:00",
           "impact": "medium",
           "source": "Fortune India"
@@ -1564,9 +1564,9 @@
             "fr": "China says ready to address each other's concerns after Sitharaman flags trade barriers",
             "en": "China says ready to address each other's concerns after Sitharaman flags trade barriers"
           },
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPSEFnUWdLdWtRbmFadkU2SmFYZG92cnRnUTFzNnRPOG83cHR1TVNOaTRmbDROUjJGTUpUSG03dUlXV1A4aFVNa3BpVTFVdDhGdGs1eXc3OEUzTml5TzhldUxvUmE1S0RnbjJ1SGdzYVVNdWNyaDJjNWhXTFZyNks5cW5tMVp6OFU2NFFDbzU4NnVKOFpJQzJpUloyM08wQ0h4QlNsRHZzMkdhWjhKY0w2eGd3NjRYYVN4Z0xIdmpsX29MU1hjNUpheFl4UzNHTGlqdHNJSWFWZzVDRDN4ZFlieFFDdnhnRXVERjhSeFE2dmtVaGpVQXN3X1NMd9IBgAJBVV95cUxObTBrbF9FYkVqLS1yYURlem9GNE04MWNDNEpLUWlPS296TEQybTJEcnRSVFJuUVNIMEw5OW5sS2RpZDY1anpITmFpT2gwY2g0VEM4T3lFY2JZNUYwNVJqbFY3WjBvSEVfQTFoSE42NU5MS2szV01tQjFWcU9wOXVra3g5VTU3cm9fX05nWjhVMXdQVm84Umt6YzJaenRDc3hyeTN2NTh4c3hyTjdCZlN2NF9kbXhsdEt2S2UtaElVeEFkbVQ2VHlVRURuZ1hFTmg5bGtQVmYwVDhsUHNQT1FFWEpsY21FMndhdTNWY1BhTW5Ra0g0b1dleWF6bGFjMUp3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOT1FoRjQ1VDBwMXFwZGdMYVdjamxfeDBiLXc0SWZNb3NzT01WYkZCbjFnQkZ4elZocUR1eXgzbU56Sm9pMDBYVTNKZk5SdHNjanZJbDNjOHhhMWpDWl94SHUtaW9zRU5jemV0SHVlVkE2ODlmSlI2bEx5UVNOZlJPWDhPVnVnZjl6ZkR4X0J6d0dPUmNBaW02SnhDLVZLUjRTWXVCODhjdTNVbW1yYzlaS3p2WDh1b1pYMy1FSVpObFJFdEhOeVFBX2ZqaUFlQzBMeEMxX3pVdER5Y216eXI4aWZKWTNlQ0pnRHVQVFpEYkI2b2pZam5GRnk4NEl5d0sySldoMUk5Y9IBgAJBVV95cUxObTBrbF9FYkVqLS1yYURlem9GNE04MWNDNEpLUWlPS296TEQybTJEcnRSVFJuUVNIMEw5OW5sS2RpZDY1anpITmFpT2gwY2g0VEM4T3lFY2JZNUYwNVJqbFY3WjBvSEVfQTFoSE42NU5MS2szV01tQjFWcU9wOXVra3g5VTU3cm9fX05nWjhVMXdQVm84Umt6YzJaenRDc3hyeTN2NTh4c3hyTjdCZlN2NF9kbXhsdEt2S2UtaElVeEFkbVQ2VHlVRURuZ1hFTmg5bGtQVmYwVDhsUHNQT1FFWEpsY21FMndhdTNWY1BhTW5Ra0g0b1dleWF6bGFjMUp3?oc=5",
           "theme": "trade",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-10-16T14:22:19+00:00",
           "impact": "medium",
           "source": "Economic Times"
@@ -1580,7 +1580,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZmY2RWJ3WmZMR3FEaGw2cDZZcWVZM3B5VHE3a19SS3FnNklIVFlDUG5iaWRnSWNkSlpfNk5aSkxBTGtJNlhySDI2N2xrN1h4SzF5b2hwWWc4V0l6VnRxQUJQZVBVa3JWU2FqOE1RNk9oMFc0Vm5pd3ZyeWVGV0UyS3g0aTRNVmwzcDNwZUNFdXdqWHBrc2JSaHRB?oc=5",
           "theme": "trade",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-16T16:17:42+00:00",
           "impact": "medium",
           "source": "Le nouvel Économiste"
@@ -1653,7 +1653,7 @@
           "name": "MSCI World",
           "value": 158,
           "trend": "down",
-          "change": -0.62,
+          "change": -0.67,
           "period": "2026-10-16",
           "periodEn": "2026-10-16"
         }
@@ -1673,7 +1673,7 @@
           90.12,
           90.49,
           103.53,
-          109.47
+          109.44
         ],
         "labels": [
           {
@@ -1719,8 +1719,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,62 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 2 relèvent du thème « technologie ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.62% on the session. Of the 8 stories retained today, 2 fall under technology."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,67 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 2 relèvent du thème « technologie ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.67% on the session. Of the 8 stories retained today, 2 fall under technology."
       },
       "headlines": [
         {
@@ -1737,6 +1737,18 @@
         },
         {
           "title": {
+            "fr": "Judge Threatens Trump With Sanctions to Testify in BBC Lawsuit",
+            "en": "Judge Threatens Trump With Sanctions to Testify in BBC Lawsuit"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNVdwLS1hQURJSWIwMU5SWXRic0szNnQ3MjlXMXh5X2FqT2psM0M2U1VCM1pEVVRTMkJOcmdmaTZQNHFiWEpIYVc2aWNqTVZkcmlHdmdwN1lHSEo4ZV93LW5YYTBFY2dHMDRHb01idmNYdkg5ZUhjd1hMTzI3T3Vrb3lpNm5rMHd5cEk3VTJTTEo4LVlPRGFabzJPcTJJR3ZtREhZSVE3N1JtSk5XeFVOVFJzbw?oc=5",
+          "theme": "geopolitics",
+          "time": "<1h",
+          "publishedAt": "2026-10-16T16:57:06+00:00",
+          "impact": "high",
+          "source": "Bloomberg"
+        },
+        {
+          "title": {
             "fr": "Trump has failed to listen to voters on inflation",
             "en": "Trump has failed to listen to voters on inflation"
           },
@@ -1749,12 +1761,36 @@
         },
         {
           "title": {
+            "fr": "U.S. embargo, sanctions on Cuba impacting power supplies, access to medicine",
+            "en": "U.S. embargo, sanctions on Cuba impacting power supplies, access to medicine"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9taHhZdkUxTjBJSFhvd1ZtcENOUlVoVzI0STVhZzdMaDdBWW5IeFhxQUVHMFd5dlRBVVdfY1lBSG1Na3M3TW81YkhGSXlZRnNaSEFsVTNUbk1fcGd6TE9WU1hoMDg4NVJJbnBtLXNESC14ZmdiNXUtRDNn?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-10-16T17:03:19+00:00",
+          "impact": "high",
+          "source": "CBS News"
+        },
+        {
+          "title": {
+            "fr": "AI safety group pushes for tighter export controls, limits on ‘vastly superhuman AI’",
+            "en": "AI safety group pushes for tighter export controls, limits on ‘vastly superhuman AI’"
+          },
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83WmlMQjdkMUo2X1NiVFFwbnZkUXBRZUxIN2FoaWtPaXZ1d0NDNlNDN0hCX3ZnV2paSnlydmw1dkxvVFpxOE82enJSUnJFX2lobVBDZVNQUjluT2hMMENycWVYLUxWRGZtY3pjVE50SHhLazMyR0F6MNIBfkFVX3lxTFA2ZlN6eWlXM3h3bGlabWVoT2k5dno4OGYxbzF4VHNhbF9wVEx6OUt6MGQ0dTNPYjdJejNfaDU2Rnk2ajVJZXlmeW01WWpMRThscDdJWEJWRnRpSW13SXBMempnb3NjSGJ2RFhiVExfSF9WLUFfYk9uTFBFek84UQ?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-10-16T16:58:00+00:00",
+          "impact": "medium",
+          "source": "The Hill"
+        },
+        {
+          "title": {
             "fr": "The hunt for Fed October",
             "en": "The hunt for Fed October"
           },
           "url": "https://www.ft.com/content/5b36d8a4-49f1-4877-8719-2db984c13081",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-10-16T14:39:32+00:00",
           "impact": "low",
           "source": "Financial Times"
@@ -1782,42 +1818,6 @@
           "publishedAt": "2026-10-16T11:45:00+00:00",
           "impact": "high",
           "source": "CBS News"
-        },
-        {
-          "title": {
-            "fr": "OPEC’s Smallest Member Rewrites Oil Law to Encourage Exploration",
-            "en": "OPEC’s Smallest Member Rewrites Oil Law to Encourage Exploration"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZG1INWM0blRUaE5YcHRneDJXZk1qLVNueUplUUFaZi0zZVdLVWxuT25FZzk2MDZWSWt2QzQ5Y01xNWFqTmlTRGZZYUNBbHBHUGVyQTZDSndvRW1SQ1F0TC1lOVlUN3BLamJwMlFwMFJ4VjhOWFZJZHZmM1kyRlRHci1IbVUxUUREZXRwYmpId0MyNGZZYjMwMDRBUXBrdGpta3JzUlpfQ2s0NG5hdW1FWnJJWTladw?oc=5",
-          "theme": "energy",
-          "time": "5h",
-          "publishedAt": "2026-10-16T11:22:30+00:00",
-          "impact": "high",
-          "source": "Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "Tariffs on Metals, Autos Mire Down U.S.-Mexico Trade Talks",
-            "en": "Tariffs on Metals, Autos Mire Down U.S.-Mexico Trade Talks"
-          },
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPd09iVDFEOVNzcDYwaExETk1TRU9oUnQ2bE5nZ2ljeTRfQUpqR05XR29CdEhSZ1hTMnhCLUZMN0MydHJGbm9PenpSYmNIYUFNaGhvSEhWMTF0N3ZYalRCcGpXWWNPSTdncGl4VHljUjRPUTVfSFg0WkNpS0pid2FZdEZXTzlxOVAxMzU1RVVrTVZkU0xJTE9uNFFsOU9lY3oyR05TVQ?oc=5",
-          "theme": "trade",
-          "time": "5h",
-          "publishedAt": "2026-10-16T11:12:00+00:00",
-          "impact": "high",
-          "source": "WSJ"
-        },
-        {
-          "title": {
-            "fr": "Indonesia regulator fines entities for trading violations in shares of three listed firms",
-            "en": "Indonesia regulator fines entities for trading violations in shares of three listed firms"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT19xNkFlWGlKRk14ZTJVYnFwTGM0eEIxeGdLdUN4OE5NekIyOWJkSVNuZWdZdW1NYndTYU1RUF9EQm1kdklJaHNWMjg2TFNNaU1PZkJmdGdtb0FIaExBb0tUdV85a3ZDdVgwLU9IOXNQWTVvRDQ0ZGJINTdQYWJ2ZUt5S3BXbnFHMXBPazh3Y0dWaXBuQ2RscXBmb2FadnVKWkxNTXQ5bDRmWl9aaDh1bWxhaF9fR210?oc=5",
-          "theme": "geopolitics",
-          "time": "6h",
-          "publishedAt": "2026-10-16T10:11:21+00:00",
-          "impact": "medium",
-          "source": "Reuters"
         }
       ],
       "headlinesFr": [
@@ -1828,7 +1828,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOU3gwR1owM0dWMko0N1lMY0pCRHpJV3VoakVRRGFDVWpsRnpRNFRWeWxfMUYwWFE4M290bS1odTlKT3M0dkIyamZVaUo3YkxIN3FITkFsSndqeEdRSnc2eUpLa0NveFlOdFJmVmlWdElsdDJWU0pERU1zRUZ3U1ZiWE85Q3JvZHpHZTFqaXRBUlo?oc=5",
           "theme": "trade",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-10-16T09:25:37+00:00",
           "impact": "medium",
           "source": "Radio-Canada"
