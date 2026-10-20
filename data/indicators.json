@@ -49,7 +49,7 @@
         "exchange": {
           "value": 1.405,
           "unit": "CAD/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-10-20",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -57,9 +57,9 @@
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 36139,
+          "value": 36191,
           "trend": "up",
-          "change": 0.58,
+          "change": 0.73,
           "period": "2026-10-20",
           "periodEn": "2026-10-20"
         },
@@ -148,10 +148,34 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a perdu 68 300 emplois en septembre, le taux de chômage s'établit à 6,5 % (sept. 2026). L'inflation ressort à 3,1 % (sept. 2026) pour un taux directeur de 2,25 % (oct. 2026). S&P/TSX gagne 0,58 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 6 relèvent du thème « politique monétaire ».",
-        "en": "The Canadian economy shed 68,300 jobs in September, unemployment stands at 6.5% (Sep. 2026). Inflation is 3.1% (Sep. 2026) against a policy rate of 2.25% (Oct. 2026). S&P/TSX is up 0.58% on the session. Of the 8 stories retained today, 6 fall under monetary policy."
+        "fr": "L'économie canadienne a perdu 68 300 emplois en septembre, le taux de chômage s'établit à 6,5 % (sept. 2026). L'inflation ressort à 3,1 % (sept. 2026) pour un taux directeur de 2,25 % (oct. 2026). S&P/TSX gagne 0,73 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « commerce ».",
+        "en": "The Canadian economy shed 68,300 jobs in September, unemployment stands at 6.5% (Sep. 2026). Inflation is 3.1% (Sep. 2026) against a policy rate of 2.25% (Oct. 2026). S&P/TSX is up 0.73% on the session. Of the 8 stories retained today, 5 fall under trade."
       },
       "headlines": [
+        {
+          "title": {
+            "fr": "U.S. food importer sues to block Trump’s new tariffs on Canada",
+            "en": "U.S. food importer sues to block Trump’s new tariffs on Canada"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-us-food-importer-files-lawsuit-to-block-trumps-tariffs-on-canada/",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-10-20T17:49:54+00:00",
+          "impact": "high",
+          "source": "The Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Trump Administration Sued Over 50% Tariffs on Canadian Products",
+            "en": "Trump Administration Sued Over 50% Tariffs on Canadian Products"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUGVFb0Mtd09NZF90S24wRWJyVjc0amRwSUlOOGJYa01oeUM4WkZiLTJVLUw2aWZYYXY5NmdDNWVYT1FvNlEyRi0yYXhoSGxVdWwxdFdGdzhMZ2M2ZFhkM1dTV2M4UFJON1BFbkRkNmIwUHFlMHB2MVhsd1BRSWFac1FNejF2ckZoWER6ZHFoRmpMel82Q2NEb3p3MWRBSFdEZ3dNTDZwak11bW9WUEhnQTFzRQ?oc=5",
+          "theme": "trade",
+          "time": "2h",
+          "publishedAt": "2026-10-20T16:06:42+00:00",
+          "impact": "high",
+          "source": "Bloomberg"
+        },
         {
           "title": {
             "fr": "PBO trims Canadian economic forecasts amid U.S. tariffs, countermeasures",
@@ -166,51 +190,27 @@
         },
         {
           "title": {
-            "fr": "How can I schedule interviews for other jobs without constantly faking sick?",
-            "en": "How can I schedule interviews for other jobs without constantly faking sick?"
-          },
-          "url": "https://www.theglobeandmail.com/business/careers/career-advice/article-how-can-i-schedule-interviews-for-other-jobs-without-constantly-faking/",
-          "theme": "monetary",
-          "time": "4h",
-          "publishedAt": "2026-10-20T13:00:00+00:00",
-          "impact": "low",
-          "source": "The Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Qualcomm to cut jobs globally in ‘performance-focused’ layoffs, internal memo shows",
-            "en": "Qualcomm to cut jobs globally in ‘performance-focused’ layoffs, internal memo shows"
-          },
-          "url": "https://www.theglobeandmail.com/business/international-business/article-qualcomm-performance-focused-layoffs-memo/",
-          "theme": "monetary",
-          "time": "6h",
-          "publishedAt": "2026-10-20T11:27:38+00:00",
-          "impact": "medium",
-          "source": "The Globe and Mail"
-        },
-        {
-          "title": {
             "fr": "Trump drops threats against Canadian jet maker Bombardier, citing U.S. jobs",
             "en": "Trump drops threats against Canadian jet maker Bombardier, citing U.S. jobs"
           },
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUkNtYi05VVFTRG94RHQ2TGJhUkJzUUxWM0xpZjZEY1p1dUVIYmUydzdLcmZ6Sm04WmN4Y3RINElpZC04ZGRySjRZLWJ4X2FqTHJOVm5OcVVLakR3dV9xZkRBbmpLSi12Rk9aTFNHYWNkcnVaVGhQUjlvaU9BMm84UWxPQzdLaUVoY3c2WlRSX3gwZXdUVHBNLXVJNE9wakJwSE40cXh3a1NXWkttRFJEVi1GVzNCN2ZpSTlUUg?oc=5",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-20T16:50:49+00:00",
           "impact": "medium",
           "source": "BNN Bloomberg"
         },
         {
           "title": {
-            "fr": "Food importer files new lawsuit to block Trump’s Canada tariffs",
-            "en": "Food importer files new lawsuit to block Trump’s Canada tariffs"
+            "fr": "Trump sued over 50% tariffs on Canada in latest trade challenge",
+            "en": "Trump sued over 50% tariffs on Canada in latest trade challenge"
           },
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRWZla2NLWk80OFhSelNCa1dQa3VIRjFiWGUyNzBJVVc3Z0I0cHhMZWRna2E0S0xLMElXdFFROWhRN2QzcGJfVUpBbGVDYkFuWkFqR2xyNWJ1UDVWUWJvRlNndTJ2S1pTaldXVmw1c0xEN3hlMGVEZUlBZXZQTlpUVE5kakJKd2s2ekpvblF5d3gzam5XRWpQWjQ4ZXpxcXViMWc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbzc3VV9FbHllLVBpRjlzNGZzN3FUaGFOTC13a0NLblBJMDh4TmVzY3ZHVjlYQTBqNzdGZlMxb3VHTml0Tm9mSi03MHMxcjhDX0t6b3FkaTNCSWo5TW4xbHFIMHRqcW5hMWItSnJ0TWN1ektpWFNIRlpWLWZrZ0JFRVNLOGc1TlJJ0gGIAUFVX3lxTE1vNzdVX0VseWUtUGlGOXM0ZnM3cVRoYU5MLXdrQ0tuUEkwOHhOZXNjdkdWOVhBMGo3N0ZmUzFvdUdOaXROb2ZKLTcwczFyOENfS3pvcWRpM0JJajlNbjFscUgwdGpxbmExYi1KcnRNY3V6S2lYU0hGWlYtZmtnQkVFU0s4ZzVOUkk?oc=5",
           "theme": "trade",
-          "time": "<1h",
-          "publishedAt": "2026-10-20T16:45:06+00:00",
+          "time": "1h",
+          "publishedAt": "2026-10-20T16:43:17+00:00",
           "impact": "high",
-          "source": "Arab News PK"
+          "source": "CNBC"
         },
         {
           "title": {
@@ -219,10 +219,22 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxObTFFanlfNFZ1bmZfdkd5UE1Ta2ZkOGlMWmdaTHp5VmJvbGFNcklIamFmeU03YzBobGhfdFlaT2VrMDFrak52eEFacURzREVrUnBwQjdjcXhPSmNBcnVYeVNiTWQwdVJsRE80YWo2TnpTRlFNdC1PX1JaRkpUajhqZ0dqWWFyaUhyMG5ya3BYRnVUOERLdmV1U3FyZ0hyUzJ4X0ZzdzFwT1ZLTW10MGdrcDlfSlJTMXhDbjJoWUNFY0pOODFqankzWVpIa1VDc2JpU2VIWTFwUlUzeGdpeVlsTC01aEt6Z1M2eGVFbFpIOWFJVUU?oc=5",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-20T16:41:37+00:00",
           "impact": "medium",
           "source": "BNN Bloomberg"
+        },
+        {
+          "title": {
+            "fr": "Budget watchdog trims economic forecast for 2026 and 2027 amid new U.S. tariffs",
+            "en": "Budget watchdog trims economic forecast for 2026 and 2027 amid new U.S. tariffs"
+          },
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON28tVWdfRUM2c19OWWVKLVRiMHRsUk1zTDRnbzB4aTlrOHE0emR5S0pwQnJkY0hiNmN0S1ppSzg1STlWNF9Kdks5OVVSV0JpRWdkUzAtdU1oc1NLczMyMkliMEVMeUNnNG9mLTFqU2pLTG1YaFpTVFdtSlBNTkpIMg?oc=5",
+          "theme": "trade",
+          "time": "1h",
+          "publishedAt": "2026-10-20T16:30:17+00:00",
+          "impact": "high",
+          "source": "CBC"
         },
         {
           "title": {
@@ -231,22 +243,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQV2hvTWF0M3RjXy00Y3FhMXZVYUViVFEtYXJTSVAyRmFaajcwMFdOdzc0SHNUVFlDRHRBZ2NPZVZUdFpIMWV5Nk13bV9jbVlOcmtzVVkyU2RrMGxoNE9xWVhoTXRGWXg5ZFBONS1EVU9nczNEMWtFUU5ucGNtMWI3SFZLTzhXLUp4SDNYZGZMUHhGNzBMNkl4ekJqMzFwQnlsLWxXTGQtOGRiY2VXN1ZwQ0VwUDRwVjhpM1o2Y2dXYy0?oc=5",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-10-20T14:54:50+00:00",
           "impact": "high",
           "source": "BNN Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "Posthaste: Trump's tariffs can inflict far worse damage on the economy than just a recession, warns economist",
-            "en": "Posthaste: Trump's tariffs can inflict far worse damage on the economy than just a recession, warns economist"
-          },
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWThLYnExNVFDVEgtLUdyam41MUFjVkpzdkRhQlhISnZ2REttM3VJWnJnXzg1cFhDb0hIM3hSVkFQcmNCR0YxY0dFcUZ3OWN3WEZidGtqMWZGSm5GWWExcXgyZktreWk4MUYxNHZLU2NkWVdVZzZlWE4yWUFlRTFjV05EWkZVdw?oc=5",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-10-20T11:59:57+00:00",
-          "impact": "high",
-          "source": "Financial Post"
         }
       ],
       "provincialAnalysis": {
@@ -562,6 +562,18 @@
       "headlinesFr": [
         {
           "title": {
+            "fr": "Une compagnie américaine porte plainte contre la surtaxe visant des produits canadiens",
+            "en": "Une compagnie américaine porte plainte contre la surtaxe visant des produits canadiens"
+          },
+          "url": "https://www.ledevoir.com/economie/1018286/compagnie-americaine-porte-plainte-contre-surtaxe-visant-produits-canadiens",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-10-20T17:51:08+00:00",
+          "impact": "medium",
+          "source": "Le Devoir"
+        },
+        {
+          "title": {
             "fr": "Guerre commerciale | Trump revient sur sa menace d’interdire les ventes de Bombardier aux États-Unis",
             "en": "Guerre commerciale | Trump revient sur sa menace d’interdire les ventes de Bombardier aux États-Unis"
           },
@@ -579,21 +591,9 @@
           },
           "url": "https://www.lapresse.ca/affaires/economie/2026-10-20/etats-unis/une-plainte-deposee-contre-les-droits-de-douane-visant-des-produits-canadiens.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "trade",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-20T16:35:58+00:00",
           "impact": "medium",
-          "source": "La Presse"
-        },
-        {
-          "title": {
-            "fr": "Jeune pousse Noovelia insolvable | Des effets indirects de la guerre commerciale qui font mal",
-            "en": "Jeune pousse Noovelia insolvable | Des effets indirects de la guerre commerciale qui font mal"
-          },
-          "url": "https://www.lapresse.ca/affaires/pme/2026-10-20/jeune-pousse-noovelia-insolvable/des-effets-indirects-de-la-guerre-commerciale-qui-font-mal.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
-          "theme": "trade",
-          "time": "4h",
-          "publishedAt": "2026-10-20T13:00:00+00:00",
-          "impact": "high",
           "source": "La Presse"
         },
         {
@@ -604,7 +604,7 @@
           "url": "https://ici.radio-canada.ca/nouvelle/2294335/guerre-tarifaire-185000-emplois-canada-directrice-parlementaire-budget",
           "theme": "trade",
           "time": "<1h",
-          "publishedAt": "2026-10-20T17:23:57+00:00",
+          "publishedAt": "2026-10-20T17:49:54+00:00",
           "impact": "high",
           "source": "Radio-Canada"
         },
@@ -615,10 +615,22 @@
           },
           "url": "https://ici.radio-canada.ca/nouvelle/2294262/violences-france-couvre-feux-mardi-soir",
           "theme": "geopolitics",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-10-20T13:59:43+00:00",
           "impact": "medium",
           "source": "Radio-Canada"
+        },
+        {
+          "title": {
+            "fr": "Jeune pousse Noovelia insolvable | Des effets indirects de la guerre commerciale qui font mal",
+            "en": "Jeune pousse Noovelia insolvable | Des effets indirects de la guerre commerciale qui font mal"
+          },
+          "url": "https://www.lapresse.ca/affaires/pme/2026-10-20/jeune-pousse-noovelia-insolvable/des-effets-indirects-de-la-guerre-commerciale-qui-font-mal.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
+          "theme": "trade",
+          "time": "5h",
+          "publishedAt": "2026-10-20T13:00:00+00:00",
+          "impact": "high",
+          "source": "La Presse"
         },
         {
           "title": {
@@ -639,22 +651,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNSlFXQzFkQWh2R01tTG5sMmdXMXJBckZ2OXQ3NElwdnRQOWFmRWNGQkNUejI3OTk3V0hFTHhuU1N3Y0V1cFZfd2cxSHFvRnI5ZExhdl9raTAtaXVHMmhMY05sMU4tdTcySVduVi0wRWlOYUJZWnJnS1hXV2xUV1BRcXpYUTQ1T2ozOTY3cjBwV2tKWTgxUFhxTEJ3YkMzWmd5VzI5b0lnbzdqNWdJYVRjQ3gzSm14bTYyUlVKT3JmeGVDLWRBOHcxYTNJd3gxWXBmeVBWajNQcjJWQkt3VlZTYkhJM2FmYkZFWEQyUXBOZ3d2MnBSd0VaLUhMQlR0TXpzY1ZZa3d4VVRCZFRIeUlj?oc=5",
           "theme": "monetary",
-          "time": "20h",
+          "time": "21h",
           "publishedAt": "2026-10-19T21:07:11+00:00",
           "impact": "low",
           "source": "Morningstar"
-        },
-        {
-          "title": {
-            "fr": "L’inflation a augmenté légèrement pour s’établir à 3,1% en septembre au Canada",
-            "en": "L’inflation a augmenté légèrement pour s’établir à 3,1% en septembre au Canada"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWW0zRDZrM0h2MGh3RGNwN2tId09wQjE3VXdsd2lCYnJNLURvVmNsc002SUs1c2dYcnRrdzdmQ09WZUoxQUZlMEJEUXI1SEpLQkRjQlNNTjE0VlFTbmN5RzlFUzBDZGFTdWpWMzdndlBpMUhHNUV3RmZkRV9OaGJlWWk1UmdNZEU4STF5R1AzWDdFcEpsUjJLQ0Y5cGVQaFFTTVE?oc=5",
-          "theme": "monetary",
-          "time": "23h",
-          "publishedAt": "2026-10-19T17:42:00+00:00",
-          "impact": "medium",
-          "source": "Le Devoir"
         }
       ]
     },
@@ -712,9 +712,9 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7720,
+          "value": 7719,
           "trend": "up",
-          "change": 0.38,
+          "change": 0.37,
           "period": "2026-10-20",
           "periodEn": "2026-10-20"
         },
@@ -749,7 +749,7 @@
           7489.72,
           7686.14,
           7651.54,
-          7719.69
+          7719.43
         ],
         "labels": [
           {
@@ -803,8 +803,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a créé 29 000 emplois en septembre, le taux de chômage s'établit à 4,2 % (sept. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (oct. 2026). S&P 500 gagne 0,38 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
-        "en": "The US economy added 29,000 jobs in September, unemployment stands at 4.2% (Sep. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Oct. 2026). S&P 500 is up 0.38% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
+        "fr": "L'économie américaine a créé 29 000 emplois en septembre, le taux de chômage s'établit à 4,2 % (sept. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (oct. 2026). S&P 500 gagne 0,37 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
+        "en": "The US economy added 29,000 jobs in September, unemployment stands at 4.2% (Sep. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Oct. 2026). S&P 500 is up 0.37% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
       },
       "headlines": [
         {
@@ -814,7 +814,7 @@
           },
           "url": "https://www.ft.com/content/42ed6778-d350-48a6-ba3d-99efca3cd276?syn-25a6b1a6=1",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-20T15:47:56+00:00",
           "impact": "high",
           "source": "Financial Times"
@@ -826,7 +826,7 @@
           },
           "url": "https://www.ft.com/content/52fab4c1-0561-43ce-bc3c-0d43f6e217c5?syn-25a6b1a6=1",
           "theme": "energy",
-          "time": "6h",
+          "time": "7h",
           "publishedAt": "2026-10-20T11:00:02+00:00",
           "impact": "high",
           "source": "Financial Times"
@@ -838,10 +838,46 @@
           },
           "url": "https://www.ft.com/content/e5585991-c884-4b22-867e-5d70efbb0a87",
           "theme": "monetary",
-          "time": "12h",
+          "time": "13h",
           "publishedAt": "2026-10-20T05:00:09+00:00",
           "impact": "low",
           "source": "Financial Times"
+        },
+        {
+          "title": {
+            "fr": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+            "en": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes"
+          },
+          "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-10-20T18:03:57+00:00",
+          "impact": "high",
+          "source": "CNBC"
+        },
+        {
+          "title": {
+            "fr": "Google resolves cloud outage affecting UK banks and websites",
+            "en": "Google resolves cloud outage affecting UK banks and websites"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cxdd8mm6qy4mo?at_medium=RSS&at_campaign=rss",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-10-20T18:03:19+00:00",
+          "impact": "high",
+          "source": "BBC"
+        },
+        {
+          "title": {
+            "fr": "UK government to make Jackdaw gas field announcement",
+            "en": "UK government to make Jackdaw gas field announcement"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "<1h",
+          "publishedAt": "2026-10-20T17:33:42+00:00",
+          "impact": "medium",
+          "source": "BBC"
         },
         {
           "title": {
@@ -850,7 +886,7 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-20T15:53:13+00:00",
           "impact": "high",
           "source": "BBC"
@@ -862,46 +898,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYm9ETHFxbHA0eGNqNTZ3NktPdXdFU1dqempHdnhfcFA4YmVRLXZlbzZJY3NHazJrX2piemRUOElZLTFjZEcwOUVGVXNOQ1JPS0FmNVZNVTRsVjlldDF0WWp5MUN4Z2w4eEpySVVTLVJsWndvQzJXdE9CczVocXlKRlZPeUFGU0k?oc=5",
           "theme": "trade",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-10-20T13:36:00+00:00",
           "impact": "high",
           "source": "Fortune"
-        },
-        {
-          "title": {
-            "fr": "Fed to skip October but raise rates again in December, nearly all economists say",
-            "en": "Fed to skip October but raise rates again in December, nearly all economists say"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZUFYOUZFZXZ4UWJSN1J6RkRxM1lkdGJsUFZRZ2puQkFnRk9rczVQZF9iUS12amVsUl9ESnA4MmNlUmFuVnBVY3BoeVZoVWx1dmwtSWdCa2tGUUlXeXdWR0o0U2o5NHdUend5d2o3c1NoUlZTQUNyWFFEalBHY25QMVptcnFoRnZiSk1JVDFyb1VFYkg0NGRJaXhWemlUY3gxX3YxeVh0YkNMSHNQU21pWkc0OVQ?oc=5",
-          "theme": "monetary",
-          "time": "4h",
-          "publishedAt": "2026-10-20T13:27:27+00:00",
-          "impact": "low",
-          "source": "Reuters"
-        },
-        {
-          "title": {
-            "fr": "Jobless rate falls but small firms cut back hiring",
-            "en": "Jobless rate falls but small firms cut back hiring"
-          },
-          "url": "https://www.bbc.co.uk/news/articles/c6eq327pzr53o?at_medium=RSS&at_campaign=rss",
-          "theme": "monetary",
-          "time": "6h",
-          "publishedAt": "2026-10-20T11:26:48+00:00",
-          "impact": "low",
-          "source": "BBC"
-        },
-        {
-          "title": {
-            "fr": "U.S. bans DeepSeek from government agency systems amid AI rift with China",
-            "en": "U.S. bans DeepSeek from government agency systems amid AI rift with China"
-          },
-          "url": "https://www.cnbc.com/2026/10/20/us-deepseek-federal-agency-ban.html",
-          "theme": "tech",
-          "time": "9h",
-          "publishedAt": "2026-10-20T08:17:14+00:00",
-          "impact": "high",
-          "source": "CNBC"
         }
       ],
       "headlinesFr": [
@@ -912,7 +912,7 @@
           },
           "url": "https://www.lemonde.fr/economie/article/2026/10/20/face-a-la-hausse-des-prix-alimentaires-la-ruee-des-consommateurs-sur-les-bons-plans-le-bac-antigaspi-est-souvent-vide-des-11-heures-du-matin_6797914_3234.html",
           "theme": "monetary",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-10-20T12:00:06+00:00",
           "impact": "medium",
           "source": "Le Monde"
@@ -924,7 +924,7 @@
           },
           "url": "https://www.lemonde.fr/economie/article/2026/10/20/au-chili-les-data-centers-portes-par-le-boom-de-l-ia-encerclent-santiago_6797911_3234.html",
           "theme": "tech",
-          "time": "6h",
+          "time": "7h",
           "publishedAt": "2026-10-20T11:00:12+00:00",
           "impact": "medium",
           "source": "Le Monde"
@@ -960,7 +960,7 @@
           },
           "url": "https://www.latribune.fr/article/tech/informatique/43435436741762/a-la-defense-le-patron-de-microsoft-satya-nadella-veut-donner-des-gages-aux-entreprises-europeennes-sur-le-controle-de-leurs-donnees",
           "theme": "tech",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-10-20T14:56:40+00:00",
           "impact": "low",
           "source": "La Tribune"
@@ -1051,7 +1051,7 @@
         "exchange": {
           "value": 6.678,
           "unit": "CNY/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-10-20",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1148,7 +1148,7 @@
           },
           "url": "https://www.scmp.com/economy/global-economy/article/3371541/chinas-hybrid-car-exports-eu-surge-more-200-import-cap-looms",
           "theme": "trade",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-10-20T13:00:10+00:00",
           "impact": "high",
           "source": "South China Morning Post"
@@ -1160,7 +1160,7 @@
           },
           "url": "https://www.scmp.com/business/china-business/article/3371545/chinese-battery-giant-catl-hit-profit-slowdown-ev-headwind-fears-grow",
           "theme": "tech",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-10-20T12:56:18+00:00",
           "impact": "low",
           "source": "South China Morning Post"
@@ -1187,7 +1187,7 @@
           "time": "<1h",
           "publishedAt": "2026-10-20T17:31:06+00:00",
           "impact": "high",
-          "source": "www.politico.eu"
+          "source": "POLITICO.eu"
         },
         {
           "title": {
@@ -1220,8 +1220,8 @@
           },
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdGJDTEN3Z09DeWNoSlBtNGNOWnBCNDNHbHJjbVpBeHNRX3FpVjA2SnRuNFVvMXVYeGU3eVdqT0s3RjFkeHV5bmY0ZjQ5TUVweWFRNk1xTTNJbjBkTzNNTllPdVpHVzZZUDAwSjZ2WmN1b1E3M2wtTUVHQVM5c20tNk5teFY?oc=5",
           "theme": "tech",
-          "time": "13h",
-          "publishedAt": "2026-10-20T04:03:25+00:00",
+          "time": "14h",
+          "publishedAt": "2026-10-20T04:03:44+00:00",
           "impact": "medium",
           "source": "Financial Times"
         },
@@ -1494,7 +1494,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNLTV0aGE5Z0QyUnRmY001aDk1LTA5enBJcGFOUnNxOU1BLV9TTnhWUHRIVmZTUjc3YVJCdk5tbGExbVhJd01WcUZCVUtMd0Z2TkZxMWVLOXNNWW1xRE52NWk5RWRnMWJ1LVRUcnNUcm9RWmN0Yjh4X1JoUkkzVlJCRDZrRlJoZ0J1dmJzYjhOTWdXeFFGN2lqUzFxX0NHZUFIaHFuMHcwbXhkd3RMOEg1eW5hSk5Ec09YN0dUSmpMd9IBxAFBVV95cUxQdmhiTG8talk5clJ4TWVfcTRnc0lnckRVazJETzRCaXNTZ1J0MllfLWVJUktFWW9hNFg1bTNkVk9WSVd0ZXkyd0x6ZmZBTFNBcEJPWkxUc1dtU3B3M2NvSEpmOXV2dkVyVl80RUNvVl9UWi1xZW1QSWZTeEg2UGVsbG14OXVhM0trNjdvWVI0eXVOVUpZajhoaUNOZUFoQVhqcFp6djY0U0lObDJ0YWxkWWdMYzB1R0ZUTGRWOXFxMlQ4VDk5?oc=5",
           "theme": "trade",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-20T15:38:40+00:00",
           "impact": "high",
           "source": "Moneycontrol"
@@ -1542,7 +1542,7 @@
           },
           "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/fed-sneezes-but-emerging-markets-arent-catching-a-cold-yet-mcgeever/articleshow/135071362.cms",
           "theme": "monetary",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-10-20T13:47:37+00:00",
           "impact": "medium",
           "source": "Economic Times"
@@ -1554,7 +1554,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYm9ETHFxbHA0eGNqNTZ3NktPdXdFU1dqempHdnhfcFA4YmVRLXZlbzZJY3NHazJrX2piemRUOElZLTFjZEcwOUVGVXNOQ1JPS0FmNVZNVTRsVjlldDF0WWp5MUN4Z2w4eEpySVVTLVJsWndvQzJXdE9CczVocXlKRlZPeUFGU0k?oc=5",
           "theme": "trade",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-10-20T13:36:00+00:00",
           "impact": "high",
           "source": "Fortune"
@@ -1592,7 +1592,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPM1J3TXNWN2FBVFhJZEI5UXEwMUE4c2xmaWVmZHE1M0gzV1RFc213VC01V2t4a2RqNmlVMVZVSDV5emhCQmVCUlVnRVlxeFg5MXRoekhucFhTLTI4M25oOXZWN3FRRWk0ejF3NUtGVDRtWVU0RmFIcW1YLUZSc3ZXNmE3bnBlQlFXRkFfRVg0S1V1blhCbGsxc2Uwck5jV0hmbEFRNDhqMUVvTFJzMWxoaVRUZVpvYWlUN1JnTmNkMEx2X0pNdWFQcjI5X09LbUxkNkhndXJqY1h4ajg3dExN0gHfAUFVX3lxTE8zUndNc1Y3YUFUWElkQjlRcTAxQThzbGZpZWZkcTUzSDNXVEVzbXdULTVXa3hrZGo2aVUxVlVINXl6aEJCZUJSVWdFWXF4WDkxdGh6SG5wWFMtMjgzbmg5dlY3cVFFaTR6MXc1S0ZUNG1ZVTRGYUhxbVgtRlJzdlc2YTducGVCUVdGQV9FWDRLVXVuWEJsazFzZTByTmNXSGZsQVE0OGoxRW9MUnMxbGhpVFRlWm9haVQ3UmdOY2QwTHZfSk11YVByMjlfT0ttTGQ2SGd1cmpjWHhqODd0TE0?oc=5",
           "theme": "trade",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-10-20T12:42:52+00:00",
           "impact": "low",
           "source": "Boursorama"
@@ -1616,7 +1616,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZmY2RWJ3WmZMR3FEaGw2cDZZcWVZM3B5VHE3a19SS3FnNklIVFlDUG5iaWRnSWNkSlpfNk5aSkxBTGtJNlhySDI2N2xrN1h4SzF5b2hwWWc4V0l6VnRxQUJQZVBVa3JWU2FqOE1RNk9oMFc0Vm5pd3ZyeWVGV0UyS3g0aTRNVmwzcDNwZUNFdXdqWHBrc2JSaHRB?oc=5",
           "theme": "trade",
-          "time": "3j",
+          "time": "4j",
           "publishedAt": "2026-10-16T17:56:50+00:00",
           "impact": "medium",
           "source": "Le nouvel Économiste"
@@ -1677,7 +1677,7 @@
           "name": "MSCI World",
           "value": 159,
           "trend": "up",
-          "change": 0.45,
+          "change": 0.47,
           "period": "2026-10-20",
           "periodEn": "2026-10-20"
         }
@@ -1697,7 +1697,7 @@
           90.12,
           90.49,
           103.53,
-          108.74
+          108.69
         ],
         "labels": [
           {
@@ -1743,8 +1743,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 0,45 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « commerce ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 0.45% on the session. Of the 8 stories retained today, 5 fall under trade."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 0,47 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « commerce ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 0.47% on the session. Of the 8 stories retained today, 4 fall under trade."
       },
       "headlines": [
         {
@@ -1766,7 +1766,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOc0JELXBwdXN0M3BvV0VhVXc3Y0tqSllPcWZOdm81Wll0TlhNNTlkajhJUXdpSTNQekNPaUJvYzNGakVUbWY5ZFRfMmhFMS1hdXhvX2VUTzFES3I2dTVXNmE4cXFXNGdRb25PZUt6aGhmbVJRSms0ZXFSSXZSamZPcU9DTkU?oc=5",
           "theme": "trade",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-20T16:35:00+00:00",
           "impact": "high",
           "source": "WSJ"
@@ -1778,22 +1778,34 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUGVFb0Mtd09NZF90S24wRWJyVjc0amRwSUlOOGJYa01oeUM4WkZiLTJVLUw2aWZYYXY5NmdDNWVYT1FvNlEyRi0yYXhoSGxVdWwxdFdGdzhMZ2M2ZFhkM1dTV2M4UFJON1BFbkRkNmIwUHFlMHB2MVhsd1BRSWFac1FNejF2ckZoWER6ZHFoRmpMel82Q2NEb3p3MWRBSFdEZ3dNTDZwak11bW9WUEhnQTFzRQ?oc=5",
           "theme": "trade",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-20T16:06:42+00:00",
           "impact": "high",
           "source": "Bloomberg"
         },
         {
           "title": {
-            "fr": "GOFO Wins 2026 CSCMP Supply Chain Innovation Award",
-            "en": "GOFO Wins 2026 CSCMP Supply Chain Innovation Award"
+            "fr": "Google resolves cloud outage affecting UK banks and websites",
+            "en": "Google resolves cloud outage affecting UK banks and websites"
           },
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWk5mS0JSNy11V3pURUpaVmVlc3pfbzM2U1BXcV93Zi1yTFpEbG42ekRESFdoVE5iLWRVUHpoVWxsN0pmSFlfWmV1WFozQS1VQ1F2VmJrRVM5UE1fb1ZUakRLN1d3MUNBbFpJQWpiaVpYMkpVcFVyRmRRZ21udjJhQjhJQ2U0SnFYLTNoYXBIbjlWQW5mMU0zRUtaeUZpd2FVa1FUa2JVSG4wdk9SbVp4SQ?oc=5",
-          "theme": "trade",
+          "url": "https://www.bbc.co.uk/news/articles/cxdd8mm6qy4mo?at_medium=RSS&at_campaign=rss",
+          "theme": "monetary",
           "time": "<1h",
-          "publishedAt": "2026-10-20T17:07:00+00:00",
+          "publishedAt": "2026-10-20T18:03:19+00:00",
           "impact": "high",
-          "source": "Morningstar"
+          "source": "BBC"
+        },
+        {
+          "title": {
+            "fr": "UK government to make Jackdaw gas field announcement",
+            "en": "UK government to make Jackdaw gas field announcement"
+          },
+          "url": "https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&at_campaign=rss",
+          "theme": "energy",
+          "time": "<1h",
+          "publishedAt": "2026-10-20T17:33:42+00:00",
+          "impact": "medium",
+          "source": "BBC"
         },
         {
           "title": {
@@ -1802,7 +1814,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPYmwzY29wcWVxZHkzZm5ZZlJJM19SZ2xtYnNZdFFkNllrcFMzN3NVMFJ2b3JpY0s5SnVuSTYzNzE5UFVSNHlSaV9YZmt1bmNkeXlSUUJlYW1WWGZhaUx0dTF1VmVuX0ZUdGljQ2kwb1lfcnBYdXUxV1VIZWp0MGNZT1F0UdIBiAFBVV95cUxNbzc3VV9FbHllLVBpRjlzNGZzN3FUaGFOTC13a0NLblBJMDh4TmVzY3ZHVjlYQTBqNzdGZlMxb3VHTml0Tm9mSi03MHMxcjhDX0t6b3FkaTNCSWo5TW4xbHFIMHRqcW5hMWItSnJ0TWN1ektpWFNIRlpWLWZrZ0JFRVNLOGc1TlJJ?oc=5",
           "theme": "trade",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-20T16:43:17+00:00",
           "impact": "high",
           "source": "CNBC"
@@ -1812,10 +1824,10 @@
             "fr": "Food importer files new lawsuit to block Trump's Canada tariffs",
             "en": "Food importer files new lawsuit to block Trump's Canada tariffs"
           },
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWU9VVXlWbnBJUWluWHZlOTVjRVVOdU9vOWt5ZklwVk5iN01SVGVmdThoc1h2XzFMb1VMdkhMWHh3UmtOVnp3MXhxUG5weFFTYi1kWWw5dWFWcEw1TFdXWS13S3FFdS1BbVFsdm5KZ0tfcUp6aGZ3RTBjcDl1ZVNCcGlDLXY5Yk93RlBKQXBVS3M2U0QwY1hvcmdtTjZ4TG1FanVXS25n?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeGlkdEs5VHlKSDJTdC1BVmNvVWd0MWVwMy0xQ0tMblBZTFBZYUg4NnN2Z1RZR0QwQmt4a1pzdWRCOHJUdFVmM3ZtMGQtVmEtNm9vWG5LTHUtUHdSS0pIUllwYURYOTJWcjZjck9FaHo1ZDJHbGY4cHZaUmJfRXRJSnFWZVRrZGJLRGZPWmQ2WF9jNU12bmFVV3RCZGpYbUxBcnFHeXUwSlBlZlJkTGs4?oc=5",
           "theme": "trade",
           "time": "1h",
-          "publishedAt": "2026-10-20T16:19:51+00:00",
+          "publishedAt": "2026-10-20T16:42:41+00:00",
           "impact": "high",
           "source": "Reuters"
         },
@@ -1826,22 +1838,10 @@
           },
           "url": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-20T15:53:13+00:00",
           "impact": "high",
           "source": "BBC"
-        },
-        {
-          "title": {
-            "fr": "US pending home sales fall to record low as mortgage rates surge",
-            "en": "US pending home sales fall to record low as mortgage rates surge"
-          },
-          "url": "https://www.ft.com/content/42ed6778-d350-48a6-ba3d-99efca3cd276?syn-25a6b1a6=1",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-10-20T15:47:56+00:00",
-          "impact": "high",
-          "source": "Financial Times"
         }
       ],
       "headlinesFr": [
@@ -1859,24 +1859,12 @@
         },
         {
           "title": {
-            "fr": "Surtaxe de 50% visant des produits canadiens: une entreprise américaine dépose une plainte",
-            "en": "Surtaxe de 50% visant des produits canadiens: une entreprise américaine dépose une plainte"
-          },
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObmNQOWd5ekY5WWcxWHpiTERSWVhycXpTWTc5WDFQWFgzNjlSMTUtb2VxUFhmM1d3WlRfcU94c0ZaV3F2WklObC1Obi1FaXBLLURCdW15TnhMaUxUb1UxbGE4LU96X3ktQjZsS3Y1Zk1talBlTnpidHpqQVA4WVB0YXkxSUoyeWZYVEhiVEp4X0tDUjNzclJzWk1UQXk5MHJBTGZud3ZKdzFIajJKX1g4SEF0M185MEEzdWdGbzM5TDAzZ1JETzhXUXhaZGNFQQ?oc=5",
-          "theme": "trade",
-          "time": "<1h",
-          "publishedAt": "2026-10-20T16:34:50+00:00",
-          "impact": "medium",
-          "source": "Le Journal de Montréal"
-        },
-        {
-          "title": {
             "fr": "À La Défense, le patron de Microsoft Satya Nadella veut donner des gages aux entreprises européennes sur le contrôle de leurs données",
             "en": "À La Défense, le patron de Microsoft Satya Nadella veut donner des gages aux entreprises européennes sur le contrôle de leurs données"
           },
           "url": "https://www.latribune.fr/article/tech/informatique/43435436741762/a-la-defense-le-patron-de-microsoft-satya-nadella-veut-donner-des-gages-aux-entreprises-europeennes-sur-le-controle-de-leurs-donnees",
           "theme": "tech",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-10-20T14:56:40+00:00",
           "impact": "low",
           "source": "La Tribune"
