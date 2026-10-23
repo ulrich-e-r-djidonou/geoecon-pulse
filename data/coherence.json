@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "controles": [
     {
       "indicateur": "Taux de change CA",
@@ -7,8 +7,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 1.4034,
       "sourceB": "Yahoo Finance",
-      "valeurB": 1.4006,
-      "ecart": 0.002,
+      "valeurB": 1.4002,
+      "ecart": 0.0023,
       "suspect": false
     },
     {
@@ -17,8 +17,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 6.6743,
       "sourceB": "Yahoo Finance",
-      "valeurB": 6.6641,
-      "ecart": 0.0015,
+      "valeurB": 6.6651,
+      "ecart": 0.0014,
       "suspect": false
     },
     {
@@ -58,6 +58,16 @@
       "valeurA": 3.875,
       "sourceB": "BRI",
       "valeurB": 3.875,
+      "ecart": 0.0,
+      "suspect": false
+    },
+    {
+      "indicateur": "Inflation US",
+      "type": "source_double",
+      "sourceA": "BLS",
+      "valeurA": 3.7,
+      "sourceB": "OCDE",
+      "valeurB": 3.7,
       "ecart": 0.0,
       "suspect": false
     },
