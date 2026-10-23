@@ -49,7 +49,7 @@
         "exchange": {
           "value": 1.399,
           "unit": "CAD/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-10-23",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -57,9 +57,9 @@
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35744,
+          "value": 35805,
           "trend": "down",
-          "change": -0.64,
+          "change": -0.47,
           "period": "2026-10-23",
           "periodEn": "2026-10-23"
         },
@@ -148,10 +148,34 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a perdu 68 300 emplois en septembre, le taux de chômage s'établit à 6,5 % (sept. 2026). L'inflation ressort à 3,1 % (sept. 2026) pour un taux directeur de 2,25 % (oct. 2026). S&P/TSX cède 0,64 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « politique monétaire ».",
-        "en": "The Canadian economy shed 68,300 jobs in September, unemployment stands at 6.5% (Sep. 2026). Inflation is 3.1% (Sep. 2026) against a policy rate of 2.25% (Oct. 2026). S&P/TSX is down 0.64% on the session. Of the 8 stories retained today, 4 fall under monetary policy."
+        "fr": "L'économie canadienne a perdu 68 300 emplois en septembre, le taux de chômage s'établit à 6,5 % (sept. 2026). L'inflation ressort à 3,1 % (sept. 2026) pour un taux directeur de 2,25 % (oct. 2026). S&P/TSX cède 0,47 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
+        "en": "The Canadian economy shed 68,300 jobs in September, unemployment stands at 6.5% (Sep. 2026). Inflation is 3.1% (Sep. 2026) against a policy rate of 2.25% (Oct. 2026). S&P/TSX is down 0.47% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
       },
       "headlines": [
+        {
+          "title": {
+            "fr": "Volvo Cars shares plunge to record low on widening losses, 2,500 more job cuts",
+            "en": "Volvo Cars shares plunge to record low on widening losses, 2,500 more job cuts"
+          },
+          "url": "https://www.theglobeandmail.com/business/article-volvo-cars-shares-plunge-to-record-low-on-widening-losses-2500-more/",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-10-23T17:35:58+00:00",
+          "impact": "high",
+          "source": "The Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "Canada ‘working hard’ to reach trade deal with U.S., Trump says",
+            "en": "Canada ‘working hard’ to reach trade deal with U.S., Trump says"
+          },
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQb3FBd0NlMkJCQ20way03N2dKYnI2eklXVVlsWkc3MnIyZHc4WG4yUkV2UDdRY25IRVhIWV9hd3Z2Q0I0NjZSbUVBNm5iRHpKeEt5bWFtUnc2R040a1doNlV3dW5ELXpYRkxBXzRPaUZWdmdmRjZSTnNXWFhVUHMxMkVNZUxwejNSRGVNUE9QUkpJY1E1b1VOa3BERS00MnVKOUVrYlJjSDBBNnlW?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-10-23T17:29:16+00:00",
+          "impact": "medium",
+          "source": "The Globe and Mail"
+        },
         {
           "title": {
             "fr": "Developers up their perk game, the Home of the Week and more top real estate stories",
@@ -162,30 +186,6 @@
           "time": "5h",
           "publishedAt": "2026-10-23T12:30:00+00:00",
           "impact": "low",
-          "source": "The Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Carney confident in Canadian bid for Turkish nuclear plant",
-            "en": "Carney confident in Canadian bid for Turkish nuclear plant"
-          },
-          "url": "https://www.theglobeandmail.com/canada/video-carney-confident-in-canadian-bid-for-turkish-nuclear-plant/",
-          "theme": "energy",
-          "time": "5h",
-          "publishedAt": "2026-10-23T11:43:23+00:00",
-          "impact": "medium",
-          "source": "The Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Governments are rushing to build new critical minerals mines, but early-stage projects are rife with risk",
-            "en": "Governments are rushing to build new critical minerals mines, but early-stage projects are rife with risk"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-critical-minerals-mines-major-projects-carney/",
-          "theme": "tech",
-          "time": "7h",
-          "publishedAt": "2026-10-23T10:00:00+00:00",
-          "impact": "medium",
           "source": "The Globe and Mail"
         },
         {
@@ -231,7 +231,7 @@
           },
           "url": "https://financialpost.com/technology/why-canada-losing-technology-standards-game",
           "theme": "monetary",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-10-23T13:56:25+00:00",
           "impact": "medium",
           "source": "Financial Post"
@@ -579,7 +579,7 @@
           },
           "url": "https://www.lapresse.ca/affaires/marches/2026-10-23/petrole/le-baril-de-brent-atteint-115-dollars-pousse-par-la-guerre-au-moyen-orient.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "energy",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-10-23T11:33:12+00:00",
           "impact": "high",
           "source": "La Presse"
@@ -604,7 +604,7 @@
           "url": "https://ici.radio-canada.ca/nouvelle/2295257/itinerance-pspp-budget-urgence-deces-sorel",
           "theme": "monetary",
           "time": "<1h",
-          "publishedAt": "2026-10-23T16:40:27+00:00",
+          "publishedAt": "2026-10-23T17:36:24+00:00",
           "impact": "high",
           "source": "Radio-Canada"
         },
@@ -615,7 +615,7 @@
           },
           "url": "https://ici.radio-canada.ca/nouvelle/2295248/bombardier-expansion-etats-unis-production-avion",
           "theme": "monetary",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-23T15:47:39+00:00",
           "impact": "medium",
           "source": "Radio-Canada"
@@ -712,9 +712,9 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7629,
+          "value": 7636,
           "trend": "down",
-          "change": -0.45,
+          "change": -0.35,
           "period": "2026-10-23",
           "periodEn": "2026-10-23"
         },
@@ -749,7 +749,7 @@
           7489.72,
           7686.14,
           7651.54,
-          7629.21
+          7637.48
         ],
         "labels": [
           {
@@ -803,8 +803,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a créé 29 000 emplois en septembre, le taux de chômage s'établit à 4,2 % (sept. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (oct. 2026). S&P 500 cède 0,45 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 7 relèvent du thème « politique monétaire ».",
-        "en": "The US economy added 29,000 jobs in September, unemployment stands at 4.2% (Sep. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Oct. 2026). S&P 500 is down 0.45% on the session. Of the 8 stories retained today, 7 fall under monetary policy."
+        "fr": "L'économie américaine a créé 29 000 emplois en septembre, le taux de chômage s'établit à 4,2 % (sept. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (oct. 2026). S&P 500 cède 0,35 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 7 relèvent du thème « politique monétaire ».",
+        "en": "The US economy added 29,000 jobs in September, unemployment stands at 4.2% (Sep. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Oct. 2026). S&P 500 is down 0.35% on the session. Of the 8 stories retained today, 7 fall under monetary policy."
       },
       "headlines": [
         {
@@ -886,21 +886,21 @@
           },
           "url": "https://www.cnbc.com/2026/10/23/wealthy-chinese-tax-offshore-trusts-capital-control-.html",
           "theme": "monetary",
-          "time": "12h",
+          "time": "13h",
           "publishedAt": "2026-10-23T04:55:59+00:00",
           "impact": "high",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "Gold off three-month lows as oil rally fans inflation worries",
-            "en": "Gold off three-month lows as oil rally fans inflation worries"
+            "fr": "Gold set for steep weekly loss as rising oil prices bolster Fed rate hike bets",
+            "en": "Gold set for steep weekly loss as rising oil prices bolster Fed rate hike bets"
           },
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS0x2VHNBWkt6RWNETndlR0p1eDd4UnhlZFFFbWpaYWdocUl2MnRCQm16RFpYbHQ3dF9jOEtLMENKOHUySjNmaW03YkhFRmR3WXRnbWtIaGZwbVVQNHJMMC11aklCdlBNcjMySDZsOU16WVBaZl8zR2ttZkgxMXVVWldnY25RRjJzbks3WFJwZWpnUE9maFdseVAwcmlmRHFJYUxCTEJ4RmN5QdIBrwFBVV95cUxNUEhSek0wcnlJbXhsZ0NkYmVoNEJmSUF5NEdCRElnZUVtNEcyY1hJSUloNEVtV3RRcDNXazdBUzc5a0V5OS1JXzFZMkROWVU2VHE3dUZmUExCMzdiRkNXZ0ZTY3pwUEJXR2RGaWY2QXVJOEtxV3lCWmV6OGdkZEE2NmJxcGZpSUYzZUhFNnRCVkotekVpY3BrWEVudnJkckF6dmVVZl9qNUtwN193MVV3?oc=5",
           "theme": "monetary",
           "time": "13h",
           "publishedAt": "2026-10-23T04:29:38+00:00",
-          "impact": "medium",
+          "impact": "high",
           "source": "CNBC"
         }
       ],
@@ -972,7 +972,7 @@
           },
           "url": "https://www.latribune.fr/article/economie/24912508200340/hausse-du-smic-le-gouvernement-propose-15-euros-la-cfdt-exige-100-euros",
           "theme": "monetary",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-10-23T07:58:16+00:00",
           "impact": "medium",
           "source": "La Tribune"
@@ -1051,7 +1051,7 @@
         "exchange": {
           "value": 6.67,
           "unit": "CNY/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-10-23",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1184,7 +1184,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMzNVNE5TMkFBWS1ReFFlbEgwZGJTMmY2YmJibmZpWE9EVmI0R2dMV0hkZkNBcVJNMnU0Mml5R055bkE3emxEb01SbTYyMjYxdFA2S0tjcEhEdkxLVjlMQl9ELXFQa3l6Skx3U3dZMmxXMGswc0NJYTQ2QzlWXzNHNjhwV0xTNHBzN1VaeGpXRUZ2WGpiT1NHYndhUW1vTEx2MzFLVXJtQkM5OU5oV1lQZHM2RzE?oc=5",
           "theme": "monetary",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-10-23T09:37:26+00:00",
           "impact": "medium",
           "source": "Bloomberg"
@@ -1349,7 +1349,7 @@
         "exchange": {
           "value": 94.94,
           "unit": "INR/USD",
-          "trend": "up",
+          "trend": "stable",
           "period": "2026-10-23",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1435,8 +1435,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie indienne progresse à un rythme de 7,5 % (FY26F). L'inflation ressort à 5,0 % (août 2026) pour un taux directeur de 5,5 % (oct. 2026). SENSEX cède 0,17 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 7 relèvent du thème « politique monétaire ».",
-        "en": "The Indian economy is growing at 7.5% (FY26F). Inflation is 5.0% (Aug. 2026) against a policy rate of 5.5% (Oct. 2026). SENSEX is down 0.17% on the session. Of the 8 stories retained today, 7 fall under monetary policy."
+        "fr": "L'économie indienne progresse à un rythme de 7,5 % (FY26F). L'inflation ressort à 5,0 % (août 2026) pour un taux directeur de 5,5 % (oct. 2026). SENSEX cède 0,17 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
+        "en": "The Indian economy is growing at 7.5% (FY26F). Inflation is 5.0% (Aug. 2026) against a policy rate of 5.5% (Oct. 2026). SENSEX is down 0.17% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
       },
       "headlines": [
         {
@@ -1465,12 +1465,36 @@
         },
         {
           "title": {
+            "fr": "Upper-layer NBFCs must list on stock exchanges: RBI Guv Sanjay Malhotra",
+            "en": "Upper-layer NBFCs must list on stock exchanges: RBI Guv Sanjay Malhotra"
+          },
+          "url": "https://www.business-standard.com/industry/banking/upper-layer-cics-must-list-on-exchanges-says-rbi-governor-sanjay-malhotra-126102301588_1.html",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-10-23T17:27:30+00:00",
+          "impact": "medium",
+          "source": "Business Standard"
+        },
+        {
+          "title": {
+            "fr": "US Treasury yields rise but 10-year stays below 5% as AI jitters persist",
+            "en": "US Treasury yields rise but 10-year stays below 5% as AI jitters persist"
+          },
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-treasury-yields-rise-but-10-year-stays-below-5-as-ai-jitters-persist/articleshow/135151795.cms",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-10-23T17:24:04+00:00",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
             "fr": "Strong macro fundamentals, policy interventions to anchor eco against global headwinds: RBI bulletin",
             "en": "Strong macro fundamentals, policy interventions to anchor eco against global headwinds: RBI bulletin"
           },
           "url": "https://economictimes.indiatimes.com/news/economy/policy/strong-macro-fundamentals-policy-interventions-to-anchor-eco-against-global-headwinds-rbi-bulletin/articleshow/135151046.cms",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-23T16:56:53+00:00",
           "impact": "medium",
           "source": "Economic Times"
@@ -1482,7 +1506,7 @@
           },
           "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/eaaa-india-alternatives-mops-up-rs-360-crore-from-anchor-investors-ipo-opens-on-oct-26/articleshow/135150980.cms",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-23T16:50:32+00:00",
           "impact": "high",
           "source": "Economic Times"
@@ -1494,7 +1518,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOV2tHOTZySHBJTko1c3hfZUhONW5QeGRlTlA1Uy1FdExLR2swelg1ZkVpY2REN1hqYTlwTTdzaW9NVlROS0liYjRJd3RaVk1VcjMxdDJIb2dkb2RiSHNOQ0pNREhYV0xJcHB2RUJ1cDhhMTdRLUVwUUdoTHdzS3d6ZUNObkc4U0dDWHM0dWNGczR6REU1QjFfei01aXU2UXN5dE5nclk3ZExseHJPWFJmcU1PMnFmX19Ia3hRTW1JckZRZTk1ZGRNOXBWRdIB0AFBVV95cUxOR2Rwc1VlNGpBdmI4Tm1BYkpqMzd0eWpNMDNha1VoWi03TFVaTkNfSjJSMjhmekhOZ29ZMURaVm9UdGkxSWgwRUQzV0VwejludE02LWY0UE5RWUM1Tm01dFV1d3UwUnpHM1VLSy1lRldGdkJfT01XcVI4LVRYQzFndmlvdTdVZEhPNnphcm1QTHpucFVjR3pSdnBMQXctVGM5VG55NzBMdkIzMTRVTVZGMGo4Nk5OZm5tcVdFOTY5Ul9DZHJSY2NReDY4U3pucERP?oc=5",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-10-23T16:45:50+00:00",
           "impact": "high",
           "source": "Mint"
@@ -1508,30 +1532,6 @@
           "theme": "monetary",
           "time": "1h",
           "publishedAt": "2026-10-23T16:23:58+00:00",
-          "impact": "high",
-          "source": "Business Standard"
-        },
-        {
-          "title": {
-            "fr": "India's exports to Germany could cross $50 billion by 2030: ASSOCHAM",
-            "en": "India's exports to Germany could cross $50 billion by 2030: ASSOCHAM"
-          },
-          "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-exports-to-germany-could-cross-50-billion-by-2030-assocham/articleshow/135150336.cms",
-          "theme": "trade",
-          "time": "1h",
-          "publishedAt": "2026-10-23T16:12:25+00:00",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "RBI tightens operational risk capital norms for banks from April 2027",
-            "en": "RBI tightens operational risk capital norms for banks from April 2027"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQaHE5OU1MeGMyb2dCYy1QM3c5SWNmbXMtSVRaX2pYTTZsTUVPZ0FHUkZPWGZBeHIxb0dTUnhjbUZoU05wYmdkcXREOE9DWXNQNWVsbDJVOEZFZW4zSHJRaWtTcEp6NmpTbFBQTmRjVTVBQkVzVFNaWW5MTkNqejR4eXN2ak5UQUV6XzlHelZVQUxEd2RDTThNNzNrYUNXMk1KMDFnRlJlV0g5TW1rczJwUUp4VDNXWlVmZVcyZ2F5Q1BaYldQblluMDNpZDhtMjNweGfSAdcBQVVfeXFMT3JrMi1kZFBsbHFuY1BlZTBob2twZEFvUnFFcnJwWnJVOXRqVzVFOW5YZ2FXWkk3T0FSRGswVF8yeWNTcFZyOXNIYkpJdGh2RW1EOGt5ZVVJc1l3TmhpWkoyUUZ4dUk0c2UyVGp4VXNEU0YzWS10OC1NanN2R0J4OVhENW1WYzMycTc1aXdNVEczaHBDWHFWdWNuUnYzRGJWeTJrRGNjSmVzblNreEZHMWxmcENnMV9aZVIwRC1sVWNvVEFubkxROHFSOXNSSm1BTFJ4NXNRbGs?oc=5",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-10-23T16:11:32+00:00",
           "impact": "high",
           "source": "Business Standard"
         }
@@ -1605,7 +1605,7 @@
           "name": "MSCI World",
           "value": 157,
           "trend": "down",
-          "change": -0.43,
+          "change": -0.33,
           "period": "2026-10-23",
           "periodEn": "2026-10-23"
         }
@@ -1625,7 +1625,7 @@
           90.12,
           90.49,
           103.53,
-          111.4
+          111.44
         ],
         "labels": [
           {
@@ -1671,8 +1671,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,43 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 3 relèvent du thème « commerce ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.43% on the session. Of the 8 stories retained today, 3 fall under trade."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,33 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 3 relèvent du thème « commerce ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.33% on the session. Of the 8 stories retained today, 3 fall under trade."
       },
       "headlines": [
         {
@@ -1701,6 +1701,18 @@
         },
         {
           "title": {
+            "fr": "Exclusive | Trump Expected to Remove Some Tariffs on Canada in Bid to Help Susan Collins",
+            "en": "Exclusive | Trump Expected to Remove Some Tariffs on Canada in Bid to Help Susan Collins"
+          },
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMmZYSFVLdHB5ZTlUdnVQWFQxTURvTlVUdGJZWlJmVGxJRWdkWWw4aXJpN0pCTUg4UDdMaDhQX0tIcDlLbG5tM3BFOEduZkxtbmhncmJIRVZMUUJNNDBWN0lISzV3WWhmUnY2Z05UcEUxVzdyeVRqVmhuLWlnRnhyb2hDYkgxS250UG8wTzB1YWNsQkFKWTZuYzM4SldUVlhfWDJtMGplOFRCUjdkVGlkX2VfXzRUWHlJajVHWVN3?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-10-23T17:48:00+00:00",
+          "impact": "high",
+          "source": "WSJ"
+        },
+        {
+          "title": {
             "fr": "Oil hits $117 for first time since April on fears of flare-up in Iran hostilities",
             "en": "Oil hits $117 for first time since April on fears of flare-up in Iran hostilities"
           },
@@ -1718,10 +1730,22 @@
           },
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbTZYQVdHald1QkM2eDV4Tm5ZWl9ibXlQSVFyaVd1YWt5cF82aWRxRjJPeG44LWNkZkJfaXp2RWhtNnlZMGpkOTZjZXNVckpwMDBLWFFGcmM2Rm90VWJtd1NHR01FT2lxb2htb0VuTllDeS1fa0kzTV8zOUtMSWxZemNmSTRFLWlsUTQyS1Z6TmhXWVZub1k2NXg1eWhXUE5TXzdwbA?oc=5",
           "theme": "trade",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-10-23T15:53:43+00:00",
           "impact": "high",
           "source": "Reuters"
+        },
+        {
+          "title": {
+            "fr": "Netanyahu: Israel needs to prep ‘alternate economy’ to circumvent any global sanctions",
+            "en": "Netanyahu: Israel needs to prep ‘alternate economy’ to circumvent any global sanctions"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUzZuUTN3MGctZ3ZXYnRyanNKVWRydGhBUXFmYXVLOVExVWw4Z2FtU0h3ZEU0d2tQUHBKbm9WZ0xEcFNVOUpWY3dJWC1SQUtrWnE1dTdQWGtXSmdnOWktZTc2cGxrQTBJR3cwR2xQcFROUmtWZ2JXVDRQeFdyZnpud05PZ1c1VndWb29ueXc3NTNnbnZiU2xQdWU1Q05lMDhVWmtBaTQ4dVRueDhsYVhfRUhtU3BiOHhJbXpmY1J6MmZRb2NJWkM4RQ?oc=5",
+          "theme": "geopolitics",
+          "time": "2h",
+          "publishedAt": "2026-10-23T15:44:52+00:00",
+          "impact": "high",
+          "source": "The Times of Israel"
         },
         {
           "title": {
@@ -1746,30 +1770,6 @@
           "publishedAt": "2026-10-23T12:24:17+00:00",
           "impact": "low",
           "source": "BBC"
-        },
-        {
-          "title": {
-            "fr": "US-Canada trade war creates winners and losers",
-            "en": "US-Canada trade war creates winners and losers"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNW5IeG9vSWpqOVgxUl83Ukczb0w4cm1fTDhlSmQ1Z0NIZkhsRElnZ2dBMTVkdDNKR3hiZGhkaUtpMkhzVm94RTdWZUtJUWdlSFR4OHdaWWlUa1FJLU90N2hFWnZQWWZrZHlabTdkaUhDei1RLXV6Wm16M0Jtd21OMGFSU1kxVlR3aXhF?oc=5",
-          "theme": "trade",
-          "time": "6h",
-          "publishedAt": "2026-10-23T10:41:36+00:00",
-          "impact": "high",
-          "source": "Deutsche Welle"
-        },
-        {
-          "title": {
-            "fr": "New electronics reach Iran, but prices soar as gov’t fees, US sanctions hit",
-            "en": "New electronics reach Iran, but prices soar as gov’t fees, US sanctions hit"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPU05rd1A4S2U0czlXZEV5Zkt1c3RsUTV3R2tYUmRsMmpPTEVVdDlzZkVKLWozQmNpVERiaGgzMGVJZ1dnZ3VoUE5UVlNubTZxd2h6Z2MzaC1fLVJ6RHV4YU9PZnZpQjZLZ3ZvVERtd2dFbC1YNVhOT2k5MFZaSzhjVFBLZjgydjlUZXRRcno0SGdYNDZRM19wU1ZPQVoxZXRoNGgzb0IwMDVleXNXRHM4WHdlbkxXXzJxcEHSAb8BQVVfeXFMT2hnazdQZDBMaThLMlcxUHluaXZKMHNUV1U5NXcyM3h3elV3MFNSVWt4V0tvNm9kSEVPMVJBTmR4UXc4alZYVXpxNFBEcHR2VjZmMVQ3UmVMWmdjVHQ0VGdWSDE4ejdUVlAxMTF3dEJUOGVRVVZTd2tfaEN2a19YX3dONVQ0TXdOYmVYbVByNjNCbWktcjVyd0pxUEJxVzNCeEg3bGtfcEo2SFA3aHJEcVpyRDhud19kMl8yWVJ5MXc?oc=5",
-          "theme": "geopolitics",
-          "time": "7h",
-          "publishedAt": "2026-10-23T10:01:41+00:00",
-          "impact": "high",
-          "source": "Al Jazeera"
         }
       ],
       "headlinesFr": [
@@ -1794,18 +1794,6 @@
           "theme": "trade",
           "time": "1j",
           "publishedAt": "2026-10-22T16:40:00+00:00",
-          "impact": "medium",
-          "source": "Le Devoir"
-        },
-        {
-          "title": {
-            "fr": "Une compagnie américaine porte plainte contre la surtaxe sur des produits canadiens",
-            "en": "Une compagnie américaine porte plainte contre la surtaxe sur des produits canadiens"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRnRMU1BfaHplOEd4M0d0SHZWaHBvQWViV2xiU0poT2h3STFVZm0wMjkwWlloTlV1ajJ4T3dwb1M0WGc5ZWFpZUUzdjhfb1lvSVN4eWVqQmJha3FNTEc4Q2dFdjhyWWZmVDhkN2I0T2hpZUZncDlaeFVpb0I4ZE5oeEgwSmJKMnRMVWhVaC1aMVlWTTN5WlNvVlVKSXRfcHNWQmF3ZlVGOEtIZ0dNX1h4MF9oWk9VX0Jy?oc=5",
-          "theme": "trade",
-          "time": "2j",
-          "publishedAt": "2026-10-20T17:51:00+00:00",
           "impact": "medium",
           "source": "Le Devoir"
         },
@@ -1840,7 +1828,7 @@
           },
           "url": "https://www.latribune.fr/article/tech/89204061208483/voiture-autonome-stellantis-bolt-et-la-metropole-du-grand-paris-vont-s-associer-pour-lancer-des-robots-taxis-pilotes-par-le-logiciel-chinois-pony-ai",
           "theme": "tech",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-10-23T11:39:38+00:00",
           "impact": "low",
           "source": "La Tribune"
@@ -1852,7 +1840,7 @@
           },
           "url": "https://www.latribune.fr/article/economie/24912508200340/hausse-du-smic-le-gouvernement-propose-15-euros-la-cfdt-exige-100-euros",
           "theme": "monetary",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-10-23T07:58:16+00:00",
           "impact": "medium",
           "source": "La Tribune"
@@ -1868,6 +1856,18 @@
           "publishedAt": "2026-10-22T10:56:10+00:00",
           "impact": "high",
           "source": "Radio-Canada"
+        },
+        {
+          "title": {
+            "fr": "Canada dévoile un plan de 6,2 mds $ pour protéger son industrie face aux tarifs de Trump",
+            "en": "Canada dévoile un plan de 6,2 mds $ pour protéger son industrie face aux tarifs de Trump"
+          },
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVlJfdTlNOElQZEtDcUdGckplZHBYcmhJUy1QX2dKOUNPM0ZYS3BMNmdjeEdsTElpUWloZmdDelc2TUd2OEY4THhzRDFMQ2w3eFlVR0ZOc2U0ODhLaWJjZkRYbFQ4elEyS2FWV0Zmdi1jN1FDV2FBXzFucU9oQW5pQWlsWmZNdGptcTZwU3dMb2lRRzc5QllVanBudFJCWTlybWxEYjZwMXV1NXJYT0kxaWF2dmpkdXdYZjFBdg?oc=5",
+          "theme": "trade",
+          "time": "1j",
+          "publishedAt": "2026-10-22T04:52:20+00:00",
+          "impact": "high",
+          "source": "Euronews"
         }
       ]
     }
