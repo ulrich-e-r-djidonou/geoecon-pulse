@@ -14,8 +14,8 @@
           "en": "Negative"
         },
         "reason": {
-          "fr": "inflation à 3,1 %, au-dessus de la fourchette, emploi en recul, chômage en hausse, croissance faible (0,7 %)",
-          "en": "inflation at 3.1%, above the target band, employment falling, unemployment rising, weak growth (0.7%)"
+          "fr": "inflation à 3,1 %, au-dessus de la fourchette, emploi en recul, croissance faible (0,7 %)",
+          "en": "inflation at 3.1%, above the target band, employment falling, weak growth (0.7%)"
         }
       },
       "indicators": {
@@ -49,7 +49,7 @@
         "exchange": {
           "value": 1.407,
           "unit": "CAD/USD",
-          "trend": "up",
+          "trend": "stable",
           "period": "2026-11-06",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -57,16 +57,16 @@
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 35844,
+          "value": 35811,
           "trend": "up",
-          "change": 0.67,
+          "change": 0.58,
           "period": "2026-11-06",
           "periodEn": "2026-11-06"
         },
         "unemployment": {
           "value": 6.7,
           "unit": "%",
-          "trend": "up",
+          "trend": "stable",
           "period": "Oct. 2026",
           "source": "Statistique Canada",
           "label": {
@@ -148,10 +148,22 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a perdu 4 700 emplois en octobre, le taux de chômage s'établit à 6,7 % (oct. 2026). L'inflation ressort à 3,1 % (sept. 2026) pour un taux directeur de 2,5 % (nov. 2026). S&P/TSX gagne 0,67 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
-        "en": "The Canadian economy shed 4,700 jobs in October, unemployment stands at 6.7% (Oct. 2026). Inflation is 3.1% (Sep. 2026) against a policy rate of 2.5% (Nov. 2026). S&P/TSX is up 0.67% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
+        "fr": "L'économie canadienne a perdu 4 700 emplois en octobre, le taux de chômage s'établit à 6,7 % (oct. 2026). L'inflation ressort à 3,1 % (sept. 2026) pour un taux directeur de 2,5 % (nov. 2026). S&P/TSX gagne 0,58 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « commerce ».",
+        "en": "The Canadian economy shed 4,700 jobs in October, unemployment stands at 6.7% (Oct. 2026). Inflation is 3.1% (Sep. 2026) against a policy rate of 2.5% (Nov. 2026). S&P/TSX is up 0.58% on the session. Of the 8 stories retained today, 4 fall under trade."
       },
       "headlines": [
+        {
+          "title": {
+            "fr": "Carney welcomes Democrats' push to end Trump's tariffs on Canada after midterm victory",
+            "en": "Carney welcomes Democrats' push to end Trump's tariffs on Canada after midterm victory"
+          },
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPMFhQdEJ1WjJGdHRZdUMwRDlGdWh4M3dscXVyRU50UERfeGNhOTItLUlsMGZuMmhYTURvQ251LU10OWpQZWlTVHpVU0xHLUtvTmp0VWluTlkzZHIxS3Fjbmo0c3Nicm9nZFcwNmJ4SUVrdGowdnZKcm5WS3dfblFPcnp1VU9XWjVxRGppUUduZjRHcDhKYURIVW5Kek9MNHNBT1dyZU9xbUtUMlRuY1VxVkhUOHMyak5ELWFPS2VJcHk4eUdiQWRCdjJvQVhOTUZYZ3dZMWpJSzFITVNDLW9zNDBGclg5Y2N2Qk8wbUxKZThkcFAxbnh5U2RVZDVOMXQx?oc=5",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-11-06T19:27:44+00:00",
+          "impact": "high",
+          "source": "The Globe and Mail"
+        },
         {
           "title": {
             "fr": "Canada’s Trade Surplus Widens as Oil, Gold Drive Record Exports",
@@ -171,34 +183,10 @@
           },
           "url": "https://www.theglobeandmail.com/world/article-microsoft-ai-data-centre-site-in-amsterdam-breached-by-protesters/",
           "theme": "tech",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-11-06T17:04:36+00:00",
           "impact": "low",
           "source": "The Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Trader angst pivots from inflation to growth as tech rout deepens",
-            "en": "Trader angst pivots from inflation to growth as tech rout deepens"
-          },
-          "url": "https://www.theglobeandmail.com/business/article-trader-angst-pivots-from-inflation-to-growth-as-tech-rout-deepens/",
-          "theme": "monetary",
-          "time": "4h",
-          "publishedAt": "2026-11-06T15:18:35+00:00",
-          "impact": "medium",
-          "source": "The Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Economists concerned after labour market sheds jobs for third month in a row",
-            "en": "Economists concerned after labour market sheds jobs for third month in a row"
-          },
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY3ZjV1VhaFk0NE5BbDRiYko3ZjVwamVrRkNCSlF4TWt5dVFDQjRXeVJ6aXBKckhaN2MyUmJVaTZaVFF4R09mQm04Z3k5TnEtampkMEJfYmxLMEdzaXlxWTQwSWNwNE5uSVdKR2hXWEJVT2FtZXVDeW9jREVkQmd4dG9CUW1vdThkLTlVR0dFd2NqUUdpU0djdHlGc2J2dkEtd2NQaEhfNWcyUHlFQ3FJSU84QTBKRzhMeHZtcnRRRQ?oc=5",
-          "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-11-06T19:14:05+00:00",
-          "impact": "medium",
-          "source": "BNN Bloomberg"
         },
         {
           "title": {
@@ -207,7 +195,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNEJLUTlReTQ3YmdnYjNKTFpPYUVvYVpfZzN3NDhjV29HdGY3YmxHM3RvRDhFMmt4eEYzNGl5VVVDczZvUDJ4NnItUlA5SEw2NUU2VjZ6LTR2ZjJZUmlLa2RvWjNITjFSc1FGekhOaFZwMHRMcEpWVkhYNE1iQ0J4ZWhKWVczamR3RmlNU21LZU0yWUN5cjZ1aVFWTmNiYll0V283ZkNoUzZ5LVhNMkdZ?oc=5",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-11-06T18:50:46+00:00",
           "impact": "medium",
           "source": "Radio-Canada"
@@ -231,7 +219,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPektvTnc2ZnItVVJlYy12aWROcl9ncGZnbWNESEU2LVdaOE9vUF9KUElSejZVbzRGaUg3Q2c1V0pRd0tqdlNEdEFLdlk4ZjItbXNXQlNHMXB5bnlramNSWGF0UEc1MG80TUhxSnYzMGVOLXdOREtnSGlmWlhhRlFrRGhreWE4VHM?oc=5",
           "theme": "monetary",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-11-06T16:51:18+00:00",
           "impact": "high",
           "source": "Financial Post"
@@ -247,6 +235,18 @@
           "publishedAt": "2026-11-06T16:31:06+00:00",
           "impact": "high",
           "source": "CBC"
+        },
+        {
+          "title": {
+            "fr": "Republicans ran away from Trump’s Canadian tariffs, but not far enough",
+            "en": "Republicans ran away from Trump’s Canadian tariffs, but not far enough"
+          },
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdnFtdDhsWVdiSGJsaVVpUkloN25zVjRBT3dTbVVINkJUbjl3Z3JqUXdhaGJxYXktcXhOc3NqTW5VdVBfaGVFOGRpZUo5dDVyYkREd3dWeDEzUXRnYnNoZ2dUUzFubVNxUEo2WFkzaUxHQUlYT1dJNHlULXluSnJPM2FXTGQ0R3hnZG5tYU9tS3k3UjVERGlHMUtxUUdhM0VpWFgyY0o0WS0tLUszZGdxYWR2UFZOeVE?oc=5",
+          "theme": "trade",
+          "time": "4h",
+          "publishedAt": "2026-11-06T15:35:52+00:00",
+          "impact": "high",
+          "source": "Radio-Canada"
         }
       ],
       "provincialAnalysis": {
@@ -562,12 +562,24 @@
       "headlinesFr": [
         {
           "title": {
+            "fr": "La chute des marchés boursiers, signe précurseur d’une bulle IA?",
+            "en": "La chute des marchés boursiers, signe précurseur d’une bulle IA?"
+          },
+          "url": "https://www.ledevoir.com/economie/1023050/chute-marches-boursiers-signe-precurseur-bulle-ia",
+          "theme": "tech",
+          "time": "<1h",
+          "publishedAt": "2026-11-06T19:24:36+00:00",
+          "impact": "high",
+          "source": "Le Devoir"
+        },
+        {
+          "title": {
             "fr": "Épargne-études | La Banque Nationale fait une acquisition à Toronto",
             "en": "Épargne-études | La Banque Nationale fait une acquisition à Toronto"
           },
           "url": "https://www.lapresse.ca/affaires/entreprises/2026-11-06/epargne-etudes/la-banque-nationale-fait-une-acquisition-a-toronto.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-11-06T18:53:15+00:00",
           "impact": "high",
           "source": "La Presse"
@@ -586,6 +598,18 @@
         },
         {
           "title": {
+            "fr": "Le taux de chômage a augmenté pour atteindre 6,7 % en octobre au pays",
+            "en": "Le taux de chômage a augmenté pour atteindre 6,7 % en octobre au pays"
+          },
+          "url": "https://ici.radio-canada.ca/nouvelle/2298865/legere-hausse-taux-chomage-octobre",
+          "theme": "monetary",
+          "time": "6h",
+          "publishedAt": "2026-11-06T13:50:45+00:00",
+          "impact": "low",
+          "source": "Radio-Canada"
+        },
+        {
+          "title": {
             "fr": "Canada | Le taux de chômage en hausse à 6,7 % en octobre",
             "en": "Canada | Le taux de chômage en hausse à 6,7 % en octobre"
           },
@@ -595,18 +619,6 @@
           "publishedAt": "2026-11-06T13:36:27+00:00",
           "impact": "medium",
           "source": "La Presse"
-        },
-        {
-          "title": {
-            "fr": "Le taux de chômage a augmenté pour atteindre 6,7 % en octobre au pays",
-            "en": "Le taux de chômage a augmenté pour atteindre 6,7 % en octobre au pays"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2298865/legere-hausse-taux-chomage-octobre",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-11-06T13:50:45+00:00",
-          "impact": "low",
-          "source": "Radio-Canada"
         },
         {
           "title": {
@@ -627,7 +639,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNclVad215aWNQWDdZYmNPdFZzMlpXU1VVMS1BeWJJemxTTmhFY05vYzdXRk4xd19yOUREX2Y0NVJlUENmUWVyd3pHYVFSeGw0dExKTGRLeGNqVDBaV1JMekRaQWJJUkxsSHE3cFlEaUxpYjVqeEwtRVhvLUM3X2lUel9SZy02dkxqVmFOaVA3TTdLbW9fVzRJcnVWQlh3WWZ0RHZMUXNjUjBOX3o5LS13cjRDWXFVSzRUYnpZcjJkT29IWHZrZERzNXJaOEN4ZmNHa2NCeThEandzNGUtb0hucWJFTjBmanJzenc?oc=5",
           "theme": "trade",
-          "time": "13h",
+          "time": "14h",
           "publishedAt": "2026-11-06T06:00:08+00:00",
           "impact": "medium",
           "source": "La Presse"
@@ -643,18 +655,6 @@
           "publishedAt": "2026-11-06T02:15:34+00:00",
           "impact": "low",
           "source": "Radio-Canada"
-        },
-        {
-          "title": {
-            "fr": "L’un des coproducteurs de Seul ensemble déclare faillite",
-            "en": "L’un des coproducteurs de Seul ensemble déclare faillite"
-          },
-          "url": "https://ici.radio-canada.ca/nouvelle/2298674/seul-ensemble-annulation-producteur-bylo-nebylo-faillite",
-          "theme": "trade",
-          "time": "19h",
-          "publishedAt": "2026-11-05T23:51:53+00:00",
-          "impact": "low",
-          "source": "Radio-Canada"
         }
       ]
     },
@@ -665,14 +665,14 @@
       },
       "flag": "🇺🇸",
       "sentiment": {
-        "value": "positive",
+        "value": "neutral",
         "label": {
-          "fr": "Positif",
-          "en": "Positive"
+          "fr": "Neutre",
+          "en": "Neutral"
         },
         "reason": {
-          "fr": "inflation à 3,7 %, au-dessus de la fourchette, emploi en hausse, chômage en baisse, croissance de 2,2 %",
-          "en": "inflation at 3.7%, above the target band, employment rising, unemployment falling, growth of 2.2%"
+          "fr": "inflation à 3,7 %, au-dessus de la fourchette, emploi en hausse, croissance de 2,2 %",
+          "en": "inflation at 3.7%, above the target band, employment rising, growth of 2.2%"
         }
       },
       "indicators": {
@@ -712,16 +712,16 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7405,
+          "value": 7401,
           "trend": "up",
-          "change": 0.69,
+          "change": 0.65,
           "period": "2026-11-06",
           "periodEn": "2026-11-06"
         },
         "unemployment": {
           "value": 4.1,
           "unit": "%",
-          "trend": "down",
+          "trend": "stable",
           "period": "Oct. 2026",
           "source": "BLS",
           "label": {
@@ -749,7 +749,7 @@
           7686.14,
           7651.54,
           7580.07,
-          7404.31
+          7401.49
         ],
         "labels": [
           {
@@ -803,8 +803,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a créé 165 000 emplois en octobre, le taux de chômage s'établit à 4,1 % (oct. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (nov. 2026). S&P 500 gagne 0,69 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 7 relèvent du thème « politique monétaire ».",
-        "en": "The US economy added 165,000 jobs in October, unemployment stands at 4.1% (Oct. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Nov. 2026). S&P 500 is up 0.69% on the session. Of the 8 stories retained today, 7 fall under monetary policy."
+        "fr": "L'économie américaine a créé 165 000 emplois en octobre, le taux de chômage s'établit à 4,1 % (oct. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (nov. 2026). S&P 500 gagne 0,65 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 7 relèvent du thème « politique monétaire ».",
+        "en": "The US economy added 165,000 jobs in October, unemployment stands at 4.1% (Oct. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Nov. 2026). S&P 500 is up 0.65% on the session. Of the 8 stories retained today, 7 fall under monetary policy."
       },
       "headlines": [
         {
@@ -814,7 +814,7 @@
           },
           "url": "https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1",
           "theme": "monetary",
-          "time": "<1h",
+          "time": "1h",
           "publishedAt": "2026-11-06T18:45:36+00:00",
           "impact": "high",
           "source": "Financial Times"
@@ -838,10 +838,22 @@
           },
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQ3ZZR3JMbllUMFZ5bWxkRGhDYmlCN244OENvcGxmWlB0M001TzdCZkpfZTRtU25XdU8zbm8wUGdfeW5NblZwSlJCVGN1V0dCY2ozakNMekJ2U3I0elZfTlUwSC1vYjhTaC1hNHI2dzdKdUt1aWhIU0FYS25EOF9aTXBTWnJNbzJuNWtLeHhUWUpCYkhGdmZLRDZMUno4SlZUd042QkN5M19IUVNqclNhOW1ZQl9INHFiUVpDZHFYVQ?oc=5",
           "theme": "monetary",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-11-06T13:45:01+00:00",
           "impact": "medium",
           "source": "The New York Times"
+        },
+        {
+          "title": {
+            "fr": "A disturbing employment trend is hiding beneath the latest strong job numbers",
+            "en": "A disturbing employment trend is hiding beneath the latest strong job numbers"
+          },
+          "url": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
+          "theme": "monetary",
+          "time": "<1h",
+          "publishedAt": "2026-11-06T19:49:09+00:00",
+          "impact": "medium",
+          "source": "CNBC"
         },
         {
           "title": {
@@ -854,18 +866,6 @@
           "publishedAt": "2026-11-06T19:37:10+00:00",
           "impact": "medium",
           "source": "BBC"
-        },
-        {
-          "title": {
-            "fr": "A disturbing employment trend is hiding beneath the latest strong job numbers",
-            "en": "A disturbing employment trend is hiding beneath the latest strong job numbers"
-          },
-          "url": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
-          "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-11-06T19:25:16+00:00",
-          "impact": "medium",
-          "source": "CNBC"
         },
         {
           "title": {
@@ -907,6 +907,18 @@
       "headlinesFr": [
         {
           "title": {
+            "fr": "« La propagande d’extrême droite tue » : à Paris des activistes « déménagent » un Relay pour dénoncer le « monopole » de Bolloré",
+            "en": "« La propagande d’extrême droite tue » : à Paris des activistes « déménagent » un Relay pour dénoncer le « monopole » de Bolloré"
+          },
+          "url": "https://www.lemonde.fr/politique/article/2026/11/06/la-propagande-d-extreme-droite-tue-a-paris-des-activistes-demenagent-un-relay-pour-denoncer-le-monopole-de-bollore_6807862_823448.html",
+          "theme": "trade",
+          "time": "<1h",
+          "publishedAt": "2026-11-06T19:45:32+00:00",
+          "impact": "low",
+          "source": "Le Monde"
+        },
+        {
+          "title": {
             "fr": "Aux Etats-Unis, l’accélération inattendue des créations d’emplois",
             "en": "Aux Etats-Unis, l’accélération inattendue des créations d’emplois"
           },
@@ -924,21 +936,9 @@
           },
           "url": "https://www.lemonde.fr/international/article/2026/11/06/marche-du-travail-aux-etats-unis-chomage-en-baisse-creations-d-emplois-en-hausse_6807818_3210.html",
           "theme": "monetary",
-          "time": "3h",
+          "time": "4h",
           "publishedAt": "2026-11-06T16:06:12+00:00",
           "impact": "high",
-          "source": "Le Monde"
-        },
-        {
-          "title": {
-            "fr": "Les salaires du privé ont baissé de 1,1 % sur un an, en prenant en compte l’inflation",
-            "en": "Les salaires du privé ont baissé de 1,1 % sur un an, en prenant en compte l’inflation"
-          },
-          "url": "https://www.lemonde.fr/economie-francaise/article/2026/11/06/les-salaires-du-prive-ont-baisse-de-1-1-sur-un-an-en-prenant-en-compte-l-inflation_6807767_1656968.html",
-          "theme": "monetary",
-          "time": "9h",
-          "publishedAt": "2026-11-06T10:24:55+00:00",
-          "impact": "medium",
           "source": "Le Monde"
         },
         {
@@ -984,7 +984,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxObGxuaFRMc1IwRUZFZGRMZ2V6cFZEMDcyT3MteHZRcmVBandWTFkyTHFLTkNmX0Q0TFJYOEEyNmNIWFp4UmZGQ0pYdTRSbC10MjB0T0MyX1ZGV3d3cnlZcWFfU0JtS1ozbmZyVGx4aHZPQktTTWZ1NFk1S3l3WkNNSVlmU2t2dXIxMDM1Rm5PSHdadFEwOUM2SVZoYlp5UUhyWGRDNnRxUWVERFp6dFp0NXlGMEd6VEtjUndlOFo4VU83ZnJ5aUc0OHRNT1RZRUZ0VTVvaUpod05sVlFlQkVlWGVxMk90czUwYklYT1JXQzZ6ZHBQaG9SSnNWcWM5WXZ4dC1zNVdGaDFFdUJQQU53OXNXTEdCNTBGdFRTbkhManHSAaACQVVfeXFMTmxsbmhUTHNSMEVGRWRkTGdlenBWRDA3Mk9zLXh2UXJlQWp3VkxZMkxxS05DZl9ENExSWDhBMjZjSFhaeFJmRkNKWHU0UmwtdDIwdE9DMl9WRld3d3J5WXFhX1NCbUtaM25mclRseGh2T0JLU01mdTRZNUt5d1pDTUlZZlNrdnVyMTAzNUZuT0h3WnRRMDlDNklWaGJaeVFIclhkQzZ0cVFlRERaenRadDV5RjBHelRLY1J3ZThaOFVPN2ZyeWlHNDh0TU9UWUVGdFU1b2lKaHdObFZRZUJFZVhlcTJPdHM1MGJJWE9SV0M2emRwUGhvUkpzVnFjOVl2eHQtczVXRmgxRXVCUEFOdzlzV0xHQjUwRnRUU25ITGpx?oc=5",
           "theme": "monetary",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-11-06T09:50:35+00:00",
           "impact": "high",
           "source": "Boursorama"
@@ -996,7 +996,7 @@
           },
           "url": "https://www.latribune.fr/article/entreprises-finance/energie-environnement/5364325697195/les-energies-renouvelables-dopees-par-la-crise-d-ormuz",
           "theme": "energy",
-          "time": "14h",
+          "time": "15h",
           "publishedAt": "2026-11-06T05:00:04+00:00",
           "impact": "high",
           "source": "La Tribune"
@@ -1051,7 +1051,7 @@
         "exchange": {
           "value": 6.671,
           "unit": "CNY/USD",
-          "trend": "up",
+          "trend": "stable",
           "period": "2026-11-06",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1160,7 +1160,7 @@
           },
           "url": "https://www.scmp.com/news/world/united-states-canada/article/3373607/us-adds-165000-jobs-october-labour-market-beats-expectations",
           "theme": "monetary",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-11-06T14:52:43+00:00",
           "impact": "high",
           "source": "South China Morning Post"
@@ -1172,7 +1172,7 @@
           },
           "url": "https://www.scmp.com/business/markets/article/3373602/beijing-calls-more-efforts-stabilise-stock-market-after-renewed-sell",
           "theme": "monetary",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-11-06T14:00:21+00:00",
           "impact": "medium",
           "source": "South China Morning Post"
@@ -1184,7 +1184,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcW5OdXN0MThlNzdCajFHc3BleURuNGlNUGk3bV9UZ2drUnd0ZzJReDhSalJyNkpiNzhzSUsyR2RkNWNndDZHUWpmVFpUM3pFdjhaUC1HeGRPTFlKdG91VW9NSV9abDI2VHp4N0pPSnp5dTc3RlJBM1hycXp1ekhkeFlsVm5ZVkR5bUhFaXpPcUVWeHBUdWVOVl9LQ2tEOS1QcWlRSWlxakRYYmxkMTUtT19hNWJzUmM?oc=5",
           "theme": "energy",
-          "time": "2h",
+          "time": "3h",
           "publishedAt": "2026-11-06T16:44:58+00:00",
           "impact": "medium",
           "source": "Reuters"
@@ -1196,7 +1196,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaUVpai1RSG9LWk82anFJT1hrZlgtM0t3LTQ5ZDBHLXFOLVpyOFhiR0xZa3pLMkluNnpOdzBHWDdwbnZESzk2bWhybUhmdGZUSFFVd0owXzV1ZXJlcXliazhtclhMTV9vQzlSOGlZd0VlNUFLM2V2RUFwNG9SUjFWSG5aeXNUdzBlcmlvRl9RR3JvNUJwZFluUGVrVGduVXpNUEdCcjFTVFI5RktrU1JyMnd0R2E?oc=5",
           "theme": "monetary",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-11-06T13:48:58+00:00",
           "impact": "high",
           "source": "WSJ"
@@ -1208,7 +1208,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdkxjc2VBQi0yTGF0OUdORXRrRE1Rd3U3cjB2MTFDM04xcGJ6RzNWUzl3NEs4ZENYejh1V0ZmdmZVbVBFSGJtdmNLUFBhNU1VZFpjWjB1Q0I4MEhQTzR5dzFNcjVraHdJbXNHSURDcmhCdjBYY2N0ZjBXRk84UkZkU2JkZVRZNDE2LVd6bndoOEhGWmhubFMwcHhaSTc1M3hJTVNfQUcydkFOczBuYXNtMV8yQlA?oc=5",
           "theme": "trade",
-          "time": "16h",
+          "time": "17h",
           "publishedAt": "2026-11-06T02:51:00+00:00",
           "impact": "medium",
           "source": "Bloomberg"
@@ -1220,7 +1220,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdG8tUkNHdE1DSTdndG40UGVsSEh6cVBmcFZBSmFHNi10VU9ET3JPbU1XRlg3bHI4SnptNGcxV3BGNHdXT2Qycm9Oa1VfRmJNNFFyNGxJN0ZfbHdyNi1zbHRISnBlZWNKUGdqT0V0UVJHRHhFLWRYVTB1alpvSGRCZWZaTzJyaHdicWpyVDdGQmVWVlFqREs2TTNMcVZYVlllb1FCUlVZMDMxQQ?oc=5",
           "theme": "monetary",
-          "time": "20h",
+          "time": "21h",
           "publishedAt": "2026-11-05T23:03:00+00:00",
           "impact": "medium",
           "source": "Reuters"
@@ -1246,7 +1246,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUWs5MXl6NGhHNHR2VkpaZGdjUjAxMHdVbkVzWjFhZlBVLTlfd18wWVVKT1JkM053OXBuYldIX2ExMG15dzFobWNzWm5HcUVDNnZPblROZGt5ZTJCWF9NTnlMNGFRUmhsUEQwT0F5MmRERzNPTnRBZC1TYm83c1VCRkxjZzVfaXZtTkNwcldwXy1Ec0ZDR2o5ejRpckVmSjN6N1JJZUljUU1PNFZxZDNxZEZIWXNYZ2RiaDlabUVnTUxiRzgyaGtpTVcwamRSNk9Z?oc=5",
           "theme": "tech",
-          "time": "1h",
+          "time": "2h",
           "publishedAt": "2026-11-06T17:54:13+00:00",
           "impact": "medium",
           "source": "Les Echos"
@@ -1258,7 +1258,7 @@
           },
           "url": "https://www.rfi.fr/fr/podcasts/chronique-des-mati%C3%A8res-premi%C3%A8res/20261106-de-g%C3%A9ant-de-la-production-%C3%A0-n%C3%A9gociant-en-gnl-le-grand-virage-strat%C3%A9gique-du-qatar",
           "theme": "energy",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-11-06T09:54:54+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1361,7 +1361,7 @@
         "exchange": {
           "value": 93.92,
           "unit": "INR/USD",
-          "trend": "down",
+          "trend": "stable",
           "period": "2026-11-06",
           "source": "Frankfurter/BCE",
           "manual": false,
@@ -1482,7 +1482,7 @@
           },
           "url": "https://economictimes.indiatimes.com/news/economy/agriculture/sugar-output-jumps-to-nearly-13-lakh-tonnes-so-far-in-2026-27-market-year-isma/articleshow/135611877.cms",
           "theme": "monetary",
-          "time": "4h",
+          "time": "5h",
           "publishedAt": "2026-11-06T14:50:14+00:00",
           "impact": "low",
           "source": "Economic Times"
@@ -1518,7 +1518,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQeWdCWUNESlh4VUtNSEptY3RKcnpIOTR1SXdwSUdrLUNpSFNreVgzTUZzdVgtOGZzWmJhWlpNVVp1ODk2YzVzOUJZMlhCcUNSY0QtT2w0UHc4SUdnZmpWektZR1Q2TlBnZ0pHaDNZNGdhc3FyeHFiZUNGNGNTMVk0c1ZhbVA1R2wwanQxY3JWNHZlLVpyM0FIT2xQVU15SndkRHZ6QkJxM2VhN3RKVEdWbFlnVGpENWJoSVNxQmJZRGZTMUVhdVJHSGlJa2FNRmZUODVIREM0M0hVVVdFdlhmYTNxSHrSAeoBQVVfeXFMTnljdEJkN0t2OWx0bW9SR1UyaXF5OURRVGk4cWx4cjRYajFtUUstRDY4c1RqRGd1U25pTW9FRWFvMFVqcE9yaUx5MEJZU0JKUTMwUXR5dG00UVFBX0l4dUJod0JnWWZTOVJlcXM3MWdLRXJEclNMeTlPSjhKY3dtMlRJVmZNZkFJY3FMcjNRSFY4VzBwV0NoSUtvdUVZUFVhT0lsMzdyeXhtTEh3dzZPNHF3aVNYVUZKcXpqb2xieGpHdFc5dnIyVWVKV1E0b1lPbFM0RHA0a1dzbEp6Vy1EcVNBNEN6eFdxTmN3?oc=5",
           "theme": "monetary",
-          "time": "5h",
+          "time": "6h",
           "publishedAt": "2026-11-06T14:03:47+00:00",
           "impact": "high",
           "source": "Moneycontrol"
@@ -1542,7 +1542,7 @@
           },
           "url": "https://economictimes.indiatimes.com/markets/bonds/indias-10-year-bond-posts-best-week-in-7-years-leads-emerging-asia-as-oil-slides/articleshow/135606792.cms",
           "theme": "monetary",
-          "time": "7h",
+          "time": "8h",
           "publishedAt": "2026-11-06T12:02:52+00:00",
           "impact": "medium",
           "source": "Economic Times"
@@ -1556,7 +1556,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOTXJDQXBRWGdEd1ljV3JSUlhxbjB5TUFWWU8yV2psblFhRFk1VG9UcU5sTjMyWEEteGJBVllPcnlpU2ZsU19tSDF5bHQtc1dwMkU2SG9kTHFMbUVkMGt2TDFaLXZkcy13MzdrbFlLOTg3M2pLT0VLN3BEaWRaUXpfV3hCYkxpYjh4d0Y2ZzI1Z2I4YWlyakptZ0hhNzgtbWw1LUxqZjk3UXJXSHc3V2JKVDRCMXAzVzBqVzFEYmlxZ2lRcXNOUDN2OFN1MEg0UFkwVTJzUURpZGl4bEFnV053LWJ0TklFMEJzX0txd3BDWWQ0Z1prYzR1VUdrWkxVcUx4ajBsYlBrNXpJUTZkVGRFWFhRcndJdXVGLWZvMHNJVDdHZl8tZ1FwQTFEUnhXT2oxaGdwWEIyQlZNeHNUeXh3TVRhVU5qSlnSAccCQVVfeXFMTk1yQ0FwUVhnRHdZY1dyUlJYcW4weU1BVllPMldqbG5RYURZNVRvVHFObE4zMlhBLXhiQVZZT3J5aVNmbFNfbUgxeWx0LXNXcDJFNkhvZExxTG1FZDBrdkwxWi12ZHMtdzM3a2xZSzk4NzNqS09FSzdwRGlkWlF6X1d4QmJMaWI4eHdGNmcyNWdiOGFpcmpKbWdIYTc4LW1sNS1MamY5N1FyV0h3N1diSlQ0QjFwM1cwalcxRGJpcWdpUXFzTlAzdjhTdTBINFBZMFUyc1FEaWRpeGxBZ1dOdy1idE5JRTBCc19LcXdwQ1lkNGdaa2M0dVVHa1pMVXFMeGowbGJQazV6SVE2ZFRkRVhYUXJ3SXV1Ri1mbzBzSVQ3R2ZfLWdRcEExRFJ4V09qMWhncFhCMkJWTXhzVHl4d01UYVVOakpZ?oc=5",
           "theme": "monetary",
-          "time": "11h",
+          "time": "12h",
           "publishedAt": "2026-11-06T07:55:21+00:00",
           "impact": "medium",
           "source": "Boursorama"
@@ -1617,7 +1617,7 @@
           "name": "MSCI World",
           "value": 153,
           "trend": "up",
-          "change": 0.28,
+          "change": 0.22,
           "period": "2026-11-06",
           "periodEn": "2026-11-06"
         }
@@ -1637,7 +1637,7 @@
           90.49,
           103.53,
           117.64,
-          98.31
+          98.43
         ],
         "labels": [
           {
@@ -1683,8 +1683,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 0,28 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 3 relèvent du thème « politique monétaire ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 0.28% on the session. Of the 8 stories retained today, 3 fall under monetary policy."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 0,22 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 3 relèvent du thème « politique monétaire ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 0.22% on the session. Of the 8 stories retained today, 3 fall under monetary policy."
       },
       "headlines": [
         {
@@ -1713,15 +1713,15 @@
         },
         {
           "title": {
-            "fr": "ArcelorMittal Says Europe’s Steel Tariffs Are Boosting Profits",
-            "en": "ArcelorMittal Says Europe’s Steel Tariffs Are Boosting Profits"
+            "fr": "US economy outstrips forecasts to add 165,000 jobs in October",
+            "en": "US economy outstrips forecasts to add 165,000 jobs in October"
           },
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOT0xfNmtoVDFyN3lxWTAzZ3hRSWV0aVRENWJTWFdCWG9XcUd0V1BlelpOMTZFMG9zbEdEQVpPaTlNQ1BWYUZuWXZxVHVLRE91bVRjdkpIY0VNX2xkZFQ5R29RNUFhRUc5b3o2dlFZTFo1OEpoSjN5cWZ5Qk5NQ2ZKYUNiSE5ramJtYzliaTAwejB4a3RMa21sdV9WWTJEVEZpazFnTVVlVUd1VGVtbzQ0Q1I4OXBWZw?oc=5",
-          "theme": "trade",
-          "time": "<1h",
-          "publishedAt": "2026-11-06T19:09:16+00:00",
+          "url": "https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1",
+          "theme": "monetary",
+          "time": "1h",
+          "publishedAt": "2026-11-06T18:45:36+00:00",
           "impact": "high",
-          "source": "WSJ"
+          "source": "Financial Times"
         },
         {
           "title": {
@@ -1749,18 +1749,6 @@
         },
         {
           "title": {
-            "fr": "US economy outstrips forecasts to add 165,000 jobs in October",
-            "en": "US economy outstrips forecasts to add 165,000 jobs in October"
-          },
-          "url": "https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1",
-          "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-11-06T18:45:36+00:00",
-          "impact": "high",
-          "source": "Financial Times"
-        },
-        {
-          "title": {
             "fr": "Why the US midterms sparked an AI stock selloff",
             "en": "Why the US midterms sparked an AI stock selloff"
           },
@@ -1782,6 +1770,18 @@
           "publishedAt": "2026-11-06T17:41:43+00:00",
           "impact": "high",
           "source": "Reuters"
+        },
+        {
+          "title": {
+            "fr": "US warns China it must ‘immediately’ meet terms of Busan trade deal",
+            "en": "US warns China it must ‘immediately’ meet terms of Busan trade deal"
+          },
+          "url": "https://www.ft.com/content/391bb785-0247-4c39-b53b-35007187d603?syn-25a6b1a6=1",
+          "theme": "trade",
+          "time": "2h",
+          "publishedAt": "2026-11-06T17:20:21+00:00",
+          "impact": "high",
+          "source": "Financial Times"
         }
       ],
       "headlinesFr": [
@@ -1864,7 +1864,7 @@
           },
           "url": "https://www.rfi.fr/fr/podcasts/chronique-des-mati%C3%A8res-premi%C3%A8res/20261106-de-g%C3%A9ant-de-la-production-%C3%A0-n%C3%A9gociant-en-gnl-le-grand-virage-strat%C3%A9gique-du-qatar",
           "theme": "energy",
-          "time": "9h",
+          "time": "10h",
           "publishedAt": "2026-11-06T09:54:54+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1876,7 +1876,7 @@
           },
           "url": "https://www.latribune.fr/article/entreprises-finance/energie-environnement/5364325697195/les-energies-renouvelables-dopees-par-la-crise-d-ormuz",
           "theme": "energy",
-          "time": "14h",
+          "time": "15h",
           "publishedAt": "2026-11-06T05:00:04+00:00",
           "impact": "high",
           "source": "La Tribune"
