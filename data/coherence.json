@@ -27,8 +27,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 93.92,
       "sourceB": "Yahoo Finance",
-      "valeurB": 93.895,
-      "ecart": 0.0003,
+      "valeurB": 93.91,
+      "ecart": 0.0001,
       "suspect": false
     },
     {
@@ -48,6 +48,16 @@
       "valeurA": 3.1,
       "sourceB": "OCDE",
       "valeurB": 3.1,
+      "ecart": 0.0,
+      "suspect": false
+    },
+    {
+      "indicateur": "Taux directeur US",
+      "type": "source_double",
+      "sourceA": "Federal Reserve (NY Fed)",
+      "valeurA": 3.875,
+      "sourceB": "BRI",
+      "valeurB": 3.875,
       "ecart": 0.0,
       "suspect": false
     },
