@@ -47,19 +47,19 @@
           "periodEn": "Nov. 2026"
         },
         "exchange": {
-          "value": 1.414,
+          "value": 1.423,
           "unit": "CAD/USD",
-          "trend": "stable",
-          "period": "2026-11-10",
+          "trend": "up",
+          "period": "2026-11-11",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-11-10"
+          "periodEn": "2026-11-11"
         },
         "stockIndex": {
           "name": "S&P/TSX",
-          "value": 36170,
-          "trend": "down",
-          "change": -0.76,
+          "value": 36444,
+          "trend": "up",
+          "change": 0.76,
           "period": "2026-11-11",
           "periodEn": "2026-11-11"
         },
@@ -148,33 +148,45 @@
         ]
       },
       "summary": {
-        "fr": "L'économie canadienne a perdu 4 700 emplois en octobre, le taux de chômage s'établit à 6,7 % (oct. 2026). L'inflation ressort à 3,1 % (sept. 2026) pour un taux directeur de 2,5 % (nov. 2026). S&P/TSX cède 0,76 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 7 relèvent du thème « politique monétaire ».",
-        "en": "The Canadian economy shed 4,700 jobs in October, unemployment stands at 6.7% (Oct. 2026). Inflation is 3.1% (Sep. 2026) against a policy rate of 2.5% (Nov. 2026). S&P/TSX is down 0.76% on the session. Of the 8 stories retained today, 7 fall under monetary policy."
+        "fr": "L'économie canadienne a perdu 4 700 emplois en octobre, le taux de chômage s'établit à 6,7 % (oct. 2026). L'inflation ressort à 3,1 % (sept. 2026) pour un taux directeur de 2,5 % (nov. 2026). S&P/TSX gagne 0,76 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 6 relèvent du thème « politique monétaire ».",
+        "en": "The Canadian economy shed 4,700 jobs in October, unemployment stands at 6.7% (Oct. 2026). Inflation is 3.1% (Sep. 2026) against a policy rate of 2.5% (Nov. 2026). S&P/TSX is up 0.76% on the session. Of the 8 stories retained today, 6 fall under monetary policy."
       },
       "headlines": [
         {
           "title": {
-            "fr": "Bank of Canada moving carefully, but more hikes might be needed, meeting summary shows",
-            "en": "Bank of Canada moving carefully, but more hikes might be needed, meeting summary shows"
+            "fr": "Pensions warned that LNG stakes could expose them to climate-related legal action",
+            "en": "Pensions warned that LNG stakes could expose them to climate-related legal action"
           },
-          "url": "https://www.theglobeandmail.com/business/article-bank-of-canada-interest-rate-deliberations-oct-28-decision/",
-          "theme": "monetary",
-          "time": "6h",
-          "publishedAt": "2026-11-10T19:14:24+00:00",
+          "url": "https://www.theglobeandmail.com/business/article-legal-warning-sent-to-pensions-over-climate-related-risks-of-lng/",
+          "theme": "energy",
+          "time": "7h",
+          "publishedAt": "2026-11-11T12:44:44+00:00",
           "impact": "high",
           "source": "The Globe and Mail"
         },
         {
           "title": {
-            "fr": "Bank of Canada Raised Rates to Mitigate Inflation Risk, Minutes Say",
-            "en": "Bank of Canada Raised Rates to Mitigate Inflation Risk, Minutes Say"
+            "fr": "Ottawa’s pledge to build Mackenzie Valley Highway key to drawing investment, NWT Premier says",
+            "en": "Ottawa’s pledge to build Mackenzie Valley Highway key to drawing investment, NWT Premier says"
           },
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWkRteENhbmpUU1lDbFBRdzZ3dDhhM2FUd2JqTFk2S2l6S0x6MFU5VVFWWndIS19LV3QwSDVUamxDYkYtdW5rRmNjeENKMFNRRm9TdnVoLXlxQVJjeWVZVWxDR3VrOTk3andWOWZNNy1aSXNGazNQUWdQWlpSTmREVGVVQjlVemVnVldvLWdpYjdQSnd4NVdBNnVYbHNrdVVZOWlGZG15THN5bUZWRlFyRElMYkFFOEtKNXJJ?oc=5",
+          "url": "https://www.theglobeandmail.com/business/article-federal-commitment-to-build-mackenzie-valley-highway-essential-to/",
           "theme": "monetary",
-          "time": "6h",
-          "publishedAt": "2026-11-10T18:57:00+00:00",
+          "time": "8h",
+          "publishedAt": "2026-11-11T11:00:00+00:00",
+          "impact": "low",
+          "source": "The Globe and Mail"
+        },
+        {
+          "title": {
+            "fr": "BlackRock, Scotiabank Economists Are Seen as Contenders to Run Bank of Canada",
+            "en": "BlackRock, Scotiabank Economists Are Seen as Contenders to Run Bank of Canada"
+          },
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZ3VJYnNZaXVvM1dfbV9sZkJ0RGpVSk52QXJJWmVaUVI2MjMtdkFTVzlXRjFwb29Nd2pKanhqLWhpbEFGUnZ4Ty1QbTQxVW1ndGpJZ0NLM0NXUllyZjFOeG81c2I4SGFtNUJMTzByeDd1SnRra3FNaGktRzY0WFV4U1I1RC1mdDFzd1N3WWN0cDVpeHhGaVVxZkIyMGhxSlFEbjM2Vm5lQmNlb0dXQ19uV1BxektvSXVsWk1EMHBOcW5wd1F3bWc?oc=5",
+          "theme": "monetary",
+          "time": "8h",
+          "publishedAt": "2026-11-11T11:00:00+00:00",
           "impact": "high",
-          "source": "WSJ"
+          "source": "Bloomberg"
         },
         {
           "title": {
@@ -183,46 +195,10 @@
           },
           "url": "https://www.theglobeandmail.com/business/article-rio-tinto-nemaska-lithium-layoffs-quebec-processing-plant/",
           "theme": "monetary",
-          "time": "6h",
+          "time": "1j",
           "publishedAt": "2026-11-10T18:54:10+00:00",
           "impact": "high",
           "source": "The Globe and Mail"
-        },
-        {
-          "title": {
-            "fr": "Connor Hellebuyck tells media online death threats, family played roles in trade demand",
-            "en": "Connor Hellebuyck tells media online death threats, family played roles in trade demand"
-          },
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRWxyWkNTU010NC1HT1FDS1dRUFVtdzRDQmM5OS1VTUJqRHdSa1M1RnpWQ05uQXpRMEV0Yi1JZlNiNngwODdJUmo0TzJkczhzUjZWSGhjcktHNndsSUE1RWcyZnNEdTJ6bGdZS05IZFhSeTlFSTFYbkFEWjFsRVA2XzEyYlJYSHRBaHpZVUJLUQ?oc=5",
-          "theme": "trade",
-          "time": "2h",
-          "publishedAt": "2026-11-10T23:10:49+00:00",
-          "impact": "low",
-          "source": "CBC"
-        },
-        {
-          "title": {
-            "fr": "Further interest rate hikes might be needed: Bank of Canada",
-            "en": "Further interest rate hikes might be needed: Bank of Canada"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQeTZBUmMzVUxBb2FmVENNa283TlRmSlNvd2RaVlpaQWlVZXB4TGRtRnJoUFdtdDFIVlVOQ0N4dF9sYXBEbHpYNlAwSlRzNE1Cc2hFVDRxWjdHZ3NnbkM5LUN1NW9wUllsYkItb2tlbFVnbUNxZDlxWU1LWk1pcVpsaGlobWMzVlJCY0t6ZDdJcjY4cUEyUU9wYmxyY1plLTdPb0RaR1dCS1drbzhRLUhJbndlYWhpTzFnUWw1ZDBDWi1GSWxBY3RGQkUyUU5aNU4xYW9uTW5kVQ?oc=5",
-          "theme": "monetary",
-          "time": "6h",
-          "publishedAt": "2026-11-10T18:44:52+00:00",
-          "impact": "high",
-          "source": "BNN Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "Bank of Canada felt uncertainty over rates did not mean inaction, minutes show",
-            "en": "Bank of Canada felt uncertainty over rates did not mean inaction, minutes show"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPa0VCQUlEODRHX0cwTUdnb3lCM0FtLWtESlAtcnB4TlJZaVI5eXE0Q0NhRTRnVlBmUFFIaGlfT1NiV29RX3F6NEtmUzJ1ZTVSSnVMNUNDcmViRlU4azlsa0g2OUlaWE10V2pCUkRtQ2kzeTR2TXNOdl9pczFERDAxTnBHZEdsWHRmckhIOFJlWF9YeEdGNkNtT1pYN1JjUjRPTWtKdlZQdWRCdWYtQ0taZUZFZVM4ekkxRUFrREdwTllIa1E?oc=5",
-          "theme": "monetary",
-          "time": "6h",
-          "publishedAt": "2026-11-10T18:38:00+00:00",
-          "impact": "high",
-          "source": "Reuters"
         },
         {
           "title": {
@@ -231,22 +207,46 @@
           },
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPYl9sT1NJNHFxb19KMl85RkZEeWFSeGE3WW1pVEJUQTY4Ym04RlZsQTQxeS1Rd0V4QUJyVjVuZHZNYzZDRHVRUE4zMUxvdGpTX1JRN1FzRnpISWZCdEtva1lObjdQX0M4SE9NXzNmNERWS3dxd3dIUlp4djg0dlRQaURMYmN4dU1zR2JiVzZyOXVMVFByZWstT3UzMlZYR0pyZzdnb2dKYkVFU3FRVGVKU0lzSmk2SEFkMGk1OGYzVQ?oc=5",
           "theme": "monetary",
-          "time": "6h",
+          "time": "1j",
           "publishedAt": "2026-11-10T18:31:54+00:00",
           "impact": "low",
           "source": "Bank of Canada"
         },
         {
           "title": {
-            "fr": "Bank of Canada Officials Say Uncertainty Doesn’t Rule Out Hikes",
-            "en": "Bank of Canada Officials Say Uncertainty Doesn’t Rule Out Hikes"
+            "fr": "Anthropic eyes $1 trillion US valuation in hotly anticipated IPO that's a key test for AI market",
+            "en": "Anthropic eyes $1 trillion US valuation in hotly anticipated IPO that's a key test for AI market"
           },
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeXNzUV9kT2R2UnVRbWt3TzdhMGgwazJWeU41d3J5dXRKVUJ2Qjk1WHpBZkE0Yk1Bb2xNNDlTby1XQjdhandRYkRuQVBsRTRuUFFMSmJnb2VvRW9UNjdpT1U0U1B1S2xWd2w4TVpTd0xGUFJYSE5IZlhZVUxFMkpGc0hvek1BcjNXbktJdjlrc1BmZUd5ZlZ6NHFwbF9lb0xDcTlUbENiZG1mbTJSMkl4el9Ib3E?oc=5",
+          "url": "https://www.cbc.ca/news/business/anthropic-ipo-9.7416077?cmp=rss",
           "theme": "monetary",
-          "time": "6h",
-          "publishedAt": "2026-11-10T18:30:04+00:00",
+          "time": "1j",
+          "publishedAt": "2026-11-10T14:20:09+00:00",
           "impact": "high",
-          "source": "Bloomberg"
+          "source": "CBC"
+        },
+        {
+          "title": {
+            "fr": "Why Danielle Smith wants to give a subsidy to the oilpatch despite near-record profits",
+            "en": "Why Danielle Smith wants to give a subsidy to the oilpatch despite near-record profits"
+          },
+          "url": "https://www.cbc.ca/news/canada/calgary/oilsands-oilpatch-danielle-smith-royalty-incentive-9.7415489?cmp=rss",
+          "theme": "monetary",
+          "time": "1j",
+          "publishedAt": "2026-11-10T09:00:00+00:00",
+          "impact": "high",
+          "source": "CBC"
+        },
+        {
+          "title": {
+            "fr": "What these newly elected U.S. reps. think about tariffs on Canada",
+            "en": "What these newly elected U.S. reps. think about tariffs on Canada"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAwUDZnUVdpVmZVODM2VjhkaU83NWdNV1NERmRsRkR1YzlFYWp0MTVlR2xZZnhST2dOZ1dfRVZyUkdKWXBLVW1OQXYwcVd0aDlEYXlHYjVpNmprUQ?oc=5",
+          "theme": "trade",
+          "time": "1j",
+          "publishedAt": "2026-11-10T00:03:45+00:00",
+          "impact": "high",
+          "source": "CBC"
         }
       ],
       "provincialAnalysis": {
@@ -286,8 +286,8 @@
           {
             "id": "weak_cad",
             "label": {
-              "fr": "Dollar canadien à 1,41 CAD/USD",
-              "en": "Canadian dollar at 1.41 CAD/USD"
+              "fr": "Dollar canadien à 1,42 CAD/USD",
+              "en": "Canadian dollar at 1.42 CAD/USD"
             },
             "theme": "monetary"
           }
@@ -428,8 +428,8 @@
             },
             "verdictType": "negative",
             "analysis": {
-              "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien à 1,41 CAD/USD améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
-              "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the Canadian dollar at 1.41 CAD/USD improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
+              "fr": "L'Ontario et le Québec subissent la convergence de deux chocs négatifs. Les tarifs américains de 25% sur l'acier et l'aluminium frappent directement le coeur industriel du pays : l'Ontario concentre 46% du PIB manufacturier canadien et 81% de ses exportations de machinerie vont aux États-Unis (Statistique Canada, 2023). Le PIB ontarien a reculé de 0,7% au T2 2025 sous l'impact initial des tarifs (FAO Ontario, 2025).\n\nLe Québec, premier producteur mondial d'aluminium en dehors de la Chine, est particulièrement exposé aux surtaxes américaines. Le secteur de l'aluminium représente 2,8 Mds$ d'exportations annuelles vers les États-Unis (Institut de la statistique du Québec). L'industrie aérospatiale québécoise (Bombardier, CAE, Pratt & Whitney) fait face à des coûts de matériaux en hausse.\n\nFacteur atténuant : le dollar canadien à 1,42 CAD/USD améliore la compétitivité-prix des exportations non tarifées. La production manufacturière ontarienne a rebondi de 1,0% au T3 2025 après le choc initial.",
+              "en": "Ontario and Quebec face the convergence of two negative shocks. US 25% tariffs on steel and aluminum directly hit the country's industrial heartland: Ontario accounts for 46% of Canadian manufacturing GDP and 81% of its machinery exports go to the US (Statistics Canada, 2023). Ontario GDP contracted 0.7% in Q2 2025 under the initial tariff impact (FAO Ontario, 2025).\n\nQuebec, the world's largest aluminum producer outside China, is particularly exposed to US surcharges. The aluminum sector represents $2.8B in annual exports to the US (Institut de la statistique du Québec). Quebec's aerospace industry (Bombardier, CAE, Pratt & Whitney) faces rising material costs.\n\nMitigating factor: the Canadian dollar at 1.42 CAD/USD improves price competitiveness for non-tariffed exports. Ontario manufacturing output rebounded 1.0% in Q3 2025 after the initial shock."
             },
             "strengths": {
               "fr": [
@@ -562,12 +562,24 @@
       "headlinesFr": [
         {
           "title": {
+            "fr": "Marché immobilier | Un géant français lorgne le Québec",
+            "en": "Marché immobilier | Un géant français lorgne le Québec"
+          },
+          "url": "https://www.lapresse.ca/affaires/marche-immobilier/2026-11-11/marche-immobilier/un-geant-francais-lorgne-le-quebec.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
+          "theme": "monetary",
+          "time": "5h",
+          "publishedAt": "2026-11-11T14:00:00+00:00",
+          "impact": "medium",
+          "source": "La Presse"
+        },
+        {
+          "title": {
             "fr": "La Banque du Canada n’écarte pas une autre hausse du taux directeur",
             "en": "La Banque du Canada n’écarte pas une autre hausse du taux directeur"
           },
-          "url": "https://www.lapresse.ca/affaires/economie/2026-11-10/la-banque-du-canada-n-ecarte-pas-une-autre-hausse-du-taux-directeur.php?utm_source=rss&utm_medium=fil&utm_campaign=affaires",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZFd2VElSYXBBbzJaeks1U3BfN1pDNzdWWGpmd3NQaGRIRlUzS3A2ZlNLV3AtcEg1UmJQOFFzeHhzLWRENzY4RXNQOVduNVVWTFZpNFFBQ1laVW9IdEc1d0tuaEhOVW5qNzlEd1lpRXljZ0JmWFNXVkVHNjBvYzNsRmozZ0tsVmFOelgtWU4zWWUxQnROLVlEekZFeDJsWnFaajBvOXVSNXl0XzJwa1h2c2lrcW82NFFDQ0ZIQlEzMHZQZw?oc=5",
           "theme": "monetary",
-          "time": "3h",
+          "time": "22h",
           "publishedAt": "2026-11-10T21:42:07+00:00",
           "impact": "high",
           "source": "La Presse"
@@ -579,10 +591,46 @@
           },
           "url": "https://www.ledevoir.com/economie/1023926/programmes-aide-frechette-face-tarifs-peu-efficaces",
           "theme": "trade",
-          "time": "5h",
+          "time": "1j",
           "publishedAt": "2026-11-10T19:29:00+00:00",
           "impact": "high",
           "source": "Le Devoir"
+        },
+        {
+          "title": {
+            "fr": "Tarifs et diplomatie: Jean Charest doute d'une entente Canada–États-Unis avant Noël",
+            "en": "Tarifs et diplomatie: Jean Charest doute d'une entente Canada–États-Unis avant Noël"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUzVHOEFINlRCcXZaRTc1dzdLbGpGTHhHdjZPVmVaVWJOX0lYVkRkSENObWpaU19yNExnVzFWZEN5T2JwQ3dXcXVHdTdLV3RIV2pBUXBEZ2ZmVkNJZzZ4SzhlWDZOZTdBVkdvZnRpNmdkSHJlZmh3TFNZMF9zdHNSTXR6UVUtQURMb3hiTWFKcUVTeXMwc2YzcDdrUXBtRlVKcWFUenhKdGFkZG4xT3Jvam1GejdVSUN1c3ZscXZaT0dST1E?oc=5",
+          "theme": "trade",
+          "time": "3h",
+          "publishedAt": "2026-11-11T16:34:56+00:00",
+          "impact": "high",
+          "source": "Le Journal de Montréal"
+        },
+        {
+          "title": {
+            "fr": "Obama défend le Canada et critique les tarifs douaniers de Trump",
+            "en": "Obama défend le Canada et critique les tarifs douaniers de Trump"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRzc3RWNNZWZiWnNSX2Vxc3pIWFJISmZIQ3hpUS01VERybzVwclBCWXI1a3hFTWFrMG83MTZEMFJ1bzk5NjJ3NGN2MWxGWUt5b0lNSFExRUdFa0E2S3VoaEJNMi10Q05JRGo1dTdoeG53WUpoZ1FBTkFlZ2JZWG1zcmRUczdKdUtBQWZuVnJFRHkwc20yN09wa1h5TTVfT19OdzNtN3RQbW5fRzA?oc=5",
+          "theme": "trade",
+          "time": "12h",
+          "publishedAt": "2026-11-11T07:26:32+00:00",
+          "impact": "high",
+          "source": "Radio-Canada"
+        },
+        {
+          "title": {
+            "fr": "Forte augmentation des taxes foncières et des tarifs d’eau prévue à Calgary",
+            "en": "Forte augmentation des taxes foncières et des tarifs d’eau prévue à Calgary"
+          },
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9yQkVmVl9SN3FKckdYczVYNEdNUnZwQlNBYkc2N0RISW9adDZUTG1rSnhBQ3I1bVkzcWVucUxHX190VmV1MENmRUFUWHJCVzFQUFBUblhCcjZ1VFg4WkhDYnRHQVZBMzNDX1pBU0JQTlpxNEMtdF9aVXdRNzZ2UQ?oc=5",
+          "theme": "trade",
+          "time": "19h",
+          "publishedAt": "2026-11-11T00:19:27+00:00",
+          "impact": "high",
+          "source": "Radio-Canada"
         },
         {
           "title": {
@@ -591,33 +639,9 @@
           },
           "url": "https://www.ledevoir.com/economie/1023791/inflation-americaine-ralentit-moins-espere-cout-alimentation-repart-hausse",
           "theme": "monetary",
-          "time": "9h",
+          "time": "1j",
           "publishedAt": "2026-11-10T15:26:00+00:00",
           "impact": "medium",
-          "source": "Le Devoir"
-        },
-        {
-          "title": {
-            "fr": "Un accord de libre-échange Canada-Philippines en vue | RCI",
-            "en": "Un accord de libre-échange Canada-Philippines en vue | RCI"
-          },
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUGNwNWZIOVhSbnRsTW5NcFpFNGpnaExTTWc5VGdWcGVFM0pWeFZHSjZmV1dEWVIzM3U5cXZuNmtIaVE3RUN3dVc0ZGZaSWRIZkNkQzh5SmNhOGQyODh0ZFVwRjlkOUxSQmVxN3JlYnZsZTRlVGZtbXM4ZzdYZHAtWXcwQWpGU01xSlBmTWFBZjhDVkt1LWc?oc=5",
-          "theme": "trade",
-          "time": "1j",
-          "publishedAt": "2026-11-09T19:10:41+00:00",
-          "impact": "medium",
-          "source": "Radio-Canada"
-        },
-        {
-          "title": {
-            "fr": "Carney nomme une femme à la tête du premier fonds d’investissement souverain canadien",
-            "en": "Carney nomme une femme à la tête du premier fonds d’investissement souverain canadien"
-          },
-          "url": "https://www.ledevoir.com/economie/1023575/carney-nomme-femme-tete-premier-fonds-investissement-souverain-canadien",
-          "theme": "monetary",
-          "time": "1j",
-          "publishedAt": "2026-11-09T18:05:00+00:00",
-          "impact": "low",
           "source": "Le Devoir"
         },
         {
@@ -688,9 +712,9 @@
         },
         "stockIndex": {
           "name": "S&P 500",
-          "value": 7521,
-          "trend": "down",
-          "change": -0.38,
+          "value": 7629,
+          "trend": "up",
+          "change": 1.44,
           "period": "2026-11-11",
           "periodEn": "2026-11-11"
         },
@@ -725,7 +749,7 @@
           7686.14,
           7651.54,
           7580.07,
-          7520.93
+          7629.08
         ],
         "labels": [
           {
@@ -779,8 +803,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie américaine a créé 165 000 emplois en octobre, le taux de chômage s'établit à 4,1 % (oct. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (nov. 2026). S&P 500 cède 0,38 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 8 relèvent du thème « politique monétaire ».",
-        "en": "The US economy added 165,000 jobs in October, unemployment stands at 4.1% (Oct. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Nov. 2026). S&P 500 is down 0.38% on the session. Of the 8 stories retained today, 8 fall under monetary policy."
+        "fr": "L'économie américaine a créé 165 000 emplois en octobre, le taux de chômage s'établit à 4,1 % (oct. 2026). L'inflation ressort à 3,7 % (sept. 2026) pour un taux directeur de 3,875 % (nov. 2026). S&P 500 gagne 1,44 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 6 relèvent du thème « politique monétaire ».",
+        "en": "The US economy added 165,000 jobs in October, unemployment stands at 4.1% (Oct. 2026). Inflation is 3.7% (Sep. 2026) against a policy rate of 3.875% (Nov. 2026). S&P 500 is up 1.44% on the session. Of the 8 stories retained today, 6 fall under monetary policy."
       },
       "headlines": [
         {
@@ -790,192 +814,192 @@
           },
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX2tORWxkdHRBenRxSW9hSW4wekZsa3Y5VTA0d3A3NTNzTVhMazhTWnNEWlJvMlMzUFIyenNRVl8xWWJaOTdMN2NQVmNsWjhRYUJKWmplRU8zbGthZGQ0R0NlRzFSWmZObzBRSnVNSHFGM3owd2JpTmZHVEkyaEVIS2dLclc3cGZkWXBUSlFoRnpCUTRKdTFrNzNCb2xwUVJic0RoaGgwZzF0ZktCMWc?oc=5",
           "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-11-10T23:33:04+00:00",
+          "time": "2h",
+          "publishedAt": "2026-11-11T17:33:27+00:00",
           "impact": "high",
           "source": "Bloomberg"
         },
         {
           "title": {
-            "fr": "Fed’s Paulson Says Gradual Tightening Seems Appropriate for Now",
-            "en": "Fed’s Paulson Says Gradual Tightening Seems Appropriate for Now"
+            "fr": "Dollar Rises to 19-Month High on Fed Rate-Hike Bets",
+            "en": "Dollar Rises to 19-Month High on Fed Rate-Hike Bets"
           },
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMjBxR0x4NjlidlNkNFJpTFdvcF9Xa0lIQ0Itcklrd1lJeDd0bjA0NE5pTzg2X21VcGxJZ21FVFJkb01zYmI1QVN5d3dIakVjQWh3c2lGQ0JiVXh3ek1jV2N5a21ETWVqMWNKSnlTTm5tNmh5YWJFZEg1Q2NKQVFLZ2dGVm5TaEliQUg4UXJNWHNKV3dXQ2h5ZUc4X3o5M3dDdlVWd09nWk1BcmJNWHlRV2psZ0Y?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbUFTNFdTU2N5M2hVYW8zei1IMG9pbnFtc0xHU3U4cjZXUXFmaXVCTmRTbktVd2pTTlpiNHp1R2ZmWlBLSTdyU0dnX1NiT21mM2JiX3JkUzc4S0dlb3IyZEgxbzlPNEhTX1lPa0c5MHBpZU1aTjJQdGg1b242M3hUT1AtN25lNXFacnNTUmJzbFNHUkg4QzNmOEFvNk0tLWpHeFpzNVpLdlYxOHpNMmJRTUp6ZzBxS2M?oc=5",
           "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-11-10T23:30:00+00:00",
+          "time": "3h",
+          "publishedAt": "2026-11-11T16:28:00+00:00",
+          "impact": "medium",
+          "source": "WSJ"
+        },
+        {
+          "title": {
+            "fr": "The Fed Has to Raise Rates. How Fast to Go Has Officials Divided.",
+            "en": "The Fed Has to Raise Rates. How Fast to Go Has Officials Divided."
+          },
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOWNqWFdDMHlSeUN3RHluTERFZlVwaVpqZ0ZEUzlURUkyeng1SjRQaG84V3ZnVURxdy1LdEp5RlpJeG5zQ25qQ1BXV05wU0lFRks2XzIyX1ZiS2tPVlZXbFVsTVFfUnpEUDVDeU9UczQ0aVZRYU85WkI0N0tGd1d6QTY1cw?oc=5",
+          "theme": "monetary",
+          "time": "6h",
+          "publishedAt": "2026-11-11T13:40:22+00:00",
           "impact": "low",
-          "source": "Bloomberg"
+          "source": "The New York Times"
         },
         {
           "title": {
-            "fr": "Interest-Rate Hike Debate Sparked by Fed's Waller, Logan After Hot Inflation",
-            "en": "Interest-Rate Hike Debate Sparked by Fed's Waller, Logan After Hot Inflation"
+            "fr": "Ternium weighs more anti-dumping cases as steel snarls trade talks with US",
+            "en": "Ternium weighs more anti-dumping cases as steel snarls trade talks with US"
           },
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZkZoTlZOa05oRHYwaUNCM1pDVHdhNnF3ajlxMzBBd1R0Z3plbEVKbm4xemxmbm1penlwS1hrY09URU4zbDZoZFlWV213ZnZkWVlseUE1U0JyeE8zQWpqcU9YVUlKbUJldG9NT21UVkpmN2F6eFlWZWtiZlhrZUZGLUFpUTRlcmdWYnduUDB5MTNOY0xFQW5TSDZfaDNac0N5VVpuUE43WTJYeEZIZTBDbFRKdw?oc=5",
-          "theme": "monetary",
-          "time": "4h",
-          "publishedAt": "2026-11-10T20:54:25+00:00",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRkd5dVM2SE5CRm5SekFOb05vb2pFcmVzM05nUmNJUEFtSllsT2hOYUdrUDF1TGNVUDBVUXpQajlmQlZOMHlFOUlkZTBFV1hqZEktdDY4TmdfT256UVVMeDJEVloxSmFpR0phXzNhTUlqbGhzQnVoUnBXQmxsdlNnbndVM25uNm9yRFVFallsalZZQWRKOE54UkxSV3ZwUTF1Z0RneFJlREZHT014a2pUZldhVTlHS1FaMVo4?oc=5",
+          "theme": "trade",
+          "time": "1h",
+          "publishedAt": "2026-11-11T18:06:56+00:00",
           "impact": "high",
-          "source": "Bloomberg"
+          "source": "Reuters"
         },
         {
           "title": {
-            "fr": "Trump-appointed Fed member signals big interest rate hike as inflation runs hot",
-            "en": "Trump-appointed Fed member signals big interest rate hike as inflation runs hot"
+            "fr": "Analysis | Fed chair needs friends in Congress as inflation fight drags on",
+            "en": "Analysis | Fed chair needs friends in Congress as inflation fight drags on"
           },
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNX2ZKUlBkR0xZX0VQNjlOMXFjNkFCc1lEbUlTNVIzZHVteDU2R29hTTUzcWV6RzdmRjdYRWxhcXFhc0drZk1OMWFseld5dXRXNENrYVFWa0lCVEE3U3UyeUppRzVxQllYT21aY0pjZlVnVThaNzVGa0o2T2lZeDcweTUtZVNOa1lGN09uUnNyS0RMc3ZIWkN4eTVLV3Z4UkRkUjhBV2hyTllzdkNQM0g1RE1WR1Z2UDdZVFMw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTGJvak5XS2NGcmRWeTN4b19KUUV5XzRONGwzQWFTUmZvLU0tTGdIc1JrNFFFei1aX0VXTjZxejhCM0RWY0xHMDV1Qmcwd05kZDNiSWpVU0hubG9adzdQQ0tydVJaYmx0QkZMMW9rTU9uTjNTWUNSQ2loendqOXNzb1B0WGNQUlNNeXA3SmlWYkxMd09MQlBLQUF3Q2RMclVaOVM3UlJUZmZsQQ?oc=5",
           "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-11-11T01:02:36+00:00",
+          "time": "1h",
+          "publishedAt": "2026-11-11T18:00:00+00:00",
           "impact": "high",
           "source": "The Washington Post"
         },
         {
           "title": {
-            "fr": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-            "en": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight"
+            "fr": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+            "en": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes"
           },
-          "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTGliNnhINWdOb0RYdm54M2dIWGNuazZhZ01USkpfZzFKUHIwVTZBZ3RjNm5iUzRjcEFJcF94V01McUE5OUtWZFVJVi02b1VzR2RIbjY2QzNUb3I0V01nbzRhS2FEZ29nLUJQOEUzTGtJd3NwNkRlamVubHNuTkhadFVBV0h4QUhEd2xLSFB1eWpGX3VmQWNoOHozbUc?oc=5",
           "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-11-10T23:53:58+00:00",
+          "time": "6h",
+          "publishedAt": "2026-11-11T13:16:31+00:00",
           "impact": "high",
           "source": "CNBC"
         },
         {
           "title": {
-            "fr": "Fed officials open door to a quicker round of rate hikes as inflation worsens",
-            "en": "Fed officials open door to a quicker round of rate hikes as inflation worsens"
+            "fr": "As higher prices seep into broader economy, Fed officials consider faster hikes",
+            "en": "As higher prices seep into broader economy, Fed officials consider faster hikes"
           },
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTXo5UzFWVEh5WllQOHNxS1Q2cERxOEM0X1QyN1dPX0R4XzdfT1BpajYxdi0xOEltNWh6cE15Z2ZvZ2dXV0Vwb3NkbWZ1VGQ2M2tvVVVSaWd6clhPcS1XUEU2QXE3c0tlLUhPX0c2emRnWVpwOGtoajlnSS1VRXRNZXFaNEpyVlVwcFVIOUdkT18yQ2t6a1psZGVlOFpiZl90QnVhcmxqQzNxNnlNSEdXcWpjcUdzYUNJSi1hcnl6ZEpUSUU?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS3ZpVWRoY3RSb3kwZlFESnhfbnluX0stOC01UWxwckhXRTZVdkxXS3c0WnZFUW03QjFmVlRzUkc3YUpZeU15d29vYjQxdFpjLVpiR0FKMDY0em1paFlMaWxFaG81MFBpVnFjd2ZhdGs4NUpVbF9rTG52bVlKc09BT0ZqamxubGExMERXcHRqNko0VENJSTZkb3JWVG0?oc=5",
           "theme": "monetary",
-          "time": "2h",
-          "publishedAt": "2026-11-10T23:07:22+00:00",
-          "impact": "high",
-          "source": "Reuters"
-        },
-        {
-          "title": {
-            "fr": "Wall St ends lower as hot inflation data, Fed comments heighten rate worries",
-            "en": "Wall St ends lower as hot inflation data, Fed comments heighten rate worries"
-          },
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSEE5eGJXT1lYRVFJMUpWb2VCTENjZ2hBNWk0QWl5QVZBNmJ4TFBodVUtRVRzV0JubVE0NFJYRFlmYkpuc0tlbTBValFhV0ppcGdYNEZERXV4ZnhLZUJKTF9fUzZEeHM3cDRwdmlMdUVIUWlERHprb3lKakQ1S1gzSmI5LVZYWWx2cTBjVC1sVEc1OG8tOS0ta0k5VQ?oc=5",
-          "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-11-10T21:27:01+00:00",
-          "impact": "high",
-          "source": "Reuters"
-        },
-        {
-          "title": {
-            "fr": "Fed’s Bowman: Still Work to Do to Bring Inflation Closer to 2%",
-            "en": "Fed’s Bowman: Still Work to Do to Bring Inflation Closer to 2%"
-          },
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRnJkMVFRd1dWT055SVFSQmhqNEJqV0NMeFZadEVpcVB2bFZCRkJlay1rRTRpSDM4LWFCNV9hYkl3Y1BCMUFkRTlXVmtlcnFjeHdPZWctVGJvWXFlSU1qYjRWWi1MT1VydVY1YnFjMndrZS1sOGtibWV3QmlPZ0N1OFNpdnJTU2U0R3RhQjVxdUJ2cE9KVV9CSVRxaEczX2F6bjJEYk9HVUlfNE5R?oc=5",
-          "theme": "monetary",
-          "time": "4h",
-          "publishedAt": "2026-11-10T20:54:00+00:00",
+          "time": "6h",
+          "publishedAt": "2026-11-11T13:02:00+00:00",
           "impact": "medium",
-          "source": "WSJ"
+          "source": "AP News"
+        },
+        {
+          "title": {
+            "fr": "Tech lifts world stocks as CoreWeave revives AI trade",
+            "en": "Tech lifts world stocks as CoreWeave revives AI trade"
+          },
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxON2pqenNYSWUzSVBxc3U2RlhRT29TZGNJWFVMRVVQa0NkaDd6STY3VzhiZTB1b0RPcXB4c0ZEM1RwaGdkZUpkZHp2Q0ZCenBZZF90eTZFMnJvT2F4elJlZlMzOFFiaTVfUmxxNVcxNFZLOVpRY1ZHTjFITVpqVlJHdDJ6UXVUNXU4Z2NoOGZrVjB0QQ?oc=5",
+          "theme": "tech",
+          "time": "6h",
+          "publishedAt": "2026-11-11T12:55:04+00:00",
+          "impact": "medium",
+          "source": "Reuters"
         }
       ],
       "headlinesFr": [
         {
           "title": {
-            "fr": "A la Guadeloupe, les dérives de la « Sécu » examinées par la Cour des comptes : 1,2 milliard d’euros perdus, une désorganisation interne et des délais qui s’allongent",
-            "en": "A la Guadeloupe, les dérives de la « Sécu » examinées par la Cour des comptes : 1,2 milliard d’euros perdus, une désorganisation interne et des délais qui s’allongent"
+            "fr": "Le Science Media Centre de Londres, qui aide à vulgariser l’information scientifique, accusé d’être influencé par ses financeurs industriels",
+            "en": "Le Science Media Centre de Londres, qui aide à vulgariser l’information scientifique, accusé d’être influencé par ses financeurs industriels"
           },
-          "url": "https://www.lemonde.fr/outre-mer/article/2026/11/10/a-la-guadeloupe-les-derives-de-la-secu-examinees-par-la-cour-des-comptes-1-2-milliard-d-euros-perdus-une-desorganisation-interne-et-des-delais-qui-s-allongent_6808903_1840826.html",
-          "theme": "monetary",
-          "time": "5h",
-          "publishedAt": "2026-11-10T19:33:43+00:00",
-          "impact": "medium",
+          "url": "https://www.lemonde.fr/sciences/article/2026/11/11/le-science-media-centre-de-londres-qui-aide-a-vulgariser-l-information-scientifique-accuse-d-etre-influence-par-ses-financeurs-industriels_6809016_1650684.html",
+          "theme": "trade",
+          "time": "1h",
+          "publishedAt": "2026-11-11T18:15:07+00:00",
+          "impact": "low",
           "source": "Le Monde"
         },
         {
           "title": {
-            "fr": "« Les règles éthiques du fonds souverain norvégien ont deux limites : celle de la géopolitique et celle de la rentabilité »",
-            "en": "« Les règles éthiques du fonds souverain norvégien ont deux limites : celle de la géopolitique et celle de la rentabilité »"
+            "fr": "La Bourse de Paris poursuit son rebond avec ses valeurs liées à l'IA en tête, reste la question des hausses de taux aux Etats-Unis",
+            "en": "La Bourse de Paris poursuit son rebond avec ses valeurs liées à l'IA en tête, reste la question des hausses de taux aux Etats-Unis"
           },
-          "url": "https://www.lemonde.fr/idees/article/2026/11/10/les-regles-ethiques-du-fonds-souverain-norvegien-ont-deux-limites-celle-de-la-geopolitique-et-celle-de-la-rentabilite_6808870_3232.html",
-          "theme": "geopolitics",
-          "time": "9h",
-          "publishedAt": "2026-11-10T16:00:18+00:00",
-          "impact": "medium",
-          "source": "Le Monde"
-        },
-        {
-          "title": {
-            "fr": "L'inflation légèrement supérieure aux attentes aux Etats-Unis en octobre",
-            "en": "L'inflation légèrement supérieure aux attentes aux Etats-Unis en octobre"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcnVpQ2xheXNJQzFuOUdLTHB5eFRSUkNsdUFkX2FNZWhZRzlOcldad001Y2ZnclpSYzNHQThzWjFLcWhQMHBKVEZ1b0FsQWJSUVMwS2ZmQWJOVHZkLWJKak54aWxCSTVJb0Q4UzdmV1BtcEhvOTFrRFNFRUdxSlRWVUFwZVlnc0VsdFJTQWxrOEhKWEpEX1R3em45VE1RR3RVR2liVXhlSExJbGtpOXh6WDc3dDZrUThoQ1F2Z2tKVHgydGVXMzR4OG5LYTR0MDdJV09LeEh2X0JXQVE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQenpVWFlhYUlZVld3a0VRcGFiTUFOTFdNbTgwYjB2c3RRckJLZVg0Ymdfdk1PeDRTOGk4RFJIazZOdFB1OFk2VThjTGZBT29hSU5TRVUwampPcU5RSmxUOTZpaVo5aEVJUjAtbGdwc196ODc3cXJ0MnpyMU8zTmtLVE92OWlqYldSelFJc3h6dlJlczR5RHZxTWtFQS0tbmxJZlNqbVVib2tHU2g0aFhpeWdDSXFla2JBMVo2VEduZGVGQmJlaGdJS0VhZnNnR1dwbWJ6azJkRXBJMUxXWmlmRThaR1dQdzFwRXBVLXUteWdEZVNHX3JsTFNQc0tJMjFSclhVcHBDVGo4dTlCOHVsOHFWNUtVTmotTGREa0d5T3dkRGxWWWc?oc=5",
           "theme": "monetary",
           "time": "11h",
-          "publishedAt": "2026-11-10T13:32:24+00:00",
+          "publishedAt": "2026-11-11T08:25:49+00:00",
           "impact": "medium",
           "source": "Les Echos"
         },
         {
           "title": {
-            "fr": "Les taux américains grimpent et les actions reculent, les chiffres de l'inflation renforçant les perspectives",
-            "en": "Les taux américains grimpent et les actions reculent, les chiffres de l'inflation renforçant les perspectives"
+            "fr": "Immobilier : les transactions ralentissent sur fond de hausse des taux d’intérêt",
+            "en": "Immobilier : les transactions ralentissent sur fond de hausse des taux d’intérêt"
           },
-          "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxNOTJscjRrMmlsNjFicVd2ZlJrdWpLbDVGdVNsbkRuQzMwY2ROQ3JFaDJVMjFXTlpMV1JTZ1owVW5paDViemx6M3hBbFNaZkJPY2RmVjk5c1cya3RHTzYwYmJkVDZRcGlXMnFCQmFWa1FyOVRIZ2JMZFpqMFM3dEhKemNWNkRpUzBCbXdMaE5xcURfbmt3d2FpcC1wVjFXU3J3anNVajBCX0ZEZGdiUVlPLUpXaGRYRGNhbzVIdk40R2t2SGw3ejhZMGk0bkFhWEtzeHNoNXRRVVBDVjBpMmhubHBTYjM5bzRQNDdYb3M1QnRLdnEtaW9iSjBFdWZaa3RwS0pOZWtfczI4bWpLRUNuM0RPVXFVbm12dmowTVhrdEpYeVI0R2JfeW5wNklwRFJobFhPVDh1X1lId1QtTnpNU0VJZjR0ZlB6eHY5ckt4QmtoekZJ0gHaAkFVX3lxTE5oN3dJZXhaVGpTSXZxOG52WDMtejdGbVNGZ1pTZGVUZ1k5SHhSaVFLdkpqY3RoczU0LVg2WU1NYlduSU0xVEl1b2ZXN05tTklYckJvOTRzSHc4a0xrQ1NKVVV4R1p5T3owZEh2ZVZSVFhCRmQzTC1kSU1xUnU1ZVlQbUJFcnd5UHc3aE11ZHIxR25lYzJua19ZcGxfb0FHTzhyMkpwZHQxVzk5WHFDMjZjVUt3d2dqYWU4WmFCX25yWDNib195YnlmR180aTBmalNkXzM3WWFvZGdQenhnRmVwOWc5UEpMZWxFd1JtSnRvMEhLdmRlQ0JaMU1jMXJCLW44UVhza3k1ekFNWDZ3Y0oteVdxQ3BucWNGUFYxTUt6clRMbmphQVYtWGlkbzlqdGhpQ1loOWhVaS1tU0x1M0dMM3V2SUpoSm9OVHM4LWVhTXpGUGxsUHlEQVE?oc=5",
+          "url": "https://www.lemonde.fr/economie/article/2026/11/11/immobilier-les-transactions-ralentissent-sur-fond-de-hausse-des-taux-d-interet_6808945_3234.html",
           "theme": "monetary",
-          "time": "2h",
-          "publishedAt": "2026-11-10T22:57:41+00:00",
+          "time": "11h",
+          "publishedAt": "2026-11-11T08:00:07+00:00",
+          "impact": "low",
+          "source": "Le Monde"
+        },
+        {
+          "title": {
+            "fr": "Carburants : la libération des stocks n’est « pas à l’ordre du jour », temporise le ministère du Commerce",
+            "en": "Carburants : la libération des stocks n’est « pas à l’ordre du jour », temporise le ministère du Commerce"
+          },
+          "url": "https://www.latribune.fr/article/entreprises-finance/energie-environnement/13664239500429/carburants-la-liberation-des-stocks-n-est-pas-a-l-ordre-du-jour-temporise-le-ministere-du-commerce",
+          "theme": "trade",
+          "time": "5h",
+          "publishedAt": "2026-11-11T14:39:34+00:00",
           "impact": "medium",
+          "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "Goldman ajoute une nouvelle hausse des taux aux prévisions de la Fed après la publication de chiffres d'inflat",
+            "en": "Goldman ajoute une nouvelle hausse des taux aux prévisions de la Fed après la publication de chiffres d'inflat"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPaUJFdFltS0d3REoyYk45SzhXQzhZNkxneWpZQm5kOHh4NTdhZG5iZnA4ejZ2T1oyQzJKalJDU0hHVEdpcERhalZOeHZMSF8waWs0M2I3OF93ZXZ6bFFFdFFpcnhCV1VhejJhbHpCREFKTU5JSHVfb1FHN0lOR3RvZHUwanQwdEpOYzNMRWwxbkptTnpmNUR2anNla3hEanl1NmZkNkxicUQtV0lfeF9uQ1dVb29sY0phZGQ1a0dZQTYxVkZnbHlTdlRoa0ExVlZTQVNLQXRYU2tlMVVsaGFSQkh3Ql9LUFVWOUlBbmZXUU1WVTVFOW9HWGVodWY2dXNvLTVZQnQyR3ZRM21Nb3RlVVc5YmJFNG1hTDJPYzRVUVloOHJQWFRudGRn0gGqAkFVX3lxTE9pQkV0WW1LR3dESjJiTjlLOFdDOFk2TGd5allCbmQ4eHg1N2FkbmJmcDh6NnZPWjJDMkpqUkNTSEdUR2lwRGFqVk54dkxIXzBpazQzYjc4X3dldnpsUUV0UWlyeEJXVWF6MmFsekJEQUpNTklIdV9vUUc3SU5HdG9kdTBqdDB0Sk5jM0xFbDFuSm1OemY1RHZqc2VreERqeXU2ZmQ2TGJxRC1XSV94X25DV1Vvb2xjSmFkZDVrR1lBNjFWRmdseVN2VGhrQTFWVlNBU0tBdFhTa2UxVWxoYVJCSHdCX0tQVVY5SUFuZldRTVZVNUU5b0dYZWh1ZjZ1c28tNVlCdDJHdlEzbU1vdGVVVzliYkU0bWFMMk9jNFVRWWg4clBYVG50ZGc?oc=5",
+          "theme": "monetary",
+          "time": "7h",
+          "publishedAt": "2026-11-11T12:15:36+00:00",
+          "impact": "low",
           "source": "Boursorama"
         },
         {
           "title": {
-            "fr": "Wall Street termine en baisse après l'inflation",
-            "en": "Wall Street termine en baisse après l'inflation"
+            "fr": "1,2 million d'euros d'amende : la justice brésilienne sanctionne Meta après la présidentielle",
+            "en": "1,2 million d'euros d'amende : la justice brésilienne sanctionne Meta après la présidentielle"
           },
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVzctVGdhTWplWDVkSk55Z0dSUFhtemplZTE4YWc2Y0VxWVRMVXJwUC00aWQzSmtRSzZmUGlxOVN4T05OTkVSN2ROSGtTVVRvNUFfWkQ2S2FLN3c0U2Fjb3ZOMDd0ZVdfZmhqU3BMMWFsRjdJRmNyWjB5MnQ3QnBsUThSNWRSZzFON2w2M3dIT2N0ZXJ3U0JGUFA5WEFnaGUwZDJ2d1M4a19JamFvR2REMTNXSzVfYWNONndoTTc2YXRKek1xQ1lPcNIByAFBVV95cUxQVzctVGdhTWplWDVkSk55Z0dSUFhtemplZTE4YWc2Y0VxWVRMVXJwUC00aWQzSmtRSzZmUGlxOVN4T05OTkVSN2ROSGtTVVRvNUFfWkQ2S2FLN3c0U2Fjb3ZOMDd0ZVdfZmhqU3BMMWFsRjdJRmNyWjB5MnQ3QnBsUThSNWRSZzFON2w2M3dIT2N0ZXJ3U0JGUFA5WEFnaGUwZDJ2d1M4a19JamFvR2REMTNXSzVfYWNONndoTTc2YXRKek1xQ1lPcA?oc=5",
+          "url": "https://www.latribune.fr/article/tech/25629240805354/1-2-million-deuros-damende-la-justice-bresilienne-sanctionne-meta-apres-la-presidentielle",
+          "theme": "geopolitics",
+          "time": "8h",
+          "publishedAt": "2026-11-11T11:00:01+00:00",
+          "impact": "high",
+          "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "2,53 milliards d'euros de chiffre d'affaires en 2026 : comment Lamborghini booste ses revenus sans augmenter ses volumes",
+            "en": "2,53 milliards d'euros de chiffre d'affaires en 2026 : comment Lamborghini booste ses revenus sans augmenter ses volumes"
+          },
+          "url": "https://www.latribune.fr/article/transports/24345476120705/2-53-milliards-deuros-de-chiffre-daffaires-en-2026-comment-lamborghini-booste-ses-revenus-sans-augmenter-ses-volumes",
           "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-11-10T21:32:44+00:00",
+          "time": "11h",
+          "publishedAt": "2026-11-11T08:33:20+00:00",
+          "impact": "medium",
+          "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "L'Europe vue dans le vert, paris renforcés sur les taux de la Fed (actualisé)",
+            "en": "L'Europe vue dans le vert, paris renforcés sur les taux de la Fed (actualisé)"
+          },
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOd2NWOGZjdDgtRUR6NWUteXI0RDJtdUxTR215VGdDNnY1akZoSi1rUmFSTC0tMXRPbUFrQWpZamtVY2ZvdllQcmh2elN2NVdvYkx2LXlTZzMyZl9LNFM0UGkwRWRfR2FscDJJSE5PZUVhemF2UU9fNTBzTWpuSnJJc0pKdkVlQmdmMm92ek5pZ1did0ZIMndXeFpDaG1oemd4bkdLeVphaE8zazVJVzNsWWp3cVp3aTdGb0pYRndiS0stWGMydmE1TEVhcVpSeEtoaFROSXhtdm9PVGxIcnV0bmNUYm5zV0dTNHpDStIB7AFBVV95cUxOd2NWOGZjdDgtRUR6NWUteXI0RDJtdUxTR215VGdDNnY1akZoSi1rUmFSTC0tMXRPbUFrQWpZamtVY2ZvdllQcmh2elN2NVdvYkx2LXlTZzMyZl9LNFM0UGkwRWRfR2FscDJJSE5PZUVhemF2UU9fNTBzTWpuSnJJc0pKdkVlQmdmMm92ek5pZ1did0ZIMndXeFpDaG1oemd4bkdLeVphaE8zazVJVzNsWWp3cVp3aTdGb0pYRndiS0stWGMydmE1TEVhcVpSeEtoaFROSXhtdm9PVGxIcnV0bmNUYm5zV0dTNHpDSg?oc=5",
+          "theme": "monetary",
+          "time": "12h",
+          "publishedAt": "2026-11-11T07:44:25+00:00",
           "impact": "medium",
           "source": "Boursorama"
-        },
-        {
-          "title": {
-            "fr": "Wall Street termine en baisse alors que les chiffres élevés de l'inflation et les déclarations de la Fed raviv",
-            "en": "Wall Street termine en baisse alors que les chiffres élevés de l'inflation et les déclarations de la Fed raviv"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxOVU40ejloQjhIRTdtVm9TbFFyMnFVX2xRX011Q3FTUkhZYnA3a0wtNm50RVpmenJFaGxXTHd0aUFjNFBwM1BONnFpOGVNTlEwRTNOV0Q2YWtsTW95anNScTdoQ3JPWVVzZEZiU3lZTV9PMWlDeWpQWUtKVnZmMHIzQ1FRSWtBY2N1S2JfSk9TOFZyVVRZRDdmTE0wYVRjZ1oyX2xTVUlJMElIRTJxeDhSdDdWNjhjbGNuSm1zOUlveklkZ2hXeEk3U0FfSTFNbzA4OHB3emR1VkpSb0pzXzlkaVlUQnN2SThuT1hlZFR2aGh4ZDJVYlJfU1N6b3ViY3hzSXFSMktZSUdocENkUUFybzdkWlhlb3FEZ29QUWhpZHlsU1lKZkIyNmREc2gyTktSWHRUckxWNGlvUkJ2QU5CNlFnZUhGT0NtM1lUQm4tRjlTSmVYWWJRNU9B0gHaAkFVX3lxTE5VTjR6OWhCOEhFN21Wb1NsUXIycVVfbFFfTXVDcVNSSFlicDdrTC02bnRFWmZ6ckVobFdMd3RpQWM0UHAzUE42cWk4ZU1OUTBFM05XRDZha2xNb3lqc1JxN2hDck9ZVXNkRmJTeVlNX08xaUN5alBZS0pWdmYwcjNDUVFJa0FjY3VLYl9KT1M4VnJVVFlEN2ZMTTBhVGNnWjJfbFNVSUkwSUhFMnF4OFJ0N1Y2OGNsY25KbXM5SW96SWRnaFd4STdTQV9JMU1vMDg4cHd6ZHVWSlJvSnNfOWRpWVRCc3ZJOG5PWGVkVHZoaHhkMlViUl9TU3pvdWJjeHNJcVIyS1lJR2hwQ2RRQXJvN2RaWGVvcURnb1BRaGlkeWxTWUpmQjI2ZERzaDJOS1JYdFRyTFY0aW9SQnZBTkI2UWdlSEZPQ20zWVRCbi1GOVNKZVhZYlE1T0E?oc=5",
-          "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-11-10T21:27:37+00:00",
-          "impact": "medium",
-          "source": "Boursorama"
-        },
-        {
-          "title": {
-            "fr": "Aux Etats-Unis, l’inflation alimentaire continue d’éroder le pouvoir d’achat",
-            "en": "Aux Etats-Unis, l’inflation alimentaire continue d’éroder le pouvoir d’achat"
-          },
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNc0dtSmctMVhXTEtUdklsdnRpNk9SZGlVU25fTUxkNGtwSWQtZjJ3dFhyT0NwQUpuVElKcC1nWWZKelA4UG81NlR4ampsRTJZNi1GY3JTU09mME9yNzU1cGhZbl93Z2tnd3RpWWx6Y3ZOOTZoSGs0d20xRGRkU0MzQng0R1pDc3pYbDFOZ1p5QV9GZFpvVjJXQlpiTGRhXzg2QkU1bF91VFhrc1h2TmJicEdyZDlEUQ?oc=5",
-          "theme": "monetary",
-          "time": "9h",
-          "publishedAt": "2026-11-10T15:52:54+00:00",
-          "impact": "medium",
-          "source": "Le Temps"
-        },
-        {
-          "title": {
-            "fr": "Avec une inflation toujours élevée, la Fed n'a plus le choix que de relever ses taux",
-            "en": "Avec une inflation toujours élevée, la Fed n'a plus le choix que de relever ses taux"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPYkdxUnpGcEE5WVJtMFJ4UjBWSzY0WktpYWd1dVZxdno0TTlxb0pUUExSdG01d1AxdWVnQ3JkOE55djFnRFdMSHZzdkhzeGR6MXNIVE9mUVN4WmpFeWFVZW43LWhjLXpIUmhleEhBTmJVeWtDNHVJNkxaUko2YmNUeWlXLWFRQU9fT2Z1VnFzNEk3Z2R1QkFKTW9ncFZnd1ZoaDNWUUhSUjJ5bzVpdXd6c3VQZ3NCdzFQcXI3WjB5T1doMDRfcUR3RjlPY1piZnk5SC1JblRrZjhSMW8?oc=5",
-          "theme": "monetary",
-          "time": "10h",
-          "publishedAt": "2026-11-10T15:06:18+00:00",
-          "impact": "medium",
-          "source": "L'Echo"
         }
       ]
     },
@@ -1025,19 +1049,19 @@
           "manual": false
         },
         "exchange": {
-          "value": 6.67,
+          "value": 6.671,
           "unit": "CNY/USD",
-          "trend": "stable",
-          "period": "2026-11-10",
+          "trend": "up",
+          "period": "2026-11-11",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-11-10"
+          "periodEn": "2026-11-11"
         },
         "stockIndex": {
           "name": "SSE Composite",
-          "value": 3664,
+          "value": 3681,
           "trend": "up",
-          "change": 0.4,
+          "change": 0.54,
           "period": "2026-11-11",
           "periodEn": "2026-11-11"
         }
@@ -1113,105 +1137,105 @@
         ]
       },
       "summary": {
-        "fr": "L'économie chinoise progresse à un rythme de 4,5 % (2026 cible). L'inflation ressort à 0,7 % (oct. 2026) pour un taux directeur de 3,0 % (nov. 2026). SSE Composite gagne 0,4 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « technologie ».",
-        "en": "The Chinese economy is growing at 4.5% (2026 target). Inflation is 0.7% (Oct. 2026) against a policy rate of 3.0% (Nov. 2026). SSE Composite is up 0.4% on the session. Of the 8 stories retained today, 4 fall under technology."
+        "fr": "L'économie chinoise progresse à un rythme de 4,5 % (2026 cible). L'inflation ressort à 0,7 % (oct. 2026) pour un taux directeur de 3,0 % (nov. 2026). SSE Composite gagne 0,54 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 4 relèvent du thème « politique monétaire ».",
+        "en": "The Chinese economy is growing at 4.5% (2026 target). Inflation is 0.7% (Oct. 2026) against a policy rate of 3.0% (Nov. 2026). SSE Composite is up 0.54% on the session. Of the 8 stories retained today, 4 fall under monetary policy."
       },
       "headlines": [
         {
           "title": {
-            "fr": "Russian Push to Escape Dollar for Yuan Collapses Under Sanctions",
-            "en": "Russian Push to Escape Dollar for Yuan Collapses Under Sanctions"
+            "fr": "Rare earth yttrium soars 9-fold in a year amid China curbs",
+            "en": "Rare earth yttrium soars 9-fold in a year amid China curbs"
           },
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZm8xX0JMOVl3aFFhaTBKeFFsUXE0eXg4NDliVk9QNFc1bUVhZVpJVFpWSG9qMld5dVQ5WklsSDZsaDJ6ZVk3YzRiV05QODFjTWw4dTI0cm5SNmowNldtQmRqUEJaMkVxY210eGhtbnB4THBaRDJTXzZSZDJVWEVOcGZOZVYyQVFLbmp0QjZBWmFPcHdKT3JjQWhYY0YzaE1va3FtU0VNWWcyVVV2XzZMOUNjRWU3UQ?oc=5",
-          "theme": "monetary",
-          "time": "1h",
-          "publishedAt": "2026-11-11T00:00:00+00:00",
-          "impact": "high",
-          "source": "Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "China EV Makers See Yuan Rally Erode Profit as Exports Grow",
-            "en": "China EV Makers See Yuan Rally Erode Profit as Exports Grow"
-          },
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMUg2eVlBejlTdDFOSnlyalh6NUl4N05NcktQZkVNZUphY2pneDNmRUJabTFrQV9ZbWhpdnJWR0lONlZTc0pWY1BtakhZMWNDblhiSDRoLS1LRUczTDdYaEd3WUdsNGl6ZG9UcXMzeE5ZcWd5c285alFZNTVjc2VySmx4bFVMNHcwZUIwWUJ0ci0yLUxKQ3BDdFZrQ0Y5ZlBDNkNtY1UxUjRLVFg1OWpn?oc=5",
-          "theme": "monetary",
-          "time": "3h",
-          "publishedAt": "2026-11-10T22:00:00+00:00",
-          "impact": "high",
-          "source": "Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "China Delays Rare Earth Restrictions Under U.S. Trade Truce",
-            "en": "China Delays Rare Earth Restrictions Under U.S. Trade Truce"
-          },
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdDc2SFd4azVzR2tXdUF4b20wMGJpZjh0MWVHd25vLTU4Rm5NWklJY1FqTnVmN29UOVhEODVaSG5RNTczYW4zbTk0bGxJUnpRSVNrZERvVnFNX2dUQXBYX0x1ZVFhZnFJVmlVamZfNk4yYUFOUTZTWnNHRWdGd1Nkd1pKdmdCZ21PRnkzRVJmb2RUTnVIejBJVHZOWQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ1dIOVZpMG1ESFNIdW8ySFBwTTRibDlRV0VINnNpMTE2aFhsOHVXcXF4Sk9tSTlNaWI3c2tJUUgxNktpbFRDMVNwYjFNUWd1SzE3ajVlbzlPR1NVbmpVQjJHV2t4NGk5WWZGM1hJSUFlM2NLX2owSWotRXFmUGtYRFZodlJ5aGJGT2pveGdEV3ZkaTRHSWtTelVLTkVqTEpEVFlv?oc=5",
           "theme": "tech",
+          "time": "<1h",
+          "publishedAt": "2026-11-11T19:12:00+00:00",
+          "impact": "medium",
+          "source": "Nikkei Asia"
+        },
+        {
+          "title": {
+            "fr": "China-linked critical minerals price swings delay 1 in 4 energy-storage projects: report",
+            "en": "China-linked critical minerals price swings delay 1 in 4 energy-storage projects: report"
+          },
+          "url": "https://www.scmp.com/economy/global-economy/article/3374064/china-linked-critical-minerals-price-swings-delay-1-4-energy-storage-projects-report",
+          "theme": "tech",
+          "time": "7h",
+          "publishedAt": "2026-11-11T12:30:10+00:00",
+          "impact": "medium",
+          "source": "South China Morning Post"
+        },
+        {
+          "title": {
+            "fr": "US Signals Frustration at Slow Pace of Rare Earth Exports From China",
+            "en": "US Signals Frustration at Slow Pace of Rare Earth Exports From China"
+          },
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdk13bXE2Y0hmY2NQUnhvR2h1Qm1WTHhLa19ZRDVCcF92Y3BuWWxHZWp4ZV96V2ZpcFlvRzVPVmp4cXFfTUdmaUN6VWtPZTIwMHdiZkdvRncyRF90UlhmQ2xuQ2tMQTJFN1lPbHhHamJuN0RBWDBfVzZ4TWhTbFN3SGd2aw?oc=5",
+          "theme": "tech",
+          "time": "7h",
+          "publishedAt": "2026-11-11T12:00:01+00:00",
+          "impact": "medium",
+          "source": "Bloomberg"
+        },
+        {
+          "title": {
+            "fr": "China's central bank vows to step up policy support for the economy",
+            "en": "China's central bank vows to step up policy support for the economy"
+          },
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNncxU3NCdkhlZnJiY0psUGxYalpGa1FLS1BlNkpoYWpQSlg0T3A3VEFMN1RHbVBMaDROSUpSNFpoUktITUxBemhjSVNSR2dRWV9IamNIcHdfc3FxLTlQZnB4T3kzbTIxVnJpYUJWbnlKXzVSVGtJck92RDZHdlV0YnVreGlDWmI3OXU1RGo2LUdpZE9kd1kyVDdLQ0I0X3drN0V0UlFBbmxxbTBIY1JJ?oc=5",
+          "theme": "monetary",
           "time": "8h",
-          "publishedAt": "2026-11-10T16:59:00+00:00",
-          "impact": "medium",
-          "source": "WSJ"
+          "publishedAt": "2026-11-11T11:27:44+00:00",
+          "impact": "high",
+          "source": "Reuters"
         },
         {
           "title": {
-            "fr": "How Nvidia CEO’s troubles, US midterms may tighten China chip curbs: ‘adding fuel to fire’",
-            "en": "How Nvidia CEO’s troubles, US midterms may tighten China chip curbs: ‘adding fuel to fire’"
+            "fr": "Taxing the rich? China’s offshore trust crackdown nets US$24 billion",
+            "en": "Taxing the rich? China’s offshore trust crackdown nets US$24 billion"
           },
-          "url": "https://www.scmp.com/tech/big-tech/article/3373977/adding-fuel-fire-how-nvidia-ceos-troubles-us-midterms-may-tighten-china-chip-curbs",
-          "theme": "tech",
-          "time": "10h",
-          "publishedAt": "2026-11-10T14:30:22+00:00",
-          "impact": "medium",
-          "source": "South China Morning Post"
-        },
-        {
-          "title": {
-            "fr": "Activist Greta Thunberg arrives at UN climate talks in Turkey",
-            "en": "Activist Greta Thunberg arrives at UN climate talks in Turkey"
-          },
-          "url": "https://www.scmp.com/news/world/europe/article/3373987/activist-greta-thunberg-arrives-un-climate-talks-turkey",
-          "theme": "energy",
-          "time": "10h",
-          "publishedAt": "2026-11-10T14:25:48+00:00",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVi1NbnFnMjZ1T2NHU3VMYW9hXzJvZkwwaTlzbVJwTENHMUVNRjEwQmM1VFE3ZTh6NThTNk9vUDdRVFB4dXRRd1kzNVRWM0x1c2JCdHJBUThNbGh4NC04WTd5WWpWcGZob0pxREppdzRMWjlIZUpseEZ2cTVCd3hqY2o5bldJQlNzSEtUcEFrRmo0VDR3OXFRaTJHNWk4Q0R1SERBR0M4bjFWUFBEeDVLVXdheUxhdmlValJuc9IBvAFBVV95cUxPQnluTE5jSjk3amJCc1F3QThwbXBLLWUwUUVsdk5UM0s5STQ1VWdjUlZrQnhucU5Uc1lmbEZQOW93UWI2THhCVEtUajl0VnZRRGNHTHowT2xiXzdBazBHRGZuZTBmVS1Fdk5nTXNOV0VTTUNHOS1WNGw2TnlBNjhNS0l2VnBjbE1YRDViUHN3bkVBNVVUam1BOE5nYk5PbUdkUW5ZUFJsdGRnSDQ3c1hWSW9pWUxIUzlLemRqWQ?oc=5",
+          "theme": "monetary",
+          "time": "8h",
+          "publishedAt": "2026-11-11T11:00:54+00:00",
           "impact": "medium",
           "source": "South China Morning Post"
         },
         {
           "title": {
-            "fr": "Alibaba chip unit T-Head files Hong Kong IPO plan amid China’s AI self-sufficiency drive",
-            "en": "Alibaba chip unit T-Head files Hong Kong IPO plan amid China’s AI self-sufficiency drive"
+            "fr": "Amid Nvidia saga, T-Head IPO a crucial test for Alibaba – and China’s AI ambitions",
+            "en": "Amid Nvidia saga, T-Head IPO a crucial test for Alibaba – and China’s AI ambitions"
           },
-          "url": "https://www.scmp.com/business/companies/article/3373974/alibaba-chip-unit-t-head-files-hong-kong-ipo-plan-amid-chinas-ai-self-sufficiency-drive",
-          "theme": "tech",
-          "time": "12h",
-          "publishedAt": "2026-11-10T13:20:29+00:00",
+          "url": "https://www.scmp.com/tech/big-tech/article/3374090/amid-nvidia-saga-t-head-ipo-crucial-test-alibaba-and-chinas-ai-ambitions",
+          "theme": "monetary",
+          "time": "9h",
+          "publishedAt": "2026-11-11T10:31:02+00:00",
           "impact": "high",
           "source": "South China Morning Post"
         },
         {
           "title": {
-            "fr": "AI Boom Helps Fuel China Exports, Pushing Trade Surplus Above $1 Trillion",
-            "en": "AI Boom Helps Fuel China Exports, Pushing Trade Surplus Above $1 Trillion"
+            "fr": "China says offshore trust tax declarations top 160 billion yuan",
+            "en": "China says offshore trust tax declarations top 160 billion yuan"
           },
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBFZ3N2Um5fYmdDcnFhUVphOTNBeDhjR2J3Y2hsa1lSaXFvMzNRZndtbEtWbk5UUm9tNmdJdDQzV2txMFZfVzRsVjZ3bWszTi1pX2xIRXhPV2ZuOXRkVVRXVjY2dlVfRURQWlFxWm0zaEstMzJqRUdJRWtmMlpZQQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVkhhUzlEZjdTYmFHOUpBV0F1VFJ4YjN5X2w2V1Q4dmVzSkJySDEzeVZqZFZLQW1kT2xZMWRmQVlpTXhxTkR0U2lkTnJ4YnZmMHFHN25BaThOZVM3Y0VFZlp1aDJjQkFobzdIdDZac3o1S1UySVNOU0JGdHluVW8yVDdFcm1nZnI5NVQ2MkdubVo2UzBNZnVWT3NSdzVWRFdQaWswOUdOQ1FLQXZzLUhJc3JUM0JqaG91Nklr?oc=5",
+          "theme": "monetary",
+          "time": "9h",
+          "publishedAt": "2026-11-11T10:00:26+00:00",
+          "impact": "medium",
+          "source": "Reuters"
+        },
+        {
+          "title": {
+            "fr": "Why China’s $1 trillion trade surplus isn’t all good news for its economy",
+            "en": "Why China’s $1 trillion trade surplus isn’t all good news for its economy"
+          },
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZV95STRtMWZoX0pmMWxWa3JBcVZsRFdoNERTNU9uTTNFYjBRb2RYY2NFZ1R5cEtDV2R6Y0ZwMG42TVNGVk1NR3EzS0FLUmpJWDJoMVVNWXFSenU3Q2ZSYjJwb0taaVh2NmxkQ29jc2FSaGd2ZlpNYWk1Z0FGMUljSGo3UnBjVGEwYktIbjV6YndCcFNPU3EyM0VZMzRJendqUEpVVVdtdS02dUkxaXU5NG9uRnowUdIBuwFBVV95cUxPMHhkXzZLYjk1SDNuOF80RGNKdF9YVEVVd0hVb3lsbzRYU0NJRi1LRFUwN3ZWRjJ2V0o1Tldpa3Y0RTRYM0NjQ29TZEluNjZPRmxjMkg5UzVzUGxJMUhtdi1tSlBFS2J5Nnp6RlJKSjNVLWsycWhfSUtuWnBuOXpiODdKRE02TDF6T29NcWxxQ1RTX0F4Qm5JdXowUWZoN0JFRnN4SUNnN1lETFNHRmRLTWdlNTYydnNuSHRZ?oc=5",
           "theme": "trade",
-          "time": "13h",
-          "publishedAt": "2026-11-10T12:00:01+00:00",
+          "time": "11h",
+          "publishedAt": "2026-11-11T08:42:04+00:00",
           "impact": "high",
-          "source": "Bloomberg"
-        },
-        {
-          "title": {
-            "fr": "China’s Exports Jump on Strong AI Trade",
-            "en": "China’s Exports Jump on Strong AI Trade"
-          },
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNUpnOS05TlUxZ0NkbmNCQXBhWUNFRjFaYmotaEhDWUVIY1R3MlUycnA4c2UtRDgwNXNWR2tYbHNsN0NlVlpId25jQ05ycFJuWEN5aFozR1hDdlhyTkNSR0xDcl9JdVhZUkhndkdCajN3WkNiTjdhN1lFeGZCV05QWF9nWDZUUTg4ekNLMDFJTXo0cE8zTWJfbg?oc=5",
-          "theme": "tech",
-          "time": "15h",
-          "publishedAt": "2026-11-10T10:16:00+00:00",
-          "impact": "medium",
-          "source": "Caixin Global"
+          "source": "Al Jazeera"
         }
       ],
       "headlinesFr": [
@@ -1222,7 +1246,7 @@
           },
           "url": "https://www.rfi.fr/fr/podcasts/afrique-%C3%A9conomie/20261110-le-b%C3%A9nin-investit-dans-son-march%C3%A9-de-gros-pour-am%C3%A9liorer-la-cha%C3%AEne-logistique",
           "theme": "trade",
-          "time": "2h",
+          "time": "20h",
           "publishedAt": "2026-11-10T23:06:50+00:00",
           "impact": "low",
           "source": "RFI"
@@ -1234,22 +1258,10 @@
           },
           "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPMXNIbTBrOHJ1bzNISEs0S2N1aW9ZakpRSEJTZC1fRWFxMDhMSjYwNFpBNF9sb1QxeWdlNnJNRE9NOUtienk2RGlpaUJWMDhKUk1MTGx4Z2w2UUluMThUQ19hQmlkYnRFSW5WSktEOEVJYTBwaUkxYUpGemRCaEE1MS1KVnFvRm4xd2tsWVJSWTQ3RVZZOXkycVF1SlNuYm1Nc3l3WDhQdzVrNHpJM3hVY1QtTmhGbUVDeGdxejdMZjR2Q1VOM29GWThoUU02bmVGaXE0eVNvSXpsWmVDZzZSblM0Mk9UcHVJNUx2YUVyUXpGSFVJZ1Y3SVdDOFNZcVR2MTAzOG9HaDlhVUU2VFp1Mi1SWkFVSElTSXYyMHJTbHNITm9kRzEzMHI0ZXd2QQ?oc=5",
           "theme": "trade",
-          "time": "14h",
+          "time": "1j",
           "publishedAt": "2026-11-10T10:50:13+00:00",
           "impact": "medium",
           "source": "Libération"
-        },
-        {
-          "title": {
-            "fr": "Chine-L'IA soutient les exportations en octobre, l'excédent commercial passe les $1.000 mds",
-            "en": "Chine-L'IA soutient les exportations en octobre, l'excédent commercial passe les $1.000 mds"
-          },
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNVV9IdFpPbjVqTWpDMDY4dlRUVWJ6UDU2S0dsSjdVU3J6enNKT2pURTQwVUdoX2tYV2JPRnMtTGtkNzlrMXVPZXhoNzFMcWI5ODJwdEM0V2VtQzhnUU1JSUcwRkM2ODdUcHdjRFU5TmsxZTZyQnNnbTlhbE1RUnM1RGtVYnBtSm5SaVdUeTJkWmNacmRuV2xDZ2daVFItVVkxQ3c1RDNTT0ljT0l3czUzTEpSbm41YVMyaFJINV9oU25CREFUWUFVWW4tWmZIRWZoeTlhY0h4ZS1KdUxnUU9FdHRIRjVJWV9sWGE4aTVicDdVaWloVURSM0R3eS1lRTNx0gGAAkFVX3lxTE1VX0h0Wk9uNWpNakMwNjh2VFRVYnpQNTZLR2xKN1VTcnp6c0pPalRFNDBVR2hfa1hXYk9Gcy1Ma2Q3OWsxdU9leGg3MUxxYjk4MnB0QzRXZW1DOGdRTUlJRzBGQzY4N1Rwd2NEVTlOazFlNnJCc2dtOWFsTVFSczVEa1VicG1KblJpV1R5MmRaY1pyZG5XbENnZ1pUUi1VWTFDdzVEM1NPSWNPSXdzNTNMSlJubjVhUzJoUkg1X2hTbkJEQVRZQVVZbi1aZkhFZmh5OWFjSHhlLUp1TGdRT0V0dEhGNUlZX2xYYThpNWJwN1VpaWhVRFIzRHd5LWVFM3E?oc=5",
-          "theme": "trade",
-          "time": "21h",
-          "publishedAt": "2026-11-10T03:37:04+00:00",
-          "impact": "high",
-          "source": "Boursorama"
         },
         {
           "title": {
@@ -1258,7 +1270,7 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZ1UyVzhHcy1IMkZsd2lPMzhXUURpTmxfUlFyTXFEbGdHNm5ub1BVb1VHWFVhUjVhYkNfeDVQQWFnWUtPS05BQTBJRUtRWHpQZE1YT3dIMkxHSXlLV3R4RHNaS3ZIai1xNzZlNDVucEwydFRVZ2R0VkdvMHNOMDlGaUpmYmxFQWNkNVNnbUJBUmdNMkQ0aDZiaWx1MW1DOEFxVGlnTVdFX25ya2NvOVRVQkZXYjN6Rlk4YXdGM3FYdmVTY1lCTTRGTi0tUnVYZWlBV3BfamV2Q3lfUDZ5bmxNUklFWHlMLTZEemhQN9IB7AFBVV95cUxOZ1UyVzhHcy1IMkZsd2lPMzhXUURpTmxfUlFyTXFEbGdHNm5ub1BVb1VHWFVhUjVhYkNfeDVQQWFnWUtPS05BQTBJRUtRWHpQZE1YT3dIMkxHSXlLV3R4RHNaS3ZIai1xNzZlNDVucEwydFRVZ2R0VkdvMHNOMDlGaUpmYmxFQWNkNVNnbUJBUmdNMkQ0aDZiaWx1MW1DOEFxVGlnTVdFX25ya2NvOVRVQkZXYjN6Rlk4YXdGM3FYdmVTY1lCTTRGTi0tUnVYZWlBV3BfamV2Q3lfUDZ5bmxNUklFWHlMLTZEemhQNw?oc=5",
           "theme": "trade",
-          "time": "22h",
+          "time": "1j",
           "publishedAt": "2026-11-10T02:43:59+00:00",
           "impact": "low",
           "source": "Boursorama"
@@ -1270,7 +1282,7 @@
           },
           "url": "https://www.rfi.fr/fr/%C3%A9conomie/20261107-en-europe-la-contestation-contre-la-construction-de-centres-de-donn%C3%A9es-s-amplifie",
           "theme": "tech",
-          "time": "3j",
+          "time": "4j",
           "publishedAt": "2026-11-07T03:52:29+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1282,7 +1294,7 @@
           },
           "url": "https://www.rfi.fr/fr/%C3%A9conomie/20261106-fausses-alertes-%C3%A0-la-bombe-l-europe-vis%C3%A9e-par-une-s%C3%A9rie-de-menaces-une-enqu%C3%AAte-en-cours",
           "theme": "geopolitics",
-          "time": "4j",
+          "time": "5j",
           "publishedAt": "2026-11-06T11:43:17+00:00",
           "impact": "medium",
           "source": "RFI"
@@ -1335,19 +1347,19 @@
           "manual": false
         },
         "exchange": {
-          "value": 93.93,
+          "value": 93.69,
           "unit": "INR/USD",
-          "trend": "stable",
-          "period": "2026-11-10",
+          "trend": "down",
+          "period": "2026-11-11",
           "source": "Frankfurter/BCE",
           "manual": false,
-          "periodEn": "2026-11-10"
+          "periodEn": "2026-11-11"
         },
         "stockIndex": {
           "name": "SENSEX",
-          "value": 81107,
-          "trend": "stable",
-          "change": 0.1,
+          "value": 81879,
+          "trend": "up",
+          "change": 0.95,
           "period": "2026-11-11",
           "periodEn": "2026-11-11"
         }
@@ -1423,105 +1435,105 @@
         ]
       },
       "summary": {
-        "fr": "L'économie indienne progresse à un rythme de 7,5 % (FY26F). L'inflation ressort à 5,6 % (sept. 2026) pour un taux directeur de 5,5 % (oct. 2026). SENSEX gagne 0,1 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « politique monétaire ».",
-        "en": "The Indian economy is growing at 7.5% (FY26F). Inflation is 5.6% (Sep. 2026) against a policy rate of 5.5% (Oct. 2026). SENSEX is up 0.1% on the session. Of the 8 stories retained today, 5 fall under monetary policy."
+        "fr": "L'économie indienne progresse à un rythme de 7,5 % (FY26F). L'inflation ressort à 5,6 % (sept. 2026) pour un taux directeur de 5,5 % (oct. 2026). SENSEX gagne 0,95 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 6 relèvent du thème « politique monétaire ».",
+        "en": "The Indian economy is growing at 7.5% (FY26F). Inflation is 5.6% (Sep. 2026) against a policy rate of 5.5% (Oct. 2026). SENSEX is up 0.95% on the session. Of the 8 stories retained today, 6 fall under monetary policy."
       },
       "headlines": [
         {
           "title": {
-            "fr": "Higher input costs drag MRF Q2 net profit down 23%",
-            "en": "Higher input costs drag MRF Q2 net profit down 23%"
+            "fr": "Confident of trade pact ahead of PM Modi's trip: Canada envoy",
+            "en": "Confident of trade pact ahead of PM Modi's trip: Canada envoy"
           },
-          "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/higher-input-costs-drag-mrf-q2-net-profit-down-23/articleshow/135722166.cms",
-          "theme": "monetary",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcHNWSXBxMUhiemV0TkpMMkJTYnZUTUFiT3hWUGw4cHE4X0lpbmloaWd3ejQwSmw4Q04tYmVwNEJma0M4eDZZelliRVpXN1dOVkFUbjZWWDBBeUx1Y05JU3pHUGZuRlEzOHJkRnIxSGtFRnVVWTNpMVJqek84Wlp1ZkxmOFJEUlNrTFUtQVplQUtVX1kyUkZHT2Rtd3hIMmVLSzBqY1pnQ3JwRFVEaWhuN0RKNjk5Nk90SkF4c0pRTURyXzBwbmfSAcsBQVVfeXFMUGhZMnc0Z3g5TURYVGdUb2NCVm5TeVJLUkdkVnpsQ3BQa2tXc09TRlRsWUEzU3RRM3BXelNJM1FUVFNqRE9pXzNKamd0YVlwNmpiQ1M3WkRmemU2NUM5TUtRUml3NW40RHJKMVpRZF9jWXdxWmFxZmlyRnN6REliQmcyQ3B0QU90ZEEtS1NJTlAyOExkNENFc1VSaGMyZERweUdVWk1IQThNbjBhalRBX1VzN203bVV6TS01SVlNai1KemZQMmlueGFvM0k?oc=5",
+          "theme": "trade",
           "time": "<1h",
-          "publishedAt": "2026-11-11T01:00:09+00:00",
+          "publishedAt": "2026-11-11T19:14:00+00:00",
           "impact": "medium",
-          "source": "Economic Times"
+          "source": "The Times of India"
         },
         {
           "title": {
-            "fr": "Global Market Today: Asian stocks rise on CoreWeave results, bonds drop",
-            "en": "Global Market Today: Asian stocks rise on CoreWeave results, bonds drop"
+            "fr": "India, Canada begin sixth round of trade talks",
+            "en": "India, Canada begin sixth round of trade talks"
           },
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-rise-on-coreweave-results-bonds-drop/articleshow/135721939.cms",
-          "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-11-11T00:53:06+00:00",
-          "impact": "medium",
-          "source": "Economic Times"
-        },
-        {
-          "title": {
-            "fr": "Anthropic targets $90 billion IPO at $1.4 trillion valuation",
-            "en": "Anthropic targets $90 billion IPO at $1.4 trillion valuation"
-          },
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/anthropic-targets-90-billion-ipo-at-1-4-trillion-valuation/articleshow/135721872.cms",
-          "theme": "monetary",
-          "time": "<1h",
-          "publishedAt": "2026-11-11T00:27:03+00:00",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOU2ZnWkVaZUd4M3hreXJUcVJra2RrMU1lT1dxbGtkcjBuTUhaX19ITzY2cEp2aHdibUtHMFZua1YyZ3lORGJ0QjBpdmx3TzdtVTZ2bGMwcnVrZzNmckZBQWFCMmlrU1BGNkluUEw2UEU3NGJxby10YVM5emRYdFJPN0NNQ1ZaREY2VVFqbUZqa0UwOXlmMUV6cEVjWWh5MFd1S21POVhNNk1YZkIwcDFUOTVNVWp5a2lVeno0MmxIUXBTZlRoNzhxejlVb1p5anZU0gHKAUFVX3lxTE1xSzNDckF3SDNiaGFiWDZtaHdlcUJnWFdCaVRsQWx0U3cyVTZoTkhrUXItRjhoeWRfY3djTUZFSk5kS3FEenR0a2J3Z3NVWkdKeUw0TzJUNVNFVEt0WmMtMy11YjB3bVB0MFY3aURLZEZ0RHQxeEhWaWdRbzFQYU1rZ3Vzd0xNM015WkNwRndKcWNJejloejNndmlSM3RmUTNHTzRQZWJ5Vy1NMWR0NEZMUWJuOEJuUFlZeHJFV1N6X2x2YXlvbG9sRWc?oc=5",
+          "theme": "trade",
+          "time": "1h",
+          "publishedAt": "2026-11-11T18:47:01+00:00",
           "impact": "high",
           "source": "Economic Times"
         },
         {
           "title": {
-            "fr": "India-US trade deal talks on track despite Republican Party’s loss in US midterm polls, says official",
-            "en": "India-US trade deal talks on track despite Republican Party’s loss in US midterm polls, says official"
+            "fr": "Anthropic’s IPO is said to be multiple times oversubscribed",
+            "en": "Anthropic’s IPO is said to be multiple times oversubscribed"
           },
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPejFLcHYtTEdPbjlEMFd6ZW1xc0JRSGx4UFdWOTJPODd5V1ZnS2ZNdW1CTzhHVGowV3NnQmtoZC10QTRfTnVyZUlZMEdoUjJjaWlmVkRDbVlLMFB3cjh1MTFkazBXVHNsOVhjcV9OQTUzTEtGMTUyQTluVkdSY0JEaFg3dnZxX09rUHNkQk41REw5WDNwamRidFlTTkdVX2VxcVJfb3k5MXpqaTV4bjk5RkdPMGZSYzhrUmNqUkNnSkdjX3NLYlFGdUd4eXdxVmhDOU1pQTJDYWRLTEZDaTBJZG16WkEyWGQxTHRTRUtn0gHzAUFVX3lxTE95Z0ZzRWxYa2lRM3VfMEY4ZU1BLU9ZSzlQdF9BLXoyRjZseG9uSVFJMlZhcGxyY0g3RlR2R1hWVXdwV2hiUEpiMHc3X1R4dEpILTNXTnJXVkhUcEpuZkhKODFmWTVYR3BpUDFWTGNZbVZhR2ZXTVBfc2xuNXNMYUdjWGt0RUdGRDFLa1pENk5EdVk3ZjRCNUpTY2wtckJLWjJLWlFKU3J3LXJobzZHY2l0Vm0yc1JaWWgzVUFISDUxbl9YQksyVzhlcC1feENlOGJiRGppS1E2NTB5N3ZXR21EZUpvTVdpNkhFQTBqLVdaSjI1bw?oc=5",
-          "theme": "trade",
-          "time": "1h",
-          "publishedAt": "2026-11-10T23:32:30+00:00",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/anthropics-ipo-is-said-to-be-multiple-times-oversubscribed/articleshow/135743507.cms",
+          "theme": "monetary",
+          "time": "3h",
+          "publishedAt": "2026-11-11T16:25:21+00:00",
+          "impact": "medium",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "RBI consolidates money transfer rules, allows ₹50,000 cash NEFT transfers",
+            "en": "RBI consolidates money transfer rules, allows ₹50,000 cash NEFT transfers"
+          },
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZG9rNi1jUk9OVGJqUGRHZEstX0tIN05ocS1QOG52MjRsUkxaV09fWHFCZXEtYTBWOVZrV0l0Z2VudUFiQnZxRjVaRDBtTWluYVI3bG0ybXNZNVhoTXJTQnRJQzVHNDAwNHRaLWlUTmR6OUpWeFkzcUhRU0p6OEMzQmhmallNZVlVTHFJeWl6REMybjhrb2I3clNfcjQ5RVM5c1V5eVRjNkRkenZTZTZQcTByZUVpLVBQalNpR3hBRW05RzAxZXBBRFlqLTNOSjB6Y3U5SXhGdDFLUdIB3wFBVV95cUxNQjRldURNbkNxU0pxS0xrWWdrdVROUk9VOGxRSFlHcTdXa0h1V1ZmZWlIbERFcEJKZkY3bXRmNFpSS2R3TjV0S0dMaWhyTUdjQm5xLWltZ0pKamF0bTI3cHZsR2d3R2xRc0NPd0FCUWY1d2tCWGhvUmNScHFqejN5NWVtTDcwcGtZdGpNYWxRZjNIeW1EMmJwdzE1b2JvdDdZRnp5ZGR2QkdvclFSTVdDS1EwNW8taUxzWmN4enZzd2JPOXZoT1k0cFpaWUZEZWpDWFFUYlJCUC1SalFwY2FF?oc=5",
+          "theme": "monetary",
+          "time": "3h",
+          "publishedAt": "2026-11-11T16:11:21+00:00",
+          "impact": "low",
+          "source": "Business Standard"
+        },
+        {
+          "title": {
+            "fr": "India’s Market Rally Needs The Rupee’s Blessing",
+            "en": "India’s Market Rally Needs The Rupee’s Blessing"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOUTRKcUdtMTZ1cHFuX2VGMmVlVDlXal82TTE0QmNKZ1FqandwTEZmMFhTZ3V4N0FHcXRTejRXeldVSzBZLWxfSGl0ejdFQzRjLXlWMEdqWTFnQ0VtYndyeGM3a0Q1bHQ0eTdseUtMRC1TRkktSzRIMVJONjZ5VW0ydjlnTGhaTjVmRFFMekdEMWM4WkR3RWk0bmRmRTE2Y1Fzelk4cEpfbUV3LWZmbGxpQXlCYW5HZW5FUW1tUDd4X29fcnB3d0dFMTJuTXlwU001RHoxODVsdGlMVFJUYVBFb091ZWNPWndZaHhxZUhCNmZWeVByS0pYVy01V3VCLUQwR1A3Sm5xSEFZdFhEUEhHMVNzUFlGZG4yMERvcmdkbVV4M0hiM2kwR1Q0ONIB0wFBVV95cUxNMGpReGNLRzViMC1DZTVpLWNfZWlvRHlOWUYtYVZlZE9EQTdiU0Y4ekVDXzRNWXBfRmFlNDNNLXdzZ20xRy1RVjFEcDBCTlFheG1fdjBsRjRibWlZaWpoaUJHZnVET1hXU3lLQ1VuQkJwcGtlcDRPakJRNUVCMlpKeDJtZExKNVB4YnQzV1JwYk0wQ1FtUmxqUW93RElRWjh4cHpnb3ZDWFNXZlpkUmozVlp1azJ3ZDJhdk1WU0hFd1NIeDd1QmM0T2NlT0JVbXJyc25V?oc=5",
+          "theme": "monetary",
+          "time": "4h",
+          "publishedAt": "2026-11-11T15:16:00+00:00",
+          "impact": "medium",
+          "source": "The Times of India"
+        },
+        {
+          "title": {
+            "fr": "Market Trading Guide: Astra Microwave among 3 stock recommendations for Thursday",
+            "en": "Market Trading Guide: Astra Microwave among 3 stock recommendations for Thursday"
+          },
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-astra-microwave-among-3-stock-recommendations-for-thursday/slideshow/135742034.cms",
+          "theme": "monetary",
+          "time": "4h",
+          "publishedAt": "2026-11-11T15:14:07+00:00",
+          "impact": "low",
+          "source": "Economic Times"
+        },
+        {
+          "title": {
+            "fr": "India's Q2 GDP growth likely at 7.8%, above RBI estimate of 7.2%: SBI Research",
+            "en": "India's Q2 GDP growth likely at 7.8%, above RBI estimate of 7.2%: SBI Research"
+          },
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZkYwMUF4WFYySEgyVUp1NXphandMQ1NYY1c1cEpmY2cyLWhzcVZCaXRZeGRoOU1sWnpHbGY0Ui1YWjJnXzR1UnpIQkxibHJlVG5PMTFxX0l4U1R2bEdFX3RKZi1YS09uSkk2ZE96SGFzYURZRWZHUTNweW5mdXhhWHVVN3lTbDJIbGVpaWxsdUd3aEJBNS1UOEQyQTdTR09GRWJVcGhRMWVGSDF5Z18zc3l0c1o4YVJyaG5kZjdlSjY5bk1rRGlVRlJVV010U2FnM1RUaU5R0gHbAUFVX3lxTE9rdnhXMXlMeUgxSWtacFRGZGk1aXpyYkRHM3NudlVSWGpSRTBBQmwxcmdqZk5zWGQ1dW1oY19ZTmpXT1RKaEVtMWw4aXRkRk1NMVFLRVlNWk8yZm5waHZMYVltY044Tjg5dWxOVDhSblV3cWNFM3VMSGZIczYydDI5TlZGZnhyYWNpdk54YThaX2NPdHNOYmJ4QTYwZWNZbDMyT0xaQmZ1Q2xrSV9iLVNHN3g1a0lDeHE1cVBEU1F5VFFBdEgzaW5TX2ZLUW9ZY3V6TUVvcUl3XzJvRQ?oc=5",
+          "theme": "monetary",
+          "time": "4h",
+          "publishedAt": "2026-11-11T15:12:56+00:00",
           "impact": "high",
           "source": "Moneycontrol"
         },
         {
           "title": {
-            "fr": "India-US trade deal talks continue as US team visits Delhi",
-            "en": "India-US trade deal talks continue as US team visits Delhi"
+            "fr": "Rupee outperforms most Asian peers as foreign inflows boost sentiment",
+            "en": "Rupee outperforms most Asian peers as foreign inflows boost sentiment"
           },
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTFQtOGJFdTBEd3VpYVViNXo1Z0xCMXhScF93TThVWW5VTHNXU0xoVk4xZEkxS0pmRGtUazR5RHNWRk0yOHEyYjAwbmFOMFRpaUtONGNTNW1LNXEtVVNwc213MUlEOGU2VWZMdjNqVUlrSEY3ajJsV1pxa0VkZ2I0eUtoazNPQURUWWFfS1daa29INW5rSTE5YVM3ODlwSDBjTmsxR1BucFlabHN2ZUlpbF9oMA?oc=5",
-          "theme": "trade",
-          "time": "7h",
-          "publishedAt": "2026-11-10T18:00:58+00:00",
-          "impact": "high",
-          "source": "Mint"
-        },
-        {
-          "title": {
-            "fr": "Customs duty hike takes the shine off organised gold trade; smuggling rises",
-            "en": "Customs duty hike takes the shine off organised gold trade; smuggling rises"
-          },
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVjJyamFsblFvRERKdURubzY5VUlhbmFUY2ZWTktTM056ZTBkMkt2RDEtMk14RGVqRmZETmJKYUE4S1hGTU1zR0ZPZF9qOVYxZ1lIVkp4NnJJXzBjeklBc2Y3UVg5aVhWOGdHT3g5TXQ5SFZZZ2ktVld6UWVqeWdfY2l1UzhBcmZ4dTZXbjZrYzMtSzBNQUVVSVZUTUVVUENqcXFQZEVXWEtjNW8wNkg3R21zWU5QWGpBT3FWT0lrV3d2ZkJqbTZvNEg1M1Z5YlRIODBhYXFYNXXSAd4BQVVfeXFMUFY2My1wX2h0OEQtWGk5TmcweGprYjBodlZpbDhfcThJQ3c1MTBCQXJVcGxyNUp0MHBPZDJzOUVEdmRSMUlrdTZmY0FXOGs4WDJIYjdxRk5sTmpfYmVMU0FYdGlHWTlFOGRzUV96cHYxaXVJWXlZYmZKd1N6cDhwOG05aER0YnEwWkQyaTNCUW9YMmNpSlZoQ1pEQTVTRU9uN3NDblVJNnJXVkhHT21VQlBzZDFpZmJJYk5yakdRR3Jsd041YU4yUW1xV1dVZjJZNGJNRjZ4MjZ5bXlUV05B?oc=5",
-          "theme": "trade",
-          "time": "8h",
-          "publishedAt": "2026-11-10T16:47:36+00:00",
-          "impact": "medium",
-          "source": "Business Standard"
-        },
-        {
-          "title": {
-            "fr": "Urban youth unemployment hits six-quarter high in Q2; Kerala tops states",
-            "en": "Urban youth unemployment hits six-quarter high in Q2; Kerala tops states"
-          },
-          "url": "https://www.business-standard.com/economy/news/urban-youth-unemployment-hits-six-quarter-high-in-q2-kerala-tops-states-126111000953_1.html",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOUDBySXlwWEdHelREVS1YYlgzM0RXQUhzdjQ4X2gyUnIwaTNHTjdjWGFSTE9zYnpYdU9HNE1nbFBVTGtHeUk1cFVLZXNVbXpkRHNxSEhnRHRDVmpCQjI3czNkU1FIYmxVbjFiRDVhQWdMSlR6dzk5bndwVHR4MTJvQ3hVc0p3VVJER0RBOTFCWG5RbUlCSVJPRk90ZGdfUGUxWGdlZ3drZmZtaTZOdkJ2aU1iYVB0SEE2QVlCd3RhX2IwdXE3YkdIcmdCa0dnd3FnWFHSAdcBQVVfeXFMTkoyaTU3S3BwV0xPNndTRVc1ZUNuVmFuam1zLTl6bGY2N1pEbGo4VEJzMTFMdnh1dWNoeE13amx0ZElPaTU4VHZwdkwxbG1UWUY0a3RsamxjYk1yd2pGN2R0MVlqVFEtRUljQWNYTXhaek9xeXlub0FFc2dkTUd4Mkw4UnE2Tkl2ZTQxbGVDQ3ctcXRiUjFVX2VuU3RheVJqdUo2eFpwWTlNWkxGT2c4VUxWQUpsbmI1TE1YbUE4b2hVZ3FEWW5FekxpU2pMVkh3Si0yMUNzRmM?oc=5",
           "theme": "monetary",
-          "time": "9h",
-          "publishedAt": "2026-11-10T16:00:19+00:00",
-          "impact": "high",
+          "time": "5h",
+          "publishedAt": "2026-11-11T14:07:51+00:00",
+          "impact": "low",
           "source": "Business Standard"
-        },
-        {
-          "title": {
-            "fr": "Brent near $90 offers relief on fiscal, inflation fronts",
-            "en": "Brent near $90 offers relief on fiscal, inflation fronts"
-          },
-          "url": "https://www.livemint.com/economy/brent-near-90-offers-relief-on-fiscal-inflation-fronts-11794317269583.html",
-          "theme": "monetary",
-          "time": "10h",
-          "publishedAt": "2026-11-10T14:40:12+00:00",
-          "impact": "high",
-          "source": "Mint"
         }
       ],
       "headlinesFr": [
@@ -1532,20 +1544,20 @@
           },
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQa0h1YnZDNWhfZHNmaE9GcXJRazlpbGllZjFSRWJPTzIxOFdZaldVZ05RQ1Z0V0lOMDUyV3YxMkJ2Q1J4YTRCYUg5VVFSaWxqX0Rsc0dnWi0zVFY2a3liWE40eDBCdGpXekZiZnJuZVlyLTlVT0ptUVIwY2RMU1NYTzIzamZlTXNXZTM4S2RtVjNvNDJicVpsbVZqUk84bnBGczJVSmtxbWNsTG53dUhxdEVPMUhJRlJiT1hpRmk5cFI1aWVYX2I2ODY2MjJ1RGxSblhnOXhmQ1hFMWtFOWdkZS05Vl81S2NVZkFFc2RZZHE3QUxIeThiMXln?oc=5",
           "theme": "tech",
-          "time": "14h",
+          "time": "1j",
           "publishedAt": "2026-11-10T10:45:05+00:00",
           "impact": "high",
           "source": "Le Monde"
         },
         {
           "title": {
-            "fr": "Le bénéfice de 3M Inde recule en raison de la dépréciation de la roupie et de la hausse des coûts des intrants",
-            "en": "Le bénéfice de 3M Inde recule en raison de la dépréciation de la roupie et de la hausse des coûts des intrants"
+            "fr": "Pernod Ricard trébuche, les droits de douane font leur retour",
+            "en": "Pernod Ricard trébuche, les droits de douane font leur retour"
           },
-          "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOTXJDQXBRWGdEd1ljV3JSUlhxbjB5TUFWWU8yV2psblFhRFk1VG9UcU5sTjMyWEEteGJBVllPcnlpU2ZsU19tSDF5bHQtc1dwMkU2SG9kTHFMbUVkMGt2TDFaLXZkcy13MzdrbFlLOTg3M2pLT0VLN3BEaWRaUXpfV3hCYkxpYjh4d0Y2ZzI1Z2I4YWlyakptZ0hhNzgtbWw1LUxqZjk3UXJXSHc3V2JKVDRCMXAzVzBqVzFEYmlxZ2lRcXNOUDN2OFN1MEg0UFkwVTJzUURpZGl4bEFnV053LWJ0TklFMEJzX0txd3BDWWQ0Z1prYzR1VUdrWkxVcUx4ajBsYlBrNXpJUTZkVGRFWFhRcndJdXVGLWZvMHNJVDdHZl8tZ1FwQTFEUnhXT2oxaGdwWEIyQlZNeHNUeXh3TVRhVU5qSlnSAccCQVVfeXFMTk1yQ0FwUVhnRHdZY1dyUlJYcW4weU1BVllPMldqbG5RYURZNVRvVHFObE4zMlhBLXhiQVZZT3J5aVNmbFNfbUgxeWx0LXNXcDJFNkhvZExxTG1FZDBrdkwxWi12ZHMtdzM3a2xZSzk4NzNqS09FSzdwRGlkWlF6X1d4QmJMaWI4eHdGNmcyNWdiOGFpcmpKbWdIYTc4LW1sNS1MamY5N1FyV0h3N1diSlQ0QjFwM1cwalcxRGJpcWdpUXFzTlAzdjhTdTBINFBZMFUyc1FEaWRpeGxBZ1dOdy1idE5JRTBCc19LcXdwQ1lkNGdaa2M0dVVHa1pMVXFMeGowbGJQazV6SVE2ZFRkRVhYUXJ3SXV1Ri1mbzBzSVQ3R2ZfLWdRcEExRFJ4V09qMWhncFhCMkJWTXhzVHl4d01UYVVOakpZ?oc=5",
-          "theme": "monetary",
-          "time": "4j",
-          "publishedAt": "2026-11-06T07:55:21+00:00",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVlNrdUFidWFVVExtRHByMDZKWktIeVBwc0RzZ1FLU0h0aHU2SzJuTWVfTnRkV3hTNlBmVG4zbkZGTlp5djUwQlhiUkhNNERKa2N1R3BUVmZrUXFrRlg3WGwwdjRXQ1pxQTRWSGlLYXdRekU1elRWTUZTYzF3VlhhSmFjelNNVi1qZkg5RDQ4SzZsbmVxdWo5eUVCOGdmOWpDejBtdTNkaXpFU014RXZJT3BwSlUtbXc3eTEzNk9wNnRma1VuMUs3ZDM4VXhSNU5DWkNyWHM2cVhvd9IB2gFBVV95cUxOVlNrdUFidWFVVExtRHByMDZKWktIeVBwc0RzZ1FLU0h0aHU2SzJuTWVfTnRkV3hTNlBmVG4zbkZGTlp5djUwQlhiUkhNNERKa2N1R3BUVmZrUXFrRlg3WGwwdjRXQ1pxQTRWSGlLYXdRekU1elRWTUZTYzF3VlhhSmFjelNNVi1qZkg5RDQ4SzZsbmVxdWo5eUVCOGdmOWpDejBtdTNkaXpFU014RXZJT3BwSlUtbXc3eTEzNk9wNnRma1VuMUs3ZDM4VXhSNU5DWkNyWHM2cVhvdw?oc=5",
+          "theme": "trade",
+          "time": "5h",
+          "publishedAt": "2026-11-11T14:18:00+00:00",
           "impact": "medium",
           "source": "Boursorama"
         }
@@ -1603,9 +1615,9 @@
         },
         "stockIndex": {
           "name": "MSCI World",
-          "value": 156,
-          "trend": "down",
-          "change": -0.47,
+          "value": 158,
+          "trend": "up",
+          "change": 1.27,
           "period": "2026-11-11",
           "periodEn": "2026-11-11"
         }
@@ -1625,7 +1637,7 @@
           90.49,
           103.53,
           117.64,
-          92.24
+          92.18
         ],
         "labels": [
           {
@@ -1671,8 +1683,8 @@
         ]
       },
       "summary": {
-        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World cède 0,47 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 5 relèvent du thème « commerce ».",
-        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is down 0.47% on the session. Of the 8 stories retained today, 5 fall under trade."
+        "fr": "L'économie mondiale progresse à un rythme de 3,0 % (2026F). L'inflation ressort à 4,7 % (2026F). MSCI World gagne 1,27 % sur la séance. Sur les 8 nouvelles retenues aujourd'hui, 3 relèvent du thème « commerce ».",
+        "en": "The global economy is growing at 3.0% (2026F). Inflation is 4.7% (2026F). MSCI World is up 1.27% on the session. Of the 8 stories retained today, 3 fall under trade."
       },
       "headlines": [
         {
@@ -1713,63 +1725,63 @@
         },
         {
           "title": {
-            "fr": "Russian Push to Escape Dollar for Yuan Collapses Under Sanctions",
-            "en": "Russian Push to Escape Dollar for Yuan Collapses Under Sanctions"
+            "fr": "Nigeria’s October crude output averages 1.69 million bpd, meeting OPEC quota for sixth month",
+            "en": "Nigeria’s October crude output averages 1.69 million bpd, meeting OPEC quota for sixth month"
           },
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZm8xX0JMOVl3aFFhaTBKeFFsUXE0eXg4NDliVk9QNFc1bUVhZVpJVFpWSG9qMld5dVQ5WklsSDZsaDJ6ZVk3YzRiV05QODFjTWw4dTI0cm5SNmowNldtQmRqUEJaMkVxY210eGhtbnB4THBaRDJTXzZSZDJVWEVOcGZOZVYyQVFLbmp0QjZBWmFPcHdKT3JjQWhYY0YzaE1va3FtU0VNWWcyVVV2XzZMOUNjRWU3UQ?oc=5",
-          "theme": "monetary",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSEpYZkg5STZjZnhLWm9Xa3lya3BrYkNhemdfWXR3MzBiWnBIMkNRYkM5a3hPVE9Ya0U0ZlROMkQ2c1cxaG81aERGUzgtMWg3Rk9zYnJvVXBEc0JOV2JVc3AxS0tTVGF0Q1R0VDF3eWs0SmxqajJkVU5CaVduOUlXSWFUOHZCcy1ZRGJ6Q2N3bVdwZnJPTUlLYVlOVERmTVBlUFBsSmJCNl8wY0FURDdSYmVxVDNoUjlFYnJnM1hHbw?oc=5",
+          "theme": "energy",
+          "time": "<1h",
+          "publishedAt": "2026-11-11T19:42:36+00:00",
+          "impact": "medium",
+          "source": "CNBC Africa"
+        },
+        {
+          "title": {
+            "fr": "US-Backed Lithium Americas Hit by Rising Costs on Trump Tariffs",
+            "en": "US-Backed Lithium Americas Hit by Rising Costs on Trump Tariffs"
+          },
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaUhSN0xla0Fsc3huTHlzVU9nSE0wZ3lIWHE1MWN6WVduMnVzeWdteXkwZXk1NDFlQ0pNSElmQTNHM0dtTTJuNk93WHdJeG1mNlUyWTlqMHVnalU0QVVocWRLUWp5Ti1kVXpYX2M0aGRCRFc5c08zdXhXdjJQOFI1anVTTHRVd2d5Sk5ITFRtUERjb3FNS01CRmpFZHBVLXpEZVhMancyU1hZUjhl?oc=5",
+          "theme": "trade",
           "time": "1h",
-          "publishedAt": "2026-11-11T00:00:00+00:00",
+          "publishedAt": "2026-11-11T18:02:23+00:00",
           "impact": "high",
           "source": "Bloomberg"
         },
         {
           "title": {
-            "fr": "Whitmer presses Trump administration on tariffs, grocery reimbursements",
-            "en": "Whitmer presses Trump administration on tariffs, grocery reimbursements"
+            "fr": "Ternium Says Mexico Steel Imports Need Strict Tariff Enforcement",
+            "en": "Ternium Says Mexico Steel Imports Need Strict Tariff Enforcement"
           },
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc2gwRXZpR25fTDZsUDlaYWh6TDh5bWNXd0xuaFh4TDZOaFJycmVkRmhXNnB5RE14YTV6Zm1jclRZX1U2N2xieUN4T0t5d0JjUHhkWHl0Mm54SG9TR2U3N0lqbTdURUZWNjFHMTg3Mm5pWXFrUk5aSWx0NjIwM2FldGM4NElybzE2N0EybFd2Vm9SVDlaTEHSAZsBQVVfeXFMTVJJTTE3V3NVXzNEaHJfYXhVWEJYUWVKVkFSNjhsdll3ZnYwN3dST3haT1pvLWlPUHA5bVFvQjN4VlRSUkdtM0QxdzVjZGJFaEJiSVhQb0JDenFiQ1dJSmQtbEp2SHFSbmkyMy1pWXVfSHp4UkZUOVlVYVhLX0dzUE13ZDhkS2pRQ09aclpMR2lub3UzYWdnQ1FUVVE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbzBER1BLeGJ0Q0J4SkFxOHBSbnpuQzdWajN1WmpldVd0ZC1MTUlRbWpKZ1FaS0o2Zkx4b3F2aXVDUEloRTBRNDk4bTAwdGhzSnpWcGVXYy1zVWxZNnJlWVROc0ZNTW9PUTNRMHQ2MzIyUmdBbUJKZE9SeVFCbVdhSnQtek1CeWJZczhJWmszM3FybmcwTzEtVU1GaDNiUUlQcE11dGc4YzJIWTd6Q0RUYXpGUElyUQ?oc=5",
           "theme": "trade",
           "time": "3h",
-          "publishedAt": "2026-11-10T21:41:00+00:00",
+          "publishedAt": "2026-11-11T16:46:45+00:00",
           "impact": "high",
-          "source": "The Hill"
+          "source": "Bloomberg"
         },
         {
           "title": {
-            "fr": "Is China Arming the Houthis – or Just Failing to Enforce Export Controls?",
-            "en": "Is China Arming the Houthis – or Just Failing to Enforce Export Controls?"
+            "fr": "Exclusive: EU's Kallas says US 'can't negotiate on our behalf' on lifting Russia sanctions - Talking Europe",
+            "en": "Exclusive: EU's Kallas says US 'can't negotiate on our behalf' on lifting Russia sanctions - Talking Europe"
           },
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVENVZzhYa3FnSGFIZVRaQ3I2U094Q3Zwd2dVMHFFN1RBWDJGLURVNGVxRFJTZXBFMXNFWEphblo4eXJWaW9Hc1pSbXBSaUdsVUpWRVZYcFVWckVScWFQSVpHdHdYWGdYZGoyY1NQZ0hYU0U1Z2NkYy15SVJiUnBIYWF1RzFhNllpSnpYcFhkSWhzc181UzlMV2RqSm9Ec25HMy02dUlB?oc=5",
-          "theme": "trade",
-          "time": "3h",
-          "publishedAt": "2026-11-10T21:36:26+00:00",
-          "impact": "medium",
-          "source": "The Diplomat – Asia-Pacific Current Affairs Magazine"
-        },
-        {
-          "title": {
-            "fr": "Opinion | How Do You Like Those Tariffs Now?",
-            "en": "Opinion | How Do You Like Those Tariffs Now?"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBhTlJVTXc2T1ZwQ2ZJYXR1SEhZZXNVSTBkR2JFMTRRMjd3LWJaVktFekxtQ1NVVER6VTNyRmMwMzVjUnNFN3pLckcwVjEyUFg0UG96MjR2U1JqWnVjYk1Nc08wand2M3NtWVRJcE1xUUIwX3hFNlg0NzJR?oc=5",
-          "theme": "trade",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQmxvSC1GM2dJSjcwNmlMeVdvX19lTzFQbkJPNGpqYjhtV2VRbENtaTVKRGRnODhOSWNtZDkzdXJKUWRUM1FacXhxQ2xtX2N2RXQwUW8tSjhJX2VRNTdlaDg3RThiNTBjN3RXTmpyX3lWUkhRMDdRT250OUJQQXR2R3M3anVoQV9kbS0yNTdEUGxBY1lXZ2J2WUs1VXRlaGlKaERhSHpLblhMSFVoa2RSSk03amFjUGVFajZrbXBNa0IzaTE2NlUyakZKaUZYVl92V184aFBTVTI2YUt5dE5uRGZn?oc=5",
+          "theme": "geopolitics",
           "time": "4h",
-          "publishedAt": "2026-11-10T21:12:00+00:00",
+          "publishedAt": "2026-11-11T15:15:40+00:00",
+          "impact": "high",
+          "source": "France 24"
+        },
+        {
+          "title": {
+            "fr": "OPEC’s Oil Production Nears Prewar Levels on Saudi Rebound",
+            "en": "OPEC’s Oil Production Nears Prewar Levels on Saudi Rebound"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbkZ3Y3c3WE51TWt2RUVhZUdxbk5PM3FCdjNERW94S3NEckxuUVBidkxiRHdHUnl6RGxLZnIwZjh1UTlmak1tOW50MmZWemFEQlY5UUs3Z2pISzVodWhiRjFZSHN0T2xLTkVIV3A0Y0xUbnJOVy1ZRDJYWlNPbGJ6M1VHa2VLN2xMRDlJdkpESnZLZzFoWHc2WFg0eE43dzZsTGlEU1JVQjBkUQ?oc=5",
+          "theme": "energy",
+          "time": "5h",
+          "publishedAt": "2026-11-11T14:51:02+00:00",
           "impact": "high",
           "source": "WSJ"
-        },
-        {
-          "title": {
-            "fr": "Even this blue wave probably won’t wash tariffs away",
-            "en": "Even this blue wave probably won’t wash tariffs away"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYUlIdnNleFhkZVBLWDA0bHZsOFhIQ0NWR0F3TktUbUZ0Y3dZOXRFNG51Z0dEcjBkazl3ZzJUZ0FkbFV2VHY1TUNkWFA4cWtXdjNyVWpMUnFIY2NmWlJSYkkyUHRxcmV1c2kxbnZXblh5T2x5MFRiY1RKRGszeEVzS2hTVHFpS2NmemhBRHE2cDhaVEtXTHJsN2VqdXFYRUdyVWxJ?oc=5",
-          "theme": "trade",
-          "time": "4h",
-          "publishedAt": "2026-11-10T20:47:22+00:00",
-          "impact": "high",
-          "source": "The Washington Post"
         }
       ],
       "headlinesFr": [
@@ -1780,94 +1792,94 @@
           },
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYzBRTGNrdUU0UFoyNE1ibjAzYzk4elBHZTlrS2ExNVYwdDRYT2J4cmpPTHAwaFBzdENoLWxKUDRvVkUxUU5zemhGZkNCQmp1eTRUeFNyX0dURm95djZhZkwwcGg4aFRmU0hieHJWa1pOVWdRcUZhelBQV29fcjlydy1JdzQ4VXljekhiUXJWQVI2NjJlODRQNA?oc=5",
           "theme": "trade",
-          "time": "3h",
-          "publishedAt": "2026-11-10T21:50:00+00:00",
+          "time": "1j",
+          "publishedAt": "2026-11-10T19:29:00+00:00",
           "impact": "high",
           "source": "Le Devoir"
         },
         {
           "title": {
-            "fr": "BTB présente ses résultats du troisième trimestre de 2026 alors que se poursuit la transformation de son portefeuille, guidée par des dispositions ciblées et des acquisitions industrielles",
-            "en": "BTB présente ses résultats du troisième trimestre de 2026 alors que se poursuit la transformation de son portefeuille, guidée par des dispositions ciblées et des acquisitions industrielles"
+            "fr": "Le dollar au plus haut depuis mai 2025 face à l’euro",
+            "en": "Le dollar au plus haut depuis mai 2025 face à l’euro"
           },
-          "url": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxORi1jMDJFQ3IzYy04ekNueGRfY3d3anVnLXMycEhIR0V3ZVZwNnVpT3BRbmlfTTJ0T1NKQTJaNEVhRUtIb0NySU5PejZwRHZaRm5wcnNHQnlVZERmWk52ajhNMXUxcWcxMm92NVdqQnAxb1NEbFMxV1pMSmprdGFNU1o2MnplbEhWNjFnWktFbXNlT0thUGNvWm1oZHo2ZGZwX3EyUm1zWVVhNGUwVlJvVFdKYWc4bTB5V0VQLVhibU5hVl85Q1ZKN2E1VFdLOE5LRmJ3VUlXTVp6SGVWOXNuREg4el84Wkpqd1JqODF3MFdYc1E5MGV6VTJIZGpFb2FENGgydlV0eFY1c1lPNXM1cWQxbU1VU1VHdFJqQ3oxOHNjSmV6NmhGVWowc3RFbkFSSVowMlJJYUhIVURURnFqRWRUOWJqNkRrVTNBZU5Jb3dIbHgxZldTSg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQm1CMGN6WjBkZUlpdGZ5NDBlOU1Lb0ZnUF9OS1cxUlZiS0NqRTVtUW1acm53R1VJUl9SRXhmYWxhUGdnYlhVVFByTnBVWnVpOWxiN0lPSHRjNEZaaHM1cGFQX3pRWHR0c3F1eURCZlVFTEhEU09ubE5GNFo4cWpIdEdfblE4NS1UUlgyS2xPNnE?oc=5",
           "theme": "monetary",
-          "time": "2h",
-          "publishedAt": "2026-11-10T23:13:04+00:00",
+          "time": "1h",
+          "publishedAt": "2026-11-11T18:23:04+00:00",
           "impact": "medium",
           "source": "Les Affaires"
         },
         {
           "title": {
-            "fr": "Le Bénin investit dans son marché de gros pour améliorer la chaîne logistique",
-            "en": "Le Bénin investit dans son marché de gros pour améliorer la chaîne logistique"
+            "fr": "Tarifs douaniers: le marketing, prochain chantier des manufacturiers québécois",
+            "en": "Tarifs douaniers: le marketing, prochain chantier des manufacturiers québécois"
           },
-          "url": "https://www.rfi.fr/fr/podcasts/afrique-%C3%A9conomie/20261110-le-b%C3%A9nin-investit-dans-son-march%C3%A9-de-gros-pour-am%C3%A9liorer-la-cha%C3%AEne-logistique",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPbTlkMVMyWjBEb25UZFhnVnJjLTZYNWFpODJzMXgzWlFvVEJ2ajZLMW5xdHdsRXN4TS16V1JRTFZhTjlUWlRxSTZEWGVtQ216MklYNFpTUU9VRDc1bllfUVVQdEplc2RDWExJTWpJVEdqcG5ibHlucHJIWDEwNUt1ekRLZk5VMk5nM28zMEJqVnZwZW1UMXM2S0lOcG1hWVRGZUhhR1Zjb0c1OUc0SDNwUnpSeGxiV3E1WDByR0hCZzYwTWM5aG1DRDNsMzIyVDVzRlJyVFNqeGRsTHIzNnlTb3JnalVUa21J?oc=5",
           "theme": "trade",
           "time": "2h",
-          "publishedAt": "2026-11-10T23:06:50+00:00",
-          "impact": "low",
-          "source": "RFI"
-        },
-        {
-          "title": {
-            "fr": "G7+ : les ports se structurent pour organiser la lutte contre le narcotrafic",
-            "en": "G7+ : les ports se structurent pour organiser la lutte contre le narcotrafic"
-          },
-          "url": "https://www.latribune.fr/article/economie/35406253958906/g7-les-ports-se-structurent-pour-organiser-la-lutte-contre-le-narcotrafic",
-          "theme": "geopolitics",
-          "time": "9h",
-          "publishedAt": "2026-11-10T16:01:31+00:00",
-          "impact": "medium",
-          "source": "La Tribune"
-        },
-        {
-          "title": {
-            "fr": "Data centers : comment le droit encadre l’implantation entre protection et souveraineté",
-            "en": "Data centers : comment le droit encadre l’implantation entre protection et souveraineté"
-          },
-          "url": "https://www.latribune.fr/article/tech/19744361171545/data-centers-comment-le-droit-encadre-l-implantation-entre-protection-et-souverainete",
-          "theme": "tech",
-          "time": "14h",
-          "publishedAt": "2026-11-10T10:53:16+00:00",
-          "impact": "medium",
-          "source": "La Tribune"
-        },
-        {
-          "title": {
-            "fr": "Guerre en Ukraine: le Canada annonce des sanctions supplémentaires contre la Russie",
-            "en": "Guerre en Ukraine: le Canada annonce des sanctions supplémentaires contre la Russie"
-          },
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPcWliUHA2WVRSa2docThEZHpOaURGWTFQZlBuX0FvM2VNMzNuc1Q1ekRzbklMQ0x2cjZCc0VNU2tmb2JpSDNHME1kRVBpVm9jcmZwNlYyRFE1cWlwR0FRclpZc1hQd1VkRUV6bWViQnRmcF9RTkdsRVgwQUFpTTRsdXFEaTFTeE1pM1VGNlZOeUNHWW9xbmJFUG9iTEpjS3VFUy12WlF2YXVCbXN1ZVM5SE1GZVVNZTJGaWk5dDNtN3lkZw?oc=5",
-          "theme": "geopolitics",
-          "time": "1j",
-          "publishedAt": "2026-11-09T22:15:01+00:00",
+          "publishedAt": "2026-11-11T17:10:02+00:00",
           "impact": "high",
           "source": "Les Affaires"
         },
         {
           "title": {
-            "fr": "Data centers : en pleine contestation sociétale, la filière appelle à plus de « pédagogie »",
-            "en": "Data centers : en pleine contestation sociétale, la filière appelle à plus de « pédagogie »"
+            "fr": "Les marges de raffinage du pétrole ont décru en octobre, observe l’OPEP",
+            "en": "Les marges de raffinage du pétrole ont décru en octobre, observe l’OPEP"
           },
-          "url": "https://www.latribune.fr/article/tech/2647579992407314/data-centers-en-pleine-contestation-societale-la-filiere-appelle-a-plus-de-pedagogie",
-          "theme": "tech",
-          "time": "1j",
-          "publishedAt": "2026-11-09T17:56:20+00:00",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOEh5cUFBVmdPUUJJV0ZWYnNTTHFId19BYzM4ZmdhNmJoOW1KcktPZmxONGxTN0RONmlGa0xtQkNad2FIaW1mNU53MXVhYi1Zdjg5ajVIZ19Vc1JBXzFzM21tQUR1bDdSNTUxeHRlTFV2UEk4bFFHSEFTTmh3eFM3ZFI0dVRvWW9pTnhPOEpCN1FDaWxTZUkzWHdld3YzTFJzWlJFYXl1bzQ?oc=5",
+          "theme": "energy",
+          "time": "3h",
+          "publishedAt": "2026-11-11T16:15:39+00:00",
+          "impact": "medium",
+          "source": "Les Affaires"
+        },
+        {
+          "title": {
+            "fr": "Carburants : la libération des stocks n’est « pas à l’ordre du jour », temporise le ministère du Commerce",
+            "en": "Carburants : la libération des stocks n’est « pas à l’ordre du jour », temporise le ministère du Commerce"
+          },
+          "url": "https://www.latribune.fr/article/entreprises-finance/energie-environnement/13664239500429/carburants-la-liberation-des-stocks-n-est-pas-a-l-ordre-du-jour-temporise-le-ministere-du-commerce",
+          "theme": "trade",
+          "time": "5h",
+          "publishedAt": "2026-11-11T14:39:34+00:00",
           "impact": "medium",
           "source": "La Tribune"
         },
         {
           "title": {
-            "fr": "Emballages professionnels : trois éco-organismes menacés de sanctions par l’État",
-            "en": "Emballages professionnels : trois éco-organismes menacés de sanctions par l’État"
+            "fr": "1,2 million d'euros d'amende : la justice brésilienne sanctionne Meta après la présidentielle",
+            "en": "1,2 million d'euros d'amende : la justice brésilienne sanctionne Meta après la présidentielle"
           },
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPY0tRY1NYbGtQOUlKcDNZVzh0dWpXeUdyMGVkZzEzU012RzdUN2M4RXJHMnp0UGY5UjlTd0FBU01sZlZ6ajl4azA0dVFkeUdCMENPM3VaMzgwNGRCdElibkxkbmN6dHdSSVdEa243QUFlMHBpWjRhYm5NYkpFTXExNXoxbFRqYk93YnFVNkM5X0lsUnE3czhYeHlDM3NNZDgybUc3MWY4STFydjZZOVo1blBKYk44cTJ0R213aUJ3?oc=5",
+          "url": "https://www.latribune.fr/article/tech/25629240805354/1-2-million-deuros-damende-la-justice-bresilienne-sanctionne-meta-apres-la-presidentielle",
           "theme": "geopolitics",
-          "time": "1j",
-          "publishedAt": "2026-11-09T17:52:40+00:00",
+          "time": "8h",
+          "publishedAt": "2026-11-11T11:00:01+00:00",
           "impact": "high",
-          "source": "Le Figaro"
+          "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "2,53 milliards d'euros de chiffre d'affaires en 2026 : comment Lamborghini booste ses revenus sans augmenter ses volumes",
+            "en": "2,53 milliards d'euros de chiffre d'affaires en 2026 : comment Lamborghini booste ses revenus sans augmenter ses volumes"
+          },
+          "url": "https://www.latribune.fr/article/transports/24345476120705/2-53-milliards-deuros-de-chiffre-daffaires-en-2026-comment-lamborghini-booste-ses-revenus-sans-augmenter-ses-volumes",
+          "theme": "monetary",
+          "time": "11h",
+          "publishedAt": "2026-11-11T08:33:20+00:00",
+          "impact": "medium",
+          "source": "La Tribune"
+        },
+        {
+          "title": {
+            "fr": "Obama défend le Canada et critique les tarifs douaniers de Trump",
+            "en": "Obama défend le Canada et critique les tarifs douaniers de Trump"
+          },
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRzc3RWNNZWZiWnNSX2Vxc3pIWFJISmZIQ3hpUS01VERybzVwclBCWXI1a3hFTWFrMG83MTZEMFJ1bzk5NjJ3NGN2MWxGWUt5b0lNSFExRUdFa0E2S3VoaEJNMi10Q05JRGo1dTdoeG53WUpoZ1FBTkFlZ2JZWG1zcmRUczdKdUtBQWZuVnJFRHkwc20yN09wa1h5TTVfT19OdzNtN3RQbW5fRzA?oc=5",
+          "theme": "trade",
+          "time": "12h",
+          "publishedAt": "2026-11-11T07:26:32+00:00",
+          "impact": "high",
+          "source": "Radio-Canada"
         }
       ]
     }
@@ -1924,8 +1936,8 @@
         "en": "Hormuz, reopened then re-closed, keeps the rupee under pressure"
       },
       "description": {
-        "fr": "Le conflit autour du détroit d'Ormuz fait osciller le Brent depuis février 2026 : culminant près de 118 $ en mars, retombé sous 70 $ le 1er juillet après un protocole d'entente américano-iranien, puis reparti à la hausse après le 10 juillet quand des attaques contre des navires marchands ont refermé le détroit au trafic courant. Le Brent se négocie à 92 $ au dernier passage. L'Inde, importatrice nette de pétrole, encaisse chaque à-coup par sa monnaie et ses prix : la roupie s'échange à 93,93 INR/USD, et l'inflation est ressortie à 4,8 % en juin selon l'OCDE, contre 2,7 % affiché en début d'année sur une donnée qui datait de janvier.",
-        "en": "The standoff over the Strait of Hormuz has swung Brent since February 2026: peaking near $118 in March, falling below $70 on 1 July after a US-Iran understanding, then climbing again after 10 July when attacks on merchant vessels re-closed the strait to routine traffic. Brent last traded at $92. India, a net oil importer, absorbs each swing through its currency and its prices: the rupee trades at 93.93 INR/USD, and inflation came in at 4.8% in June per the OECD, against a 2.7% figure shown earlier in the year that dated back to January."
+        "fr": "Le conflit autour du détroit d'Ormuz fait osciller le Brent depuis février 2026 : culminant près de 118 $ en mars, retombé sous 70 $ le 1er juillet après un protocole d'entente américano-iranien, puis reparti à la hausse après le 10 juillet quand des attaques contre des navires marchands ont refermé le détroit au trafic courant. Le Brent se négocie à 92 $ au dernier passage. L'Inde, importatrice nette de pétrole, encaisse chaque à-coup par sa monnaie et ses prix : la roupie s'échange à 93,69 INR/USD, et l'inflation est ressortie à 4,8 % en juin selon l'OCDE, contre 2,7 % affiché en début d'année sur une donnée qui datait de janvier.",
+        "en": "The standoff over the Strait of Hormuz has swung Brent since February 2026: peaking near $118 in March, falling below $70 on 1 July after a US-Iran understanding, then climbing again after 10 July when attacks on merchant vessels re-closed the strait to routine traffic. Brent last traded at $92. India, a net oil importer, absorbs each swing through its currency and its prices: the rupee trades at 93.69 INR/USD, and inflation came in at 4.8% in June per the OECD, against a 2.7% figure shown earlier in the year that dated back to January."
       },
       "impact": "high"
     },
