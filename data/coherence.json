@@ -7,8 +7,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 1.4285,
       "sourceB": "Yahoo Finance",
-      "valeurB": 1.4299,
-      "ecart": 0.001,
+      "valeurB": 1.4297,
+      "ecart": 0.0008,
       "suspect": false
     },
     {
@@ -17,8 +17,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 6.6665,
       "sourceB": "Yahoo Finance",
-      "valeurB": 6.6648,
-      "ecart": 0.0003,
+      "valeurB": 6.6539,
+      "ecart": 0.0019,
       "suspect": false
     },
     {
@@ -98,6 +98,16 @@
       "valeurA": 5.5,
       "sourceB": null,
       "valeurB": "[0, 20]",
+      "ecart": null,
+      "suspect": false
+    },
+    {
+      "indicateur": "Chômage CA",
+      "type": "borne_plausibilite",
+      "sourceA": "Statistique Canada",
+      "valeurA": 6.7,
+      "sourceB": null,
+      "valeurB": "[1, 40]",
       "ecart": null,
       "suspect": false
     },
