@@ -5,30 +5,30 @@
       "indicateur": "Taux de change CA",
       "type": "source_double",
       "sourceA": "Frankfurter/BCE",
-      "valeurA": 1.4285,
+      "valeurA": 1.4291,
       "sourceB": "Yahoo Finance",
-      "valeurB": 1.4303,
-      "ecart": 0.0013,
+      "valeurB": 1.4289,
+      "ecart": 0.0001,
       "suspect": false
     },
     {
       "indicateur": "Taux de change CN",
       "type": "source_double",
       "sourceA": "Frankfurter/BCE",
-      "valeurA": 6.6665,
+      "valeurA": 6.6661,
       "sourceB": "Yahoo Finance",
-      "valeurB": 6.6645,
-      "ecart": 0.0003,
+      "valeurB": 6.6659,
+      "ecart": 0.0,
       "suspect": false
     },
     {
       "indicateur": "Taux de change IN",
       "type": "source_double",
       "sourceA": "Frankfurter/BCE",
-      "valeurA": 93.93,
+      "valeurA": 93.48,
       "sourceB": "Yahoo Finance",
-      "valeurB": 93.665,
-      "ecart": 0.0028,
+      "valeurB": 93.47,
+      "ecart": 0.0001,
       "suspect": false
     },
     {
@@ -98,16 +98,6 @@
       "valeurA": 5.5,
       "sourceB": null,
       "valeurB": "[0, 20]",
-      "ecart": null,
-      "suspect": false
-    },
-    {
-      "indicateur": "Chômage CA",
-      "type": "borne_plausibilite",
-      "sourceA": "Statistique Canada",
-      "valeurA": 6.7,
-      "sourceB": null,
-      "valeurB": "[1, 40]",
       "ecart": null,
       "suspect": false
     },
