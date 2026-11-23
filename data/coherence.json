@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "controles": [
     {
       "indicateur": "Taux de change CA",
@@ -7,8 +7,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 1.4307,
       "sourceB": "Yahoo Finance",
-      "valeurB": 1.4341,
-      "ecart": 0.0024,
+      "valeurB": 1.4333,
+      "ecart": 0.0018,
       "suspect": false
     },
     {
@@ -17,8 +17,8 @@
       "sourceA": "Frankfurter/BCE",
       "valeurA": 6.6777,
       "sourceB": "Yahoo Finance",
-      "valeurB": 6.6623,
-      "ecart": 0.0023,
+      "valeurB": 6.6741,
+      "ecart": 0.0005,
       "suspect": false
     },
     {
@@ -98,16 +98,6 @@
       "valeurA": 5.5,
       "sourceB": null,
       "valeurB": "[0, 20]",
-      "ecart": null,
-      "suspect": false
-    },
-    {
-      "indicateur": "Chômage CA",
-      "type": "borne_plausibilite",
-      "sourceA": "Statistique Canada",
-      "valeurA": 6.7,
-      "sourceB": null,
-      "valeurB": "[1, 40]",
       "ecart": null,
       "suspect": false
     },
